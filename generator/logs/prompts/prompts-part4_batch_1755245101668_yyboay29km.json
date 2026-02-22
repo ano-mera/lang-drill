@@ -1,0 +1,77 @@
+[
+  {
+    "timestamp": "2025-08-15T08:05:01.671Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:05:01.674Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Tour or facility guide (施設や観光地のガイド)\n【Industry】: Sports and Fitness (スポーツ・フィットネス)\n【Difficulty】: medium\n【Question Types】: main_purpose, detail, next_action\n【Correct Answer Positions】: Question 1=A, Question 2=C, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:05:42.954Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Guide\",\n      \"role\": \"Fitness center tour guide\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Welcome to PeakPoint Fitness Center; I'm Maya, your guide for this short orientation. I’ll point out the essentials so you can start training with confidence. The cardio zone is on the second floor, with treadmills and bikes facing the windows. Free weights and resistance machines are on this level to your left—please re-rack plates and dumbbells when you’re done. Down the hallway, Studio B hosts our cycling classes, and you can reserve a spot through the PeakPoint app or at the kiosk. The pool offers lap lanes from six to nine in the morning, and towels are available at the front desk. Please wipe down equipment at the sanitizer stations after use. For now, meet me at the indoor track entrance for a two-minute safety demonstration, then we’ll take questions.\",\n    \"topic\": \"Fitness center orientation tour\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the talk?\",\n      \"options\": [\n        \"To give a brief orientation to the fitness center’s key areas and rules\",\n        \"To announce an all-day closure of the pool\",\n        \"To advertise a discount on membership upgrades\",\n        \"To recruit staff for a cycling event\"\n      ],\n      \"correct\": \"To give a brief orientation to the fitness center’s key areas and rules\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"冒頭で「short orientation（短いオリエンテーション）」と述べ、施設の主要エリアや利用ルールを案内しているためAが正解です。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Where is the cardio zone located?\",\n      \"options\": [\n        \"In the basement next to the locker rooms\",\n        \"On the main level near the free weights\",\n        \"On the second floor facing the windows\",\n        \"Outside by the track\"\n      ],\n      \"correct\": \"On the second floor facing the windows\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチで「The cardio zone is on the second floor, with treadmills and bikes facing the windows.」と言及されているためCが正解です。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What are listeners asked to do next?\",\n      \"options\": [\n        \"Go to the indoor track entrance for a short safety demonstration\",\n        \"Download the app and book a class immediately\",\n        \"Head directly to the pool for lap swimming\",\n        \"Pick up towels at the front desk right away\"\n      ],\n      \"correct\": \"Go to the indoor track entrance for a short safety demonstration\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"最後に「meet me at the indoor track entrance for a two-minute safety demonstration」と具体的な次の行動が示されています。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:05:42.956Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: tour_guide\nIndustry: sports_fitness\nSpeaker Role: Fitness center tour guide\nTopic: Fitness center orientation tour\n\nSpeech Text:\nWelcome to PeakPoint Fitness Center; I'm Maya, your guide for this short orientation. I’ll point out the essentials so you can start training with confidence. The cardio zone is on the second floor, with treadmills and bikes facing the windows. Free weights and resistance machines are on this level to your left—please re-rack plates and dumbbells when you’re done. Down the hallway, Studio B hosts our cycling classes, and you can reserve a spot through the PeakPoint app or at the kiosk. The pool offers lap lanes from six to nine in the morning, and towels are available at the front desk. Please wipe down equipment at the sanitizer stations after use. For now, meet me at the indoor track entrance for a two-minute safety demonstration, then we’ll take questions.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:06:32.571Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ツアーガイド\",\n  \"textTranslation\": \"ピークポイント・フィットネスセンターへようこそ。本日の短いオリエンテーションを担当するガイドのマヤです。安心してトレーニングを始めていただけるよう、要点を手短にご案内します。有酸素エリアは2階にあり、窓に向かってトレッドミルとバイクが並んでいます。フリーウエイトと各種マシンはこのフロアの左手にあります。ご利用後はプレートやダンベルを所定のラックにお戻しください。廊下の先にあるスタジオBではインドアサイクリングのクラスを実施しています。ご予約はPeakPointアプリ、または館内のキオスク端末から可能です。プールは朝6時から9時までラップ用のコースを開放しており、タオルはフロントデスクでお受け取りいただけます。ご使用後は、消毒ステーションにあるワイプで器具の拭き上げをお願いします。この後は屋内トラック入口にお集まりください。2分ほどの安全説明を行い、その後でご質問をお受けします。\",\n  \"topicTranslation\": \"フィットネスセンターのオリエンテーションツアー\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:06:32.572Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the main purpose of the talk?\nOptions:\nA: To give a brief orientation to the fitness center’s key areas and rules\nB: To announce an all-day closure of the pool\nC: To advertise a discount on membership upgrades\nD: To recruit staff for a cycling event\n\nQuestion 2: Where is the cardio zone located?\nOptions:\nA: In the basement next to the locker rooms\nB: On the main level near the free weights\nC: On the second floor facing the windows\nD: Outside by the track\n\nQuestion 3: What are listeners asked to do next?\nOptions:\nA: Go to the indoor track entrance for a short safety demonstration\nB: Download the app and book a class immediately\nC: Head directly to the pool for lap swimming\nD: Pick up towels at the front desk right away\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

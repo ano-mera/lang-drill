@@ -1,0 +1,88 @@
+[
+  {
+    "timestamp": "2025-07-30T02:39:07.224Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"scenario\":\"phone_call\"}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "scenario": "phone_call"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T02:39:07.255Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: phone_call\n- 正解位置: 問題1はA、問題2はA、問題3はA\n- 話者数: 2人\n- 話者の性別: 話者Aは女性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオに適した自然な英語の会話を作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: A位置、問題2: A位置、問題3: A位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T02:39:15.931Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "{\n  \"scenario\": \"phone_call\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Emily\", \"role\": \"Customer Service Representative\", \"gender\": \"female\"},\n    {\"id\": \"B\", \"name\": \"Sarah\", \"role\": \"Customer\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"B\", \"text\": \"Hi, I'm calling to inquire about the delay in my order delivery.\"},\n    {\"speaker\": \"A\", \"text\": \"I apologize for the inconvenience. Could you please provide your order number?\"},\n    {\"speaker\": \"B\", \"text\": \"Sure, it's 89756.\"},\n    {\"speaker\": \"A\", \"text\": \"Thank you. It seems there was a delay due to stock issues. Your order should arrive by Wednesday.\"},\n    {\"speaker\": \"B\", \"text\": \"That's good to know. Can I track the shipment online?\"},\n    {\"speaker\": \"A\", \"text\": \"Yes, you can track it using the tracking number sent to your email.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What is the main purpose of the second woman's call?\",\n      \"options\": [\n        \"To inquire about a delay in her order delivery\",\n        \"To place a new order\",\n        \"To request a refund\",\n        \"To change the delivery address\"\n      ],\n      \"correct\": \"To inquire about a delay in her order delivery\",\n      \"explanation\": \"会話の冒頭で、第二の女性が注文の配達の遅延について問い合わせていることが明示されています。\",\n      \"questionType\": \"Purpose\"\n    },\n    {\n      \"question\": \"What does the first woman say about the order?\",\n      \"options\": [\n        \"It was delayed due to stock issues\",\n        \"It was shipped yesterday\",\n        \"It was delivered to the wrong address\",\n        \"It was canceled\"\n      ],\n      \"correct\": \"It was delayed due to stock issues\",\n      \"explanation\": \"第一の女性は、在庫の問題で遅延が発生したと述べています。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"What does the second woman ask about tracking?\",\n      \"options\": [\n        \"If she can track the shipment online\",\n        \"If she needs to call again for updates\",\n        \"If there is an additional fee for tracking\",\n        \"If she can change the tracking number\"\n      ],\n      \"correct\": \"If she can track the shipment online\",\n      \"explanation\": \"第二の女性は、オンラインで追跡できるかどうかについて質問しています。\",\n      \"questionType\": \"Inference\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T02:39:15.933Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: phone_call\n\nConversation:\nB: Hi, I'm calling to inquire about the delay in my order delivery.\nA: I apologize for the inconvenience. Could you please provide your order number?\nB: Sure, it's 89756.\nA: Thank you. It seems there was a delay due to stock issues. Your order should arrive by Wednesday.\nB: That's good to know. Can I track the shipment online?\nA: Yes, you can track it using the tracking number sent to your email.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T02:39:21.514Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"電話の会話\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"こんにちは、注文の配達の遅延について問い合わせたいのですが。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"ご不便をおかけして申し訳ありません。ご注文番号を教えていただけますか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"はい、89756です。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"ありがとうございます。在庫の問題で遅延が発生したようです。ご注文は水曜日までに届く予定です。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それを聞いて安心しました。オンラインで配送を追跡できますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"はい、メールで送信された追跡番号を使って追跡できます。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T02:39:21.516Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What is the main purpose of the second woman's call?\nOptions:\nA: To inquire about a delay in her order delivery\nB: To place a new order\nC: To request a refund\nD: To change the delivery address\n\nQuestion 2: What does the first woman say about the order?\nOptions:\nA: It was delayed due to stock issues\nB: It was shipped yesterday\nC: It was delivered to the wrong address\nD: It was canceled\n\nQuestion 3: What does the second woman ask about tracking?\nOptions:\nA: If she can track the shipment online\nB: If she needs to call again for updates\nC: If there is an additional fee for tracking\nD: If she can change the tracking number\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T02:39:27.159Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: 2人目の女性が電話をかけた主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 注文の配達遅延について問い合わせるため\",\n        \"B: 新しい注文をするため\",\n        \"C: 返金を求めるため\",\n        \"D: 配送先住所を変更するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: 1人目の女性は注文について何と言っていますか？\",\n      \"optionTranslations\": [\n        \"A: 在庫の問題で遅れている\",\n        \"B: 昨日発送された\",\n        \"C: 間違った住所に配達された\",\n        \"D: キャンセルされた\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: 2人目の女性は追跡について何を尋ねていますか？\",\n      \"optionTranslations\": [\n        \"A: オンラインで発送状況を追跡できるか\",\n        \"B: 更新情報のために再び電話をかける必要があるか\",\n        \"C: 追跡に追加料金がかかるか\",\n        \"D: 追跡番号を変更できるか\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

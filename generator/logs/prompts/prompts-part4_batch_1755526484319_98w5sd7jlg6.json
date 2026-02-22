@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-18T14:14:44.322Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:14:44.348Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時刻は必ず英語で綴る形式で記載（例: \"ten o'clock\", \"three thirty\", \"half past four\"）、数字形式（10:00, 3:30など）は使用しない\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Tour or facility guide (施設や観光地のガイド)\n【Industry】: Transportation and Logistics (運輸・物流)\n【Difficulty】: hard\n【Question Types】: detail, main_purpose, inference\n【Correct Answer Positions】: Question 1=B, Question 2=D, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nImportant formatting rules:\n- Always spell out times in English (e.g., \"ten o'clock\", \"three thirty\", \"half past four\")\n- Never use numerical time formats (e.g., 10:00, 3:30)\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:14:59.387Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Logistics Facility Guide\",\n      \"role\": \"Facility tour guide\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Welcome to the central logistics facility and thank you for joining our tour today. We'll begin with the loading dock area to observe the integration of our state-of-the-art systems at precisely eight thirty. Afterward, you will have the opportunity to see our automated warehousing section, where materials are meticulously sorted and located via advanced robotics. Please note that these operations are crucial for ensuring timely deliveries. Immediately following this, at around half past nine, we will proceed to the dispatch office. This is where coordinators employ cutting-edge software to manage and optimize delivery routes in real-time. Finally, we'll conclude the tour with a brief Q&A session to address any questions you might have about our logistics process. We aim to provide clarity on how our facility underpins efficiency in the supply chain.\",\n    \"topic\": \"Tour of a logistics facility and explanation of its operations\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What time will the group visit the loading dock area?\",\n      \"options\": [\"At nine o'clock\", \"At eight thirty\", \"At half past nine\", \"At ten o'clock\"],\n      \"correct\": \"At eight thirty\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは、最初にローディングドックエリアを八時半に見学すると述べています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the speech?\",\n      \"options\": [\n        \"To recruit new employees\",\n        \"To announce a new logistics partnership\",\n        \"To discuss recent inventory changes\",\n        \"To guide a tour and explain facility operations\"\n      ],\n      \"correct\": \"To guide a tour and explain facility operations\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチは、施設のガイドツアーを行い、その運営について説明することが主目的です。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the dispatch office?\",\n      \"options\": [\n        \"It operates independently from other departments\",\n        \"It handles client invoicing and support\",\n        \"It is only accessible to warehouse staff\",\n        \"It uses software for managing delivery routes\"\n      ],\n      \"correct\": \"It uses software for managing delivery routes\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、デスパッチオフィスで最新のソフトウェアを使用して配送ルートの管理を行っていると言及しています。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:14:59.387Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: tour_guide\nIndustry: transportation\nSpeaker Role: Facility tour guide\nTopic: Tour of a logistics facility and explanation of its operations\n\nSpeech Text:\nWelcome to the central logistics facility and thank you for joining our tour today. We'll begin with the loading dock area to observe the integration of our state-of-the-art systems at precisely eight thirty. Afterward, you will have the opportunity to see our automated warehousing section, where materials are meticulously sorted and located via advanced robotics. Please note that these operations are crucial for ensuring timely deliveries. Immediately following this, at around half past nine, we will proceed to the dispatch office. This is where coordinators employ cutting-edge software to manage and optimize delivery routes in real-time. Finally, we'll conclude the tour with a brief Q&A session to address any questions you might have about our logistics process. We aim to provide clarity on how our facility underpins efficiency in the supply chain.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:15:04.481Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ツアーガイド\",\n  \"textTranslation\": \"中央物流施設へようこそ。本日のツアーにご参加いただき、ありがとうございます。まず、午前8時30分ちょうどに、最新のシステムが統合された荷積みエリアから始めます。その後、材料が高度なロボット技術によって細心の注意を払って仕分け・配置される自動倉庫セクションをご覧いただきます。これらの作業が時間通りの配送を確保する上で重要であることにご注意ください。次に、9時30分ごろに発送オフィスに進みます。ここでは、コーディネーターが最先端のソフトウェアを使用して、配送ルートをリアルタイムで管理および最適化しています。最終的に、ツアーを締めくくるため、当施設の物流プロセスについてのご質問にお答えする簡単なQ&Aセッションを行います。当施設がサプライチェーンの効率性をどのように支えているかについて、明確にご説明できればと思います。\",\n  \"topicTranslation\": \"物流施設の見学と運営の説明\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:15:04.482Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What time will the group visit the loading dock area?\nOptions:\nA: At nine o'clock\nB: At eight thirty\nC: At half past nine\nD: At ten o'clock\n\nQuestion 2: What is the main purpose of the speech?\nOptions:\nA: To recruit new employees\nB: To announce a new logistics partnership\nC: To discuss recent inventory changes\nD: To guide a tour and explain facility operations\n\nQuestion 3: What can be inferred about the dispatch office?\nOptions:\nA: It operates independently from other departments\nB: It handles client invoicing and support\nC: It is only accessible to warehouse staff\nD: It uses software for managing delivery routes\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:15:08.533Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"グループは何時に積み込みドックエリアを訪問しますか？\",\n      \"optionTranslations\": [\n        \"9時\",\n        \"8時30分\",\n        \"9時30分\",\n        \"10時\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このスピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しい従業員の採用\",\n        \"新しい物流パートナーシップの発表\",\n        \"最近の在庫変更についての議論\",\n        \"施設の運用を説明するツアーの案内\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"発送オフィスについて何が推測できますか？\",\n      \"optionTranslations\": [\n        \"他の部門から独立して運営されている\",\n        \"クライアントの請求書処理とサポートを担当している\",\n        \"倉庫スタッフのみが利用できる\",\n        \"配送ルート管理のためのソフトウェアを使用している\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

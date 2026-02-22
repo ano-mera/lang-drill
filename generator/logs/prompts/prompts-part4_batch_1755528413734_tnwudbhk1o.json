@@ -1,0 +1,233 @@
+[
+  {
+    "timestamp": "2025-08-18T14:46:53.737Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":3,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 3,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:46:53.768Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 10:00 AMや9:00 PMのような時間を必ず文章に盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Public event announcement (公共イベントの案内)\n【Industry】: Legal Services (法律サービス)\n【Difficulty】: hard\n【Question Types】: detail, detail, inference\n【Correct Answer Positions】: Question 1=B, Question 2=C, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:47:01.211Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Event coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, ladies and gentlemen. Please be advised that the annual Legal Insights Summit will commence on December 5th at the Grand City Convention Center. This year, our keynote address will be delivered by the renowned legal scholar, Dr. Lisa Montgomery, who will speak at 10:00 AM on the implications of international law on corporate governance. In addition, we have curated a series of in-depth workshops focusing on recent regulatory changes. Attendees are encouraged to register early, as participation is limited due to venue capacity restrictions. The event will conclude with a networking session at 5:00 PM, providing an opportunity for professionals to engage and discuss collaborative potential. Ensure you bring valid identification for event registration. We look forward to your participation and contributions to these essential discussions.\",\n    \"topic\": \"Announcement for the annual Legal Insights Summit\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What time will Dr. Lisa Montgomery begin her keynote address?\",\n      \"options\": [\"9:00 AM\", \"10:00 AM\", \"11:00 AM\", \"12:00 PM\"],\n      \"correct\": \"10:00 AM\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチ内で、Dr. Lisa Montgomeryは10:00 AMからスピーチを始めると言及されているためです。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is one of the main focuses of the workshops mentioned in the announcement?\",\n      \"options\": [\"Legal history\", \"Judicial systems\", \"Regulatory changes\", \"Corporate finance\"],\n      \"correct\": \"Regulatory changes\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチでは、ワークショップの主なテーマの一つとして最近の規制の変更について言及されています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Why should attendees register early for the event?\",\n      \"options\": [\n        \"To receive a discount\",\n        \"Due to venue capacity restrictions\",\n        \"To receive workshop materials\",\n        \"To participate in a prize draw\"\n      ],\n      \"correct\": \"Due to venue capacity restrictions\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチにて、会場の収容能力の制限があるため、早めの登録が推奨されています。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:47:01.212Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: public_event_notice\nIndustry: legal_services\nSpeaker Role: Event coordinator\nTopic: Announcement for the annual Legal Insights Summit\n\nSpeech Text:\nGood morning, ladies and gentlemen. Please be advised that the annual Legal Insights Summit will commence on December 5th at the Grand City Convention Center. This year, our keynote address will be delivered by the renowned legal scholar, Dr. Lisa Montgomery, who will speak at 10:00 AM on the implications of international law on corporate governance. In addition, we have curated a series of in-depth workshops focusing on recent regulatory changes. Attendees are encouraged to register early, as participation is limited due to venue capacity restrictions. The event will conclude with a networking session at 5:00 PM, providing an opportunity for professionals to engage and discuss collaborative potential. Ensure you bring valid identification for event registration. We look forward to your participation and contributions to these essential discussions.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:47:05.452Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"公共イベント通知\",\n  \"textTranslation\": \"おはようございます、皆様。年次リーガル・インサイト・サミットが12月5日にグランドシティコンベンションセンターで開始されることをお知らせいたします。今年は、著名な法律学者であるリサ・モンゴメリー博士が基調講演を行い、10時に国際法が企業統治に与える影響についてお話しされます。また、最近の規制変更に焦点を当てた詳細なワークショップも用意しました。参加者数が会場の収容制限により限られているため、早めの登録をお勧めします。イベントは5時のネットワーキングセッションで終了し、プロフェッショナル同士が交流し、協力の可能性について話し合う機会を提供します。イベント登録のために有効な身分証明書をお持ちください。皆様の参加とこれら重要な議論への貢献を心よりお待ちしております。\",\n  \"topicTranslation\": \"年次リーガル・インサイト・サミットのお知らせ\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:47:05.458Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What time will Dr. Lisa Montgomery begin her keynote address?\nOptions:\nA: 9:00 AM\nB: 10:00 AM\nC: 11:00 AM\nD: 12:00 PM\n\nQuestion 2: What is one of the main focuses of the workshops mentioned in the announcement?\nOptions:\nA: Legal history\nB: Judicial systems\nC: Regulatory changes\nD: Corporate finance\n\nQuestion 3: Why should attendees register early for the event?\nOptions:\nA: To receive a discount\nB: Due to venue capacity restrictions\nC: To receive workshop materials\nD: To participate in a prize draw\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:48:59.325Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"リサ・モンゴメリー博士の基調講演は何時から始まりますか？\",\n      \"optionTranslations\": [\n        \"午前9時\",\n        \"午前10時\",\n        \"午前11時\",\n        \"午後12時\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"お知らせの中で紹介されたワークショップの主な焦点の一つは何ですか？\",\n      \"optionTranslations\": [\n        \"法律史\",\n        \"司法制度\",\n        \"規制の変更\",\n        \"企業財務\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"なぜ参加者はイベントの早期登録を行うべきなのでしょうか？\",\n      \"optionTranslations\": [\n        \"割引を受けるため\",\n        \"会場の収容制限のため\",\n        \"ワークショップ資料を受け取るため\",\n        \"景品抽選に参加するため\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:07.998Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 10:00 AMや9:00 PMのような時間を必ず文章に盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Weather or traffic update (天気・交通情報)\n【Industry】: IT Services (ITサービス)\n【Difficulty】: hard\n【Question Types】: main_purpose, main_purpose, main_purpose\n【Correct Answer Positions】: Question 1=C, Question 2=D, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:17.085Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Traffic Reporter\",\n      \"role\": \"live traffic and weather update announcer\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, everyone. This is your traffic and weather update for the IT services sector today. Starting with the weather, it looks like we will have mostly cloudy skies with occasional showers around 10:00 AM, so be sure to carry your umbrellas if you're heading out. Temperatures will be moderate, oscillating around 70 degrees Fahrenheit. Moving on to traffic, traffic congestion is already building up around the main offices in downtown due to ongoing road work. We expect this to intensify between 9:00 AM to 10:00 AM, especially near the Tech Hub exit on Route 5. Consider alternative routes like the Greenway Express, which currently shows lighter traffic. Please stay tuned for more updates throughout the day to help plan your commute efficiently.\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\n        \"To provide a business update\",\n        \"To inform about an upcoming event\",\n        \"To give a weather and traffic update\",\n        \"To announce a new IT service\"\n      ],\n      \"correct\": \"To give a weather and traffic update\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"アナウンスは天気と交通情報を提供しています。他の選択肢は言及されていません。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What could listeners expect around 10:00 AM according to the announcer?\",\n      \"options\": [\n        \"A severe weather warning\",\n        \"Traffic to clear up\",\n        \"An office meeting\",\n        \"Occasional showers\"\n      ],\n      \"correct\": \"Occasional showers\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"アナウンスでは、10時ごろに雨が降る可能性があると述べられています。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Why might listeners consider using the Greenway Express?\",\n      \"options\": [\n        \"It currently shows lighter traffic\",\n        \"It has new road signage\",\n        \"It's a scenic route\",\n        \"It leads directly to the Tech Hub\"\n      ],\n      \"correct\": \"It currently shows lighter traffic\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"Greenway Expressは現在の渋滞が少ないことが強調されています。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:17.086Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: weather_update\nIndustry: it_services\nSpeaker Role: live traffic and weather update announcer\nTopic: undefined\n\nSpeech Text:\nGood morning, everyone. This is your traffic and weather update for the IT services sector today. Starting with the weather, it looks like we will have mostly cloudy skies with occasional showers around 10:00 AM, so be sure to carry your umbrellas if you're heading out. Temperatures will be moderate, oscillating around 70 degrees Fahrenheit. Moving on to traffic, traffic congestion is already building up around the main offices in downtown due to ongoing road work. We expect this to intensify between 9:00 AM to 10:00 AM, especially near the Tech Hub exit on Route 5. Consider alternative routes like the Greenway Express, which currently shows lighter traffic. Please stay tuned for more updates throughout the day to help plan your commute efficiently.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:21.311Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"天気予報アップデート\",\n  \"textTranslation\": \"おはようございます。こちらは本日のITサービス部門向けの交通と天気のアップデートです。まず天気についてですが、空はほぼ曇りで、時折10時頃に雨が降る見込みですので、お出かけの際は傘をお持ちください。気温は適度で、華氏70度前後で推移します。続いて交通ですが、ダウンタウンの主要オフィス周辺では、工事のためにすでに交通渋滞が発生しています。特に午前9時から10時の間に、ルート5のTech Hub出口付近でこの渋滞が激化することが予想されます。現在、交通量が少ないことが確認されているグリーンウェイエクスプレスなど、代替ルートを考慮してください。快適に通勤できるよう、日中のアップデートをぜひご確認ください。\",\n  \"topicTranslation\": \"未定義\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:21.312Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the main purpose of this announcement?\nOptions:\nA: To provide a business update\nB: To inform about an upcoming event\nC: To give a weather and traffic update\nD: To announce a new IT service\n\nQuestion 2: What could listeners expect around 10:00 AM according to the announcer?\nOptions:\nA: A severe weather warning\nB: Traffic to clear up\nC: An office meeting\nD: Occasional showers\n\nQuestion 3: Why might listeners consider using the Greenway Express?\nOptions:\nA: It currently shows lighter traffic\nB: It has new road signage\nC: It's a scenic route\nD: It leads directly to the Tech Hub\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:27.212Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このお知らせの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"ビジネスの最新情報を提供するため\",\n        \"今後のイベントについて知らせるため\",\n        \"天気と交通の最新情報を提供するため\",\n        \"新しいITサービスを発表するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"アナウンサーによると、午前10時頃に聞き手は何を期待できますか？\",\n      \"optionTranslations\": [\n        \"悪天候の警報\",\n        \"交通状況がよくなること\",\n        \"オフィスミーティング\",\n        \"一時的なにわか雨\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"リスナーはなぜグリーンウェイ・エクスプレスを利用することを検討するかもしれませんか？\",\n      \"optionTranslations\": [\n        \"現在、交通量が少ないから\",\n        \"新しい道路標識があるから\",\n        \"風光明媚なルートだから\",\n        \"テックハブに直接つながっているから\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:37.743Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 10:00 AMや9:00 PMのような時間を必ず文章に盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Radio or podcast broadcast (ラジオ・ポッドキャスト放送)\n【Industry】: Education (教育)\n【Difficulty】: hard\n【Question Types】: main_purpose, next_action, inference\n【Correct Answer Positions】: Question 1=A, Question 2=A, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:48.945Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Education Podcast Host\",\n      \"role\": \"Podcast presenter\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, and welcome to 'Educational Insights.' In today's episode, we explore the innovative approaches to remote learning adopted by top educational institutions. At precisely 10:00 AM, we will be joined by Dr. Elizabeth Harris from the University of Chicago, who will delve into the impact of virtual classrooms on student performance. In addition, we'll interview several students who have experienced these online platforms firsthand. By the end of the show, you'll have a comprehensive understanding of how this paradigm shift is reshaping education. Do stay tuned for a critical analysis of how educators and learners are adapting to this new norm. For our listeners interested in implementing these strategies, we will provide actionable steps in the later part of the program.\"\n  },\n  \"topic\": \"The Impact of Remote Learning in Education\",\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the podcast episode?\",\n      \"options\": [\n        \"To discuss innovative approaches to remote learning.\",\n        \"To interview students about their experiences with education.\",\n        \"To promote a particular educational institution.\",\n        \"To criticize online learning platforms.\"\n      ],\n      \"correct\": \"To discuss innovative approaches to remote learning.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"エピソードの目的は主にリモート学習の革新的なアプローチについて議論することである。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What will happen at 10:00 AM during the podcast?\",\n      \"options\": [\n        \"Dr. Elizabeth Harris will join to discuss virtual classrooms.\",\n        \"Students will share their experiences with online learning.\",\n        \"The host will provide a summary of the show.\",\n        \"Listeners will call in with questions.\"\n      ],\n      \"correct\": \"Dr. Elizabeth Harris will join to discuss virtual classrooms.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"ドクター・エリザベス・ハリスが10:00 AMにバーチャル教室について議論するために参加する。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the podcast's audience?\",\n      \"options\": [\n        \"They are industry professionals looking for entertainment.\",\n        \"They are individuals interested in educational strategies.\",\n        \"They prefer traditional classroom settings.\",\n        \"They oppose remote learning methods.\"\n      ],\n      \"correct\": \"They are individuals interested in educational strategies.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"聴衆は教育戦略に興味を持つ人々であると推測される。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:48.946Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: radio_broadcast\nIndustry: education\nSpeaker Role: Podcast presenter\nTopic: undefined\n\nSpeech Text:\nGood morning, and welcome to 'Educational Insights.' In today's episode, we explore the innovative approaches to remote learning adopted by top educational institutions. At precisely 10:00 AM, we will be joined by Dr. Elizabeth Harris from the University of Chicago, who will delve into the impact of virtual classrooms on student performance. In addition, we'll interview several students who have experienced these online platforms firsthand. By the end of the show, you'll have a comprehensive understanding of how this paradigm shift is reshaping education. Do stay tuned for a critical analysis of how educators and learners are adapting to this new norm. For our listeners interested in implementing these strategies, we will provide actionable steps in the later part of the program.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:51.602Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ラジオ放送\",\n  \"textTranslation\": \"おはようございます。『エデュケーショナル・インサイト』へようこそ。本日のエピソードでは、主要な教育機関が採用している革新的なリモート学習のアプローチを探ります。午前10時ちょうどに、シカゴ大学のエリザベス・ハリス博士にお越しいただき、バーチャルクラスルームが学生の成績に与える影響について掘り下げていただきます。さらに、これらのオンラインプラットフォームを実際に体験した複数の学生へのインタビューも行います。番組終了時には、このパラダイムシフトがどのように教育を再構築しているのか、包括的な理解を持つことができるでしょう。教育者と学習者がこの新しいノルムにどのように適応しているかについての重要な分析をお見逃しなく。この戦略を実行に移したいと考えているリスナーの皆様には、番組後半で具体的なステップをご紹介します。\",\n  \"topicTranslation\": \"定義されていない\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:51.603Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the main purpose of the podcast episode?\nOptions:\nA: To discuss innovative approaches to remote learning.\nB: To interview students about their experiences with education.\nC: To promote a particular educational institution.\nD: To criticize online learning platforms.\n\nQuestion 2: What will happen at 10:00 AM during the podcast?\nOptions:\nA: Dr. Elizabeth Harris will join to discuss virtual classrooms.\nB: Students will share their experiences with online learning.\nC: The host will provide a summary of the show.\nD: Listeners will call in with questions.\n\nQuestion 3: What can be inferred about the podcast's audience?\nOptions:\nA: They are industry professionals looking for entertainment.\nB: They are individuals interested in educational strategies.\nC: They prefer traditional classroom settings.\nD: They oppose remote learning methods.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:49:54.075Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"ポッドキャストエピソードの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"リモート学習への革新的アプローチについて話し合うこと\",\n        \"学生に教育経験についてインタビューすること\",\n        \"特定の教育機関を宣伝すること\",\n        \"オンライン学習プラットフォームを批判すること\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"ポッドキャスト中に午前10時に何が起こりますか？\",\n      \"optionTranslations\": [\n        \"エリザベス・ハリス博士が仮想教室について話すために参加する\",\n        \"学生がオンライン学習の経験を共有する\",\n        \"ホストが番組の要約を提供する\",\n        \"リスナーが質問を受け付ける\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"ポッドキャストの聴衆について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"エンターテインメントを求めている業界の専門家\",\n        \"教育戦略に興味のある個人\",\n        \"伝統的な教室設定を好む\",\n        \"リモート学習方法に反対している\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

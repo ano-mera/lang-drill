@@ -1,0 +1,145 @@
+[
+  {
+    "timestamp": "2025-07-21T03:39:12.892Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "あなたはTOEIC Part 1のテスト作成専門家で、英語リスニング理解テスト用のリアルな場面説明の生成を専門としています。\n\nあなたの任務は、TOEIC Part 1の多肢選択問題の生成に使用される詳細な場面説明を作成することです。これらの場面は、TOEICテストに適した現実的な職場、日常生活、または一般的な状況を描写する必要があります。\n\nガイドライン:\n1. 視覚的で行動指向の場面を作成する\n2. 人々の行動、場所、物体の具体的な詳細を含める\n3. 指定された難易度レベルに適した語彙を使用する\n4. 文化的に中立で専門的な場面にする\n5. 観察可能な行動と状況に焦点を当てる\n\n場面トピック（これらから選択または類似のものを作成）:\n- オフィス環境（会議、プレゼンテーション、デスクワーク）\n- 交通機関（空港、駅、バス）\n- 小売・サービス（買い物、レストラン、銀行）\n- 建設・メンテナンス（建築、修理作業）\n- 医療（病院、クリニック、医療相談）\n- 教育（教室、図書館、研修セッション）\n- 製造業（工場、組立ライン、品質管理）\n- 屋外活動（公園、庭園、スポーツ施設）\n- 公共スペース（ロビー、待合エリア、受付）\n- 技術・機器（コンピュータ、機械、工具）\n\n難易度ガイドライン:\n- Easy: シンプルな行動、一般的な語彙、明確な単一フォーカス\n- Medium: 複数の要素、中程度の語彙、ある程度の複雑さ\n- Hard: 複雑な相互作用、高度な語彙、複数の同時行動\n\n重要: 以下に示す正確な形式の有効なJSONのみを返してください。他のテキスト、説明、またはマークダウン形式を含めないでください。\n\n以下の構造のJSON配列として応答を返してください:\n[\n  {\n    \"sceneDescription\": \"日本語による詳細な場面説明\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"topic\": \"上記リストからの場面カテゴリ\"\n  }\n]\n\n難易度レベル「easy」のTOEIC Part 1問題用に1つの詳細な場面説明を生成してください。トピック「教育」に焦点を当ててください。\n\n各場面は1-2文で、写真で撮影できる特定の瞬間を描写してください。人々が何をしているか、または場面で何が起こっているかについての多肢選択問題に適した、具体的な行動、人々、環境の詳細を含めてください。場面説明は日本語で作成してください。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:14.538Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"教室の中で、教師がホワイトボードに数式を書いている。前列に座っている生徒たちはノートを取りながら、その様子を集中して見ている。\",\n    \"difficulty\": \"easy\",\n    \"topic\": \"教育\"\n  }\n]",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:14.543Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"First option\", \"Second option\", \"Third option\", \"Fourth option\"],\n  \"correct\": \"A\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"教室の中で、教師がホワイトボードに数式を書いている。前列に座っている生徒たちはノートを取りながら、その様子を集中して見ている。\"\nDifficulty: easy\nTopic: 教育\n\nGenerate four answer choices that could describe what someone might see in a photograph. Only ONE should accurately describe the given scene. The other three should be plausible but incorrect distractors.",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:16.535Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "{\n  \"options\": [\n    \"A teacher is writing equations on a whiteboard.\",\n    \"Students are playing games in the classroom.\",\n    \"A teacher is reading a book to the class.\",\n    \"Students are watching a video on a projector.\"\n  ],\n  \"correct\": \"A teacher is writing equations on a whiteboard.\",\n  \"explanation\": \"The scene describes a teacher writing equations on a whiteboard while students take notes, which matches the correct answer.\",\n  \"difficulty\": \"easy\",\n  \"questionType\": \"action\"\n}",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:16.537Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_english_translation",
+    "prompt": "You are a professional Japanese to English translator specializing in TOEIC test content. \n\nTranslate the given Japanese text to natural English that would be appropriate for TOEIC Part 1 scene descriptions. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic English when needed\n- Maintain the meaning and tone of the original\n- Be suitable for English listening comprehension tests\n\nReturn only the English translation without any explanation or additional text.\n\nTranslate to English: 教室の中で、教師がホワイトボードに数式を書いている。前列に座っている生徒たちはノートを取りながら、その様子を集中して見ている。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:17.708Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_english_translation_response",
+    "prompt": "In the classroom, a teacher is writing equations on the whiteboard. The students sitting in the front row are watching attentively while taking notes.",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:17.711Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Students are watching a video on a projector.",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:18.321Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "学生たちは教室でゲームをしています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:18.501Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "先生がクラスに本を読んでいます。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:18.829Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "学生たちはプロジェクターでビデオを見ています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:39:19.174Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "教師がホワイトボードに方程式を書いています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "教育"
+    }
+  }
+]

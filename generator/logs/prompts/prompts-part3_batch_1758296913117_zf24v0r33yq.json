@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-09-19T15:48:33.120Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:48:33.160Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: hard\n- シナリオ: information_update\n- 業種: consulting (Consulting)\n- 正解位置: 問題1はB、問題2はD、問題3はB\n- 話者数: 2人\n- 話者の性別: 話者Aは女性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はConsulting業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: D位置、問題3: B位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:48:57.624Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"information_update\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Susan\", \"role\": \"Senior Consultant\", \"gender\": \"female\"},\n    {\"id\": \"B\", \"name\": \"Rachel\", \"role\": \"Junior Consultant\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Rachel, before we submit the proposal to the client, I need you to update the market analysis section. The data we used is from last year.\"},\n    {\"speaker\": \"B\", \"text\": \"Sure, Susan. I can integrate the latest reports from the economic forum. Do you think we need to adjust our current pricing strategy as well?\"},\n    {\"speaker\": \"A\", \"text\": \"Yes, that's a good idea. Revise the pricing strategy to reflect the new cost structures outlined in the recent financial analysis.\"},\n    {\"speaker\": \"B\", \"text\": \"I will get on that. Also, for the client feedback, should we highlight the projected growth rates based on the revised strategy?\"},\n    {\"speaker\": \"A\", \"text\": \"Definitely, emphasizing growth rates will bolster our proposal. Make sure it's aligned with the updated market trends.\"},\n    {\"speaker\": \"B\", \"text\": \"Got it. I'll wrap up these changes by this afternoon so that we can review the final draft tomorrow.\"},\n    {\"speaker\": \"A\", \"text\": \"Sounds good. Let me know if there are any significant changes that need my immediate input.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What does the first woman ask the second woman to update?\",\n      \"options\": [\"The client list\", \"The market analysis section\", \"The team schedule\", \"The executive summary\"],\n      \"correct\": \"The market analysis section\",\n      \"explanation\": \"会話中で、最初の女性が市場分析セクションの更新を依頼しています。彼女は去年のデータを刷新する必要があると言っています。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"What additional task is the second woman planning to do with the market analysis update?\",\n      \"options\": [\"Create a new presentation\", \"Revisit team roles\", \"Conduct a customer survey\", \"Revise the pricing strategy\"],\n      \"correct\": \"Revise the pricing strategy\",\n      \"explanation\": \"2番目の女性が価格戦略の改定も考えていることを会話の中で述べています。\",\n      \"questionType\": \"Inference\"\n    },\n    {\n      \"question\": \"What is the main benefit of emphasizing projected growth rates in the proposal?\",\n      \"options\": [\"It will highlight their marketing plan\", \"It will bolster their proposal\", \"It helps decrease costs\", \"It targets a wider audience\"],\n      \"correct\": \"It will bolster their proposal\",\n      \"explanation\": \"会話で、成長率を強調することで提案が強化されるという意図が明言されています。\",\n      \"questionType\": \"Purpose\"\n    }\n  ],\n  \"difficulty\": \"hard\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:48:57.625Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: information_update\n\nConversation:\nA: Rachel, before we submit the proposal to the client, I need you to update the market analysis section. The data we used is from last year.\nB: Sure, Susan. I can integrate the latest reports from the economic forum. Do you think we need to adjust our current pricing strategy as well?\nA: Yes, that's a good idea. Revise the pricing strategy to reflect the new cost structures outlined in the recent financial analysis.\nB: I will get on that. Also, for the client feedback, should we highlight the projected growth rates based on the revised strategy?\nA: Definitely, emphasizing growth rates will bolster our proposal. Make sure it's aligned with the updated market trends.\nB: Got it. I'll wrap up these changes by this afternoon so that we can review the final draft tomorrow.\nA: Sounds good. Let me know if there are any significant changes that need my immediate input.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:49:08.344Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"情報更新\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"レイチェル、クライアントに提案を提出する前に、市場分析セクションを更新してもらう必要があります。使用しているデータは昨年のものです。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"わかりました、スーザン。経済フォーラムの最新レポートを統合しますね。現在の価格戦略も調整する必要があると思いますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"はい、それは良い考えです。最新の財務分析で示された新しいコスト構造を反映するよう、価格戦略を見直してください。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"その件に取り掛かります。それと、クライアントへのフィードバックですが、修正された戦略に基づく予測成長率を強調すべきでしょうか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。成長率を強調することで提案が強化されます。更新された市場トレンドに合わせるようにしてください。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"了解です。これらの変更を今日の午後までにまとめて、明日最終稿を確認できるようにします。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"いいですね。もし重要な変更があれば、すぐに知らせてください。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:49:08.345Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What does the first woman ask the second woman to update?\nOptions:\nA: The client list\nB: The market analysis section\nC: The team schedule\nD: The executive summary\n\nQuestion 2: What additional task is the second woman planning to do with the market analysis update?\nOptions:\nA: Create a new presentation\nB: Revisit team roles\nC: Conduct a customer survey\nD: Revise the pricing strategy\n\nQuestion 3: What is the main benefit of emphasizing projected growth rates in the proposal?\nOptions:\nA: It will highlight their marketing plan\nB: It will bolster their proposal\nC: It helps decrease costs\nD: It targets a wider audience\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:49:12.507Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"1番目の女性が2番目の女性に更新を頼んだのは何ですか？\",\n      \"optionTranslations\": [\n        \"顧客リスト\",\n        \"市場分析セクション\",\n        \"チームスケジュール\",\n        \"経営概要\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"2番目の女性が市場分析を更新する際に計画している追加の作業は何ですか？\",\n      \"optionTranslations\": [\n        \"新しいプレゼンテーションを作成する\",\n        \"チームの役割を見直す\",\n        \"顧客アンケートを実施する\",\n        \"価格戦略を見直す\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"提案書で予測成長率を強調する主な利点は何ですか？\",\n      \"optionTranslations\": [\n        \"マーケティング計画を強調する\",\n        \"提案書を強化する\",\n        \"コストを削減するのに役立つ\",\n        \"より広いオーディエンスをターゲットにする\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

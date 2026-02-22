@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2025-08-02T04:24:19.355Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "あなたはTOEIC Part 1のテスト作成専門家で、英語リスニング理解テスト用のリアルな場面説明の生成を専門としています。\n\nあなたの任務は、TOEIC Part 1の多肢選択問題の生成に使用される詳細な場面説明を作成することです。これらの場面は、TOEICテストに適した現実的な職場、日常生活、または一般的な状況を描写する必要があります。\n\nガイドライン:\n1. 視覚的で行動指向の場面を作成する\n2. 人々の行動、場所、物体の具体的な詳細を含める\n3. 指定された難易度レベルに適した語彙を使用する\n4. 文化的に中立で専門的な場面にする\n5. 観察可能な行動と状況に焦点を当てる\n\n難易度ガイドライン:\n- Easy: シンプルな行動、一般的な語彙、明確な単一フォーカス\n- Medium: 複数の要素、中程度の語彙、ある程度の複雑さ\n- Hard: 複雑な相互作用、高度な語彙、複数の同時行動\n\n重要: 以下に示す正確な形式の有効なJSONのみを返してください。他のテキスト、説明、またはマークダウン形式を含めないでください。\n\n以下の構造のJSON配列として応答を返してください:\n[\n  {\n    \"sceneDescription\": \"日本語による詳細な場面説明\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"場面を表す英語文字列\"\n  }\n]\n\n難易度レベル「easy」のTOEIC Part 1問題用に1つの詳細な場面説明を生成してください。\n\n【場面生成の条件】\n- 場面: office\n\n【描写内容】\n- 屋外や窓があるならどのような天気か\n- 何が写っているか\n- 位置関係はどうなっているか\n- 動きがあるならどのような動きか\n\n生成するJSONのsceneフィールドには、以下の値を設定してください：\n\"office\"\n\n各場面は1-2文で、指定された条件に基づいて、写真で撮影できる特定の瞬間を描写してください。人々が何をしているか、または場面で何が起こっているかについての多肢選択問題に適した、具体的な行動、人々、環境の詳細を含めてください。場面説明は日本語で作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:22.964Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"オフィスの窓から外を見ると、晴れた天気が広がっています。デスクに座った男性がコンピュータを操作し、隣の椅子に座った女性と一緒にモニターを見つめています。デスクの上には書類が少し散らばっていて、コーヒーカップが置かれています。\",\n    \"difficulty\": \"easy\",\n    \"scene\": \"office\"\n  }\n]",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:41.504Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"オフィスの窓から外を見ると、晴れた天気が広がっています。デスクに座った男性がコンピュータを操作し、隣の椅子に座った女性と一緒にモニターを見つめています。デスクの上には書類が少し散らばっていて、コーヒーカップが置かれています。\"\nDifficulty: easy\nTopic: undefined\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"D\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: INCORRECT DISTRACTOR - Plausible but clearly wrong  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: CORRECT ANSWER - Must accurately describe the given scene\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position D. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:43.733Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"options\": [\n    \"A man is standing by the window.\",\n    \"A woman is writing notes at a desk.\",\n    \"Two people are talking outside the office.\",\n    \"A man and woman are looking at a monitor.\"\n  ],\n  \"correct\": \"D\",\n  \"explanation\": \"The scene depicts a man and a woman looking at a computer monitor together, which matches option D.\",\n  \"difficulty\": \"easy\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:43.734Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A man is standing by the window.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:43.740Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A woman is writing notes at a desk.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:43.742Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Two people are talking outside the office.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:43.744Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A man and woman are looking at a monitor.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:44.313Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性が机でメモを取っています。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:44.378Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "2人がオフィスの外で話しています。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:44.443Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性と女性がモニターを見ています。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:44.835Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性が窓のそばに立っています。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:44.835Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene depicts a man and a woman looking at a computer monitor together, which matches option D.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T04:24:45.858Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "その場面は、男性と女性が一緒にコンピュータのモニターを見ている様子を描写しており、選択肢Dに一致します。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

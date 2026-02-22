@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2025-08-01T06:02:30.133Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "あなたはTOEIC Part 1のテスト作成専門家で、英語リスニング理解テスト用のリアルな場面説明の生成を専門としています。\n\nあなたの任務は、TOEIC Part 1の多肢選択問題の生成に使用される詳細な場面説明を作成することです。これらの場面は、TOEICテストに適した現実的な職場、日常生活、または一般的な状況を描写する必要があります。\n\nガイドライン:\n1. 視覚的で行動指向の場面を作成する\n2. 人々の行動、場所、物体の具体的な詳細を含める\n3. 指定された難易度レベルに適した語彙を使用する\n4. 文化的に中立で専門的な場面にする\n5. 観察可能な行動と状況に焦点を当てる\n\n難易度ガイドライン:\n- Easy: シンプルな行動、一般的な語彙、明確な単一フォーカス\n- Medium: 複数の要素、中程度の語彙、ある程度の複雑さ\n- Hard: 複雑な相互作用、高度な語彙、複数の同時行動\n\n重要: 以下に示す正確な形式の有効なJSONのみを返してください。他のテキスト、説明、またはマークダウン形式を含めないでください。\n\n以下の構造のJSON配列として応答を返してください:\n[\n  {\n    \"sceneDescription\": \"日本語による詳細な場面説明\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"topic\": \"シーン設定に基づく適切なカテゴリ\",\n    \"sceneFeatures\": {\n      \"subject_category\": \"person/object/structure_scene/animal/vehicle\",\n      \"action_or_state\": \"in_action/in_use/neatly_arranged/decorated/vacant/being_carried/closed\",\n      \"syntax_type\": \"present_progressive/passive_voice/existential_sentence/present_perfect_passive/past_participle_modifier/present_participle_modifier\",\n      \"spatial_relation\": \"in_a_row/in_front_of/behind/next_to/stacked/facing_each_other/inside/beneath\",\n      \"environment\": \"indoor/outdoor/park/station/store/office/nature/meeting_room\",\n      \"time_or_weather\": \"daytime/night/cloudy/sunny/rainy/at_dusk\",\n      \"quantity\": \"singular/plural/some/many/a_group\"\n    }\n  }\n]\n\n難易度レベル「medium」のTOEIC Part 1問題用に1つの詳細な場面説明を生成してください。\n\n【必須シーン設定】: 本屋\n\n【場面生成の制約条件】\n以下の属性を組み込んだ場面を生成してください：\n- 主語カテゴリー: 建物・風景 (structure/scene)\n- 動作・状態: 使用中 (in use)\n- 構文タイプ: 進行形 (present progressive)\n- 空間的関係: 前にある (in front of)\n- 環境: 郵便受けエリア (mailbox area)\n- 時間帯・天候: 夜間 (night)\n- 数量: 単数 (singular)\n\n生成するJSONのsceneFeaturesフィールドには、以下の値を設定してください：\n{\n  \"subject_category\": \"structure/scene\",\n  \"action_or_state\": \"in use\",\n  \"syntax_type\": \"present progressive\",\n  \"spatial_relation\": \"in front of\",\n  \"environment\": \"mailbox area\",\n  \"time_or_weather\": \"night\",\n  \"quantity\": \"singular\"\n}\n\n各場面は1-2文で、指定された条件に基づいて、写真で撮影できる特定の瞬間を描写してください。人々が何をしているか、または場面で何が起こっているかについての多肢選択問題に適した、具体的な行動、人々、環境の詳細を含めてください。場面説明は日本語で作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:34.578Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"夜間、郵便受けエリアの前で、一人の男性が本屋のウィンドウディスプレイを見ています。彼は店内の本をじっくりと眺めながら、何かを選ぼうとしているようです。\",\n    \"difficulty\": \"medium\",\n    \"topic\": \"書店でのシーン\",\n    \"sceneFeatures\": {\n      \"subject_category\": \"structure/scene\",\n      \"action_or_state\": \"in use\",\n      \"syntax_type\": \"present progressive\",\n      \"spatial_relation\": \"in front of\",\n      \"environment\": \"mailbox area\",\n      \"time_or_weather\": \"night\",\n      \"quantity\": \"singular\"\n    }\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:34.580Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"夜間、郵便受けエリアの前で、一人の男性が本屋のウィンドウディスプレイを見ています。彼は店内の本をじっくりと眺めながら、何かを選ぼうとしているようです。\"\nDifficulty: medium\nTopic: 書店でのシーン\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"D\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: INCORRECT DISTRACTOR - Plausible but clearly wrong  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: CORRECT ANSWER - Must accurately describe the given scene\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position D. All other positions must contain believable but incorrect distractors.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:39.753Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"options\": [\n    \"A man is reading a book at a café.\",\n    \"A woman is browsing through clothes in a store.\",\n    \"People are lining up outside a movie theater.\",\n    \"A man is looking at books through a store window.\"\n  ],\n  \"correct\": \"D\",\n  \"explanation\": \"The scene describes a man looking at books through a bookstore window, matching option D.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"action\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:39.754Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A man is reading a book at a café.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:39.755Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A woman is browsing through clothes in a store.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:39.758Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: People are lining up outside a movie theater.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:39.760Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A man is looking at books through a store window.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:40.498Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性が店で服を見て回っています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:40.519Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性が店の窓越しに本を見ています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:40.728Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "人々が映画館の外に並んでいます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:40.831Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性がカフェで本を読んでいます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:40.832Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene describes a man looking at books through a bookstore window, matching option D.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T06:02:42.426Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "その場面は、男性が書店の窓越しに本を見ている様子を描写しており、選択肢Dに該当します。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

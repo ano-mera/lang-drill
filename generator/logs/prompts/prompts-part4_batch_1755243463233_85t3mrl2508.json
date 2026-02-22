@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-15T07:37:43.236Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:37:43.244Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Meeting summary or update (会議の要点や更新)\n【Industry】: Real Estate (不動産)\n【Difficulty】: medium\n【Question Types】: intended_audience, main_purpose, main_purpose\n【Correct Answer Positions】: Question 1=A, Question 2=A, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:37:50.928Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Thomas\",\n      \"role\": \"Project Manager\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, everyone. Thank you for attending today's meeting. I'm Thomas, your project manager, here to provide a quick update on the Riverside apartment project. We've completed the initial phase of construction, and the foundational work went smoothly, staying within both time and budgetary constraints. Now, we're moving into the interior design phase. I want to emphasize the importance of maintaining our current schedule, as any delays could impact our launch date next year. Additionally, our marketing team has prepared a new promotional campaign to attract potential buyers. Feel free to reach out with any questions after the meeting.\",\n    \"topic\": \"Update on the Riverside apartment project\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is the intended audience for this speech?\",\n      \"options\": [\"Team members working on the Riverside project\", \"Potential buyers of the Riverside apartments\", \"Competitors in the real estate industry\", \"Residents of the Riverside area\"],\n      \"correct\": \"Team members working on the Riverside project\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチはプロジェクトのチームメンバーに向けて、進捗状況の更新をするものです。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this speech?\",\n      \"options\": [\"To provide a project update\", \"To announce a project delay\", \"To introduce a new project manager\", \"To detail a marketing strategy\"],\n      \"correct\": \"To provide a project update\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"話者はプロジェクトの進捗と今後のステージについて報告しています。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of the marketing team's new campaign?\",\n      \"options\": [\"To promote the completed construction phase\", \"To hire new employees\", \"To highlight project challenges\", \"To attract potential buyers\"],\n      \"correct\": \"To attract potential buyers\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、マーケティングキャンペーンが潜在的な購入者を引き寄せることを目的としていると述べています。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:37:50.935Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: meeting_summary\nIndustry: real_estate\nSpeaker Role: Project Manager\nTopic: Update on the Riverside apartment project\n\nSpeech Text:\nGood afternoon, everyone. Thank you for attending today's meeting. I'm Thomas, your project manager, here to provide a quick update on the Riverside apartment project. We've completed the initial phase of construction, and the foundational work went smoothly, staying within both time and budgetary constraints. Now, we're moving into the interior design phase. I want to emphasize the importance of maintaining our current schedule, as any delays could impact our launch date next year. Additionally, our marketing team has prepared a new promotional campaign to attract potential buyers. Feel free to reach out with any questions after the meeting.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:37:54.105Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"会議要約\",\n  \"textTranslation\": \"皆さん、こんにちは。本日の会議にご出席いただきありがとうございます。プロジェクトマネージャーのトーマスです。リバーサイドアパートメントプロジェクトの進捗状況を簡単にお知らせします。建設の初期段階が完了し、基礎工事はスムーズに進行し、予定時間と予算内で収まりました。現在、内装デザインのフェーズに進んでいます。スケジュールを維持することの重要性を強調したいと思います。遅延が生じると、来年の発売日に影響を与える可能性があります。また、マーケティングチームが潜在顧客を引き付けるための新しいプロモーションキャンペーンを準備しました。会議後に質問があれば何でもお尋ねください。\",\n  \"topicTranslation\": \"リバーサイドアパートメントプロジェクトの進捗状況\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:37:54.106Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: Who is the intended audience for this speech?\nOptions:\nA: Team members working on the Riverside project\nB: Potential buyers of the Riverside apartments\nC: Competitors in the real estate industry\nD: Residents of the Riverside area\n\nQuestion 2: What is the main purpose of this speech?\nOptions:\nA: To provide a project update\nB: To announce a project delay\nC: To introduce a new project manager\nD: To detail a marketing strategy\n\nQuestion 3: What is the main purpose of the marketing team's new campaign?\nOptions:\nA: To promote the completed construction phase\nB: To hire new employees\nC: To highlight project challenges\nD: To attract potential buyers\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:37:57.492Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このスピーチの対象となる聴衆は誰ですか？\",\n      \"optionTranslations\": [\n        \"リバーサイドプロジェクトに取り組むチームメンバー\",\n        \"リバーサイドアパートメントの潜在的な購入者\",\n        \"不動産業界の競争相手\",\n        \"リバーサイド地域の住民\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このスピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"プロジェクトの最新情報を提供すること\",\n        \"プロジェクトの遅延を発表すること\",\n        \"新しいプロジェクトマネージャーを紹介すること\",\n        \"マーケティング戦略を詳細に伝えること\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"マーケティングチームの新しいキャンペーンの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"完成した建設段階を宣伝すること\",\n        \"新しい従業員を採用すること\",\n        \"プロジェクトの課題を強調すること\",\n        \"潜在的な購入者を引き付けること\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

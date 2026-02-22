@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:45:53
+ログファイル: question-generation-medium-2025-07-25T10-45-53.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 164問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage136",
+  "title": "",
+  "type": "email",
+  "content": "Subject: Scheduling Our Next Project Meeting\n\nDear Team,\n\nI hope this message finds you well. As we approach the next phase of our project, it is crucial to schedule a meeting to discuss our progress and upcoming tasks. I propose we meet next Thursday at 2 PM in the main conference room. This will allow us ample time to align our strategies and address any concerns.\n\nPlease confirm your availability by the end of this week. If the suggested time does not work for you, feel free to propose an alternative. Additionally, please prepare a brief update on your current tasks so we can discuss any potential challenges.\n\nLooking forward to our productive meeting.\n\nBest regards,\n\nAlex Johnson",
+  "contentTranslation": "件名: 次回プロジェクト会議のスケジュール\n\nチームの皆さんへ\n\nお元気でお過ごしでしょうか。プロジェクトの次の段階に進むにあたり、進捗状況と今後のタスクについて話し合う会議をスケジュールすることが重要です。次の木曜日の午後2時にメイン会議室でお会いすることを提案します。これにより、戦略を整え、懸念事項に対処する十分な時間が確保できます。\n\n今週末までにご出席の可否をお知らせください。提案した時間が都合が悪い場合は、代替案を提案してください。また、現在のタスクについて簡単なアップデートを準備し、潜在的な課題を議論できるようにしてください。\n\n生産的な会議を楽しみにしています。\n\nよろしくお願いします。\n\nアレックス・ジョンソン",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the document, when is the proposed meeting scheduled to take place?",
+      "questionTranslation": "文書によると、提案された会議はいつ開催予定ですか？",
+      "options": [
+        "Next Monday at 10 AM",
+        "Next Thursday at 2 PM",
+        "Next Wednesday at 3 PM",
+        "Next Friday at 1 PM"
+      ],
+      "optionTranslations": [
+        "次の月曜日の午前10時",
+        "次の木曜日の午後2時",
+        "次の水曜日の午後3時",
+        "次の金曜日の午後1時"
+      ],
+      "correct": "B",
+      "explanation": "文書内でAlex Johnsonが次の木曜日の午後2時に会議を提案しています。そのため、正解は「次の木曜日の午後2時」です。"
+    },
+    {
+      "id": "q2",
+      "question": "What is required from the team members before the end of the week?",
+      "questionTranslation": "週末までにチームメンバーに求められていることは何ですか？",
+      "options": [
+        "To complete their current tasks",
+        "To confirm their availability",
+        "To submit the project report",
+        "To finalize the project budget"
+      ],
+      "optionTranslations": [
+        "現在のタスクを完了すること",
+        "出席の可否を確認すること",
+        "プロジェクトレポートを提出すること",
+        "プロジェクト予算を確定すること"
+      ],
+      "correct": "B",
+      "explanation": "文書では、Alex Johnsonがチームメンバーに週末までに出席の可否を確認するよう求めています。したがって、正解は「出席の可否を確認すること」です。"
+    },
+    {
+      "id": "q3",
+      "question": "Where will the meeting be held according to the email?",
+      "questionTranslation": "メールによると、会議はどこで開催されますか？",
+      "options": [
+        "In the project manager's office",
+        "In the main conference room",
+        "In the cafeteria",
+        "In the team leader's office"
+      ],
+      "optionTranslations": [
+        "プロジェクトマネージャーのオフィスで",
+        "メイン会議室で",
+        "カフェテリアで",
+        "チームリーダーのオフィスで"
+      ],
+      "correct": "B",
+      "explanation": "Alex Johnsonはメールで、会議がメイン会議室で行われると述べています。そのため、正解は「メイン会議室で」です。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 118,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 165問
+🆔 実際に追加されたID: 
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:46:07
+実行時間: 0.00秒

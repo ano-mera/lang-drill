@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2025-07-13T09:05:07.103Z",
+    "functionName": "generatePassage",
+    "type": "email",
+    "difficulty": "easy",
+    "topic": "meeting_scheduling",
+    "promptType": "generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のemailを作成してください：\n\n【条件】\n- 文書タイプ: email\n- 単語数: 90-120語\n- 難易度: easy\n- トピック: meeting_scheduling\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nSubject: [件名]\n\nDear [受信者],\n\n[本文]\n\nBest regards,\n[署名]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"email\",\n  \"difficulty\": \"easy\",\n  \"topic\": \"meeting_scheduling\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-13T09:05:12.520Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nSubject: Scheduling Our Next Team Meeting\n\nDear Team,\n\nI hope this message finds you well. I am writing to schedule our next team meeting. Could everyone please check their calendars and let me know their availability for next week? I propose meeting on Wednesday at 10:00 AM in the conference room. If this time does not work for you, please suggest an alternative. Additionally, please prepare your project updates in advance.\n\nLooking forward to hearing from all of you soon.\n\nBest regards,\nEmily\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: email\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度2: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度3: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度4: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度5: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度6: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度7: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 499
+    }
+  },
+  {
+    "timestamp": "2025-07-13T09:05:34.195Z",
+    "functionName": "checkPassageQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書情報】\n- 難易度: easy\n- 語数: 83語 (目安範囲: 120-180語（easy難易度標準）)\n- 図表付き: なし\n- 質問数: 3問\n\n\n【難易度別語数目安】\n- Easy: 120-180語（基本的なビジネス文書、簡潔な内容）\n- Normal: 180-250語（標準的なビジネス文書、適度な詳細）\n- Hard: 250-350語（複雑なビジネス文書、詳細な情報）\n\n【文書内容】\nSubject: Scheduling Our Next Team Meeting\n\nDear Team,\n\nI hope this message finds you well. I am writing to schedule our next team meeting. Could everyone please check their calendars and let me know their availability for next week? I propose meeting on Wednesday at 10:00 AM in the conference room. If this time does not work for you, please suggest an alternative. Additionally, please prepare your project updates in advance.\n\nLooking forward to hearing from all of you soon.\n\nBest regards,\nEmily\n\n【質問】\n\n質問1: What is the main purpose of this document?\n選択肢: To schedule a team meeting, To announce a project completion, To introduce a new team member, To request feedback on a report\n正解: A\n解説: この文書の主な目的は、チームミーティングの日程を調整することです。冒頭で「I am writing to schedule our next team meeting」と述べられています。\n\n\n質問2: According to the document, what specific information is mentioned about the meeting?\n選択肢: It will be held in the conference room., It will last for two hours., It will include a presentation., It will be conducted online.\n正解: A\n解説: ミーティングは会議室で行われると「I propose meeting on Wednesday at 10:00 AM in the conference room」とあります。他の選択肢にはこの文書には言及されていません。\n\n\n質問3: What can be inferred from the information provided?\n選択肢: Emily expects team members to come prepared with updates., The meeting is for discussing new hiring strategies., Emily is the head of the HR department., The meeting is a mandatory training session.\n正解: A\n解説: エミリーは「please prepare your project updates in advance」と述べており、チームメンバーが準備してくることを期待しています。他の選択肢は文書に基づいていません。\n\n\n【評価基準】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。一つでも不適合があれば不合格とする。**\n\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか（範囲外の場合は不合格）\n2. 文法正確性: 完全に自然で正確な英語表現か（誤りがある場合は不合格）\n3. 内容妥当性: ビジネス文書として完全に自然か（不自然な場合は不合格）\n4. 構造適合性: TOEIC Part 7の形式に完全に準拠しているか（不準拠の場合は不合格）\n5. 難易度適合性: 指定難易度に完全に適した語彙・構文か（不適合の場合は不合格）\n6. 質問品質: 問題文と選択肢が完全に適切か（不適切な場合は不合格）\n7. 解答根拠: 正解の根拠が文書内に明確かつ確実にあるか（曖昧な場合は不合格）\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|TOEIC準拠|語数\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n\n【判定基準】\n**厳格評価ルール：一つでも条件に一致しないものがあれば不適格とする**\n\n- **合格条件**: 全ての評価項目が基準を満たしている場合のみ approve (Score 90-100)\n- **不合格条件**: 一つでも評価項目で問題がある場合は reject (Score 0-89)\n- **必須条件（一つでも満たさない場合は自動的に reject）**:\n  1. 語数が指定範囲内にある\n  2. 文法的に正確である\n  3. 内容が自然で適切である\n  4. TOEIC Part 7形式に準拠している\n  5. 指定難易度に適している\n  6. 質問が適切である\n  7. 正解の根拠が明確である\n\n- Critical, High, Medium severity の issue が一つでもある場合は自動的に reject\n",
+    "metadata": {
+      "passageId": "passage115",
+      "checkType": "toeic_part7_quality"
+    }
+  },
+  {
+    "timestamp": "2025-07-13T09:05:39.734Z",
+    "functionName": "checkPassageQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が83語と、指定された範囲（120-180語）を下回っています。\",\n      \"suggestion\": \"文書の内容をもう少し詳細にするか、追加の情報を含めて語数を増やしてください。\"\n    }\n  ],\n  \"recommendation\": \"不合格\"\n}",
+    "metadata": {
+      "passageId": "passage115",
+      "checkType": "toeic_part7_quality",
+      "rawResponse": true
+    }
+  }
+]

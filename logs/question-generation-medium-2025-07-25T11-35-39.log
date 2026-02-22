@@ -1,0 +1,118 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 11:35:39
+ログファイル: question-generation-medium-2025-07-25T11-35-39.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 165問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage142",
+  "title": "Subject: Scheduling Our Upcoming Project Meeting",
+  "type": "email",
+  "content": "Dear Team,\n\nI hope this message finds you well. I am writing to schedule our next project meeting to discuss the progress of our current initiatives and outline the next steps. Could everyone kindly confirm their availability for a meeting next Wednesday or Thursday afternoon? Please let me know which day works best for you by the end of this week.\n\nAdditionally, if there are any specific topics or reports you would like to include on the agenda, please email them to me by Monday. Once I have gathered everyone's input, I will send out a detailed agenda by Tuesday morning.\n\nThank you for your cooperation, and I am looking forward to our productive session.\n\nBest regards,\nAlex Johnson",
+  "contentTranslation": "件名: 次回プロジェクト会議のスケジュール調整について\n\nチームの皆さんへ、\n\nお元気でお過ごしでしょうか。現在のイニシアチブの進捗を話し合い、次のステップを明確にするために、次回のプロジェクト会議のスケジュールを調整したいと思います。来週の水曜日か木曜日の午後、どちらかご都合の良い日を教えていただけますか。今週末までにご返答をお願いします。\n\nまた、議題に含めたい特定のトピックやレポートがあれば、月曜日までに私にメールでお知らせください。皆さんの意見を集めた後、火曜日の午前中までに詳細なアジェンダをお送りします。\n\nご協力ありがとうございます。生産的なセッションを楽しみにしています。\n\nよろしくお願いします。\nアレックス・ジョンソン",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To announce a project completion",
+        "To schedule a project meeting",
+        "To introduce a new team member",
+        "To provide a project update"
+      ],
+      "optionTranslations": [
+        "プロジェクトの完了を発表するため",
+        "プロジェクト会議をスケジュールするため",
+        "新しいチームメンバーを紹介するため",
+        "プロジェクトの最新情報を提供するため"
+      ],
+      "correct": "B",
+      "explanation": "メールの冒頭で、次のプロジェクト会議をスケジュールするために書かれたことが述べられています。"
+    },
+    {
+      "id": "q2",
+      "question": "Who should submit topics or reports for the agenda?",
+      "questionTranslation": "誰が議題のトピックやレポートを提出するべきですか？",
+      "options": [
+        "Alex Johnson",
+        "The project manager",
+        "All team members",
+        "The secretary"
+      ],
+      "optionTranslations": [
+        "アレックス・ジョンソン",
+        "プロジェクトマネージャー",
+        "すべてのチームメンバー",
+        "秘書"
+      ],
+      "correct": "C",
+      "explanation": "メールの中で、議題に含めたい具体的なトピックやレポートがある場合、チームメンバー全員がそれを提出するよう求められています。"
+    },
+    {
+      "id": "q3",
+      "question": "By when should team members confirm their availability for the meeting?",
+      "questionTranslation": "チームメンバーはいつまでに会議の出席可能日を確認するべきですか？",
+      "options": [
+        "By Monday",
+        "By the end of this week",
+        "By Tuesday morning",
+        "By next Wednesday"
+      ],
+      "optionTranslations": [
+        "月曜日まで",
+        "今週の終わりまで",
+        "火曜日の朝まで",
+        "次の水曜日まで"
+      ],
+      "correct": "B",
+      "explanation": "メールには、今週の終わりまでに出席可能な日を確認するように指示されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 119,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 166問
+🆔 実際に追加されたID: passage142
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 11:35:56
+実行時間: 0.00秒

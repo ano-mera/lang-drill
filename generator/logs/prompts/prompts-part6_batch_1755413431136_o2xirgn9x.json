@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-08-17T06:50:31.139Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を___で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: letter (Business Letter)\n- ビジネストピック: team_coordination (チーム連携)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: A\n- 空欄2の正解位置: A\n- 空欄3の正解位置: B\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: grammar (文法・語形)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T06:50:38.405Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "```json\n{\n  \"documentType\": \"letter\",\n  \"title\": \"Team Coordination Meeting\",\n  \"fullText\": \"Dear Team,\\n\\nI am writing to remind you about the upcoming team coordination meeting scheduled for next Monday. This meeting is crucial as we will be discussing the new project timelines and assigning roles. ___1___, it is important that everyone prepares their progress reports in advance.\\n\\nPlease ensure that you ___2___ your reports by this Friday, which will give us enough time to review them.\\n\\nAdditionally, we need to finalize the marketing strategy for our latest product launch. During the meeting, we will focus on identifying key areas where ___3___ improvements can be made.\\n\\n___4___ This will help us address any potential obstacles and ensure a successful launch.\\n\\nLooking forward to your active participation.\\n\\nBest regards,\\nPaul Simons\\nTeam Leader\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"Therefore\", \"However\", \"Nevertheless\", \"Consequently\"],\n      \"correct\": \"A\",\n      \"explanation\": \"この文脈では、会議が重要であるため、事前準備が必要という因果関係があるため『Therefore』が適切です。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\"submit\", \"submitting\", \"submitted\", \"to submit\"],\n      \"correct\": \"A\",\n      \"explanation\": \"動詞の原形『submit』が必要です。『ensure that』の後には主語+動詞の形が続きます。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\"profound\", \"significant\", \"minor\", \"subtle\"],\n      \"correct\": \"B\",\n      \"explanation\": \"改善には重要性があるため、『significant（重要な）』が適切です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"Our discussion will also cover resource allocation.\",\n        \"The meeting will last approximately two hours.\",\n        \"Please come prepared with any questions you may have.\",\n        \"The agenda will be sent out shortly.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"事前に質問を用意してくることが、潜在的な障害に対処する助けになるため、この文が適切です。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"team_coordination\",\n  \"wordCount\": 140\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "timestamp": "2025-09-09T08:46:06.206Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":2,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 2,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:06.233Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Emergency alert or update (緊急連絡・注意喚起)\n【Industry】: Real Estate (不動産)\n【Difficulty】: medium\n【Question Types】: intended_audience, main_purpose, speaker_role\n【Correct Answer Positions】: Question 1=A, Question 2=B, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:12.672Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Property Manager\",\n      \"role\": \"Building manager\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good evening, everyone. This is your property manager, Tom Henderson. I am calling to inform you that the water supply to our building will be temporarily shut off tonight from 11 PM to 5 AM for emergency maintenance. We discovered an unexpected leak in the main water line that requires immediate attention. Please make sure to fill any necessary containers with water before the shutdown, and avoid using taps or toilets during this period. We apologize for the inconvenience and thank you for your understanding and cooperation. For any questions, please contact our emergency hotline as listed in the residents' portal.\",\n    \"topic\": \"Emergency water shut-off notification\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is this message intended for?\",\n      \"options\": [\n        \"Residents of the building\",\n        \"Contractors working on site\",\n        \"Visitors to the building\",\n        \"Local businesses in the area\"\n      ],\n      \"correct\": \"Residents of the building\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"メッセージは、ビルの住人に向けて、水の供給が停止することを知らせています。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this message?\",\n      \"options\": [\n        \"To inform about a new construction project\",\n        \"To notify about an emergency water shutdown\",\n        \"To announce a scheduled building inspection\",\n        \"To update about a change in management\"\n      ],\n      \"correct\": \"To notify about an emergency water shutdown\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"メインの目的は緊急の水の供給停止について通知することです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the speaker's role?\",\n      \"options\": [\n        \"Building manager\",\n        \"Water maintenance technician\",\n        \"Resident of the building\",\n        \"Local government official\"\n      ],\n      \"correct\": \"Building manager\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"話者は自身を『プロパティマネージャー』と紹介しています。\",\n      \"questionType\": \"speaker_role\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:12.673Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood evening, everyone. This is your property manager, Tom Henderson. I am calling to inform you that the water supply to our building will be temporarily shut off tonight from 11 PM to 5 AM for emergency maintenance. We discovered an unexpected leak in the main water line that requires immediate attention. Please make sure to fill any necessary containers with water before the shutdown, and avoid using taps or toilets during this period. We apologize for the inconvenience and thank you for your understanding and cooperation. For any questions, please contact our emergency hotline as listed in the residents' portal.\n\nQuestions and Options:\nQuestion 1: Who is this message intended for?\nOptions:\nA: Residents of the building\nB: Contractors working on site\nC: Visitors to the building\nD: Local businesses in the area\n\nQuestion 2: What is the main purpose of this message?\nOptions:\nA: To inform about a new construction project\nB: To notify about an emergency water shutdown\nC: To announce a scheduled building inspection\nD: To update about a change in management\n\nQuestion 3: What is the speaker's role?\nOptions:\nA: Building manager\nB: Water maintenance technician\nC: Resident of the building\nD: Local government official\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:18.066Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆さん、こんばんは。プロパティマネージャーのトム・ヘンダーソンです。緊急メンテナンスのため、今夜11時から朝5時まで一時的にこの建物の給水が停止します。メインの給水管に予期せぬ漏れを発見し、直ちに対処が必要です。給水停止前に必要な容器に水を汲んでおき、この期間中は蛇口やトイレの使用を避けてください。不便をおかけして申し訳ありませんが、ご理解とご協力に感謝いたします。ご質問がある場合は、住民ポータルに記載された緊急ホットラインにご連絡ください。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このメッセージは誰に向けたものですか？\",\n      \"optionTranslations\": [\n        \"この建物の居住者\",\n        \"現場で作業している契約業者\",\n        \"建物を訪問する人々\",\n        \"地域の地元企業\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このメッセージの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しい建設プロジェクトについて知らせるため\",\n        \"緊急の給水停止を通知するため\",\n        \"予定された建物検査を発表するため\",\n        \"管理の変更について更新するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"話者の役割は何ですか？\",\n      \"optionTranslations\": [\n        \"建物の管理者\",\n        \"水のメンテナンステクニシャン\",\n        \"建物の居住者\",\n        \"地元政府の職員\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:29.634Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Phone or voicemail message (電話・留守電メッセージ)\n【Industry】: Public Sector / Government (公共機関／行政)\n【Difficulty】: medium\n【Question Types】: inference, main_purpose, next_action\n【Correct Answer Positions】: Question 1=C, Question 2=A, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:38.093Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"City Clerk\",\n      \"role\": \"Public Information Officer\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Hello, this is a message from the City Clerk’s Office. We would like to inform you that the town hall meeting originally scheduled for this Thursday has been postponed due to unforeseen circumstances. The meeting will now take place next Tuesday at 6 PM in the main auditorium. During this meeting, we will discuss the upcoming community development plans and address any questions or concerns residents may have. Please note that further information will be posted on our official website. If you have any immediate inquiries, feel free to contact our office directly at the number provided on the town’s homepage. Thank you for your understanding and cooperation.\",\n    \"topic\": \"Rescheduling of a town hall meeting\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Why was this message left?\",\n      \"options\": [\n        \"To invite residents to an event\",\n        \"To announce the cancellation of a meeting\",\n        \"To inform about the rescheduling of a meeting\",\n        \"To provide contact information for inquiries\"\n      ],\n      \"correct\": \"To inform about the rescheduling of a meeting\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"メッセージの中で、会議の日程変更について知らせる内容が述べられているため。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What should listeners do if they have questions?\",\n      \"options\": [\n        \"Contact the office directly\",\n        \"Wait for the next meeting\",\n        \"Visit the city clerk in person\",\n        \"Write a letter to the city\"\n      ],\n      \"correct\": \"Contact the office directly\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"メッセージの最後に、質問がある場合はオフィスに直接連絡するように指示があったため。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the main auditorium?\",\n      \"options\": [\n        \"It is undergoing renovations\",\n        \"It is the usual location for meetings\",\n        \"It is smaller than other venues\",\n        \"It has technical difficulties\"\n      ],\n      \"correct\": \"It is the usual location for meetings\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"通常の会議場所として指定されたため、メインの会場であることが推測できる。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:38.093Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nHello, this is a message from the City Clerk’s Office. We would like to inform you that the town hall meeting originally scheduled for this Thursday has been postponed due to unforeseen circumstances. The meeting will now take place next Tuesday at 6 PM in the main auditorium. During this meeting, we will discuss the upcoming community development plans and address any questions or concerns residents may have. Please note that further information will be posted on our official website. If you have any immediate inquiries, feel free to contact our office directly at the number provided on the town’s homepage. Thank you for your understanding and cooperation.\n\nQuestions and Options:\nQuestion 1: Why was this message left?\nOptions:\nA: To invite residents to an event\nB: To announce the cancellation of a meeting\nC: To inform about the rescheduling of a meeting\nD: To provide contact information for inquiries\n\nQuestion 2: What should listeners do if they have questions?\nOptions:\nA: Contact the office directly\nB: Wait for the next meeting\nC: Visit the city clerk in person\nD: Write a letter to the city\n\nQuestion 3: What can be inferred about the main auditorium?\nOptions:\nA: It is undergoing renovations\nB: It is the usual location for meetings\nC: It is smaller than other venues\nD: It has technical difficulties\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-09T08:46:43.417Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"こんにちは、これは市役所の事務局からのお知らせです。今週木曜日に予定されていたタウンホールミーティングが予期せぬ事情により延期されたことをお伝えします。会議は来週の火曜日午後6時にメインオーディトリアムで行われます。この会議では、今後の地域開発計画について議論し、住民からの質問や懸念にお答えします。追加情報は公式ウェブサイトに掲載される予定です。至急のお問い合わせがある場合は、市のホームページに記載されている番号に直接ご連絡ください。ご理解とご協力に感謝いたします。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"なぜこのメッセージが残されたのですか？\",\n      \"optionTranslations\": [\n        \"住民をイベントに招待するため\",\n        \"会議のキャンセルを知らせるため\",\n        \"会議の日程変更を知らせるため\",\n        \"問い合わせ用の連絡先情報を提供するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問がある場合、聞き手は何をすべきですか？\",\n      \"optionTranslations\": [\n        \"直接オフィスに連絡する\",\n        \"次の会議を待つ\",\n        \"市書記に直接会いに行く\",\n        \"市に手紙を書く\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"メインオーディトリアムについて何が推測されますか？\",\n      \"optionTranslations\": [\n        \"改装中である\",\n        \"会議の通常の場所である\",\n        \"他の会場より小さい\",\n        \"技術的な問題がある\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

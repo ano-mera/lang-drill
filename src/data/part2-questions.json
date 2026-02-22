@@ -1,0 +1,5268 @@
+[
+  {
+    "id": "part2_4",
+    "question": "Are you attending the meeting tomorrow at 10 AM?",
+    "questionTranslation": "明日午前10時の会議に出席しますか？",
+    "options": [
+      "Yes, I'll be there.",
+      "I think it's a great idea.",
+      "No, I haven't met him yet."
+    ],
+    "optionTranslations": [
+      "はい、行きます。",
+      "それは素晴らしいアイデアだと思います。",
+      "いいえ、まだ彼に会っていません。"
+    ],
+    "correct": "A",
+    "explanation": "質問は、明日の午前10時に会議に参加するかどうかを尋ねています。正解のAは、参加することを確認する直接的な応答です。",
+    "questionType": "Yes/No",
+    "difficulty": "medium",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-23T09:07:17.671Z",
+    "generationBatch": "part2_batch_1753261626419_7mb4bt3oa",
+    "audioFiles": {
+      "question": {
+        "text": "Are you attending the meeting tomorrow at 10 AM?",
+        "audioPath": "/audio/part2/part2_4_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I'll be there.",
+          "audioPath": "/audio/part2/part2_4_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think it's a great idea.",
+          "audioPath": "/audio/part2/part2_4_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "No, I haven't met him yet.",
+          "audioPath": "/audio/part2/part2_4_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_5",
+    "question": "Has the manager approved the project proposal?",
+    "questionTranslation": "マネージャーはプロジェクト提案を承認しましたか？",
+    "options": [
+      "Yes, it's scheduled for next week.",
+      "Not yet, we're still waiting for her response.",
+      "The meeting was postponed."
+    ],
+    "optionTranslations": [
+      "はい、それは来週に予定されています。",
+      "まだです。彼女の返事を待っています。",
+      "会議は延期されました。"
+    ],
+    "correct": "B",
+    "explanation": "質問はマネージャーがプロジェクト提案を承認したかどうかを尋ねています。選択肢Bは、まだ承認されていないことを示し、正しい応答です。",
+    "questionType": "yes-no",
+    "difficulty": "medium",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-23T09:07:29.404Z",
+    "generationBatch": "part2_batch_1753261626419_7mb4bt3oa",
+    "audioFiles": {
+      "question": {
+        "text": "Has the manager approved the project proposal?",
+        "audioPath": "/audio/part2/part2_5_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, it's scheduled for next week.",
+          "audioPath": "/audio/part2/part2_5_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Not yet, we're still waiting for her response.",
+          "audioPath": "/audio/part2/part2_5_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting was postponed.",
+          "audioPath": "/audio/part2/part2_5_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_6",
+    "question": "Would you like tea or coffee?",
+    "questionTranslation": "お茶かコーヒー、どちらになさいますか？",
+    "options": [
+      "Yes, please.",
+      "I had breakfast already.",
+      "I'll have coffee, please."
+    ],
+    "optionTranslations": [
+      "はい、お願いします。",
+      "もう朝食を食べました。",
+      "コーヒーをお願いします。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は選択疑問文で、2つの選択肢（茶かコーヒーか）から1つを選ぶ形式です。選択肢AとBは質問に直接答えていないため不正解です。選択肢Cは具体的にコーヒーを選んでおり、質問に対する適切な応答です。",
+    "questionType": "choice",
+    "difficulty": "medium",
+    "topic": "日常生活",
+    "createdAt": "2025-07-23T09:07:42.865Z",
+    "generationBatch": "part2_batch_1753261626419_7mb4bt3oa",
+    "audioFiles": {
+      "question": {
+        "text": "Would you like tea or coffee?",
+        "audioPath": "/audio/part2/part2_6_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, please.",
+          "audioPath": "/audio/part2/part2_6_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I had breakfast already.",
+          "audioPath": "/audio/part2/part2_6_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'll have coffee, please.",
+          "audioPath": "/audio/part2/part2_6_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_7",
+    "question": "Could you help me find a gift for a colleague?",
+    "questionTranslation": "同僚への贈り物を探すのを手伝ってもらえますか？",
+    "options": [
+      "Sure, what does your colleague like?",
+      "No, I don't work here.",
+      "I already bought a gift yesterday."
+    ],
+    "optionTranslations": [
+      "もちろんです。あなたの同僚は何が好きですか？",
+      "いいえ、私はここで働いていません。",
+      "昨日すでにプレゼントを買いました。"
+    ],
+    "correct": "A",
+    "explanation": "選択肢Aは依頼に対する適切な応答で、具体的な情報を求めている。選択肢BとCは依頼に無関係または過去の行動に関するものである。",
+    "questionType": "request",
+    "difficulty": "medium",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-23T09:56:15.246Z",
+    "generationBatch": "part2_batch_1753264566657_bignzbab1",
+    "audioFiles": {
+      "question": {
+        "text": "Could you help me find a gift for a colleague?",
+        "audioPath": "/audio/part2/part2_7_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Sure, what does your colleague like?",
+          "audioPath": "/audio/part2/part2_7_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, I don't work here.",
+          "audioPath": "/audio/part2/part2_7_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I already bought a gift yesterday.",
+          "audioPath": "/audio/part2/part2_7_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_8",
+    "question": "Isn't the meeting scheduled for 3 PM?",
+    "questionTranslation": "会議は午後3時に予定されているのではないですか？",
+    "options": [
+      "No, it's in the main conference room.",
+      "Yes, I have the documents ready.",
+      "No, it starts at 4 PM."
+    ],
+    "optionTranslations": [
+      "いいえ、メイン会議室にあります。",
+      "はい、書類の準備ができています。",
+      "いいえ、午後4時に始まります。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議が午後3時に予定されているかどうかを確認するもので、正しい時間を答える必要があります。選択肢Cは開始時間が間違っていることを示しており、正しい応答です。",
+    "questionType": "negative",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-23T09:56:23.633Z",
+    "generationBatch": "part2_batch_1753264566657_bignzbab1",
+    "audioFiles": {
+      "question": {
+        "text": "Isn't the meeting scheduled for 3 PM?",
+        "audioPath": "/audio/part2/part2_8_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, it's in the main conference room.",
+          "audioPath": "/audio/part2/part2_8_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I have the documents ready.",
+          "audioPath": "/audio/part2/part2_8_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "No, it starts at 4 PM.",
+          "audioPath": "/audio/part2/part2_8_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_9",
+    "question": "You're going to the new shopping mall this weekend, aren't you?",
+    "questionTranslation": "今週末、新しいショッピングモールに行くんですよね？",
+    "options": [
+      "No, I haven't been there before.",
+      "Yes, I'm planning to visit on Saturday.",
+      "It's supposed to rain this weekend."
+    ],
+    "optionTranslations": [
+      "いいえ、以前そこに行ったことはありません。",
+      "はい、土曜日に訪問する予定です。",
+      "今週末は雨が降るそうです。"
+    ],
+    "correct": "B",
+    "explanation": "質問は、新しいショッピングモールに行く予定があるかどうかを確認する内容で、付加疑問文によって同意を求めています。したがって、「Yes, I'm planning to visit on Saturday.」が正しい応答となります。",
+    "questionType": "tag",
+    "difficulty": "medium",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-23T09:56:34.142Z",
+    "generationBatch": "part2_batch_1753264566657_bignzbab1",
+    "audioFiles": {
+      "question": {
+        "text": "You're going to the new shopping mall this weekend, aren't you?",
+        "audioPath": "/audio/part2/part2_9_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I haven't been there before.",
+          "audioPath": "/audio/part2/part2_9_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I'm planning to visit on Saturday.",
+          "audioPath": "/audio/part2/part2_9_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It's supposed to rain this weekend.",
+          "audioPath": "/audio/part2/part2_9_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_10",
+    "question": "Do you know if the meeting has been rescheduled?",
+    "questionTranslation": "会議が再調整されたかどうか知っていますか？",
+    "options": [
+      "I haven't finished the report yet.",
+      "Yes, I attended the meeting last week.",
+      "I believe it's been moved to Friday."
+    ],
+    "optionTranslations": [
+      "まだ報告書を終えていません。",
+      "はい、先週の会議に出席しました。",
+      "金曜日に変更されたと思います。"
+    ],
+    "correct": "C",
+    "explanation": "正解の応答Cは、会議が延期されたかどうかという質問に対して適切な情報を提供しています。AとBは質問と関係のない情報を提供しています。",
+    "questionType": "indirect",
+    "difficulty": "medium",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-23T09:56:44.961Z",
+    "generationBatch": "part2_batch_1753264566657_bignzbab1",
+    "audioFiles": {
+      "question": {
+        "text": "Do you know if the meeting has been rescheduled?",
+        "audioPath": "/audio/part2/part2_10_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I haven't finished the report yet.",
+          "audioPath": "/audio/part2/part2_10_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I attended the meeting last week.",
+          "audioPath": "/audio/part2/part2_10_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I believe it's been moved to Friday.",
+          "audioPath": "/audio/part2/part2_10_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_11",
+    "question": "Would you like tea or coffee?",
+    "questionTranslation": "お茶とコーヒー、どちらになさいますか？",
+    "options": [
+      "I don't drink much tea.",
+      "Yes, I would.",
+      "I'll have coffee, please."
+    ],
+    "optionTranslations": [
+      "私はあまりお茶を飲みません。",
+      "はい、そうします。",
+      "コーヒーをお願いします。"
+    ],
+    "correct": "C",
+    "explanation": "質問は飲み物の選択を尋ねています。選択肢Cは、具体的にコーヒーを選んでいるため、質問に正しく答えています。選択肢Aはお茶に関するコメントであり、選択肢Bは質問に対する適切な応答ではありません。",
+    "questionType": "choice",
+    "difficulty": "medium",
+    "topic": "日常生活",
+    "createdAt": "2025-07-23T09:56:52.739Z",
+    "generationBatch": "part2_batch_1753264566657_bignzbab1",
+    "audioFiles": {
+      "question": {
+        "text": "Would you like tea or coffee?",
+        "audioPath": "/audio/part2/part2_11_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I don't drink much tea.",
+          "audioPath": "/audio/part2/part2_11_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I would.",
+          "audioPath": "/audio/part2/part2_11_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'll have coffee, please.",
+          "audioPath": "/audio/part2/part2_11_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_12",
+    "question": "Is the meeting room available this afternoon?",
+    "questionTranslation": "今日の午後、会議室は空いていますか？",
+    "options": [
+      "I think it has a projector.",
+      "Yes, it is free after 2 PM.",
+      "The schedule is on the desk."
+    ],
+    "optionTranslations": [
+      "プロジェクターがあると思います。",
+      "はい、午後2時以降は無料です。",
+      "スケジュールは机の上にあります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は会議室が今日の午後に空いているかどうかを尋ねており、応答Bはその質問に対して直接「2時以降は空いています」と答えています。",
+    "questionType": "Yes/No",
+    "difficulty": "easy",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-23T10:59:37.602Z",
+    "generationBatch": "part2_batch_1753268366115_zi0rc4tp1",
+    "audioFiles": {
+      "question": {
+        "text": "Is the meeting room available this afternoon?",
+        "audioPath": "/audio/part2/part2_12_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think it has a projector.",
+          "audioPath": "/audio/part2/part2_12_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, it is free after 2 PM.",
+          "audioPath": "/audio/part2/part2_12_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The schedule is on the desk.",
+          "audioPath": "/audio/part2/part2_12_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_13",
+    "question": "Do you know if the customer service desk is open now?",
+    "questionTranslation": "今、カスタマーサービスデスクが開いているか知っていますか？",
+    "options": [
+      "I'm not sure what time it opens.",
+      "It should be around the corner.",
+      "Yes, they are open until 6 PM."
+    ],
+    "optionTranslations": [
+      "何時に開くのか分かりません。",
+      "それはすぐ近くだと思います。",
+      "はい、午後6時まで営業しています。"
+    ],
+    "correct": "C",
+    "explanation": "質問は顧客サービスデスクが現在開いているかどうかを尋ねており、Cの回答がその質問に直接答えています。AとBは質問に対する適切な応答ではありません。",
+    "questionType": "indirect",
+    "difficulty": "easy",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-23T12:56:48.157Z",
+    "generationBatch": "part2_batch_1753275397548_pb4i27doq",
+    "audioFiles": {
+      "question": {
+        "text": "Do you know if the customer service desk is open now?",
+        "audioPath": "/audio/part2/part2_13_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure what time it opens.",
+          "audioPath": "/audio/part2/part2_13_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It should be around the corner.",
+          "audioPath": "/audio/part2/part2_13_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, they are open until 6 PM.",
+          "audioPath": "/audio/part2/part2_13_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    },
+    "partType": "part2"
+  },
+  {
+    "id": "part2_14",
+    "question": "Where can I find the customer service desk?",
+    "questionTranslation": "カスタマーサービスデスクはどこにありますか？",
+    "options": [
+      "It's open from 9 AM.",
+      "It's on the second floor.",
+      "Yes, I can help you with that."
+    ],
+    "optionTranslations": [
+      "午前9時から開いています。",
+      "それは2階にあります。",
+      "はい、それについてお手伝いできます。"
+    ],
+    "correct": "B",
+    "explanation": "質問はカスタマーサービスデスクの場所について尋ねています。正しい応答はその場所を示すものであり、Bの「It's on the second floor.」が適切です。",
+    "questionType": "wh-question",
+    "difficulty": "easy",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T03:30:15.419Z",
+    "generationBatch": "part2_batch_1753414207531_4iw1i6ne0",
+    "audioFiles": {
+      "question": {
+        "text": "Where can I find the customer service desk?",
+        "audioPath": "/audio/part2/part2_14_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's open from 9 AM.",
+          "audioPath": "/audio/part2/part2_14_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's on the second floor.",
+          "audioPath": "/audio/part2/part2_14_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I can help you with that.",
+          "audioPath": "/audio/part2/part2_14_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_15",
+    "question": "Isn't the team meeting scheduled for 3 PM?",
+    "questionTranslation": "チーム会議は午後3時に予定されていませんか？",
+    "options": [
+      "No, I haven't met him yet.",
+      "Yes, it's in the main conference room.",
+      "No, it's actually at 2 PM."
+    ],
+    "optionTranslations": [
+      "いいえ、まだ彼に会っていません。",
+      "はい、メイン会議室にあります。",
+      "いいえ、実際には午後2時です。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は、会議の予定時刻について確認するための否定疑問文です。選択肢Cの『No, it's actually at 2 PM.』は、会議が3時ではなく2時に予定されていることを明確に示しており、正しい応答です。",
+    "questionType": "negative",
+    "difficulty": "easy",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-25T03:35:18.574Z",
+    "generationBatch": "part2_batch_1753414510187_fqtha44v2",
+    "audioFiles": {
+      "question": {
+        "text": "Isn't the team meeting scheduled for 3 PM?",
+        "audioPath": "/audio/part2/part2_15_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I haven't met him yet.",
+          "audioPath": "/audio/part2/part2_15_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, it's in the main conference room.",
+          "audioPath": "/audio/part2/part2_15_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "No, it's actually at 2 PM.",
+          "audioPath": "/audio/part2/part2_15_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_16",
+    "question": "Who is responsible for preparing the meeting agenda?",
+    "questionTranslation": "会議の議題を準備するのは誰ですか？",
+    "options": [
+      "That would be John's responsibility.",
+      "The meeting is tomorrow.",
+      "We need to book a conference room."
+    ],
+    "optionTranslations": [
+      "それはジョンの責任です。",
+      "会議は明日です。",
+      "会議室を予約する必要があります。"
+    ],
+    "correct": "A",
+    "explanation": "質問は誰が会議の議題を準備するのかを尋ねているため、正解は責任者を示すAの応答です。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-25T04:27:38.615Z",
+    "generationBatch": "part2_batch_1753417649532_up22gkqjj",
+    "audioFiles": {
+      "question": {
+        "text": "Who is responsible for preparing the meeting agenda?",
+        "audioPath": "/audio/part2/part2_16_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "That would be John's responsibility.",
+          "audioPath": "/audio/part2/part2_16_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting is tomorrow.",
+          "audioPath": "/audio/part2/part2_16_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "We need to book a conference room.",
+          "audioPath": "/audio/part2/part2_16_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_17",
+    "question": "Could you please confirm our meeting time for tomorrow?",
+    "questionTranslation": "明日の会議時間を確認していただけますか？",
+    "options": [
+      "I went to the meeting yesterday.",
+      "Sure, it's scheduled for 10 AM.",
+      "I don't have a schedule."
+    ],
+    "optionTranslations": [
+      "昨日、会議に行きました。",
+      "はい、午前10時に予定されています。",
+      "予定がありません。"
+    ],
+    "correct": "B",
+    "explanation": "質問は翌日の会議時間の確認を依頼しています。選択肢Bはその依頼に直接応答しており、会議の時間を確認して伝えています。選択肢AとCは質問に関連しない回答です。",
+    "questionType": "request_or_command",
+    "difficulty": "medium",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T04:27:57.035Z",
+    "generationBatch": "part2_batch_1753417665083_5x03jmve0",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please confirm our meeting time for tomorrow?",
+        "audioPath": "/audio/part2/part2_17_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I went to the meeting yesterday.",
+          "audioPath": "/audio/part2/part2_17_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Sure, it's scheduled for 10 AM.",
+          "audioPath": "/audio/part2/part2_17_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I don't have a schedule.",
+          "audioPath": "/audio/part2/part2_17_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_18",
+    "question": "Would you prefer to have the meeting in the morning or in the afternoon?",
+    "questionTranslation": "会議は午前中と午後、どちらの時間がよろしいでしょうか？",
+    "options": [
+      "I think it's on the desk.",
+      "Yes, I'd love some coffee.",
+      "In the afternoon would be better."
+    ],
+    "optionTranslations": [
+      "机の上にあると思います。",
+      "はい、ぜひコーヒーをいただきたいです。",
+      "午後の方が良いです。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議を午前か午後のどちらに行うかを尋ねています。選択肢Cは午後が良いと答えており、質問に直接応答しています。",
+    "questionType": "choice_question",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T04:28:06.277Z",
+    "generationBatch": "part2_batch_1753417665083_5x03jmve0",
+    "audioFiles": {
+      "question": {
+        "text": "Would you prefer to have the meeting in the morning or in the afternoon?",
+        "audioPath": "/audio/part2/part2_18_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think it's on the desk.",
+          "audioPath": "/audio/part2/part2_18_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I'd love some coffee.",
+          "audioPath": "/audio/part2/part2_18_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "In the afternoon would be better.",
+          "audioPath": "/audio/part2/part2_18_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_19",
+    "question": "Who is responsible for handling customer complaints?",
+    "questionTranslation": "顧客からのクレーム対応の責任者は誰ですか？",
+    "options": [
+      "The customer service manager.",
+      "Yes, they were resolved.",
+      "In the main office."
+    ],
+    "optionTranslations": [
+      "カスタマーサービスマネージャー。",
+      "はい、解決されました。",
+      "本社で。"
+    ],
+    "correct": "A",
+    "explanation": "質問は誰が顧客の苦情を処理するのかを尋ねています。選択肢Aの「顧客サービスマネージャー」がその役割を示しているため正解です。選択肢BとCは質問に直接答えておらず、不適切です。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "電話対応",
+    "createdAt": "2025-07-25T04:29:45.570Z",
+    "generationBatch": "part2_batch_1753417776531_emeuj8hbi",
+    "audioFiles": {
+      "question": {
+        "text": "Who is responsible for handling customer complaints?",
+        "audioPath": "/audio/part2/part2_19_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "The customer service manager.",
+          "audioPath": "/audio/part2/part2_19_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, they were resolved.",
+          "audioPath": "/audio/part2/part2_19_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "In the main office.",
+          "audioPath": "/audio/part2/part2_19_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_20",
+    "question": "Shall we take the subway to the conference center?",
+    "questionTranslation": "地下鉄で会議センターに行きましょうか。",
+    "options": [
+      "Yes, that's the quickest way.",
+      "I already sent the email.",
+      "The meeting is at 3 PM."
+    ],
+    "optionTranslations": [
+      "はい、それが一番早い方法です。",
+      "すでにメールを送りました。",
+      "会議は午後3時です。"
+    ],
+    "correct": "A",
+    "explanation": "この質問は会議センターまで地下鉄で行く提案をしています。それに対して、'Yes, that's the quickest way.' は提案に同意し、地下鉄が最も速い方法であることを認めています。他の選択肢は質問と関係がありません。",
+    "questionType": "suggestion_or_offer",
+    "difficulty": "medium",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T04:41:41.575Z",
+    "generationBatch": "part2_batch_1753418491037_yb75442da",
+    "audioFiles": {
+      "question": {
+        "text": "Shall we take the subway to the conference center?",
+        "audioPath": "/audio/part2/part2_20_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, that's the quickest way.",
+          "audioPath": "/audio/part2/part2_20_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I already sent the email.",
+          "audioPath": "/audio/part2/part2_20_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting is at 3 PM.",
+          "audioPath": "/audio/part2/part2_20_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_21",
+    "question": "When will the technician arrive to fix the printer?",
+    "questionTranslation": "技術者はいつプリンターを修理しに来ますか？",
+    "options": [
+      "No, I haven't seen the technician today.",
+      "He should be there by 3 PM.",
+      "I think the printer is in the office."
+    ],
+    "optionTranslations": [
+      "いいえ、今日は技術者を見ていません。",
+      "彼は午後3時までには到着するはずです。",
+      "プリンターはオフィスにあると思います。"
+    ],
+    "correct": "B",
+    "explanation": "質問は技術者がいつ到着するかを尋ねているので、時間に関する情報を提供する応答が正解です。選択肢Bは技術者が到着する予定の時間を示しています。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T04:41:50.345Z",
+    "generationBatch": "part2_batch_1753418491037_yb75442da",
+    "audioFiles": {
+      "question": {
+        "text": "When will the technician arrive to fix the printer?",
+        "audioPath": "/audio/part2/part2_21_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I haven't seen the technician today.",
+          "audioPath": "/audio/part2/part2_21_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "He should be there by 3 PM.",
+          "audioPath": "/audio/part2/part2_21_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I think the printer is in the office.",
+          "audioPath": "/audio/part2/part2_21_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_22",
+    "question": "Will the train to downtown leave soon?",
+    "questionTranslation": "ダウンタウン行きの電車はもうすぐ出発しますか？",
+    "options": [
+      "I'm not sure about the schedule.",
+      "Yes, it's departing in ten minutes.",
+      "I prefer taking the bus instead."
+    ],
+    "optionTranslations": [
+      "スケジュールについては確信が持てません。",
+      "はい、あと10分で出発します。",
+      "その代わりにバスに乗る方がいいです。"
+    ],
+    "correct": "B",
+    "explanation": "質問は、ダウンタウン行きの電車がすぐに出発するかどうかを尋ねています。選択肢Bは「はい、あと10分で出発します」と答えており、質問に対する直接的な回答となります。",
+    "questionType": "yes_no_question",
+    "difficulty": "medium",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T04:42:51.763Z",
+    "generationBatch": "part2_batch_1753418562919_36d9d60i0",
+    "audioFiles": {
+      "question": {
+        "text": "Will the train to downtown leave soon?",
+        "audioPath": "/audio/part2/part2_22_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure about the schedule.",
+          "audioPath": "/audio/part2/part2_22_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, it's departing in ten minutes.",
+          "audioPath": "/audio/part2/part2_22_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I prefer taking the bus instead.",
+          "audioPath": "/audio/part2/part2_22_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_24",
+    "question": "The quarterly meeting has been rescheduled to next Thursday.",
+    "questionTranslation": "四半期会議は来週の木曜日に変更されました。",
+    "options": [
+      "Thank you for letting me know. I'll adjust my calendar.",
+      "I haven't seen the meeting agenda yet.",
+      "Yes, I attended the last meeting."
+    ],
+    "optionTranslations": [
+      "お知らせいただきありがとうございます。スケジュールを調整します。",
+      "まだ会議の議題を見ていません。",
+      "はい、前回の会議に出席しました。"
+    ],
+    "correct": "A",
+    "explanation": "この応答は、会議のスケジュール変更についての情報を受け取ったことに対する適切な返答です。他の選択肢は会議のスケジュール変更に直接関係がありません。",
+    "questionType": "statement_response",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T04:52:24.018Z",
+    "generationBatch": "part2_batch_1753419125794_7n55efvqu",
+    "audioFiles": {
+      "question": {
+        "text": "The quarterly meeting has been rescheduled to next Thursday.",
+        "audioPath": "/audio/part2/part2_24_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Thank you for letting me know. I'll adjust my calendar.",
+          "audioPath": "/audio/part2/part2_24_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I haven't seen the meeting agenda yet.",
+          "audioPath": "/audio/part2/part2_24_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I attended the last meeting.",
+          "audioPath": "/audio/part2/part2_24_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_26",
+    "question": "Is the technician coming to fix the printer today?",
+    "questionTranslation": "技術者は今日プリンターを修理しに来ますか？",
+    "options": [
+      "Yes, he is scheduled for this afternoon.",
+      "I think the printer is black.",
+      "No, I haven't printed anything today."
+    ],
+    "optionTranslations": [
+      "はい、彼は今日の午後に予定されています。",
+      "プリンターは黒だと思います。",
+      "いいえ、今日は何も印刷していません。"
+    ],
+    "correct": "A",
+    "explanation": "質問は技術者が今日プリンターを修理しに来るかどうかを尋ねています。選択肢Aはその質問に対して直接『今日の午後に予定されています』と答えており、正しい応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "easy",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T05:09:15.432Z",
+    "generationBatch": "part2_batch_1753420146053_rb4iql536",
+    "audioFiles": {
+      "question": {
+        "text": "Is the technician coming to fix the printer today?",
+        "audioPath": "/audio/part2/part2_26_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, he is scheduled for this afternoon.",
+          "audioPath": "/audio/part2/part2_26_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think the printer is black.",
+          "audioPath": "/audio/part2/part2_26_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "No, I haven't printed anything today.",
+          "audioPath": "/audio/part2/part2_26_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_27",
+    "question": "Could you bring us some more water, please?",
+    "questionTranslation": "すみません、水をもう少し持ってきていただけますか？",
+    "options": [
+      "Yes, I would like some dessert.",
+      "No, I haven't seen the menu yet.",
+      "Certainly, I'll be right back with that."
+    ],
+    "optionTranslations": [
+      "はい、デザートをいただきたいです。",
+      "いいえ、まだメニューを見ていません。",
+      "かしこまりました。すぐに戻ります。"
+    ],
+    "correct": "C",
+    "explanation": "質問は水をもっと持ってきてくれるかという依頼です。選択肢Cの『Certainly, I'll be right back with that.』は、この依頼に対する適切な応答です。",
+    "questionType": "request_or_command",
+    "difficulty": "easy",
+    "topic": "レストラン・食事",
+    "createdAt": "2025-07-25T05:12:25.018Z",
+    "generationBatch": "part2_batch_1753420336392_5x8vzzyhr",
+    "audioFiles": {
+      "question": {
+        "text": "Could you bring us some more water, please?",
+        "audioPath": "/audio/part2/part2_27_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I would like some dessert.",
+          "audioPath": "/audio/part2/part2_27_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, I haven't seen the menu yet.",
+          "audioPath": "/audio/part2/part2_27_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Certainly, I'll be right back with that.",
+          "audioPath": "/audio/part2/part2_27_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_28",
+    "question": "Is the team meeting scheduled for tomorrow?",
+    "questionTranslation": "チームミーティングは明日に予定されていますか？",
+    "options": [
+      "I'm not sure about the agenda.",
+      "Yes, it's set for 10 AM.",
+      "It was a productive session."
+    ],
+    "optionTranslations": [
+      "議題について確信がありません。",
+      "はい、午前10時に設定されています。",
+      "有意義なセッションでした。"
+    ],
+    "correct": "B",
+    "explanation": "この質問は、チームの会議が明日に予定されているかどうかを尋ねています。選択肢Bは「はい、午前10時に設定されています」との回答で、質問に対する直接的で適切な応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "easy",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:15:52.188Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Is the team meeting scheduled for tomorrow?",
+        "audioPath": "/audio/part2/part2_28_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure about the agenda.",
+          "audioPath": "/audio/part2/part2_28_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, it's set for 10 AM.",
+          "audioPath": "/audio/part2/part2_28_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It was a productive session.",
+          "audioPath": "/audio/part2/part2_28_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_29",
+    "question": "Could you send me the updated report by noon?",
+    "questionTranslation": "正午までに更新されたレポートを送っていただけますか。",
+    "options": [
+      "I'm not sure where it is.",
+      "The meeting starts at 1 PM.",
+      "Yes, I'll have it to you by then."
+    ],
+    "optionTranslations": [
+      "どこにあるのかわかりません。",
+      "会議は午後1時に始まります。",
+      "はい、その時までにお渡しします。"
+    ],
+    "correct": "C",
+    "explanation": "この応答は、依頼に対する肯定的な返答であり、報告書を正午までに送ることを約束しています。",
+    "questionType": "request_or_command",
+    "difficulty": "easy",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-25T05:16:01.497Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Could you send me the updated report by noon?",
+        "audioPath": "/audio/part2/part2_29_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure where it is.",
+          "audioPath": "/audio/part2/part2_29_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting starts at 1 PM.",
+          "audioPath": "/audio/part2/part2_29_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I'll have it to you by then.",
+          "audioPath": "/audio/part2/part2_29_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_30",
+    "question": "Good morning, how was your weekend?",
+    "questionTranslation": "おはようございます。週末はいかがでしたか？",
+    "options": [
+      "I'll check the schedule.",
+      "It was great, thank you!",
+      "The meeting starts at 10."
+    ],
+    "optionTranslations": [
+      "スケジュールを確認します。",
+      "素晴らしかったです、ありがとうございます！",
+      "会議は10時に始まります。"
+    ],
+    "correct": "B",
+    "explanation": "この応答は、週末の過ごし方を尋ねる挨拶に対して適切に応答しています。他の選択肢は、スケジュールの確認や会議の開始時間に関するもので、質問に対する答えとして不適切です。",
+    "questionType": "greeting_or_farewell",
+    "difficulty": "easy",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:16:09.288Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Good morning, how was your weekend?",
+        "audioPath": "/audio/part2/part2_30_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'll check the schedule.",
+          "audioPath": "/audio/part2/part2_30_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It was great, thank you!",
+          "audioPath": "/audio/part2/part2_30_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 10.",
+          "audioPath": "/audio/part2/part2_30_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_31",
+    "question": "Shall we start the meeting now?",
+    "questionTranslation": "会議を始めましょうか？",
+    "options": [
+      "No, I didn't see the report.",
+      "Yes, let's begin.",
+      "I have a meeting tomorrow."
+    ],
+    "optionTranslations": [
+      "いいえ、その報告書は見ていません。",
+      "はい、始めましょう。",
+      "明日、会議があります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は会議を始める提案であり、選択肢Bの「Yes, let's begin.」が最も適切な応答です。",
+    "questionType": "suggestion_or_offer",
+    "difficulty": "easy",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:16:16.133Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Shall we start the meeting now?",
+        "audioPath": "/audio/part2/part2_31_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I didn't see the report.",
+          "audioPath": "/audio/part2/part2_31_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, let's begin.",
+          "audioPath": "/audio/part2/part2_31_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I have a meeting tomorrow.",
+          "audioPath": "/audio/part2/part2_31_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_32",
+    "question": "Shall we check out the new shopping mall this weekend?",
+    "questionTranslation": "今週末、新しいショッピングモールを見に行きませんか？",
+    "options": [
+      "Sure, that sounds great!",
+      "I think it's going to rain tomorrow.",
+      "The office is closed on weekends."
+    ],
+    "optionTranslations": [
+      "もちろん、それは素晴らしいですね！",
+      "明日は雨が降ると思います。",
+      "オフィスは週末は閉まっています。"
+    ],
+    "correct": "A",
+    "explanation": "選択肢Aは提案を受け入れているため、質問に対する適切な応答です。選択肢BとCは質問の提案とは関係がありません。",
+    "questionType": "suggestion_or_offer",
+    "difficulty": "easy",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-25T05:16:24.307Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Shall we check out the new shopping mall this weekend?",
+        "audioPath": "/audio/part2/part2_32_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Sure, that sounds great!",
+          "audioPath": "/audio/part2/part2_32_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think it's going to rain tomorrow.",
+          "audioPath": "/audio/part2/part2_32_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The office is closed on weekends.",
+          "audioPath": "/audio/part2/part2_32_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_33",
+    "question": "Where is the nearest subway station?",
+    "questionTranslation": "最寄りの地下鉄の駅はどこですか？",
+    "options": [
+      "It's just around the corner.",
+      "I take the bus every day.",
+      "The meeting starts at 10 AM."
+    ],
+    "optionTranslations": [
+      "すぐ近くです。",
+      "私は毎日バスに乗ります。",
+      "会議は午前10時に始まります。"
+    ],
+    "correct": "A",
+    "explanation": "質問は最寄りの地下鉄駅の場所を尋ねています。選択肢Aの「It's just around the corner.（すぐ近くです）」は、場所を示す適切な答えです。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T05:16:33.777Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Where is the nearest subway station?",
+        "audioPath": "/audio/part2/part2_33_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's just around the corner.",
+          "audioPath": "/audio/part2/part2_33_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I take the bus every day.",
+          "audioPath": "/audio/part2/part2_33_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 10 AM.",
+          "audioPath": "/audio/part2/part2_33_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_34",
+    "question": "How about scheduling the meeting for next Tuesday?",
+    "questionTranslation": "次の火曜日に会議を予定するのはどうですか？",
+    "options": [
+      "No, I haven't met him yet.",
+      "Yes, I received the email.",
+      "That sounds perfect."
+    ],
+    "optionTranslations": [
+      "いいえ、まだ彼に会っていません。",
+      "はい、メールを受け取りました。",
+      "それは完璧ですね。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議を来週の火曜日に予定することについての提案です。選択肢Cの'That sounds perfect.'は、この提案に対する肯定的な応答であり、最も適切です。",
+    "questionType": "suggestion_or_offer",
+    "difficulty": "easy",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:16:40.715Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "How about scheduling the meeting for next Tuesday?",
+        "audioPath": "/audio/part2/part2_34_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I haven't met him yet.",
+          "audioPath": "/audio/part2/part2_34_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I received the email.",
+          "audioPath": "/audio/part2/part2_34_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "That sounds perfect.",
+          "audioPath": "/audio/part2/part2_34_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_35",
+    "question": "What time does the customer service desk open?",
+    "questionTranslation": "カスタマーサービスデスクは何時に開きますか？",
+    "options": [
+      "At 9 AM.",
+      "It's on the third floor.",
+      "I bought it yesterday."
+    ],
+    "optionTranslations": [
+      "午前9時に。",
+      "3階にあります。",
+      "昨日、購入しました。"
+    ],
+    "correct": "A",
+    "explanation": "この質問は顧客サービスデスクが何時に開くかを尋ねています。選択肢Aの「At 9 AM.」は具体的な時間を示しており、質問に直接答えています。他の選択肢は質問に関係のない情報です。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-25T05:16:47.880Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "What time does the customer service desk open?",
+        "audioPath": "/audio/part2/part2_35_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "At 9 AM.",
+          "audioPath": "/audio/part2/part2_35_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's on the third floor.",
+          "audioPath": "/audio/part2/part2_35_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I bought it yesterday.",
+          "audioPath": "/audio/part2/part2_35_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_36",
+    "question": "How are you today?",
+    "questionTranslation": "ご機嫌いかがですか。",
+    "options": [
+      "I'm going to the store later.",
+      "It starts at 3 PM.",
+      "I'm doing well, thank you."
+    ],
+    "optionTranslations": [
+      "後でお店に行きます。",
+      "午後3時に始まります。",
+      "おかげさまで元気です、ありがとうございます。"
+    ],
+    "correct": "C",
+    "explanation": "質問は体調や気分を尋ねるものであり、Cの「I'm doing well, thank you.」が適切な応答です。",
+    "questionType": "greeting_or_farewell",
+    "difficulty": "easy",
+    "topic": "日常生活",
+    "createdAt": "2025-07-25T05:16:55.030Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "How are you today?",
+        "audioPath": "/audio/part2/part2_36_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm going to the store later.",
+          "audioPath": "/audio/part2/part2_36_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_36_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'm doing well, thank you.",
+          "audioPath": "/audio/part2/part2_36_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_37",
+    "question": "Could you give me directions to the nearest train station?",
+    "questionTranslation": "最寄りの駅までの道順を教えていただけますか。",
+    "options": [
+      "I'm planning to drive there.",
+      "Sure, it's two blocks down this street.",
+      "I prefer taking taxis."
+    ],
+    "optionTranslations": [
+      "そこへ車で行く予定です。",
+      "はい、この通りを2ブロック進んだところです。",
+      "タクシーを利用する方が好きです。"
+    ],
+    "correct": "B",
+    "explanation": "この質問は最寄りの駅までの道案内を依頼しています。応答Bは道案内を提供する適切な応答です。他の選択肢は質問に答えていません。",
+    "questionType": "request_or_command",
+    "difficulty": "easy",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T05:17:05.452Z",
+    "generationBatch": "part2_batch_1753420544273_42qcc8vs8",
+    "audioFiles": {
+      "question": {
+        "text": "Could you give me directions to the nearest train station?",
+        "audioPath": "/audio/part2/part2_37_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm planning to drive there.",
+          "audioPath": "/audio/part2/part2_37_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Sure, it's two blocks down this street.",
+          "audioPath": "/audio/part2/part2_37_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I prefer taking taxis.",
+          "audioPath": "/audio/part2/part2_37_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_38",
+    "question": "The meeting is scheduled to begin at 10 AM.",
+    "questionTranslation": "会議は午前10時に開始予定です。",
+    "options": [
+      "I'll make sure to be there on time.",
+      "What time does the meeting end?",
+      "I haven't had breakfast yet."
+    ],
+    "optionTranslations": [
+      "必ず時間通りに行きます。",
+      "会議は何時に終わりますか？",
+      "まだ朝食を食べていません。"
+    ],
+    "correct": "A",
+    "explanation": "選択肢Aは、陳述に対する適切な応答です。会議の開始時刻を聞いて、それに間に合うようにするという意図を示しています。選択肢Bは会議の終了時間についての質問で、選択肢Cは朝食に関する情報で、どちらも元の陳述に対する適切な応答ではありません。",
+    "questionType": "statement_response",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:18:10.208Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "The meeting is scheduled to begin at 10 AM.",
+        "audioPath": "/audio/part2/part2_38_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'll make sure to be there on time.",
+          "audioPath": "/audio/part2/part2_38_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "What time does the meeting end?",
+          "audioPath": "/audio/part2/part2_38_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I haven't had breakfast yet.",
+          "audioPath": "/audio/part2/part2_38_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_39",
+    "question": "Will you take the bus or the train to the conference?",
+    "questionTranslation": "会議にはバスで行きますか、それとも電車ですか？",
+    "options": [
+      "I hope the weather is nice.",
+      "The conference starts at 10 AM.",
+      "I'll take the train."
+    ],
+    "optionTranslations": [
+      "天気が良いことを願っています。",
+      "会議は午前10時に始まります。",
+      "電車に乗ります。"
+    ],
+    "correct": "C",
+    "explanation": "質問は、会議に行くためにバスか電車のどちらを利用するかを尋ねています。選択肢Cの「I'll take the train.」は電車を選ぶという直接的な応答であり、正解です。",
+    "questionType": "choice_question",
+    "difficulty": "medium",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T05:18:18.952Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "Will you take the bus or the train to the conference?",
+        "audioPath": "/audio/part2/part2_39_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I hope the weather is nice.",
+          "audioPath": "/audio/part2/part2_39_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The conference starts at 10 AM.",
+          "audioPath": "/audio/part2/part2_39_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'll take the train.",
+          "audioPath": "/audio/part2/part2_39_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_40",
+    "question": "I just got a new bicycle over the weekend.",
+    "questionTranslation": "週末に新しい自転車を手に入れました。",
+    "options": [
+      "That's great! Do you plan to ride it to work?",
+      "It looks like it might rain tomorrow.",
+      "I think the meeting starts at 3 PM."
+    ],
+    "optionTranslations": [
+      "それは素晴らしいですね！職場までそれに乗って行く予定ですか？",
+      "明日は雨が降りそうです。",
+      "会議は午後3時に始まると思います。"
+    ],
+    "correct": "A",
+    "explanation": "応答Aは、話し手が新しい自転車を手に入れたことに対する自然で関連性のある返答です。応答BとCは話題に関連しておらず、明確に間違っています。",
+    "questionType": "statement_response",
+    "difficulty": "medium",
+    "topic": "日常生活",
+    "createdAt": "2025-07-25T05:18:26.715Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "I just got a new bicycle over the weekend.",
+        "audioPath": "/audio/part2/part2_40_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "That's great! Do you plan to ride it to work?",
+          "audioPath": "/audio/part2/part2_40_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It looks like it might rain tomorrow.",
+          "audioPath": "/audio/part2/part2_40_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I think the meeting starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_40_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_41",
+    "question": "Is the meeting scheduled for 3 PM?",
+    "questionTranslation": "会議は午後3時に予定されていますか？",
+    "options": [
+      "I think it's on the third floor.",
+      "No, the meeting was canceled.",
+      "Yes, it's at 3 PM."
+    ],
+    "optionTranslations": [
+      "3階にあると思います。",
+      "いいえ、会議はキャンセルされました。",
+      "はい、午後3時です。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議が午後3時に予定されているかどうかを尋ねています。選択肢Cはそれを確認する適切な応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:18:33.985Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "Is the meeting scheduled for 3 PM?",
+        "audioPath": "/audio/part2/part2_41_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think it's on the third floor.",
+          "audioPath": "/audio/part2/part2_41_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, the meeting was canceled.",
+          "audioPath": "/audio/part2/part2_41_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, it's at 3 PM.",
+          "audioPath": "/audio/part2/part2_41_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_42",
+    "question": "Hello, this is Jane from ABC Corp. How can I assist you today?",
+    "questionTranslation": "こんにちは、ABC社のジェーンです。本日はどのようにお手伝いできますか？",
+    "options": [
+      "Yes, I sent it yesterday.",
+      "Hi Jane, I need some information about your services.",
+      "It's located downtown, near the station."
+    ],
+    "optionTranslations": [
+      "はい、昨日送りました。",
+      "こんにちは、ジェーンさん。あなたのサービスについて情報が必要です。",
+      "それは駅の近くの中心街にあります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は電話を受けた際のあいさつと対応の開始を示しており、Bの応答は助けてもらいたい内容を示して適切です。AとCは質問の意図に直接答えていません。",
+    "questionType": "greeting_or_farewell",
+    "difficulty": "medium",
+    "topic": "電話対応",
+    "createdAt": "2025-07-25T05:18:41.655Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "Hello, this is Jane from ABC Corp. How can I assist you today?",
+        "audioPath": "/audio/part2/part2_42_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I sent it yesterday.",
+          "audioPath": "/audio/part2/part2_42_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Hi Jane, I need some information about your services.",
+          "audioPath": "/audio/part2/part2_42_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It's located downtown, near the station.",
+          "audioPath": "/audio/part2/part2_42_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_43",
+    "question": "Should we schedule the team meeting for Monday or Wednesday?",
+    "questionTranslation": "チームミーティングは月曜日と水曜日のどちらに予定を入れますか？",
+    "options": [
+      "I haven't received the report yet.",
+      "The deadline is next week.",
+      "Wednesday works better for everyone."
+    ],
+    "optionTranslations": [
+      "まだ報告書を受け取っていません。",
+      "締め切りは来週です。",
+      "水曜日の方が皆にとって都合がいいです。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議の日程を月曜日か水曜日のどちらにするかを尋ねています。選択肢Cの『水曜日がみんなにとって都合がいい』が質問に直接答えているため正解です。",
+    "questionType": "choice_question",
+    "difficulty": "medium",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-25T05:18:52.494Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "Should we schedule the team meeting for Monday or Wednesday?",
+        "audioPath": "/audio/part2/part2_43_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I haven't received the report yet.",
+          "audioPath": "/audio/part2/part2_43_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The deadline is next week.",
+          "audioPath": "/audio/part2/part2_43_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Wednesday works better for everyone.",
+          "audioPath": "/audio/part2/part2_43_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_44",
+    "question": "Could you please send me the minutes of yesterday's meeting?",
+    "questionTranslation": "昨日の会議の議事録を送っていただけますか？",
+    "options": [
+      "I wasn't at the meeting yesterday.",
+      "The meeting lasted for two hours.",
+      "Sure, I will email them to you shortly."
+    ],
+    "optionTranslations": [
+      "昨日の会議には出席していませんでした。",
+      "会議は2時間続きました。",
+      "かしこまりました。すぐにメールでお送りします。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は昨日の会議の議事録を送ってほしいという依頼です。選択肢Cは依頼に応じて、すぐにメールで送るという適切な応答です。",
+    "questionType": "request_or_command",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:19:00.223Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please send me the minutes of yesterday's meeting?",
+        "audioPath": "/audio/part2/part2_44_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I wasn't at the meeting yesterday.",
+          "audioPath": "/audio/part2/part2_44_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting lasted for two hours.",
+          "audioPath": "/audio/part2/part2_44_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Sure, I will email them to you shortly.",
+          "audioPath": "/audio/part2/part2_44_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_45",
+    "question": "Is the meeting scheduled for 10 AM?",
+    "questionTranslation": "会議は午前10時に予定されていますか。",
+    "options": [
+      "Yes, I have a meeting room booked.",
+      "No, it's scheduled for 11 AM.",
+      "I need to finish the report first."
+    ],
+    "optionTranslations": [
+      "はい、会議室を予約しています。",
+      "いいえ、午前11時に予定されています。",
+      "まずは報告書を仕上げる必要があります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は会議のスケジュールについて尋ねており、選択肢Bは会議が11時に予定されていると回答しているため、正しい応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:19:07.617Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "Is the meeting scheduled for 10 AM?",
+        "audioPath": "/audio/part2/part2_45_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I have a meeting room booked.",
+          "audioPath": "/audio/part2/part2_45_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, it's scheduled for 11 AM.",
+          "audioPath": "/audio/part2/part2_45_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I need to finish the report first.",
+          "audioPath": "/audio/part2/part2_45_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_46",
+    "question": "What time does the restaurant open for dinner?",
+    "questionTranslation": "そのレストランは夕食のために何時に開店しますか？",
+    "options": [
+      "There are several menu options.",
+      "I had dinner there last night.",
+      "It opens at 6 PM."
+    ],
+    "optionTranslations": [
+      "メニューにはいくつかの選択肢があります。",
+      "昨夜そこで夕食を取りました。",
+      "午後6時に開店します。"
+    ],
+    "correct": "C",
+    "explanation": "質問はレストランがディナーのために開く時間を尋ねています。選択肢Cの\"It opens at 6 PM.\"がその質問に直接答えています。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "レストラン・食事",
+    "createdAt": "2025-07-25T05:19:14.735Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "What time does the restaurant open for dinner?",
+        "audioPath": "/audio/part2/part2_46_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "There are several menu options.",
+          "audioPath": "/audio/part2/part2_46_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I had dinner there last night.",
+          "audioPath": "/audio/part2/part2_46_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It opens at 6 PM.",
+          "audioPath": "/audio/part2/part2_46_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_47",
+    "question": "How may I assist you today?",
+    "questionTranslation": "本日はどのようにお手伝いできますか？",
+    "options": [
+      "I'm doing well, thank you.",
+      "I'm looking for a new laptop.",
+      "The meeting starts at 3 PM."
+    ],
+    "optionTranslations": [
+      "元気です、ありがとうございます。",
+      "新しいノートパソコンを探しています。",
+      "会議は午後3時に始まります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は顧客サービスにおける挨拶の一環として、どのようにサポートできるかを尋ねています。選択肢Bは具体的な依頼内容を示しており、適切な応答です。",
+    "questionType": "greeting_or_farewell",
+    "difficulty": "medium",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-25T05:19:23.377Z",
+    "generationBatch": "part2_batch_1753420679427_z7bzzbkyw",
+    "audioFiles": {
+      "question": {
+        "text": "How may I assist you today?",
+        "audioPath": "/audio/part2/part2_47_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm doing well, thank you.",
+          "audioPath": "/audio/part2/part2_47_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I'm looking for a new laptop.",
+          "audioPath": "/audio/part2/part2_47_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_47_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_48",
+    "question": "Did you remember to turn off the stove before leaving home?",
+    "questionTranslation": "家を出る前にコンロを消すのを覚えていましたか？",
+    "options": [
+      "I am planning to buy groceries.",
+      "The stove was fixed last week.",
+      "Yes, I made sure it was off."
+    ],
+    "optionTranslations": [
+      "食料品を買う予定です。",
+      "ストーブは先週修理されました。",
+      "はい、電源が切れていることを確認しました。"
+    ],
+    "correct": "C",
+    "explanation": "この質問はガスコンロを消したかどうかを確認するもので、応答Cの「Yes, I made sure it was off.」が適切です。他の選択肢は質問に直接答えていません。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "日常生活",
+    "createdAt": "2025-07-25T05:20:07.917Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Did you remember to turn off the stove before leaving home?",
+        "audioPath": "/audio/part2/part2_48_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I am planning to buy groceries.",
+          "audioPath": "/audio/part2/part2_48_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The stove was fixed last week.",
+          "audioPath": "/audio/part2/part2_48_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I made sure it was off.",
+          "audioPath": "/audio/part2/part2_48_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_49",
+    "question": "Who is responsible for handling client complaints?",
+    "questionTranslation": "顧客の苦情を処理する責任者は誰ですか？",
+    "options": [
+      "I believe they were resolved last week.",
+      "That would be Mr. Thompson in the customer service department.",
+      "Complaints should be written down thoroughly."
+    ],
+    "optionTranslations": [
+      "先週に解決されたと思います。",
+      "それはカスタマーサービス部門のトンプソンさんです。",
+      "苦情は詳細に書き留めるべきです。"
+    ],
+    "correct": "B",
+    "explanation": "質問は『誰が顧客の苦情を処理する責任がありますか？』という内容で、正しい答えは具体的な人物を示す必要があります。選択肢Bの『That would be Mr. Thompson in the customer service department.』は、責任者としてMr. Thompsonを指名しており、質問に直接答えています。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "電話対応",
+    "createdAt": "2025-07-25T05:20:16.217Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Who is responsible for handling client complaints?",
+        "audioPath": "/audio/part2/part2_49_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I believe they were resolved last week.",
+          "audioPath": "/audio/part2/part2_49_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "That would be Mr. Thompson in the customer service department.",
+          "audioPath": "/audio/part2/part2_49_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Complaints should be written down thoroughly.",
+          "audioPath": "/audio/part2/part2_49_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_50",
+    "question": "Are you going to attend the quarterly meeting next Friday?",
+    "questionTranslation": "次の金曜日の四半期会議に出席しますか？",
+    "options": [
+      "I don't think it will rain next Friday.",
+      "The meeting will be held in the main conference room.",
+      "Yes, I have already marked it on my calendar."
+    ],
+    "optionTranslations": [
+      "来週の金曜日は雨が降らないと思います。",
+      "会議は本会議室で行われます。",
+      "はい、すでにカレンダーに記入しました。"
+    ],
+    "correct": "C",
+    "explanation": "質問は、次の金曜日の四半期会議に出席するかどうかを尋ねています。選択肢Cは、参加する予定があることを確認する応答で、質問に直接答えています。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:20:26.789Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Are you going to attend the quarterly meeting next Friday?",
+        "audioPath": "/audio/part2/part2_50_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I don't think it will rain next Friday.",
+          "audioPath": "/audio/part2/part2_50_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting will be held in the main conference room.",
+          "audioPath": "/audio/part2/part2_50_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I have already marked it on my calendar.",
+          "audioPath": "/audio/part2/part2_50_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_51",
+    "question": "Would you prefer to shop online or visit the store in person?",
+    "questionTranslation": "オンラインで買い物をするのと、店舗に直接行くのとではどちらを好みますか？",
+    "options": [
+      "I usually prefer to shop online for convenience.",
+      "The store closes at 8 PM.",
+      "Yes, I bought it yesterday."
+    ],
+    "optionTranslations": [
+      "私は通常、便利さのためにオンラインで買い物をすることを好みます。",
+      "店は午後8時に閉店します。",
+      "はい、昨日それを買いました。"
+    ],
+    "correct": "A",
+    "explanation": "質問はオンラインショッピングと店舗でのショッピングのどちらを好むかを尋ねています。選択肢Aはその質問に直接答えており、正解です。選択肢BとCは質問に対する適切な応答ではありません。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-25T05:20:34.994Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Would you prefer to shop online or visit the store in person?",
+        "audioPath": "/audio/part2/part2_51_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I usually prefer to shop online for convenience.",
+          "audioPath": "/audio/part2/part2_51_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The store closes at 8 PM.",
+          "audioPath": "/audio/part2/part2_51_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I bought it yesterday.",
+          "audioPath": "/audio/part2/part2_51_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_52",
+    "question": "Did you have a chance to say goodbye to Mr. Thompson after the meeting?",
+    "questionTranslation": "会議の後、トンプソンさんに別れの挨拶をする機会はありましたか？",
+    "options": [
+      "Yes, I finished the report yesterday.",
+      "No, he left before I could see him.",
+      "The meeting finished at 3 PM."
+    ],
+    "optionTranslations": [
+      "はい、昨日レポートを終わらせました。",
+      "いいえ、彼は私が会う前に出発しました。",
+      "会議は午後3時に終了しました。"
+    ],
+    "correct": "B",
+    "explanation": "質問は会議後にMr. Thompsonに別れの挨拶をしたかどうかを尋ねています。選択肢Bは彼が去ったため挨拶できなかったという内容で、質問に直接答えています。",
+    "questionType": "greeting_or_farewell",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:20:43.989Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Did you have a chance to say goodbye to Mr. Thompson after the meeting?",
+        "audioPath": "/audio/part2/part2_52_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I finished the report yesterday.",
+          "audioPath": "/audio/part2/part2_52_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, he left before I could see him.",
+          "audioPath": "/audio/part2/part2_52_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting finished at 3 PM.",
+          "audioPath": "/audio/part2/part2_52_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_53",
+    "question": "Is there a shuttle service from the hotel to the airport?",
+    "questionTranslation": "ホテルから空港へのシャトルサービスはありますか？",
+    "options": [
+      "No, there's a meeting at 3 PM.",
+      "Yes, it runs every 30 minutes.",
+      "The restaurant is open until 11 PM."
+    ],
+    "optionTranslations": [
+      "いいえ、午後3時に会議があります。",
+      "はい、30分ごとに運行しています。",
+      "レストランは午後11時まで営業しています。"
+    ],
+    "correct": "B",
+    "explanation": "質問はホテルから空港へのシャトルサービスがあるかどうかを尋ねています。正解はBで、シャトルサービスが30分ごとに運行しているという直接の回答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T05:20:52.072Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Is there a shuttle service from the hotel to the airport?",
+        "audioPath": "/audio/part2/part2_53_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, there's a meeting at 3 PM.",
+          "audioPath": "/audio/part2/part2_53_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, it runs every 30 minutes.",
+          "audioPath": "/audio/part2/part2_53_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The restaurant is open until 11 PM.",
+          "audioPath": "/audio/part2/part2_53_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_54",
+    "question": "Thank you for rescheduling the meeting on such short notice.",
+    "questionTranslation": "急なお願いにもかかわらず、会議の日程を変更してくださりありがとうございます。",
+    "options": [
+      "I believe the meeting room is available now.",
+      "You're welcome, I'm glad it worked out.",
+      "The presentation was very informative."
+    ],
+    "optionTranslations": [
+      "会議室は今空いていると思います。",
+      "どういたしまして、うまくいってよかったです。",
+      "プレゼンテーションはとても有益でした。"
+    ],
+    "correct": "B",
+    "explanation": "質問は感謝の表現ですので、正しい応答は感謝を受け入れるものであるべきです。選択肢Bは『どういたしまして』と感謝を受け入れており、適切な応答です。",
+    "questionType": "thanks_or_apology",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:21:02.060Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Thank you for rescheduling the meeting on such short notice.",
+        "audioPath": "/audio/part2/part2_54_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I believe the meeting room is available now.",
+          "audioPath": "/audio/part2/part2_54_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "You're welcome, I'm glad it worked out.",
+          "audioPath": "/audio/part2/part2_54_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The presentation was very informative.",
+          "audioPath": "/audio/part2/part2_54_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_55",
+    "question": "Has the quarterly financial report been finalized?",
+    "questionTranslation": "四半期の財務報告書は確定しましたか？",
+    "options": [
+      "Yes, it was completed last night.",
+      "We need to discuss the new project.",
+      "The meeting room is on the second floor."
+    ],
+    "optionTranslations": [
+      "はい、昨晩完了しました。",
+      "新しいプロジェクトについて話し合う必要があります。",
+      "会議室は2階にあります。"
+    ],
+    "correct": "A",
+    "explanation": "この応答が正解なのは、質問が四半期の財務報告書が確定したかどうかを尋ねており、選択肢Aがその質問に対して直接的に「はい、昨夜完了しました」と答えているからです。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:21:10.127Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Has the quarterly financial report been finalized?",
+        "audioPath": "/audio/part2/part2_55_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, it was completed last night.",
+          "audioPath": "/audio/part2/part2_55_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "We need to discuss the new project.",
+          "audioPath": "/audio/part2/part2_55_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting room is on the second floor.",
+          "audioPath": "/audio/part2/part2_55_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_56",
+    "question": "Would you prefer to have the air conditioner repaired now or later?",
+    "questionTranslation": "エアコンの修理は今したいですか、それとも後にしますか？",
+    "options": [
+      "I don't think it's raining.",
+      "Let's schedule it for later this week.",
+      "The meeting starts at 3 PM."
+    ],
+    "optionTranslations": [
+      "雨は降っていないと思います。",
+      "今週後半に予定を入れましょう。",
+      "会議は午後3時に始まります。"
+    ],
+    "correct": "B",
+    "explanation": "この質問はエアコンの修理を今行うか後で行うかの選択を求めています。選択肢Bは修理を後で行うことを提案しており、質問に対する直接的な応答です。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T05:21:18.515Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Would you prefer to have the air conditioner repaired now or later?",
+        "audioPath": "/audio/part2/part2_56_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I don't think it's raining.",
+          "audioPath": "/audio/part2/part2_56_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Let's schedule it for later this week.",
+          "audioPath": "/audio/part2/part2_56_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_56_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_57",
+    "question": "Has the quarterly financial report been finalized yet?",
+    "questionTranslation": "四半期財務報告はもう確定しましたか？",
+    "options": [
+      "I haven't seen the finalized report.",
+      "We will discuss it in the next meeting.",
+      "Yes, it was completed yesterday."
+    ],
+    "optionTranslations": [
+      "最終報告書をまだ見ていません。",
+      "次回の会議でそれについて話し合います。",
+      "はい、昨日完了しました。"
+    ],
+    "correct": "C",
+    "explanation": "質問は四半期の財務報告が完成したかどうかを尋ねています。選択肢Cは報告が昨日完成したことを示しており、質問に直接答えています。選択肢Aは報告を見ていないという情報で、選択肢Bは次の会議で話し合うという情報で、どちらも質問の回答にはなっていません。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:21:27.527Z",
+    "generationBatch": "part2_batch_1753420799140_a454f0t8w",
+    "audioFiles": {
+      "question": {
+        "text": "Has the quarterly financial report been finalized yet?",
+        "audioPath": "/audio/part2/part2_57_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I haven't seen the finalized report.",
+          "audioPath": "/audio/part2/part2_57_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "We will discuss it in the next meeting.",
+          "audioPath": "/audio/part2/part2_57_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, it was completed yesterday.",
+          "audioPath": "/audio/part2/part2_57_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_58",
+    "question": "Could you please send me the latest customer feedback report?",
+    "questionTranslation": "最新の顧客フィードバックレポートを送っていただけますか？",
+    "options": [
+      "I think it's on the third floor.",
+      "Sure, I'll email it to you right away.",
+      "The meeting starts at 10 AM."
+    ],
+    "optionTranslations": [
+      "3階にあると思います。",
+      "かしこまりました。すぐにメールでお送りします。",
+      "会議は午前10時に始まります。"
+    ],
+    "correct": "B",
+    "explanation": "この応答は、依頼に対して最も適切な返答であり、依頼された顧客フィードバックレポートを送ることを約束しています。",
+    "questionType": "request_or_command",
+    "difficulty": "easy",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-25T05:21:53.482Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please send me the latest customer feedback report?",
+        "audioPath": "/audio/part2/part2_58_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think it's on the third floor.",
+          "audioPath": "/audio/part2/part2_58_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Sure, I'll email it to you right away.",
+          "audioPath": "/audio/part2/part2_58_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 10 AM.",
+          "audioPath": "/audio/part2/part2_58_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_61",
+    "question": "When is the team meeting scheduled for?",
+    "questionTranslation": "チーム会議はいつ予定されていますか？",
+    "options": [
+      "The meeting room is on the third floor.",
+      "It's scheduled for Wednesday at 10 AM.",
+      "I sent the email yesterday."
+    ],
+    "optionTranslations": [
+      "会議室は3階にあります。",
+      "水曜日の午前10時に予定されています。",
+      "昨日、メールを送りました。"
+    ],
+    "correct": "B",
+    "explanation": "質問はチームミーティングがいつ予定されているかを尋ねています。選択肢Bは具体的な日時を答えており、質問に直接答える正しい応答です。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:22:23.542Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "When is the team meeting scheduled for?",
+        "audioPath": "/audio/part2/part2_61_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "The meeting room is on the third floor.",
+          "audioPath": "/audio/part2/part2_61_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's scheduled for Wednesday at 10 AM.",
+          "audioPath": "/audio/part2/part2_61_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I sent the email yesterday.",
+          "audioPath": "/audio/part2/part2_61_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_62",
+    "question": "Is the weekly team meeting scheduled for 3 PM?",
+    "questionTranslation": "毎週のチーム会議は午後3時に予定されていますか？",
+    "options": [
+      "I believe it's on the second floor.",
+      "Yes, that's correct.",
+      "We discussed the budget last week."
+    ],
+    "optionTranslations": [
+      "2階にあると思います。",
+      "はい、その通りです。",
+      "先週、予算について話し合いました。"
+    ],
+    "correct": "B",
+    "explanation": "質問はチームの週次会議が午後3時に予定されているかどうかを尋ねています。選択肢Bの「Yes, that's correct.」は、この質問に対する正しい肯定的な応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "easy",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:22:33.443Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "Is the weekly team meeting scheduled for 3 PM?",
+        "audioPath": "/audio/part2/part2_62_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I believe it's on the second floor.",
+          "audioPath": "/audio/part2/part2_62_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, that's correct.",
+          "audioPath": "/audio/part2/part2_62_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "We discussed the budget last week.",
+          "audioPath": "/audio/part2/part2_62_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_63",
+    "question": "When is the meeting scheduled?",
+    "questionTranslation": "会議はいつ予定されていますか。",
+    "options": [
+      "It's in the conference room.",
+      "It's scheduled for 3 PM.",
+      "I prepared the agenda yesterday."
+    ],
+    "optionTranslations": [
+      "会議室にあります。",
+      "午後3時に予定されています。",
+      "昨日、議題を準備しました。"
+    ],
+    "correct": "B",
+    "explanation": "質問は会議の予定時刻について尋ねています。選択肢B「It's scheduled for 3 PM.」は、この質問に直接答えています。他の選択肢は会議の場所や準備に関するもので、時間には答えていません。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:22:40.379Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "When is the meeting scheduled?",
+        "audioPath": "/audio/part2/part2_63_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's in the conference room.",
+          "audioPath": "/audio/part2/part2_63_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's scheduled for 3 PM.",
+          "audioPath": "/audio/part2/part2_63_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I prepared the agenda yesterday.",
+          "audioPath": "/audio/part2/part2_63_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_64",
+    "question": "When will the technician arrive to fix the air conditioner?",
+    "questionTranslation": "技術者はエアコンを修理するためにいつ到着しますか？",
+    "options": [
+      "It's a new model of air conditioner.",
+      "He should be there by 3 PM.",
+      "The repair will take about an hour."
+    ],
+    "optionTranslations": [
+      "それは新型のエアコンです。",
+      "彼は午後3時までにそこにいるはずです。",
+      "修理には約1時間かかります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は技術者がいつ到着するかを尋ねています。選択肢Bは技術者の到着時間を示しており、正しい応答です。選択肢AとCは到着時間とは関係ありません。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T05:22:51.394Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "When will the technician arrive to fix the air conditioner?",
+        "audioPath": "/audio/part2/part2_64_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's a new model of air conditioner.",
+          "audioPath": "/audio/part2/part2_64_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "He should be there by 3 PM.",
+          "audioPath": "/audio/part2/part2_64_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The repair will take about an hour.",
+          "audioPath": "/audio/part2/part2_64_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_65",
+    "question": "Could you please send me the updated report by the end of the day?",
+    "questionTranslation": "本日中に更新された報告書をお送りいただけますか？",
+    "options": [
+      "I'm going to the meeting now.",
+      "Sure, I'll email it to you shortly.",
+      "The weather is nice today."
+    ],
+    "optionTranslations": [
+      "これから会議に行きます。",
+      "かしこまりました。すぐにメールでお送りします。",
+      "今日は天気がいいですね。"
+    ],
+    "correct": "B",
+    "explanation": "質問は報告書を送るよう依頼しているため、Bの「Sure, I'll email it to you shortly.」が適切な応答です。",
+    "questionType": "request_or_command",
+    "difficulty": "easy",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-25T05:23:00.355Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please send me the updated report by the end of the day?",
+        "audioPath": "/audio/part2/part2_65_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm going to the meeting now.",
+          "audioPath": "/audio/part2/part2_65_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Sure, I'll email it to you shortly.",
+          "audioPath": "/audio/part2/part2_65_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The weather is nice today.",
+          "audioPath": "/audio/part2/part2_65_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_66",
+    "question": "When is the next team meeting scheduled?",
+    "questionTranslation": "次のチームミーティングはいつ予定されていますか？",
+    "options": [
+      "I will attend the meeting.",
+      "It was about the new project.",
+      "It's scheduled for Thursday at 3 PM."
+    ],
+    "optionTranslations": [
+      "会議に出席します。",
+      "それは新しいプロジェクトについてでした。",
+      "それは木曜日の午後3時に予定されています。"
+    ],
+    "correct": "C",
+    "explanation": "質問は次のチーム会議がいつ予定されているかを尋ねており、選択肢Cが具体的な日時を示しているため正解です。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:23:07.135Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "When is the next team meeting scheduled?",
+        "audioPath": "/audio/part2/part2_66_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I will attend the meeting.",
+          "audioPath": "/audio/part2/part2_66_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It was about the new project.",
+          "audioPath": "/audio/part2/part2_66_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It's scheduled for Thursday at 3 PM.",
+          "audioPath": "/audio/part2/part2_66_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_67",
+    "question": "When is the team meeting scheduled for?",
+    "questionTranslation": "チームミーティングはいつ予定されていますか。",
+    "options": [
+      "I believe it's in Conference Room B.",
+      "Can you send me the report by Friday?",
+      "It's scheduled for next Monday at 10 AM."
+    ],
+    "optionTranslations": [
+      "会議室Bにあると思います。",
+      "金曜日までに報告書を送っていただけますか。",
+      "次の月曜日の午前10時に予定されています。"
+    ],
+    "correct": "C",
+    "explanation": "質問はチームミーティングがいつ予定されているかを尋ねています。選択肢Cは具体的な日時を示しており、質問に直接答えています。",
+    "questionType": "wh_question",
+    "difficulty": "easy",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:23:17.878Z",
+    "generationBatch": "part2_batch_1753420906095_6vfzkhcdg",
+    "audioFiles": {
+      "question": {
+        "text": "When is the team meeting scheduled for?",
+        "audioPath": "/audio/part2/part2_67_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I believe it's in Conference Room B.",
+          "audioPath": "/audio/part2/part2_67_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Can you send me the report by Friday?",
+          "audioPath": "/audio/part2/part2_67_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It's scheduled for next Monday at 10 AM.",
+          "audioPath": "/audio/part2/part2_67_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_68",
+    "question": "When is the next team meeting scheduled?",
+    "questionTranslation": "次のチーム会議はいつ予定されていますか？",
+    "options": [
+      "It's in the conference room.",
+      "I think the report is ready.",
+      "It's scheduled for next Tuesday at 10 AM."
+    ],
+    "optionTranslations": [
+      "会議室にあります。",
+      "その報告書は準備が整ったと思います。",
+      "次の火曜日の午前10時に予定されています。"
+    ],
+    "correct": "C",
+    "explanation": "質問は次のチームミーティングの予定を尋ねています。選択肢Cが具体的な日時を示しており、質問に直接答えています。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:24:04.093Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "When is the next team meeting scheduled?",
+        "audioPath": "/audio/part2/part2_68_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's in the conference room.",
+          "audioPath": "/audio/part2/part2_68_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think the report is ready.",
+          "audioPath": "/audio/part2/part2_68_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It's scheduled for next Tuesday at 10 AM.",
+          "audioPath": "/audio/part2/part2_68_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_69",
+    "question": "Do you have any vegetarian options on the menu?",
+    "questionTranslation": "メニューにベジタリアン用の選択肢はありますか？",
+    "options": [
+      "Yes, we have several vegetarian dishes available.",
+      "The restaurant closes at 10 PM.",
+      "I think the chef is busy right now."
+    ],
+    "optionTranslations": [
+      "はい、ベジタリアン料理をいくつかご用意しております。",
+      "レストランは午後10時に閉店します。",
+      "シェフは今忙しいと思います。"
+    ],
+    "correct": "A",
+    "explanation": "質問はレストランのメニューにベジタリアン向けの選択肢があるかどうかを尋ねています。選択肢Aは、いくつかのベジタリアン料理があると直接答えており、適切です。",
+    "questionType": "yes_no_question",
+    "difficulty": "medium",
+    "topic": "レストラン・食事",
+    "createdAt": "2025-07-25T05:24:12.934Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "Do you have any vegetarian options on the menu?",
+        "audioPath": "/audio/part2/part2_69_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, we have several vegetarian dishes available.",
+          "audioPath": "/audio/part2/part2_69_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The restaurant closes at 10 PM.",
+          "audioPath": "/audio/part2/part2_69_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I think the chef is busy right now.",
+          "audioPath": "/audio/part2/part2_69_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_70",
+    "question": "We're planning to hold a team meeting tomorrow afternoon.",
+    "questionTranslation": "明日の午後にチーム会議を開催する予定です。",
+    "options": [
+      "I'll make sure to be there.",
+      "The weather is nice today.",
+      "I haven't been to the new restaurant yet."
+    ],
+    "optionTranslations": [
+      "必ず行くようにします。",
+      "今日は天気がいいです。",
+      "まだ新しいレストランには行っていません。"
+    ],
+    "correct": "A",
+    "explanation": "この応答は、陳述された計画に対する適切な反応であり、会議に出席する意思を示しています。他の選択肢は関連性がありません。",
+    "questionType": "statement_response",
+    "difficulty": "medium",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-25T05:24:20.667Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "We're planning to hold a team meeting tomorrow afternoon.",
+        "audioPath": "/audio/part2/part2_70_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'll make sure to be there.",
+          "audioPath": "/audio/part2/part2_70_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The weather is nice today.",
+          "audioPath": "/audio/part2/part2_70_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I haven't been to the new restaurant yet.",
+          "audioPath": "/audio/part2/part2_70_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_71",
+    "question": "Where can I find the electronics section in this store?",
+    "questionTranslation": "この店の電化製品売り場はどこですか？",
+    "options": [
+      "Yes, I can help you with that.",
+      "It's open until 9 PM.",
+      "It's on the second floor, near the escalator."
+    ],
+    "optionTranslations": [
+      "はい、それについてお手伝いできます。",
+      "午後9時まで営業しています。",
+      "エスカレーターの近く、2階にあります。"
+    ],
+    "correct": "C",
+    "explanation": "質問はどこで電子製品のコーナーを見つけられるかを尋ねており、場所の情報を求めています。選択肢Cはその場所を具体的に示しており、正しい応答です。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-25T05:24:31.319Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "Where can I find the electronics section in this store?",
+        "audioPath": "/audio/part2/part2_71_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I can help you with that.",
+          "audioPath": "/audio/part2/part2_71_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's open until 9 PM.",
+          "audioPath": "/audio/part2/part2_71_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It's on the second floor, near the escalator.",
+          "audioPath": "/audio/part2/part2_71_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_73",
+    "question": "Why don't we schedule the meeting for next Monday?",
+    "questionTranslation": "次の月曜日に会議を予定しませんか？",
+    "options": [
+      "I don't have the meeting agenda.",
+      "We already discussed that topic.",
+      "Yes, that works for me."
+    ],
+    "optionTranslations": [
+      "会議の議題を持っていません。",
+      "その件についてはすでに話し合いました。",
+      "はい、大丈夫です。"
+    ],
+    "correct": "C",
+    "explanation": "選択肢Cの 'Yes, that works for me.' は提案に対する肯定的な応答であり、次の月曜日に会議を予定することに同意していることを示しています。他の選択肢は質問に対する適切な応答ではありません。",
+    "questionType": "suggestion_or_offer",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:24:48.660Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "Why don't we schedule the meeting for next Monday?",
+        "audioPath": "/audio/part2/part2_73_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I don't have the meeting agenda.",
+          "audioPath": "/audio/part2/part2_73_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "We already discussed that topic.",
+          "audioPath": "/audio/part2/part2_73_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, that works for me.",
+          "audioPath": "/audio/part2/part2_73_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_74",
+    "question": "Who is responsible for preparing the meeting agenda?",
+    "questionTranslation": "会議の議題を準備するのは誰ですか？",
+    "options": [
+      "Alice, the project manager.",
+      "It starts at 10 AM.",
+      "I haven't checked my emails yet."
+    ],
+    "optionTranslations": [
+      "プロジェクトマネージャーのアリス。",
+      "午前10時に始まります。",
+      "まだメールを確認していません。"
+    ],
+    "correct": "A",
+    "explanation": "質問は会議の議題を準備する人について尋ねています。選択肢Aはその人物について具体的に答えており、選択肢BとCは質問に関連しない情報です。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:24:59.140Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "Who is responsible for preparing the meeting agenda?",
+        "audioPath": "/audio/part2/part2_74_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Alice, the project manager.",
+          "audioPath": "/audio/part2/part2_74_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It starts at 10 AM.",
+          "audioPath": "/audio/part2/part2_74_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I haven't checked my emails yet.",
+          "audioPath": "/audio/part2/part2_74_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_75",
+    "question": "When will the technician arrive to fix the copier?",
+    "questionTranslation": "技術者はいつコピー機を修理しに来ますか？",
+    "options": [
+      "He should be there by 2 PM.",
+      "I think the copier is in the meeting room.",
+      "Yes, I need some extra paper."
+    ],
+    "optionTranslations": [
+      "彼は午後2時までにそこにいるはずです。",
+      "コピー機は会議室にあると思います。",
+      "はい、追加の紙が必要です。"
+    ],
+    "correct": "A",
+    "explanation": "この応答は技術者が到着する時間について尋ねられた質問に直接答えています。他の選択肢は、場所に関する情報や、関連のない要求への応答です。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T05:25:07.662Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "When will the technician arrive to fix the copier?",
+        "audioPath": "/audio/part2/part2_75_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "He should be there by 2 PM.",
+          "audioPath": "/audio/part2/part2_75_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think the copier is in the meeting room.",
+          "audioPath": "/audio/part2/part2_75_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I need some extra paper.",
+          "audioPath": "/audio/part2/part2_75_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_76",
+    "question": "Did you remember to lock the front door?",
+    "questionTranslation": "玄関のドアを鍵をかけるのを忘れませんでしたか？",
+    "options": [
+      "Yes, they are in the drawer.",
+      "No, I haven't seen him since morning.",
+      "Yes, I locked it before leaving."
+    ],
+    "optionTranslations": [
+      "はい、それらは引き出しの中にあります。",
+      "いいえ、今朝以来彼を見ていません。",
+      "はい、出る前に鍵をかけました。"
+    ],
+    "correct": "C",
+    "explanation": "質問は「あなたは玄関のドアに鍵をかけたことを覚えていますか？」という内容です。正解の選択肢Cは「はい、出かける前に鍵をかけました」という直接的な応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "medium",
+    "topic": "日常生活",
+    "createdAt": "2025-07-25T05:25:16.631Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "Did you remember to lock the front door?",
+        "audioPath": "/audio/part2/part2_76_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, they are in the drawer.",
+          "audioPath": "/audio/part2/part2_76_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, I haven't seen him since morning.",
+          "audioPath": "/audio/part2/part2_76_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I locked it before leaving.",
+          "audioPath": "/audio/part2/part2_76_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_77",
+    "question": "When is the project deadline?",
+    "questionTranslation": "プロジェクトの締め切りはいつですか。",
+    "options": [
+      "It's in the meeting room.",
+      "It's due next Friday.",
+      "I sent the email yesterday."
+    ],
+    "optionTranslations": [
+      "会議室にあります。",
+      "締め切りは来週の金曜日です。",
+      "昨日、メールを送りました。"
+    ],
+    "correct": "B",
+    "explanation": "質問はプロジェクトの締め切りがいつなのかを尋ねており、選択肢Bの『It's due next Friday.』が唯一その質問に直接答えています。他の選択肢は質問の意図に合っていません。",
+    "questionType": "wh_question",
+    "difficulty": "medium",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:25:25.561Z",
+    "generationBatch": "part2_batch_1753421036596_jcv4ynr1o",
+    "audioFiles": {
+      "question": {
+        "text": "When is the project deadline?",
+        "audioPath": "/audio/part2/part2_77_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's in the meeting room.",
+          "audioPath": "/audio/part2/part2_77_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's due next Friday.",
+          "audioPath": "/audio/part2/part2_77_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I sent the email yesterday.",
+          "audioPath": "/audio/part2/part2_77_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_78",
+    "question": "Where can I find the electronics department?",
+    "questionTranslation": "電子製品売り場はどこですか？",
+    "options": [
+      "Yes, it's on the second floor.",
+      "It's located next to the clothing section on the first floor.",
+      "I bought a new phone yesterday."
+    ],
+    "optionTranslations": [
+      "はい、2階にあります。",
+      "それは1階の衣料品売り場の隣にあります。",
+      "昨日、新しい携帯電話を購入しました。"
+    ],
+    "correct": "B",
+    "explanation": "質問はどこに電子機器売り場があるかを尋ねています。選択肢Bは、具体的な場所を示しており、質問に直接答えています。選択肢Aはフロアを示しますが、文がYesで始まっており、質問に対する自然な応答ではありません。また、選択肢Cは、質問と関連性のない個人的な購入の話をしており不適切です。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-25T05:26:31.992Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Where can I find the electronics department?",
+        "audioPath": "/audio/part2/part2_78_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, it's on the second floor.",
+          "audioPath": "/audio/part2/part2_78_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's located next to the clothing section on the first floor.",
+          "audioPath": "/audio/part2/part2_78_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I bought a new phone yesterday.",
+          "audioPath": "/audio/part2/part2_78_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_79",
+    "question": "Would you prefer to have the technician come in the morning or the afternoon for the repair?",
+    "questionTranslation": "修理のために技術者が来るのは、午前と午後のどちらがよろしいでしょうか。",
+    "options": [
+      "I think the morning would be best.",
+      "Yes, I am available then.",
+      "The report was submitted yesterday."
+    ],
+    "optionTranslations": [
+      "午前が最適だと思います。",
+      "はい、その時は空いています。",
+      "報告書は昨日提出されました。"
+    ],
+    "correct": "A",
+    "explanation": "この応答が正解なのは、質問が技術者が修理に来る時間帯の希望を尋ねており、選択肢Aが適切に朝（morning）を選択しているからです。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-25T05:26:43.595Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Would you prefer to have the technician come in the morning or the afternoon for the repair?",
+        "audioPath": "/audio/part2/part2_79_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think the morning would be best.",
+          "audioPath": "/audio/part2/part2_79_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I am available then.",
+          "audioPath": "/audio/part2/part2_79_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The report was submitted yesterday.",
+          "audioPath": "/audio/part2/part2_79_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_80",
+    "question": "Could you please provide the updated schedule by the end of the day?",
+    "questionTranslation": "本日中に最新のスケジュールを提供していただけますか？",
+    "options": [
+      "I think the meeting is tomorrow.",
+      "Yes, I just finished my lunch.",
+      "Certainly, I'll send it over shortly."
+    ],
+    "optionTranslations": [
+      "会議は明日だと思います。",
+      "はい、ちょうど昼食を終えたところです。",
+      "かしこまりました、すぐにお送りします。"
+    ],
+    "correct": "C",
+    "explanation": "質問は『今日中に更新されたスケジュールを提供してくれますか？』という依頼です。選択肢Cの『もちろんです。すぐに送ります。』は質問に対する適切な応答です。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:26:53.509Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please provide the updated schedule by the end of the day?",
+        "audioPath": "/audio/part2/part2_80_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think the meeting is tomorrow.",
+          "audioPath": "/audio/part2/part2_80_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I just finished my lunch.",
+          "audioPath": "/audio/part2/part2_80_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Certainly, I'll send it over shortly.",
+          "audioPath": "/audio/part2/part2_80_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_81",
+    "question": "Why was the meeting postponed until next week?",
+    "questionTranslation": "なぜ会議は来週まで延期されたのですか？",
+    "options": [
+      "It will be held in the main conference room.",
+      "Because the key presenter is unavailable this week.",
+      "Yes, I attended the meeting yesterday."
+    ],
+    "optionTranslations": [
+      "それは本会議室で開催されます。",
+      "今週は主要なプレゼンターが不在のためです。",
+      "はい、昨日の会議に出席しました。"
+    ],
+    "correct": "B",
+    "explanation": "質問は会議がなぜ来週まで延期されたのかを尋ねています。Bの応答は、主要な発表者が今週不在であることが原因で延期されたと説明しており、質問に直接答えています。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-25T05:27:03.040Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Why was the meeting postponed until next week?",
+        "audioPath": "/audio/part2/part2_81_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It will be held in the main conference room.",
+          "audioPath": "/audio/part2/part2_81_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Because the key presenter is unavailable this week.",
+          "audioPath": "/audio/part2/part2_81_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I attended the meeting yesterday.",
+          "audioPath": "/audio/part2/part2_81_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_82",
+    "question": "Did the customer service team resolve the issue you had with your order?",
+    "questionTranslation": "お客様サービスチームはご注文に関する問題を解決しましたか？",
+    "options": [
+      "I haven't placed an order recently.",
+      "The team is working on it right now.",
+      "Yes, they handled it efficiently."
+    ],
+    "optionTranslations": [
+      "最近、注文していません。",
+      "チームは現在それに取り組んでいます。",
+      "はい、彼らは効率的に対応しました。"
+    ],
+    "correct": "C",
+    "explanation": "選択肢Cは、質問に対して「はい」と答えており、顧客サービスチームが問題を解決したことを示しています。選択肢AとBは質問に直接的に答えておらず、明確な回答ではありません。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-25T05:27:12.274Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Did the customer service team resolve the issue you had with your order?",
+        "audioPath": "/audio/part2/part2_82_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I haven't placed an order recently.",
+          "audioPath": "/audio/part2/part2_82_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The team is working on it right now.",
+          "audioPath": "/audio/part2/part2_82_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, they handled it efficiently.",
+          "audioPath": "/audio/part2/part2_82_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_83",
+    "question": "Could you please bring us the dessert menu?",
+    "questionTranslation": "デザートメニューをお持ちいただけますか？",
+    "options": [
+      "Certainly, I'll bring it right away.",
+      "No, I haven't tried their desserts yet.",
+      "Yes, the reservation was made for two."
+    ],
+    "optionTranslations": [
+      "かしこまりました、すぐにお持ちいたします。",
+      "いいえ、まだ彼らのデザートを試していません。",
+      "はい、予約は2名で取ってあります。"
+    ],
+    "correct": "A",
+    "explanation": "この応答はウェイターがデザートメニューを持ってくるという依頼に対してすぐに応じる内容で、質問に直接答えているため正しいです。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "レストラン・食事",
+    "createdAt": "2025-07-25T05:27:22.906Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please bring us the dessert menu?",
+        "audioPath": "/audio/part2/part2_83_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Certainly, I'll bring it right away.",
+          "audioPath": "/audio/part2/part2_83_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, I haven't tried their desserts yet.",
+          "audioPath": "/audio/part2/part2_83_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, the reservation was made for two.",
+          "audioPath": "/audio/part2/part2_83_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_84",
+    "question": "Will you be taking the bus or the subway to the office today?",
+    "questionTranslation": "今日はバスか地下鉄でオフィスに行きますか？",
+    "options": [
+      "I already sent the email yesterday.",
+      "I think it's on the second floor.",
+      "I'll take the bus since it's faster today."
+    ],
+    "optionTranslations": [
+      "昨日すでにメールを送りました。",
+      "それは2階にあると思います。",
+      "今日はバスの方が速いので、バスに乗ります。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は、どの交通手段を使うかを尋ねています。選択肢Cはバスを選ぶという直接的な応答で、正解です。選択肢AとBは質問とは関連性がなく、不正解です。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-25T05:27:31.143Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Will you be taking the bus or the subway to the office today?",
+        "audioPath": "/audio/part2/part2_84_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I already sent the email yesterday.",
+          "audioPath": "/audio/part2/part2_84_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think it's on the second floor.",
+          "audioPath": "/audio/part2/part2_84_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'll take the bus since it's faster today.",
+          "audioPath": "/audio/part2/part2_84_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_85",
+    "question": "When is the project deadline?",
+    "questionTranslation": "プロジェクトの締め切りはいつですか。",
+    "options": [
+      "We can finish it next week.",
+      "It's being handled by the marketing team.",
+      "The deadline is next Friday."
+    ],
+    "optionTranslations": [
+      "来週には終わらせることができます。",
+      "マーケティングチームが担当しています。",
+      "締め切りは次の金曜日です。"
+    ],
+    "correct": "C",
+    "explanation": "質問はプロジェクトの締め切りについて尋ねており、正しい応答は具体的な日付を提供するものです。選択肢Cは締め切りを示しています。Aは可能な完了予測、Bは担当チームについての情報であり、どちらも締め切りを示していません。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:27:40.272Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "When is the project deadline?",
+        "audioPath": "/audio/part2/part2_85_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "We can finish it next week.",
+          "audioPath": "/audio/part2/part2_85_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's being handled by the marketing team.",
+          "audioPath": "/audio/part2/part2_85_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The deadline is next Friday.",
+          "audioPath": "/audio/part2/part2_85_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_86",
+    "question": "Shall we reschedule the meeting for next week?",
+    "questionTranslation": "会議を来週に再調整しましょうか。",
+    "options": [
+      "No, I haven't seen the latest report.",
+      "Yes, I can bring my laptop.",
+      "That sounds like a good idea."
+    ],
+    "optionTranslations": [
+      "いいえ、最新の報告書は見ていません。",
+      "はい、ノートパソコンを持参できます。",
+      "それは良い考えですね。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議を来週に予定変更することを提案しているので、提案に同意する応答Cが適切です。他の選択肢は質問の意図を理解していません。",
+    "questionType": "suggestion_or_offer",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-25T05:27:52.280Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "Shall we reschedule the meeting for next week?",
+        "audioPath": "/audio/part2/part2_86_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I haven't seen the latest report.",
+          "audioPath": "/audio/part2/part2_86_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I can bring my laptop.",
+          "audioPath": "/audio/part2/part2_86_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "That sounds like a good idea.",
+          "audioPath": "/audio/part2/part2_86_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_87",
+    "question": "What steps have been taken to resolve the customer's complaint?",
+    "questionTranslation": "お客様の苦情を解決するためにどのような措置が取られましたか？",
+    "options": [
+      "The meeting was scheduled for tomorrow.",
+      "We have escalated the issue to the technical team.",
+      "The customer prefers email communication."
+    ],
+    "optionTranslations": [
+      "会議は明日に予定されていました。",
+      "私たちはこの問題を技術チームに報告しました。",
+      "その顧客はメールでのコミュニケーションを好みます。"
+    ],
+    "correct": "B",
+    "explanation": "質問は顧客の苦情を解決するためにどのような手順が取られたかを尋ねています。選択肢Bは技術チームに問題をエスカレーションしたことを示しており、直接的に質問に答えています。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-25T05:28:02.375Z",
+    "generationBatch": "part2_batch_1753421181372_mlwidng7s",
+    "audioFiles": {
+      "question": {
+        "text": "What steps have been taken to resolve the customer's complaint?",
+        "audioPath": "/audio/part2/part2_87_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "The meeting was scheduled for tomorrow.",
+          "audioPath": "/audio/part2/part2_87_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "We have escalated the issue to the technical team.",
+          "audioPath": "/audio/part2/part2_87_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The customer prefers email communication.",
+          "audioPath": "/audio/part2/part2_87_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_88",
+    "question": "Could you please send the technician to fix the copier by tomorrow?",
+    "questionTranslation": "明日までにコピー機を修理するために技術者を派遣していただけますか？",
+    "options": [
+      "I'm not sure where the copier is.",
+      "It was working fine yesterday.",
+      "I'll arrange for someone to come by then."
+    ],
+    "optionTranslations": [
+      "コピー機がどこにあるのかわかりません。",
+      "昨日は正常に動作していました。",
+      "その時までに誰かが来るように手配します。"
+    ],
+    "correct": "C",
+    "explanation": "この応答は技術者を明日までに派遣する要求に対して、適切に対応することを示しています。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-26T02:35:20.194Z",
+    "generationBatch": "part2_batch_1753497310709_w8fyt58md",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please send the technician to fix the copier by tomorrow?",
+        "audioPath": "/audio/part2/part2_88_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure where the copier is.",
+          "audioPath": "/audio/part2/part2_88_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It was working fine yesterday.",
+          "audioPath": "/audio/part2/part2_88_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'll arrange for someone to come by then.",
+          "audioPath": "/audio/part2/part2_88_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_89",
+    "question": "How can I get to the downtown area from here?",
+    "questionTranslation": "ここから市街地にはどうやって行けますか？",
+    "options": [
+      "You can take the subway and get off at Central Station.",
+      "The weather is quite nice today.",
+      "I have a meeting at 3 PM."
+    ],
+    "optionTranslations": [
+      "地下鉄に乗って、セントラル駅で降りてください。",
+      "今日は天気がとても良いです。",
+      "午後3時に会議があります。"
+    ],
+    "correct": "A",
+    "explanation": "質問は「ここからダウンタウンへの行き方」を尋ねているため、Aの『地下鉄を利用してセントラルステーションで降りる』という応答が適切です。他の選択肢は質問に直接答えていません。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-26T02:38:12.609Z",
+    "generationBatch": "part2_batch_1753497484272_0qxjzw5ox",
+    "audioFiles": {
+      "question": {
+        "text": "How can I get to the downtown area from here?",
+        "audioPath": "/audio/part2/part2_89_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "You can take the subway and get off at Central Station.",
+          "audioPath": "/audio/part2/part2_89_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The weather is quite nice today.",
+          "audioPath": "/audio/part2/part2_89_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I have a meeting at 3 PM.",
+          "audioPath": "/audio/part2/part2_89_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_90",
+    "question": "Could you find out if this store offers any discounts for members?",
+    "questionTranslation": "この店が会員向けの割引を提供しているかどうか調べていただけますか。",
+    "options": [
+      "Sure, I'll ask the staff right away.",
+      "No, I haven't been to this store before.",
+      "Yes, I like the items they have here."
+    ],
+    "optionTranslations": [
+      "かしこまりました。すぐにスタッフに確認します。",
+      "いいえ、この店には来たことがありません。",
+      "はい、ここの商品が好きです。"
+    ],
+    "correct": "A",
+    "explanation": "正解の選択肢Aは、依頼に対して直接的な肯定応答であり、店員に確認するという具体的な行動を示しています。選択肢BとCは質問に対して適切に応答していません。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-26T02:38:22.163Z",
+    "generationBatch": "part2_batch_1753497484272_0qxjzw5ox",
+    "audioFiles": {
+      "question": {
+        "text": "Could you find out if this store offers any discounts for members?",
+        "audioPath": "/audio/part2/part2_90_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Sure, I'll ask the staff right away.",
+          "audioPath": "/audio/part2/part2_90_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "No, I haven't been to this store before.",
+          "audioPath": "/audio/part2/part2_90_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I like the items they have here.",
+          "audioPath": "/audio/part2/part2_90_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_91",
+    "question": "What steps are we taking to improve customer satisfaction?",
+    "questionTranslation": "顧客満足度を向上させるためにどのような手段を講じていますか？",
+    "options": [
+      "We are implementing a new feedback system.",
+      "The meeting is scheduled for tomorrow afternoon.",
+      "I will send you the report by end of today."
+    ],
+    "optionTranslations": [
+      "新しいフィードバックシステムを導入しています。",
+      "会議は明日の午後に予定されています。",
+      "本日中に報告書をお送りします。"
+    ],
+    "correct": "A",
+    "explanation": "質問は顧客満足度を向上させるための具体的なステップを尋ねており、選択肢Aはその質問に対する直接的な回答を提供しています。他の選択肢は質問と無関係な情報を提供しています。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-26T02:38:32.669Z",
+    "generationBatch": "part2_batch_1753497484272_0qxjzw5ox",
+    "audioFiles": {
+      "question": {
+        "text": "What steps are we taking to improve customer satisfaction?",
+        "audioPath": "/audio/part2/part2_91_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "We are implementing a new feedback system.",
+          "audioPath": "/audio/part2/part2_91_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting is scheduled for tomorrow afternoon.",
+          "audioPath": "/audio/part2/part2_91_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I will send you the report by end of today.",
+          "audioPath": "/audio/part2/part2_91_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_92",
+    "question": "Could you prepare a summary report for the last quarter meeting by Friday?",
+    "questionTranslation": "金曜日までに先月の会議の要約報告書を準備していただけますか。",
+    "options": [
+      "Sure, I'll have it ready by then.",
+      "The meeting was held last month.",
+      "I believe the meeting room is on the third floor."
+    ],
+    "optionTranslations": [
+      "はい、その時までに準備します。",
+      "会議は先月行われました。",
+      "会議室は3階にあると思います。"
+    ],
+    "correct": "A",
+    "explanation": "この質問は、特定の期限までに会議の要約報告を準備してほしいという依頼です。選択肢Aは、その依頼に対して承諾し、期限内に準備することを約束しています。選択肢BとCは質問の依頼に直接関係のない情報を提供しているため不正解です。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T02:38:41.826Z",
+    "generationBatch": "part2_batch_1753497484272_0qxjzw5ox",
+    "audioFiles": {
+      "question": {
+        "text": "Could you prepare a summary report for the last quarter meeting by Friday?",
+        "audioPath": "/audio/part2/part2_92_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Sure, I'll have it ready by then.",
+          "audioPath": "/audio/part2/part2_92_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting was held last month.",
+          "audioPath": "/audio/part2/part2_92_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I believe the meeting room is on the third floor.",
+          "audioPath": "/audio/part2/part2_92_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_93",
+    "question": "I'll be in the meeting room at 10 AM tomorrow.",
+    "questionTranslation": "私は明日午前10時に会議室にいます。",
+    "options": [
+      "That's perfect, I'll meet you there.",
+      "I haven't finished the report yet.",
+      "Do you know where the meeting room is?"
+    ],
+    "optionTranslations": [
+      "それで完璧です。そこでお会いしましょう。",
+      "まだレポートを終えていません。",
+      "会議室がどこにあるか知っていますか？"
+    ],
+    "correct": "A",
+    "explanation": "この応答は、予定された時間と場所に同意し、相手と会うことを確認しているため、正しいです。",
+    "questionType": "statement_response",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-26T02:38:48.821Z",
+    "generationBatch": "part2_batch_1753497484272_0qxjzw5ox",
+    "audioFiles": {
+      "question": {
+        "text": "I'll be in the meeting room at 10 AM tomorrow.",
+        "audioPath": "/audio/part2/part2_93_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "That's perfect, I'll meet you there.",
+          "audioPath": "/audio/part2/part2_93_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I haven't finished the report yet.",
+          "audioPath": "/audio/part2/part2_93_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Do you know where the meeting room is?",
+          "audioPath": "/audio/part2/part2_93_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_94",
+    "question": "Could you please water the plants while I'm away?",
+    "questionTranslation": "私が留守の間、植物に水をやっていただけますか？",
+    "options": [
+      "I think they look beautiful.",
+      "Sure, I can do that.",
+      "No, I haven't seen it yet."
+    ],
+    "optionTranslations": [
+      "それらは美しいと思います。",
+      "はい、できます。",
+      "いいえ、まだ見ていません。"
+    ],
+    "correct": "B",
+    "explanation": "質問は、話し手が留守の間に植物に水をやってくれるかどうかの依頼です。選択肢Bの『Sure, I can do that.』は依頼に対する直接的な承諾の表現で、最も適切です。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "日常生活",
+    "createdAt": "2025-07-26T03:15:31.916Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Could you please water the plants while I'm away?",
+        "audioPath": "/audio/part2/part2_94_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think they look beautiful.",
+          "audioPath": "/audio/part2/part2_94_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Sure, I can do that.",
+          "audioPath": "/audio/part2/part2_94_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "No, I haven't seen it yet.",
+          "audioPath": "/audio/part2/part2_94_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_95",
+    "question": "What time is the marketing meeting scheduled for tomorrow?",
+    "questionTranslation": "明日のマーケティング会議は何時に予定されていますか？",
+    "options": [
+      "It's set for 10 AM in the main conference room.",
+      "I think the budget report is due soon.",
+      "She will be attending a conference abroad."
+    ],
+    "optionTranslations": [
+      "それは午前10時にメイン会議室で予定されています。",
+      "予算報告書の締め切りが近いと思います。",
+      "彼女は海外での会議に出席します。"
+    ],
+    "correct": "A",
+    "explanation": "質問はマーケティング会議の時間について尋ねています。選択肢Aは正確に会議の時間と場所を答えているので正解です。選択肢BとCは会議の時間に関する情報を提供していないため不正解です。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T03:15:40.087Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "What time is the marketing meeting scheduled for tomorrow?",
+        "audioPath": "/audio/part2/part2_95_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's set for 10 AM in the main conference room.",
+          "audioPath": "/audio/part2/part2_95_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think the budget report is due soon.",
+          "audioPath": "/audio/part2/part2_95_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "She will be attending a conference abroad.",
+          "audioPath": "/audio/part2/part2_95_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_96",
+    "question": "What steps can we take to improve our customer service response time?",
+    "questionTranslation": "顧客サービスの応答時間を改善するためにどのような措置を講じることができますか？",
+    "options": [
+      "We could invest in better training for our support team.",
+      "Our response time is already the fastest in the industry.",
+      "The new office furniture will arrive next week."
+    ],
+    "optionTranslations": [
+      "私たちはサポートチームのために、より良いトレーニングに投資することができます。",
+      "当社の対応時間は業界で既に最速です。",
+      "新しいオフィス家具は来週届きます。"
+    ],
+    "correct": "A",
+    "explanation": "選択肢Aは、顧客サービスの応答時間を改善するための提案を示しており、質問に直接答えています。選択肢Bは現状の説明に過ぎず、選択肢Cは文脈に無関係です。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-26T03:15:48.311Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "What steps can we take to improve our customer service response time?",
+        "audioPath": "/audio/part2/part2_96_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "We could invest in better training for our support team.",
+          "audioPath": "/audio/part2/part2_96_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Our response time is already the fastest in the industry.",
+          "audioPath": "/audio/part2/part2_96_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The new office furniture will arrive next week.",
+          "audioPath": "/audio/part2/part2_96_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_97",
+    "question": "Do you know if the new shopping mall offers a loyalty program for regular customers?",
+    "questionTranslation": "新しいショッピングモールが常連客向けにロイヤルティプログラムを提供しているか知っていますか？",
+    "options": [
+      "I went there last weekend.",
+      "They have a big parking lot.",
+      "Yes, they do have a loyalty program."
+    ],
+    "optionTranslations": [
+      "先週末に行きました。",
+      "彼らには大きな駐車場があります。",
+      "はい、彼らにはロイヤルティプログラムがあります。"
+    ],
+    "correct": "C",
+    "explanation": "質問は新しいショッピングモールが常連客向けのロイヤルティプログラムを提供しているかどうかを尋ねています。正解のCはその質問に対して直接「はい、提供しています」と答えています。他の選択肢は質問の内容に直接関連していません。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-26T03:15:56.366Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Do you know if the new shopping mall offers a loyalty program for regular customers?",
+        "audioPath": "/audio/part2/part2_97_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I went there last weekend.",
+          "audioPath": "/audio/part2/part2_97_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "They have a big parking lot.",
+          "audioPath": "/audio/part2/part2_97_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, they do have a loyalty program.",
+          "audioPath": "/audio/part2/part2_97_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_98",
+    "question": "Thank you for fixing the air conditioning so quickly.",
+    "questionTranslation": "エアコンをすぐに修理してくださり、ありがとうございます。",
+    "options": [
+      "It will be delivered by tomorrow.",
+      "I'm afraid we're out of stock.",
+      "You're welcome, happy to help!"
+    ],
+    "optionTranslations": [
+      "明日までに配達されます。",
+      "申し訳ありませんが、在庫がございません。",
+      "どういたしまして、お役に立てて嬉しいです！"
+    ],
+    "correct": "C",
+    "explanation": "質問はエアコンの修理を早くしてくれたことに対する感謝の表現です。選択肢Cはその感謝に対して自然に受け取る応答であり、正解です。選択肢AとBは、質問の内容と関連性がなく不適切です。",
+    "questionType": "thanks_or_apology",
+    "difficulty": "hard",
+    "topic": "サービス・修理",
+    "createdAt": "2025-07-26T03:16:06.040Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Thank you for fixing the air conditioning so quickly.",
+        "audioPath": "/audio/part2/part2_98_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It will be delivered by tomorrow.",
+          "audioPath": "/audio/part2/part2_98_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I'm afraid we're out of stock.",
+          "audioPath": "/audio/part2/part2_98_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "You're welcome, happy to help!",
+          "audioPath": "/audio/part2/part2_98_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_99",
+    "question": "Are we meeting at 3 PM or 4 PM for the project review?",
+    "questionTranslation": "プロジェクトのレビューは午後3時と午後4時のどちらに会いますか？",
+    "options": [
+      "I think the review is on a different day.",
+      "We're scheduled to meet at 4 PM.",
+      "The project details are in the email."
+    ],
+    "optionTranslations": [
+      "レビューは別の日だと思います。",
+      "午後4時に会う予定です。",
+      "プロジェクトの詳細はメールにあります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は特定の時間に関する予定を尋ねており、正解の応答は『私たちは4時に会う予定です』と、選択肢の一つである4 PMを選んでいるため適切です。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-26T03:16:14.117Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Are we meeting at 3 PM or 4 PM for the project review?",
+        "audioPath": "/audio/part2/part2_99_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think the review is on a different day.",
+          "audioPath": "/audio/part2/part2_99_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "We're scheduled to meet at 4 PM.",
+          "audioPath": "/audio/part2/part2_99_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The project details are in the email.",
+          "audioPath": "/audio/part2/part2_99_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_100",
+    "question": "Why was the client's order delayed?",
+    "questionTranslation": "なぜ顧客の注文が遅れたのですか？",
+    "options": [
+      "There was an issue with the supplier.",
+      "It's scheduled for delivery tomorrow.",
+      "The meeting starts at 3 PM."
+    ],
+    "optionTranslations": [
+      "サプライヤーに問題がありました。",
+      "配達は明日の予定です。",
+      "会議は午後3時に始まります。"
+    ],
+    "correct": "A",
+    "explanation": "Aが正解です。質問はなぜ顧客の注文が遅れたのかを尋ねており、Aの「サプライヤーに問題があった」という応答が遅延の理由を説明しているからです。BとCは注文の遅延理由には答えていません。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-26T03:16:22.196Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Why was the client's order delayed?",
+        "audioPath": "/audio/part2/part2_100_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "There was an issue with the supplier.",
+          "audioPath": "/audio/part2/part2_100_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It's scheduled for delivery tomorrow.",
+          "audioPath": "/audio/part2/part2_100_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_100_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_101",
+    "question": "Could you send me the latest customer satisfaction report by the end of today?",
+    "questionTranslation": "本日中に最新の顧客満足度報告書を送っていただけますか。",
+    "options": [
+      "I haven't seen the report yet.",
+      "Do you need it by next week?",
+      "Sure, I'll email it to you before the day is over."
+    ],
+    "optionTranslations": [
+      "まだ報告書を見ていません。",
+      "来週までに必要ですか？",
+      "はい、本日中にメールでお送りします。"
+    ],
+    "correct": "C",
+    "explanation": "質問は『今日中に最新の顧客満足度レポートを送ってもらえますか？』という依頼です。選択肢Cは『もちろん、今日中にメールで送ります』と答えており、依頼に対する適切な応答です。他の選択肢は質問に直接答えていません。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-26T03:16:36.879Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Could you send me the latest customer satisfaction report by the end of today?",
+        "audioPath": "/audio/part2/part2_101_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I haven't seen the report yet.",
+          "audioPath": "/audio/part2/part2_101_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Do you need it by next week?",
+          "audioPath": "/audio/part2/part2_101_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Sure, I'll email it to you before the day is over.",
+          "audioPath": "/audio/part2/part2_101_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_102",
+    "question": "When is the deadline for submitting the quarterly report?",
+    "questionTranslation": "四半期報告書の提出期限はいつですか。",
+    "options": [
+      "It's due by the end of next Friday.",
+      "I believe it's in the finance department.",
+      "Yes, I have read the report."
+    ],
+    "optionTranslations": [
+      "それは次の金曜日の終わりまでに締め切りです。",
+      "それは財務部にあると思います。",
+      "はい、報告書を読みました。"
+    ],
+    "correct": "A",
+    "explanation": "質問は四半期報告書の提出期限を尋ねており、正しい答えは具体的な締切日を示すものです。選択肢Aがそれに該当します。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-26T03:16:44.978Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "When is the deadline for submitting the quarterly report?",
+        "audioPath": "/audio/part2/part2_102_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It's due by the end of next Friday.",
+          "audioPath": "/audio/part2/part2_102_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I believe it's in the finance department.",
+          "audioPath": "/audio/part2/part2_102_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I have read the report.",
+          "audioPath": "/audio/part2/part2_102_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_103",
+    "question": "Could you finalize the report by the end of the day?",
+    "questionTranslation": "本日中に報告書を仕上げていただけますか。",
+    "options": [
+      "I haven't seen the report yet.",
+      "The meeting is scheduled for tomorrow.",
+      "Yes, I'll make sure to complete it by then."
+    ],
+    "optionTranslations": [
+      "まだ報告書を見ていません。",
+      "会議は明日に予定されています。",
+      "はい、その時までに必ず完了させます。"
+    ],
+    "correct": "C",
+    "explanation": "質問は「今日中にレポートを完成させてくれるか」という依頼であり、正解の選択肢は「はい、そうします」と依頼を受け入れる内容です。不正解の選択肢AとBは質問とは無関係の内容です。",
+    "questionType": "request_or_command",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T03:16:52.188Z",
+    "generationBatch": "part2_batch_1753499723689_8qhethp5z",
+    "audioFiles": {
+      "question": {
+        "text": "Could you finalize the report by the end of the day?",
+        "audioPath": "/audio/part2/part2_103_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I haven't seen the report yet.",
+          "audioPath": "/audio/part2/part2_103_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "The meeting is scheduled for tomorrow.",
+          "audioPath": "/audio/part2/part2_103_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I'll make sure to complete it by then.",
+          "audioPath": "/audio/part2/part2_103_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_104",
+    "question": "Why was the meeting rescheduled to next week?",
+    "questionTranslation": "なぜ会議は来週に延期されたのですか？",
+    "options": [
+      "The project deadline was extended.",
+      "I think it starts at 3 PM.",
+      "Yes, I attended the meeting yesterday."
+    ],
+    "optionTranslations": [
+      "プロジェクトの締め切りが延長されました。",
+      "午後3時に始まると思います。",
+      "はい、昨日の会議に出席しました。"
+    ],
+    "correct": "A",
+    "explanation": "この応答は、会議が来週に再スケジュールされた理由を説明しています。プロジェクトの締め切りが延長されたため、会議が延期されたという内容です。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T03:30:29.806Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Why was the meeting rescheduled to next week?",
+        "audioPath": "/audio/part2/part2_104_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "The project deadline was extended.",
+          "audioPath": "/audio/part2/part2_104_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think it starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_104_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, I attended the meeting yesterday.",
+          "audioPath": "/audio/part2/part2_104_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_105",
+    "question": "Have you finished updating the customer database?",
+    "questionTranslation": "顧客データベースの更新は終わりましたか？",
+    "options": [
+      "I believe the meeting is scheduled for tomorrow.",
+      "Yes, the files were sent last week.",
+      "No, I'm still working on it and should be done by the end of the day."
+    ],
+    "optionTranslations": [
+      "会議は明日に予定されていると思います。",
+      "はい、ファイルは先週送られました。",
+      "いいえ、まだ取り組んでいますが、今日中には終わる予定です。"
+    ],
+    "correct": "C",
+    "explanation": "選択肢Cは質問に対して直接的な応答で、データベース更新がまだ完了していないことを示しています。一方、選択肢Aは質問とは無関係で、選択肢Bは過去のファイル送信について述べています。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "顧客サービス",
+    "createdAt": "2025-07-26T03:30:41.557Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Have you finished updating the customer database?",
+        "audioPath": "/audio/part2/part2_105_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I believe the meeting is scheduled for tomorrow.",
+          "audioPath": "/audio/part2/part2_105_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, the files were sent last week.",
+          "audioPath": "/audio/part2/part2_105_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "No, I'm still working on it and should be done by the end of the day.",
+          "audioPath": "/audio/part2/part2_105_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_106",
+    "question": "Have you submitted the quarterly report to the finance department yet?",
+    "questionTranslation": "四半期報告書はもう財務部に提出しましたか？",
+    "options": [
+      "I don't have access to that file.",
+      "Yes, I sent it earlier today.",
+      "The meeting starts at 3 PM."
+    ],
+    "optionTranslations": [
+      "そのファイルにアクセスできません。",
+      "はい、本日早めに送りました。",
+      "会議は午後3時に始まります。"
+    ],
+    "correct": "B",
+    "explanation": "質問は四半期報告書を財務部に提出したかどうかを尋ねています。Bは「はい、今日の早い時間に送りました」という直接的な応答で、質問に適切に答えています。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-07-26T03:30:50.659Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Have you submitted the quarterly report to the finance department yet?",
+        "audioPath": "/audio/part2/part2_106_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I don't have access to that file.",
+          "audioPath": "/audio/part2/part2_106_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I sent it earlier today.",
+          "audioPath": "/audio/part2/part2_106_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_106_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_107",
+    "question": "Will the meeting be rescheduled to next week?",
+    "questionTranslation": "会議は来週に延期されますか？",
+    "options": [
+      "I'm not sure, I haven't checked my email.",
+      "I think the meeting is in Room 305.",
+      "Yes, it has been moved to Wednesday."
+    ],
+    "optionTranslations": [
+      "わかりません。メールを確認していません。",
+      "会議は305号室だと思います。",
+      "はい、水曜日に変更されました。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は、会議が来週に再スケジュールされるかどうかを尋ねています。選択肢Cは「はい、それは水曜日に移動されました」と答えており、質問に対する直接的な肯定の応答です。",
+    "questionType": "yes_no_question",
+    "difficulty": "hard",
+    "topic": "予定・スケジュール",
+    "createdAt": "2025-07-26T03:31:00.348Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Will the meeting be rescheduled to next week?",
+        "audioPath": "/audio/part2/part2_107_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure, I haven't checked my email.",
+          "audioPath": "/audio/part2/part2_107_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think the meeting is in Room 305.",
+          "audioPath": "/audio/part2/part2_107_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, it has been moved to Wednesday.",
+          "audioPath": "/audio/part2/part2_107_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_108",
+    "question": "Why was the budget meeting rescheduled?",
+    "questionTranslation": "予算会議はなぜ延期されたのですか？",
+    "options": [
+      "It will be held in the main conference room.",
+      "Because the financial reports weren't ready.",
+      "The CEO will attend the meeting."
+    ],
+    "optionTranslations": [
+      "メイン会議室で開催されます。",
+      "財務報告書が準備できていなかったためです。",
+      "CEOが会議に出席します。"
+    ],
+    "correct": "B",
+    "explanation": "質問はなぜ予算会議が再スケジュールされたのかを尋ねています。正解は、レポートが準備されていなかったため、と理由を示すBです。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T03:31:07.820Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Why was the budget meeting rescheduled?",
+        "audioPath": "/audio/part2/part2_108_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "It will be held in the main conference room.",
+          "audioPath": "/audio/part2/part2_108_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Because the financial reports weren't ready.",
+          "audioPath": "/audio/part2/part2_108_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The CEO will attend the meeting.",
+          "audioPath": "/audio/part2/part2_108_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_109",
+    "question": "Will you be taking a taxi or using the subway to get to the conference?",
+    "questionTranslation": "会議にはタクシーを利用しますか、それとも地下鉄を使いますか？",
+    "options": [
+      "I think it's on the third floor.",
+      "I'll be attending the meeting later.",
+      "I'll take the subway since it's faster."
+    ],
+    "optionTranslations": [
+      "それは3階にあると思います。",
+      "後ほど会議に出席します。",
+      "地下鉄の方が速いので、地下鉄で行きます。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は、会議に行くための交通手段を尋ねています。正解のCは、地下鉄を利用するという選択を示しており、質問に対する直接的な答えです。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "交通・移動",
+    "createdAt": "2025-07-26T03:31:17.172Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Will you be taking a taxi or using the subway to get to the conference?",
+        "audioPath": "/audio/part2/part2_109_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think it's on the third floor.",
+          "audioPath": "/audio/part2/part2_109_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I'll be attending the meeting later.",
+          "audioPath": "/audio/part2/part2_109_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I'll take the subway since it's faster.",
+          "audioPath": "/audio/part2/part2_109_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_110",
+    "question": "Should we reschedule the meeting to Friday, or keep it on Thursday?",
+    "questionTranslation": "会議を金曜日に変更するべきでしょうか、それとも木曜日のままにしますか？",
+    "options": [
+      "I'm not sure what time it is.",
+      "Yes, I attended the meeting.",
+      "Let's move it to Friday."
+    ],
+    "optionTranslations": [
+      "何時かよく分かりません。",
+      "はい、会議に出席しました。",
+      "金曜日に変更しましょう。"
+    ],
+    "correct": "C",
+    "explanation": "この質問は会議を金曜日に変更するか、木曜日のままにするかを尋ねています。Cの『Let's move it to Friday.』が『会議を金曜日に動かしましょう』という意味で、質問に対する適切な選択肢です。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T03:31:27.748Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Should we reschedule the meeting to Friday, or keep it on Thursday?",
+        "audioPath": "/audio/part2/part2_110_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I'm not sure what time it is.",
+          "audioPath": "/audio/part2/part2_110_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I attended the meeting.",
+          "audioPath": "/audio/part2/part2_110_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Let's move it to Friday.",
+          "audioPath": "/audio/part2/part2_110_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_111",
+    "question": "Should we finalize the report today or postpone it until next week?",
+    "questionTranslation": "今日報告書を最終決定するべきですか、それとも来週まで延期しますか？",
+    "options": [
+      "I think the meeting starts at 3 PM.",
+      "Yes, I sent the email yesterday.",
+      "Let's finalize it today as planned."
+    ],
+    "optionTranslations": [
+      "会議は午後3時に始まると思います。",
+      "はい、昨日メールを送りました。",
+      "予定通り、今日中にそれを確定しましょう。"
+    ],
+    "correct": "C",
+    "explanation": "質問は報告書を今日完成させるか来週まで延期するかを尋ねています。選択肢Cは、計画通りに今日完成させるという意図を示しており、質問に直接答えています。",
+    "questionType": "choice_question",
+    "difficulty": "hard",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-26T03:31:38.701Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Should we finalize the report today or postpone it until next week?",
+        "audioPath": "/audio/part2/part2_111_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I think the meeting starts at 3 PM.",
+          "audioPath": "/audio/part2/part2_111_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Yes, I sent the email yesterday.",
+          "audioPath": "/audio/part2/part2_111_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Let's finalize it today as planned.",
+          "audioPath": "/audio/part2/part2_111_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_112",
+    "question": "I'm afraid the manager is currently unavailable to take your call.",
+    "questionTranslation": "申し訳ございませんが、マネージャーはただいま電話に出ることができません。",
+    "options": [
+      "Can I speak to him later?",
+      "Could you let him know that I called?",
+      "I will call back tomorrow."
+    ],
+    "optionTranslations": [
+      "後で彼と話せますか？",
+      "私から電話があったことを彼に伝えていただけますか？",
+      "明日、折り返しお電話いたします。"
+    ],
+    "correct": "B",
+    "explanation": "この応答は、マネージャーが不在であることに対し、電話を受けた人にメッセージを伝えてもらうお願いをしています。これが最も適切な対応です。",
+    "questionType": "statement_response",
+    "difficulty": "hard",
+    "topic": "電話対応",
+    "createdAt": "2025-07-26T03:31:47.031Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "I'm afraid the manager is currently unavailable to take your call.",
+        "audioPath": "/audio/part2/part2_112_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Can I speak to him later?",
+          "audioPath": "/audio/part2/part2_112_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "Could you let him know that I called?",
+          "audioPath": "/audio/part2/part2_112_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "I will call back tomorrow.",
+          "audioPath": "/audio/part2/part2_112_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_113",
+    "question": "Who is responsible for handling client inquiries in our department?",
+    "questionTranslation": "私たちの部署でクライアントからの問い合わせを担当しているのは誰ですか？",
+    "options": [
+      "I believe they handle it in the marketing department.",
+      "That's Sarah's responsibility this quarter.",
+      "The meeting was rescheduled for next week."
+    ],
+    "optionTranslations": [
+      "それはマーケティング部門で対応していると思います。",
+      "それは今四半期のサラの責任です。",
+      "会議は来週に予定が変更されました。"
+    ],
+    "correct": "B",
+    "explanation": "質問は誰がクライアントの問い合わせを担当しているかを尋ねており、Bの選択肢がその答えとして適切です。Aは別の部署の話であり、Cは質問に全く関係ありません。",
+    "questionType": "wh_question",
+    "difficulty": "hard",
+    "topic": "電話対応",
+    "createdAt": "2025-07-26T03:31:55.925Z",
+    "generationBatch": "part2_batch_1753500619685_3w7837upi",
+    "audioFiles": {
+      "question": {
+        "text": "Who is responsible for handling client inquiries in our department?",
+        "audioPath": "/audio/part2/part2_113_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I believe they handle it in the marketing department.",
+          "audioPath": "/audio/part2/part2_113_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "That's Sarah's responsibility this quarter.",
+          "audioPath": "/audio/part2/part2_113_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting was rescheduled for next week.",
+          "audioPath": "/audio/part2/part2_113_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_114",
+    "question": "I found a great deal on those shoes you liked.",
+    "questionTranslation": "あなたが気に入っていた靴がお得な価格で見つかりました。",
+    "options": [
+      "That's fantastic! Where can I find them?",
+      "I don't really like shoes.",
+      "It should rain tomorrow."
+    ],
+    "optionTranslations": [
+      "それは素晴らしいですね！どこで見つけることができますか？",
+      "私はあまり靴が好きではありません。",
+      "明日は雨が降るでしょう。"
+    ],
+    "correct": "A",
+    "explanation": "この応答は、提供された情報に関心を示しており、靴の購入場所について質問しているため正解です。",
+    "questionType": "statement_response",
+    "difficulty": "easy",
+    "topic": "ショッピング",
+    "createdAt": "2025-07-27T13:03:38.803Z",
+    "generationBatch": "part2_batch_1753621409825_d99ubm537",
+    "audioFiles": {
+      "question": {
+        "text": "I found a great deal on those shoes you liked.",
+        "audioPath": "/audio/part2/part2_114_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "That's fantastic! Where can I find them?",
+          "audioPath": "/audio/part2/part2_114_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I don't really like shoes.",
+          "audioPath": "/audio/part2/part2_114_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "It should rain tomorrow.",
+          "audioPath": "/audio/part2/part2_114_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_115",
+    "question": "Is the meeting scheduled for 10 AM?",
+    "questionTranslation": "会議は午前10時に予定されていますか？",
+    "options": [
+      "No, I haven't seen the schedule.",
+      "I think it's in the main conference room.",
+      "Yes, it starts at 10 AM."
+    ],
+    "optionTranslations": [
+      "いいえ、スケジュールを見ていません。",
+      "それはメイン会議室にあると思います。",
+      "はい、午前10時に始まります。"
+    ],
+    "correct": "C",
+    "explanation": "質問は会議が午前10時に予定されているかどうかを尋ねています。正解の応答Cは、その予定時間を確認しているため正しいです。",
+    "questionType": "yes_no_question",
+    "difficulty": "easy",
+    "topic": "オフィス・会議",
+    "createdAt": "2025-07-31T21:32:00.930Z",
+    "generationBatch": "part2_batch_1753997509238_an7glwepd",
+    "partType": "part2",
+    "voiceProfile": {
+      "gender": "female",
+      "accent": "Canadian",
+      "country": "🇨🇦",
+      "age": "mature",
+      "tone": "professional"
+    },
+    "audioFiles": {
+      "question": {
+        "text": "Is the meeting scheduled for 10 AM?",
+        "audioPath": "/audio/part2/part2_115_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "No, I haven't seen the schedule.",
+          "audioPath": "/audio/part2/part2_115_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I think it's in the main conference room.",
+          "audioPath": "/audio/part2/part2_115_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Yes, it starts at 10 AM.",
+          "audioPath": "/audio/part2/part2_115_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_116",
+    "question": "Are you attending the meeting this afternoon?",
+    "questionTranslation": "今日の午後の会議に出席しますか？",
+    "options": [
+      "Yes, I will be there.",
+      "I don't have the meeting agenda.",
+      "The meeting room is on the second floor."
+    ],
+    "optionTranslations": [
+      "はい、参加します。",
+      "会議の議題を持っていません。",
+      "会議室は2階にあります。"
+    ],
+    "correct": "A",
+    "explanation": "この質問は、今日の午後の会議に出席するかどうかを尋ねています。選択肢Aは「はい、出席します」との回答で質問に直接答えています。",
+    "questionType": "yes_no_question",
+    "difficulty": "easy",
+    "topic": "社内コミュニケーション",
+    "createdAt": "2025-08-02T06:50:06.668Z",
+    "generationBatch": "part2_batch_1754117397849_qf7zqwpax",
+    "partType": "part2",
+    "voiceProfile": {
+      "gender": "female",
+      "accent": "Australian",
+      "country": "🇦🇺",
+      "age": "adult",
+      "tone": "calm"
+    },
+    "audioFiles": {
+      "question": {
+        "text": "Are you attending the meeting this afternoon?",
+        "audioPath": "/audio/part2/part2_116_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "Yes, I will be there.",
+          "audioPath": "/audio/part2/part2_116_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "I don't have the meeting agenda.",
+          "audioPath": "/audio/part2/part2_116_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "The meeting room is on the second floor.",
+          "audioPath": "/audio/part2/part2_116_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part2_117",
+    "question": "Should we take the bus or the subway to the client's office?",
+    "questionTranslation": "取引先のオフィスへは、バスと地下鉄のどちらで行きましょうか。",
+    "options": [
+      "I printed the slides this morning.",
+      "It starts at nine o'clock.",
+      "Let's take the subway; it's faster during rush hour."
+    ],
+    "optionTranslations": [
+      "今朝、スライドを印刷しました。",
+      "9時に始まります。",
+      "地下鉄で行きましょう。ラッシュ時はそのほうが速いです。"
+    ],
+    "correct": "C",
+    "explanation": "質問は「バスか地下鉄か」の選択を求めています。Cは地下鉄を選び、理由も添えており直接的な適切回答です。Aは資料印刷についてで交通手段の選択に答えておらず、Bは開始時刻の情報で質問の意図に合っていないため不正解です。",
+    "questionType": "choice_question",
+    "difficulty": "easy",
+    "topic": "交通・移動",
+    "createdAt": "2025-08-18T16:05:52.030Z",
+    "generationBatch": "part2_batch_1755533114705_tr69oyula",
+    "partType": "part2",
+    "voiceProfile": {
+      "gender": "female",
+      "accent": "Canadian",
+      "country": "🇨🇦",
+      "age": "Young",
+      "tone": "Calm"
+    },
+    "audioFiles": {
+      "question": {
+        "text": "Should we take the bus or the subway to the client's office?",
+        "audioPath": "/audio/part2/part2_117_question.mp3"
+      },
+      "options": [
+        {
+          "option": "A",
+          "text": "I printed the slides this morning.",
+          "audioPath": "/audio/part2/part2_117_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "It starts at nine o'clock.",
+          "audioPath": "/audio/part2/part2_117_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Let's take the subway; it's faster during rush hour.",
+          "audioPath": "/audio/part2/part2_117_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,118 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 11:34:09
+ログファイル: question-generation-medium-2025-07-25T11-34-09.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 164問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage141",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Upcoming Project Meeting\n\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to confirm the upcoming project meeting scheduled for Thursday, March 15th, at 10:00 AM. The meeting will be held in Conference Room B on the second floor.\n\nPlease prepare the quarterly sales report and the project timeline updates for discussion. Additionally, if you have any items you would like to add to the agenda, kindly send them to me by Tuesday afternoon.\n\nShould you have any questions or need further assistance, feel free to reach out. Looking forward to your valuable insights at the meeting.\n\nBest regards,\nSarah Johnson\nProject Coordinator",
+  "contentTranslation": "件名: プロジェクト会議のスケジュール確認\n\n田中様\n\nお元気でお過ごしのことと思います。3月15日木曜日午前10時に予定されているプロジェクト会議の確認のためにご連絡しています。会議は2階の会議室Bで行われます。\n\n四半期の売上報告書とプロジェクトのタイムラインの更新を準備していただければと思います。また、議題に追加したい項目があれば、火曜日の午後までに私に送ってください。\n\nご質問やさらなるサポートが必要な場合は、遠慮なくご連絡ください。会議での貴重なご意見を楽しみにしています。\n\n敬具\nサラ・ジョンソン\nプロジェクトコーディネーター",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To request a sales report",
+        "To confirm a meeting schedule",
+        "To announce a project completion",
+        "To introduce a new team member"
+      ],
+      "optionTranslations": [
+        "販売報告書を依頼するため",
+        "会議のスケジュールを確認するため",
+        "プロジェクトの完了を発表するため",
+        "新しいチームメンバーを紹介するため"
+      ],
+      "correct": "B",
+      "explanation": "文書の冒頭で、会議の日程を確認するためにメールが書かれたことが述べられています。"
+    },
+    {
+      "id": "q2",
+      "question": "When will the project meeting take place?",
+      "questionTranslation": "プロジェクト会議はいつ開催されますか？",
+      "options": [
+        "Tuesday, March 13th",
+        "Wednesday, March 14th",
+        "Thursday, March 15th",
+        "Friday, March 16th"
+      ],
+      "optionTranslations": [
+        "3月13日火曜日",
+        "3月14日水曜日",
+        "3月15日木曜日",
+        "3月16日金曜日"
+      ],
+      "correct": "C",
+      "explanation": "文書の中盤で、会議が3月15日木曜日に予定されていることが記載されています。"
+    },
+    {
+      "id": "q3",
+      "question": "Where will the meeting be held?",
+      "questionTranslation": "会議はどこで開催されますか？",
+      "options": [
+        "Conference Room A",
+        "Conference Room B",
+        "The main auditorium",
+        "The manager's office"
+      ],
+      "optionTranslations": [
+        "会議室A",
+        "会議室B",
+        "メイン講堂",
+        "マネージャーのオフィス"
+      ],
+      "correct": "B",
+      "explanation": "文書の中盤で、会議が2階の会議室Bで行われることが明示されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 108,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 165問
+🆔 実際に追加されたID: passage141
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 11:34:24
+実行時間: 0.00秒

@@ -1,0 +1,284 @@
+[
+  {
+    "id": "part6_1",
+    "documentType": "advertisement",
+    "title": "Exciting Policy Changes at TechCorp",
+    "content": "TechCorp is thrilled to announce significant changes in our company policies that aim to improve employee satisfaction and productivity. ___(1), we are introducing more flexible working hours, allowing employees to start their day anytime between 7 AM and 10 AM. This change is designed to accommodate different lifestyles and ___(2) help employees maintain a better work-life balance.\n\nFurthermore, we are also enhancing our remote work policy. Effective immediately, employees are ___(3) to work from home up to three days a week. This adjustment not only boosts morale but also reduces commute-related stress.\n\nTo learn more about these policy changes and how they can benefit you, please refer to the detailed guide available on the employee portal. \n\n___(4) Join us in embracing these exciting new developments at TechCorp!",
+    "contentTranslation": "TechCorpは、従業員の満足度と生産性を向上させることを目的とした会社の方針における重要な変更を発表できることを嬉しく思います。___(1)、私たちは、従業員が朝7時から10時の間の任意の時間に一日を始めることができる、より柔軟な勤務時間を導入しています。この変更は、さまざまなライフスタイルに対応し、___(2)従業員がより良いワークライフバランスを維持するのを助けることを目的としています。さらに、リモートワーク方針も強化しています。即時適用で、従業員は週に最大3日間自宅から働くことができます。この調整は士気を高めるだけでなく、通勤に関連するストレスを軽減します。これらの方針変更とそれがどのようにあなたに利益をもたらすかについてもっと知るためには、従業員ポータルにある詳細ガイドを参照してください。___(4) TechCorpでのこれらの刺激的な新しい展開を一緒に進めていきましょう！",
+    "questions": [
+      {
+        "id": "part6_1_q1",
+        "question": "Fill in blank 1",
+        "questionTranslation": "空欄1を埋めてください",
+        "options": [
+          "Specifically",
+          "Overall",
+          "Regrettably",
+          "Nevertheless"
+        ],
+        "optionTranslations": [
+          "具体的に言うと",
+          "全体的に",
+          "残念ながら",
+          "しかしながら"
+        ],
+        "correct": "A",
+        "explanation": "文脈上、具体的な変更を紹介するために合う語は「Specifically（具体的に）」です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_1_q2",
+        "question": "Fill in blank 2",
+        "questionTranslation": "空欄2を埋めてください",
+        "options": [
+          "strategic",
+          "strategically",
+          "strategies",
+          "strategy"
+        ],
+        "optionTranslations": [
+          "戦略的",
+          "戦略的に",
+          "戦略",
+          "戦略"
+        ],
+        "correct": "D",
+        "explanation": "『help A to do』の形を取り、『help employees maintain』という表現に続くのは『better work-life balance』に関与する文脈的に名詞である『strategy（戦略）』を使います。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_1_q3",
+        "question": "Fill in blank 3",
+        "questionTranslation": "空欄3を埋めてください",
+        "options": [
+          "authorizing",
+          "allowed",
+          "allowing",
+          "allows"
+        ],
+        "optionTranslations": [
+          "許可する",
+          "認められている",
+          "許可する",
+          "認める"
+        ],
+        "correct": "C",
+        "explanation": "『employees are allowed to work from home』は、社員が自宅での勤務を許可されていることを意味します。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_1_q4",
+        "question": "Fill in blank 4",
+        "questionTranslation": "空欄4を埋めてください",
+        "options": [
+          "Contact your manager for questions.",
+          "This will be followed by a Q&A session.",
+          "Employees should submit feedback.",
+          "We appreciate your support."
+        ],
+        "optionTranslations": [
+          "質問はマネージャーに連絡を。",
+          "質疑応答セッションが続きます。",
+          "フィードバックを提出してください。",
+          "ご協力に感謝します。"
+        ],
+        "correct": "D",
+        "explanation": "文脈全体を考えると、ポジティブな新しい方針を導入するにあたり『We appreciate your support.（ご支援に感謝します）』という文が最も適切です。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "policy_changes",
+    "createdAt": "2025-08-17T06:52:30.201Z",
+    "generationBatch": "part6_batch_1755413537190_v7xiocpo0",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_2",
+    "documentType": "article",
+    "title": "Handling Customer Complaints Efficiently",
+    "content": "In any business, ___ customer complaints is crucial for maintaining a good reputation. Many companies underestimate the impact of a single unhappy customer. Often, resolving complaints quickly can turn a negative situation into a positive one. ___, training staff on effective communication can significantly reduce future issues. Listening to the customer's concerns and showing empathy are key skills. The use of polite language and offering realistic solutions can also ___ complaints in a satisfactory manner. Ultimately, a company's ability to manage complaints effectively often determines its overall success. Companies should ___ focus not only on providing excellent products but also superior service.",
+    "contentTranslation": "どのビジネスにおいても、___顧客の苦情は良い評判を維持するために重要です。多くの企業は、一人の不満を持つ顧客の影響を過小評価しています。しばしば、迅速に苦情を解決することで、ネガティブな状況をポジティブなものに変えることができます。___、効果的なコミュニケーションについてスタッフを訓練することは、将来の問題を大幅に軽減することができます。顧客の懸念を聞いて共感を示すことが重要なスキルです。丁寧な言葉遣いと現実的な解決策を提示することも、満足のいく形で___苦情処理することができます。最終的には、苦情を効果的に管理する企業の能力が、全体的な成功を決定することが多いです。企業は、優れた製品を提供するだけでなく、優れたサービスにも___注力するべきです。",
+    "questions": [
+      {
+        "id": "part6_2_q1",
+        "question": "Fill in blank 1",
+        "questionTranslation": "空欄1を埋めてください",
+        "options": [
+          "handle",
+          "handles",
+          "handling",
+          "handled"
+        ],
+        "optionTranslations": [
+          "処理すること",
+          "処理する",
+          "処理すること",
+          "処理された"
+        ],
+        "correct": "C",
+        "explanation": "文の主語が動名詞を要求するため、「handling」が正しいです。他の選択肢は動詞の形で文法的に不正確です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_2_q2",
+        "question": "Fill in blank 2",
+        "questionTranslation": "空欄2を埋めてください",
+        "options": [
+          "It is important to ignore minor issues.",
+          "This approach often leads to more complaints.",
+          "Customers rarely appreciate extra effort.",
+          "Furthermore, training staff on effective communication can significantly reduce future issues."
+        ],
+        "optionTranslations": [
+          "小さな問題を無視することが重要です。",
+          "このアプローチはしばしばさらなる苦情を引き起こします。",
+          "顧客は追加の努力をめったに評価しません。",
+          "さらに、効果的なコミュニケーションについてスタッフを訓練することが将来の問題を大幅に軽減できます。"
+        ],
+        "correct": "D",
+        "explanation": "文章の流れとして、スタッフのトレーニングに関する有効性を述べる内容が適切です。選択肢Dが文脈に合っています。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_2_q3",
+        "question": "Fill in blank 3",
+        "questionTranslation": "空欄3を埋めてください",
+        "options": [
+          "address",
+          "reject",
+          "solve",
+          "ignore"
+        ],
+        "optionTranslations": [
+          "対処する",
+          "拒否する",
+          "解決する",
+          "無視する"
+        ],
+        "correct": "C",
+        "explanation": "文脈上、苦情を「解決する」ことが求められているので、『solve』が最も適切です。他の選択肢はコンテクストに合いません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_2_q4",
+        "question": "Fill in blank 4",
+        "questionTranslation": "空欄4を埋めてください",
+        "options": [
+          "never",
+          "randomly",
+          "seldom",
+          "always"
+        ],
+        "optionTranslations": [
+          "決して",
+          "ランダムに",
+          "めったに",
+          "常に"
+        ],
+        "correct": "D",
+        "explanation": "ここでは、常に優れたサービスを提供することの重要性を述べたいので、「always」が最も適切です。",
+        "questionType": "context"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "customer_complaints",
+    "createdAt": "2025-08-17T06:56:59.248Z",
+    "generationBatch": "part6_batch_1755413808465_lperrxrce",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_3",
+    "documentType": "email",
+    "title": "Policy Changes Announcement",
+    "content": "Subject: Important Policy Changes\n\nDear Team,\n\nI would like to inform you of the recent policy changes that will take effect from next month. ___ (1) These changes aim to improve our efficiency and streamline our operations. \n\nFirst, we will be implementing a flexible work schedule to accommodate everyone's needs. Please review the attached document for detailed information.\n\nFurthermore, our company will now offer training courses to help you adapt to these new policies. ___ (2) We believe this will benefit both the company and employees in the long run.\n\nAdditionally, there will be updates to our dress code policy. ___ (3) Employees should review these changes carefully to ensure compliance.\n\nShould you have any questions or require further clarification, please feel free to reach out to the HR department. ___ (4) \n\nThank you for your attention to these important updates.\n\nBest regards,\n\nJohn Doe\nHR Manager",
+    "contentTranslation": "件名: 重要な方針変更\n\nチームの皆さんへ、\n\n来月から施行される最近の方針変更についてお知らせします。___ (1) これらの変更は私たちの効率を改善し、業務を合理化することを目的としています。\n\nまず、皆さんのニーズに合わせたフレックスタイム制度を導入します。詳細については添付の文書をご確認ください。\n\nさらに、新しい方針に適応するための研修を当社は提供します。___ (2) これにより、長期的に見て会社と従業員の両方が利益を得られると信じています。\n\n加えて、服装規定にも変更があります。___ (3) 従業員の皆さんは、これらの変更をよく確認し、遵守してください。\n\n質問がある場合やさらなる説明が必要な場合は、遠慮なく人事部にお問い合わせください。___ (4)\n\nこれらの重要な更新にご注意いただき、ありがとうございます。\n\nよろしくお願いします。\n\nジョン・ドウ\n人事部長",
+    "questions": [
+      {
+        "id": "part6_3_q1",
+        "question": "Fill in blank 1",
+        "questionTranslation": "空欄1を埋めてください",
+        "options": [
+          "Please disregard the previous email regarding policy changes.",
+          "The new policies are optional but recommended.",
+          "Your feedback is always welcome.",
+          "We are committed to keeping you informed throughout this transition."
+        ],
+        "optionTranslations": [
+          "以前のメールは無視してください",
+          "新しい方針は推奨されます",
+          "ご意見は常に歓迎です",
+          "この移行中に情報提供します"
+        ],
+        "correct": "D",
+        "explanation": "文章の前後関係から、受け入れ可能で自然な継続性を持つ内容が正解となります。ここでは、情報提供に関する方針を示すDが適切です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_3_q2",
+        "question": "Fill in blank 2",
+        "questionTranslation": "空欄2を埋めてください",
+        "options": [
+          "They will be mandatory for everyone.",
+          "You may choose to ignore them.",
+          "This aims to ensure a smoother transition.",
+          "Hiring new staff will be possible."
+        ],
+        "optionTranslations": [
+          "全員に必須です",
+          "無視することも可能です",
+          "スムーズな移行を目指します",
+          "新規採用が可能です"
+        ],
+        "correct": "C",
+        "explanation": "文脈から受け入れ可能で、トレーニングの目的を示すべきです。スムーズな移行を意図するCが自然です。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_3_q3",
+        "question": "Fill in blank 3",
+        "questionTranslation": "空欄3を埋めてください",
+        "options": [
+          "Policies",
+          "Strategies",
+          "Changes",
+          "Revisions"
+        ],
+        "optionTranslations": [
+          "方針",
+          "戦略",
+          "変更",
+          "改訂"
+        ],
+        "correct": "C",
+        "explanation": "この文はドレスコードの変更について述べているので、'changes'が最も自然です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_3_q4",
+        "question": "Fill in blank 4",
+        "questionTranslation": "空欄4を埋めてください",
+        "options": [
+          "The HR department is always available.",
+          "Ensure to contact HR departments timely.",
+          "Please reach out to any HR representative.",
+          "They will assist you with any inquiries."
+        ],
+        "optionTranslations": [
+          "人事部は常に利用可能です",
+          "人事部に時間内に連絡してください",
+          "人事担当者に連絡してください",
+          "ご質問には対応します"
+        ],
+        "correct": "D",
+        "explanation": "HR部門が問い合わせに対してサポートする旨を述べるためには、Dが文法的にも内容的にも適切です。",
+        "questionType": "grammar"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "policy_changes",
+    "createdAt": "2025-08-17T07:40:25.378Z",
+    "generationBatch": "part6_batch_1755416408306_0hqt6wtgx",
+    "partType": "part6"
+  }
+]

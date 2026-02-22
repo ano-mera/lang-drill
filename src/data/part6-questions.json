@@ -1,0 +1,1804 @@
+[
+  {
+    "id": "part6_10",
+    "documentType": "article",
+    "title": "Coordination Meeting for Q3 Project Timeline",
+    "content": "Coordination Meeting for Q3 Project Timeline\n\nOur project managers (1) to review the timeline on Thursday, September 12, and we would like to invite all team leads to attend. The meeting will begin at 10:00 AM in Conference Room B and is expected to last one hour. To help everyone prepare, please consider (2) a short agenda highlighting your team's progress and any issues that require decisions. If none of these times suit you, (3).\n\nAlso, please confirm whether you will attend in person or join by phone. (4) We will distribute the meeting materials two days in advance. Finally, if you have items to add to the agenda, send them to the project coordinator by Monday morning.",
+    "contentTranslation": "プロジェクトマネージャーは9月12日（木）にタイムラインをレビューする予定で、すべてのチームリーダーの出席をお願いしたいと思います。会議は午前10時に会議室Bで開始し、所要時間は1時間の予定です。参加者全員の準備を助けるため、チームの進捗と意思決定が必要な事項を明記した短いアジェンダの準備をご検討ください。もしこれらの時間がご都合に合わない場合は、別日を提案できます。\n\nまた、会議に直接出席するか電話で参加するかをご確認ください。カレンダー招待にダイヤルイン番号とビデオリンクが記載されます。会議資料は2日前に配布します。最後に、議題に追加したい項目があれば、月曜の朝までにプロジェクトコーディネーター宛てにお送りください。",
+    "questions": [
+      {
+        "id": "part6_10_q1",
+        "options": [
+          "A. plans",
+          "B. is planning",
+          "C. planned",
+          "D. are planning"
+        ],
+        "optionTranslations": [
+          "予定する",
+          "予定しています",
+          "予定した",
+          "予定しています"
+        ],
+        "correct": "D",
+        "explanation": "『project managers（複数）』が主語なので動詞も複数形または進行形の複合形が必要です。D の 'are planning' は主語と一致して自然です。A（plans）とB（is planning）は単数主語に使う形、C（planned）は過去形で文脈と合いません。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_10_q2",
+        "options": [
+          "A. drawing",
+          "B. preparing",
+          "C. negotiating",
+          "D. rejecting"
+        ],
+        "optionTranslations": [
+          "作成する",
+          "準備する",
+          "交渉する",
+          "却下する"
+        ],
+        "correct": "B",
+        "explanation": "議題を作る/用意する場合は 'prepare an agenda' の語句が自然です。B の 'preparing' が適切です。A の 'drawing' は不自然で、C の 'negotiating' と D の 'rejecting' は意味が異なり文脈に合いません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_10_q3",
+        "options": [
+          "A. we can propose alternative dates",
+          "B. we will cancel the meeting",
+          "C. please attend as scheduled",
+          "D. the documents will be sent later"
+        ],
+        "optionTranslations": [
+          "別日を提案できます",
+          "会議を中止します",
+          "予定どおり出席してください",
+          "資料は後で送付します"
+        ],
+        "correct": "A",
+        "explanation": "『もしこれらの時間が合わない場合』という条件なので、代替案を提示する旨（A）が最も自然です。B（会議を中止する）やC（予定どおり出席してほしい）は相手の都合を無視する対応で不自然、D（資料送付に関する文）は話のつながりが悪いです。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_10_q4",
+        "options": [
+          "A. Lunch will be provided for all attendees.",
+          "B. Bring printed copies of your reports.",
+          "C. A dial-in number and video link will be included in the calendar invite.",
+          "D. Doors will be locked after the meeting begins."
+        ],
+        "optionTranslations": [
+          "昼食提供",
+          "印刷物を持参",
+          "招待にダイヤルイン記載",
+          "開始後施錠"
+        ],
+        "correct": "C",
+        "explanation": "直前の文で『対面か電話で参加するかを確認してください』とあるため、電話参加者向けの情報（ダイヤルイン番号やビデオリンク）を続けるのが自然です。C が最も適切です。A と B は関連はあるが文脈上必須ではなく、D は不適切で失礼な表現です。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "meeting_scheduling",
+    "createdAt": "2025-08-18T02:58:16.007Z",
+    "generationBatch": "part6_batch_1755485816561_noiaal71j",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_12",
+    "documentType": "notice",
+    "title": "Notice to Customers: Handling of Complaints",
+    "content": "Notice to Customers: Handling of Complaints\n\nDear Customer,\n\nAt BrightHome Electronics, we are committed to providing high-quality products and excellent customer service. If you need to file a complaint, please use the form on our website or call our Customer Service hotline. All complaints will be investigated and a member of our team (1) with you within three business days.\n\nPlease include the following information to help us process your complaint quickly: order number, product model, date of purchase, and a brief description of the issue. We apologize for any inconvenience and appreciate your (2) as we work to resolve the problem.\n\nOnce we receive your complaint, we will log it and begin an investigation. (3) After that, our team will contact you with a proposed solution. If you need immediate assistance, please call the hotline during business hours.\n\nThank you for your continued (4).\n\nSincerely,\nCustomer Service Department\nBrightHome Electronics",
+    "contentTranslation": "お客様へ\n\nBrightHome Electronicsでは、高品質な製品と優れたカスタマーサービスを提供することに努めています。苦情を申し立てる必要がある場合は、当社ウェブサイトのフォームをご利用いただくか、カスタマーサービスのホットラインにお電話ください。すべての苦情は調査され、担当者が3営業日以内にご連絡いたします。\n\n苦情を迅速に処理するために、注文番号、製品型番、購入日、および問題の簡単な説明をお知らせください。ご不便をおかけし申し訳ございません。問題解決に取り組む間、ご辛抱いただき感謝いたします。\n\n苦情を受け取り次第、記録し、調査を開始します。苦情を記録した後、確認のメールをお送りします。その後、担当チームが解決案をご連絡いたします。緊急の対応が必要な場合は、営業時間内にホットラインへお電話ください。\n\n日頃のご支援に感謝いたします。\n\n敬具\nカスタマーサービス部\nBrightHome Electronics",
+    "questions": [
+      {
+        "id": "part6_12_q1",
+        "options": [
+          "A. is contacting",
+          "B. has contacted",
+          "C. will contact",
+          "D. contacting"
+        ],
+        "optionTranslations": [
+          "連絡しています",
+          "連絡済み",
+          "ご連絡します",
+          "連絡する"
+        ],
+        "correct": "C",
+        "explanation": "正解は C: \"will contact\"。文全体は「全ての苦情は調査され、担当者が（何かをする）」という未来の行為を述べているため、未来形の \"will contact\" が適切です。A（is contacting）は進行形で不自然、B（has contacted）は完了形で既に連絡したことを示し文意と合わない、D（contacting）は動名詞や現在分詞として不完全で文法的に誤りです。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_12_q2",
+        "options": [
+          "A. promptness",
+          "B. cooperation",
+          "C. attention",
+          "D. patience"
+        ],
+        "optionTranslations": [
+          "迅速さ",
+          "ご協力",
+          "注目",
+          "ご辛抱"
+        ],
+        "correct": "D",
+        "explanation": "正解は D: \"patience\"。謝罪の文脈では \"We apologize... and appreciate your patience\"（ご辛抱に感謝します）が自然で一般的です。A（promptness＝迅速さ）は文脈上おかしい、B（cooperation＝協力）は使えなくはないがこのフレーズではやや不自然、C（attention＝ご注意）は意味が合いません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_12_q3",
+        "options": [
+          "A. Please ensure that all items are returned within 14 days.",
+          "B. For urgent issues, please visit our service center without an appointment.",
+          "C. We suggest checking the product manual before filing a complaint.",
+          "D. You will receive a confirmation email after we log your complaint."
+        ],
+        "optionTranslations": [
+          "14日以内返品",
+          "予約不要で来店",
+          "説明書を確認",
+          "記録後に確認メール送信"
+        ],
+        "correct": "D",
+        "explanation": "正解は D。前文で「受領して記録し調査を始める」と述べているため、その直後に「記録したら確認メールを送る」という文が自然につながります。Aは返品条件の指示で接続が不自然、Bは即時訪問を促す内容で流れに合わない、Cは事前確認を促す内容で位置的に適切でないため正しくありません。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_12_q4",
+        "options": [
+          "A. support",
+          "B. understanding",
+          "C. patience",
+          "D. interest"
+        ],
+        "optionTranslations": [
+          "ご支援",
+          "ご理解",
+          "ご辛抱",
+          "ご関心"
+        ],
+        "correct": "A",
+        "explanation": "正解は A: \"support\"。結びの挨拶 \"Thank you for your continued support.\"（今後とも変わらぬご支援に感謝します）はビジネスの通知で非常に一般的で自然な表現です。B（understanding）やC（patience）も使える場面はあるが、\"continued understanding/patience\" はやや不自然で、D（interest）は文脈に合いません。",
+        "questionType": "vocabulary"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "customer_complaints",
+    "createdAt": "2025-08-18T04:03:51.482Z",
+    "generationBatch": "part6_batch_1755489738059_8i9q67et7",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_13",
+    "documentType": "letter",
+    "title": "Temporary change to front desk hours",
+    "content": "July 10, 2025\n\nTo: All staff\nFrom: Office Manager\nSubject: Temporary change to front desk hours\n\nWe are writing to (1) you of an upcoming change to the front desk hours next week due to scheduled maintenance on our building's security system. Starting Monday, July 14, the front desk will be open from 9:00 AM to 2:00 PM instead of regular hours. (2) This change applies only to the front desk; the mailroom and security operations will remain unchanged.\n\nDuring the reduced hours, visitors will be required to sign in at the temporary kiosk located by the main entrance. After 2:00 PM, staff should use their key cards to enter the building as security personnel will (3) the main entrance.\n\nPlease note that regular deliveries to the front desk will be held until normal hours resume on July 21. If you expect an urgent delivery, contact Procurement for instructions. (4) We appreciate your cooperation.\n\nSincerely,\nEmma Li\nOffice Manager",
+    "contentTranslation": "2025年7月10日\n\n宛先: 全スタッフ\n差出人: オフィスマネージャー\n件名: フロントデスク営業時間の一時変更\n\nフロントデスクの営業時間が来週変更になることをお知らせするためにご連絡しています。7月14日（月）より、フロントデスクは通常の営業時間の代わりに午前9時から午後2時までの営業時間となります。これらの時間帯に支援が必要な場合は、上司にご連絡ください。この変更はフロントデスクにのみ適用され、メール室および警備業務は変更ありません。\n\n短縮営業時間中は、来訪者は正面入口付近の臨時キオスクでサインインする必要があります。午後2時以降は、警備員が正面入口を監視しますので、職員はキーカードを使用して入館してください。\n\n通常の配達は営業時間復帰の7月21日まで保留されます。緊急の配達がある場合は、調達部に指示をお問い合わせください。ご質問がある場合は、内線210でオフィスマネージャーまでご連絡ください。\n\nよろしくお願いいたします。\nエマ・リー\nオフィスマネージャー",
+    "questions": [
+      {
+        "id": "part6_13_q1",
+        "options": [
+          "A. remind",
+          "B. announce",
+          "C. tell",
+          "D. notify"
+        ],
+        "optionTranslations": [
+          "思い出させる",
+          "発表する",
+          "伝える",
+          "通知する"
+        ],
+        "correct": "D",
+        "explanation": "「We are writing to ( ) you of ...」の文脈では、正式な通知を行う表現が適切です。notify は公式な知らせを表す語で自然です。remind は既に知っていることを思い出させる場合に使い、announce は大きく公表するときに使う傾向があり、tell は口語的でフォーマルな文書では不自然です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_13_q2",
+        "options": [
+          "A. All employees must swipe in at the main gate before entering the building.",
+          "B. If you need assistance during these hours, please contact your supervisor.",
+          "C. The front desk will also be closed on the weekend.",
+          "D. Lunch will be provided for the staff during the maintenance period."
+        ],
+        "optionTranslations": [
+          "全員メインゲートで入館",
+          "この時間帯は上司へ連絡",
+          "週末も閉鎖",
+          "昼食を提供"
+        ],
+        "correct": "B",
+        "explanation": "この位置は文と文の間に挿入する文を選ぶ問題です。本文は業務時間の変更を通知しており、問い合わせや支援について触れる文が自然です。B はその役割を果たします。A は具体的な手続きの指示で本文の流れに合わない、C は事実と矛盾する可能性があり、D は無関係で不適切です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_13_q3",
+        "options": [
+          "A. to monitor",
+          "B. monitors",
+          "C. monitor",
+          "D. monitored"
+        ],
+        "optionTranslations": [
+          "監視するために",
+          "監視します",
+          "監視する",
+          "監視される"
+        ],
+        "correct": "C",
+        "explanation": "will + 動詞の原形の語順が正しいため、monitor（原形）が正解です。to monitor は不定詞で文の構造に合わず、monitors は主語と時制の一致を欠き、monitored は過去・過去分詞形で不適切です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_13_q4",
+        "options": [
+          "A. Deliveries will continue as normal.",
+          "B. Please use the side entrance instead of the main doors.",
+          "C. If you have any questions, please contact the Office Manager at extension 210.",
+          "D. All staff must work from home on July 15."
+        ],
+        "optionTranslations": [
+          "配達は通常通り",
+          "側面入口を使用",
+          "ご質問は内線210へ",
+          "7月15日は全員在宅勤務"
+        ],
+        "correct": "C",
+        "explanation": "直前で緊急配送についての連絡先を案内しているため、問い合わせ先を示す文が文脈上最も適切です。C はその要件を満たします。A は先ほどの「hold」するという記述と矛盾し、B と D は本文の内容とは無関係または不正確です。",
+        "questionType": "context"
+      }
+    ],
+    "difficulty": "medium",
+    "topic": "simple_notifications (簡単な通知)",
+    "createdAt": "2025-08-18T09:41:40.364Z",
+    "generationBatch": "part6_batch_1755509961729_drwnp680t",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_14",
+    "documentType": "email",
+    "title": "Request for Q2 Sales Figures and Meeting",
+    "content": "Dear Ms. Tanaka,\n\nI hope you are well. I'm writing to request the updated sales figures for Q2 and to ask for a brief meeting next week to discuss them. Could you please (1) the attached spreadsheet and send me the revised numbers by Friday?\n\nWe would like to meet for about 30 minutes. (2) Please let me know your availability between Monday and Wednesday so we can confirm a time.\n\nAlso, could you (3) any expense receipts related to the client dinner last month? Those will be needed for reimbursement.\n\nIf I do not hear from you, (4). Please let me know if you need more time.\n\nBest regards,\nKen Sato\nSales Manager\nGlobal Solutions Ltd.",
+    "contentTranslation": "田中様\n\nお世話になっております。第2四半期の最新の売上数値をお願いしたく、来週それらについて簡単に打ち合わせをさせていただきたくご連絡いたしました。添付のスプレッドシートをご確認いただき、金曜日までに修正後の数値をお送りいただけますでしょうか。\n\n会議は約30分を予定しています。そちらから誰が出席されるか教えていただけますか。月曜から水曜の間のご都合をお知らせいただければ、時間を確定いたします。\n\nまた、先月のクライアントとの会食に関する経費の領収書をご提出いただけますか。払い戻しのために必要です。\n\nご連絡がない場合は、木曜日にお電話で確認いたします。もし追加でお時間が必要でしたらお知らせください。\n\nよろしくお願いいたします。\n\n佐藤健\nセールスマネージャー\nグローバル・ソリューションズ社",
+    "questions": [
+      {
+        "id": "part6_14_q1",
+        "options": [
+          "A. reviews",
+          "B. review",
+          "C. to review",
+          "D. reviewed"
+        ],
+        "optionTranslations": [
+          "A. 確認する（現在）",
+          "B. 確認する",
+          "C. 確認するために",
+          "D. 確認した"
+        ],
+        "correct": "B",
+        "explanation": "「Could you please ...?」の構文の後には動詞の原形が続くため、正しい答えは \"review\"（原形）です。他の選択肢は語形が不適切です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_14_q2",
+        "options": [
+          "A. Please find the quarter's budget attached.",
+          "B. I will be traveling on Monday.",
+          "C. Could you let me know who will attend from your side?",
+          "D. Thank you for your continued cooperation."
+        ],
+        "optionTranslations": [
+          "A. 四半期予算を添付",
+          "B. 月曜は出張",
+          "C. 出席者を教えてください",
+          "D. 引き続きよろしく"
+        ],
+        "correct": "C",
+        "explanation": "前の文でミーティングの長さについて述べており、次に出席者を確認するのが自然な流れです。AやBは文脈と関係が薄く、Dは締めの表現でここには適さないため、Cが最も適切です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_14_q3",
+        "options": [
+          "A. provide",
+          "B. provided",
+          "C. provides",
+          "D. providing"
+        ],
+        "optionTranslations": [
+          "A. 提供する",
+          "B. 提供した",
+          "C. 提供する（3人称）",
+          "D. 提供している"
+        ],
+        "correct": "A",
+        "explanation": "\"Could you ... any expense receipts?\" の文では、助動詞 'could' の後に動詞の原形（provide）が続きます。したがって A が正解です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_14_q4",
+        "options": [
+          "A. I look forward to meeting you soon.",
+          "B. Please reply at your earliest convenience.",
+          "C. I will follow up with a call on Thursday if I haven't heard back.",
+          "D. We will cancel the meeting without prior notice."
+        ],
+        "optionTranslations": [
+          "A. お会いするのを楽しみに",
+          "B. 早めに返信してください",
+          "C. 返事なければ木曜に電話します",
+          "D. 事前通知なしで中止"
+        ],
+        "correct": "C",
+        "explanation": "文は条件節 \"If I do not hear from you, (4).\" で終わっているため、続きとして \"I will follow up with a call on Thursday if I haven't heard back.\" のような行動を示す文が自然です。AやBは文脈に合うが条件節の続きとしては不完全、Dは不適切に強い表現です。",
+        "questionType": "context"
+      }
+    ],
+    "difficulty": "medium",
+    "topic": "basic_requests (基本的な依頼)",
+    "createdAt": "2025-08-18T09:43:44.568Z",
+    "generationBatch": "part6_batch_1755509961729_drwnp680t",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_15",
+    "documentType": "email",
+    "title": "Scheduled System Update",
+    "content": "From: IT Support\nTo: All employees\nSubject: Scheduled System Update\n\nDear colleagues,\n\nPlease be advised that the critical system update (1) is planned for Saturday, August 30. The maintenance will begin at 11:00 PM and is expected to last approximately two hours. During this maintenance window, access to the internal portal and email may be limited. (2) We recommend that you save your work and log off before the start time to avoid data loss.\n\nIf you have any applications that require continuous access, please notify the IT help desk by Thursday at 5:00 PM so we can coordinate exceptions. (3) We apologize for any inconvenience this may cause and appreciate your cooperation.\n\nFor urgent issues during the update, contact the support hotline at extension 5500; for non-urgent questions, submit a ticket through the service portal. After the update, you may need to clear your browser cache to ensure proper (4).\n\nBest regards,\nIT Support Team",
+    "contentTranslation": "差出人: ITサポート\n宛先: 全従業員\n件名: システム更新の予定\n\n社員の皆様、\n\n重要なシステム更新は8月30日（土）に予定されています。メンテナンスは午後11時に開始し、約2時間続く見込みです。このメンテナンス期間中は、イントラネットポータルおよびメールへのアクセスが制限される場合があります。クラウドベースのサービスも一時的に利用できなくなることにご注意ください。\n\n継続的なアクセスが必要なアプリケーションがある場合は、例外対応を調整するため木曜日の午後5時までにITヘルプデスクにご連絡ください。ダウンタイムの準備について支援が必要な場合は、ITヘルプデスクが案内します。\n\nメンテナンス中の緊急の問題については内線5500のサポートホットラインにご連絡ください。緊急でない質問はサービスポータルからチケットを提出してください。更新後、適切な機能を確保するためにブラウザのキャッシュをクリアする必要がある場合があります。\n\nよろしくお願いいたします。\nITサポートチーム",
+    "questions": [
+      {
+        "id": "part6_15_q1",
+        "options": [
+          "A. is planned",
+          "B. are planned",
+          "C. was planning",
+          "D. planning"
+        ],
+        "optionTranslations": [
+          "予定されています",
+          "予定されています",
+          "計画していた",
+          "計画中"
+        ],
+        "correct": "A",
+        "explanation": "主語は \"the critical system update\"（単数）なので、単数形の受動態 \"is planned\" が適切です。B の \"are planned\" は複数主語に使う形、C の \"was planning\" は能動の過去進行形で文意と合いません。D の \"planning\" は語法上不完全です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_15_q2",
+        "options": [
+          "A. Only external vendors will be affected by the downtime.",
+          "B. The update is optional for most users.",
+          "C. Please note that cloud-based services will also be temporarily unavailable.",
+          "D. No action is required on your part."
+        ],
+        "optionTranslations": [
+          "外部業者のみ影響",
+          "更新は任意",
+          "クラウドサービスも一時停止",
+          "対応不要"
+        ],
+        "correct": "C",
+        "explanation": "直前で \"access to the internal portal and email may be limited\" とあるので、それに続く文として \"cloud-based services will also be temporarily unavailable\"（クラウドサービスも一時的に利用できなくなる）という説明が自然に続きます。A や B は内容が限定的・矛盾的で、D は \"アクセス制限がある\" という注意と矛盾します。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_15_q3",
+        "options": [
+          "A. This process will not require any user input unless notified.",
+          "B. If you need assistance preparing for the downtime, the IT help desk can provide guidance.",
+          "C. All updates are fully automatic and reversible.",
+          "D. Please expect enhanced performance after the update."
+        ],
+        "optionTranslations": [
+          "通知がない限り操作不要",
+          "ダウンタイム準備は支援可能",
+          "更新は自動かつ可逆",
+          "更新後は性能向上見込み"
+        ],
+        "correct": "B",
+        "explanation": "前の文は \"please notify the IT help desk ... so we can coordinate exceptions\" となっており、次に入る文として \"必要であれば IT ヘルプデスクが準備のサポートを提供できます\" という B が最も自然です。A はやや矛盾、C は具体的な保証を述べており文脈に合わず、D は順序的に続けるには不適切です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_15_q4",
+        "options": [
+          "A. capability",
+          "B. efficiency",
+          "C. connectivity",
+          "D. functionality"
+        ],
+        "optionTranslations": [
+          "能力",
+          "効率",
+          "接続性",
+          "機能"
+        ],
+        "correct": "D",
+        "explanation": "\"clear your browser cache to ensure proper functionality\" は自然な英語の言い回しで、システムが正しく動作することを指します。A の \"capability\" は能力、B の \"efficiency\" は効率、C の \"connectivity\" は接続性で、ここでは最も適切なのは D の \"functionality\" です。",
+        "questionType": "vocabulary"
+      }
+    ],
+    "difficulty": "medium",
+    "topic": "system_updates",
+    "createdAt": "2025-08-18T09:46:21.479Z",
+    "generationBatch": "part6_batch_1755509961729_drwnp680t",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_16",
+    "documentType": "memo",
+    "title": "Temporary Changes to Conference Room Booking and Cleaning Schedule",
+    "content": "To: All Staff\nFrom: Office Management\nDate: August 18, 2025\nSubject: Temporary Changes to Conference Room Booking and Cleaning Schedule\n\nPlease be aware that, during the renovation, we will implement a (1) schedule for conference room bookings to minimize conflicts and ensure fair access.\n\nFor the duration of the work, please follow these procedures: (2) To reserve a room, submit your request via the intranet booking system. Reservations should be made at least 24 hours in advance. Cancellations submitted less than 4 hours before a meeting may be subject to a small fee.\n\nThe nightly cleaning crew will disinfect high-touch surfaces; however, teams using the rooms for extended periods should (3) after meetings to keep the space safe for the next group.\n\nIf you have any questions or concerns, please contact Facilities. The team (4) be happy to assist.",
+    "contentTranslation": "宛先：全社員\n発信：オフィス管理\n日付：2025年8月18日\n件名：会議室予約および清掃スケジュールの一時変更\n\n改装期間中は、競合を最小限に抑え、公平な利用を確保するため、会議室予約に関して臨時のスケジュールを導入します。\n\n工事期間中は以下の手順に従ってください：不要な予約は他の人の利用のために必ずキャンセルしてください。部屋を予約するには、社内イントラネットの予約システムから申請してください。予約は少なくとも24時間前に行ってください。会議の4時間未満のキャンセルは、少額の料金が発生する場合があります。\n\n夜間の清掃員が頻繁に触れる表面を消毒しますが、長時間使用するチームは、会議後に拭き掃除を行って、次のグループのためにスペースを安全に保ってください。\n\nご質問やご不明点がある場合は、設備管理にお問い合わせください。チームが喜んで対応します。",
+    "questions": [
+      {
+        "id": "part6_16_q1",
+        "options": [
+          "complimentary",
+          "permanent",
+          "customary",
+          "contingency"
+        ],
+        "optionTranslations": [
+          "無料の",
+          "恒久的な",
+          "通常の",
+          "緊急時用の"
+        ],
+        "correct": "D",
+        "explanation": "「contingency（不測の事態に備えた代替策、緊急対応）」が文脈に合います。工事中の一時的な調整を指す語として自然です。Aのcomplimentary（無料の）は意味が合わず、Bのpermanent（恒久的な）は一時的な変更を示す文脈に反します。Cのcustomary（通常の）は通常通りという意味で、ここでは工事による特別なスケジュールを指すため不適切です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_16_q2",
+        "options": [
+          "Furniture will be moved to the third floor next week.",
+          "Please remember to cancel any reservations you no longer need to free up space for others.",
+          "All food and drink are prohibited inside the conference rooms.",
+          "There will be no changes to the building's security protocols."
+        ],
+        "optionTranslations": [
+          "家具は3階へ移動",
+          "不要な予約はキャンセル",
+          "飲食は禁止",
+          "警備は変更なし"
+        ],
+        "correct": "B",
+        "explanation": "挿入文としてBが最も流れに合います。続く文は予約方法や事前予約の注意であり、使わない予約をキャンセルしてほしいという依頼は手順説明の流れに自然につながります。AとDは別トピック（家具移動・セキュリティ）で文脈に合わず、Cは会議室の飲食禁止という別の規則で、ここで手順を説明する箇所には適切ではありません。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_16_q3",
+        "options": [
+          "procrastinate",
+          "overlook",
+          "wipe down",
+          "delegate"
+        ],
+        "optionTranslations": [
+          "先延ばしにする",
+          "見落とす",
+          "拭き掃除する",
+          "委任する"
+        ],
+        "correct": "C",
+        "explanation": "文脈は清掃と『次のグループのために安全に保つ』ことについて述べているため、会議後に『wipe down（拭き掃除する）』が適切です。Aのprocrastinate（先延ばしする）は逆の意味、Bのoverlook（見落とす）は不注意を表し不適切、Dのdelegate（他人に委任する）も文意にそぐいません。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_16_q4",
+        "options": [
+          "are happy",
+          "will happy",
+          "will be happy",
+          "being happy"
+        ],
+        "optionTranslations": [
+          "喜んでいます",
+          "will happy（誤）",
+          "喜んで対応します",
+          "喜んでいること"
+        ],
+        "correct": "C",
+        "explanation": "未来に対する丁寧な申し出を表す標準的な表現は\"will be happy to + 動詞\"です。したがってCが正解です。Aのare happyは現在形で不自然、Bのwill happyはbe動詞が欠けて文法的に誤り、Dのbeing happyは進行形的な形でこの文脈には不適切です。",
+        "questionType": "grammar"
+      }
+    ],
+    "difficulty": "medium",
+    "topic": "office_announcements (オフィス告知)",
+    "createdAt": "2025-08-18T09:48:36.104Z",
+    "generationBatch": "part6_batch_1755509961729_drwnp680t",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_17",
+    "documentType": "article",
+    "title": "Improving Team Coordination Across Departments",
+    "content": "Effective coordination among team members is essential for meeting project deadlines and maintaining high quality. At our company, recent projects (1) several recurring communication gaps that slow decision-making and reduce productivity. To address these issues, the Operations and Product teams implemented a weekly cross-functional meeting and a shared task tracker to ensure transparency. Each week, team leads (2) progress, blockers, and upcoming priorities in a concise report. These practices also helped centralize information and shorten the time required to resolve interdepartmental questions. (3) The new routine has shown early signs of success: deadlines are met more consistently and fewer issues fall through the cracks. Nevertheless, the initiative requires ongoing attention to prevent backsliding. We recommend that managers reinforce this approach by recognizing collaborative behavior and providing (4) feedback that helps teams improve.",
+    "contentTranslation": "チームメンバー間の効果的な連携は、プロジェクトの期限を守り高い品質を維持するために不可欠です。当社では、最近のプロジェクトが意思決定を遅らせ生産性を低下させるいくつかの繰り返し発生するコミュニケーションのギャップを浮き彫りにしました。これらの問題に対処するために、オペレーション部門とプロダクト部門は週次の横断的会議と透明性を確保するための共有タスクトラッカーを導入しました。毎週、チームリードは簡潔な報告書で進捗、障害（ブロッカー）、および今後の優先事項を要約します。これらの取り組みにより情報が一元化され、部門間の問い合わせを解決するのに要する時間が短縮されました。効果を上げるために、会議では簡潔な役割分担を行い、全員が自分の責任を把握できるようにしています。新しいルーチンは早期の成功の兆候を示しています：締め切りはより安定して守られるようになり、見落とされる問題は減少しています。それでも、この取り組みは後退を防ぐために継続的な注意が必要です。マネージャーは協力的な行動を評価し、チームの改善に役立つ建設的なフィードバックを提供することでこの方針を強化することを推奨します。",
+    "questions": [
+      {
+        "id": "part6_17_q1",
+        "options": [
+          "have highlighted",
+          "has highlighted",
+          "highlight",
+          "highlighted"
+        ],
+        "optionTranslations": [
+          "明らかにしている",
+          "明らかにした",
+          "明らかにする",
+          "明らかになった"
+        ],
+        "correct": "A",
+        "explanation": "文脈上、主語は \"recent projects\"（複数）なので現在完了の複数形 \"have highlighted\" が正しいです。他の選択肢は単数扱いや時制が不適切で、文の意味（これまでのプロジェクトが明らかにした事実）に合いません。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_17_q2",
+        "options": [
+          "summarizes",
+          "is summarizing",
+          "summarize",
+          "to summarize"
+        ],
+        "optionTranslations": [
+          "要約する",
+          "要約している",
+          "要約する",
+          "要約するために"
+        ],
+        "correct": "C",
+        "explanation": "\"Each week\" と習慣的・定期的な行為を表しているため、主語 \"team leads\"（複数）に対応する現在形の原形複数形 \"summarize\" が適切です。\"summarizes\" は三人称単数に用いる形で誤り、\"is summarizing\" は進行形で不自然、\"to summarize\" は不定詞で文法的に合いません。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_17_q3",
+        "options": [
+          "However, budget constraints prevented the adoption of new software.",
+          "Remote employees were excluded due to time zone differences.",
+          "Leadership approved a larger team to manage cross-functional tasks.",
+          "To be effective, the meetings include brief role assignments so everyone knows their responsibilities."
+        ],
+        "optionTranslations": [
+          "予算制約で導入不可",
+          "時差で遠隔除外",
+          "チーム拡大を承認",
+          "会議で役割分担"
+        ],
+        "correct": "D",
+        "explanation": "前後の文はミーティングや情報の一元化、責任の明確化について述べているため、Dの文（会議で短い役割分担を行い責任を共有する）を挿入するのが自然です。他の選択肢は話題と関連が薄く、流れを断ち切ってしまいます。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_17_q4",
+        "options": [
+          "occasionally",
+          "constructive",
+          "simple",
+          "brief"
+        ],
+        "optionTranslations": [
+          "時折",
+          "建設的",
+          "単純な",
+          "簡潔な"
+        ],
+        "correct": "B",
+        "explanation": "名詞 \"feedback\" を修飾する適切な語は形容詞であり、チーム改善の文脈では \"constructive\"（建設的な）が最も適切です。Aの \"occasionally\" は副詞で文法的に不適切、CとDは形容詞ですが意味的に \"constructive feedback\" の方が目的に合います。",
+        "questionType": "vocabulary"
+      }
+    ],
+    "difficulty": "medium",
+    "topic": "team_coordination",
+    "createdAt": "2025-08-18T09:50:31.299Z",
+    "generationBatch": "part6_batch_1755509961729_drwnp680t",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_18",
+    "documentType": "memo",
+    "title": "Updated Procedure for Customer Inquiries",
+    "content": "To: All Customer Support Staff\nFrom: Jane Morales, Customer Service Manager\nDate: August 18, 2025\nSubject: Updated Procedure for Customer Inquiries\n\nPlease review the following updates to our customer inquiry handling process, effective immediately. (1) Notably, our recent audit revealed inconsistencies in response times and escalation practices that have led to delayed resolutions.\n\nWhen a new inquiry is received, the first priority is to acknowledge receipt within one business hour. This initial acknowledgement should include confirmation that we have received the customer's message and an estimated timeframe for a full response. It is also important to assess the inquiry's urgency; low-priority issues may be queued, while those that threaten service continuity require immediate action and (2) engage the appropriate technical team for support.\n\nSupport agents should use the standardized response templates available in the Knowledge Base and customize them to the customer's specific situation. Use the escalation matrix to determine who should be copied on communications, and ensure that all steps taken are recorded in the ticket notes. If a ticket remains unresolved after two business days, the agent must escalate to a supervisor and (3) provide a summary of actions taken to date.\n\nAdditionally, we are introducing a weekly quality review to identify recurring issues and training needs. Please incorporate feedback from these reviews into your individual development plans.\n\n(4) As a related reminder, all correspondence with customers must adhere to the communication standards outlined in the employee handbook.\n\nMaintaining clear, courteous communication is paramount to preserving customer trust.\n\nThank you for your attention and cooperation.",
+    "contentTranslation": "宛先：カスタマーサポート全員\n差出人：ジェーン・モラレス（カスタマーサービスマネージャー）\n日付：2025年8月18日\n件名：顧客問い合わせ対応手順の更新\n\n以下の顧客問い合わせ対応プロセスの更新内容を、即日実施としてご確認ください。特に、最近の監査で回答時間やエスカレーションの運用に不一致があり、その結果として解決の遅れが生じていることが明らかになりました。\n\n新しい問い合わせを受け取った場合、最優先事項は1営業時間以内に受領の確認を行うことです。この初期確認には、顧客からのメッセージを受領したことの確認と、正式な回答までのおおよその時間を含めてください。また、問い合わせの緊急度を評価することも重要です。優先度の低い問題は順番待ちにする一方で、サービス継続性を脅かす問題は直ちに対応し、適切な技術チームに支援を依頼してください。\n\nサポート担当者はナレッジベースにある標準テンプレートを使用し、顧客の状況に合わせてカスタマイズしてください。誰を通信の宛先に含めるべきかはエスカレーションマトリックスを参照し、行ったすべての対応をチケットのメモに記録することを徹底してください。チケットが2営業日経っても未解決の場合、担当者は上司にエスカレーションし、これまでに行った対応の要約を提出する必要があります。\n\nさらに、再発する問題や研修の必要性を特定するために、週次の品質レビューを導入します。これらのレビューからのフィードバックを個々の育成計画に反映させてください。\n\n関連の注意事項として、顧客とのすべてのやり取りは、社員ハンドブックに示されたコミュニケーション基準に従わなければなりません。\n\n明確で礼儀正しいコミュニケーションを維持することは、顧客の信頼を守るために最も重要です。\n\nご注意とご協力に感謝します。",
+    "questions": [
+      {
+        "id": "part6_18_q1",
+        "options": [
+          "For reference,",
+          "In the meantime,",
+          "Notably,",
+          "Accordingly,"
+        ],
+        "optionTranslations": [
+          "参考までに",
+          "その間に",
+          "特に",
+          "それに伴い"
+        ],
+        "correct": "C",
+        "explanation": "文脈的に「最近の監査で〜が判明した」と続くため、話題を強調する接続語が適切です。Notably（特筆すべきことに）は audit の発見を自然に導くので正解。For reference（参考までに）は弱く、In the meantime（その間）は時間的対比を示し不適切、Accordingly（それゆえに）は因果関係が逆で不自然です。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_18_q2",
+        "options": [
+          "to notify of",
+          "escalates",
+          "engage",
+          "alerting"
+        ],
+        "optionTranslations": [
+          "通知する",
+          "エスカレートする",
+          "関与させる",
+          "警告する"
+        ],
+        "correct": "C",
+        "explanation": "文は『require immediate action and ___ the appropriate technical team』という並列構造なので、動詞の原形が必要です。'engage the appropriate technical team'（適切な技術チームを連携させる／動員する）が語彙的にも意味的にも最適。A と D は形が不適切、B は三人称単数現在形で主語と合わず誤りです。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_18_q3",
+        "options": [
+          "provides",
+          "provide",
+          "provided",
+          "to have provided"
+        ],
+        "optionTranslations": [
+          "提供します",
+          "提供する",
+          "提供された",
+          "提供していること"
+        ],
+        "correct": "B",
+        "explanation": "構造は『must escalate ... and ___ a summary』で、助動詞 must に続く並列の動詞は原形で統一する必要があります。したがって 'provide' が正しい。'provides' は主語と一致せず、'provided' は過去分詞／過去形で意味が変わり、'to have provided' は不適切な不定詞形です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_18_q4",
+        "options": [
+          "However, we will continue to monitor agent productivity closely.",
+          "While supervisors oversee escalations, agents remain responsible for initial customer contact.",
+          "As a related reminder, all correspondence with customers must adhere to the communication standards outlined in the employee handbook.",
+          "Because of the increased volume, we plan to hire two additional agents next quarter."
+        ],
+        "optionTranslations": [
+          "ただし生産性を監視",
+          "担当者は初期対応",
+          "顧客対応はハンドブック基準に従う",
+          "来期に2名増員予定"
+        ],
+        "correct": "C",
+        "explanation": "挿入文は直後の文（\"Maintaining clear, courteous communication...\"）と論理的につながり、レビューや育成計画に続く注意喚起である必要があります。選択肢 C は「関連する注意」として自然に流れ、次の文の主題（顧客対応の明確さと礼儀）へ直接つながるため正しい。A は生産性監視の話題で脈絡がずれ、B は役割分担の説明で気持ちがそられる、D は人員計画の話題で不適切です。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "hard",
+    "topic": "customer_inquiries",
+    "createdAt": "2025-08-18T09:53:26.710Z",
+    "generationBatch": "part6_batch_1755510689169_7o8zada2y",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_19",
+    "documentType": "notice",
+    "title": "Interdepartmental Coordination Protocol Update",
+    "content": "To: All Department Heads\nFrom: Office of Operations\nDate: August 18, 2025\n\nSubject: Mandatory Procedures for Cross-Department Coordination\n\nThis notice outlines revised procedures designed to improve collaboration among departments involved in the Integrated Project Initiative. Going forward, please take the following actions to ensure (1) communication across functional teams and to minimize duplication of effort.\n\n1. Weekly status reports: All teams must submit brief updates summarizing progress, blockers, and upcoming tasks. Please ensure all deliverables (2) uploaded to the shared project drive by 17:00 every Friday so that synthesis and prioritization can occur over the weekend.\n\n2. Coordination meetings: A standing meeting will take place each Monday at 10:30 to review consolidated reports and allocate resources. (3)\n\n3. Compliance and escalation: Adherence to these procedures is mandatory. Repeated failures to provide timely updates will prompt (4).\n\nIf you have questions about the procedures or require access permissions for the shared drive, contact the Coordination Office at coord-office@example.com.",
+    "contentTranslation": "宛先: 各部門長\n差出人: 運営オフィス\n日付: 2025年8月18日\n\n件名: 部門横断的調整の必須手順\n\nこの通知は、統合プロジェクトイニシアチブに関与する部門間の協力を改善することを目的とした改訂手順を示します。今後、機能別チーム間の円滑なコミュニケーションを確保し、作業の重複を最小限にするために、以下の対応を行ってください。\n\n1. 週次ステータス報告: 全チームは進捗、障害事項、今後のタスクを要約した簡潔な更新を提出する必要があります。すべての成果物が毎週金曜17:00までに共有プロジェクトドライブにアップロードされていることを確認してください。週末に統合と優先順位付けを行えるようにするためです。\n\n2. 調整会議: 統合報告を確認しリソースを配分するため、毎週月曜10:30に定例会議を実施します。各部門長は、自部門のチームからの報告を取りまとめ、毎週月曜午前10時までに調整オフィスに送付する責任があります。\n\n3. コンプライアンスとエスカレーション: これらの手順の遵守は義務です。タイムリーな更新を繰り返し提供しない場合には、経営陣への報告が行われます。\n\nご不明な点や共有ドライブのアクセス権が必要な場合は、coord-office@example.com の調整オフィスまでご連絡ください。",
+    "questions": [
+      {
+        "id": "part6_19_q1",
+        "options": [
+          "A. sporadic",
+          "B. exclusive",
+          "C. seamless",
+          "D. redundant"
+        ],
+        "optionTranslations": [
+          "散発的な",
+          "排他的な",
+          "円滑な",
+          "冗長な"
+        ],
+        "correct": "C",
+        "explanation": "「seamless（継ぎ目のない、途切れのない）」が最も適切です。文は「機能横断チーム間の（　　　）コミュニケーションを確保する」と言っており、スムーズで途切れのない連携を求めているため「seamless」が自然です。Aのsporadicは「断続的な」で意味が逆、Bのexclusiveは「排他的・限定的」、Dのredundantは「冗長・重複した」でどれも文脈に合いません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_19_q2",
+        "options": [
+          "A. are uploaded",
+          "B. were uploaded",
+          "C. have been uploaded",
+          "D. to be uploaded"
+        ],
+        "optionTranslations": [
+          "アップロードされる",
+          "アップロードされた",
+          "アップロード済みである",
+          "アップロードされる予定"
+        ],
+        "correct": "C",
+        "explanation": "文脈は締切（毎週金曜17:00までに完了していること）を示しているので、完了を強調する現在完了の受動態「have been uploaded」が適切です。「Please ensure all deliverables have been uploaded by 17:00」＝締切時点でアップロード済みであることを確実にするという意味です。Aのare uploadedは命令として許容される場合もありますが、締切までに『完了している状態』を強調するには現在完了が最も適切です。Bのwere uploadedは過去形で不適切、Dのto be uploadedは不完全な不定詞構文で文法的に合いません。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_19_q3",
+        "options": [
+          "A. Each department head is responsible for consolidating reports from their teams and forwarding them to the Coordination Office by 10:00 AM every Monday.",
+          "B. Please direct all questions about individual tasks to your immediate supervisor.",
+          "C. Teams will no longer be required to attend the Monday meetings unless requested.",
+          "D. A training session on the new software will be offered next quarter."
+        ],
+        "optionTranslations": [
+          "部門長が取りまとめて送付",
+          "上司に確認",
+          "出席不要",
+          "次四半期に研修"
+        ],
+        "correct": "A",
+        "explanation": "この挿入文は、直前の文が「毎週月曜10:30に会議を開催する」と述べているため、会議の前に『報告書を取りまとめて事前に提出する責任』について具体的に述べる文が最も自然です。Aはその役割と締切（毎週月曜10:00）を明確にし、会議の流れと整合します。Bは一般的な連絡先案内で、流れに直接つながりません。Cは会議出席に関する逆の指示で文脈と矛盾します。Dは研修の告知で、ここで挿入するには無関係です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_19_q4",
+        "options": [
+          "A. temporary commendation",
+          "B. departmental recognition",
+          "C. an optional refresher session",
+          "D. escalation to senior management"
+        ],
+        "optionTranslations": [
+          "臨時表彰",
+          "部門表彰",
+          "任意再研修",
+          "経営陣への報告"
+        ],
+        "correct": "D",
+        "explanation": "「Repeated failures to provide timely updates will prompt (4).」という文は『繰り返しの遅延・不履行に対する対応』を述べており、最も妥当なのは重い対応である「上級管理職へのエスカレーション（escalation to senior management）」です。AやBは表彰のような肯定的措置で文脈に合わず、Cは軽微な対応であり、抑止力としては不十分です。したがってDが適切です。",
+        "questionType": "context"
+      }
+    ],
+    "difficulty": "hard",
+    "topic": "cross_department_coordination (部門間連携)",
+    "createdAt": "2025-08-18T09:58:39.668Z",
+    "generationBatch": "part6_batch_1755511031207_zgblhbct7",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_20",
+    "documentType": "article",
+    "title": "Quarterly Financial Review: Q2 2025",
+    "content": "Quarterly Financial Review: Q2 2025\n\nOur analysis of the second-quarter results for 2025 indicates mixed signals regarding the company's financial resilience. The company's liquidity ratios are indicative of its ability to meet short-term obligations; however, the operating cash flow has been persistently (1) over the past two fiscal years. This trend, coupled with an increase in accounts receivable days, raises concerns about cash conversion and short-term funding needs.\n\nAlthough top-line revenue growth was maintained at 2.8% year-over-year, margins have been under pressure. While revenue growth remained modest, the adjusted EBITDA margin improved, (2) the decline in net income attributed to foreign exchange losses and higher interest expense. We note that the margin expansion was driven primarily by cost controls and the phasing out of low-margin product lines.\n\nAn impairment loss recognized in Q1 affected comparability with prior periods. Management contends that, had the impairment been recognized earlier, the carrying values of the related intangible assets (3) their recoverable amounts. Nevertheless, the one-time charge reduced equity and tightened leverage ratios as measured by debt-to-equity and net debt-to-EBITDA.\n\n(4)\n\nLooking ahead, revenue drivers include the migration to subscription pricing for select software modules, geographic expansion into Southeast Asia, and continued emphasis on cross-selling to existing enterprise clients. The company's ability to convert these growth initiatives into sustainable free cash flow will determine its refinancing flexibility in the next twelve months.",
+    "contentTranslation": "当社の2025年第2四半期の業績分析は、同社の財務的な回復力に関して混在するシグナルを示しています。流動性比率は短期債務を履行する能力を示す指標である一方、営業キャッシュフローは過去2会計年度にわたり持続的に低迷しています。この傾向は、売掛金回収日数の増加と相まって、キャッシュ変換と短期的な資金ニーズについて懸念を生じさせます。\n\n売上高の伸びは前年同期比で2.8%と維持されたものの、マージンは圧迫されています。売上高の伸びは引き続き緩やかだったが、調整後EBITDAマージンは、為替差損および利息負担の増加に起因する当期純利益の減少にもかかわらず改善しました。マージン拡大は主にコスト管理と低マージン製品ラインの段階的廃止によって牽引されました。\n\n第1四半期に認識された減損損失は、以前の期間との比較可能性に影響を与えました。経営陣は、もし減損がより早く認識されていたなら、関連する無形資産の帳簿価額はそれらの回収可能価額をより正確に反映していただろうと主張しています。それにもかかわらず、この一時的な損失は資本を減少させ、負債比率および純有利子負債／EBITDAで測定されるレバレッジ比率を引き締めました。\n\n我々は取締役会に対し、バランスシートの柔軟性を回復するため、ターゲットを絞った資産売却と資本的支出の抑制によるデレバレッジを優先することを推奨します。\n\n今後の収益ドライバーには、特定のソフトウェアモジュールのサブスクリプション価格への移行、東南アジアへの地理的拡大、既存のエンタープライズ顧客へのクロスセルの継続的な強化が含まれます。これらの成長イニシアチブを持続可能なフリーキャッシュフローに転換する同社の能力が、今後12か月間の再資金調達の柔軟性を決定します。",
+    "questions": [
+      {
+        "id": "part6_20_q1",
+        "options": [
+          "voluminous",
+          "erratic",
+          "depressed",
+          "accelerating"
+        ],
+        "optionTranslations": [
+          "膨大な",
+          "不安定な",
+          "低迷している",
+          "加速している"
+        ],
+        "correct": "C",
+        "explanation": "正解は C: \"depressed\"。文は「営業キャッシュフローが過去2会計年度にわたって持続的に（1）している」と述べており、ここでは \"depressed\"（低迷している、押し下げられている）が意味的に適切。A \"voluminous\"（大量の）は量を示す語で文脈に合わない。B \"erratic\"（不規則な）は変動性を示すが、'persistently'（持続的に）と矛盾する。D \"accelerating\"（加速している）は意味が逆で、文脈に合わない。 (questionType: vocabulary)"
+      },
+      {
+        "id": "part6_20_q2",
+        "options": [
+          "due to",
+          "consequent to",
+          "despite",
+          "along with"
+        ],
+        "optionTranslations": [
+          "のため",
+          "結果として",
+          "にもかかわらず",
+          "とともに"
+        ],
+        "correct": "C",
+        "explanation": "正解は C: \"despite\"。文全体は「調整後EBITDAマージンは改善したが、純利益の下落にもかかわらず（despite）」という対比を示しており、\"despite\" が適切。A \"due to\" や B \"consequent to\" は原因を示すため、\"margin improved due to the decline in net income\" のように読むと意味が不自然（因果関係が逆）。D \"along with\"（〜とともに）は併存を示すだけで、対比の意味を出せない。 (questionType: context)"
+      },
+      {
+        "id": "part6_20_q3",
+        "options": [
+          "would have more accurately reflected",
+          "would have more accurately reflect",
+          "will have more accurately reflected",
+          "would more accurately reflect"
+        ],
+        "optionTranslations": [
+          "より正確に反映していただろう",
+          "より正確に反映するであろう",
+          "より正確に反映しているだろう",
+          "より正確に反映するだろう"
+        ],
+        "correct": "A",
+        "explanation": "正解は A: \"would have more accurately reflected\"。仮定法過去完了の構文 \"had the impairment been recognized earlier\" に続く主節には過去の事実と異なる仮定の結果を表す過去完了（would have + 過去分詞）が必要で、語順と形も A が正しい。B は動詞の形が誤り（\"reflect\" が原形になっており不正）、C は未来完了で時制が合わない、D は仮定法の結果として完了形（have + 過去分詞）を欠いており意味がずれる。 (questionType: grammar)"
+      },
+      {
+        "id": "part6_20_q4",
+        "options": [
+          "We recommend that the board prioritize deleveraging through targeted asset disposals and disciplined capital-expenditure restraints to restore balance-sheet flexibility.",
+          "Management has already finalized plans to increase leverage and invest in speculative ventures.",
+          "The accounting treatment for impairment does not affect the cash flows within the reporting period.",
+          "Investors expect immediate dividend increases even as leverage worsens."
+        ],
+        "optionTranslations": [
+          "資産売却でデレバレッジ",
+          "レバレッジ拡大計画",
+          "減損は現金に影響なし",
+          "配当即時増加要求"
+        ],
+        "correct": "A",
+        "explanation": "正解は A。前の文でワンタイムチャージにより資本が減少しレバレッジが悪化したことが述べられているため、続く文として『当面のバランスシートの柔軟性を回復するために減債（資産売却等）や資本支出抑制を優先することを取締役会に推奨する』という勧告文が自然に接続する。B は意味が逆で不適切、C は一般論かつ文脈にそぐわない（減損が資金流出に影響しないとは限らない）、D は話の焦点が異なり文脈上不適切。 (questionType: sentence_insertion)"
+      }
+    ],
+    "difficulty": "hard",
+    "topic": "financial_analysis",
+    "createdAt": "2025-08-18T10:17:16.627Z",
+    "generationBatch": "part6_batch_1755512121876_e3yore1es",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_21",
+    "documentType": "notice",
+    "title": "Upcoming Office Renovation and Temporary Workspace Reassignment",
+    "content": "To: All staff\nFrom: Facilities Management\nDate: August 14\n\nSubject: Upcoming Office Renovation and Temporary Workspace Reassignment\n\nAs part of our ongoing effort to modernize the office environment, the 3rd-floor open-plan area will undergo extensive renovations beginning Monday, August 24 and continuing through November. (1) During this period, affected employees will be reassigned to temporary workspaces on the 5th floor and in the annex building. The Facilities team recognizes that this transition may cause disruption to regular workflows; therefore, we have implemented measures to minimize inconvenience, such as staggered seating arrangements, additional booking slots for meeting rooms, and enhanced IT support. (2) We ask that department heads coordinate seating plans with HR by Friday, August 21 to ensure a smooth move. To facilitate daily operations, each reassigned workstation will be equipped with a docking station and a noise-cancellation headset. (3) Employees who require ergonomic chairs for medical reasons should submit a request to facilities@company.com before August 20. Please note that the company will not cover personal office supplies lost during the move. (4) If you have questions about specific accommodations or need assistance with packing, please contact the Facilities Helpdesk.",
+    "contentTranslation": "宛先: 全従業員\n差出人: 設備管理\n日付: 8月14日\n\n件名: オフィス改装と一時的な作業スペースの再割り当てについて\n\nオフィス環境の近代化に向けた継続的な取り組みの一環として、3階のオープンプランエリアは8月24日（月）から11月まで大規模な改装工事を行います。騒音や断続的な出入り制限が予想されます。この期間、影響を受ける従業員は5階および別棟の一時的な作業スペースに再配置されます。設備管理チームは、この移行が通常の業務フローに支障をきたす可能性があることを認識しており、その不便を最小限に抑えるために、座席のずらし配置、会議室の追加予約枠、ITサポートの強化などの対策を実施しています。移転作業を通じて設備管理スタッフが現地に常駐し、梱包資材や技術的支援を提供します。円滑な移動のため、部署責任者は8月21日（金）までに人事部と座席計画を調整してください。日常業務を円滑にするため、再配置される各作業ステーションにはドッキングステーションとノイズキャンセリングヘッドセットが備え付けられます。submit 医療上の理由でエルゴノミックチェアが必要な従業員は、8月20日までに facilities@company.com 宛てにリクエストを提出してください。なお、引越し中に紛失した個人の文房具については会社は補償しないことにご注意ください。ただし、特定の配慮について質問がある場合や梱包の支援が必要な場合は、設備ヘルプデスクまでご連絡ください。",
+    "questions": [
+      {
+        "id": "part6_21_q1",
+        "options": [
+          "All meetings will be canceled until the renovation is complete.",
+          "Parking spaces will be reassigned to visitors only.",
+          "Noise and intermittent access restrictions should be expected.",
+          "Remote work will be mandatory for all staff on the 3rd floor."
+        ],
+        "optionTranslations": [
+          "改装完了まで会議中止",
+          "駐車場は来客専用",
+          "騒音と出入り制限",
+          "3階は在宅勤務必須"
+        ],
+        "correct": "C",
+        "explanation": "（日本語）正解はC。前後の文脈は工事による影響（作業の期間や一時移転）について述べているため、『騒音や断続的な出入り制限が予想される』という表現が自然に続きます。Aはすべての会議を中止するという極端な主張で文脈と合わず、Bは駐車場に関する別の話題で無関係、Dは在宅勤務を義務化するという重大な方針変更で本文のトーンや後続の移転対応（臨時ワークスペースの手配）と矛盾します。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_21_q2",
+        "options": [
+          "Employees are responsible for transporting their own desks and monitors.",
+          "The cafeteria will be closed during weekends for maintenance.",
+          "Please make sure to remove all personal items from communal areas before Friday.",
+          "Facilities staff will be on-site throughout the relocation to provide packing materials and technical assistance."
+        ],
+        "optionTranslations": [
+          "机・モニターは自分で運搬",
+          "週末は食堂休業",
+          "金曜までに私物撤去",
+          "移転中、設備管理が現地対応"
+        ],
+        "correct": "D",
+        "explanation": "（日本語）正解はD。前の文では『不便を最小限にするための対策』が列挙されており、その直後に『施設担当が移転期間中に現場で資材や技術支援を提供する』という文が続くことで、対策の具体例として自然につながります。Aは社員負担を示し本文の『対策を講じる』という趣旨と矛盾、Bは無関係な話題、Cは有用だが配置の上では部門長に座席計画の調整を依頼する流れの前に置くとやや唐突で、全体の論理構成上Dが最も適切です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_21_q3",
+        "options": [
+          "submit",
+          "submitting",
+          "to submit",
+          "have submitted"
+        ],
+        "optionTranslations": [
+          "提出する",
+          "提出中",
+          "提出すること",
+          "提出済み"
+        ],
+        "correct": "A",
+        "explanation": "（日本語）正解はA。助動詞shouldの後には動詞の原形が続くため 'should submit' が文法的に正しいです。Bの'submitting'は進行形の-ing形で不可、Cの'to submit'はshouldの後に不定詞をそのまま置く形で不適、Dの'have submitted'は完了形で文脈（申請の締切を示す助言）には合いません。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_21_q4",
+        "options": [
+          "Regrettably,",
+          "However,",
+          "Therefore,",
+          "Similarly,"
+        ],
+        "optionTranslations": [
+          "残念ながら",
+          "ただし",
+          "したがって",
+          "同様に"
+        ],
+        "correct": "B",
+        "explanation": "（日本語）正解はB。直前の文は『会社は個人の備品紛失を補償しない』という注意であり、次に『具体的な配慮や梱包の支援が必要なら連絡してほしい』と続けるので、対照を示す'However,'（しかしながら）が適切です。Aの'Regrettably,'は残念さを表すが接続として弱く、Cの'Therefore,'は因果関係（だから〜する）を示し文脈に合わない、Dの'Similarly,'は類似性を示すため不適です。",
+        "questionType": "vocabulary"
+      }
+    ],
+    "difficulty": "hard",
+    "topic": "ビジネス分野",
+    "createdAt": "2025-08-18T10:37:17.162Z",
+    "generationBatch": "part6_batch_1755513315209_st2a2rui8",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_22",
+    "documentType": "article",
+    "title": "Upcoming Revisions to Our Premium Support Service",
+    "content": "Subject: Upcoming Revisions to Our Premium Support Service\n\nWe are writing to inform clients of upcoming revisions to the Premium Support service that will take effect on November 1. These changes are intended to streamline issue resolution, reduce response times, and deliver enhanced technical assistance.\n\n(1) All existing subscribers ______ to the new platform; however, they may need to reauthenticate their accounts through a one-time verification process. The migration will occur in phases to minimize disruption, and our team will provide detailed instructions and a timeline.\n\n(2) Effective date adjustments include a revised tier structure and an updated pricing model. The new tiers introduce ______ response windows, with enterprise customers receiving guaranteed four-hour initial responses, while standard customers will continue to receive next-business-day assistance. We believe this reconfiguration will better align resources with customer needs.\n\nFor clients who currently rely on legacy integrations, we will offer a transition toolkit consisting of API adapters, documentation, and dedicated migration support. Please note that legacy endpoints will be deprecated on the effective date, and (3) ______.\n\nAdditionally, we are expanding our regional support coverage to include Asia-Pacific hours, enabling follow-the-sun assistance for critical incidents. (4) ______ Our customer success managers will be reaching out to coordinate any necessary adjustments.\n\nIf you have questions regarding these updates or require personalized support planning, please contact your account manager or email support-updates@example.com. We appreciate your cooperation and look forward to continuing to serve your organization.",
+    "contentTranslation": "件名: プレミアムサポートサービスの改訂予定\n\nクライアントの皆様に、11月1日付で施行されるプレミアムサポートサービスの改訂についてお知らせいたします。これらの変更は、問題解決の効率化、応答時間の短縮、および強化された技術支援の提供を目的としています。\n\n自動的に移行されます。既存のすべての加入者は自動的に新しいプラットフォームに移行されます。ただし、アカウントを一度だけの確認プロセスを通じて再認証する必要がある場合があります。移行は混乱を最小限に抑えるため段階的に行われ、当社チームが詳細な手順とスケジュールを提供します。\n\n差別化された施行日付に関する調整には、改訂された階層構造と更新された価格モデルが含まれます。新しい階層では差別化された応答ウィンドウが導入され、エンタープライズ顧客には初回応答が4時間以内に保証される一方、スタンダード顧客は引き続き翌営業日の対応を受けます。この再構成により、顧客のニーズにより適切にリソースを配分できると考えています。\n\n現在レガシー統合に依存しているクライアント向けに、APIアダプター、ドキュメント、および専任の移行サポートで構成された移行ツールキットを提供します。レガシーエンドポイントは施行日に非推奨となりますので、サービスの中断を避けるため、できるだけ早く移行を開始することを強く推奨します。サービスの中断を避けるため、できるだけ早く移行を開始することを強く推奨します。\n\nさらに、重要なインシデントに対するフォロー・ザ・サン支援を可能にするため、アジア太平洋時間帯の地域サポートを拡大します。クライアントの皆様には、更新されたサービスレベル合意（SLA）を確認し、優先するエスカレーション連絡先を確定するようお願いしています。クライアントの皆様には、更新されたサービスレベル合意（SLA）を確認し、優先するエスカレーション連絡先を確定するようお願いしています。当社のカスタマーサクセスマネージャーが必要な調整の調整のためにご連絡いたします。\n\nこれらの更新に関するご質問や、個別のサポート計画が必要な場合は、担当アカウントマネージャーにご連絡いただくか、support-updates@example.comまでメールでお問い合わせください。ご協力に感謝するとともに、引き続き貴社へのサービス提供に努めてまいります。",
+    "questions": [
+      {
+        "id": "part6_22_q1",
+        "options": [
+          "will automatically be migrated",
+          "will automatically migrate",
+          "are automatically migrating",
+          "have been automatically migrated"
+        ],
+        "optionTranslations": [
+          "自動的に移行される",
+          "自動的に移行する",
+          "自動的に移行している",
+          "自動的に移行済みである"
+        ],
+        "correct": "A",
+        "explanation": "正解は A。「subscribers（利用者）」がプラットフォーム側へ移行されることを受け身で表すため、\"will ... be migrated\" の受動態が最も自然で正確です。B（will automatically migrate）は能動態で \"subscribers\" 自ら移行するような意味になり不自然、C（are automatically migrating）は現在進行形で予定のニュアンスと合わない、D（have been automatically migrated）は既に完了していることを示し、施行日が将来である本文と矛盾します。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_22_q2",
+        "options": [
+          "differentiated",
+          "prominent",
+          "consecutive",
+          "unified"
+        ],
+        "optionTranslations": [
+          "差別化された",
+          "顕著な",
+          "連続した",
+          "統一された"
+        ],
+        "correct": "A",
+        "explanation": "正解は A。「differentiate（区別する）」の形容詞形 \"differentiated response windows\" は、各顧客層に応じて応答時間を区別することを意味し文脈に合致します。B（prominent）は「目立つ」、C（consecutive）は「連続した」、D（unified）は「統一された」で、いずれも \"response windows\" の意味や次の文（企業顧客は4時間など）と整合しません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_22_q3",
+        "options": [
+          "clients will be responsible for maintaining legacy endpoints indefinitely.",
+          "we will continue to support both legacy and updated endpoints permanently.",
+          "no further assistance will be available for any integration issues.",
+          "we therefore urge you to begin migration as soon as possible to avoid service disruptions."
+        ],
+        "optionTranslations": [
+          "クライアントが維持責任を負う",
+          "両方を永久サポートする",
+          "統合問題への支援なし",
+          "移行を今すぐ開始するよう促す"
+        ],
+        "correct": "D",
+        "explanation": "正解は D。前の文で「legacy endpoints will be deprecated（廃止予定）」と述べているため、その結果として顧客に対して速やかな移行を促す文（we therefore urge you ...）が自然に続きます。A は永続的に維持することを示し矛盾、B は廃止と矛盾、C は極端かつ不親切で文脈にそぐいません。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_22_q4",
+        "options": [
+          "This change will not affect customers outside the continental United States.",
+          "We encourage clients to review the updated service level agreement and confirm their preferred escalation contacts.",
+          "All billing invoices will be processed through a third-party vendor as of January.",
+          "Live chat support will be discontinued."
+        ],
+        "optionTranslations": [
+          "米国本土以外は影響なし",
+          "SLA確認と担当確定",
+          "請求を1月から第三者処理",
+          "ライブチャット廃止"
+        ],
+        "correct": "B",
+        "explanation": "正解は B。この段落はサポート拡大と調整に関する案内なので、SLA を確認しエスカレーション連絡先を確定するよう促す文が自然につながります。A は地域に関する断定で文脈に直接関連しない可能性が高く、C は請求処理に関する別トピック、D は“サポート拡大”という流れと正反対の内容で不適切です。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "hard",
+    "topic": "service_announcements (サービス変更通知)",
+    "createdAt": "2025-08-18T10:42:18.648Z",
+    "generationBatch": "part6_batch_1755513578011_itnaq7agq",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_23",
+    "documentType": "advertisement",
+    "title": "Executive Development: Advanced Leadership Programs",
+    "content": "Executive Development: Advanced Leadership Programs\n\nAre you ready to elevate your organization's leadership capacity? Our Advanced Leadership Programs offer intensive, cohort-based training for mid- to senior-level managers. The curriculum is research-driven and tailored to address contemporary challenges such as remote team management, strategic decision-making, and cross-cultural communication. Each module combines case studies, interactive workshops, and mentorship to deliver skills that are immediately (1) in the workplace.\n\nPrograms run over eight weeks with a blend of synchronous sessions and asynchronous assignments. Sessions are led by industry practitioners and academic experts, and attendance is monitored to guarantee cohort cohesion. Participants who successfully complete all required components (2) eligible to receive a professional certification recognized by major industry associations.\n\n(3)\n\nEnrollment is limited to cohorts of 20 to maintain instructional quality. Early-bird tuition includes access to supplemental digital resources and two one-on-one coaching sessions; corporate packages that include on-site delivery and post-program analytics are also available. For pricing and group rates, please contact our program coordinator at programs@example.com or visit our website to download the detailed syllabus. We recommend securing your spot early, as spaces fill quickly. (4)",
+    "contentTranslation": "組織のリーダーシップ能力を高める準備はできていますか？当社の上級リーダーシッププログラムは、中堅から上級管理職向けの集中的なコホート型研修を提供します。カリキュラムは研究に基づいており、リモートチームの管理、戦略的意思決定、異文化間コミュニケーションなどの現代的な課題に対応するようにカスタマイズされています。各モジュールはケーススタディ、参加型ワークショップ、メンタリングを組み合わせ、職場ですぐに実行可能なスキルを提供します。\n\nプログラムは8週間にわたり、同期型セッションと非同期課題を組み合わせて実施されます。セッションは業界の実務家と学界の専門家が担当し、コホートの結束を保証するため出席は管理されます。すべての必須要件を修了した参加者は、主要な業界団体に認められたプロフェッショナル認定を受ける資格が得られます。\n\n最終週には講師および業界アドバイザーによる審査を受ける総括プロジェクトがあり、認定資格の判定に必須です。\n\n指導の質を保つため、定員はコホートあたり20名に限定しています。早期申込の受講料には補足のデジタル教材へのアクセスとマンツーマンのコーチングセッションが2回含まれます。オンサイトでの実施やプログラム終了後の分析を含む法人向けパッケージもご用意しています。料金やグループ割引については、プログラムコーディネーター（programs@example.com）までご連絡いただくか、当社ウェブサイトから詳細シラバスをダウンロードしてください。席はすぐに埋まるため、早めの確保をお勧めします。条件を満たす組織には分割払いのプランが利用可能です。",
+    "questions": [
+      {
+        "id": "part6_23_q1",
+        "options": [
+          "theoretical",
+          "obscure",
+          "actionable",
+          "ambiguous"
+        ],
+        "optionTranslations": [
+          "理論的",
+          "不明瞭",
+          "実行可能",
+          "曖昧"
+        ],
+        "correct": "C",
+        "explanation": "「immediately (1) in the workplace」の文脈では、習得した技能がすぐに職場で利用できることを表す語が必要です。actionable（実行可能な、すぐに活用できる）が最も自然です。他の選択肢は意味が合いません（theoretical＝理論的、obscure＝不明瞭、ambiguous＝曖昧）。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_23_q2",
+        "options": [
+          "are being",
+          "have been",
+          "would be",
+          "will be"
+        ],
+        "optionTranslations": [
+          "実施されている",
+          "実施されてきた",
+          "実施されるだろう",
+          "実施される"
+        ],
+        "correct": "D",
+        "explanation": "文全体は「Participants who successfully complete all required components ___ eligible to receive ...」で、将来の結果（修了後に資格を受け取る資格を得る）を述べるため、正しい語形は受動の未来形 \"will be eligible\" です。他は時制や態の使い方が不適切です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_23_q3",
+        "options": [
+          "We do not provide any post-course materials or follow-up services.",
+          "Meals and accommodations are included with every in-person session.",
+          "Applicants must complete an online assessment before enrollment is confirmed.",
+          "A capstone project, assessed by a panel of instructors and industry advisors during the final week, is required to determine certification eligibility."
+        ],
+        "optionTranslations": [
+          "事後サポートなし",
+          "食事・宿泊付き",
+          "事前評価必須",
+          "総括プロジェクト必須"
+        ],
+        "correct": "D",
+        "explanation": "前後の文脈は「修了者が専門資格を受け取る」といった認定に関する記述であり、直後に資格判定の方法を説明する文が続くのが自然です。選択肢Dはその役割を果たし、資格取得の条件（カプストーン評価）を明確にしています。他の選択肢は文脈に直接つながらないか矛盾します。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_23_q4",
+        "options": [
+          "Note that travel expenses are covered for all participants.",
+          "Payment plans are available for qualifying organizations.",
+          "Only credit cards are accepted for registration.",
+          "Walk-in registration on the first day is permitted."
+        ],
+        "optionTranslations": [
+          "旅費支給",
+          "分割払い可",
+          "クレジットカードのみ",
+          "当日登録可"
+        ],
+        "correct": "B",
+        "explanation": "直前で「For pricing and group rates, please contact...」とあるため、支払い方法や料金に関する補足が自然です。選択肢B（条件を満たす組織向けの分割支払いプランの提供）は文脈に合致します。他の選択肢は誤解を招く記述（経費全額負担や単一の支払い方法、事前登録不要の意味）で、文脈からの補足として適切ではありません。",
+        "questionType": "context"
+      }
+    ],
+    "difficulty": "hard",
+    "topic": "training_programs",
+    "createdAt": "2025-08-18T10:44:11.786Z",
+    "generationBatch": "part6_batch_1755513578011_itnaq7agq",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_25",
+    "documentType": "email",
+    "title": "Response to Your Complaint — Order #A12345",
+    "content": "Subject: Response to your complaint about Order #A12345\n\nDear Ms. Tanaka,\n\nThank you for contacting our customer service team regarding your recent order (Order #A12345). We are sorry to learn that the product did not meet your expectations, and we apologize for any inconvenience this has caused. (1)\n\nWe understand from your message that you received the wrong model and that the box was damaged upon arrival. We would like to resolve this as quickly as possible. We can send a replacement item (2) at no extra cost to you.\n\nPlease let us know whether you (3) the damaged item so we can arrange a pickup if necessary. Also, please reply with any photos of the damage, which will help our quality control team.\n\nWe value your business and appreciate your patience while we work to correct this (4). If you have further questions, please contact me directly.\n\nSincerely,\nHiroshi Sato\nCustomer Service Manager\nGlobal Electronics",
+    "contentTranslation": "件名: ご注文（注文番号 A12345）に関する苦情への回答\n\n田中様\n\nこの度はご注文（注文番号 A12345）についてカスタマーサービスまでご連絡いただき、ありがとうございます。商品がご期待に沿えなかったとのことで、ご迷惑をおかけしましたことをお詫び申し上げます。お客様からのご意見は重く受け止めており、現在調査を行っております。\n\nメッセージによりますと、誤ったモデルが届き、到着時に箱が破損していたとのことでした。できるだけ早く対応させていただきたいと考えております。追加費用はいただかず、交換品を3営業日以内にお送りできます。\n\n破損した商品をまだお持ちかどうかをお知らせください。必要であれば集荷の手配をいたします。また、破損箇所の写真を添付してご返信いただければ、当社の品質管理チームの助けになります。\n\nお客様のご利用に感謝するとともに、この問題の解決に努める間、ご辛抱いただきありがとうございます。ご不明な点がございましたら、私まで直接ご連絡ください。\n\n敬具\n佐藤 浩\nカスタマーサービスマネージャー\nグローバルエレクトロニクス",
+    "questions": [
+      {
+        "id": "part6_25_q1",
+        "options": [
+          "We take customer feedback seriously and are investigating the matter.",
+          "We will issue a full refund immediately.",
+          "Please return the item to the following address before we proceed.",
+          "Thank you for your positive review of our product."
+        ],
+        "optionTranslations": [
+          "調査中です",
+          "全額返金",
+          "返送してください",
+          "高評価ありがとうございます"
+        ],
+        "correct": "A",
+        "explanation": "Aは、苦情への謝罪に続けて入れる自然な文で、問題を重く受け止め調査中であることを伝えるため文脈に合っています。Bは直ちに全額返金すると断定しており、まだ事実確認中の段階では不適切です。Cは返品手順を指示しており、写真の提供など確認を求める前に入れるのは時期尚早です。Dは意味が合わず不適切です。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_25_q2",
+        "options": [
+          "but only if you return the original item",
+          "after we receive a damage report form",
+          "within three business days",
+          "to your nearest retail partner"
+        ],
+        "optionTranslations": [
+          "原品返送のみ",
+          "被害報告受領後",
+          "3営業日以内",
+          "最寄り店舗へ"
+        ],
+        "correct": "C",
+        "explanation": "文脈的に、\"We can send a replacement item ( ) at no extra cost to you.\"には発送のタイミングを示すC（\"within three business days\"）が最も自然です。Aは\"no extra cost\"と矛盾する可能性があり、Bは余分な手続きを示していて文脈の流れを阻害します。Dは送付先を示すが文の構造とはやや不自然です。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_25_q3",
+        "options": [
+          "keep",
+          "still have",
+          "had kept",
+          "are keeping"
+        ],
+        "optionTranslations": [
+          "保管する",
+          "まだ所持している",
+          "保管していた",
+          "保管中である"
+        ],
+        "correct": "B",
+        "explanation": "現在の所有状態を確認する表現としてBの\"still have\"が適切です。\"Please let us know whether you still have the damaged item\"が自然です。Aの\"keep\"は原形で不自然、Cの\"had kept\"は過去完了で時制が合いません、Dの\"are keeping\"は進行形でこの文脈では不自然です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_25_q4",
+        "options": [
+          "accident",
+          "issue",
+          "product",
+          "break"
+        ],
+        "optionTranslations": [
+          "事故",
+          "問題",
+          "製品",
+          "破損"
+        ],
+        "correct": "B",
+        "explanation": "\"work to correct this ( )\"の語彙としてBの\"issue\"（問題）が最も自然で意味が通ります。Aの\"accident\"は今回のケースに合わず、Cの\"product\"は文脈上不適切、Dの\"break\"も不自然な選択です。",
+        "questionType": "vocabulary"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "ビジネス分野",
+    "createdAt": "2025-08-20T08:50:26.912Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_27",
+    "documentType": "article",
+    "title": "Customer Support Guidelines: Handling Basic Requests",
+    "content": "Our customer support team handles many simple inquiries each day. To maintain quality service, follow these guidelines.\n\nPlease ensure that each staff member (1) ____ to customer requests within 24 hours. Responses should be polite, clear, and include any necessary next steps.\n\nIf a request cannot be resolved immediately, (2) ____ to a supervisor so the issue can be addressed quickly.\n\nAlways send a brief (3) ____ of receipt to the customer, including an estimated time for resolution.\n\nKeep detailed records for each request. (4) After resolution, follow up with the customer to confirm satisfaction.",
+    "contentTranslation": "当社のカスタマーサポートチームは毎日多くの簡単な問い合わせを処理しています。品質の高いサービスを維持するため、以下のガイドラインに従ってください。\n\n各スタッフが24時間以内に顧客のリクエストに対応するようにしてください。返答は礼儀正しく明確であり、必要な次の手順を含めてください。\n\nリクエストがすぐに解決できない場合は、上司にエスカレーションする必要があります。そうすることで問題に迅速に対処できます。\n\n常に受領確認の簡潔な通知を顧客に送り、解決までの見積時間を含めてください。\n\n各リクエストについて詳細な記録を保持してください。将来の参照のためにCRMシステムにチケット番号を記録してください。解決後は顧客にフォローアップして満足度を確認してください。",
+    "questions": [
+      {
+        "id": "part6_27_q1",
+        "options": [
+          "respond",
+          "responds",
+          "responding",
+          "to respond"
+        ],
+        "optionTranslations": [
+          "対応する",
+          "対応します",
+          "対応している",
+          "対応すること"
+        ],
+        "correct": "B",
+        "explanation": "「each staff member」は単数扱いの主語なので、動詞は三人称単数形が必要です。選択肢Bの\"responds\"が正しい。Aの\"respond\"は原形、Cの\"responding\"は現在分詞、Dの\"to respond\"は不定詞でいずれもこの文の構造には合いません。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_27_q2",
+        "options": [
+          "We escalate it to a supervisor.",
+          "We should escalate it to a supervisor.",
+          "Escalate it to a supervisor.",
+          "It will escalate to a supervisor."
+        ],
+        "optionTranslations": [
+          "上司にエスカレーションします",
+          "上司にエスカレーションすべきです",
+          "上司にエスカレーションしてください",
+          "上司に自動的にエスカレートします"
+        ],
+        "correct": "B",
+        "explanation": "ガイドライン文書では、対応手順を示す助言として\"should\"を用いるのが適切です。選択肢Bの\"We should escalate it to a supervisor.\"が最も自然な文脈です。Aは事実の陳述に近く助言の口調にならない、Cは命令形でこの文の形（if節の中）には合わない、Dは意味が不明確で誤りです。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_27_q3",
+        "options": [
+          "report",
+          "letter",
+          "acknowledgment",
+          "announcement"
+        ],
+        "optionTranslations": [
+          "報告",
+          "書簡",
+          "受領確認",
+          "お知らせ"
+        ],
+        "correct": "C",
+        "explanation": "\"acknowledgment of receipt\"（受領の通知）はよく使われる表現で、顧客に受領を知らせる短い連絡を指します。選択肢Cが適切です。Aの\"report\"やBの\"letter\"、Dの\"announcement\"は意味がずれており不自然です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_27_q4",
+        "options": [
+          "Please ignore duplicate messages to avoid confusion.",
+          "We may close the ticket without notifying the customer.",
+          "Ask the customer for their mailing address.",
+          "Record the ticket number in the CRM system for future reference."
+        ],
+        "optionTranslations": [
+          "重複メッセージを無視してください",
+          "通知せずチケットを閉鎖する",
+          "郵送先住所を尋ねる",
+          "CRMにチケット番号を記録する"
+        ],
+        "correct": "D",
+        "explanation": "前後の文は記録とフォローアップについて述べているため、記録に関する具体的な指示が自然に続きます。選択肢Dの\"Record the ticket number in the CRM system for future reference.\"は文脈に合った挿入文です。Aは推奨として不適切で、Bは顧客対応方針として問題があり、Cは文脈上不必要な情報です。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "basic_requests",
+    "createdAt": "2025-08-20T08:54:11.293Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_28",
+    "documentType": "article",
+    "title": "Improving Team Coordination in Project Meetings",
+    "content": "Effective team coordination is essential for successful projects. In our recent staff survey, many employees reported that meetings often lack clear goals, which can lead to confusion and delays. To address this issue, we propose several changes to our meeting structure.\n\nFirst, every meeting should begin with a brief agenda and a statement of objectives so that participants know what to expect. Second, meeting leaders must assign action items with deadlines and follow up on progress to ensure accountability. Third, we recommend rotating the role of facilitator among team members to encourage engagement and diverse perspectives.\n\nAdditionally, we will introduce a shared online tracker (1) ____ recording decisions, responsible persons, and timelines. This tool will help keep everyone informed and reduce redundancy. Training sessions on effective communication techniques will also be available (2) ____ new hires and current staff. We expect that these measures will improve clarity, speed up decision-making, and (3) ____ overall team performance. Please review the proposed plan and share your feedback by Friday so we can (4) ____ the changes next month.",
+    "contentTranslation": "効果的なチームの連携はプロジェクトの成功に不可欠です。最近の従業員調査では、多くの社員が会議にはっきりした目的が欠けていると報告しており、それが混乱や遅延につながることがありました。この問題に対処するため、会議の構成をいくつか変更することを提案します。\n\nまず、すべての会議は簡潔な議題と目的の明示から始め、参加者が何を期待すべきかを把握できるようにします。次に、会議のリーダーは期限を伴うアクション項目を割り当て、進捗をフォローアップして責任を明確にする必要があります。三番目に、参加意欲と多様な視点を促すために、ファシリテーターの役割をチームメンバー間で順番に交代することを推奨します。\n\nさらに、意思決定、責任者、タイムラインを記録するための共有オンライントラッカーを導入します。このツールは全員の状況把握を助け、重複を減らすのに役立ちます。効果的なコミュニケーション技術に関する研修も新入社員と現職員が受講できるように提供されます。これらの施策により明確さが向上し、意思決定が迅速化され、チーム全体の業績が向上すると期待しています。提案された計画を確認し、来月変更を実施できるよう金曜日までにフィードバックを共有してください。",
+    "questions": [
+      {
+        "id": "part6_28_q1",
+        "options": [
+          "to",
+          "with",
+          "on",
+          "for"
+        ],
+        "optionTranslations": [
+          "〜へ",
+          "〜とともに",
+          "〜に関して",
+          "〜のために"
+        ],
+        "correct": "D",
+        "explanation": "「for recording decisions」で「決定事項を記録するための（トラッカー）」という目的を表す最適な前置詞は for です。他の選択肢は意味や語法が合いません（to recording は不自然、with/on は意味がずれます）。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_28_q2",
+        "options": [
+          "to",
+          "at",
+          "by",
+          "from"
+        ],
+        "optionTranslations": [
+          "〜に",
+          "〜で",
+          "〜によって",
+          "〜から"
+        ],
+        "correct": "A",
+        "explanation": "「be available to someone」で『〜に利用可能である／提供される』という表現になります。at/by/from はこの文脈では不適切で、文法的にも不自然です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_28_q3",
+        "options": [
+          "boost",
+          "boosts",
+          "boosting",
+          "boosted"
+        ],
+        "optionTranslations": [
+          "高める",
+          "高める（3人称）",
+          "高めること",
+          "高められた"
+        ],
+        "correct": "A",
+        "explanation": "並列構造（will improve clarity, speed up decision-making, and (3) ____ overall team performance）では動詞の原形 boost を用いて並べる必要があります。単数三人称の boosts や分詞形は文法的に合いません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_28_q4",
+        "options": [
+          "imagine",
+          "consider",
+          "suggest",
+          "implement"
+        ],
+        "optionTranslations": [
+          "想像する",
+          "検討する",
+          "提案する",
+          "実施する"
+        ],
+        "correct": "D",
+        "explanation": "文脈は『フィードバックを得して来月に変更を実行する』という意味なので、implement（実施する）が最も適切です。他の語は『想像する・検討する・提案する』で、ここでは意味が合いません。",
+        "questionType": "vocabulary"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "team_coordination (チーム連携)",
+    "createdAt": "2025-08-20T08:56:11.643Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_29",
+    "documentType": "advertisement",
+    "title": "Improved Customer Complaint Process",
+    "content": "Advertisement: Improved Customer Complaint Process\n\nAt Solace Electronics, we value your feedback and are committed to resolving any issues quickly and professionally. Our customer care team (1) available Monday through Friday, 9 a.m. to 6 p.m., to assist with product concerns, returns, and warranty claims. If you have a problem, please complete the online complaint form and we will (2) a refund or replacement when appropriate. (3) We appreciate your patience and will keep you informed throughout the process. You can reach us by phone at 1-800-123-4567 or (4) email at support@solace.com. Thank you for choosing Solace.",
+    "contentTranslation": "Solace Electronicsでは、お客様からのご意見を重視しており、問題を迅速かつ専門的に解決することをお約束します。当社のカスタマーケアチームは月曜から金曜の午前9時から午後6時まで、製品に関するご相談、返品、保証請求に対応しております。問題がある場合はオンラインの苦情フォームにご記入ください。適切な場合には返金または交換を行います。当社のカスタマーケアチームはすべての苦情を2営業日以内に確認します。皆様のご理解に感謝するとともに、手続きの進捗について随時ご連絡いたします。お電話は1-800-123-4567、メールはsupport@solace.comまでご連絡ください。Solaceをご利用いただきありがとうございます。",
+    "questions": [
+      {
+        "id": "part6_29_q1",
+        "options": [
+          "A. are",
+          "B. being",
+          "C. is",
+          "D. were"
+        ],
+        "optionTranslations": [
+          "（複数形）である",
+          "〜されている",
+          "である",
+          "であった"
+        ],
+        "correct": "C",
+        "explanation": "文法（主語と動詞の一致）: 主語は単数扱いの \"Our customer care team\" なので、正しい動詞は単数形の 'is'。選択肢Aの 'are' は複数主語に使い、Bの 'being' は進行形や分詞構文に使うため不適切、Dの 'were' は過去形で文脈に合わない。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_29_q2",
+        "options": [
+          "A. issue",
+          "B. deliver",
+          "C. receive",
+          "D. pay"
+        ],
+        "optionTranslations": [
+          "発行する",
+          "配達する",
+          "受け取る",
+          "支払う"
+        ],
+        "correct": "A",
+        "explanation": "語彙: \"issue a refund\" は一般的な表現で、返金を行うことを意味する。Bの 'deliver' は物理的な配達に適し、Cの 'receive' は受け取る側の動詞、Dの 'pay' は金額を支払う主体が異なるニュアンスで文脈に最適ではない。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_29_q3",
+        "options": [
+          "A. Please note that we do not accept returns after 30 days.",
+          "B. Call us anytime for immediate support.",
+          "C. Our customer care team reviews all complaints within two business days.",
+          "D. All sales are final and non-refundable."
+        ],
+        "optionTranslations": [
+          "30日以降は返品不可",
+          "いつでも電話で対応",
+          "苦情は2営業日以内に確認",
+          "販売は最終、返金不可"
+        ],
+        "correct": "C",
+        "explanation": "文挿入（文脈のつながり）: 前後の文（返金や対応の説明 → 感謝と通知について）をつなぐには、苦情の処理期間を示すCが自然に合う。AとDは返品不可を示し内容が矛盾し、Bは「anytime（いつでも）」が受付時間（平日9–6）と矛盾するため不適切。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_29_q4",
+        "options": [
+          "A. regarding",
+          "B. concerning",
+          "C. via",
+          "D. along"
+        ],
+        "optionTranslations": [
+          "〜に関して",
+          "〜について",
+          "経由で",
+          "沿って"
+        ],
+        "correct": "C",
+        "explanation": "文脈理解: \"or via email at support@solace.com\" が自然な表現。AやB（regarding / concerning）は『〜に関して』という意味で前置詞としてこの位置では不自然、Dの 'along' は意味が合わない。",
+        "questionType": "context"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "customer_complaints",
+    "createdAt": "2025-08-20T08:58:08.159Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_30",
+    "documentType": "article",
+    "title": "Improving Cross-Team Collaboration on the Orion Project",
+    "content": "To: Project Team\nFrom: Project Management Office\nDate: May 12\n\nSubject: Improving Cross-Team Collaboration on the Orion Project\n\nEffective collaboration between departments is essential for the success of the Orion Project. The program manager (1) responsible for coordinating the weekly meetings and sharing updates with stakeholders. Over the past month, we have seen delays in deliverables due to unclear responsibilities and inconsistent communication.\n\n(2)\n\nTo address these issues, we will implement a shared project timeline and assign a single point of contact for each workstream. Team leads will be expected to update the timeline every Friday and to raise any risks during the weekly sync. In addition, we will provide an online folder where all key documents will be stored and (3).\n\nPlease review the new collaboration guidelines and provide feedback by next Wednesday. If you have questions, please (4) the PMO office.",
+    "contentTranslation": "宛先: プロジェクトチーム\n差出人: プロジェクト管理室\n日付: 5月12日\n\n件名: オリオンプロジェクトにおける部門間協力の改善\n\n部門間の効果的な協力は、オリオンプロジェクトの成功に不可欠です。プログラムマネージャーは週次ミーティングの調整と利害関係者への最新情報の共有を担当しています。過去1か月間、責任範囲の不明確さとコミュニケーションの一貫性の欠如により、成果物の遅延が発生しています。\n\n多くの問題は、責任の重複とチーム間の引き継ぎ漏れに起因しています。\n\nこれらの問題に対処するため、共有のプロジェクトタイムラインを導入し、各ワークストリームに単一の連絡窓口を割り当てます。チームリーダーは毎週金曜日にタイムラインを更新し、週次の同期ミーティングでリスクを報告することが求められます。さらに、すべての重要書類を保存・バージョン管理するオンラインフォルダを提供します。\n\n新しい協力ガイドラインを確認し、次の水曜日までにフィードバックを提出してください。ご質問がある場合は、プロジェクト管理室までご連絡ください。",
+    "questions": [
+      {
+        "id": "part6_30_q1",
+        "options": [
+          "are responsible",
+          "be responsible",
+          "is responsible",
+          "responsible"
+        ],
+        "optionTranslations": [
+          "責任がある",
+          "責任を負う",
+          "責任がある",
+          "責任のある"
+        ],
+        "correct": "C",
+        "explanation": "「The program manager」は単数主語なので、状態を表す現在の動詞として \"is responsible\" が適切です。Aの \"are\" は複数主語に使う形、Bの \"be responsible\" は不定詞・命令形など文脈に合わず、Dは動詞が欠けており文が不完全です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_30_q2",
+        "options": [
+          "Several team members requested additional training on the new software.",
+          "Budget increases were approved last week to accelerate testing.",
+          "We celebrated the completion of the pilot phase with a small event.",
+          "Most problems stem from overlapping responsibilities and missed handoffs between teams."
+        ],
+        "optionTranslations": [
+          "追加研修を要請",
+          "予算増額を承認",
+          "パイロット完了を祝う",
+          "責任重複と引継ぎ漏れ"
+        ],
+        "correct": "D",
+        "explanation": "直前の文は遅延の原因として「不明瞭な責任」と「一貫性のないコミュニケーション」を挙げており、次の段落で \"To address these issues,\" と続くので、原因を明確にする D の文が最も自然です。他の選択肢は話題がずれており、前後の流れに合いません。",
+        "questionType": "sentence_insertion"
+      },
+      {
+        "id": "part6_30_q3",
+        "options": [
+          "shared publicly",
+          "deleted regularly",
+          "version-controlled",
+          "printed weekly"
+        ],
+        "optionTranslations": [
+          "公開共有",
+          "定期削除",
+          "バージョン管理",
+          "毎週印刷"
+        ],
+        "correct": "C",
+        "explanation": "プロジェクト文書を保管するオンラインフォルダについて述べているため、文書管理の観点で \"version-controlled\"（バージョン管理される）が最も適切です。AやDは目的に合わず、Bは望ましい運用ではありません。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_30_q4",
+        "options": [
+          "contacting",
+          "to contact",
+          "contact",
+          "contacted"
+        ],
+        "optionTranslations": [
+          "連絡している",
+          "連絡するために",
+          "連絡する",
+          "連絡された"
+        ],
+        "correct": "C",
+        "explanation": "依頼文の語調で \"If you have questions, please contact the PMO office.\" が自然で正しい命令形（依頼）です。Aの \"contacting\" は進行形になり不適切、Bの \"to contact\" は不定詞で文法的に合わず、Dの \"contacted\" は受動形になり意味が変わります。",
+        "questionType": "grammar"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "project_collaboration",
+    "createdAt": "2025-08-20T08:59:56.869Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_31",
+    "documentType": "article",
+    "title": "Monthly Report: Customer Inquiries",
+    "content": "Customer Service Department\nMonthly Report: Customer Inquiries\n\nDuring the month of July, our team handled a total of 1,240 customer inquiries across phone, email, and live chat. The majority of questions concerned product availability and delivery times, while a smaller portion related to returns and refunds. To improve response efficiency, we (1) additional training sessions for new agents and updated the knowledge base articles.\n\nAnalysis of response time shows that average first-response time decreased from 18 hours in June to 10 hours in July, a significant improvement. This change was due to staffing adjustments and better workflow. However, satisfaction scores remain steady, indicating that speed alone does not fully resolve customer concerns. (2) a follow-up survey to better understand customer expectations should help guide our next improvements.\n\nPlease note that all team members are reminded to use the new email templates when replying to inquiries; these templates (3) be tailored to specific customer situations. Finally, we plan to introduce a monthly review meeting with the sales and logistics teams. (4)",
+    "contentTranslation": "カスタマーサービス部門\n月次報告：顧客からの問い合わせ\n\n7月の1か月間、当チームは電話、メール、ライブチャットを通じて合計1,240件の顧客からの問い合わせを処理しました。問い合わせの大部分は商品の在庫状況や配送時間に関するもので、返品や返金に関するものは一部にとどまりました。対応効率を改善するために、新人担当者向けの追加研修を実施し、ナレッジベースの記事を更新しました。\n\n応答時間の分析によると、初回応答の平均時間は6月の18時間から7月の10時間に短縮し、大幅な改善が見られました。この変化は人員配置の調整とワークフローの改善によるものです。しかし、満足度スコアは横ばいのままであり、速度だけでは顧客の懸念を完全に解消できないことを示しています。顧客の期待をよりよく理解するためのフォローアップ調査を実施することが、次の改善の指針になるはずです。\n\n全チームメンバーは問い合わせに返信する際に新しいメールテンプレートを使用するよう再度周知してください。これらのテンプレートは特定の顧客の状況に応じて調整されるべきです。最後に、営業チームと物流チームとの月次レビュー会議を導入する予定です。会議の議題は来週共有します。",
+    "questions": [
+      {
+        "id": "part6_31_q1",
+        "options": [
+          "conducted",
+          "conduct",
+          "conducting",
+          "will conduct"
+        ],
+        "optionTranslations": [
+          "実施した",
+          "実施する",
+          "実施中",
+          "実施する予定"
+        ],
+        "correct": "A",
+        "explanation": "文脈は過去の出来事（7月の対応）について述べているため、過去形の 'conducted' が適切です。'conduct and updated' の並列も自然です。'conduct'（現在形）、'conducting'（動名詞としては文法的に不自然）、'will conduct'（未来形）は文脈と時制が合わないため不正解です。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_31_q2",
+        "options": [
+          "If we conduct",
+          "To conduct",
+          "Conduct",
+          "Conducting"
+        ],
+        "optionTranslations": [
+          "実施すれば",
+          "実施するために",
+          "実施する",
+          "実施すること"
+        ],
+        "correct": "D",
+        "explanation": "文全体の主語として動名詞を用いると自然に続きます：'Conducting a follow-up survey ... should help ...'。選択肢Aは条件文の形になり、続く 'should help' と合いません。Bは不自然で堅苦しく、Cは命令形または不定形で文法的に合いません。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_31_q3",
+        "options": [
+          "should",
+          "should to be",
+          "should be",
+          "should being"
+        ],
+        "optionTranslations": [
+          "すべきだ",
+          "すべきである",
+          "されるべきだ",
+          "すべきであること"
+        ],
+        "correct": "C",
+        "explanation": "助動詞 'should' の後は動詞の原形（受動態では 'be'）が続くので、'should be tailored' が正しい形です。Aは 'be' が抜けており不完全、BとDは文法的に誤りです。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_31_q4",
+        "options": [
+          "We have already completed all necessary preparations.",
+          "We will share the meeting agenda next week.",
+          "When introduced, it will be monthly reviews.",
+          "Please contact HR for scheduling conflicts."
+        ],
+        "optionTranslations": [
+          "準備は完了しています",
+          "議題は来週共有します",
+          "導入時に月次レビューです",
+          "予定は人事へ連絡"
+        ],
+        "correct": "B",
+        "explanation": "前文で「月次レビュー会議を導入する予定」と述べているため、続けて『議題を来週共有します』という具体的な次の手順を示す文が自然です（B）。Aは『すでに準備完了』と述べており 'introduce' の予定と矛盾します。Cは語法が不自然で、Dは関連性はあるが文脈上Bの方が適切な結びの文です。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "customer_inquiries (顧客問い合わせ)",
+    "createdAt": "2025-08-20T09:01:57.035Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_32",
+    "documentType": "email",
+    "title": "Inventory Update for Office Supplies",
+    "content": "From: inventory@company.com\nTo: sales@company.com\nSubject: Inventory Update for Office Supplies\n\nDear Sales Team,\n\nI am writing to provide a brief update on our current inventory levels for office supplies. At the moment, we have (1) stock of printer paper and toner cartridges. The warehouse team checked the counts yesterday and (2) recorded any discrepancies in the system. We expect a new shipment of toner cartridges to arrive next week, (3) we should be able to fulfill all pending orders by Friday. Also, please note that the blue pens are low — reorder requests will be sent by the end of day. (4) Please confirm if you need any items expedited.\n\nBest regards,\nKaren Lee\nInventory Manager",
+    "contentTranslation": "差出人: inventory@company.com\n宛先: sales@company.com\n件名: 事務用品の在庫更新\n\n営業チームの皆さま、\n\n事務用品の現在の在庫状況について簡単にお知らせします。現時点では、プリンター用紙とトナーカートリッジは十分な在庫があります。倉庫チームが昨日数量を確認し、システムに不一致を記録しました。トナーカートリッジの新しい入荷は来週到着する予定で、金曜日までに保留中のすべての注文を履行できる見込みです。また、青いペンの在庫が少ないことにご注意ください。発注依頼は本日中に送信されます。より早い配送が必要な場合は、追加料金で速達配送の手配が可能です。優先発送が必要な品目があればご確認ください。\n\nよろしくお願いいたします。\n在庫管理マネージャー\nカレン・リー",
+    "questions": [
+      {
+        "id": "part6_32_q1",
+        "options": [
+          "scarce",
+          "empty",
+          "low",
+          "adequate"
+        ],
+        "optionTranslations": [
+          "不足している",
+          "在庫切れ",
+          "少ない",
+          "十分な"
+        ],
+        "correct": "D",
+        "explanation": "「adequate」は「十分な/適切な」という意味で、'adequate stock'（十分な在庫）という表現は自然です。他の選択肢は意味が合いません。'scarce' は『不足している』、'empty' は『空の』、'low' は文法的には可能だが文脈では 'low stock' とするのが普通で、与えられた語順には合いません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_32_q2",
+        "options": [
+          "recorded",
+          "records",
+          "would record",
+          "had recorded"
+        ],
+        "optionTranslations": [
+          "記録した",
+          "記録する",
+          "記録するだろう",
+          "記録していた"
+        ],
+        "correct": "A",
+        "explanation": "文は過去の出来事（checked the counts yesterday）を述べており、並列の動作として過去形 'recorded' が自然です。'records'（現在形）は時制が合わず、'would record' は仮定や未来の意味、'had recorded'（過去完了）は時間関係に不必要です。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_32_q3",
+        "options": [
+          "although",
+          "unless",
+          "so",
+          "while"
+        ],
+        "optionTranslations": [
+          "しかし",
+          "〜しない限り",
+          "したがって",
+          "一方で"
+        ],
+        "correct": "C",
+        "explanation": "文脈は「新しい出荷が来るので、保留中の注文を〜できるはずだ」という因果関係を示しており、'so'（だから）が最も適切です。'although' や 'while' は対照、'unless' は『〜でなければ』という条件を表します。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_32_q4",
+        "options": [
+          "We will cancel all pending purchase orders if not confirmed.",
+          "If you need a faster delivery, we can arrange express shipping for an additional fee.",
+          "The company has no policy regarding urgent shipments.",
+          "All staff are required to order supplies only through the online form."
+        ],
+        "optionTranslations": [
+          "確認がなければ注文を全てキャンセルします。",
+          "より早い配送は追加料金で速達手配できます。",
+          "緊急配送に関する方針はありません。",
+          "備品はオンラインフォームでのみ注文してください。"
+        ],
+        "correct": "B",
+        "explanation": "直後の文が 'Please confirm if you need any items expedited.'（緊急配送が必要か確認してください）であり、それに続く文として『必要なら速達手配が可能です』という内容の文（B）が最も自然です。他の選択肢は文脈に合わない、または不適切な指示を含みます。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "inventory_updates (在庫・供給状況)",
+    "createdAt": "2025-08-20T09:03:47.337Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  },
+  {
+    "id": "part6_33",
+    "documentType": "advertisement",
+    "title": "Navigating Business Trends 2025 Seminar",
+    "content": "Join our annual seminar to learn the latest developments shaping tomorrow's market. (1) Our expert speakers will cover topics such as remote work models, digital transformation, and sustainable practices. The event is designed for managers, entrepreneurs, and analysts who want practical strategies to stay competitive. (2) registration includes access to keynote sessions, workshop materials, and a networking lunch. Early bird discounts are available until May 31. (3) attendees are encouraged to bring business cards and prepare questions for panel discussions. (4) To reserve your spot, visit our website or contact the events team at events@biztrends.com.",
+    "contentTranslation": "年次セミナーに参加して、明日の市場を形作る最新の動向を学びましょう。セミナーを通じて、専門の講演者がリモートワークモデル、デジタル変革、持続可能な取り組みといったトピックを取り上げます。本イベントは、競争力を維持するための実践的な戦略を求めるマネージャー、起業家、アナリスト向けに設計されています。ご登録いただくと基調講演、ワークショップ資料、ネットワーキングランチにご参加いただけます。早割は5月31日まで利用できます。登録済みの参加者は名刺を持参し、パネル討議のための質問を用意することをお勧めします。定員が限られていますので、席を確保するには早めにお申し込みください。席の予約は当社ウェブサイトをご覧になるか、events@biztrends.comまでイベントチームにお問い合わせください。",
+    "questions": [
+      {
+        "id": "part6_33_q1",
+        "options": [
+          "A Despite",
+          "B Throughout",
+          "C However",
+          "D Although"
+        ],
+        "optionTranslations": [
+          "にもかかわらず",
+          "通して",
+          "しかし",
+          "とはいえ"
+        ],
+        "correct": "B",
+        "explanation": "「Throughout」は「〜の間ずっと」という意味で、この文脈ではセミナー全体にわたって講演が行われることを表す最適な接続語です。AとD（Despite/Although）は譲歩を示し、その後に逆接の文が必要で文脈に合いません。C（However）も逆接を表すので不適切です。",
+        "questionType": "context"
+      },
+      {
+        "id": "part6_33_q2",
+        "options": [
+          "A Registrations",
+          "B Your",
+          "C Registering",
+          "D None"
+        ],
+        "optionTranslations": [
+          "登録（複数）",
+          "あなたの",
+          "登録すること",
+          "なし"
+        ],
+        "correct": "B",
+        "explanation": "「Your registration includes〜」で「あなたの登録には〜が含まれます」という意味で自然です。A（Registrations）は複数形で続く語とのつながりが不自然、C（Registering）は動名詞で文法的に合いません。D（None）は意味が通りません。",
+        "questionType": "vocabulary"
+      },
+      {
+        "id": "part6_33_q3",
+        "options": [
+          "A Registering",
+          "B Registered",
+          "C To register",
+          "D Registers"
+        ],
+        "optionTranslations": [
+          "登録すること",
+          "登録済み",
+          "登録するには",
+          "登録する"
+        ],
+        "correct": "B",
+        "explanation": "「Registered attendees are encouraged〜」で「登録済みの参加者は〜するよう奨励されます」という受動態構文に合う形は形容詞的に使われる過去分詞の\"Registered\"です。A（Registering）は進行形的で意味が合わず、C（To register）は不定詞句で文法的に続きません。D（Registers）は三人称単数現在で主語に合いません。",
+        "questionType": "grammar"
+      },
+      {
+        "id": "part6_33_q4",
+        "options": [
+          "A Bring a friend for free.",
+          "B Space is limited, so please sign up early to guarantee your seat.",
+          "C The seminar will be canceled if fewer than 10 people attend.",
+          "D Tickets are non-transferable but can be refunded at any time."
+        ],
+        "optionTranslations": [
+          "友人無料招待",
+          "定員限り、早めに申込",
+          "参加者10名未満で中止",
+          "譲渡不可・返金可"
+        ],
+        "correct": "B",
+        "explanation": "挿入文として、次の「To reserve your spot, visit our website〜」へ自然につながるのはBの「席に限りがあるので早めに申し込んでください」です。他の選択肢は情報としてあり得ても、直前の文（参加者への準備の呼びかけ）と次の案内（予約方法）との流れに最も合致するのはBだけです。",
+        "questionType": "sentence_insertion"
+      }
+    ],
+    "difficulty": "easy",
+    "topic": "business_trends",
+    "createdAt": "2025-08-20T09:05:29.298Z",
+    "generationBatch": "part6_batch_1755679537684_uup4qwvuu",
+    "partType": "part6"
+  }
+]

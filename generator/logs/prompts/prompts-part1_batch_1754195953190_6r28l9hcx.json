@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2025-08-03T04:39:13.204Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"hard\".\n\nScene Requirements:\n- Scene type: bank\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"bank\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:17.625Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside a bustling bank lobby, a line of customers is waiting patiently in front of the teller windows, where clerks are assisting them with various transactions. A security guard stands near the entrance, monitoring the activity while a few people are seated in the waiting area, filling out forms on clipboards. Through the large glass windows, the sunny weather outside casts a warm glow into the room, highlighting the potted plants placed strategically between the seating areas. In one corner, a customer is using the ATM, withdrawing cash while glancing occasionally at their smartphone.\",\n    \"difficulty\": \"hard\",\n    \"scene\": \"bank\"\n  }\n]",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:37.379Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3\n    }\n  ],\n  \"unrelatedOptions\": [\n    \"First unrelated option (completely different scene)\",\n    \"Second unrelated option (completely different scene)\",\n    \"Third unrelated option (completely different scene)\",\n    \"Fourth unrelated option (completely different scene)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Several people are standing in a line at a row of ATMs, with some using the machines while others wait. In the foreground, a woman is sitting on a couch writing in a notebook, and a man next to her is looking at his phone. A large potted plant is positioned nearby, and the setting appears to be a bank or financial institution.\"\nDifficulty: hard\n\nDIFFICULTY REQUIREMENTS FOR \"HARD\" LEVEL:\nDescription: The sentence uses advanced grammar such as perfect tense, participial phrases, or inversion. Vocabulary may be technical or nuanced. Several interpretations may seem plausible.\n\nKey Features to Follow:\n- Uses present perfect, participial modifiers, or reduced clauses\n- Involves complex or less visible actions\n- Uses compound or embedded sentence structures\n- Vocabulary may include workplace or technical terms\n- Plausibility depends on understanding of subtle meaning\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n\n3. Generate 4 UNRELATED OPTIONS completely different from the scene\n   - Describe entirely different actions, locations, or situations\n   - Should not contain any elements from the actual scene\n   - Examples: office work when scene is outdoors, cooking when scene is sports, etc.\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:44.199Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"People have formed a line at the ATMs.\",\n    \"A woman is writing in her notebook.\",\n    \"A man is checking his phone on the couch.\",\n    \"A large plant is near the waiting area.\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"People have formed a line at the teller.\",\n      \"sourceIndex\": 0\n    },\n    {\n      \"option\": \"A woman is reading a book on the couch.\",\n      \"sourceIndex\": 1\n    },\n    {\n      \"option\": \"A man is talking on his phone nearby.\",\n      \"sourceIndex\": 2\n    },\n    {\n      \"option\": \"A large plant is by the entrance door.\",\n      \"sourceIndex\": 3\n    }\n  ],\n  \"unrelatedOptions\": [\n    \"A chef is cooking in a busy kitchen.\",\n    \"Children are playing soccer in the park.\",\n    \"A woman is jogging along the beach path.\",\n    \"An artist is painting a landscape outdoors.\"\n  ],\n  \"explanation\": \"The correct options accurately describe actions and elements occurring in the bank scene, with people using ATMs, sitting on the couch, and the presence of a plant.\",\n  \"difficulty\": \"hard\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:44.200Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): Several people are standing in a line at a row of ATMs, with some using the machines while others wait. In the foreground, a woman is sitting on a couch writing in a notebook, and a man next to her is looking at his phone. A large potted plant is positioned nearby, and the setting appears to be a bank or financial institution.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:47.359Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "数人の人々がATMの列に並んで立っており、機械を使用している人もいれば、待っている人もいます。手前では、女性がソファに座ってノートに書き込みをしており、その隣の男性は携帯電話を見ています。近くには大きな鉢植えの植物が置かれており、場所は銀行や金融機関のようです。",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:47.360Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A large plant is by the entrance door.\nB: A woman is reading a book on the couch.\nC: People have formed a line at the teller.\nD: A man is checking his phone on the couch.\n\nExplanation: The correct options accurately describe actions and elements occurring in the bank scene, with people using ATMs, sitting on the couch, and the presence of a plant.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T04:39:51.051Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"大きな植物が入口のドアのそばにあります。\",\n    \"女性がソファで本を読んでいます。\",\n    \"人々が窓口で列を作っています。\",\n    \"男性がソファで携帯電話をチェックしています。\"\n  ],\n  \"explanationTranslation\": \"正しい選択肢は、銀行のシーンで起こっている行動や要素を正確に説明しています。人々がATMを使ったり、ソファに座ったり、植物の存在が確認できます。\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

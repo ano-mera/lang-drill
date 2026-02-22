@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-31T21:09:10.609Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "まだメールを確認していません。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-31T21:09:10.871Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "今日は天気がいいですね。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-31T21:09:12.196Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "どなたかとお話ししたいのですが。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  }
+]

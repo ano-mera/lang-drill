@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-27T13:03:33.988Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "明日は雨が降るでしょう。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-27T13:03:34.027Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "私はあまり靴が好きではありません。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-27T13:03:34.709Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "それは素晴らしいですね！どこで見つけることができますか？",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "timestamp": "2025-08-01T08:31:19.456Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":3,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 3,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:19.463Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Phone or voicemail message (電話・留守電メッセージ)\n【Industry】: Public Sector / Government (公共機関／行政)\n【Difficulty】: medium\n【Question Types】: detail, main_purpose, inference\n【Correct Answer Positions】: Question 1=C, Question 2=A, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:26.509Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Operator\",\n      \"role\": \"City administrative office operator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Hello, this is a message from the City Administrative Office. We would like to inform you that the public hearing originally scheduled for this Thursday at 4 PM has been postponed to next Monday at the same time and location. The hearing will address the proposed changes to local transportation routes. We apologize for any inconvenience this may cause and appreciate your understanding. For further details, please visit our website or contact our office directly. Thank you for your attention.\",\n    \"topic\": \"Rescheduling of a public hearing\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"When has the public hearing been rescheduled to?\",\n      \"options\": [\"This Thursday at 4 PM\", \"Next Thursday at 4 PM\", \"Next Monday at 4 PM\", \"This Monday at 4 PM\"],\n      \"correct\": \"Next Monday at 4 PM\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチでは、元々の予定は今週木曜日の午後4時でしたが、次の月曜日に延期されると述べています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the voicemail message?\",\n      \"options\": [\"To inform about the rescheduling of a public hearing\", \"To announce new transportation routes\", \"To provide office contact details\", \"To solicit feedback on public projects\"],\n      \"correct\": \"To inform about the rescheduling of a public hearing\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"メッセージの目的は、公聴会の日程変更を知らせることです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the public hearing?\",\n      \"options\": [\"It will be held in a new location\", \"It will cover topics unrelated to transportation\", \"It involves proposed changes to local transportation\", \"It has been postponed multiple times\"],\n      \"correct\": \"It involves proposed changes to local transportation\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"メッセージ内で、公聴会は地元の交通ルートの変更に関するものであると述べています。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:26.510Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: phone_message\nIndustry: government\nSpeaker Role: City administrative office operator\nTopic: Rescheduling of a public hearing\n\nSpeech Text:\nHello, this is a message from the City Administrative Office. We would like to inform you that the public hearing originally scheduled for this Thursday at 4 PM has been postponed to next Monday at the same time and location. The hearing will address the proposed changes to local transportation routes. We apologize for any inconvenience this may cause and appreciate your understanding. For further details, please visit our website or contact our office directly. Thank you for your attention.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:30.436Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"電話メッセージ\",\n  \"textTranslation\": \"こんにちは、こちらは市役所からのメッセージです。今週の木曜日午後4時に予定されていた公聴会が、来週の月曜日の同じ時間と場所に延期されたことをお知らせいたします。この公聴会では、地域の交通ルートに関する提案された変更について話し合います。このことでご不便をおかけすることをお詫び申し上げますとともに、ご理解を賜りますようお願い申し上げます。詳細については、当局のウェブサイトをご覧いただくか、直接お問い合わせください。ご注意いただき、ありがとうございます。\",\n  \"topicTranslation\": \"公聴会のスケジュール変更\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:30.438Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: When has the public hearing been rescheduled to?\nOptions:\nA: This Thursday at 4 PM\nB: Next Thursday at 4 PM\nC: Next Monday at 4 PM\nD: This Monday at 4 PM\n\nQuestion 2: What is the main purpose of the voicemail message?\nOptions:\nA: To inform about the rescheduling of a public hearing\nB: To announce new transportation routes\nC: To provide office contact details\nD: To solicit feedback on public projects\n\nQuestion 3: What can be inferred about the public hearing?\nOptions:\nA: It will be held in a new location\nB: It will cover topics unrelated to transportation\nC: It involves proposed changes to local transportation\nD: It has been postponed multiple times\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:34.814Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: 公聴会はいつに再スケジュールされましたか？\",\n      \"optionTranslations\": [\n        \"A: 今週の木曜日午後4時\",\n        \"B: 来週の木曜日午後4時\",\n        \"C: 来週の月曜日午後4時\",\n        \"D: 今週の月曜日午後4時\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: ボイスメールメッセージの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 公聴会の再スケジュールについて知らせるため\",\n        \"B: 新しい交通ルートを発表するため\",\n        \"C: オフィスの連絡先を提供するため\",\n        \"D: 公共プロジェクトに関する意見を求めるため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: 公聴会について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"A: 新しい場所で開催される\",\n        \"B: 交通に関連しないトピックを扱う\",\n        \"C: 地元の交通に対する提案された変更を含む\",\n        \"D: 何度も延期されている\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:31:39.868Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Internal staff training (社員研修・社内教育)\n【Industry】: Healthcare (医療・ヘルスケア)\n【Difficulty】: medium\n【Question Types】: next_action, inference, intended_audience\n【Correct Answer Positions】: Question 1=A, Question 2=A, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:01.769Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Dr. Smith\",\n      \"role\": \"Training coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, everyone. Today, we're focusing on how to enhance patient care through effective communication. We'll start with a video presentation that highlights successful communication strategies used in patient interactions. After the video, we'll break into small groups to discuss what you've learned and how these strategies can be applied in your departments. Remember, clear communication is key in reducing errors and improving patient outcomes. At the end of the session, there will be a Q&A period where you can ask any questions you might have. Let's make sure we're all actively participating to get the most out of this training.\",\n    \"topic\": \"Enhancing patient care through effective communication\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the next action after the video presentation?\",\n      \"options\": [\n        \"Break into small groups for discussion.\",\n        \"Start a Q&A session.\",\n        \"Fill out a feedback form.\",\n        \"Watch another video.\"\n      ],\n      \"correct\": \"Break into small groups for discussion.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチでは、ビデオの後に小グループに分かれてディスカッションを行うと述べている。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What can be inferred about the purpose of the video presentation?\",\n      \"options\": [\n        \"To demonstrate successful communication strategies.\",\n        \"To teach medical procedures.\",\n        \"To introduce new healthcare regulations.\",\n        \"To review past training sessions.\"\n      ],\n      \"correct\": \"To demonstrate successful communication strategies.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"ビデオは患者とのコミュニケーションにおける成功例を示すために使われると述べられている。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Who is the intended audience for this training session?\",\n      \"options\": [\n        \"Medical students.\",\n        \"Patients and their families.\",\n        \"Healthcare policy makers.\",\n        \"Healthcare staff.\"\n      ],\n      \"correct\": \"Healthcare staff.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチは、患者ケアを改善するためのコミュニケーション戦略について医療スタッフを対象にしている。\",\n      \"questionType\": \"intended_audience\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:01.771Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: staff_training\nIndustry: healthcare\nSpeaker Role: Training coordinator\nTopic: Enhancing patient care through effective communication\n\nSpeech Text:\nGood morning, everyone. Today, we're focusing on how to enhance patient care through effective communication. We'll start with a video presentation that highlights successful communication strategies used in patient interactions. After the video, we'll break into small groups to discuss what you've learned and how these strategies can be applied in your departments. Remember, clear communication is key in reducing errors and improving patient outcomes. At the end of the session, there will be a Q&A period where you can ask any questions you might have. Let's make sure we're all actively participating to get the most out of this training.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:04.698Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"スタッフトレーニング\",\n  \"textTranslation\": \"おはようございます、皆さん。今日は、効果的なコミュニケーションを通じて患者ケアを向上させる方法に焦点を当てます。まず、患者とのやり取りで使われる成功したコミュニケーション戦略を強調したビデオプレゼンテーションから始めます。ビデオの後、学んだこととこれらの戦略を各部門でどのように適用できるかを話し合うために、小グループに分かれてディスカッションを行います。明確なコミュニケーションは、エラーを減らし、患者の結果を改善するための鍵であることを忘れないでください。セッションの最後には、質問があれば何でも質問できるQ&Aの時間を設けます。このトレーニングから最大限の成果を得るために、全員が積極的に参加するようにしましょう。\",\n  \"topicTranslation\": \"効果的なコミュニケーションを通じた患者ケアの向上\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:04.699Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the next action after the video presentation?\nOptions:\nA: Break into small groups for discussion.\nB: Start a Q&A session.\nC: Fill out a feedback form.\nD: Watch another video.\n\nQuestion 2: What can be inferred about the purpose of the video presentation?\nOptions:\nA: To demonstrate successful communication strategies.\nB: To teach medical procedures.\nC: To introduce new healthcare regulations.\nD: To review past training sessions.\n\nQuestion 3: Who is the intended audience for this training session?\nOptions:\nA: Medical students.\nB: Patients and their families.\nC: Healthcare policy makers.\nD: Healthcare staff.\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:09.219Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: ビデオプレゼンテーションの後の次の行動は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 小グループに分かれてディスカッションをする。\",\n        \"B: 質疑応答セッションを始める。\",\n        \"C: フィードバックフォームに記入する。\",\n        \"D: 別のビデオを見る。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: ビデオプレゼンテーションの目的について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"A: 成功したコミュニケーション戦略を実証する。\",\n        \"B: 医療手順を教える。\",\n        \"C: 新しい医療規制を紹介する。\",\n        \"D: 過去のトレーニングセッションを見直す。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: このトレーニングセッションの対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"A: 医学生。\",\n        \"B: 患者とその家族。\",\n        \"C: 医療政策立案者。\",\n        \"D: 医療スタッフ。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:21.144Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Meeting summary or update (会議の要点や更新)\n【Industry】: Construction (建設業)\n【Difficulty】: medium\n【Question Types】: inference, next_action, main_purpose\n【Correct Answer Positions】: Question 1=A, Question 2=C, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:30.226Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Project Manager\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, everyone. During our meeting today, we discussed the progress of the new office complex project. As of now, the foundation work is complete, and we are on schedule to begin the framing next week. However, we encountered a delay with the shipment of steel beams, which is expected to arrive by Friday. To mitigate this, the procurement team is coordinating closely with the supplier. Additionally, we reviewed the budget allocations and confirmed that the project remains within the financial plan. Our next steps involve finalizing the electrical layout with the engineers. Please ensure all teams are updated on these developments by the end of the day.\",\n    \"topic\": \"Update on construction project progress and next steps\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the current status of the project?\",\n      \"options\": [\n        \"The foundation work is complete.\",\n        \"The steel beams have arrived.\",\n        \"The framing has started.\",\n        \"The project is over budget.\"\n      ],\n      \"correct\": \"The foundation work is complete.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチで、基礎工事が完了したことが述べられているため、選択肢Aが正しい。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What will the teams do next?\",\n      \"options\": [\n        \"Start the foundation work.\",\n        \"Order more steel beams.\",\n        \"Finalize the electrical layout.\",\n        \"Review the budget again.\"\n      ],\n      \"correct\": \"Finalize the electrical layout.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチの最後で、次のステップとして電気レイアウトを完成させることが述べられている。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What was the main purpose of this update?\",\n      \"options\": [\n        \"To announce a new project.\",\n        \"To inform about the project's progress and next steps.\",\n        \"To discuss a budget increase.\",\n        \"To highlight team changes.\"\n      ],\n      \"correct\": \"To inform about the project's progress and next steps.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチ全体がプロジェクトの進捗状況と次のステップについての情報を提供することを目的としている。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:30.227Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: meeting_summary\nIndustry: construction\nSpeaker Role: Company spokesperson\nTopic: Update on construction project progress and next steps\n\nSpeech Text:\nGood afternoon, everyone. During our meeting today, we discussed the progress of the new office complex project. As of now, the foundation work is complete, and we are on schedule to begin the framing next week. However, we encountered a delay with the shipment of steel beams, which is expected to arrive by Friday. To mitigate this, the procurement team is coordinating closely with the supplier. Additionally, we reviewed the budget allocations and confirmed that the project remains within the financial plan. Our next steps involve finalizing the electrical layout with the engineers. Please ensure all teams are updated on these developments by the end of the day.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:35.380Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"会議サマリー\",\n  \"textTranslation\": \"皆さん、こんにちは。本日の会議では、新しいオフィスコンプレックスプロジェクトの進捗について話し合いました。現在、基礎工事は完了しており、来週にはフレーミングを開始する予定でスケジュール通り進んでいます。しかし、スチール梁の出荷に遅れが生じており、金曜日までに到着する見込みです。これに対処するために、調達チームはサプライヤーと密に連携を取っています。また、予算配分も見直し、プロジェクトが財務計画内に収まっていることを確認しました。次のステップとして、エンジニアと共に電気レイアウトの最終調整を行います。これらの進展を本日中に全てのチームが把握するようにしてください。\",\n  \"topicTranslation\": \"建設プロジェクトの進捗状況と次のステップについての更新\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:35.381Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the current status of the project?\nOptions:\nA: The foundation work is complete.\nB: The steel beams have arrived.\nC: The framing has started.\nD: The project is over budget.\n\nQuestion 2: What will the teams do next?\nOptions:\nA: Start the foundation work.\nB: Order more steel beams.\nC: Finalize the electrical layout.\nD: Review the budget again.\n\nQuestion 3: What was the main purpose of this update?\nOptions:\nA: To announce a new project.\nB: To inform about the project's progress and next steps.\nC: To discuss a budget increase.\nD: To highlight team changes.\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T08:32:39.517Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: プロジェクトの現在の状況は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 基礎工事が完了しています。\",\n        \"B: 鉄骨が到着しました。\",\n        \"C: 枠組み工事が始まりました。\",\n        \"D: プロジェクトは予算オーバーです。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: チームは次に何をしますか？\",\n      \"optionTranslations\": [\n        \"A: 基礎工事を始める。\",\n        \"B: さらに鉄骨を注文する。\",\n        \"C: 電気配線のレイアウトを確定する。\",\n        \"D: 予算を再確認する。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: この更新の主な目的は何でしたか？\",\n      \"optionTranslations\": [\n        \"A: 新しいプロジェクトを発表するため。\",\n        \"B: プロジェクトの進捗と次のステップを伝えるため。\",\n        \"C: 予算の増額を議論するため。\",\n        \"D: チームの変更点を強調するため。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

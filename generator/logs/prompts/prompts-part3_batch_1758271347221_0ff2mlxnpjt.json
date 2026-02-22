@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-09-19T08:42:27.223Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:42:27.260Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: order_issue\n- 業種: travel_agency (Travel Agency and Tour Services)\n- 正解位置: 問題1はA、問題2はB、問題3はD\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは男性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はTravel Agency and Tour Services業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: A位置、問題2: B位置、問題3: D位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:42:39.223Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"order_issue\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Michael\", \"role\": \"Travel Agent\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"David\", \"role\": \"Customer\", \"gender\": \"male\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"B\", \"text\": \"Hi, I recently booked a tour package through your agency, but I haven’t received the confirmation email yet.\"},\n    {\"speaker\": \"A\", \"text\": \"I'm sorry to hear that, David. Let me check your booking in our system. What is your reservation number?\"},\n    {\"speaker\": \"B\", \"text\": \"It's 5829-156. I booked it two days ago.\"},\n    {\"speaker\": \"A\", \"text\": \"Alright, I see there's a small issue because the email address was entered incorrectly. Let me update that for you.\"},\n    {\"speaker\": \"B\", \"text\": \"I see, that would explain why I haven’t received any information. Can you send the confirmation now?\"},\n    {\"speaker\": \"A\", \"text\": \"Absolutely. I’ve updated your email address and resent the confirmation email. You should receive it shortly.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What problem does the man report?\",\n      \"options\": [\"He has not received a confirmation email.\", \"He received the wrong tour itinerary.\", \"His payment was not processed.\", \"His booking was canceled by mistake.\"],\n      \"correct\": \"He has not received a confirmation email.\",\n      \"explanation\": \"男性（顧客）は、ツアーの確認メールを受け取っていないことを報告しています。\",\n      \"questionType\": \"explicit\"\n    },\n    {\n      \"question\": \"What does the man suggest might be the issue?\",\n      \"options\": [\"The email address was incorrect.\", \"The tour was booked for the wrong date.\", \"The payment method was declined.\", \"The package was upgraded without consent.\"],\n      \"correct\": \"The email address was incorrect.\",\n      \"explanation\": \"旅行代理店の男性（エージェント）は、メールアドレスが間違って入力されたことが確認メールが届かない原因だと言っています。\",\n      \"questionType\": \"diagnosis\"\n    },\n    {\n      \"question\": \"What does the man offer to do for the customer?\",\n      \"options\": [\"Issue a refund.\", \"Provide a discount on the next purchase.\", \"Upgrade the tour package.\", \"Resend the confirmation email.\"],\n      \"correct\": \"Resend the confirmation email.\",\n      \"explanation\": \"旅行代理店の男性（エージェント）は、顧客のメールアドレスを更新し、確認メールを再送信すると申し出ています。\",\n      \"questionType\": \"solution\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:42:39.225Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: order_issue\n\nConversation:\nB: Hi, I recently booked a tour package through your agency, but I haven’t received the confirmation email yet.\nA: I'm sorry to hear that, David. Let me check your booking in our system. What is your reservation number?\nB: It's 5829-156. I booked it two days ago.\nA: Alright, I see there's a small issue because the email address was entered incorrectly. Let me update that for you.\nB: I see, that would explain why I haven’t received any information. Can you send the confirmation now?\nA: Absolutely. I’ve updated your email address and resent the confirmation email. You should receive it shortly.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:42:42.672Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"注文の問題\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"こんにちは、御社を通じてツアーパッケージを予約したのですが、確認メールがまだ届いていません。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"それは申し訳ありません、デイビッド。システムで予約を確認します。予約番号は何ですか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"5829-156です。2日前に予約しました。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"承知しました。メールアドレスが誤って入力されていたために、小さな問題がありました。修正しますね。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"なるほど、それで情報が届かなかったわけですね。今、確認メールを送ってもらえますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。メールアドレスを更新して、確認メールを再送しました。すぐに届くはずです。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:42:42.673Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What problem does the man report?\nOptions:\nA: He has not received a confirmation email.\nB: He received the wrong tour itinerary.\nC: His payment was not processed.\nD: His booking was canceled by mistake.\n\nQuestion 2: What does the man suggest might be the issue?\nOptions:\nA: The email address was incorrect.\nB: The tour was booked for the wrong date.\nC: The payment method was declined.\nD: The package was upgraded without consent.\n\nQuestion 3: What does the man offer to do for the customer?\nOptions:\nA: Issue a refund.\nB: Provide a discount on the next purchase.\nC: Upgrade the tour package.\nD: Resend the confirmation email.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:42:46.091Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"男性はどのような問題を報告していますか？\",\n      \"optionTranslations\": [\n        \"A: 確認メールが届いていない。\",\n        \"B: 間違ったツアーの旅程を受け取った。\",\n        \"C: 支払いが処理されていない。\",\n        \"D: 予約が誤ってキャンセルされた。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性は何が問題かもしれないと示唆していますか？\",\n      \"optionTranslations\": [\n        \"A: メールアドレスが間違っていた。\",\n        \"B: ツアーが間違った日に予約された。\",\n        \"C: 支払い方法が拒否された。\",\n        \"D: 同意なしにパッケージがアップグレードされた。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性は顧客に何をすることを申し出ていますか？\",\n      \"optionTranslations\": [\n        \"A: 返金をする。\",\n        \"B: 次回購入に割引を提供する。\",\n        \"C: ツアーパッケージをアップグレードする。\",\n        \"D: 確認メールを再送する。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

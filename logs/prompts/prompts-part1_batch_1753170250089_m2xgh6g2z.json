@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2025-07-22T07:44:31.811Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性が支払いのために財布を取り出しています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:44:31.863Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性が客にコーヒーを提供している。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:44:31.927Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "バリスタがラテを作っています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:44:32.101Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "一団の人々がテーブルに座っています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:44:32.102Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene describes a man taking out his wallet to pay at a café register, which matches the first option.",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:44:32.993Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "その場面は、男性がカフェのレジで支払いをするために財布を取り出す様子を描写しており、最初の選択肢と一致します。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  }
+]

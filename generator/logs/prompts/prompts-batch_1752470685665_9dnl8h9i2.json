@@ -1,0 +1,138 @@
+[
+  {
+    "timestamp": "2025-07-14T05:24:45.946Z",
+    "functionName": "generateMultiDocumentPassage",
+    "type": "unknown",
+    "difficulty": "medium",
+    "topic": "meeting_scheduling",
+    "promptType": "generation",
+    "prompt": "\n以下の条件でTOEIC Part7用の2資料問題を作成してください：\n\n【条件】\n- 問題タイプ: 2資料問題（Multi-Document Problem）\n- 各文書の単語数: 72-90語\n- 難易度: medium\n- トピック: meeting_scheduling\n- 文書タイプ: email と internal_chat\n- 文書の組み合わせ: email + internal_chat (重み: 3)\n- 文書数: 2つの関連する文書\n\n【2資料問題の特徴】\n1. 2つの文書が同じビジネス状況に関連している\n2. 各文書は独立して理解できる内容\n3. 両文書を組み合わせることで、より深い理解が可能\n4. 実際のビジネスシーンでよく見られる文書の組み合わせ\n\n【文書タイプの指定】\n- 使用する文書タイプ: email と internal_chat\n- この組み合わせは重み付き選択により決定されました（重み: 3）\n- meeting_schedulingのトピックに適した内容で作成してください\n\n【文書順番の決定】\n- 2つの文書タイプのうち、どちらを最初に配置するかはあなたが決定してください\n- ビジネスシーンで最も自然で論理的な順番になるよう配置してください\n- 一般的なガイドライン：\n  * 主要な情報や依頼が含まれる文書を最初に\n  * 詳細情報や補足データは後に配置\n  * 時系列的に先のものから順に配置\n  * 読み手の理解の流れを考慮して配置\n\n【文書間の関係性】\n- 文書1は読み手が最初に接する文書として重要な役割を果たします\n- 文書2は文書1の内容を補完・詳細化・発展させる役割を担います\n- 両文書の関係性が自然で論理的な流れになるよう作成してください\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7の2資料問題に適した内容と構造\n3. 各文書が独立して意味を成す内容\n4. 文書間に明確な関連性（相互補完、詳細説明、follow-up等）\n5. 複数の情報ポイントを各文書に含む\n6. クロスリファレンス可能な情報要素\n7. 自然で読みやすい日本語翻訳を含む\n\n【文書1の構造】\n- 主要な情報やアクションを含む\n- 文書2への参照や関連性を暗示\n- 独立して理解可能な内容\n\n【文書2の構造】\n- 文書1の詳細情報や補足データ\n- 文書1で言及された内容の具体化\n- 追加の文脈や背景情報\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"title\": \"2資料問題のタイトル\",\n  \"type\": \"multi-document\",\n  \"isMultiDocument\": true,\n  \"documents\": [\n    {\n      \"id\": \"doc1\",\n      \"type\": \"[あなたが決定した最初の文書タイプ]\",\n      \"title\": \"文書1のタイトル\",\n      \"content\": \"文書1の内容（改行文字\\nを含む）\",\n      \"contentTranslation\": \"文書1の自然な日本語翻訳\"\n    },\n    {\n      \"id\": \"doc2\",\n      \"type\": \"[あなたが決定した2番目の文書タイプ]\",\n      \"title\": \"文書2のタイトル\",\n      \"content\": \"文書2の内容（改行文字\\nを含む）\",\n      \"contentTranslation\": \"文書2の自然な日本語翻訳\",\n      \"hasChart\": \"[chartタイプの場合はtrue、それ以外はfalse]\",\n      \"chart\": \"[chartタイプの場合のみ図表データを含める、それ以外はnull]\"\n    }\n  ],\n  \"documentTypes\": \"[決定した文書タイプの配列]\",\n  \"difficulty\": \"medium\",\n  \"topic\": \"meeting_scheduling\",\n  \"relationships\": {\n    \"type\": \"complementary|detailed|follow-up|comparison\",\n    \"description\": \"文書間の関連性の説明\"\n  }\n}\n\n【重要な注意点】\n- 各文書は独立して理解できる内容にしてください\n- 文書間の関連性は自然で現実的なものにしてください\n- TOEIC Part7の実際の出題形式に忠実に従ってください\n- 両文書を読まないと答えられない質問を想定して作成してください\n- 図表を含む場合は、最も適切な文書に配置してください\n\n【文書順番決定の最終確認】\n- email と internal_chat のうち、どちらを最初に配置するのが自然か考えてください\n- ビジネスの文脈で、読み手にとって最も理解しやすい順番を選択してください\n- 文書間の参照関係（例：メールでスケジュールに言及）を考慮してください\n- 時系列（例：依頼→回答、発表→詳細）を考慮してください\n",
+    "metadata": {
+      "isMultiDocument": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:02.083Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 118語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nSubject: Request to Schedule a Team Meeting\n\nHi Team,\n\nI hope this message finds you well. We need to schedule a team meeting to discuss our upcoming project deadlines. Please let me know your availability for next week. I’m aiming for Tuesday or Wednesday afternoon. Your prompt response would be appreciated.\n\nBest regards,\nJohn Doe\nProject Manager\n\n--- Document 2 ---\n\nAlice: Hi everyone, I saw John's email about the meeting. Is Tuesday 3 PM okay for everyone?\nBob: Tuesday works for me. I can adjust my schedule.\nAlice: Great, anyone else?\nCharlie: Wednesday would be better for me. I have a client call on Tuesday afternoon.\nAlice: Let's see if we can finalize this by today.\n\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage116",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:05.404Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が118語で、期待範囲の180-250語を大きく下回っている。\",\n      \"suggestion\": \"文書の内容を充実させ、語数を増やす必要がある。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、会話形式の部分が不適切に配置されている。\",\n      \"suggestion\": \"会話部分を別の文書として分けるか、より明確な構造を持たせるべき。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage116",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:05.407Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nSubject: Request to Schedule a Team Meeting\n\nHi Team,\n\nI hope this message finds you well. We need to schedule a team meeting to discuss our upcoming project deadlines. Please let me know your availability for next week. I’m aiming for Tuesday or Wednesday afternoon. Your prompt response would be appreciated.\n\nBest regards,\nJohn Doe\nProject Manager\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が118語で、期待範囲の180-250語を大きく下回っている。\n   改善提案: 文書の内容を充実させ、語数を増やす必要がある。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、会話形式の部分が不適切に配置されている。\n   改善提案: 会話部分を別の文書として分けるか、より明確な構造を持たせるべき。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: medium難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: medium難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: multi_document を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage116",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:14.413Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Subject: Request to Schedule a Team Meeting\\n\\nHi Team,\\n\\nI hope this message finds you well. As we approach the deadlines for our upcoming project, it is essential that we come together to discuss our progress and any challenges we may be facing. I would like to propose scheduling a team meeting next week to ensure that everyone is aligned and to strategize our next steps.\\n\\nPlease let me know your availability for Tuesday or Wednesday afternoon. If neither of those days works for you, feel free to suggest alternative times that might be more convenient. Your input is vital for the success of our project, and I appreciate your prompt response.\\n\\nLooking forward to hearing from you soon.\\n\\nBest regards,\\nJohn Doe\\nProject Manager\",\n  \"revisedContentTranslation\": \"件名: チームミーティングのスケジュール依頼\\n\\nチームの皆さん、\\n\\nこのメッセージが皆さんに届いていることを願っています。私たちの今後のプロジェクトの締切が近づいているため、進捗状況や直面している課題について話し合うために集まることが重要です。来週、チームミーティングを開催し、全員が同じ方向に進んでいることを確認し、次のステップを戦略的に考えたいと思います。\\n\\n火曜日または水曜日の午後のご都合を教えてください。それらの日が難しい場合は、より都合の良い別の時間を提案していただいても構いません。皆さんの意見はプロジェクトの成功にとって重要であり、迅速なご返答を感謝いたします。\\n\\nお返事をお待ちしております。\\n\\nよろしくお願いします。\\nジョン・ドー\\nプロジェクトマネージャー\",\n  \"revisionNotes\": \"文書の語数を増やし、内容を充実させました。会議の目的や重要性を明確にし、参加者に意見を求める表現を加えました。また、文書の構造を整え、ビジネス文書としての適切な形式を維持しました。\"\n}",
+    "metadata": {
+      "passageId": "passage116",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:14.415Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 186語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nSubject: Request to Schedule a Team Meeting\n\nHi Team,\n\nI hope this message finds you well. As we approach the deadlines for our upcoming project, it is essential that we come together to discuss our progress and any challenges we may be facing. I would like to propose scheduling a team meeting next week to ensure that everyone is aligned and to strategize our next steps.\n\nPlease let me know your availability for Tuesday or Wednesday afternoon. If neither of those days works for you, feel free to suggest alternative times that might be more convenient. Your input is vital for the success of our project, and I appreciate your prompt response.\n\nLooking forward to hearing from you soon.\n\nBest regards,\nJohn Doe\nProject Manager\n\n--- Document 2 ---\n\nAlice: Hi everyone, I saw John's email about the meeting. Is Tuesday 3 PM okay for everyone?\nBob: Tuesday works for me. I can adjust my schedule.\nAlice: Great, anyone else?\nCharlie: Wednesday would be better for me. I have a client call on Tuesday afternoon.\nAlice: Let's see if we can finalize this by today.\n\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage116_content_final",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:15.732Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage116_content_final",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:15.735Z",
+    "functionName": "generateMultiDocumentQuestions",
+    "type": "unknown",
+    "difficulty": "medium",
+    "topic": "meeting_scheduling",
+    "promptType": "generation",
+    "prompt": "\n以下の2つの文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書1】\nタイプ: email\n参照形式: the e-mail\n内容: Subject: Request to Schedule a Team Meeting\n\nHi Team,\n\nI hope this message finds you well. As we approach the deadlines for our upcoming project, it is essential that we come together to discuss our progress and any challenges we may be facing. I would like to propose scheduling a team meeting next week to ensure that everyone is aligned and to strategize our next steps.\n\nPlease let me know your availability for Tuesday or Wednesday afternoon. If neither of those days works for you, feel free to suggest alternative times that might be more convenient. Your input is vital for the success of our project, and I appreciate your prompt response.\n\nLooking forward to hearing from you soon.\n\nBest regards,\nJohn Doe\nProject Manager\n\n【文書2】\nタイプ: internal_chat\n参照形式: the message\n内容: Alice: Hi everyone, I saw John's email about the meeting. Is Tuesday 3 PM okay for everyone?\nBob: Tuesday works for me. I can adjust my schedule.\nAlice: Great, anyone else?\nCharlie: Wednesday would be better for me. I have a client call on Tuesday afternoon.\nAlice: Let's see if we can finalize this by today.\n\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 2資料問題形式\n- 問題文と選択肢は英語で作成\n- 難易度: medium\n\n【2資料問題の出題パターン】\n以下の配分で問題を作成してください：\n1. 文書1のみに基づく問題: 1問\n2. 文書2のみに基づく問題: 1問\n3. 両文書を組み合わせた問題: 1問\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。各文書からの直接的な情報取得が中心。\n- medium: 一部に言い換えや推論を含む。文書間の関連性の理解が必要。\n- hard: 複合的な推論、微妙な言い換え、文書間の詳細な比較分析が必要。\n\n【2資料問題の特徴】\n- 各文書の独立した理解\n- 文書間の関連性の把握\n- 情報の統合と比較\n- クロスリファレンスの活用\n\n【出題パターンの選択指示】\n以下の2資料問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to Document 1, what specific information is mentioned?\"\n- \"What details are provided in Document 2?\"\n- \"Which of the following is stated in Document 1?\"\n- \"What does Document 2 say about [トピック]?\"\n\n\n**優先度2: 情報統合・比較** (重み6, 適合率0.85, スコア7.06)\n- \"Based on both documents, what can be concluded?\"\n- \"What information is provided in both documents?\"\n- \"How does the data in Document 2 relate to Document 1?\"\n- \"What additional information does Document 2 provide about the topic in Document 1?\"\n\n\n**優先度3: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"According to Document 1, what is required for [条件]?\"\n- \"Based on Document 2, under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied according to both documents?\"\n\n\n**優先度4: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of Document 1?\"\n- \"What is the primary goal of Document 2?\"\n- \"Why was Document 1 created?\"\n- \"What is the writer trying to achieve in Document 2?\"\n\n\n**優先度5: 時系列・日程** (重み3, 適合率0.55, スコア5.45)\n- \"According to Document 1, when will [イベント] take place?\"\n- \"Based on Document 2, what is the deadline for [アクション]?\"\n- \"What is the timeline mentioned in both documents?\"\n\n\n**優先度6: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"According to Document 1, who is responsible for [タスク]?\"\n- \"Based on Document 2, what role does [人物] play?\"\n- \"Who should be contacted according to the information in both documents?\"\n\n\n**優先度7: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"According to Document 1, where will [イベント] be held?\"\n- \"Based on Document 2, what location is mentioned?\"\n- \"Which venue is specified in the documents?\"\n\n\n**優先度8: クロスリファレンス** (重み6, 適合率0.9, スコア6.67)\n- \"What does Document 1 refer to that is detailed in Document 2?\"\n- \"Which information mentioned in the first document is clarified in the second?\"\n- \"What connection exists between the email and the schedule?\"\n- \"How does the information in Document 2 relate to what is mentioned in Document 1?\"\n\n\n**優先度9: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from Document 1?\"\n- \"Based on Document 2, what conclusion can be drawn?\"\n- \"What does Document 1 suggest about [トピック]?\"\n- \"Based on the information in Document 2, what is likely to happen?\"\n\n\n**優先度10: 文書間の関連性理解** (重み5, 適合率0.8, スコア6.25)\n- \"How do the two documents relate to each other?\"\n- \"What is the relationship between the documents?\"\n- \"How does the second document support the first?\"\n- \"What is the purpose of providing both documents together?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n- 2資料問題の特性を活かした問題を重視してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 複雑な比較・対比問題（\"How does A compare to B in detail?\"）\n- 抽象的な方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first, second, and third?\"）\n- 高度な推論・仮定問題\n\n【TOEIC Part7 二資料問題の特徴】\n- 文書間の関連性理解が重要\n- 情報の統合と比較が中心\n- クロスリファレンスの活用\n- 実用的なビジネス文書の組み合わせ\n- 明確な情報の特定が重要\n\n【質問の種類別要求】\n**文書1単独の質問:**\n- 文書1の内容のみで回答可能\n- 他の文書への参照は不要\n- 問題文で文書を参照する場合は「the e-mail」を使用\n- referenceDocuments: [0]\n\n**文書2単独の質問:**\n- 文書2の内容のみで回答可能\n- 他の文書への参照は不要\n- 問題文で文書を参照する場合は「the message」を使用\n- referenceDocuments: [1]\n\n**両文書を組み合わせた質問:**\n- 両方の文書の情報が必要\n- 文書間の関連性や統合的理解が必要\n- 問題文で文書を参照する場合は「the e-mail」と「the message」を使用\n- referenceDocuments: [0, 1]\n- crossReference: true\n\n【文書参照の例】\n- 「According to the e-mail, what is...」\n- 「In the message, it is mentioned that...」\n- 「Based on the e-mail and the message, what can be concluded...」\n- 「What does the e-mail suggest about...」\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[文書1に基づく問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\",\n      \"referenceDocuments\": [0],\n      \"crossReference\": false\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[文書2に基づく問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\",\n      \"referenceDocuments\": [1],\n      \"crossReference\": false\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[両文書を組み合わせた問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\",\n      \"referenceDocuments\": [0, 1],\n      \"crossReference\": true\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述してください\n- explanation（解説）は必ず日本語で記述してください\n- referenceDocuments は問題の根拠となる文書のインデックス（0 or 1 or [0,1]）\n- crossReference は両文書が必要な場合のみ true\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの問題は上記の配分（文書1単独、文書2単独、両文書統合）に従ってください\n- 実際のTOEIC Part7の2資料問題の出題パターンに忠実に従ってください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n- 文書を参照する際は「the e-mail」「the message」の形式を使用してください\n",
+    "metadata": {
+      "isMultiDocument": true,
+      "doc1Type": "email",
+      "doc2Type": "internal_chat",
+      "doc1ContentLength": 731,
+      "doc2ContentLength": 310
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:29.148Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nSubject: Request to Schedule a Team Meeting\n\nHi Team,\n\nI hope this message finds you well. As we approach the deadlines for our upcoming project, it is essential that we come together to discuss our progress and any challenges we may be facing. I would like to propose scheduling a team meeting next week to ensure that everyone is aligned and to strategize our next steps.\n\nPlease let me know your availability for Tuesday or Wednesday afternoon. If neither of those days works for you, feel free to suggest alternative times that might be more convenient. Your input is vital for the success of our project, and I appreciate your prompt response.\n\nLooking forward to hearing from you soon.\n\nBest regards,\nJohn Doe\nProject Manager\n\n--- Document 2 ---\n\nAlice: Hi everyone, I saw John's email about the meeting. Is Tuesday 3 PM okay for everyone?\nBob: Tuesday works for me. I can adjust my schedule.\nAlice: Great, anyone else?\nCharlie: Wednesday would be better for me. I have a client call on Tuesday afternoon.\nAlice: Let's see if we can finalize this by today.\n\n\n【問題文】\n\n問題1: According to the e-mail, what days are proposed for the team meeting?\n選択肢: Monday and Tuesday, Tuesday and Wednesday, Wednesday and Thursday, Thursday and Friday\n正解: B\n解説: メールには、チームミーティングの候補日として火曜日と水曜日が提案されています。\n\n\n問題2: In the message, what day does Charlie prefer for the meeting?\n選択肢: Tuesday, Wednesday, Thursday, Friday\n正解: B\n解説: メッセージでは、チャーリーは火曜日の午後にクライアントとの電話があるため、水曜日を希望しています。\n\n\n問題3: Based on the e-mail and the message, what can be concluded about the meeting schedule?\n選択肢: The meeting is scheduled for Monday., Everyone prefers Tuesday., Wednesday is a more suitable day for some team members., The meeting time has been finalized.\n正解: C\n解説: メールでは火曜日と水曜日が提案され、メッセージではチャーリーが水曜日を希望しています。したがって、水曜日が一部のメンバーにとってより適していることがわかります。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage116",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T05:25:30.208Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage116",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  }
+]

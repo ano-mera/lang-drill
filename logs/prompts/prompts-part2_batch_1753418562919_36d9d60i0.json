@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T04:42:47.531Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、あと10分で出発します。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T04:42:47.896Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "スケジュールについては確信が持てません。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T04:42:48.031Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "その代わりにバスに乗る方がいいです。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  }
+]

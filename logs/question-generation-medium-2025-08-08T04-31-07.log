@@ -1,0 +1,151 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 4:31:07
+ログファイル: question-generation-medium-2025-08-08T04-31-07.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 180問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage157",
+  "title": "Office Renovation Schedule",
+  "type": "notice",
+  "content": "NOTICE: Office Renovation Schedule\n\nTo: All Staff\nFrom: Facilities Management\nDate: October 15, 2023\n\nWe would like to inform you that the office renovation project is scheduled to begin on October 25, 2023, and is expected to be completed by November 10, 2023. During this renovation period, certain areas of the office will be temporarily inaccessible, including the main conference room and the east wing. We kindly ask all staff members to plan their meetings and workspaces accordingly to minimize any inconvenience.\n\nTo ensure a smooth renovation process and minimize disruption to our daily operations, the work will take place after office hours. Specifically, renovation activities will occur from 6:00 PM to 6:00 AM on weekdays and throughout the day on weekends. We strongly advise all staff to remove any personal items from the affected areas by October 24, 2023, to avoid any loss or damage.\n\n[Important Information]\n- Alternative meeting rooms are available on the third floor, equipped with necessary facilities.\n- Ear protection is recommended, as noise levels may be elevated during the renovation work.\n- Please be aware that there may be some dust and debris in the vicinity of the renovation areas, so proceed with caution.\n\nFor any further inquiries or concerns regarding the renovation, please do not hesitate to contact Facilities Management at extension 102. We appreciate your understanding and cooperation during this important project to enhance our office environment.",
+  "contentTranslation": "お知らせ: オフィス改装スケジュール\n\n宛先: 全スタッフ\n差出人: ファシリティマネジメント\n日付: 2023年10月15日\n\nオフィス改装プロジェクトが2023年10月25日に開始され、2023年11月10日までに完了する予定であることをお知らせいたします。この改装期間中、メイン会議室や東ウィングを含む特定のエリアは一時的に利用できなくなります。全スタッフの皆様には、不便を最小限に抑えるために、会議や作業スペースの計画をお願い申し上げます。\n\n円滑な改装プロセスを確保し、日常業務への影響を最小限に抑えるため、作業はオフィスの営業時間外に行われます。具体的には、平日は午後6時から午前6時まで、週末は終日作業が行われます。影響を受けるエリアからは、2023年10月24日までに個人の持ち物を取り除くことを強くお勧めします。そうすることで、紛失や損傷を避けることができます。\n\n【重要な情報】\n- 第三階には必要な設備が整った代替会議室があります。\n- 改装作業中は騒音レベルが上がる可能性があるため、耳栓の使用をお勧めします。\n- 改装エリアの近くにはほこりやゴミが発生する可能性があるため、注意して進んでください。\n\n改装に関するさらなるお問い合わせや懸念がある場合は、内線102のファシリティマネジメントまでお気軽にご連絡ください。この重要なプロジェクトに対するご理解とご協力に感謝いたします。",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What location is mentioned for alternative meeting rooms?",
+      "questionTranslation": "代替の会議室としてどの場所が言及されていますか？",
+      "options": [
+        "On the first floor",
+        "On the second floor",
+        "On the third floor",
+        "On the fourth floor"
+      ],
+      "optionTranslations": [
+        "1階",
+        "2階",
+        "3階",
+        "4階"
+      ],
+      "correct": "C",
+      "explanation": "文書には、代替の会議室が3階にあると明記されています。『Alternative meeting rooms are available on the third floor, equipped with necessary facilities』という部分が根拠です。"
+    },
+    {
+      "id": "q2",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から推測できることは何ですか？",
+      "options": [
+        "The renovation will not affect the entire office.",
+        "All staff must work from home during renovations.",
+        "Renovations will be completed by December.",
+        "No meetings can be held during renovations."
+      ],
+      "optionTranslations": [
+        "改装はオフィス全体に影響を与えない。",
+        "改装中、全スタッフは在宅勤務をしなければならない。",
+        "改装は12月までに完了する。",
+        "改装中はミーティングを開けない。"
+      ],
+      "correct": "A",
+      "explanation": "文書には、特定のエリア（メイン会議室と東ウィング）が一時的にアクセス不可になるとあり、オフィス全体が影響を受けるわけではないことが推測されます。"
+    },
+    {
+      "id": "q3",
+      "question": "Who should be contacted regarding renovation inquiries?",
+      "questionTranslation": "改装に関する問い合わせは誰に連絡すべきですか？",
+      "options": [
+        "Human Resources",
+        "Facilities Management",
+        "IT Department",
+        "Office Manager"
+      ],
+      "optionTranslations": [
+        "人事部",
+        "施設管理部",
+        "IT部門",
+        "オフィスマネージャー"
+      ],
+      "correct": "B",
+      "explanation": "文書の最後に、『For any further inquiries or concerns regarding the renovation, please do not hesitate to contact Facilities Management at extension 102』とあり、施設管理部に連絡すべきと明記されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 235,
+    "questionCount": 3,
+    "passageType": "notice",
+    "topic": "office_announcements",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "systemPrompt": "あなたはTOEIC Part 7文書の品質管理専門家です。文書の品質を厳格に評価し、TOEICの出題基準に準拠しているかを判定してください。回答は必ず日本語で行い、JSON形式で出力してください。",
+          "userPrompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 235語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nNOTICE: Office Renovation Schedule\n\nTo: All Staff\nFrom: Facilities Management\nDate: October 15, 2023\n\nWe would like to inform you that the office renovation project is scheduled to begin on October 25, 2023, and is expected to be completed by November 10, 2023. During this renovation period, certain areas of the office will be temporarily inaccessible, including the main conference room and the east wing. We kindly ask all staff members to plan their meetings and workspaces accordingly to minimize any inconvenience.\n\nTo ensure a smooth renovation process and minimize disruption to our daily operations, the work will take place after office hours. Specifically, renovation activities will occur from 6:00 PM to 6:00 AM on weekdays and throughout the day on weekends. We strongly advise all staff to remove any personal items from the affected areas by October 24, 2023, to avoid any loss or damage.\n\n[Important Information]\n- Alternative meeting rooms are available on the third floor, equipped with necessary facilities.\n- Ear protection is recommended, as noise levels may be elevated during the renovation work.\n- Please be aware that there may be some dust and debris in the vicinity of the renovation areas, so proceed with caution.\n\nFor any further inquiries or concerns regarding the renovation, please do not hesitate to contact Facilities Management at extension 102. We appreciate your understanding and cooperation during this important project to enhance our office environment.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "content_quality_check",
+          "timestamp": "2025-08-07T19:31:54.116Z"
+        }
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "systemPrompt": "あなたはTOEIC Part 7問題の品質管理専門家です。問題文の品質を厳格に評価し、TOEICの出題基準に準拠しているかを判定してください。回答は必ず日本語で行い、JSON形式で出力してください。",
+          "userPrompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nNOTICE: Office Renovation Schedule\n\nTo: All Staff\nFrom: Facilities Management\nDate: October 15, 2023\n\nWe would like to inform you that the office renovation project is scheduled to begin on October 25, 2023, and is expected to be completed by November 10, 2023. During this renovation period, certain areas of the office will be temporarily inaccessible, including the main conference room and the east wing. We kindly ask all staff members to plan their meetings and workspaces accordingly to minimize any inconvenience.\n\nTo ensure a smooth renovation process and minimize disruption to our daily operations, the work will take place after office hours. Specifically, renovation activities will occur from 6:00 PM to 6:00 AM on weekdays and throughout the day on weekends. We strongly advise all staff to remove any personal items from the affected areas by October 24, 2023, to avoid any loss or damage.\n\n[Important Information]\n- Alternative meeting rooms are available on the third floor, equipped with necessary facilities.\n- Ear protection is recommended, as noise levels may be elevated during the renovation work.\n- Please be aware that there may be some dust and debris in the vicinity of the renovation areas, so proceed with caution.\n\nFor any further inquiries or concerns regarding the renovation, please do not hesitate to contact Facilities Management at extension 102. We appreciate your understanding and cooperation during this important project to enhance our office environment.\n\n【問題文】\n\n問題1: What location is mentioned for alternative meeting rooms?\n選択肢: On the first floor, On the second floor, On the third floor, On the fourth floor\n正解: C\n解説: 文書には、代替の会議室が3階にあると明記されています。『Alternative meeting rooms are available on the third floor, equipped with necessary facilities』という部分が根拠です。\n\n\n問題2: What can be inferred from the information provided?\n選択肢: The renovation will not affect the entire office., All staff must work from home during renovations., Renovations will be completed by December., No meetings can be held during renovations.\n正解: A\n解説: 文書には、特定のエリア（メイン会議室と東ウィング）が一時的にアクセス不可になるとあり、オフィス全体が影響を受けるわけではないことが推測されます。\n\n\n問題3: Who should be contacted regarding renovation inquiries?\n選択肢: Human Resources, Facilities Management, IT Department, Office Manager\n正解: B\n解説: 文書の最後に、『For any further inquiries or concerns regarding the renovation, please do not hesitate to contact Facilities Management at extension 102』とあり、施設管理部に連絡すべきと明記されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+          "response": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "questions_quality_check",
+          "timestamp": "2025-08-07T19:32:03.305Z"
+        }
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 181問
+🆔 実際に追加されたID: passage157
+📝 プロンプト情報: 生成=2件, 品質チェック=3件, 修正=1件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 0問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 4:32:05
+実行時間: 0.00秒

@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-09-19T15:28:34.500Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:28:34.548Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: hard\n- シナリオ: complaint_handling\n- 業種: telecommunications (Telecommunications)\n- 正解位置: 問題1はB、問題2はD、問題3はA\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はTelecommunications業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: D位置、問題3: A位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:28:53.326Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"complaint_handling\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Mike\", \"role\": \"Customer Support Representative\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"Helen\", \"role\": \"Customer\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"B\", \"text\": \"Hi, I'm calling because I've been experiencing intermittent connectivity issues with my home internet service for the past week.\"},\n    {\"speaker\": \"A\", \"text\": \"I'm sorry to hear that. Could you please provide me with your customer ID so I can pull up your account and check what's going on?\"},\n    {\"speaker\": \"B\", \"text\": \"Certainly, my ID is 12345678. I've also noticed that the signal drops during the evening hours more frequently.\"},\n    {\"speaker\": \"A\", \"text\": \"Thank you for that information. Let me check the network status for your area. It seems there are no known outages reported, but I see some fluctuations in your connection logs.\"},\n    {\"speaker\": \"B\", \"text\": \"That's concerning. I rely on a stable connection for my work. Is there anything you can do to rectify this?\"},\n    {\"speaker\": \"A\", \"text\": \"I can guide you through resetting your modem which might help stabilize the connection. However, if the issue persists, we can schedule a technician visit to inspect the lines.\"},\n    {\"speaker\": \"B\", \"text\": \"Okay, let's try the reset first. Please walk me through the steps.\"},\n    {\"speaker\": \"A\", \"text\": \"Sure, please unplug the power cable from your modem, wait 30 seconds, and then plug it back in. Once the lights stabilize, let me know if there's any improvement.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"Why does the woman contact the customer support representative?\",\n      \"options\": [\"Her internet speed is too slow.\", \"She is experiencing intermittent connectivity issues.\", \"She wants to upgrade her service plan.\", \"She needs help setting up a new modem.\"],\n      \"correct\": \"She is experiencing intermittent connectivity issues.\",\n      \"explanation\": \"女性は自宅のインターネット接続に断続的な問題があるため、サポートに連絡しています。\",\n      \"questionType\": \"reason\"\n    },\n    {\n      \"question\": \"What does the man suggest as a possible first step to address the problem?\",\n      \"options\": [\"Changing the service provider.\", \"Performing a speed test.\", \"Checking for any known outages.\", \"Resetting the modem.\"],\n      \"correct\": \"Resetting the modem.\",\n      \"explanation\": \"男性はモデムのリセットを推奨し、それが接続の安定化に役立つかもしれないと示唆しています。\",\n      \"questionType\": \"suggestion\"\n    },\n    {\n      \"question\": \"What additional action may be taken if the initial solution does not work?\",\n      \"options\": [\"Schedule a technician visit.\", \"Upgrade the internet plan.\", \"Switch to a different modem.\", \"Contact network operations.\"],\n      \"correct\": \"Schedule a technician visit.\",\n      \"explanation\": \"もし問題が解決しない場合、技術者による訪問を提案しています。\",\n      \"questionType\": \"next_steps\"\n    }\n  ],\n  \"difficulty\": \"hard\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:28:53.327Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: complaint_handling\n\nConversation:\nB: Hi, I'm calling because I've been experiencing intermittent connectivity issues with my home internet service for the past week.\nA: I'm sorry to hear that. Could you please provide me with your customer ID so I can pull up your account and check what's going on?\nB: Certainly, my ID is 12345678. I've also noticed that the signal drops during the evening hours more frequently.\nA: Thank you for that information. Let me check the network status for your area. It seems there are no known outages reported, but I see some fluctuations in your connection logs.\nB: That's concerning. I rely on a stable connection for my work. Is there anything you can do to rectify this?\nA: I can guide you through resetting your modem which might help stabilize the connection. However, if the issue persists, we can schedule a technician visit to inspect the lines.\nB: Okay, let's try the reset first. Please walk me through the steps.\nA: Sure, please unplug the power cable from your modem, wait 30 seconds, and then plug it back in. Once the lights stabilize, let me know if there's any improvement.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:28:59.575Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"苦情処理\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"こんにちは、ここ1週間、自宅のインターネットサービスが断続的な接続問題を抱えているので、お電話しています。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"それは大変ですね。お客様のアカウントを確認するために、お客様IDを教えていただけますか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"もちろんです。私のIDは12345678です。また、特に夕方の時間帯に信号が途切れやすいことにも気づきました。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"情報をありがとうございます。そちらの地域のネットワーク状況を確認しますね。現在報告されている障害はないようですが、接続ログにいくつかの変動が見られます。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それは心配ですね。仕事のためには安定した接続が必要です。この問題を解決するために何かできることはありますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"モデムをリセットする方法をお教えすることができます。それで接続が安定するかもしれません。それでも解決しない場合は、技術者の訪問を手配して回線を調査いたします。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"では、まずリセットを試してみましょう。手順を教えてください。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"かしこまりました。まずモデムの電源ケーブルを抜き、30秒待ってから再び差し込んでください。ライトが安定したら、改善があるかどうか教えてください。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:28:59.576Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: Why does the woman contact the customer support representative?\nOptions:\nA: Her internet speed is too slow.\nB: She is experiencing intermittent connectivity issues.\nC: She wants to upgrade her service plan.\nD: She needs help setting up a new modem.\n\nQuestion 2: What does the man suggest as a possible first step to address the problem?\nOptions:\nA: Changing the service provider.\nB: Performing a speed test.\nC: Checking for any known outages.\nD: Resetting the modem.\n\nQuestion 3: What additional action may be taken if the initial solution does not work?\nOptions:\nA: Schedule a technician visit.\nB: Upgrade the internet plan.\nC: Switch to a different modem.\nD: Contact network operations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T15:29:05.206Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性がカスタマーサポート担当者に連絡した理由は何ですか？\",\n      \"optionTranslations\": [\n        \"インターネットの速度が遅すぎる。\",\n        \"断続的な接続問題が発生している。\",\n        \"サービスプランをアップグレードしたい。\",\n        \"新しいモデムの設定を手伝ってほしい。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性が問題を解決するための第一段階として提案したのは何ですか？\",\n      \"optionTranslations\": [\n        \"サービスプロバイダーを変更する。\",\n        \"速度テストを行う。\",\n        \"既知の障害がないか確認する。\",\n        \"モデムをリセットする。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"初期の解決策がうまくいかない場合に追加で取る行動は何ですか？\",\n      \"optionTranslations\": [\n        \"技術者の訪問を予定する。\",\n        \"インターネットプランをアップグレードする。\",\n        \"別のモデムに切り替える。\",\n        \"ネットワーク運営部門に連絡する。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

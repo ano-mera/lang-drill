@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T03:35:14.645Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "いいえ、実際には午後2時です。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T03:35:14.827Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、メイン会議室にあります。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T03:35:15.149Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "いいえ、まだ彼に会っていません。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  }
+]

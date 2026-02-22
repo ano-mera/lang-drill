@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2025-07-22T08:45:24.204Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性がホテルの受付でパスポートを見せています。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T08:45:24.439Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性がカフェのテーブルに座っています。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T08:45:24.564Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "観光客の一団がバスに乗り込んでいる。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T08:45:24.713Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "家族が公園で子どもたちと遊んでいます。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T08:45:24.714Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The correct answer is that a woman is showing her passport at a hotel reception, which accurately matches the scene description.",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T08:45:25.589Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "正しい答えは、女性がホテルの受付でパスポートを見せているというもので、これはシーンの説明に正確に一致しています。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  }
+]

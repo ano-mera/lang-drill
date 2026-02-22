@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": "2025-08-30T12:31:38.634Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:31:38.664Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Sales pitch or promotion (販売促進・セールス案内)\n【Industry】: Retail (小売業)\n【Difficulty】: hard\n【Question Types】: next_action, intended_audience, inference\n【Correct Answer Positions】: Question 1=D, Question 2=A, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:31:45.927Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Sales Executive\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Ladies and gentlemen, thank you for joining us today at our flagship store opening. We are thrilled to introduce our latest autumn collection, which has been meticulously crafted to suit the modern buyer's taste for both style and sustainability. To celebrate this launch, we're offering an exclusive 20% discount to all loyalty members until the end of the weekend. Additionally, customers who purchase any item from the new collection will receive a complimentary eco-friendly tote bag. Before leaving, be sure to visit our customer service desk where you can sign up for our membership program if you haven’t already. Let's make this season the most fashionable and environmentally conscious one yet!\",\n    \"topic\": \"Promotion of new autumn collection and membership program\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the next action the speaker suggests?\",\n      \"options\": [\"Visit the cashier\", \"Contact the manager\", \"Browse the collection online\", \"Sign up for the membership program\"],\n      \"correct\": \"Sign up for the membership program\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"話者は顧客に誠意を提供する前に顧客サービスデスクを訪れてメンバーシッププログラムにサインアップすることを勧めています。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is the intended audience for this speech?\",\n      \"options\": [\"Customers at a retail store\", \"Employees of the company\", \"Participants at a business seminar\", \"Shareholders at an annual meeting\"],\n      \"correct\": \"Customers at a retail store\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチの内容が店舗の顧客、特に新しい秋のコレクションとメンバーシッププログラムに焦点を当てているため。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the speaker's company?\",\n      \"options\": [\"They are opening their first store\", \"They focus on sustainable fashion\", \"They are launching their summer collection\", \"They have discontinued the loyalty program\"],\n      \"correct\": \"They focus on sustainable fashion\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーカーは、この新しいコレクションがスタイルと持続可能性を重視して作られたと述べています。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:31:45.927Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nLadies and gentlemen, thank you for joining us today at our flagship store opening. We are thrilled to introduce our latest autumn collection, which has been meticulously crafted to suit the modern buyer's taste for both style and sustainability. To celebrate this launch, we're offering an exclusive 20% discount to all loyalty members until the end of the weekend. Additionally, customers who purchase any item from the new collection will receive a complimentary eco-friendly tote bag. Before leaving, be sure to visit our customer service desk where you can sign up for our membership program if you haven’t already. Let's make this season the most fashionable and environmentally conscious one yet!\n\nQuestions and Options:\nQuestion 1: What is the next action the speaker suggests?\nOptions:\nA: Visit the cashier\nB: Contact the manager\nC: Browse the collection online\nD: Sign up for the membership program\n\nQuestion 2: Who is the intended audience for this speech?\nOptions:\nA: Customers at a retail store\nB: Employees of the company\nC: Participants at a business seminar\nD: Shareholders at an annual meeting\n\nQuestion 3: What can be inferred about the speaker's company?\nOptions:\nA: They are opening their first store\nB: They focus on sustainable fashion\nC: They are launching their summer collection\nD: They have discontinued the loyalty program\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:31:51.570Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆様、本日は当社の旗艦店オープンにお越しいただきありがとうございます。私たちは最新の秋コレクションを紹介できることに興奮しています。このコレクションは、現代の購入者のスタイルと持続可能性への好みに合わせて細心の注意を払って作られています。このローンチを祝して、今週末までにすべてのロイヤルティメンバーの方に限定で20%割引を提供しています。さらに、新コレクションの商品を購入されたお客様には、無料でエコフレンドリーなトートバッグをプレゼントいたします。お帰りの際には、まだの方はぜひカスタマーサービスデスクにお立ち寄りいただき、会員プログラムにご登録ください。この秋を、最もファッショナブルで環境に配慮したシーズンにしましょう！\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"スピーカーが提案する次の行動は何ですか？\",\n      \"optionTranslations\": [\n        \"レジを訪れる\",\n        \"マネージャーに連絡する\",\n        \"コレクションをオンラインで見る\",\n        \"会員プログラムにサインアップする\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このスピーチの対象となる聴衆は誰ですか？\",\n      \"optionTranslations\": [\n        \"小売店の顧客\",\n        \"会社の従業員\",\n        \"ビジネスセミナーの参加者\",\n        \"年次総会の株主\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"スピーカーの会社について何を推測できますか？\",\n      \"optionTranslations\": [\n        \"初めての店舗をオープンしている\",\n        \"持続可能なファッションに焦点を当てている\",\n        \"夏のコレクションを発売している\",\n        \"ロイヤルティプログラムを終了した\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

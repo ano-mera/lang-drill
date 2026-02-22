@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-15T09:26:48.474Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"easy\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "easy",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:26:48.485Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Company policy or procedure change (方針変更・社内通知)\n【Industry】: Retail (小売業)\n【Difficulty】: easy\n【Question Types】: next_action, main_purpose, next_action\n【Correct Answer Positions】: Question 1=B, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:28:08.904Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Manager\",\n      \"role\": \"Store manager\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning team; this is Maria, your store manager. Starting next Monday, we’re changing our return process. Customers won’t need a paper receipt, because we can look it up by email or phone in the POS, and returns must be within 30 days. For returns over $50, check a photo ID and note the last four digits, and at checkout please offer digital receipts and scan the tag barcode. To prepare, watch a 10-minute training video and sign the acknowledgement form by Thursday. I will email the link and a one-page checklist right after this message. Department leads will post new counter signs and hold a five-minute huddle with each shift today; see me or the service desk with questions.\",\n    \"topic\": \"Retail return policy and procedure change with digital receipts\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What should employees do next?\",\n      \"options\": [\n        \"Start using the new return process today.\",\n        \"Watch a training video and sign the acknowledgement form.\",\n        \"Print paper receipts for all customers.\",\n        \"Move the return counter to the front of the store.\"\n      ],\n      \"correct\": \"Watch a training video and sign the acknowledgement form.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチで「木曜までに10分の研修動画を視聴し、同意書に署名してください」と指示があり、これが直近の行動だからです。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To invite staff to a store celebration\",\n        \"To announce a new holiday schedule\",\n        \"To request volunteers for a charity event\",\n        \"To inform staff about a change to the return process\"\n      ],\n      \"correct\": \"To inform staff about a change to the return process\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"紙のレシート不要、30日以内、$50以上は身分証確認など、返品手続きの変更点を説明するのが主目的です。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What will the speaker do next?\",\n      \"options\": [\n        \"Call a vendor about price tags\",\n        \"Close the store early\",\n        \"Send an email with the video link and checklist\",\n        \"Post the new signs personally\"\n      ],\n      \"correct\": \"Send an email with the video link and checklist\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"話者は「このメッセージの直後に、動画リンクとチェックリストをメールします」と述べています。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:28:08.905Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: policy_update\nIndustry: retail\nSpeaker Role: Store manager\nTopic: Retail return policy and procedure change with digital receipts\n\nSpeech Text:\nGood morning team; this is Maria, your store manager. Starting next Monday, we’re changing our return process. Customers won’t need a paper receipt, because we can look it up by email or phone in the POS, and returns must be within 30 days. For returns over $50, check a photo ID and note the last four digits, and at checkout please offer digital receipts and scan the tag barcode. To prepare, watch a 10-minute training video and sign the acknowledgement form by Thursday. I will email the link and a one-page checklist right after this message. Department leads will post new counter signs and hold a five-minute huddle with each shift today; see me or the service desk with questions.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:28:38.504Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"方針更新\",\n  \"textTranslation\": \"おはようございます、みなさん。店長のマリアです。来週の月曜日から、返品手続きを変更します。紙のレシートは不要になり、POSシステムでお客さまのメールアドレスまたは電話番号から購入履歴を照会できます。返品は30日以内に限ります。50ドルを超える返品については、写真付き身分証明書を確認し、その番号の下4桁を記録してください。また、会計時には電子レシートのご案内を行い、商品タグのバーコードをスキャンしてください。準備として、10分のトレーニング動画を視聴し、木曜日までに確認書に署名してください。この連絡の直後に、リンクと1ページのチェックリストをメールでお送りします。本日、部門リーダーが新しいカウンター掲示を設置し、各シフトごとに5分間のミーティングを行います。質問があれば、私またはサービスカウンターまでお知らせください。\",\n  \"topicTranslation\": \"電子レシート導入に伴う小売の返品ポリシーと手続きの変更\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:28:38.505Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What should employees do next?\nOptions:\nA: Start using the new return process today.\nB: Watch a training video and sign the acknowledgement form.\nC: Print paper receipts for all customers.\nD: Move the return counter to the front of the store.\n\nQuestion 2: What is the main purpose of the announcement?\nOptions:\nA: To invite staff to a store celebration\nB: To announce a new holiday schedule\nC: To request volunteers for a charity event\nD: To inform staff about a change to the return process\n\nQuestion 3: What will the speaker do next?\nOptions:\nA: Call a vendor about price tags\nB: Close the store early\nC: Send an email with the video link and checklist\nD: Post the new signs personally\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:29:21.770Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"従業員は次に何をすべきですか。\",\n      \"optionTranslations\": [\n        \"今日から新しい返品手続きを実施する\",\n        \"研修動画を視聴し、確認書に署名する\",\n        \"すべての顧客に紙のレシートを印刷する\",\n        \"返品カウンターを店舗の入口付近に移動する\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このアナウンスの主な目的は何ですか。\",\n      \"optionTranslations\": [\n        \"店舗の祝賀会にスタッフを招待するため\",\n        \"新しい休暇スケジュールを発表するため\",\n        \"慈善イベントのボランティアを募集するため\",\n        \"返品手続きの変更についてスタッフに知らせるため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このあと話し手は何をしますか。\",\n      \"optionTranslations\": [\n        \"値札について仕入先に電話する\",\n        \"店舗を早めに閉店する\",\n        \"動画のリンクとチェックリストを添えてメールを送る\",\n        \"新しい掲示物を自分で貼る\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

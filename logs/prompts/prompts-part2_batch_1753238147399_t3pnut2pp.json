@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-23T02:35:54.083Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、ランチの後すぐに電話します。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T02:35:54.441Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "お客様の電話番号を持っていません。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T02:35:55.900Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "会議は午後2時に終わりました。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": null
+    }
+  }
+]

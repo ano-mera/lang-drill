@@ -1,0 +1,137 @@
+[
+  {
+    "timestamp": "2025-08-18T14:42:58.469Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":3,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 3,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:42:58.495Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時間を必ず文章に盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Emergency alert or update (緊急連絡・注意喚起)\n【Industry】: Public Sector / Government (公共機関／行政)\n【Difficulty】: hard\n【Question Types】: intended_audience, next_action, main_purpose\n【Correct Answer Positions】: Question 1=C, Question 2=D, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:11.719Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Emergency Coordinator\",\n      \"role\": \"Public Safety Official\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Attention all residents of the downtown area. This is an urgent update from the city's emergency management office. Due to unexpectedly severe weather conditions, the flooding risk has escalated significantly. Residents located within the Riverbank districts are advised to evacuate the area immediately. Temporary shelters have been established at Lincoln High School and Jefferson Community Center. Please proceed to these locations without delay and make sure to heed all instructions from the emergency personnel on site. Additionally, avoid any roads leading towards Main Avenue and Bridge Street, as these are currently impassable. We urge all citizens to remain alert and follow our social media channels for continuous updates throughout the afternoon.\",\n    \"topic\": \"Emergency flood evacuation notice\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is this announcement specifically intended for?\",\n      \"options\": [\n        \"Residents near Bridge Street\",\n        \"Commuters outside the city\",\n        \"Residents of the downtown area\",\n        \"Visitors to the community center\"\n      ],\n      \"correct\": \"Residents of the downtown area\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"アナウンスの冒頭で『all residents of the downtown area』に注意するよう指示していることが示されています。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What should residents do next after hearing this alert?\",\n      \"options\": [\n        \"Check local news stations\",\n        \"Evacuate to higher ground\",\n        \"Contact emergency services\",\n        \"Go to the designated shelters\",\n      ],\n      \"correct\": \"Go to the designated shelters\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、『Temporary shelters have been established』と指示されており、住民はこれらの場所に避難することが推奨されています。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\n        \"To notify about a temporary school closure\",\n        \"To provide weather updates for the week\",\n        \"To announce a community event\",\n        \"To issue a flood evacuation alert\"\n      ],\n      \"correct\": \"To issue a flood evacuation alert\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチ全体は、住民に洪水の危険性を通知し、避難のための具体的な行動をとるよう求めるものであるため、避難警告を発することがメインの目的です。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:11.729Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時間を必ず文章に盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: System maintenance announcement (システム保守案内)\n【Industry】: Personal Care Services (美容・パーソナルケア)\n【Difficulty】: hard\n【Question Types】: intended_audience, main_purpose, inference\n【Correct Answer Positions】: Question 1=A, Question 2=C, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:20.018Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"IT Systems Specialist\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, Esteemed Clients. This is an official announcement regarding upcoming system maintenance for our online booking platform. The maintenance will occur on Saturday, November 10th, from 2 a.m. to 5 a.m. During this time, access to appointment scheduling and service payments will be temporarily unavailable. We recommend that all clients complete their booking transactions prior to this window to avoid any inconvenience. This essential upgrade is necessary to enhance system security and introduce additional features designed to improve user experience. We apologize for any disruption this may cause and greatly appreciate your understanding and cooperation. If you have any questions, please contact our support team.\",\n    \"topic\": \"System Maintenance Notification for Online Booking Platform\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is this announcement intended for?\",\n      \"options\": [\n        \"Clients using the online booking platform\",\n        \"Technicians conducting the maintenance\",\n        \"Employees working the night shift\",\n        \"Developers designing new features\"\n      ],\n      \"correct\": \"Clients using the online booking platform\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチは、システムのメンテナンスによって影響を受けるクライアント向けであると述べています。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To recruit technical staff for a project\",\n        \"To report a temporary system outage\",\n        \"To inform clients about maintenance and ensure bookings are made early\",\n        \"To apologize for a past disruption\"\n      ],\n      \"correct\": \"To inform clients about maintenance and ensure bookings are made early\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"メンテナンスの予定を知らせ、事前に予約を完了するようにクライアントに促しています。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the system upgrade?\",\n      \"options\": [\n        \"It will permanently change the booking interface.\",\n        \"It is meant to fix a recent critical issue.\",\n        \"It is not important for most users.\",\n        \"It aims to enhance security and user experience with new features.\"\n      ],\n      \"correct\": \"It aims to enhance security and user experience with new features.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、セキュリティ向上とユーザー体験の改善が目的であると述べています。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:20.019Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: system_maintenance\nIndustry: personal_care\nSpeaker Role: IT Systems Specialist\nTopic: System Maintenance Notification for Online Booking Platform\n\nSpeech Text:\nGood afternoon, Esteemed Clients. This is an official announcement regarding upcoming system maintenance for our online booking platform. The maintenance will occur on Saturday, November 10th, from 2 a.m. to 5 a.m. During this time, access to appointment scheduling and service payments will be temporarily unavailable. We recommend that all clients complete their booking transactions prior to this window to avoid any inconvenience. This essential upgrade is necessary to enhance system security and introduce additional features designed to improve user experience. We apologize for any disruption this may cause and greatly appreciate your understanding and cooperation. If you have any questions, please contact our support team.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:24.750Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"システムメンテナンス\",\n  \"textTranslation\": \"お客様各位、こんにちは。当社のオンライン予約プラットフォームにおけるシステムメンテナンスについての公式なお知らせです。このメンテナンスは、11月10日土曜日の午前2時から午前5時まで行われます。この間、予約のスケジュールやサービスの支払いへのアクセスは一時的に利用できなくなりますのでご注意ください。このため、お客様には、この時間帯の前にご予約を完了されることをお勧めいたします。この重要なアップグレードは、システムのセキュリティを強化し、ユーザー体験を向上させるための追加機能を導入するために必要です。これに伴うご不便をお詫びするとともに、皆様のご理解とご協力に心から感謝いたします。ご質問がある場合は、当社のサポートチームまでお問い合わせください。\",\n  \"topicTranslation\": \"オンライン予約プラットフォームのシステムメンテナンス通知\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:24.751Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: Who is this announcement intended for?\nOptions:\nA: Clients using the online booking platform\nB: Technicians conducting the maintenance\nC: Employees working the night shift\nD: Developers designing new features\n\nQuestion 2: What is the main purpose of the announcement?\nOptions:\nA: To recruit technical staff for a project\nB: To report a temporary system outage\nC: To inform clients about maintenance and ensure bookings are made early\nD: To apologize for a past disruption\n\nQuestion 3: What can be inferred about the system upgrade?\nOptions:\nA: It will permanently change the booking interface.\nB: It is meant to fix a recent critical issue.\nC: It is not important for most users.\nD: It aims to enhance security and user experience with new features.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:27.908Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このアナウンスは誰に向けられていますか？\",\n      \"optionTranslations\": [\n        \"オンライン予約プラットフォームを利用する顧客\",\n        \"メンテナンスを行う技術者\",\n        \"夜勤で働く従業員\",\n        \"新機能を設計する開発者\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"アナウンスの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"プロジェクトの技術スタッフを募集するため\",\n        \"一時的なシステム障害を報告するため\",\n        \"メンテナンスについて顧客に知らせ、早めの予約を促すため\",\n        \"過去の中断について謝罪するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"システムアップグレードについて何が推測できますか？\",\n      \"optionTranslations\": [\n        \"予約インターフェースが永久に変更される。\",\n        \"最近の重大な問題を修正するために行われる。\",\n        \"ほとんどのユーザーにとって重要ではない。\",\n        \"新機能でセキュリティとユーザー体験を向上させることを目的としている。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:37.985Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時間を必ず文章に盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Internal staff training (社員研修・社内教育)\n【Industry】: Personal Care Services (美容・パーソナルケア)\n【Difficulty】: hard\n【Question Types】: inference, inference, main_purpose\n【Correct Answer Positions】: Question 1=C, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:43:51.158Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Trainer\",\n      \"role\": \"Staff trainer\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, everyone. As part of today's session, I want to focus on our customer engagement strategies, which are crucial in the personal care services industry. We all know how important it is to make our clients feel valued. So, we will explore advanced communication techniques, especially non-verbal cues, and how they can enhance client satisfaction. Pay attention to your client's body language. Understanding these subtle signals can dramatically change their experience in our salons. Remember, an empathetic approach isn't just about listening but also acknowledging and responding to non-verbal feedback. Lastly, we'll review case studies to illustrate how these techniques can be effectively implemented.\",\n    \"topic\": \"Advanced customer engagement strategies in personal care services\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the speaker's view on non-verbal cues?\",\n      \"options\": [\n        \"They are less important than verbal communication.\",\n        \"They are only useful in certain situations.\",\n        \"They significantly enhance client satisfaction.\",\n        \"They are difficult to interpret accurately.\"\n      ],\n      \"correct\": \"They significantly enhance client satisfaction.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"話者は非言語的な合図がクライアントの満足度を高めると述べているため、Cが正解です。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What can be inferred about the importance of customer engagement strategies according to the speech?\",\n      \"options\": [\n        \"They are a secondary concern compared to technical skills.\",\n        \"They mainly focus on selling products.\",\n        \"They are less relevant in the personal care industry.\",\n        \"They are essential for client satisfaction.\",\n      ],\n      \"correct\": \"They are essential for client satisfaction.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"話者は顧客との関わりがクライアントの満足度に重要であると強調しているので、Dが正解です。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of the training session?\",\n      \"options\": [\n        \"To teach technical skills in personal care.\",\n        \"To introduce new salon products.\",\n        \"To improve customer engagement strategies.\",\n        \"To allocate tasks among staff.\"\n      ],\n      \"correct\": \"To improve customer engagement strategies.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチの焦点は顧客とのかかわり方を向上させることであり、これが研修の目的です。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

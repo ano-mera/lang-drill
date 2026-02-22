@@ -1,0 +1,78 @@
+[
+  {
+    "timestamp": "2025-08-07T17:43:54.543Z",
+    "functionName": "generatePassage",
+    "type": "article",
+    "difficulty": "medium",
+    "topic": "legal_compliance",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のarticleを作成してください：\n\n【条件】\n- 文書タイプ: article\n- 単語数: 120-150語\n- 難易度: medium\n- トピック: legal_compliance\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\n[記事タイトル]\n\n[導入部・概要]\n\n[本文段落1]\n\n[本文段落2]\n\n[本文段落3]\n\n[結論・まとめ]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"article\",\n  \"difficulty\": \"medium\",\n  \"topic\": \"legal_compliance\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-08-07T17:44:08.389Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 191語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nIn today's business environment, legal compliance is more important than ever. Companies must ensure they are following laws and regulations to avoid penalties and maintain their reputation.\n\nOne key aspect of legal compliance is understanding the regulations specific to your industry. For instance, companies in the financial sector must comply with regulations such as the Sarbanes-Oxley Act, which requires accurate financial reporting and auditing. Similarly, businesses handling personal data need to adhere to data protection laws like the GDPR in Europe.\n\nAnother critical point is implementing regular training for employees. This ensures that everyone is aware of the latest compliance requirements and understands their role in maintaining legal standards. Training sessions should cover topics such as anti-corruption policies, workplace safety, and data protection.\n\nFinally, companies should establish a compliance monitoring system. This system can help track regulatory changes and assess the company's adherence to legal standards. By regularly reviewing compliance practices, businesses can quickly identify and address any potential issues.\n\nIn conclusion, maintaining legal compliance is essential for businesses to operate successfully. By understanding industry regulations, providing employee training, and monitoring compliance, companies can safeguard their operations and uphold their reputation.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage152",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:44:11.946Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage152",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:44:11.947Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nIn today's business environment, legal compliance is more important than ever. Companies must ensure they are following laws and regulations to avoid penalties and maintain their reputation.\n\nOne key aspect of legal compliance is understanding the regulations specific to your industry. For instance, companies in the financial sector must comply with regulations such as the Sarbanes-Oxley Act, which requires accurate financial reporting and auditing. Similarly, businesses handling personal data need to adhere to data protection laws like the GDPR in Europe.\n\nAnother critical point is implementing regular training for employees. This ensures that everyone is aware of the latest compliance requirements and understands their role in maintaining legal standards. Training sessions should cover topics such as anti-corruption policies, workplace safety, and data protection.\n\nFinally, companies should establish a compliance monitoring system. This system can help track regulatory changes and assess the company's adherence to legal standards. By regularly reviewing compliance practices, businesses can quickly identify and address any potential issues.\n\nIn conclusion, maintaining legal compliance is essential for businesses to operate successfully. By understanding industry regulations, providing employee training, and monitoring compliance, companies can safeguard their operations and uphold their reputation.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: article\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度2: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度3: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度4: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度5: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度6: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度7: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1422
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:44:26.574Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nIn today's business environment, legal compliance is more important than ever. Companies must ensure they are following laws and regulations to avoid penalties and maintain their reputation.\n\nOne key aspect of legal compliance is understanding the regulations specific to your industry. For instance, companies in the financial sector must comply with regulations such as the Sarbanes-Oxley Act, which requires accurate financial reporting and auditing. Similarly, businesses handling personal data need to adhere to data protection laws like the GDPR in Europe.\n\nAnother critical point is implementing regular training for employees. This ensures that everyone is aware of the latest compliance requirements and understands their role in maintaining legal standards. Training sessions should cover topics such as anti-corruption policies, workplace safety, and data protection.\n\nFinally, companies should establish a compliance monitoring system. This system can help track regulatory changes and assess the company's adherence to legal standards. By regularly reviewing compliance practices, businesses can quickly identify and address any potential issues.\n\nIn conclusion, maintaining legal compliance is essential for businesses to operate successfully. By understanding industry regulations, providing employee training, and monitoring compliance, companies can safeguard their operations and uphold their reputation.\n\n【問題文】\n\n問題1: What is the main purpose of this document?\n選択肢: To explain the importance of legal compliance in business, To advertise a new compliance monitoring system, To provide financial advice for companies, To announce a change in data protection laws\n正解: A\n解説: 文書は、ビジネスにおける法令遵守の重要性とその方法について説明しています。特に、業界特有の規制を理解すること、従業員のトレーニングを実施すること、コンプライアンス監視システムを確立することが重要であると述べています。\n\n\n問題2: According to the document, what specific information is mentioned about the financial sector?\n選択肢: They must comply with the Sarbanes-Oxley Act., They need to follow GDPR regulations., They are required to provide free training for employees., They must establish a new reporting system.\n正解: A\n解説: 金融業界に関しては、サーベンス・オクスリー法に従わなければならないと具体的に言及されています。\n\n\n問題3: What can be inferred from the information provided about data protection?\n選択肢: Data protection laws are only important in Europe., Businesses handling personal data must comply with regulations., All companies must conduct data audits annually., Data protection training is optional for employees.\n正解: B\n解説: 文書には、個人データを扱う企業は、欧州のGDPRなどのデータ保護法を遵守する必要があると述べられています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage152",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:44:27.475Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage152",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  }
+]

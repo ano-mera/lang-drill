@@ -1,0 +1,233 @@
+[
+  {
+    "timestamp": "2025-08-18T14:21:22.704Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":3,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 3,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:22.731Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時刻は必ず英語で綴る形式で記載（例: \"ten o'clock\", \"three thirty\", \"half past four\", \"seven AM\", \"two PM\"）、数字形式（10:00, 3:30など）は使用しない\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Company policy or procedure change (方針変更・社内通知)\n【Industry】: Security Services (警備・セキュリティ)\n【Difficulty】: hard\n【Question Types】: next_action, detail, next_action\n【Correct Answer Positions】: Question 1=B, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nImportant formatting rules:\n- Always spell out times in English (e.g., \"ten o'clock\", \"three thirty\", \"half past four\", \"seven AM\", \"two PM\")\n- Never use numerical time formats (e.g., 10:00, 3:30)\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:29.607Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Manager\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, everyone. I'm here to inform you about a recent change in our daily operations that affects all security personnel. Starting next Monday, our shift change protocol will be adjusted to enhance safety measures. Currently, shifts transition at eight o'clock, but beginning next week, the transition will occur at seven thirty. This means that the team finishing their shift will overlap with the incoming team for thirty minutes. This overlap period is crucial for ensuring a comprehensive exchange of information about potential risks or incidents. All personnel must be present fifteen minutes before their shift officially starts to receive their new assignments for the day. Please ensure you review the updated schedule on the company portal by Friday noon.\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What should the employees do next?\",\n      \"options\": [\n        \"Attend a meeting at eight o'clock\",\n        \"Check the updated schedule on the company portal\",\n        \"Report to their supervisor at seven thirty\",\n        \"Submit a report by Friday noon\"\n      ],\n      \"correct\": \"Check the updated schedule on the company portal\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"話者は金曜日の正午までに会社のポータルで更新されたスケジュールを確認するよう指示しています。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the purpose of the shift overlap?\",\n      \"options\": [\n        \"To reduce working hours\",\n        \"To distribute new uniforms\",\n        \"To hold regular training sessions\",\n        \"To ensure a comprehensive exchange of information\"\n      ],\n      \"correct\": \"To ensure a comprehensive exchange of information\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"話者は、交代期間中の情報交換が重要であると説明しています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What should employees do before their new shift starts?\",\n      \"options\": [\n        \"Submit their daily reports\",\n        \"Sign in at the security desk\",\n        \"Be present for fifteen minutes to receive assignments\",\n        \"Attend a safety meeting\"\n      ],\n      \"correct\": \"Be present for fifteen minutes to receive assignments\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"話者は、交代の前に15分の出席が必要であると述べています。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:29.608Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: policy_update\nIndustry: security_services\nSpeaker Role: Company spokesperson\nTopic: undefined\n\nSpeech Text:\nGood afternoon, everyone. I'm here to inform you about a recent change in our daily operations that affects all security personnel. Starting next Monday, our shift change protocol will be adjusted to enhance safety measures. Currently, shifts transition at eight o'clock, but beginning next week, the transition will occur at seven thirty. This means that the team finishing their shift will overlap with the incoming team for thirty minutes. This overlap period is crucial for ensuring a comprehensive exchange of information about potential risks or incidents. All personnel must be present fifteen minutes before their shift officially starts to receive their new assignments for the day. Please ensure you review the updated schedule on the company portal by Friday noon.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:34.747Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "```json\n{\n  \"speechTypeTranslation\": \"方針更新\",\n  \"textTranslation\": \"皆さん、こんにちは。私たちの警備部門全員に影響を与える日常業務の最近の変更についてお知らせします。来週の月曜日から、安全対策を強化するために私たちのシフト交代プロトコルが調整されます。現在はシフト交代が8時に行われていますが、来週からは交代が7時30分になります。これにより、シフトを終えるチームと新しいチームが30分間重なることになります。この重複時間は、潜在的なリスクやインシデントに関する包括的な情報交換を確実に行うための重要な時間です。すべてのスタッフは、シフトが正式に始まる15分前に新しい業務の割り当てを受けるために出勤する必要があります。金曜日の昼までに、会社のポータルで更新されたスケジュールを確認してください。\",\n  \"topicTranslation\": \"未定義\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:34.749Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What should the employees do next?\nOptions:\nA: Attend a meeting at eight o'clock\nB: Check the updated schedule on the company portal\nC: Report to their supervisor at seven thirty\nD: Submit a report by Friday noon\n\nQuestion 2: What is the purpose of the shift overlap?\nOptions:\nA: To reduce working hours\nB: To distribute new uniforms\nC: To hold regular training sessions\nD: To ensure a comprehensive exchange of information\n\nQuestion 3: What should employees do before their new shift starts?\nOptions:\nA: Submit their daily reports\nB: Sign in at the security desk\nC: Be present for fifteen minutes to receive assignments\nD: Attend a safety meeting\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:38.369Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"従業員は次に何をすべきですか？\",\n      \"optionTranslations\": [\n        \"8時に会議に参加する\",\n        \"会社ポータルで更新されたスケジュールを確認する\",\n        \"7時30分に上司に報告する\",\n        \"金曜日の正午までに報告書を提出する\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"シフトの重複の目的は何ですか？\",\n      \"optionTranslations\": [\n        \"労働時間を短縮するため\",\n        \"新しい制服を配布するため\",\n        \"定期的な研修を行うため\",\n        \"情報の完全な共有を確実にするため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"新しいシフトが始まる前に従業員がすべきことは何ですか？\",\n      \"optionTranslations\": [\n        \"日報を提出する\",\n        \"セキュリティデスクでサインインする\",\n        \"割り当てを受けるために15分早めに出席する\",\n        \"安全会議に出席する\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:48.248Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時刻は必ず英語で綴る形式で記載（例: \"ten o'clock\", \"three thirty\", \"half past four\", \"seven AM\", \"two PM\"）、数字形式（10:00, 3:30など）は使用しない\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Meeting summary or update (会議の要点や更新)\n【Industry】: Energy and Utilities (エネルギー・インフラ)\n【Difficulty】: hard\n【Question Types】: detail, inference, main_purpose\n【Correct Answer Positions】: Question 1=B, Question 2=B, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nImportant formatting rules:\n- Always spell out times in English (e.g., \"ten o'clock\", \"three thirty\", \"half past four\", \"seven AM\", \"two PM\")\n- Never use numerical time formats (e.g., 10:00, 3:30)\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:58.389Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Mr. Johnson\",\n      \"role\": \"Project Manager\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, everyone. During today's meeting, we discussed the latest developments in our renewable energy projects. As you know, our primary focus is improving solar panel efficiency, which could potentially reduce energy costs by up to twenty percent within the next two years. We are pleased to report that preliminary tests have shown promise, with results indicating a fifteen percent improvement already. Additionally, we're exploring partnerships with local suppliers to enhance the sustainability of our supply chain. A follow-up meeting is scheduled for next Wednesday at three thirty in the afternoon, where we will further elaborate on the findings and outline the next steps. Please ensure all relevant documentation is reviewed before then.\",\n    \"topic\": \"Renewable energy project updates\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What improvement have preliminary tests shown so far?\",\n      \"options\": [\"A ten percent increase\", \"A fifteen percent improvement\", \"A twenty percent reduction\", \"A five percent enhancement\"],\n      \"correct\": \"A fifteen percent improvement\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは、予備テストがすでに百分の十五の改善を示していると述べられています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the follow-up meeting next Wednesday?\",\n      \"options\": [\"To finalize supply chain agreements\", \"To elaborate on findings and outline next steps\", \"To announce a partnership with suppliers\", \"To approve the solar panel project budget\"],\n      \"correct\": \"To elaborate on findings and outline next steps\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"次回の会議の主な目的は、調査結果の詳細を説明し、次のステップを概説することです。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of Mr. Johnson's speech?\",\n      \"options\": [\"To announce an increase in project funding\", \"To provide updates on renewable energy projects\", \"To introduce new suppliers\", \"To discuss solar panel installation timelines\"],\n      \"correct\": \"To provide updates on renewable energy projects\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチ全体は、再生可能エネルギープロジェクトの最新情報を提供する目的で行われています。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:21:58.390Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: meeting_summary\nIndustry: energy_utilities\nSpeaker Role: Project Manager\nTopic: Renewable energy project updates\n\nSpeech Text:\nGood afternoon, everyone. During today's meeting, we discussed the latest developments in our renewable energy projects. As you know, our primary focus is improving solar panel efficiency, which could potentially reduce energy costs by up to twenty percent within the next two years. We are pleased to report that preliminary tests have shown promise, with results indicating a fifteen percent improvement already. Additionally, we're exploring partnerships with local suppliers to enhance the sustainability of our supply chain. A follow-up meeting is scheduled for next Wednesday at three thirty in the afternoon, where we will further elaborate on the findings and outline the next steps. Please ensure all relevant documentation is reviewed before then.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:00.809Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"会議概要\",\n  \"textTranslation\": \"皆さん、こんにちは。本日の会議では、再生可能エネルギープロジェクトの最新の進展について議論しました。ご存知の通り、私たちの主な焦点は太陽光パネルの効率を向上させることであり、これにより今後2年以内にエネルギーコストが最大で20%削減できる可能性があります。予備試験で既に15%の改善が見られていると報告できることを嬉しく思います。また、サプライチェーンの持続可能性を高めるために、地元のサプライヤーとのパートナーシップを模索しています。次回会合は来週水曜日午後3時30分に予定されており、そこで発見内容を詳細に説明し、次のステップを概説します。それまでに関連資料をすべて確認してください。\",\n  \"topicTranslation\": \"再生可能エネルギープロジェクトの最新情報\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:00.809Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What improvement have preliminary tests shown so far?\nOptions:\nA: A ten percent increase\nB: A fifteen percent improvement\nC: A twenty percent reduction\nD: A five percent enhancement\n\nQuestion 2: What is the main purpose of the follow-up meeting next Wednesday?\nOptions:\nA: To finalize supply chain agreements\nB: To elaborate on findings and outline next steps\nC: To announce a partnership with suppliers\nD: To approve the solar panel project budget\n\nQuestion 3: What is the main purpose of Mr. Johnson's speech?\nOptions:\nA: To announce an increase in project funding\nB: To provide updates on renewable energy projects\nC: To introduce new suppliers\nD: To discuss solar panel installation timelines\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:03.800Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"予備試験でこれまでに示された改善点は何ですか？\",\n      \"optionTranslations\": [\n        \"10%の増加\",\n        \"15%の改善\",\n        \"20%の削減\",\n        \"5%の強化\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"来週水曜日のフォローアップ会議の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"サプライチェーン契約の最終決定をするため\",\n        \"調査結果を詳述し、次のステップを示すため\",\n        \"サプライヤーとのパートナーシップを発表するため\",\n        \"ソーラーパネルプロジェクトの予算を承認するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"ジョンソン氏のスピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"プロジェクトの資金増加を発表するため\",\n        \"再生可能エネルギーのプロジェクトの進捗を報告するため\",\n        \"新しいサプライヤーを紹介するため\",\n        \"ソーラーパネルの設置スケジュールについて話し合うため\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:11.610Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- 時刻は必ず英語で綴る形式で記載（例: \"ten o'clock\", \"three thirty\", \"half past four\", \"seven AM\", \"two PM\"）、数字形式（10:00, 3:30など）は使用しない\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Sales pitch or promotion (販売促進・セールス案内)\n【Industry】: Manufacturing (製造業)\n【Difficulty】: hard\n【Question Types】: inference, detail, detail\n【Correct Answer Positions】: Question 1=D, Question 2=B, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nImportant formatting rules:\n- Always spell out times in English (e.g., \"ten o'clock\", \"three thirty\", \"half past four\", \"seven AM\", \"two PM\")\n- Never use numerical time formats (e.g., 10:00, 3:30)\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:19.023Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Sales Manager\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon everyone. I'm pleased to introduce our latest innovation in industrial machinery, the UltraPress5000. Designed for maximum efficiency, this machine reduces energy consumption by up to twenty percent compared to our competitors. Furthermore, it boasts a modular design, allowing seamless integration with existing systems and providing adaptability to a variety of manufacturing processes. To showcase its capabilities, we invite you to our demonstration event at our headquarters this Friday at three thirty in the afternoon. We believe the UltraPress5000 will revolutionize the way you manage production and enhance your operational productivity. Don't miss out on the opportunity to witness this firsthand.\",\n    \"topic\": \"Promotion of a new industrial machine\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the speaker implying about the UltraPress5000?\",\n      \"options\": [\n        \"It is more affordable than most machines.\",\n        \"It requires less training to operate.\",\n        \"It is intended for small-scale operations.\",\n        \"It is highly efficient and adaptable.\"\n      ],\n      \"correct\": \"It is highly efficient and adaptable.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"話者は省エネルギーと多様な製造プロセスへの適応性を強調しているため。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"When is the demonstration event scheduled?\",\n      \"options\": [\n        \"This Thursday at three in the afternoon.\",\n        \"This Friday at three thirty in the afternoon.\",\n        \"This Friday at three in the morning.\",\n        \"This Saturday at four in the afternoon.\"\n      ],\n      \"correct\": \"This Friday at three thirty in the afternoon.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"デモイベントは金曜日の午後三時半と明言されている。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What feature of the UltraPress5000 is highlighted in the speech?\",\n      \"options\": [\n        \"Its modular design.\",\n        \"Its compact size.\",\n        \"Its economical price.\",\n        \"Its low maintenance needs.\"\n      ],\n      \"correct\": \"Its modular design.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"話者はモジュラー設計により既存システムとうまく統合できることを言及している。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:19.024Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: sales_pitch\nIndustry: manufacturing\nSpeaker Role: Company spokesperson\nTopic: Promotion of a new industrial machine\n\nSpeech Text:\nGood afternoon everyone. I'm pleased to introduce our latest innovation in industrial machinery, the UltraPress5000. Designed for maximum efficiency, this machine reduces energy consumption by up to twenty percent compared to our competitors. Furthermore, it boasts a modular design, allowing seamless integration with existing systems and providing adaptability to a variety of manufacturing processes. To showcase its capabilities, we invite you to our demonstration event at our headquarters this Friday at three thirty in the afternoon. We believe the UltraPress5000 will revolutionize the way you manage production and enhance your operational productivity. Don't miss out on the opportunity to witness this firsthand.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:21.877Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"営業プレゼンテーション\",\n  \"textTranslation\": \"皆様、こんにちは。本日は私たちの最新の産業機械革新であるUltraPress5000をご紹介できることを嬉しく思います。この機械は最大効率を追求して設計されており、競合製品と比べてエネルギー消費を最大20％削減します。さらに、モジュール式のデザインを採用しており、既存のシステムとのシームレスな統合が可能で、さまざまな製造プロセスに適応できます。この機能を披露するため、今週の金曜日午後3時30分に本社でデモイベントを開催します。UltraPress5000は生産管理を革新し、オペレーショナル生産性を向上させると信じています。この機会を逃さず、その効果を直接体験してください。\",\n  \"topicTranslation\": \"新しい産業機械の販促\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:21.879Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the speaker implying about the UltraPress5000?\nOptions:\nA: It is more affordable than most machines.\nB: It requires less training to operate.\nC: It is intended for small-scale operations.\nD: It is highly efficient and adaptable.\n\nQuestion 2: When is the demonstration event scheduled?\nOptions:\nA: This Thursday at three in the afternoon.\nB: This Friday at three thirty in the afternoon.\nC: This Friday at three in the morning.\nD: This Saturday at four in the afternoon.\n\nQuestion 3: What feature of the UltraPress5000 is highlighted in the speech?\nOptions:\nA: Its modular design.\nB: Its compact size.\nC: Its economical price.\nD: Its low maintenance needs.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T14:22:27.109Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"スピーカーはUltraPress5000について何を示唆していますか？\",\n      \"optionTranslations\": [\n        \"ほとんどの機械よりも手頃だ。\",\n        \"操作に必要なトレーニングが少ない。\",\n        \"小規模な操作向けである。\",\n        \"非常に効率的で適応性が高い。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"デモンストレーションイベントはいつ予定されていますか？\",\n      \"optionTranslations\": [\n        \"今週の木曜日の午後3時。\",\n        \"今週の金曜日の午後3時30分。\",\n        \"今週の金曜日の午前3時。\",\n        \"今週の土曜日の午後4時。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"スピーチで強調されているUltraPress5000の特徴は何ですか？\",\n      \"optionTranslations\": [\n        \"モジュラーデザイン。\",\n        \"コンパクトサイズ。\",\n        \"経済的な価格。\",\n        \"低いメンテナンスの必要。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

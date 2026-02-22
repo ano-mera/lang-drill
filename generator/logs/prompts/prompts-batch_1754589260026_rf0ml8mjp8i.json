@@ -1,0 +1,132 @@
+[
+  {
+    "timestamp": "2025-08-07T17:54:20.232Z",
+    "functionName": "generatePassage",
+    "type": "notice",
+    "difficulty": "medium",
+    "topic": "crisis_management",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のnoticeを作成してください：\n\n【条件】\n- 文書タイプ: notice\n- 単語数: 120-150語\n- 難易度: medium\n- トピック: crisis_management\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nNOTICE: [通知タイトル]\n\nTo: [宛先]\nFrom: [発信者]\nDate: [日付]\n\n[通知内容]\n\n[重要事項・注意点]\n- [項目1]\n- [項目2]\n\n[問い合わせ先]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"notice\",\n  \"difficulty\": \"medium\",\n  \"topic\": \"crisis_management\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-08-07T17:54:49.563Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 144語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nNOTICE: Emergency Preparedness Drill Notification\n\nTo: All Employees\nFrom: Human Resources Department\nDate: November 15, 2023\n\nWe would like to inform you about an upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations.\n\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators. Once outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes.\n\nImportant Reminders:\n- Ensure you are familiar with the emergency exit routes in your area.\n- Keep personal belongings secure and avoid bringing large bags to the drill.\n\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com.\n\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage154",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:54:53.243Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が144語で、期待範囲の180-250語を下回っている。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage154",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:54:53.244Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nNOTICE: Emergency Preparedness Drill Notification\n\nTo: All Employees\nFrom: Human Resources Department\nDate: November 15, 2023\n\nWe would like to inform you about an upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations.\n\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators. Once outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes.\n\nImportant Reminders:\n- Ensure you are familiar with the emergency exit routes in your area.\n- Keep personal belongings secure and avoid bringing large bags to the drill.\n\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com.\n\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 70/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が144語で、期待範囲の180-250語を下回っている。\n   改善提案: 内容を追加して語数を増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\n   改善提案: 関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: medium難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: medium難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: notice を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage154",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 70
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:55:07.201Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"NOTICE: Emergency Preparedness Drill Notification\\n\\nTo: All Employees\\nFrom: Human Resources Department\\nDate: November 15, 2023\\n\\nWe would like to inform you about an important upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations. It is crucial for everyone to participate as it helps us practice our emergency response procedures effectively.\\n\\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators during this time. Once you are outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes, during which we will evaluate our response times and overall effectiveness.\\n\\nImportant Reminders:\\n- Ensure you are familiar with the emergency exit routes in your area and have a plan in place.\\n- Keep personal belongings secure and avoid bringing large bags to the drill.\\n- Please wear comfortable clothing and shoes suitable for quick movement.\\n- Review the emergency procedures document attached to this notice for further details.\\n\\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com. Your cooperation and participation are greatly appreciated as we work together to ensure a safe workplace for everyone.\",\n  \"revisedContentTranslation\": \"お知らせ: 緊急準備訓練のお知らせ\\n\\n宛先: 全社員\\n発信元: 人事部\\n日付: 2023年11月15日\\n\\n2023年11月20日（月）午前10時に予定されている重要な緊急準備訓練についてお知らせいたします。この訓練は、潜在的な危機状況における全社員の安全とセキュリティを確保するための継続的な取り組みの一環です。全員が参加することが重要であり、緊急対応手順を効果的に練習する助けとなります。\\n\\n訓練中は、指定されたフロアのワーデンの指示に従い、最寄りの非常口に進んでください。この時間中はエレベーターを使用しないでください。外に出たら、各部署に指定された集合地点に集まってください。訓練は約30分間続く予定で、その間に私たちの対応時間と全体的な効果を評価します。\\n\\n重要なリマインダー:\\n- 自分のエリアの非常口ルートを把握し、計画を立てておいてください。\\n- 個人の持ち物を安全に保管し、大きなバッグを持参しないようにしてください。\\n- 迅速な移動に適した快適な服装と靴を着用してください。\\n- この通知に添付された緊急手順書を確認し、詳細を確認してください。\\n\\nご質問やさらなる確認が必要な場合は、人事部（hr@company.com）までご連絡ください。皆様のご協力と参加に感謝いたします。安全な職場を確保するために共に取り組んでいきましょう。\",\n  \"revisionNotes\": \"文書の語数を144語から約250語に増やし、内容を充実させました。具体的には、訓練の重要性や参加の必要性を強調し、参加者が知っておくべき追加のリマインダーを盛り込みました。また、情報を視覚的に整理するために、緊急手順書の確認を促す文を追加しました。全体として、文書の構造を維持しつつ、TOEIC Part 7の形式に適した内容に修正しました。\"\n}",
+    "metadata": {
+      "passageId": "passage154",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:55:07.202Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 225語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nNOTICE: Emergency Preparedness Drill Notification\n\nTo: All Employees\nFrom: Human Resources Department\nDate: November 15, 2023\n\nWe would like to inform you about an important upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations. It is crucial for everyone to participate as it helps us practice our emergency response procedures effectively.\n\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators during this time. Once you are outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes, during which we will evaluate our response times and overall effectiveness.\n\nImportant Reminders:\n- Ensure you are familiar with the emergency exit routes in your area and have a plan in place.\n- Keep personal belongings secure and avoid bringing large bags to the drill.\n- Please wear comfortable clothing and shoes suitable for quick movement.\n- Review the emergency procedures document attached to this notice for further details.\n\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com. Your cooperation and participation are greatly appreciated as we work together to ensure a safe workplace for everyone.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage154_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:55:08.056Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage154_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:55:08.057Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nNOTICE: Emergency Preparedness Drill Notification\n\nTo: All Employees\nFrom: Human Resources Department\nDate: November 15, 2023\n\nWe would like to inform you about an important upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations. It is crucial for everyone to participate as it helps us practice our emergency response procedures effectively.\n\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators during this time. Once you are outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes, during which we will evaluate our response times and overall effectiveness.\n\nImportant Reminders:\n- Ensure you are familiar with the emergency exit routes in your area and have a plan in place.\n- Keep personal belongings secure and avoid bringing large bags to the drill.\n- Please wear comfortable clothing and shoes suitable for quick movement.\n- Review the emergency procedures document attached to this notice for further details.\n\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com. Your cooperation and participation are greatly appreciated as we work together to ensure a safe workplace for everyone.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: notice\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度2: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度3: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度4: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度5: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度6: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度7: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1482
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:55:23.840Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nNOTICE: Emergency Preparedness Drill Notification\n\nTo: All Employees\nFrom: Human Resources Department\nDate: November 15, 2023\n\nWe would like to inform you about an important upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations. It is crucial for everyone to participate as it helps us practice our emergency response procedures effectively.\n\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators during this time. Once you are outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes, during which we will evaluate our response times and overall effectiveness.\n\nImportant Reminders:\n- Ensure you are familiar with the emergency exit routes in your area and have a plan in place.\n- Keep personal belongings secure and avoid bringing large bags to the drill.\n- Please wear comfortable clothing and shoes suitable for quick movement.\n- Review the emergency procedures document attached to this notice for further details.\n\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com. Your cooperation and participation are greatly appreciated as we work together to ensure a safe workplace for everyone.\n\n【問題文】\n\n問題1: What can be inferred from the information provided?\n選択肢: The company has never conducted an emergency drill before., Employees are expected to return to work immediately after the drill., The drill will involve the participation of external emergency services., The company prioritizes employee safety during emergencies.\n正解: D\n解説: 文書全体が従業員の安全を確保するための緊急訓練に関するものであり、特に「this drill is part of our ongoing commitment to ensure the safety and security of all employees」と記載されている点から、会社が従業員の安全を優先していることが推測できます。\n\n\n問題2: What is the main purpose of this document?\n選択肢: To announce a change in company policy, To inform employees about a scheduled drill, To request feedback on past drills, To introduce new emergency procedures\n正解: B\n解説: 文書の冒頭で「We would like to inform you about an important upcoming emergency preparedness drill」とあり、主な目的は従業員に予定された訓練について知らせることであると明示されています。\n\n\n問題3: Where will employees congregate after exiting the building during the drill?\n選択肢: In the main lobby, At the designated assembly point for their department, In the parking lot, On the rooftop\n正解: B\n解説: 文書には「congregate at the assembly point designated for your department」と記載されており、従業員は各部門に指定された集合地点に集まることが明記されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage154",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:55:24.893Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage154",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-15T06:54:14.173Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T06:54:14.179Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Radio or podcast broadcast (ラジオ・ポッドキャスト放送)\n【Industry】: Transportation and Logistics (運輸・物流)\n【Difficulty】: medium\n【Question Types】: main_purpose, main_purpose, detail\n【Correct Answer Positions】: Question 1=C, Question 2=C, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T06:54:23.301Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Radio Host\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"This is GreenWay Radio, focusing on the latest updates in transportation and logistics. Today, we're discussing the recent improvements in the shipment process at Oceanic Freight, a major shipping company. Oceanic Freight has implemented a new tracking system that allows customers to monitor their shipments in real-time. This technological advancement provides precise information about the location and estimated arrival time of goods. The new system is expected to enhance efficiency and customer satisfaction across their global network. Additionally, Oceanic Freight has increased its fleet of eco-friendly vehicles to reduce carbon emissions. These steps showcase their commitment to sustainability while streamlining logistics operations.\",\n    \"topic\": \"Improvements in Oceanic Freight's shipment process\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of this broadcast?\",\n      \"options\": [\n        \"To advertise a new company\",\n        \"To highlight transportation issues\",\n        \"To discuss Oceanic Freight's shipment improvements\",\n        \"To announce a partnership\"\n      ],\n      \"correct\": \"To discuss Oceanic Freight's shipment improvements\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"放送の主な目的はOceanic Freightの出荷改善について話すことです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the new tracking system?\",\n      \"options\": [\n        \"To reduce costs\",\n        \"To simplify management\",\n        \"To provide real-time shipment tracking\",\n        \"To offer discounts\"\n      ],\n      \"correct\": \"To provide real-time shipment tracking\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"新しい追跡システムの目的は、リアルタイムでの出荷追跡を提供することです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What additional step has Oceanic Freight taken recently?\",\n      \"options\": [\n        \"Increase in shipping rates\",\n        \"Collaboration with another company\",\n        \"Increasing its fleet of eco-friendly vehicles\",\n        \"Launch of a new marketing campaign\"\n      ],\n      \"correct\": \"Increasing its fleet of eco-friendly vehicles\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"Oceanic Freightは最近、環境に優しい車両の艦隊を増やしました。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T06:54:23.302Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: radio_broadcast\nIndustry: transportation\nSpeaker Role: Radio Host\nTopic: Improvements in Oceanic Freight's shipment process\n\nSpeech Text:\nThis is GreenWay Radio, focusing on the latest updates in transportation and logistics. Today, we're discussing the recent improvements in the shipment process at Oceanic Freight, a major shipping company. Oceanic Freight has implemented a new tracking system that allows customers to monitor their shipments in real-time. This technological advancement provides precise information about the location and estimated arrival time of goods. The new system is expected to enhance efficiency and customer satisfaction across their global network. Additionally, Oceanic Freight has increased its fleet of eco-friendly vehicles to reduce carbon emissions. These steps showcase their commitment to sustainability while streamlining logistics operations.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T06:54:28.035Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ラジオ放送\",\n  \"textTranslation\": \"こちらはグリーンウェイラジオ、輸送と物流の最新情報に焦点を当てた番組です。今日は、大手海運会社オーシャンフレイトの出荷プロセスにおける最近の改善についてお話します。オーシャンフレイトは、新たな追跡システムを導入し、顧客がリアルタイムで出荷状況を確認できるようにしました。この技術的進歩により、商品の所在地や到着予定時刻に関する正確な情報が提供されます。新システムは、グローバルネットワーク全体で効率性と顧客満足度を向上させることが期待されています。さらに、オーシャンフレイトは、二酸化炭素排出量削減のため、環境に優しい車両を増やしました。これらの取り組みは、物流業務を効率化しながら、持続可能性へのコミットメントを示しています。\",\n  \"topicTranslation\": \"オーシャンフレイトの出荷プロセスにおける改善\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T06:54:28.036Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the main purpose of this broadcast?\nOptions:\nA: To advertise a new company\nB: To highlight transportation issues\nC: To discuss Oceanic Freight's shipment improvements\nD: To announce a partnership\n\nQuestion 2: What is the main purpose of the new tracking system?\nOptions:\nA: To reduce costs\nB: To simplify management\nC: To provide real-time shipment tracking\nD: To offer discounts\n\nQuestion 3: What additional step has Oceanic Freight taken recently?\nOptions:\nA: Increase in shipping rates\nB: Collaboration with another company\nC: Increasing its fleet of eco-friendly vehicles\nD: Launch of a new marketing campaign\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T06:54:31.295Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"この放送の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しい会社を宣伝するため\",\n        \"交通問題を強調するため\",\n        \"Oceanic Freightの輸送改善について話し合うため\",\n        \"パートナーシップを発表するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"新しい追跡システムの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"コストを削減するため\",\n        \"管理を簡素化するため\",\n        \"リアルタイムの発送追跡を提供するため\",\n        \"割引を提供するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"Oceanic Freightが最近取った追加の対策は何ですか？\",\n      \"optionTranslations\": [\n        \"輸送料金の値上げ\",\n        \"他の会社との協力\",\n        \"環境に優しい車両の増加\",\n        \"新しいマーケティングキャンペーンの開始\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

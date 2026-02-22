@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T04:52:20.021Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、前回の会議に出席しました。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T04:52:20.071Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "まだ会議の議題を見ていません。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T04:52:20.169Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "お知らせいただきありがとうございます。スケジュールを調整します。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  }
+]

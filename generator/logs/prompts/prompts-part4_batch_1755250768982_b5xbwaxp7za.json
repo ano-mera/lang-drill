@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-15T09:39:28.986Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:39:28.993Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Company voice announcement (IVR) (企業の音声案内メッセージ)\n【Industry】: Energy and Utilities (エネルギー・インフラ)\n【Difficulty】: medium\n【Question Types】: inference, intended_audience, inference\n【Correct Answer Positions】: Question 1=A, Question 2=C, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:39:37.245Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Automated System\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Thank you for calling Solar Solutions, your premier provider for renewable energy solutions. If you are an existing customer and require assistance with billing or technical support, please press 1. For inquiries about new solar panel installations, press 2. Potential business partners interested in collaboration, please dial 3. We are committed to providing sustainable energy options. For all other inquiries, stay on the line, and a representative will be with you shortly. Remember, our customer service hours are from 8 AM to 6 PM, Monday through Friday.\",\n    \"topic\": \"Automated company greeting and options for callers\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about Solar Solutions from the announcement?\",\n      \"options\": [\n        \"They offer support to existing customers.\",\n        \"They only sell solar panels.\",\n        \"They do not have customer service representatives.\",\n        \"Their services are available 24/7.\"\n      ],\n      \"correct\": \"They offer support to existing customers.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"音声メッセージで既存の顧客に対して請求や技術サポートが提供されていることが示されている。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is the intended audience for this announcement?\",\n      \"options\": [\n        \"Solar panel manufacturers.\",\n        \"Employees looking for job opportunities.\",\n        \"Customers of Solar Solutions.\",\n        \"Shareholders of Solar Solutions.\"\n      ],\n      \"correct\": \"Customers of Solar Solutions.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"発表は既存の顧客や新規インストールに関心のある顧客を対象としている。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the company’s business hours?\",\n      \"options\": [\n        \"They are open 24/7.\",\n        \"They operate only in the evenings.\",\n        \"They follow a strict 9 to 5 schedule.\",\n        \"They are closed on weekends.\"\n      ],\n      \"correct\": \"They are closed on weekends.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"音声メッセージには月曜日から金曜日の8時から18時までの営業時間が記載されており、週末は含まれていない。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:39:37.246Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: company_vo_message\nIndustry: energy_utilities\nSpeaker Role: Company spokesperson\nTopic: Automated company greeting and options for callers\n\nSpeech Text:\nThank you for calling Solar Solutions, your premier provider for renewable energy solutions. If you are an existing customer and require assistance with billing or technical support, please press 1. For inquiries about new solar panel installations, press 2. Potential business partners interested in collaboration, please dial 3. We are committed to providing sustainable energy options. For all other inquiries, stay on the line, and a representative will be with you shortly. Remember, our customer service hours are from 8 AM to 6 PM, Monday through Friday.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:39:41.015Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "```json\n{\n  \"speechTypeTranslation\": \"会社の音声メッセージ\",\n  \"textTranslation\": \"再生可能エネルギーソリューションの優良プロバイダー、ソーラーソリューションズにお電話いただきありがとうございます。既存のお客様で、請求書や技術サポートに関するご質問がある場合は1を押してください。新しいソーラーパネルの設置に関するお問い合わせは2を押してください。共同事業を希望されるビジネスパートナーは3を押してください。私たちは持続可能なエネルギーの選択肢を提供することに注力しています。他のすべてのお問い合わせについては、そのままお待ちいただければ、すぐに担当者が対応いたします。なお、カスタマーサービスの営業時間は月曜日から金曜日の午前8時から午後6時までです。\",\n  \"topicTranslation\": \"自動化された会社の挨拶と発信者向けの選択肢\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:39:41.016Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What can be inferred about Solar Solutions from the announcement?\nOptions:\nA: They offer support to existing customers.\nB: They only sell solar panels.\nC: They do not have customer service representatives.\nD: Their services are available 24/7.\n\nQuestion 2: Who is the intended audience for this announcement?\nOptions:\nA: Solar panel manufacturers.\nB: Employees looking for job opportunities.\nC: Customers of Solar Solutions.\nD: Shareholders of Solar Solutions.\n\nQuestion 3: What can be inferred about the company’s business hours?\nOptions:\nA: They are open 24/7.\nB: They operate only in the evenings.\nC: They follow a strict 9 to 5 schedule.\nD: They are closed on weekends.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T09:39:43.873Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"アナウンスからソーラーソリューションズについて何が推測できますか？\",\n      \"optionTranslations\": [\n        \"既存の顧客を支援している。\",\n        \"ソーラーパネルのみを販売している。\",\n        \"顧客サービス担当者がいない。\",\n        \"サービスは24時間365日利用可能である。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このアナウンスの対象は誰ですか？\",\n      \"optionTranslations\": [\n        \"ソーラーパネルメーカー。\",\n        \"就職機会を探している従業員。\",\n        \"ソーラーソリューションズの顧客。\",\n        \"ソーラーソリューションズの株主。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"その会社の営業時間について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"24時間営業している。\",\n        \"夜間のみ営業している。\",\n        \"厳密な9時から5時のスケジュールで営業している。\",\n        \"週末は休業している。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "timestamp": "2025-07-14T07:37:01.472Z",
+    "functionName": "generatePassage",
+    "type": "email",
+    "difficulty": "hard",
+    "topic": "meeting_scheduling",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のemailを作成してください：\n\n【条件】\n- 文書タイプ: email\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: meeting_scheduling\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nSubject: [件名]\n\nDear [受信者],\n\n[本文]\n\nBest regards,\n[署名]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"email\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"meeting_scheduling\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T07:37:10.061Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 141語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to discuss potential adjustments to our upcoming project meeting initially scheduled for Thursday, November 15th at 3:00 PM. Due to unforeseen circumstances, our lead project manager, Ms. Johnson, will be unable to attend at the original time.\n\nTo accommodate her schedule, I propose rescheduling the meeting to Friday, November 16th at 10:00 AM. Please let me know if this new time is convenient for you. If not, could you kindly suggest an alternative time that aligns with your availability? Additionally, please confirm your preference for either a virtual meeting via Zoom or an in-person meeting at our downtown office.\n\nYour prompt response would be greatly appreciated to ensure all key participants can attend. Thank you for your understanding and flexibility.\n\nBest regards,\n\nLinda Parker\nOperations Manager\nABC Corporation\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage121",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:14.345Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が141語であり、hard難易度の期待範囲250-350語に満たない。\",\n      \"suggestion\": \"文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage121",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:14.347Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to discuss potential adjustments to our upcoming project meeting initially scheduled for Thursday, November 15th at 3:00 PM. Due to unforeseen circumstances, our lead project manager, Ms. Johnson, will be unable to attend at the original time.\n\nTo accommodate her schedule, I propose rescheduling the meeting to Friday, November 16th at 10:00 AM. Please let me know if this new time is convenient for you. If not, could you kindly suggest an alternative time that aligns with your availability? Additionally, please confirm your preference for either a virtual meeting via Zoom or an in-person meeting at our downtown office.\n\nYour prompt response would be greatly appreciated to ensure all key participants can attend. Thank you for your understanding and flexibility.\n\nBest regards,\n\nLinda Parker\nOperations Manager\nABC Corporation\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が141語であり、hard難易度の期待範囲250-350語に満たない。\n   改善提案: 文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\n   改善提案: 関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: email を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage121",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:31.364Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Dear Mr. Tanaka,\\n\\nI hope this message finds you well. I am writing to discuss potential adjustments to our upcoming project meeting initially scheduled for Thursday, November 15th at 3:00 PM. Due to unforeseen circumstances, our lead project manager, Ms. Johnson, will be unable to attend at the original time.\\n\\nTo accommodate her schedule, I propose rescheduling the meeting to Friday, November 16th at 10:00 AM. Please let me know if this new time is convenient for you. If not, could you kindly suggest an alternative time that aligns with your availability? Additionally, please confirm your preference for either a virtual meeting via Zoom or an in-person meeting at our downtown office.\\n\\nIn order to ensure that all participants are well-prepared for the meeting, I would like to share an agenda in advance. The agenda will include key discussion points such as project timelines, budget considerations, and team responsibilities. I believe that having this information beforehand will facilitate a more productive discussion.\\n\\nFurthermore, I have attached a document that outlines the current status of the project, including milestones achieved and challenges faced. This should provide a comprehensive overview for all attendees.\\n\\nYour prompt response would be greatly appreciated to ensure all key participants can attend. Thank you for your understanding and flexibility.\\n\\nBest regards,\\n\\nLinda Parker\\nOperations Manager\\nABC Corporation\",\n  \"revisedContentTranslation\": \"田中様\\n\\nお元気でいらっしゃいますか。このメッセージがあなたに届くことを願っています。私は、11月15日木曜日の午後3時に予定されていたプロジェクト会議の調整についてお知らせするためにお書きしています。予期しない事情により、プロジェクトのリーダーであるジョンソンさんが元の時間に出席できなくなりました。\\n\\n彼女のスケジュールに合わせるため、会議を11月16日金曜日の午前10時に変更することを提案いたします。この新しい時間があなたにとって都合が良いかどうかお知らせください。もし都合が悪い場合は、あなたのご都合に合った別の時間を提案していただけますか？また、Zoomを通じたバーチャル会議か、私たちのダウンタウンオフィスでの対面会議のいずれかのご希望もお知らせください。\\n\\n会議に参加するすべての方が十分に準備できるよう、事前に議題を共有したいと考えています。議題には、プロジェクトのタイムライン、予算の考慮事項、チームの責任などの重要な議論のポイントが含まれます。この情報を事前に持っていることで、より生産的な議論ができると信じています。\\n\\nさらに、現在のプロジェクトの状況をまとめた文書を添付しました。達成したマイルストーンや直面している課題を含んでおり、参加者全員に包括的な概要を提供するものです。\\n\\nすべての主要参加者が出席できるよう、迅速なご返答をいただけると幸いです。ご理解と柔軟性に感謝いたします。\\n\\nよろしくお願いいたします。\\n\\nリンダ・パーカー\\nオペレーションマネージャー\\nABCコーポレーション\",\n  \"revisionNotes\": \"文書の語数を250語以上に増やすため、会議の議題やプロジェクトの状況を共有する旨を追加しました。また、ビジネス文書としての自然さを保つために、文法や語彙を見直しました。さらに、情報を視覚的に補足するために、議題やプロジェクトの状況を示す文書を添付する提案を加えました。これにより、TOEIC Part 7の文書形式に準拠した内容となっています。\"\n}",
+    "metadata": {
+      "passageId": "passage121",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:31.366Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 220語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to discuss potential adjustments to our upcoming project meeting initially scheduled for Thursday, November 15th at 3:00 PM. Due to unforeseen circumstances, our lead project manager, Ms. Johnson, will be unable to attend at the original time.\n\nTo accommodate her schedule, I propose rescheduling the meeting to Friday, November 16th at 10:00 AM. Please let me know if this new time is convenient for you. If not, could you kindly suggest an alternative time that aligns with your availability? Additionally, please confirm your preference for either a virtual meeting via Zoom or an in-person meeting at our downtown office.\n\nIn order to ensure that all participants are well-prepared for the meeting, I would like to share an agenda in advance. The agenda will include key discussion points such as project timelines, budget considerations, and team responsibilities. I believe that having this information beforehand will facilitate a more productive discussion.\n\nFurthermore, I have attached a document that outlines the current status of the project, including milestones achieved and challenges faced. This should provide a comprehensive overview for all attendees.\n\nYour prompt response would be greatly appreciated to ensure all key participants can attend. Thank you for your understanding and flexibility.\n\nBest regards,\n\nLinda Parker\nOperations Manager\nABC Corporation\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage121_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:34.954Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が期待範囲（250-350語）を下回っており、220語であるため基準を満たしていません。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補強が不足しています。\",\n      \"suggestion\": \"関連する図表やリストを追加して、情報を視覚的に整理することをお勧めします。\"\n    }\n  ],\n  \"recommendation\": \"不合格\"\n}",
+    "metadata": {
+      "passageId": "passage121_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:34.956Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to discuss potential adjustments to our upcoming project meeting initially scheduled for Thursday, November 15th at 3:00 PM. Due to unforeseen circumstances, our lead project manager, Ms. Johnson, will be unable to attend at the original time.\n\nTo accommodate her schedule, I propose rescheduling the meeting to Friday, November 16th at 10:00 AM. Please let me know if this new time is convenient for you. If not, could you kindly suggest an alternative time that aligns with your availability? Additionally, please confirm your preference for either a virtual meeting via Zoom or an in-person meeting at our downtown office.\n\nIn order to ensure that all participants are well-prepared for the meeting, I would like to share an agenda in advance. The agenda will include key discussion points such as project timelines, budget considerations, and team responsibilities. I believe that having this information beforehand will facilitate a more productive discussion.\n\nFurthermore, I have attached a document that outlines the current status of the project, including milestones achieved and challenges faced. This should provide a comprehensive overview for all attendees.\n\nYour prompt response would be greatly appreciated to ensure all key participants can attend. Thank you for your understanding and flexibility.\n\nBest regards,\n\nLinda Parker\nOperations Manager\nABC Corporation\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: email\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度2: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度3: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度4: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度5: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度6: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度7: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1446
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:54.223Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to discuss potential adjustments to our upcoming project meeting initially scheduled for Thursday, November 15th at 3:00 PM. Due to unforeseen circumstances, our lead project manager, Ms. Johnson, will be unable to attend at the original time.\n\nTo accommodate her schedule, I propose rescheduling the meeting to Friday, November 16th at 10:00 AM. Please let me know if this new time is convenient for you. If not, could you kindly suggest an alternative time that aligns with your availability? Additionally, please confirm your preference for either a virtual meeting via Zoom or an in-person meeting at our downtown office.\n\nIn order to ensure that all participants are well-prepared for the meeting, I would like to share an agenda in advance. The agenda will include key discussion points such as project timelines, budget considerations, and team responsibilities. I believe that having this information beforehand will facilitate a more productive discussion.\n\nFurthermore, I have attached a document that outlines the current status of the project, including milestones achieved and challenges faced. This should provide a comprehensive overview for all attendees.\n\nYour prompt response would be greatly appreciated to ensure all key participants can attend. Thank you for your understanding and flexibility.\n\nBest regards,\n\nLinda Parker\nOperations Manager\nABC Corporation\n\n【問題文】\n\n問題1: According to the document, what is proposed for the rescheduled meeting time?\n選択肢: Thursday, November 15th at 3:00 PM, Friday, November 16th at 10:00 AM, Wednesday, November 14th at 2:00 PM, Monday, November 19th at 9:00 AM\n正解: B\n解説: 文書の中でLinda Parkerは、Ms. Johnsonのスケジュールに合わせて会議を11月16日金曜日午前10時に再調整することを提案しています。\n\n\n問題2: What can be inferred about Ms. Johnson's role in the project?\n選択肢: She is the CEO of the company., She is the lead project manager., She is a client of the company., She is responsible for financial management.\n正解: B\n解説: 文書には、Ms. Johnsonが主任プロジェクトマネージャーであると明記されています。彼女の参加が重要であるため、会議の再調整が提案されています。\n\n\n問題3: What is the main purpose of this document?\n選択肢: To cancel the project meeting, To introduce a new team member, To reschedule the project meeting, To announce the completion of the project\n正解: C\n解説: 文書の主な目的は、Ms. Johnsonのスケジュールに合わせてプロジェクト会議を再調整する提案をすることです。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage121",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:55.012Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage121",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:37:57.017Z",
+    "functionName": "generatePassage",
+    "type": "advertisement",
+    "difficulty": "hard",
+    "topic": "office_announcements",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のadvertisementを作成してください：\n\n【条件】\n- 文書タイプ: advertisement\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: office_announcements\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\n[広告タイトル]\n\n[魅力的なキャッチコピー]\n\n[商品・サービス詳細]\n[特徴・メリット]\n[価格・条件]\n\n[連絡先・申込方法]\n[行動喚起]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"advertisement\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"office_announcements\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T07:38:04.957Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 150語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nUpgrade Your Workspace with Our All-in-One Office Solution!\n\nIntroducing the OfficeMaster Pro - the ultimate solution for modern business needs. Transform your workspace with cutting-edge technology designed to enhance productivity and streamline operations.\n\nProduct Details:\nThe OfficeMaster Pro offers a comprehensive suite of tools, including a high-speed multifunction printer, a cloud-based file management system, and seamless communication software, all integrated into one platform.\n\nFeatures & Benefits:\n- Boost Efficiency: Print, copy, scan, and fax with unparalleled speed and quality.\n- Cloud Integration: Access and manage your documents from anywhere, anytime.\n- Enhanced Communication: Enjoy crystal-clear video conferencing and instant messaging.\n\nPricing & Conditions:\nSubscribe now for only $99/month with a 30-day money-back guarantee. No long-term contracts required.\n\nContact & Registration:\nVisit our website at www.officemasterpro.com or call us at 1-800-555-0199 to schedule a free demo.\n\nAct Now:\nTransform your office today and stay ahead of the competition with OfficeMaster Pro!\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage122",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:08.859Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が150語であり、hard難易度の期待範囲である250-350語に満たない。\",\n      \"suggestion\": \"文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、情報が整理されているが、見出しや段落の分け方が不十分である。\",\n      \"suggestion\": \"各セクションを明確に分け、見出しを追加することで、読みやすさを向上させることをお勧めします。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage122",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:08.862Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nUpgrade Your Workspace with Our All-in-One Office Solution!\n\nIntroducing the OfficeMaster Pro - the ultimate solution for modern business needs. Transform your workspace with cutting-edge technology designed to enhance productivity and streamline operations.\n\nProduct Details:\nThe OfficeMaster Pro offers a comprehensive suite of tools, including a high-speed multifunction printer, a cloud-based file management system, and seamless communication software, all integrated into one platform.\n\nFeatures & Benefits:\n- Boost Efficiency: Print, copy, scan, and fax with unparalleled speed and quality.\n- Cloud Integration: Access and manage your documents from anywhere, anytime.\n- Enhanced Communication: Enjoy crystal-clear video conferencing and instant messaging.\n\nPricing & Conditions:\nSubscribe now for only $99/month with a 30-day money-back guarantee. No long-term contracts required.\n\nContact & Registration:\nVisit our website at www.officemasterpro.com or call us at 1-800-555-0199 to schedule a free demo.\n\nAct Now:\nTransform your office today and stay ahead of the competition with OfficeMaster Pro!\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が150語であり、hard難易度の期待範囲である250-350語に満たない。\n   改善提案: 文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、情報が整理されているが、見出しや段落の分け方が不十分である。\n   改善提案: 各セクションを明確に分け、見出しを追加することで、読みやすさを向上させることをお勧めします。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: advertisement を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage122",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:25.024Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Upgrade Your Workspace with Our All-in-One Office Solution!\\n\\nIntroducing the OfficeMaster Pro - the ultimate solution for modern business needs. Transform your workspace with cutting-edge technology designed to enhance productivity and streamline operations. Our comprehensive office solution is tailored to meet the demands of today’s fast-paced business environment.\\n\\nProduct Details:\\nThe OfficeMaster Pro offers a comprehensive suite of tools, including a high-speed multifunction printer, a cloud-based file management system, and seamless communication software, all integrated into one platform. This all-in-one solution not only saves space but also reduces costs associated with managing multiple devices.\\n\\nFeatures & Benefits:\\n- Boost Efficiency: Print, copy, scan, and fax with unparalleled speed and quality, ensuring that your team can accomplish more in less time.\\n- Cloud Integration: Access and manage your documents from anywhere, anytime, allowing for greater flexibility and collaboration among team members.\\n- Enhanced Communication: Enjoy crystal-clear video conferencing and instant messaging, making remote work more effective and engaging.\\n\\nPricing & Conditions:\\nSubscribe now for only $99/month with a 30-day money-back guarantee. No long-term contracts required, providing you with the freedom to choose what works best for your business.\\n\\nContact & Registration:\\nVisit our website at www.officemasterpro.com or call us at 1-800-555-0199 to schedule a free demo. Our dedicated team is ready to assist you in exploring how OfficeMaster Pro can revolutionize your office experience.\\n\\nAct Now:\\nTransform your office today and stay ahead of the competition with OfficeMaster Pro! Don’t miss out on the opportunity to elevate your business operations and enhance your team’s productivity.\",\n  \"revisedContentTranslation\": \"オールインワンオフィスソリューションでワークスペースをアップグレードしませんか！\\n\\nOfficeMaster Proをご紹介します。これは現代のビジネスニーズに最適なソリューションです。生産性を向上させ、業務を効率化するために設計された最先端の技術で、ワークスペースを変革します。この包括的なオフィスソリューションは、今日の急速に変化するビジネス環境の要求に応えるように調整されています。\\n\\n製品詳細：\\nOfficeMaster Proは、高速マルチファンクションプリンター、クラウドベースのファイル管理システム、シームレスなコミュニケーションソフトウェアを含む包括的なツールのスイートを提供し、すべてが1つのプラットフォームに統合されています。このオールインワンソリューションは、スペースを節約するだけでなく、複数のデバイスを管理する際のコストも削減します。\\n\\n特徴と利点：\\n- 効率の向上：比類のない速度と品質で印刷、コピー、スキャン、ファックスを行い、チームが短時間でより多くのことを達成できるようにします。\\n- クラウド統合：いつでもどこでもドキュメントにアクセスし管理でき、チームメンバー間の柔軟性とコラボレーションを向上させます。\\n- コミュニケーションの強化：クリスタルクリアなビデオ会議とインスタントメッセージングを楽しみ、リモートワークをより効果的で魅力的にします。\\n\\n価格と条件：\\n今すぐ月額99ドルでご契約いただけます。30日間の返金保証付き。長期契約は不要で、ビジネスに最適な選択をする自由を提供します。\\n\\nお問い合わせと登録：\\nwww.officemasterpro.comを訪れるか、1-800-555-0199までお電話ください。OfficeMaster Proがあなたのオフィス体験をどのように革命的に変えることができるかを探るために、私たちの専任チームがサポートします。\\n\\n今すぐ行動を！\\n今日、オフィスを変革し、OfficeMaster Proで競争に先んじましょう！ビジネスオペレーションを向上させ、チームの生産性を高める機会をお見逃しなく。\",\n  \"revisionNotes\": \"文書の語数を250語以上に増やし、内容を充実させました。また、各セクションを明確に分け、見出しを追加することで読みやすさを向上させました。文法や表現を修正し、ビジネス文書としての自然さを保ちながら、TOEIC Part 7の形式に準拠した内容にしました。\"\n}",
+    "metadata": {
+      "passageId": "passage122",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:25.028Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 254語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nUpgrade Your Workspace with Our All-in-One Office Solution!\n\nIntroducing the OfficeMaster Pro - the ultimate solution for modern business needs. Transform your workspace with cutting-edge technology designed to enhance productivity and streamline operations. Our comprehensive office solution is tailored to meet the demands of today’s fast-paced business environment.\n\nProduct Details:\nThe OfficeMaster Pro offers a comprehensive suite of tools, including a high-speed multifunction printer, a cloud-based file management system, and seamless communication software, all integrated into one platform. This all-in-one solution not only saves space but also reduces costs associated with managing multiple devices.\n\nFeatures & Benefits:\n- Boost Efficiency: Print, copy, scan, and fax with unparalleled speed and quality, ensuring that your team can accomplish more in less time.\n- Cloud Integration: Access and manage your documents from anywhere, anytime, allowing for greater flexibility and collaboration among team members.\n- Enhanced Communication: Enjoy crystal-clear video conferencing and instant messaging, making remote work more effective and engaging.\n\nPricing & Conditions:\nSubscribe now for only $99/month with a 30-day money-back guarantee. No long-term contracts required, providing you with the freedom to choose what works best for your business.\n\nContact & Registration:\nVisit our website at www.officemasterpro.com or call us at 1-800-555-0199 to schedule a free demo. Our dedicated team is ready to assist you in exploring how OfficeMaster Pro can revolutionize your office experience.\n\nAct Now:\nTransform your office today and stay ahead of the competition with OfficeMaster Pro! Don’t miss out on the opportunity to elevate your business operations and enhance your team’s productivity.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage122_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:25.824Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage122_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:25.827Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nUpgrade Your Workspace with Our All-in-One Office Solution!\n\nIntroducing the OfficeMaster Pro - the ultimate solution for modern business needs. Transform your workspace with cutting-edge technology designed to enhance productivity and streamline operations. Our comprehensive office solution is tailored to meet the demands of today’s fast-paced business environment.\n\nProduct Details:\nThe OfficeMaster Pro offers a comprehensive suite of tools, including a high-speed multifunction printer, a cloud-based file management system, and seamless communication software, all integrated into one platform. This all-in-one solution not only saves space but also reduces costs associated with managing multiple devices.\n\nFeatures & Benefits:\n- Boost Efficiency: Print, copy, scan, and fax with unparalleled speed and quality, ensuring that your team can accomplish more in less time.\n- Cloud Integration: Access and manage your documents from anywhere, anytime, allowing for greater flexibility and collaboration among team members.\n- Enhanced Communication: Enjoy crystal-clear video conferencing and instant messaging, making remote work more effective and engaging.\n\nPricing & Conditions:\nSubscribe now for only $99/month with a 30-day money-back guarantee. No long-term contracts required, providing you with the freedom to choose what works best for your business.\n\nContact & Registration:\nVisit our website at www.officemasterpro.com or call us at 1-800-555-0199 to schedule a free demo. Our dedicated team is ready to assist you in exploring how OfficeMaster Pro can revolutionize your office experience.\n\nAct Now:\nTransform your office today and stay ahead of the competition with OfficeMaster Pro! Don’t miss out on the opportunity to elevate your business operations and enhance your team’s productivity.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: advertisement\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度2: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度3: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度4: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度5: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度6: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度7: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1808
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:44.120Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nUpgrade Your Workspace with Our All-in-One Office Solution!\n\nIntroducing the OfficeMaster Pro - the ultimate solution for modern business needs. Transform your workspace with cutting-edge technology designed to enhance productivity and streamline operations. Our comprehensive office solution is tailored to meet the demands of today’s fast-paced business environment.\n\nProduct Details:\nThe OfficeMaster Pro offers a comprehensive suite of tools, including a high-speed multifunction printer, a cloud-based file management system, and seamless communication software, all integrated into one platform. This all-in-one solution not only saves space but also reduces costs associated with managing multiple devices.\n\nFeatures & Benefits:\n- Boost Efficiency: Print, copy, scan, and fax with unparalleled speed and quality, ensuring that your team can accomplish more in less time.\n- Cloud Integration: Access and manage your documents from anywhere, anytime, allowing for greater flexibility and collaboration among team members.\n- Enhanced Communication: Enjoy crystal-clear video conferencing and instant messaging, making remote work more effective and engaging.\n\nPricing & Conditions:\nSubscribe now for only $99/month with a 30-day money-back guarantee. No long-term contracts required, providing you with the freedom to choose what works best for your business.\n\nContact & Registration:\nVisit our website at www.officemasterpro.com or call us at 1-800-555-0199 to schedule a free demo. Our dedicated team is ready to assist you in exploring how OfficeMaster Pro can revolutionize your office experience.\n\nAct Now:\nTransform your office today and stay ahead of the competition with OfficeMaster Pro! Don’t miss out on the opportunity to elevate your business operations and enhance your team’s productivity.\n\n【問題文】\n\n問題1: What can be inferred from the information provided?\n選択肢: The OfficeMaster Pro is mainly for large enterprises., The product saves money by reducing the number of devices., The OfficeMaster Pro requires a long-term contract., The product is only available in select regions.\n正解: B\n解説: 文書には「This all-in-one solution not only saves space but also reduces costs associated with managing multiple devices」という記載があり、デバイスの数を減らすことでコストを削減できることが示されています。\n\n\n問題2: What is the main purpose of this document?\n選択肢: To provide technical support for existing users, To introduce a new office solution product, To announce a price increase for a service, To explain the benefits of working remotely\n正解: B\n解説: 文書は「Introducing the OfficeMaster Pro - the ultimate solution for modern business needs.」と始まっており、新しいオフィスソリューション製品を紹介することが主な目的であることがわかります。\n\n\n問題3: According to the document, what specific information is mentioned about the pricing?\n選択肢: It costs $150/month with a 60-day money-back guarantee., It costs $99/month with a 30-day money-back guarantee., It is available for a one-time purchase of $1200., It is free for the first month then $99/month.\n正解: B\n解説: 文書には「Subscribe now for only $99/month with a 30-day money-back guarantee.」と明記されており、月額99ドルで30日間の返金保証があることが示されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage122",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T07:38:44.858Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage122",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  }
+]

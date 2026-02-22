@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-19T02:03:18.407Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"scenario\":\"onboarding_process\",\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "scenario": "onboarding_process",
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:03:18.451Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: onboarding_process\n- 業種: government (Public Sector / Government)\n- 正解位置: 問題1はB、問題2はB、問題3はB\n- 話者数: 2人\n- 話者の性別: 話者Aは女性、話者Bは男性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はPublic Sector / Government業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: B位置、問題3: B位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:03:29.772Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"onboarding_process\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Emily\", \"role\": \"HR Specialist\", \"gender\": \"female\"},\n    {\"id\": \"B\", \"name\": \"David\", \"role\": \"New Employee\", \"gender\": \"male\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Welcome to our department, David. I hope you're settling in well. Do you have any questions about the onboarding process?\"},\n    {\"speaker\": \"B\", \"text\": \"Thank you, Emily. I do have a few questions, particularly about the training schedule. When does it begin?\"},\n    {\"speaker\": \"A\", \"text\": \"The initial orientation sessions start next Monday at 9 AM, and the comprehensive training will follow in the subsequent weeks.\"},\n    {\"speaker\": \"B\", \"text\": \"Got it. And who should I contact if I have technical issues with my computer or access to the network?\"},\n    {\"speaker\": \"A\", \"text\": \"You can reach out to our IT support team. I'll email you their contact information right after this meeting.\"},\n    {\"speaker\": \"B\", \"text\": \"Perfect, thank you. I'm also a bit unclear about the procedure for requesting leave during the onboarding period.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What does the woman inform the man about the training schedule?\",\n      \"options\": [\"It starts tomorrow.\", \"It starts next Monday.\", \"It starts next month.\", \"It starts next weekend.\"],\n      \"correct\": \"It starts next Monday.\",\n      \"explanation\": \"女性は月曜日の9時にオリエンテーションセッションが始まると言及しています。この情報は、指定された開始日を示しています。\",\n      \"questionType\": \"Schedule\"\n    },\n    {\n      \"question\": \"What does the man want to know about technical issues?\",\n      \"options\": [\"Who can fix his computer immediately.\", \"Who to contact for IT support.\", \"How to reset his computer.\", \"How to upgrade his software.\"],\n      \"correct\": \"Who to contact for IT support.\",\n      \"explanation\": \"男性はネットワークやコンピュータへのアクセスに関する技術的な問題を誰に連絡すればいいかを尋ねています。\",\n      \"questionType\": \"Information Request\"\n    },\n    {\n      \"question\": \"What does the woman promise to do after the meeting?\",\n      \"options\": [\"Provide a printed schedule.\", \"Email contact details for IT support.\", \"Arrange a meeting with the manager.\", \"Submit his leave request.\"],\n      \"correct\": \"Email contact details for IT support.\",\n      \"explanation\": \"女性は会議の後にITサポートチームの連絡先情報を彼にメールで送ると言っています。\",\n      \"questionType\": \"Follow-up Action\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:03:29.773Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: onboarding_process\n\nConversation:\nA: Welcome to our department, David. I hope you're settling in well. Do you have any questions about the onboarding process?\nB: Thank you, Emily. I do have a few questions, particularly about the training schedule. When does it begin?\nA: The initial orientation sessions start next Monday at 9 AM, and the comprehensive training will follow in the subsequent weeks.\nB: Got it. And who should I contact if I have technical issues with my computer or access to the network?\nA: You can reach out to our IT support team. I'll email you their contact information right after this meeting.\nB: Perfect, thank you. I'm also a bit unclear about the procedure for requesting leave during the onboarding period.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:03:34.416Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"オンボーディング・プロセス\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"私たちの部署へようこそ、デイビッド。もう慣れてきましたか？ オンボーディングプロセスについて何か質問がありますか？\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"ありがとう、エミリー。いくつか質問があります、特に研修スケジュールについてです。いつ始まりますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"最初のオリエンテーションセッションは来週の月曜日の午前9時から始まり、その後の週に包括的な研修が続きます。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"わかりました。そして、コンピュータやネットワークへのアクセスに技術的な問題がある場合、誰に連絡すればいいですか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"ITサポートチームに連絡してください。この会議の後で、連絡先情報をメールで送ります。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"完璧です、ありがとう。オンボーディング期間中の休暇申請手続きについても少し不明確なのですが。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:03:34.422Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What does the woman inform the man about the training schedule?\nOptions:\nA: It starts tomorrow.\nB: It starts next Monday.\nC: It starts next month.\nD: It starts next weekend.\n\nQuestion 2: What does the man want to know about technical issues?\nOptions:\nA: Who can fix his computer immediately.\nB: Who to contact for IT support.\nC: How to reset his computer.\nD: How to upgrade his software.\n\nQuestion 3: What does the woman promise to do after the meeting?\nOptions:\nA: Provide a printed schedule.\nB: Email contact details for IT support.\nC: Arrange a meeting with the manager.\nD: Submit his leave request.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:03:40.460Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性は男性に研修のスケジュールについて何を伝えていますか？\",\n      \"optionTranslations\": [\n        \"A: 明日開始すると伝えています。\",\n        \"B: 次の月曜日に開始すると伝えています。\",\n        \"C: 来月開始すると伝えています。\",\n        \"D: 次の週末に開始すると伝えています。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性は技術的な問題について何を知りたがっていますか？\",\n      \"optionTranslations\": [\n        \"A: コンピュータをすぐに修理できる人。\",\n        \"B: ITサポートの連絡先。\",\n        \"C: コンピュータのリセット方法。\",\n        \"D: ソフトウェアのアップグレード方法。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"女性は会議の後に何を約束していますか？\",\n      \"optionTranslations\": [\n        \"A: 印刷されたスケジュールを提供する。\",\n        \"B: ITサポートの連絡先をメール送信する。\",\n        \"C: マネージャーとの会議を手配する。\",\n        \"D: 休暇申請を提出する。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

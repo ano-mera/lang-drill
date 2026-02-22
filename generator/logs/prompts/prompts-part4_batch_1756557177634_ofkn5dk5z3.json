@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": "2025-08-30T12:32:57.643Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:32:57.672Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Company policy or procedure change (方針変更・社内通知)\n【Industry】: Entertainment and Media (エンタメ・メディア)\n【Difficulty】: hard\n【Question Types】: intended_audience, main_purpose, next_action\n【Correct Answer Positions】: Question 1=C, Question 2=C, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:33:08.031Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"John\",\n      \"role\": \"HR Manager\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, everyone. As part of our ongoing efforts to enhance workplace flexibility, we are implementing a new policy effective next month. All employees will now have the option to work from home up to two days per week. To facilitate this transition, we will provide guidance and resources on how to set up an efficient home office environment. Additionally, departmental managers will work with their teams to coordinate schedules and ensure we maintain productivity and collaboration. We recognize the importance of flexibility in today’s work environment, especially in our industry. More details will be shared in an upcoming email. Your cooperation and feedback during this transition are greatly appreciated.\",\n    \"topic\": \"Introduction of a new work-from-home policy\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is the intended audience for this announcement?\",\n      \"options\": [\"Clients of the company\", \"Media partners\", \"Employees of the company\", \"Investors\"],\n      \"correct\": \"Employees of the company\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチは従業員に向けた新しい在宅勤務ポリシーの案内であり、雇われている人々への情報です。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\n        \"To introduce a new software tool\",\n        \"To announce a company-wide training session\",\n        \"To announce the implementation of a new work-from-home policy\",\n        \"To inform about a merger with another company\"\n      ],\n      \"correct\": \"To announce the implementation of a new work-from-home policy\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチの主な目的は、新しい在宅勤務ポリシーの実施を通知することです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What should employees expect to receive next?\",\n      \"options\": [\n        \"A calendar invite to a meeting\",\n        \"A survey about office facilities\",\n        \"A request to update their contact information\",\n        \"An email with more details on the policy\"\n      ],\n      \"correct\": \"An email with more details on the policy\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、今後の詳細がメールで送信されると述べています。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:33:08.032Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood afternoon, everyone. As part of our ongoing efforts to enhance workplace flexibility, we are implementing a new policy effective next month. All employees will now have the option to work from home up to two days per week. To facilitate this transition, we will provide guidance and resources on how to set up an efficient home office environment. Additionally, departmental managers will work with their teams to coordinate schedules and ensure we maintain productivity and collaboration. We recognize the importance of flexibility in today’s work environment, especially in our industry. More details will be shared in an upcoming email. Your cooperation and feedback during this transition are greatly appreciated.\n\nQuestions and Options:\nQuestion 1: Who is the intended audience for this announcement?\nOptions:\nA: Clients of the company\nB: Media partners\nC: Employees of the company\nD: Investors\n\nQuestion 2: What is the main purpose of this announcement?\nOptions:\nA: To introduce a new software tool\nB: To announce a company-wide training session\nC: To announce the implementation of a new work-from-home policy\nD: To inform about a merger with another company\n\nQuestion 3: What should employees expect to receive next?\nOptions:\nA: A calendar invite to a meeting\nB: A survey about office facilities\nC: A request to update their contact information\nD: An email with more details on the policy\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:33:20.470Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆さん、こんにちは。職場での柔軟性を高めるための取り組みの一環として、来月から新しい方針を導入します。すべての従業員は、週に最大2日間、在宅勤務のオプションを利用できるようになります。この移行を円滑に進めるために、効率的なホームオフィス環境を整えるためのガイダンスとリソースを提供します。また、各部署のマネージャーがチームと協力してスケジュールを調整し、生産性とコラボレーションを維持できるようにします。特に我々の業界において、柔軟性が重要であることを認識しています。詳細は今後のメールでお知らせします。この移行期間中のご協力とフィードバックを心より感謝いたします。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"この発表の対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"会社の顧客\",\n        \"メディアパートナー\",\n        \"会社の従業員\",\n        \"投資家\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この発表の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しいソフトウェアツールを紹介すること\",\n        \"全社向けの研修セッションを発表すること\",\n        \"新しい在宅勤務方針の実施を発表すること\",\n        \"他社との合併について知らせること\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"従業員は次に何を受け取ることを期待すべきですか？\",\n      \"optionTranslations\": [\n        \"会議へのカレンダー招待\",\n        \"オフィス設備に関するアンケート\",\n        \"連絡先情報を更新するための依頼\",\n        \"方針に関する詳細が書かれたメール\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

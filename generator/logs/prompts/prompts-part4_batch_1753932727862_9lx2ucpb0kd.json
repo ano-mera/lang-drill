@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-07-31T03:32:07.866Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-07-31T03:32:07.871Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Tour or facility guide (施設や観光地のガイド)\n【Industry】: Hospitality (宿泊・観光業)\n【Difficulty】: medium\n【Question Types】: next_action, detail, detail\n【Correct Answer Positions】: Question 1=D, Question 2=D, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T03:32:18.765Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Guide\",\n      \"role\": \"Tour guide\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Welcome to the Grandview Hotel. Before we begin our tour, please make sure to grab a brochure from the reception desk. We'll start with the lobby, where you can see our award-winning art installations. Afterward, we'll head to the rooftop garden, which offers a stunning view of the city and is open to guests until 10 PM. Don't forget to visit our restaurant on the third floor, known for its exquisite local cuisine. Finally, for those interested in fitness, our gym is located on the first floor and is equipped with state-of-the-art machines.\",\n    \"topic\": \"Tour of the Grandview Hotel\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What will the group do after visiting the lobby?\",\n      \"options\": [\n        \"Visit the restaurant on the third floor.\",\n        \"Go to the gym on the first floor.\",\n        \"Pick up a brochure from the reception.\",\n        \"Head to the rooftop garden.\"\n      ],\n      \"correct\": \"Head to the rooftop garden.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、ロビーの後に屋上庭園に行くことが述べられているため。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Where can guests find the hotel's gym?\",\n      \"options\": [\n        \"On the rooftop.\",\n        \"On the second floor.\",\n        \"In the basement.\",\n        \"On the first floor.\"\n      ],\n      \"correct\": \"On the first floor.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、ジムが一階にあると述べられている。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the restaurant on the third floor known for?\",\n      \"options\": [\n        \"International cuisine.\",\n        \"Breakfast buffets.\",\n        \"Live music performances.\",\n        \"Exquisite local cuisine.\"\n      ],\n      \"correct\": \"Exquisite local cuisine.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、三階のレストランが地元の料理で知られていると述べられている。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T03:32:18.767Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: tour_guide\nIndustry: hospitality\nSpeaker Role: Tour guide\nTopic: Tour of the Grandview Hotel\n\nSpeech Text:\nWelcome to the Grandview Hotel. Before we begin our tour, please make sure to grab a brochure from the reception desk. We'll start with the lobby, where you can see our award-winning art installations. Afterward, we'll head to the rooftop garden, which offers a stunning view of the city and is open to guests until 10 PM. Don't forget to visit our restaurant on the third floor, known for its exquisite local cuisine. Finally, for those interested in fitness, our gym is located on the first floor and is equipped with state-of-the-art machines.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T03:32:21.701Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ツアーガイド\",\n  \"textTranslation\": \"グランドビュー ホテルへようこそ。ツアーを始める前に、フロントデスクでパンフレットをお取りください。まずはロビーから始めます。ここでは受賞歴のあるアートインスタレーションをご覧いただけます。その後、屋上庭園に向かいましょう。そこからは街の素晴らしい景観を楽しむことができ、午後10時まで宿泊客に開放されています。3階にあるレストランにもぜひお立ち寄りください。こちらは美味しい地元料理で知られています。最後に、フィットネスに興味がある方には、1階に最新機器を備えたジムがございます。\",\n  \"topicTranslation\": \"グランドビュー ホテルのツアー\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T03:32:21.703Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What will the group do after visiting the lobby?\nOptions:\nA: Visit the restaurant on the third floor.\nB: Go to the gym on the first floor.\nC: Pick up a brochure from the reception.\nD: Head to the rooftop garden.\n\nQuestion 2: Where can guests find the hotel's gym?\nOptions:\nA: On the rooftop.\nB: On the second floor.\nC: In the basement.\nD: On the first floor.\n\nQuestion 3: What is the restaurant on the third floor known for?\nOptions:\nA: International cuisine.\nB: Breakfast buffets.\nC: Live music performances.\nD: Exquisite local cuisine.\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T03:32:25.989Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: グループはロビーを訪れた後に何をしますか？\",\n      \"optionTranslations\": [\n        \"A: 3階のレストランを訪れる。\",\n        \"B: 1階のジムに行く。\",\n        \"C: 受付でパンフレットを受け取る。\",\n        \"D: 屋上庭園に向かう。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: ゲストはホテルのジムをどこで見つけることができますか？\",\n      \"optionTranslations\": [\n        \"A: 屋上に。\",\n        \"B: 2階に。\",\n        \"C: 地下に。\",\n        \"D: 1階に。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: 3階のレストランは何で有名ですか？\",\n      \"optionTranslations\": [\n        \"A: インターナショナル料理。\",\n        \"B: 朝食ビュッフェ。\",\n        \"C: ライブ音楽公演。\",\n        \"D: 最高の地元料理。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

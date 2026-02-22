@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-18T18:35:04.721Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":5,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 5,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:35:04.760Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: schedule_adjustment\n- 業種: food_service (Food and Beverage)\n- 正解位置: 問題1はC、問題2はA、問題3はA\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はFood and Beverage業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: C位置、問題2: A位置、問題3: A位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:35:16.561Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "{\n  \"scenario\": \"schedule_adjustment\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"James\", \"role\": \"Restaurant Manager\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"Emily\", \"role\": \"Waitress\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Emily, can we have a quick chat about your schedule this week?\"},\n    {\"speaker\": \"B\", \"text\": \"Sure, James. Is there any specific day you wanted to discuss?\"},\n    {\"speaker\": \"A\", \"text\": \"Yes, I noticed that you’re scheduled to work on Friday morning, but we have a large banquet booked for Friday evening. Could you switch to the evening shift instead?\"},\n    {\"speaker\": \"B\", \"text\": \"I think that should be fine, but I’ll need to check if I can rearrange my plans. When do you need to know by?\"},\n    {\"speaker\": \"A\", \"text\": \"If you could confirm by tomorrow, that would be great. We’ll need all hands on deck to make sure everything runs smoothly.\"},\n    {\"speaker\": \"B\", \"text\": \"Okay, I’ll let you know by tomorrow. Anything else you’d like to address?\"},\n    {\"speaker\": \"A\", \"text\": \"No, that’s all for now. Thanks for being flexible.\"},\n    {\"speaker\": \"B\", \"text\": \"No problem. I’ll see you later, then.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What does the man ask the woman to do?\",\n      \"options\": [\n        \"Come in earlier than usual.\",\n        \"Trade shifts with another employee.\",\n        \"Switch to the evening shift on Friday.\",\n        \"Take a day off.\"\n      ],\n      \"correct\": \"Switch to the evening shift on Friday.\",\n      \"explanation\": \"男性は金曜日の朝から夕方のシフトに変えるようお願いしています。\",\n      \"questionType\": \"Request\"\n    },\n    {\n      \"question\": \"By when does the man need confirmation from the woman?\",\n      \"options\": [\n        \"By tomorrow.\",\n        \"By the end of the week.\",\n        \"By today.\",\n        \"By next Monday.\"\n      ],\n      \"correct\": \"By tomorrow.\",\n      \"explanation\": \"男性は確認を明日までに欲しいと言っています。\",\n      \"questionType\": \"Deadline\"\n    },\n    {\n      \"question\": \"Why does the man want the woman to change her shift?\",\n      \"options\": [\n        \"Because there is a large banquet scheduled for Friday evening.\",\n        \"Because another employee is on leave.\",\n        \"Because the morning shift is overstaffed.\",\n        \"Because the evening shift pays more.\"\n      ],\n      \"correct\": \"Because there is a large banquet scheduled for Friday evening.\",\n      \"explanation\": \"男性は金曜日の夕方に大きな宴会が予定されているため、夕方のシフトに変更する必要があると説明しています。\",\n      \"questionType\": \"Reason\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:35:16.562Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: schedule_adjustment\n\nConversation:\nA: Emily, can we have a quick chat about your schedule this week?\nB: Sure, James. Is there any specific day you wanted to discuss?\nA: Yes, I noticed that you’re scheduled to work on Friday morning, but we have a large banquet booked for Friday evening. Could you switch to the evening shift instead?\nB: I think that should be fine, but I’ll need to check if I can rearrange my plans. When do you need to know by?\nA: If you could confirm by tomorrow, that would be great. We’ll need all hands on deck to make sure everything runs smoothly.\nB: Okay, I’ll let you know by tomorrow. Anything else you’d like to address?\nA: No, that’s all for now. Thanks for being flexible.\nB: No problem. I’ll see you later, then.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:35:22.409Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"スケジュール調整\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"エミリー、今週のあなたのスケジュールについて少しお話しできますか？\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"もちろんです、ジェームズ。具体的に話したい日がありますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"はい、金曜日の午前にシフトが入っているのを確認したのですが、金曜日の夕方に大きな宴会の予約が入っています。代わりに夕方のシフトに変更できますか？\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"それで大丈夫だと思いますが、予定を調整できるか確認が必要です。いつまでにお知らせすればいいですか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"明日までに確認していただけると助かります。すべてが円滑に進むようにみんなの協力が必要です。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"わかりました、明日までにお知らせします。他に何かありますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"いえ、今のところそれだけです。柔軟に対応してくれてありがとう。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"問題ないです。それでは、また後でお会いしましょう。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:35:22.410Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What does the man ask the woman to do?\nOptions:\nA: Come in earlier than usual.\nB: Trade shifts with another employee.\nC: Switch to the evening shift on Friday.\nD: Take a day off.\n\nQuestion 2: By when does the man need confirmation from the woman?\nOptions:\nA: By tomorrow.\nB: By the end of the week.\nC: By today.\nD: By next Monday.\n\nQuestion 3: Why does the man want the woman to change her shift?\nOptions:\nA: Because there is a large banquet scheduled for Friday evening.\nB: Because another employee is on leave.\nC: Because the morning shift is overstaffed.\nD: Because the evening shift pays more.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:35:26.682Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"男性は女性に何を頼んでいますか？\",\n      \"optionTranslations\": [\n        \"いつもより早く来る\",\n        \"他の従業員とシフトを交換する\",\n        \"金曜日の夜勤に変更する\",\n        \"休暇を取る\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性はいつまでに女性からの確認が必要ですか？\",\n      \"optionTranslations\": [\n        \"明日まで\",\n        \"今週末まで\",\n        \"今日中\",\n        \"来週の月曜日まで\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性はなぜ女性にシフトを変えてほしいのですか？\",\n      \"optionTranslations\": [\n        \"金曜夜に大きな宴会の予定があるから\",\n        \"別の従業員が休暇中だから\",\n        \"朝のシフトに人が多すぎるから\",\n        \"夜勤の方が給料が高いから\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

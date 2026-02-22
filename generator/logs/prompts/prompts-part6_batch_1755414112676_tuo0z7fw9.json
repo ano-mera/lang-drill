@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-08-17T07:01:52.679Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を___で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: medium\n- 文書タイプ: memo (Internal Memo)\n- ビジネストピック: schedule_changes (スケジュール変更)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: C\n- 空欄2の正解位置: C\n- 空欄3の正解位置: B\n- 空欄4の正解位置: A\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: sentence_insertion (文挿入)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: grammar (文法・語形)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T07:02:03.811Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "```json\n{\n  \"documentType\": \"Internal Memo\",\n  \"title\": \"Schedule Changes for Project Alpha\",\n  \"fullText\": \"To: All Project Alpha Team Members\\nFrom: Jane Doe, Project Manager\\nDate: November 15, 2023\\nSubject: Schedule Changes Notice\\n\\nHello Team,\\n\\nDue to unforeseen circumstances, there are some updates to our project timeline that need to be ___1___. Initially, we planned to finalize the upcoming milestones by December 5th. ___2___. Therefore, we have decided to move the deadline to December 12th to ensure high quality in our deliverables.\\n\\nPlease adjust your schedules accordingly and make sure to communicate this change with your respective teams. Furthermore, there will be a meeting on December 1st to discuss the progress and address any concerns.\\n\\nThank you for your understanding and cooperation as we work towards the completion of Project Alpha.\\n\\nBest regards,\\n\\nJane Doe\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"delayed\", \"ignored\", \"communicated\", \"rejected\"],\n      \"correct\": \"C\",\n      \"explanation\": \"この文脈では、スケジュール変更が他のチームメンバーに対して『伝えられる(communicated)』必要があるため、Cが正解です。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"However, the client has requested more time for review.\",\n        \"This will negatively impact our client's satisfaction.\",\n        \"Our team's effort is greatly appreciated.\",\n        \"We have completed the previous phase ahead of schedule.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"この状況では、遅延によって悪影響が出ないようにするため、Cの文がスケジュールの変更の背景として整合性があります。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\"oversee\", \"ensure\", \"forbid\", \"neglect\"],\n      \"correct\": \"B\",\n      \"explanation\": \"ここでは『高品質を確保するために』という文脈が求められているため、Bの『ensure』が適切です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\"adjust\", \"adjusted\", \"adjusting\", \"adjustment\"],\n      \"correct\": \"A\",\n      \"explanation\": \"この文では『予定を調整してください』という命令をしているため、動詞の原形の『adjust』が正しい選択です。\",\n      \"questionType\": \"grammar\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"topic\": \"schedule_changes\",\n  \"wordCount\": 197\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T07:02:03.812Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 選択肢は1-4語の簡潔な日本語に翻訳\n3. 選択肢に説明や解説は絶対に不要\n4. 文脈に応じた最も適切な意味のみ\n5. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄は___のまま）\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"空欄1を埋めてください\",\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Schedule Changes for Project Alpha\n\n文書全体：\nTo: All Project Alpha Team Members\nFrom: Jane Doe, Project Manager\nDate: November 15, 2023\nSubject: Schedule Changes Notice\n\nHello Team,\n\nDue to unforeseen circumstances, there are some updates to our project timeline that need to be ___1___. Initially, we planned to finalize the upcoming milestones by December 5th. ___2___. Therefore, we have decided to move the deadline to December 12th to ensure high quality in our deliverables.\n\nPlease adjust your schedules accordingly and make sure to communicate this change with your respective teams. Furthermore, there will be a meeting on December 1st to discuss the progress and address any concerns.\n\nThank you for your understanding and cooperation as we work towards the completion of Project Alpha.\n\nBest regards,\n\nJane Doe\n\n選択肢：\n空欄1: A. delayed, B. ignored, C. communicated, D. rejected\n空欄2: A. However, the client has requested more time for review., B. This will negatively impact our client's satisfaction., C. Our team's effort is greatly appreciated., D. We have completed the previous phase ahead of schedule.\n空欄3: A. oversee, B. ensure, C. forbid, D. neglect\n空欄4: A. adjust, B. adjusted, C. adjusting, D. adjustment\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T07:02:07.164Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"プロジェクト・アルファのスケジュール変更\",\n  \"contentTranslation\": \"To: プロジェクト・アルファ全メンバー\\nFrom: ジェーン・ドウ、プロジェクトマネージャー\\nDate: 2023年11月15日\\nSubject: スケジュール変更のお知らせ\\n\\nこんにちは、チームの皆さん。\\n\\n予期せぬ事情により、プロジェクトのタイムラインにいくつかの変更があり、これを___1___必要があります。当初、私たちは12月5日までに次のマイルストーンを完了する予定でした。___2___. したがって、提供物の高品質を確保するために締め切りを12月12日に変更することにしました。\\n\\nそれに応じてスケジュールを___3___し、この変更を各チームに伝えるようにしてください。さらに、進捗状況を話し合い、懸念事項に対処するために、12月1日に会議を行います。\\n\\nプロジェクト・アルファの完了に向けてご理解とご協力をいただきありがとうございます。\\n\\nよろしくお願いします。\\n\\nジェーン・ドウ\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"空欄1を埋めてください\",\n      \"optionTranslations\": [\"伝達\", \"無視\", \"伝え\", \"拒否\"]\n    },\n    {\n      \"questionTranslation\": \"空欄2を埋めてください\",\n      \"optionTranslations\": [\"しかし、クライアントがレビューに時間を求めています。\", \"これは顧客の満足度に悪影響を与えるでしょう。\", \"チームの努力は非常に評価されています。\", \"前のフェーズを予定より早く完了しました。\"]\n    },\n    {\n      \"questionTranslation\": \"空欄3を埋めてください\",\n      \"optionTranslations\": [\"調整\", \"確認\", \"禁止\", \"無視\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

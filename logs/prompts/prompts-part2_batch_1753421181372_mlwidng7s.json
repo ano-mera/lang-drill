@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T05:27:57.973Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "その顧客はメールでのコミュニケーションを好みます。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:27:58.083Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "会議は明日に予定されていました。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:27:58.687Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "私たちはこの問題を技術チームに報告しました。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  }
+]

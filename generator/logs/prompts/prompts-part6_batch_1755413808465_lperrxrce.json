@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-08-17T06:56:48.468Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を___で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: customer_complaints (顧客苦情)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: C\n- 空欄2の正解位置: D\n- 空欄3の正解位置: C\n- 空欄4の正解位置: D\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: sentence_insertion (文挿入)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: context (文脈理解)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T06:56:55.539Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "```json\n{\n  \"documentType\": \"article\",\n  \"title\": \"Handling Customer Complaints Efficiently\",\n  \"fullText\": \"In any business, ___ customer complaints is crucial for maintaining a good reputation. Many companies underestimate the impact of a single unhappy customer. Often, resolving complaints quickly can turn a negative situation into a positive one. ___, training staff on effective communication can significantly reduce future issues. Listening to the customer's concerns and showing empathy are key skills. The use of polite language and offering realistic solutions can also ___ complaints in a satisfactory manner. Ultimately, a company's ability to manage complaints effectively often determines its overall success. Companies should ___ focus not only on providing excellent products but also superior service.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"handle\", \"handles\", \"handling\", \"handled\"],\n      \"correct\": \"C\",\n      \"explanation\": \"文の主語が動名詞を要求するため、「handling」が正しいです。他の選択肢は動詞の形で文法的に不正確です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"It is important to ignore minor issues.\",\n        \"This approach often leads to more complaints.\",\n        \"Customers rarely appreciate extra effort.\",\n        \"Furthermore, training staff on effective communication can significantly reduce future issues.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"文章の流れとして、スタッフのトレーニングに関する有効性を述べる内容が適切です。選択肢Dが文脈に合っています。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\"address\", \"reject\", \"solve\", \"ignore\"],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈上、苦情を「解決する」ことが求められているので、『solve』が最も適切です。他の選択肢はコンテクストに合いません。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\"never\", \"randomly\", \"seldom\", \"always\"],\n      \"correct\": \"D\",\n      \"explanation\": \"ここでは、常に優れたサービスを提供することの重要性を述べたいので、「always」が最も適切です。\",\n      \"questionType\": \"context\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"customer_complaints\",\n  \"wordCount\": 121\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T06:56:55.540Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 選択肢は1-4語の簡潔な日本語に翻訳\n3. 選択肢に説明や解説は絶対に不要\n4. 文脈に応じた最も適切な意味のみ\n5. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄は___のまま）\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"空欄1を埋めてください\",\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Handling Customer Complaints Efficiently\n\n文書全体：\nIn any business, ___ customer complaints is crucial for maintaining a good reputation. Many companies underestimate the impact of a single unhappy customer. Often, resolving complaints quickly can turn a negative situation into a positive one. ___, training staff on effective communication can significantly reduce future issues. Listening to the customer's concerns and showing empathy are key skills. The use of polite language and offering realistic solutions can also ___ complaints in a satisfactory manner. Ultimately, a company's ability to manage complaints effectively often determines its overall success. Companies should ___ focus not only on providing excellent products but also superior service.\n\n選択肢：\n空欄1: A. handle, B. handles, C. handling, D. handled\n空欄2: A. It is important to ignore minor issues., B. This approach often leads to more complaints., C. Customers rarely appreciate extra effort., D. Furthermore, training staff on effective communication can significantly reduce future issues.\n空欄3: A. address, B. reject, C. solve, D. ignore\n空欄4: A. never, B. randomly, C. seldom, D. always\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T06:56:59.248Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "```json\n{\n  \"titleTranslation\": \"顧客の苦情を効率的に処理する\",\n  \"contentTranslation\": \"どのビジネスにおいても、___顧客の苦情は良い評判を維持するために重要です。多くの企業は、一人の不満を持つ顧客の影響を過小評価しています。しばしば、迅速に苦情を解決することで、ネガティブな状況をポジティブなものに変えることができます。___、効果的なコミュニケーションについてスタッフを訓練することは、将来の問題を大幅に軽減することができます。顧客の懸念を聞いて共感を示すことが重要なスキルです。丁寧な言葉遣いと現実的な解決策を提示することも、満足のいく形で___苦情処理することができます。最終的には、苦情を効果的に管理する企業の能力が、全体的な成功を決定することが多いです。企業は、優れた製品を提供するだけでなく、優れたサービスにも___注力するべきです。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"空欄1を埋めてください\",\n      \"optionTranslations\": [\"処理すること\", \"処理する\", \"処理すること\", \"処理された\"]\n    },\n    {\n      \"questionTranslation\": \"空欄2を埋めてください\",\n      \"optionTranslations\": [\"小さな問題を無視することが重要です。\", \"このアプローチはしばしばさらなる苦情を引き起こします。\", \"顧客は追加の努力をめったに評価しません。\", \"さらに、効果的なコミュニケーションについてスタッフを訓練することが将来の問題を大幅に軽減できます。\"]\n    },\n    {\n      \"questionTranslation\": \"空欄3を埋めてください\",\n      \"optionTranslations\": [\"対処する\", \"拒否する\", \"解決する\", \"無視する\"]\n    },\n    {\n      \"questionTranslation\": \"空欄4を埋めてください\",\n      \"optionTranslations\": [\"決して\", \"ランダムに\", \"めったに\", \"常に\"]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

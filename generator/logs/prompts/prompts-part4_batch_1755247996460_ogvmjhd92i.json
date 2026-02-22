@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-15T08:53:16.464Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"easy\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "easy",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:53:16.474Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Tour or facility guide (施設や観光地のガイド)\n【Industry】: Personal Care Services (美容・パーソナルケア)\n【Difficulty】: easy\n【Question Types】: inference, inference, main_purpose\n【Correct Answer Positions】: Question 1=D, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:54:28.041Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Guide\",\n      \"role\": \"Spa guide\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Welcome to Harmony Springs Spa. I'm Mia, your guide today, and I'll give you a short tour so you know where everything is. On your left is the reception desk; please try to check in about ten minutes early for your appointment. Behind it you'll find the lockers with fresh towels and sanitized slippers for each guest. The quiet room is just down the hall; please keep your phone on silent there so everyone can relax. Our hair studio is upstairs, and the nail lounge is next to the juice bar where you can order fruit water. After your service, you're welcome to help yourself to herbal tea; the cups are by the window. If you need help booking or have questions, meet me at the front desk after the tour.\",\n    \"topic\": \"Spa facility tour and visitor orientation\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the spa?\",\n      \"options\": [\n        \"It operates until midnight.\",\n        \"It specializes only in hair services.\",\n        \"Guests can talk loudly in the quiet room.\",\n        \"It values cleanliness and a calm environment.\"\n      ],\n      \"correct\": \"It values cleanliness and a calm environment.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"消毒済みスリッパや静かな部屋、携帯をサイレントにするお願いから、清潔さと落ち着いた環境を重視していると推測できるため。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What are guests expected to do before their treatments?\",\n      \"options\": [\n        \"Go upstairs to the hair studio first.\",\n        \"Order a drink at the juice bar.\",\n        \"Call the spa to confirm their appointment.\",\n        \"Store belongings and change into provided slippers.\"\n      ],\n      \"correct\": \"Store belongings and change into provided slippers.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"受付の後ろにロッカーがあり、各ゲスト用の消毒済みスリッパがあると述べているため、荷物を預けてスリッパに履き替えることが期待されると推測できる。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of the talk?\",\n      \"options\": [\n        \"To advertise a new membership program.\",\n        \"To apologize for a service delay.\",\n        \"To guide visitors through the spa’s facilities.\",\n        \"To announce a temporary closure.\"\n      ],\n      \"correct\": \"To guide visitors through the spa’s facilities.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"話者は各エリアの場所や利用方法を簡単に案内しており、施設案内が主目的である。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:54:28.043Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: tour_guide\nIndustry: personal_care\nSpeaker Role: Spa guide\nTopic: Spa facility tour and visitor orientation\n\nSpeech Text:\nWelcome to Harmony Springs Spa. I'm Mia, your guide today, and I'll give you a short tour so you know where everything is. On your left is the reception desk; please try to check in about ten minutes early for your appointment. Behind it you'll find the lockers with fresh towels and sanitized slippers for each guest. The quiet room is just down the hall; please keep your phone on silent there so everyone can relax. Our hair studio is upstairs, and the nail lounge is next to the juice bar where you can order fruit water. After your service, you're welcome to help yourself to herbal tea; the cups are by the window. If you need help booking or have questions, meet me at the front desk after the tour.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:55:25.990Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ツアーガイド\",\n  \"textTranslation\": \"ハーモニー・スプリングス・スパへようこそ。本日ご案内を担当するミアです。館内の位置がわかるよう、簡単にご案内いたします。左手がフロントでございます。ご予約のお時間の約10分前までにチェックインをお済ませください。フロントの奥にロッカーがあり、ゲストの皆さま用に清潔なタオルと消毒済みのスリッパをご用意しています。クワイエットルームは廊下の先にございます。皆さまがくつろげるよう、室内では携帯電話をマナーモードに設定してください。ヘアスタジオは2階にございます。ネイルラウンジはジュースバーのお隣にあり、そこでフルーツウォーターをご注文いただけます。施術後はハーブティーをご自由にお召し上がりください。カップは窓際にございます。ご予約の手配やご質問がございましたら、ツアー終了後にフロントで私にお声がけください。\",\n  \"topicTranslation\": \"スパ施設のご案内と来館者向けオリエンテーション\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:55:25.991Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What can be inferred about the spa?\nOptions:\nA: It operates until midnight.\nB: It specializes only in hair services.\nC: Guests can talk loudly in the quiet room.\nD: It values cleanliness and a calm environment.\n\nQuestion 2: What are guests expected to do before their treatments?\nOptions:\nA: Go upstairs to the hair studio first.\nB: Order a drink at the juice bar.\nC: Call the spa to confirm their appointment.\nD: Store belongings and change into provided slippers.\n\nQuestion 3: What is the main purpose of the talk?\nOptions:\nA: To advertise a new membership program.\nB: To apologize for a service delay.\nC: To guide visitors through the spa’s facilities.\nD: To announce a temporary closure.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:56:09.399Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このスパについて何がわかりますか。\",\n      \"optionTranslations\": [\n        \"午前0時まで営業している\",\n        \"ヘアサービスのみを扱っている\",\n        \"静かな部屋では大声で話してよい\",\n        \"清潔さと落ち着いた雰囲気を重視している\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"施術の前に、ゲストは何をするよう求められていますか。\",\n      \"optionTranslations\": [\n        \"まず上階のヘアスタジオに行く\",\n        \"ジュースバーで飲み物を注文する\",\n        \"スパに電話して予約を確認する\",\n        \"所持品を保管し、用意されたスリッパに履き替える\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この話の主な目的は何ですか。\",\n      \"optionTranslations\": [\n        \"新しい会員プログラムを宣伝すること\",\n        \"サービスの遅れを謝罪すること\",\n        \"来店客にスパの施設を案内すること\",\n        \"一時休業を告知すること\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

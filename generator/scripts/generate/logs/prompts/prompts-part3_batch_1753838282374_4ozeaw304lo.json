@@ -1,0 +1,87 @@
+[
+  {
+    "timestamp": "2025-07-30T01:18:02.378Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1
+    }
+  },
+  {
+    "timestamp": "2025-07-30T01:18:02.410Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: workplace_discussion (具体的な状況: Client visit preparation)\n- 正解位置: 問題1はB、問題2はC、問題3はB\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオに適した自然な英語の会話を作成（特に「Client visit preparation」の具体的な状況を反映）\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: C位置、問題3: B位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T01:18:12.669Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"workplace_discussion\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Mark\", \"role\": \"Project Manager\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"Susan\", \"role\": \"Marketing Specialist\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Susan, are we ready for the client's visit tomorrow?\"},\n    {\"speaker\": \"B\", \"text\": \"I believe so, Mark. I've prepared the presentation materials and arranged the meeting room.\"},\n    {\"speaker\": \"A\", \"text\": \"Great. Have you also confirmed the catering services?\"},\n    {\"speaker\": \"B\", \"text\": \"Yes, I confirmed it with the caterers this morning. They will deliver lunch at 12:30 PM.\"},\n    {\"speaker\": \"A\", \"text\": \"Perfect. Please make sure to have the promotional brochures ready too.\"},\n    {\"speaker\": \"B\", \"text\": \"I will print them after this meeting and place them in the meeting room.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What did the woman confirm this morning?\",\n      \"options\": [\"The meeting room reservation\", \"The catering services\", \"The presentation materials\", \"The client's arrival time\"],\n      \"correct\": \"The catering services\",\n      \"explanation\": \"会話の中で、女性は「Yes, I confirmed it with the caterers this morning」と述べており、ケータリングサービスの確認を行ったことがわかります。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"question\": \"When will the lunch be delivered?\",\n      \"options\": [\"At 12:00 PM\", \"At 1:00 PM\", \"At 12:30 PM\", \"At 1:30 PM\"],\n      \"correct\": \"At 12:30 PM\",\n      \"explanation\": \"女性は、「They will deliver lunch at 12:30 PM」と具体的な時間を述べています。\",\n      \"questionType\": \"time\"\n    },\n    {\n      \"question\": \"What does the man ask the woman to have ready?\",\n      \"options\": [\"The meeting agenda\", \"The promotional brochures\", \"The client list\", \"The financial report\"],\n      \"correct\": \"The promotional brochures\",\n      \"explanation\": \"男性は、「Please make sure to have the promotional brochures ready too」と依頼しており、プロモーション用のパンフレットを準備するよう求めています。\",\n      \"questionType\": \"request\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T01:18:12.676Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: workplace_discussion\n\nConversation:\nA: Susan, are we ready for the client's visit tomorrow?\nB: I believe so, Mark. I've prepared the presentation materials and arranged the meeting room.\nA: Great. Have you also confirmed the catering services?\nB: Yes, I confirmed it with the caterers this morning. They will deliver lunch at 12:30 PM.\nA: Perfect. Please make sure to have the promotional brochures ready too.\nB: I will print them after this meeting and place them in the meeting room.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T01:18:15.975Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"職場での会話\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"スーザン、明日のクライアントの訪問の準備はできていますか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"多分大丈夫だと思います、マーク。プレゼンテーション資料を準備し、会議室も手配しました。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"素晴らしい。ケータリングサービスの確認もしましたか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"はい、今朝ケータリング業者に確認しました。12時30分にランチを届けてくれます。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"完璧です。プロモーション用のパンフレットも用意しておいてください。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"この会議の後で印刷して、会議室に置いておきます。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T01:18:15.977Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What did the woman confirm this morning?\nOptions:\nA: The meeting room reservation\nB: The catering services\nC: The presentation materials\nD: The client's arrival time\n\nQuestion 2: When will the lunch be delivered?\nOptions:\nA: At 12:00 PM\nB: At 1:00 PM\nC: At 12:30 PM\nD: At 1:30 PM\n\nQuestion 3: What does the man ask the woman to have ready?\nOptions:\nA: The meeting agenda\nB: The promotional brochures\nC: The client list\nD: The financial report\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-07-30T01:18:21.420Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性は今朝何を確認しましたか？\",\n      \"optionTranslations\": [\n        \"会議室の予約\",\n        \"ケータリングサービス\",\n        \"プレゼンテーション資料\",\n        \"クライアントの到着時間\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"昼食はいつ配達されますか？\",\n      \"optionTranslations\": [\n        \"午後12時\",\n        \"午後1時\",\n        \"午後12時30分\",\n        \"午後1時30分\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性は女性に何を準備しておくよう頼みましたか？\",\n      \"optionTranslations\": [\n        \"会議の議題\",\n        \"プロモーション用パンフレット\",\n        \"クライアントリスト\",\n        \"財務報告書\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

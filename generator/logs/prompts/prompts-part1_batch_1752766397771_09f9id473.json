@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2025-07-17T15:33:17.775Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are an expert TOEIC Part 1 test creator specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate TOEIC Part 1 multiple-choice questions. These scenes should depict realistic workplace, daily life, or common situations that are appropriate for TOEIC testing.\n\nGuidelines:\n1. Create scenes that are visually descriptive and action-oriented\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate for the specified difficulty level\n4. Ensure scenes are culturally neutral and professional\n5. Focus on observable actions and situations\n\nScene Topics (choose from these or create similar):\n- Office environments (meetings, presentations, desk work)\n- Transportation (airports, train stations, buses)\n- Retail and service (shopping, restaurants, banks)\n- Construction and maintenance (building, repair work)\n- Healthcare (hospitals, clinics, medical consultations)\n- Education (classrooms, libraries, training sessions)\n- Manufacturing (factories, assembly lines, quality control)\n- Outdoor activities (parks, gardens, sports facilities)\n- Public spaces (lobbies, waiting areas, reception desks)\n- Technology and equipment (computers, machinery, tools)\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed description of the scene in English\",\n    \"difficulty\": \"easy/medium/hard\",\n    \"topic\": \"Scene category from the list above\"\n  }\n]\n\nGenerate 1 detailed scene description(s) for TOEIC Part 1 questions with difficulty level: easy focusing on the topic: office.\n\nEach scene should be 1-2 sentences long and describe a specific moment that could be captured in a photograph. Include specific actions, people, and environmental details that would be suitable for multiple-choice questions about what people are doing or what is happening in the scene.",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  },
+  {
+    "timestamp": "2025-07-17T15:33:20.499Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"A group of four people is sitting around a conference table in a brightly lit office room. One person, a woman in a blue blazer, is standing at the head of the table, pointing at a chart displayed on a projector screen, while the others are taking notes on their laptops.\",\n    \"difficulty\": \"easy\",\n    \"topic\": \"office\"\n  }\n]",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  },
+  {
+    "timestamp": "2025-07-17T15:33:20.501Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice questions based on scene descriptions.\n\nTOEIC Part 1 Format:\n- One question about what is happening in the scene\n- Four answer choices (A, B, C, D)\n- Only one correct answer\n- Distractors should be plausible but clearly incorrect\n\nQuestion Types:\n1. Action questions: \"What is the person doing?\"\n2. Location questions: \"Where is this taking place?\"\n3. Description questions: \"What can be seen in the scene?\"\n4. People questions: \"Who is in the scene?\"\n5. General questions: \"What is happening?\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable\n- Ensure only one answer is clearly correct\n\nReturn your response as JSON with this exact structure:\n{\n  \"question\": \"The question text\",\n  \"options\": [\"A) First option\", \"B) Second option\", \"C) Third option\", \"D) Fourth option\"],\n  \"correct\": \"A\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate a TOEIC Part 1 multiple-choice question based on this scene description:\n\nScene: \"A group of four people is sitting around a conference table in a brightly lit office room. One person, a woman in a blue blazer, is standing at the head of the table, pointing at a chart displayed on a projector screen, while the others are taking notes on their laptops.\"\nDifficulty: easy\nTopic: office\n\nGenerate one question with four multiple-choice options (A, B, C, D). The question should test comprehension of what is happening in the scene.",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  },
+  {
+    "timestamp": "2025-07-17T15:33:24.162Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"question\": \"What is the woman in the blue blazer doing?\",\n  \"options\": [\"A) She is pointing at a chart on a projector screen.\", \"B) She is taking notes on her laptop.\", \"C) She is sitting at the conference table.\", \"D) She is turning off the lights in the office.\"],\n  \"correct\": \"A\",\n  \"explanation\": \"The woman in the blue blazer is standing at the head of the table, pointing at a chart displayed on a projector screen, as described in the scene.\",\n  \"difficulty\": \"easy\",\n  \"questionType\": \"action\"\n}\n```",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  }
+]

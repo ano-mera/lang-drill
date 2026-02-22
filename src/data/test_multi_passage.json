@@ -1,0 +1,114 @@
+{
+  "passages": [
+    {
+      "id": "passage_multi_test",
+      "title": "Test Multi-Document Passage",
+      "type": "email",
+      "content": "",
+      "metadata": {
+        "difficulty": "medium",
+        "estimatedTime": 400,
+        "wordCount": 200,
+        "questionCount": 3,
+        "passageType": "multi_document",
+        "topic": "business_communication"
+      },
+      "isMultiDocument": true,
+      "documents": [
+        {
+          "id": "doc1",
+          "type": "email",
+          "title": "Meeting Request",
+          "content": "Subject: Quarterly Review Meeting\n\nDear Team,\n\nI would like to schedule our quarterly review meeting for next Friday, March 15th, at 2:00 PM in Conference Room A.\n\nPlease confirm your attendance by Wednesday, March 13th. We will review the Q1 performance metrics and discuss upcoming projects.\n\nBest regards,\nSarah Johnson\nProject Manager",
+          "contentTranslation": "件名：四半期レビューミーティング\n\n親愛なるチームの皆様、\n\n来週の金曜日、3月15日午後2時にカンファレンスルームAで四半期レビューミーティングを開催したいと思います。\n\n3月13日水曜日までに出席の確認をお願いします。Q1の業績指標をレビューし、今後のプロジェクトについて話し合います。\n\nよろしくお願いします。\nサラ・ジョンソン\nプロジェクトマネージャー"
+        },
+        {
+          "id": "doc2",
+          "type": "chart",
+          "title": "Q1 Performance Metrics",
+          "content": "Q1 2024 Performance Summary\n\nSales Target: $500,000\nActual Sales: $480,000\nAchievement Rate: 96%\n\nCustomer Satisfaction: 92%\nProject Completion Rate: 88%\n\nTop Performing Products:\n1. Product A - $180,000\n2. Product B - $150,000\n3. Product C - $120,000",
+          "contentTranslation": "2024年Q1業績サマリー\n\n売上目標：50万ドル\n実売上：48万ドル\n達成率：96%\n\n顧客満足度：92%\nプロジェクト完了率：88%\n\nトップ業績商品：\n1. 商品A - 18万ドル\n2. 商品B - 15万ドル\n3. 商品C - 12万ドル",
+          "hasChart": true,
+          "chart": {
+            "type": "table",
+            "title": "Q1 2024 Performance Metrics",
+            "description": "Summary of key performance indicators for Q1 2024",
+            "data": [
+              ["Metric", "Target", "Actual", "Achievement"],
+              ["Sales", "$500,000", "$480,000", "96%"],
+              ["Customer Satisfaction", "90%", "92%", "102%"],
+              ["Project Completion", "90%", "88%", "98%"]
+            ]
+          }
+        }
+      ],
+      "documentTypes": ["email", "chart"],
+      "questions": [
+        {
+          "id": "q1",
+          "question": "When is the quarterly review meeting scheduled?",
+          "options": [
+            "Wednesday, March 13th at 2:00 PM",
+            "Friday, March 15th at 2:00 PM",
+            "Friday, March 15th at 3:00 PM",
+            "Wednesday, March 13th at 3:00 PM"
+          ],
+          "correct": "B",
+          "explanation": "メールによると、四半期レビューミーティングは「next Friday, March 15th, at 2:00 PM」に予定されています。",
+          "questionTranslation": "四半期レビューミーティングはいつ予定されていますか？",
+          "optionTranslations": [
+            "3月13日水曜日午後2時",
+            "3月15日金曜日午後2時",
+            "3月15日金曜日午後3時",
+            "3月13日水曜日午後3時"
+          ],
+          "referenceDocuments": [0],
+          "crossReference": false
+        },
+        {
+          "id": "q2",
+          "question": "What was the actual sales achievement rate for Q1?",
+          "options": [
+            "88%",
+            "92%",
+            "96%",
+            "102%"
+          ],
+          "correct": "C",
+          "explanation": "チャートによると、Q1の実売上は$480,000で、目標の$500,000に対して96%の達成率でした。",
+          "questionTranslation": "Q1の実際の売上達成率はどのくらいでしたか？",
+          "optionTranslations": [
+            "88%",
+            "92%",
+            "96%",
+            "102%"
+          ],
+          "referenceDocuments": [1],
+          "crossReference": false
+        },
+        {
+          "id": "q3",
+          "question": "Based on both documents, what will likely be discussed during the meeting?",
+          "options": [
+            "Only the customer satisfaction metrics",
+            "The Q1 performance metrics shown in the chart",
+            "Only the project completion rates",
+            "New employee hiring plans"
+          ],
+          "correct": "B",
+          "explanation": "メールでは「Q1 performance metrics」をレビューすると述べており、チャートにはQ1の業績指標が示されています。両方の資料から、会議でこれらの指標について話し合われることが分かります。",
+          "questionTranslation": "両方の資料に基づいて、会議で何について話し合われる可能性が高いですか？",
+          "optionTranslations": [
+            "顧客満足度指標のみ",
+            "チャートに示されているQ1業績指標",
+            "プロジェクト完了率のみ",
+            "新しい従業員の採用計画"
+          ],
+          "referenceDocuments": [0, 1],
+          "crossReference": true
+        }
+      ],
+      "contentTranslation": ""
+    }
+  ]
+}

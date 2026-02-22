@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-18T17:48:51.616Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:48:51.637Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- スピーカーの名前を本文に必ず入れる\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Training or orientation session (研修・オリエンテーション)\n【Industry】: Construction (建設業)\n【Difficulty】: medium\n【Question Types】: main_purpose, intended_audience, next_action\n【Correct Answer Positions】: Question 1=A, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:49:05.481Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Instructor\",\n      \"role\": \"Safety trainer\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good morning, everyone. I'm your safety trainer, Doug Martin, and today we'll be focusing on essential safety protocols on the construction site. Our main goal is to ensure that each of you understands and adheres to these safety measures to prevent accidents. We'll cover topics such as proper equipment handling, the importance of wearing protective gear, and emergency response procedures. After this session, you'll participate in a brief assessment to evaluate your understanding. It's crucial that you take this session seriously, as your safety and that of your co-workers depend on it. Please make sure to ask questions if anything is unclear.\",\n    \"topic\": \"Construction site safety training\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the speech?\",\n      \"options\": [\n        \"To discuss safety protocols on the construction site\",\n        \"To distribute protective gear\",\n        \"To announce a new project\",\n        \"To introduce the instructor\"\n      ],\n      \"correct\": \"To discuss safety protocols on the construction site\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチの中で、安全プロトコルを教えることが主目的であると明確に述べられています。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is the intended audience for this speech?\",\n      \"options\": [\n        \"Project managers\",\n        \"Equipment suppliers\",\n        \"Company clients\",\n        \"Construction site workers\"\n      ],\n      \"correct\": \"Construction site workers\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"安全性の教育は現場作業者向けであると考えられ、彼らの安全を確保することが目的だからです。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the next action for the audience after the session?\",\n      \"options\": [\n        \"To report any equipment issues\",\n        \"To sign their attendance\",\n        \"To take a brief assessment\",\n        \"To attend another training session\"\n      ],\n      \"correct\": \"To take a brief assessment\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチで、セッションの後に理解度を評価するためのアセスメントがあると述べられています。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:49:05.482Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: training_session\nIndustry: construction\nSpeaker Role: Safety trainer\nTopic: Construction site safety training\n\nSpeech Text:\nGood morning, everyone. I'm your safety trainer, Doug Martin, and today we'll be focusing on essential safety protocols on the construction site. Our main goal is to ensure that each of you understands and adheres to these safety measures to prevent accidents. We'll cover topics such as proper equipment handling, the importance of wearing protective gear, and emergency response procedures. After this session, you'll participate in a brief assessment to evaluate your understanding. It's crucial that you take this session seriously, as your safety and that of your co-workers depend on it. Please make sure to ask questions if anything is unclear.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:49:08.178Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "```json\n{\n  \"speechTypeTranslation\": \"トレーニングセッション\",\n  \"textTranslation\": \"皆さん、おはようございます。私は安全トレーナーのダグ・マーティンです。今日は建設現場での必須の安全プロトコルに焦点を当てます。私たちの主な目標は、皆さん一人ひとりがこれらの安全対策を理解し、従うことで事故を防ぐことです。適切な機材の取り扱い、保護具の着用の重要性、緊急時対応手順などのトピックを扱います。このセッションの後、理解度を評価するための簡単なテストを受けてもらいます。このセッションを真剣に受け止めてください。というのも、あなた自身や同僚の安全がこれにかかっているからです。不明な点があれば、必ず質問してください。\",\n  \"topicTranslation\": \"建設現場の安全トレーニング\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:49:08.179Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the main purpose of the speech?\nOptions:\nA: To discuss safety protocols on the construction site\nB: To distribute protective gear\nC: To announce a new project\nD: To introduce the instructor\n\nQuestion 2: Who is the intended audience for this speech?\nOptions:\nA: Project managers\nB: Equipment suppliers\nC: Company clients\nD: Construction site workers\n\nQuestion 3: What is the next action for the audience after the session?\nOptions:\nA: To report any equipment issues\nB: To sign their attendance\nC: To take a brief assessment\nD: To attend another training session\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:49:11.339Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"スピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"建設現場の安全プロトコルについて議論するため\",\n        \"保護具を配布するため\",\n        \"新しいプロジェクトを発表するため\",\n        \"講師を紹介するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このスピーチの対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"プロジェクトマネージャー\",\n        \"機器供給業者\",\n        \"会社の顧客\",\n        \"建設現場の作業員\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"セッションの後に聴衆が取るべき次の行動は何ですか？\",\n      \"optionTranslations\": [\n        \"機器の問題を報告する\",\n        \"出席簿にサインする\",\n        \"簡単な評価を受ける\",\n        \"別のトレーニングセッションに参加する\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

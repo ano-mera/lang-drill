@@ -1,0 +1,161 @@
+[
+  {
+    "timestamp": "2025-07-31T09:24:18.753Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":2,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 2,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:18.758Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Public event announcement (公共イベントの案内)\n【Industry】: Construction (建設業)\n【Difficulty】: hard\n【Question Types】: main_purpose, main_purpose, main_purpose\n【Correct Answer Positions】: Question 1=D, Question 2=C, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:28.432Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Event coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, everyone. I am pleased to announce the official opening of the Greenfield Construction Expo, taking place this weekend at the City Convention Center. This event is designed to showcase the latest innovations in sustainable building practices and eco-friendly technologies. Attendees will have the opportunity to attend workshops led by industry experts, view live demonstrations of state-of-the-art equipment, and network with leading professionals in the construction sector. Whether you are a seasoned contractor or a student eager to learn, this expo promises a wealth of information and inspiration. Registration is required for entry, and you can secure your spot by visiting our website. We look forward to seeing you there and sharing insights that will shape the future of construction.\",\n    \"topic\": \"Announcement of the Greenfield Construction Expo\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To advertise a new construction project\",\n        \"To recruit new employees for a construction company\",\n        \"To promote a training program for contractors\",\n        \"To announce the opening of a construction expo\"\n      ],\n      \"correct\": \"To announce the opening of a construction expo\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチはGreenfield Construction Expoの開催を知らせることを目的としているため、設問の正解はこの選択肢です。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this event?\",\n      \"options\": [\n        \"To sell construction equipment\",\n        \"To award outstanding construction projects\",\n        \"To showcase innovations in sustainable building\",\n        \"To celebrate the anniversary of a construction company\"\n      ],\n      \"correct\": \"To showcase innovations in sustainable building\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"イベントの目的は持続可能な建築の革新を紹介することであるとスピーチで述べられているため、これが正解です。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Who is the intended audience for this event?\",\n      \"options\": [\n        \"Local government officials\",\n        \"Construction professionals and students\",\n        \"Residents of the nearby community\",\n        \"Suppliers of raw materials\"\n      ],\n      \"correct\": \"Construction professionals and students\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは、業界の専門家や学びたい学生を対象にしていると述べられているため、これが正解です。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:28.434Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: public_event_notice\nIndustry: construction\nSpeaker Role: Event coordinator\nTopic: Announcement of the Greenfield Construction Expo\n\nSpeech Text:\nGood morning, everyone. I am pleased to announce the official opening of the Greenfield Construction Expo, taking place this weekend at the City Convention Center. This event is designed to showcase the latest innovations in sustainable building practices and eco-friendly technologies. Attendees will have the opportunity to attend workshops led by industry experts, view live demonstrations of state-of-the-art equipment, and network with leading professionals in the construction sector. Whether you are a seasoned contractor or a student eager to learn, this expo promises a wealth of information and inspiration. Registration is required for entry, and you can secure your spot by visiting our website. We look forward to seeing you there and sharing insights that will shape the future of construction.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:32.063Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"公開イベント通知\",\n  \"textTranslation\": \"皆さん、おはようございます。グリーンフィールド建設エキスポの公式開幕を発表できることを嬉しく思います。今週末、シティコンベンションセンターで開催されます。このイベントは、持続可能な建築技術や環境に優しい技術の最新の革新を紹介することを目的としています。参加者は、業界の専門家によるワークショップに参加したり、最新鋭の機器のライブデモンストレーションを見たり、建設業界のリーディングプロフェッショナルとのネットワーキングを行ったりすることができます。経験豊富な請負業者の方も、学びたい学生の方も、このエキスポは豊富な情報とインスピレーションを提供します。入場には登録が必要で、ウェブサイトから登録を行うことで参加枠を確保できます。皆さんにお会いし、建設の未来を形作る洞察を共有できることを楽しみにしています。\",\n  \"topicTranslation\": \"グリーンフィールド建設エキスポの発表\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:32.065Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the main purpose of the announcement?\nOptions:\nA: To advertise a new construction project\nB: To recruit new employees for a construction company\nC: To promote a training program for contractors\nD: To announce the opening of a construction expo\n\nQuestion 2: What is the main purpose of this event?\nOptions:\nA: To sell construction equipment\nB: To award outstanding construction projects\nC: To showcase innovations in sustainable building\nD: To celebrate the anniversary of a construction company\n\nQuestion 3: Who is the intended audience for this event?\nOptions:\nA: Local government officials\nB: Construction professionals and students\nC: Residents of the nearby community\nD: Suppliers of raw materials\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:36.624Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: このアナウンスの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 新しい建設プロジェクトを宣伝するため\",\n        \"B: 建設会社の新しい従業員を募集するため\",\n        \"C: 請負業者向けの研修プログラムを推進するため\",\n        \"D: 建設博覧会の開催を発表するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: このイベントの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 建設機器を販売するため\",\n        \"B: 優れた建設プロジェクトを表彰するため\",\n        \"C: 持続可能な建築の革新を披露するため\",\n        \"D: 建設会社の記念日を祝うため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: このイベントの対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"A: 地元の政府関係者\",\n        \"B: 建設の専門家および学生\",\n        \"C: 近隣地域の住民\",\n        \"D: 原材料の供給業者\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:24:51.628Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Training or orientation session (研修・オリエンテーション)\n【Industry】: Finance and Banking (金融・銀行)\n【Difficulty】: hard\n【Question Types】: next_action, detail, next_action\n【Correct Answer Positions】: Question 1=D, Question 2=C, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:25:01.368Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Trainer\",\n      \"role\": \"Financial Training Specialist\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, everyone. Welcome to our advanced financial analysis training session. Today, we will delve into the nuances of risk assessment and portfolio management strategies. First, we will review the latest regulatory changes affecting our industry, focusing on compliance requirements and their implications for risk analysis. Following this, we’ll conduct a comprehensive case study to apply these concepts practically. Please have your laptops ready, as you will need to access our internal database for this exercise. After the case study, there will be a brief Q&A session where you can address any specific concerns. Finally, you will be given a short quiz to assess your understanding of today's material. Remember, these skills are essential for enhancing our decision-making processes and maintaining our competitive edge in the financial sector.\",\n    \"topic\": \"Advanced financial analysis training session\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What should participants do right after the case study?\",\n      \"options\": [\n        \"Review regulatory changes\",\n        \"Complete the quiz\",\n        \"Discuss in groups\",\n        \"Participate in a Q&A session\"\n      ],\n      \"correct\": \"Participate in a Q&A session\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチで、ケーススタディの後にQ&Aセッションがあると述べられている。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the primary focus of the session?\",\n      \"options\": [\n        \"Introduction to basic finance\",\n        \"Customer service strategies\",\n        \"Risk assessment and portfolio management\",\n        \"Technological advancements in banking\"\n      ],\n      \"correct\": \"Risk assessment and portfolio management\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチの冒頭で、リスク評価とポートフォリオ管理の戦略に焦点を当てると述べられている。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is required from participants during the case study?\",\n      \"options\": [\n        \"To present their findings\",\n        \"To complete a written report\",\n        \"To access the internal database\",\n        \"To conduct external interviews\"\n      ],\n      \"correct\": \"To access the internal database\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチで、ケーススタディの際に内部データベースにアクセスする必要があると述べられている。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:25:01.370Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: training_session\nIndustry: finance\nSpeaker Role: Financial Training Specialist\nTopic: Advanced financial analysis training session\n\nSpeech Text:\nGood afternoon, everyone. Welcome to our advanced financial analysis training session. Today, we will delve into the nuances of risk assessment and portfolio management strategies. First, we will review the latest regulatory changes affecting our industry, focusing on compliance requirements and their implications for risk analysis. Following this, we’ll conduct a comprehensive case study to apply these concepts practically. Please have your laptops ready, as you will need to access our internal database for this exercise. After the case study, there will be a brief Q&A session where you can address any specific concerns. Finally, you will be given a short quiz to assess your understanding of today's material. Remember, these skills are essential for enhancing our decision-making processes and maintaining our competitive edge in the financial sector.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:25:06.239Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"トレーニングセッション\",\n  \"textTranslation\": \"皆さん、こんにちは。私たちの高度な金融分析トレーニングセッションにようこそ。本日は、リスク評価とポートフォリオ管理戦略の微妙な点について掘り下げていきます。まず、我々の業界に影響を与える最新の規制変更を確認し、コンプライアンス要件とリスク分析への影響に焦点を当てます。その後、これらの概念を実践的に適用するための包括的なケーススタディを行います。この演習のために社内データベースにアクセスする必要があるので、ノートパソコンを用意してください。ケーススタディの後には、特定の懸念事項を解決するための短い質疑応答セッションがあります。最後に、今日の内容を理解しているかどうかを確認するための短いクイズが行われます。これらのスキルは、意思決定プロセスを向上させ、金融業界での競争力を維持するために不可欠です。\",\n  \"topicTranslation\": \"高度な金融分析トレーニングセッション\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:25:06.240Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What should participants do right after the case study?\nOptions:\nA: Review regulatory changes\nB: Complete the quiz\nC: Discuss in groups\nD: Participate in a Q&A session\n\nQuestion 2: What is the primary focus of the session?\nOptions:\nA: Introduction to basic finance\nB: Customer service strategies\nC: Risk assessment and portfolio management\nD: Technological advancements in banking\n\nQuestion 3: What is required from participants during the case study?\nOptions:\nA: To present their findings\nB: To complete a written report\nC: To access the internal database\nD: To conduct external interviews\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T09:25:09.666Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1: ケーススタディの直後に参加者がすべきことは何ですか？\",\n      \"optionTranslations\": [\"A: 規制の変更をレビューする\", \"B: クイズを完了する\", \"C: グループで話し合う\", \"D: 質疑応答セッションに参加する\"]\n    },\n    {\n      \"questionTranslation\": \"問題2: セッションの主な焦点は何ですか？\",\n      \"optionTranslations\": [\"A: 基本的な金融の紹介\", \"B: カスタマーサービス戦略\", \"C: リスク評価とポートフォリオ管理\", \"D: 銀行における技術革新\"]\n    },\n    {\n      \"questionTranslation\": \"問題3: ケーススタディ中に参加者に求められることは何ですか？\",\n      \"optionTranslations\": [\"A: 自分たちの発見を発表する\", \"B: 書面報告を完成させる\", \"C: 内部データベースにアクセスする\", \"D: 外部インタビューを行う\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

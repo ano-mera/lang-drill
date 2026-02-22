@@ -1,0 +1,338 @@
+[
+  {
+    "timestamp": "2025-08-01T14:55:36.389Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "あなたはTOEIC Part 1のテスト作成専門家で、英語リスニング理解テスト用のリアルな場面説明の生成を専門としています。\n\nあなたの任務は、TOEIC Part 1の多肢選択問題の生成に使用される詳細な場面説明を作成することです。これらの場面は、TOEICテストに適した現実的な職場、日常生活、または一般的な状況を描写する必要があります。\n\nガイドライン:\n1. 視覚的で行動指向の場面を作成する\n2. 人々の行動、場所、物体の具体的な詳細を含める\n3. 指定された難易度レベルに適した語彙を使用する\n4. 文化的に中立で専門的な場面にする\n5. 観察可能な行動と状況に焦点を当てる\n\n難易度ガイドライン:\n- Easy: シンプルな行動、一般的な語彙、明確な単一フォーカス\n- Medium: 複数の要素、中程度の語彙、ある程度の複雑さ\n- Hard: 複雑な相互作用、高度な語彙、複数の同時行動\n\n重要: 以下に示す正確な形式の有効なJSONのみを返してください。他のテキスト、説明、またはマークダウン形式を含めないでください。\n\n以下の構造のJSON配列として応答を返してください:\n[\n  {\n    \"sceneDescription\": \"日本語による詳細な場面説明\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"sceneFeatures\": {\n      \"subject_category\": \"person/object/structure_scene/animal/vehicle\",\n      \"action_or_state\": \"in_action/in_use/neatly_arranged/decorated/vacant/being_carried/closed\",\n      \"syntax_type\": \"present_progressive/passive_voice/existential_sentence/present_perfect_passive/past_participle_modifier/present_participle_modifier\",\n      \"spatial_relation\": \"in_a_row/in_front_of/behind/next_to/stacked/facing_each_other/inside/beneath\",\n      \"environment\": \"indoor/outdoor/park/station/store/office/nature/meeting_room\",\n      \"time_or_weather\": \"daytime/night/cloudy/sunny/rainy/at_dusk\",\n      \"quantity\": \"singular/plural/some/many/a_group\"\n    }\n  }\n]\n\n難易度レベル「medium」のTOEIC Part 1問題用に1つの詳細な場面説明を生成してください。\n\n【場面生成の条件】\n以下の要素を参考にしても構いません：\n- 主語カテゴリー: 建物・風景 (structure/scene)\n- 動作・状態: 整頓されている (neatly arranged)\n- 構文タイプ: 現在完了 (present perfect passive)\n- 空間的関係: 重なっている (stacked)\n- 環境: 湖畔 (lakeside)\n- 時間帯・天候: 昼間 (daytime)\n- 数量: 複数 (plural)\n\n生成するJSONのsceneFeaturesフィールドには、以下の値を設定してください：\n{\n  \"subject_category\": \"structure/scene\",\n  \"action_or_state\": \"neatly arranged\",\n  \"syntax_type\": \"present perfect passive\",\n  \"spatial_relation\": \"stacked\",\n  \"environment\": \"lakeside\",\n  \"time_or_weather\": \"daytime\",\n  \"quantity\": \"plural\"\n}\n\n各場面は1-2文で、指定された条件に基づいて、写真で撮影できる特定の瞬間を描写してください。人々が何をしているか、または場面で何が起こっているかについての多肢選択問題に適した、具体的な行動、人々、環境の詳細を含めてください。場面説明は日本語で作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:42.321Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"湖畔にはいくつかのカヌーが整然と並べられており、重なって積まれています。これらのカヌーは、昼間の明るい陽射しの中で、利用の準備が整えられています。\",\n    \"difficulty\": \"medium\", \n    \"sceneFeatures\": {\n      \"subject_category\": \"structure/scene\",\n      \"action_or_state\": \"neatly arranged\",\n      \"syntax_type\": \"present perfect passive\",\n      \"spatial_relation\": \"stacked\",\n      \"environment\": \"lakeside\",\n      \"time_or_weather\": \"daytime\",\n      \"quantity\": \"plural\"\n    }\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:42.325Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"湖畔にはいくつかのカヌーが整然と並べられており、重なって積まれています。これらのカヌーは、昼間の明るい陽射しの中で、利用の準備が整えられています。\"\nDifficulty: medium\nTopic: undefined\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"D\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: INCORRECT DISTRACTOR - Plausible but clearly wrong  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: CORRECT ANSWER - Must accurately describe the given scene\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position D. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:45.116Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "{\n  \"options\": [\"People are paddling canoes on the lake\", \"A single canoe is floating on water\", \"Several kayaks are stacked on the shore\", \"Canoes are neatly arranged by the shore\"],\n  \"correct\": \"D\",\n  \"explanation\": \"The scene describes canoes being prepared and neatly arranged by the shore in daylight.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"description\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:45.118Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: People are paddling canoes on the lake",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:45.119Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A single canoe is floating on water",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:45.121Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Several kayaks are stacked on the shore",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:45.123Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Canoes are neatly arranged by the shore",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:49.830Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "人々が湖でカヌーを漕いでいます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:49.840Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "一艘のカヌーが水面に浮かんでいる。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:50.041Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "カヌーが岸辺にきちんと並べられています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:50.693Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "岸にいくつかのカヤックが積み重ねられている。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:50.694Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene describes canoes being prepared and neatly arranged by the shore in daylight.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:53.353Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "そのシーンは、昼間にカヌーが準備され、岸辺に整然と並べられている様子を描写しています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:56.876Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "あなたはTOEIC Part 1のテスト作成専門家で、英語リスニング理解テスト用のリアルな場面説明の生成を専門としています。\n\nあなたの任務は、TOEIC Part 1の多肢選択問題の生成に使用される詳細な場面説明を作成することです。これらの場面は、TOEICテストに適した現実的な職場、日常生活、または一般的な状況を描写する必要があります。\n\nガイドライン:\n1. 視覚的で行動指向の場面を作成する\n2. 人々の行動、場所、物体の具体的な詳細を含める\n3. 指定された難易度レベルに適した語彙を使用する\n4. 文化的に中立で専門的な場面にする\n5. 観察可能な行動と状況に焦点を当てる\n\n難易度ガイドライン:\n- Easy: シンプルな行動、一般的な語彙、明確な単一フォーカス\n- Medium: 複数の要素、中程度の語彙、ある程度の複雑さ\n- Hard: 複雑な相互作用、高度な語彙、複数の同時行動\n\n重要: 以下に示す正確な形式の有効なJSONのみを返してください。他のテキスト、説明、またはマークダウン形式を含めないでください。\n\n以下の構造のJSON配列として応答を返してください:\n[\n  {\n    \"sceneDescription\": \"日本語による詳細な場面説明\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"sceneFeatures\": {\n      \"subject_category\": \"person/object/structure_scene/animal/vehicle\",\n      \"action_or_state\": \"in_action/in_use/neatly_arranged/decorated/vacant/being_carried/closed\",\n      \"syntax_type\": \"present_progressive/passive_voice/existential_sentence/present_perfect_passive/past_participle_modifier/present_participle_modifier\",\n      \"spatial_relation\": \"in_a_row/in_front_of/behind/next_to/stacked/facing_each_other/inside/beneath\",\n      \"environment\": \"indoor/outdoor/park/station/store/office/nature/meeting_room\",\n      \"time_or_weather\": \"daytime/night/cloudy/sunny/rainy/at_dusk\",\n      \"quantity\": \"singular/plural/some/many/a_group\"\n    }\n  }\n]\n\n難易度レベル「medium」のTOEIC Part 1問題用に1つの詳細な場面説明を生成してください。\n\n【場面生成の条件】\n以下の要素を参考にしても構いません：\n- 主語カテゴリー: 物体 (object)\n- 動作・状態: 使用中 (in use)\n- 構文タイプ: 存在構文 (existential sentence)\n- 空間的関係: 並んでいる (in a row)\n- 環境: 駅 (station)\n- 時間帯・天候: 昼間 (daytime)\n- 数量: 群れ・集団 (a group)\n\n生成するJSONのsceneFeaturesフィールドには、以下の値を設定してください：\n{\n  \"subject_category\": \"object\",\n  \"action_or_state\": \"in use\",\n  \"syntax_type\": \"existential sentence\",\n  \"spatial_relation\": \"in a row\",\n  \"environment\": \"station\",\n  \"time_or_weather\": \"daytime\",\n  \"quantity\": \"a group\"\n}\n\n各場面は1-2文で、指定された条件に基づいて、写真で撮影できる特定の瞬間を描写してください。人々が何をしているか、または場面で何が起こっているかについての多肢選択問題に適した、具体的な行動、人々、環境の詳細を含めてください。場面説明は日本語で作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:59.585Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"駅のホームに、数台の自動販売機が並んでいる。それぞれの自動販売機は使用中で、人々が飲み物を購入している様子が見られる。昼間の明るい日差しがホーム全体を照らしている。\",\n    \"difficulty\": \"medium\",\n    \"sceneFeatures\": {\n      \"subject_category\": \"object\",\n      \"action_or_state\": \"in use\",\n      \"syntax_type\": \"existential sentence\",\n      \"spatial_relation\": \"in a row\",\n      \"environment\": \"station\",\n      \"time_or_weather\": \"daytime\",\n      \"quantity\": \"a group\"\n    }\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:55:59.585Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"駅のホームに、数台の自動販売機が並んでいる。それぞれの自動販売機は使用中で、人々が飲み物を購入している様子が見られる。昼間の明るい日差しがホーム全体を照らしている。\"\nDifficulty: medium\nTopic: undefined\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"C\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: INCORRECT DISTRACTOR - Plausible but clearly wrong  \n- Position C: CORRECT ANSWER - Must accurately describe the given scene\n- Position D: INCORRECT DISTRACTOR - Plausible but clearly wrong\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position C. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:02.132Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"options\": [\n    \"People are sitting on a train bench.\",\n    \"A man is reading a newspaper.\",\n    \"People are buying drinks from machines.\",\n    \"A woman is walking with a suitcase.\"\n  ],\n  \"correct\": \"C\",\n  \"explanation\": \"The scene describes people purchasing drinks from vending machines on a train platform.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:02.135Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: People are sitting on a train bench.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:02.136Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A man is reading a newspaper.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:02.138Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: People are buying drinks from machines.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:02.141Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: A woman is walking with a suitcase.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:02.824Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性がスーツケースを持って歩いています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:03.076Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "人々は自動販売機から飲み物を買っています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:03.096Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "人々が電車のベンチに座っています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:03.145Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性が新聞を読んでいる。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:03.145Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene describes people purchasing drinks from vending machines on a train platform.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-01T14:56:04.529Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "この場面は、駅のホームで人々が自動販売機から飲み物を購入している様子を描写しています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

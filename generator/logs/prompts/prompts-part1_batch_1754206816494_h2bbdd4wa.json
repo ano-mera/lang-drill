@@ -1,0 +1,482 @@
+[
+  {
+    "timestamp": "2025-08-03T07:40:16.506Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: technology expo\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"technology expo\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:40:19.747Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside the bustling technology expo hall, several people are gathered around a booth where a presenter is demonstrating a new virtual reality headset. Behind him, a large banner displaying the company's logo hangs on the wall. Attendees are taking notes and some are trying out the headset, while others are seen discussing amongst themselves. Through the large windows, a bright sunny day is visible outside, casting natural light into the room.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"technology expo\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:40:41.320Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\",\n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"First unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    }\n  ],\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"A group of people is gathered around a man who is demonstrating a piece of technology on a stand in a large, well-lit exhibition hall. The attendees are observing attentively, some holding notepads and wearing name badges, while the man is gesturing towards the device, which appears to be a virtual reality headset.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- Includes passive constructions or existential phrases\n- Subjects may be plural or implied\n- Some use of adjectives or prepositional phrases\n- Vocabulary may include business or public settings\n- Requires slightly more processing to understand\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - MUST change at least ONE of these key elements to make them clearly different:\n     * ACTION: Change the verb/action (walking → running, sitting → standing)\n     * SUBJECT: Change the person/object (woman → man, people → person)\n     * OBJECT: Change what is being held/used (coffee → water, laptop → tablet)\n     * LOCATION: Change position/direction (left → right, up → down, inside → outside)\n     * QUANTITY: Change number (one person → multiple people, some → all)\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n   - For each confusing option, provide a Japanese explanation that describes why this option is incorrect\n     * Focus on what is actually visible in the image vs what the option states\n     * Use appropriate verbs for visual content: 見えます/見えません, 写っています/写っていません, 確認できます/確認できません\n     * Do NOT use text-related words like \"記述\" (description/statement) when referring to images\n     * Do NOT mention \"compared to correct option\" or reference internal processing\n     * Example: \"画像では女性が男性の髪をスタイリングしていますが、この選択肢は逆になっています。\"\n\n3. Generate 4 UNRELATED OPTIONS related to the scene setting but not depicted\n   - Describe actions or situations that could logically occur in the same setting/location but are not actually shown\n   - Should relate to the scene context but show different actions not visible in the image\n   - Examples: if scene is in office, show different office activities; if scene is outdoors, show other outdoor activities\n   - For each unrelated option, provide a Japanese explanation that describes why this option is plausible for the setting but not shown in the image\n     * Focus on explaining the logical connection to the scene setting\n     * Use appropriate verbs for visual content: 見えません, 写っていません, 確認できません\n     * Do NOT use text-related words like \"記述\" or \"描かれていません\" when referring to what's visible in images\n     * Example: \"この選択肢はオフィス環境でよく見られる活動ですが、画像には写っていません。\"\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\nIMPORTANT: Both confusing and unrelated options require explanations. Only correct options are self-evident.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:40:53.433Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "{\n  \"correctOptions\": [\n    \"A man is demonstrating a device to attendees.\",\n    \"People are gathered around a virtual reality headset.\",\n    \"The exhibition hall is well-lit and spacious.\",\n    \"Attendees are observing while holding notepads.\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"A man is assembling a device for attendees.\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像では男性がデバイスを組み立てているのではなく、デモをしています。\"\n    },\n    {\n      \"option\": \"People are sitting around a virtual reality headset.\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像では人々は座っておらず、集まって立っている状態です。\"\n    },\n    {\n      \"option\": \"The exhibition hall is dimly lit and cramped.\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像では展示ホールは明るく、広々としています。\"\n    },\n    {\n      \"option\": \"Attendees are chatting while holding notepads.\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像では参加者はメモを取りながら観察しており、おしゃべりはしていません。\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"A speaker is giving a presentation on stage.\",\n      \"explanation\": \"この選択肢は展示会で見られる状況ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"Visitors are browsing various product stalls.\",\n      \"explanation\": \"この選択肢は展示会の一般的な活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A group is having a meeting in a booth.\",\n      \"explanation\": \"この選択肢は展示会での可能な活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"An announcer is making an announcement over speakers.\",\n      \"explanation\": \"この選択肢は展示会での典型的な出来事ですが、画像には写っていません。\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:40:53.434Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): A group of people is gathered around a man who is demonstrating a piece of technology on a stand in a large, well-lit exhibition hall. The attendees are observing attentively, some holding notepads and wearing name badges, while the man is gesturing towards the device, which appears to be a virtual reality headset.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:40:58.396Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "大きくて明るい展示ホールで、一人の男性がスタンドで技術機器をデモンストレーションしている周りに人々のグループが集まっています。参加者たちは熱心に観察しており、ノートを持ち名札を付けている人もいます。男性は、バーチャルリアリティヘッドセットのように見える装置を指し示しています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:40:58.397Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A man is assembling a device for attendees.\nB: The exhibition hall is dimly lit and cramped.\nC: Visitors are browsing various product stalls.\nD: People are gathered around a virtual reality headset.\n\nExplanation: 正解: People are gathered around a virtual reality headset.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:01.660Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"男性が参加者のために装置を組み立てている。\",\n    \"展示ホールは薄暗く狭い。\",\n    \"訪問者がさまざまな製品の屋台を見て回っている。\",\n    \"人々がバーチャルリアリティヘッドセットの周りに集まっている。\"\n  ],\n  \"explanationTranslation\": \"正解: 人々がバーチャルリアリティヘッドセットの周りに集まっている。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:06.749Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: gym\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"gym\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:10.224Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"In a brightly lit indoor gym, a group of four people is participating in a yoga class. Three women and one man are positioned on yoga mats placed evenly across the wooden floor. The instructor, a woman wearing a blue tank top, stands at the front of the room, demonstrating a pose with her arms stretched above her head. Large windows on one side reveal a cloudy sky outside, while a row of exercise bikes is lined up against the opposite wall.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"gym\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:31.563Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\",\n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"First unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    }\n  ],\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Several people are participating in a yoga class in a spacious, well-lit studio with large windows. They are sitting on blue mats, stretching with one arm raised, and the room is equipped with exercise bikes in the background.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- Includes passive constructions or existential phrases\n- Subjects may be plural or implied\n- Some use of adjectives or prepositional phrases\n- Vocabulary may include business or public settings\n- Requires slightly more processing to understand\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - MUST change at least ONE of these key elements to make them clearly different:\n     * ACTION: Change the verb/action (walking → running, sitting → standing)\n     * SUBJECT: Change the person/object (woman → man, people → person)\n     * OBJECT: Change what is being held/used (coffee → water, laptop → tablet)\n     * LOCATION: Change position/direction (left → right, up → down, inside → outside)\n     * QUANTITY: Change number (one person → multiple people, some → all)\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n   - For each confusing option, provide a Japanese explanation that describes why this option is incorrect\n     * Focus on what is actually visible in the image vs what the option states\n     * Use appropriate verbs for visual content: 見えます/見えません, 写っています/写っていません, 確認できます/確認できません\n     * Do NOT use text-related words like \"記述\" (description/statement) when referring to images\n     * Do NOT mention \"compared to correct option\" or reference internal processing\n     * Example: \"画像では女性が男性の髪をスタイリングしていますが、この選択肢は逆になっています。\"\n\n3. Generate 4 UNRELATED OPTIONS related to the scene setting but not depicted\n   - Describe actions or situations that could logically occur in the same setting/location but are not actually shown\n   - Should relate to the scene context but show different actions not visible in the image\n   - Examples: if scene is in office, show different office activities; if scene is outdoors, show other outdoor activities\n   - For each unrelated option, provide a Japanese explanation that describes why this option is plausible for the setting but not shown in the image\n     * Focus on explaining the logical connection to the scene setting\n     * Use appropriate verbs for visual content: 見えません, 写っていません, 確認できません\n     * Do NOT use text-related words like \"記述\" or \"描かれていません\" when referring to what's visible in images\n     * Example: \"この選択肢はオフィス環境でよく見られる活動ですが、画像には写っていません。\"\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\nIMPORTANT: Both confusing and unrelated options require explanations. Only correct options are self-evident.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:45.133Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"Participants are sitting on blue mats in a studio.\",\n    \"Several people are stretching with one arm raised.\",\n    \"Exercise bikes are visible in the background of the room.\",\n    \"The studio is well-lit with large windows.\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"Participants are standing on blue mats in a studio.\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像では参加者が座っているのが確認できますが、この選択肢は立っていると述べています。\"\n    },\n    {\n      \"option\": \"Several people are stretching with both arms raised.\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像では参加者が片腕を上げているのが確認できますが、この選択肢は両腕を上げていると述べています。\"\n    },\n    {\n      \"option\": \"Exercise bikes are in the center of the room.\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像ではエクササイズバイクが背景に見えますが、この選択肢は部屋の中央にあると述べています。\"\n    },\n    {\n      \"option\": \"The studio is dimly lit with small windows.\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像ではスタジオが明るく、大きな窓があるのが確認できますが、この選択肢は暗く、小さな窓があると述べています。\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"An instructor is demonstrating a difficult yoga pose.\",\n      \"explanation\": \"この選択肢はヨガクラスで見られる活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"People are using treadmills for a cardio workout.\",\n      \"explanation\": \"この選択肢はフィットネススタジオでよく見られる活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A group is having a meditation session in silence.\",\n      \"explanation\": \"この選択肢はスタジオで行われる可能性のある活動ですが、画像には確認できません。\"\n    },\n    {\n      \"option\": \"Someone is adjusting the lighting for a photoshoot.\",\n      \"explanation\": \"この選択肢はスタジオ環境で行われる可能性のある活動ですが、画像には写っていません。\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:45.135Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): Several people are participating in a yoga class in a spacious, well-lit studio with large windows. They are sitting on blue mats, stretching with one arm raised, and the room is equipped with exercise bikes in the background.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:47.565Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "大きな窓から光が差し込む広々としたスタジオで、何人かの人々がヨガクラスに参加しています。彼らは青いマットの上に座り、片腕を上げてストレッチをしています。背景にはエアロバイクが備えられています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:47.566Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: Exercise bikes are visible in the background of the room.\nB: Participants are standing on blue mats in a studio.\nC: Several people are stretching with both arms raised.\nD: Someone is adjusting the lighting for a photoshoot.\n\nExplanation: 正解: Exercise bikes are visible in the background of the room.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:50.887Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"エクササイズバイクが部屋の背景に見える。\",\n    \"参加者がスタジオで青いマットの上に立っている。\",\n    \"数人が両腕を上げてストレッチをしている。\",\n    \"誰かが写真撮影のために照明を調整している。\"\n  ],\n  \"explanationTranslation\": \"正解: エクササイズバイクが部屋の背景に見える。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:54.805Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: greenhouse\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"greenhouse\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:41:58.509Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside a large greenhouse, several people are working among rows of vibrant green plants. A woman is crouched down, carefully inspecting the leaves of a tomato plant, while a man to her left is watering a row of potted herbs with a hose. Sunlight filters through the glass roof, casting a warm glow over the scene. In the background, another worker is standing on a ladder, adjusting a hanging basket filled with blooming flowers.\",\n    \"difficulty\": \"medium\", \n    \"scene\": \"greenhouse\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:22.118Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\",\n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"First unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    }\n  ],\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"A woman is kneeling and examining tomatoes on a plant in a greenhouse, while a man is standing on a ladder watering plants from above. Another person in the background is holding a hose, watering rows of potted plants. The greenhouse is filled with lush greenery and has a glass ceiling allowing natural light to illuminate the scene.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- Includes passive constructions or existential phrases\n- Subjects may be plural or implied\n- Some use of adjectives or prepositional phrases\n- Vocabulary may include business or public settings\n- Requires slightly more processing to understand\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - MUST change at least ONE of these key elements to make them clearly different:\n     * ACTION: Change the verb/action (walking → running, sitting → standing)\n     * SUBJECT: Change the person/object (woman → man, people → person)\n     * OBJECT: Change what is being held/used (coffee → water, laptop → tablet)\n     * LOCATION: Change position/direction (left → right, up → down, inside → outside)\n     * QUANTITY: Change number (one person → multiple people, some → all)\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n   - For each confusing option, provide a Japanese explanation that describes why this option is incorrect\n     * Focus on what is actually visible in the image vs what the option states\n     * Use appropriate verbs for visual content: 見えます/見えません, 写っています/写っていません, 確認できます/確認できません\n     * Do NOT use text-related words like \"記述\" (description/statement) when referring to images\n     * Do NOT mention \"compared to correct option\" or reference internal processing\n     * Example: \"画像では女性が男性の髪をスタイリングしていますが、この選択肢は逆になっています。\"\n\n3. Generate 4 UNRELATED OPTIONS related to the scene setting but not depicted\n   - Describe actions or situations that could logically occur in the same setting/location but are not actually shown\n   - Should relate to the scene context but show different actions not visible in the image\n   - Examples: if scene is in office, show different office activities; if scene is outdoors, show other outdoor activities\n   - For each unrelated option, provide a Japanese explanation that describes why this option is plausible for the setting but not shown in the image\n     * Focus on explaining the logical connection to the scene setting\n     * Use appropriate verbs for visual content: 見えません, 写っていません, 確認できません\n     * Do NOT use text-related words like \"記述\" or \"描かれていません\" when referring to what's visible in images\n     * Example: \"この選択肢はオフィス環境でよく見られる活動ですが、画像には写っていません。\"\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\nIMPORTANT: Both confusing and unrelated options require explanations. Only correct options are self-evident.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:36.858Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"A woman is examining tomatoes in the greenhouse.\",\n    \"A man is standing on a ladder watering plants.\",\n    \"Someone is holding a hose, watering potted plants.\",\n    \"The greenhouse is filled with lush greenery and light.\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"A woman is picking apples in the greenhouse.\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像では女性がトマトを調べていますが、この選択肢はリンゴを摘んでいるとしています。\"\n    },\n    {\n      \"option\": \"A man is sitting on a ladder reading.\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像では男性が梯子に立って植物に水をやっていますが、この選択肢は男性が座って読書しているとしています。\"\n    },\n    {\n      \"option\": \"Someone is raking leaves instead of watering.\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像では誰かがホースで植物に水をやっていますが、この選択肢は葉を集めているとしています。\"\n    },\n    {\n      \"option\": \"The greenhouse is empty and poorly lit.\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像では温室が緑豊かで明るいですが、この選択肢は空っぽで暗いとしています。\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"People are pruning trees in the greenhouse.\",\n      \"explanation\": \"この選択肢は温室で見られる可能性のある活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A group is planting seeds in soil trays.\",\n      \"explanation\": \"この選択肢は温室で行われることがある活動ですが、画像には確認できません。\"\n    },\n    {\n      \"option\": \"Workers are harvesting vegetables for the market.\",\n      \"explanation\": \"この選択肢は温室での一般的な活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A technician is repairing the greenhouse heater.\",\n      \"explanation\": \"この選択肢は温室環境に関連する活動ですが、画像には確認できません。\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:36.860Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): A woman is kneeling and examining tomatoes on a plant in a greenhouse, while a man is standing on a ladder watering plants from above. Another person in the background is holding a hose, watering rows of potted plants. The greenhouse is filled with lush greenery and has a glass ceiling allowing natural light to illuminate the scene.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:38.968Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性が温室でひざまずき、植物についているトマトを調べています。一方、男性ははしごに立ち、上から植物に水をやっています。背景には別の人物がホースを持ち、鉢植えの植物の列に水をやっています。温室は青々とした緑に満ちており、ガラスの天井から自然光がシーンを照らしています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:38.969Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A woman is examining tomatoes in the greenhouse.\nB: Someone is raking leaves instead of watering.\nC: A man is sitting on a ladder reading.\nD: People are pruning trees in the greenhouse.\n\nExplanation: 正解: A woman is examining tomatoes in the greenhouse.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:41.349Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"女性が温室でトマトを調べている。\",\n    \"誰かが水やりではなく葉をかいている。\",\n    \"男性がはしごに座って本を読んでいる。\",\n    \"人々が温室で木を剪定している。\"\n  ],\n  \"explanationTranslation\": \"正解: 女性が温室でトマトを調べている。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:46.155Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: riverside\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"riverside\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:42:49.376Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"A group of people is gathered along the riverside under clear blue skies. They are sitting on a blanket, having a picnic near the edge of the river, with a basket and several open containers of food placed in front of them. One person is reaching for a sandwich while another is pouring juice into a cup. In the background, a couple of kayakers are paddling leisurely down the river, and a cyclist is riding along a path parallel to the water.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"riverside\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:11.617Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\",\n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"First unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    }\n  ],\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Three people are sitting on a blanket by a riverside, enjoying a picnic with various foods and drinks laid out in front of them. In the background, two people are kayaking on the river, and a person is walking a bicycle along the path near a bridge.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- Includes passive constructions or existential phrases\n- Subjects may be plural or implied\n- Some use of adjectives or prepositional phrases\n- Vocabulary may include business or public settings\n- Requires slightly more processing to understand\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - MUST change at least ONE of these key elements to make them clearly different:\n     * ACTION: Change the verb/action (walking → running, sitting → standing)\n     * SUBJECT: Change the person/object (woman → man, people → person)\n     * OBJECT: Change what is being held/used (coffee → water, laptop → tablet)\n     * LOCATION: Change position/direction (left → right, up → down, inside → outside)\n     * QUANTITY: Change number (one person → multiple people, some → all)\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n   - For each confusing option, provide a Japanese explanation that describes why this option is incorrect\n     * Focus on what is actually visible in the image vs what the option states\n     * Use appropriate verbs for visual content: 見えます/見えません, 写っています/写っていません, 確認できます/確認できません\n     * Do NOT use text-related words like \"記述\" (description/statement) when referring to images\n     * Do NOT mention \"compared to correct option\" or reference internal processing\n     * Example: \"画像では女性が男性の髪をスタイリングしていますが、この選択肢は逆になっています。\"\n\n3. Generate 4 UNRELATED OPTIONS related to the scene setting but not depicted\n   - Describe actions or situations that could logically occur in the same setting/location but are not actually shown\n   - Should relate to the scene context but show different actions not visible in the image\n   - Examples: if scene is in office, show different office activities; if scene is outdoors, show other outdoor activities\n   - For each unrelated option, provide a Japanese explanation that describes why this option is plausible for the setting but not shown in the image\n     * Focus on explaining the logical connection to the scene setting\n     * Use appropriate verbs for visual content: 見えません, 写っていません, 確認できません\n     * Do NOT use text-related words like \"記述\" or \"描かれていません\" when referring to what's visible in images\n     * Example: \"この選択肢はオフィス環境でよく見られる活動ですが、画像には写っていません。\"\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\nIMPORTANT: Both confusing and unrelated options require explanations. Only correct options are self-evident.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:24.207Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"Three people are having a picnic by the river.\",\n    \"Two kayakers are paddling on the river.\",\n    \"A person is walking a bicycle along the path.\",\n    \"Various foods are laid out on the blanket.\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"Three people are standing by the river.\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像では人々が座ってピクニックを楽しんでいますが、この選択肢は立っていると述べています。\"\n    },\n    {\n      \"option\": \"Two people are fishing on the river.\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像では二人がカヤックをしていますが、この選択肢は釣りをしていると述べています。\"\n    },\n    {\n      \"option\": \"A person is running with a bicycle.\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像では自転車を押して歩いている様子が写っていますが、この選択肢は走っていると述べています。\"\n    },\n    {\n      \"option\": \"Various foods are on the picnic table.\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像では食べ物が敷物の上に置かれていますが、この選択肢はテーブルの上に置かれていると述べています。\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"A family is flying kites in the park.\",\n      \"explanation\": \"この選択肢は公園での典型的な活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"Children are playing soccer on the grass.\",\n      \"explanation\": \"この選択肢は屋外での活動として関連していますが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A group is setting up a barbecue grill.\",\n      \"explanation\": \"この選択肢はピクニックでよく見られる活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A person is painting a landscape nearby.\",\n      \"explanation\": \"この選択肢は風景の中で行われる活動として考えられますが、画像には写っていません。\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:24.209Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): Three people are sitting on a blanket by a riverside, enjoying a picnic with various foods and drinks laid out in front of them. In the background, two people are kayaking on the river, and a person is walking a bicycle along the path near a bridge.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:26.820Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "3人の人々が川沿いのブランケットの上に座り、様々な食べ物や飲み物を前にしてピクニックを楽しんでいます。背景には、2人が川でカヤックをしており、1人が橋の近くの道で自転車を押しながら歩いています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:26.822Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: Various foods are on the picnic table.\nB: A person is running with a bicycle.\nC: Two kayakers are paddling on the river.\nD: A family is flying kites in the park.\n\nExplanation: 正解: Two kayakers are paddling on the river.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:30.769Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"さまざまな食べ物がピクニックテーブルに置かれています。\",\n    \"人が自転車と一緒に走っています。\",\n    \"2人のカヤック乗りが川を漕いでいます。\",\n    \"家族が公園で凧を揚げています。\"\n  ],\n  \"explanationTranslation\": \"正解: 2人のカヤック乗りが川を漕いでいます。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:36.093Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: supermarket\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"supermarket\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:43:39.540Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside the brightly lit supermarket, a woman is pushing a shopping cart filled with fresh produce and canned goods down the cereal aisle, while a man in a green apron is restocking the shelves with boxes of cereal. A large window at the end of the aisle shows a clear blue sky outside, suggesting pleasant weather. Nearby, a child is reaching up to grab a colorful box from a lower shelf, while the woman's attention is focused on reading a shopping list in her hand.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"supermarket\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:44:00.108Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\",\n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"First unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth unrelated option (scene-related but not depicted)\",\n      \"explanation\": \"シーン設定に関連するが描かれていない理由を説明（日本語）\"\n    }\n  ],\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"A woman is standing in a grocery aisle, holding a shopping list and pushing a cart filled with various fruits and vegetables. Nearby, a man in a green apron is examining a cereal box on a shelf, while a child is reaching for a box on the opposite side.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- Includes passive constructions or existential phrases\n- Subjects may be plural or implied\n- Some use of adjectives or prepositional phrases\n- Vocabulary may include business or public settings\n- Requires slightly more processing to understand\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - MUST change at least ONE of these key elements to make them clearly different:\n     * ACTION: Change the verb/action (walking → running, sitting → standing)\n     * SUBJECT: Change the person/object (woman → man, people → person)\n     * OBJECT: Change what is being held/used (coffee → water, laptop → tablet)\n     * LOCATION: Change position/direction (left → right, up → down, inside → outside)\n     * QUANTITY: Change number (one person → multiple people, some → all)\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n   - For each confusing option, provide a Japanese explanation that describes why this option is incorrect\n     * Focus on what is actually visible in the image vs what the option states\n     * Use appropriate verbs for visual content: 見えます/見えません, 写っています/写っていません, 確認できます/確認できません\n     * Do NOT use text-related words like \"記述\" (description/statement) when referring to images\n     * Do NOT mention \"compared to correct option\" or reference internal processing\n     * Example: \"画像では女性が男性の髪をスタイリングしていますが、この選択肢は逆になっています。\"\n\n3. Generate 4 UNRELATED OPTIONS related to the scene setting but not depicted\n   - Describe actions or situations that could logically occur in the same setting/location but are not actually shown\n   - Should relate to the scene context but show different actions not visible in the image\n   - Examples: if scene is in office, show different office activities; if scene is outdoors, show other outdoor activities\n   - For each unrelated option, provide a Japanese explanation that describes why this option is plausible for the setting but not shown in the image\n     * Focus on explaining the logical connection to the scene setting\n     * Use appropriate verbs for visual content: 見えません, 写っていません, 確認できません\n     * Do NOT use text-related words like \"記述\" or \"描かれていません\" when referring to what's visible in images\n     * Example: \"この選択肢はオフィス環境でよく見られる活動ですが、画像には写っていません。\"\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\nIMPORTANT: Both confusing and unrelated options require explanations. Only correct options are self-evident.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:44:12.562Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"A woman is holding a shopping list in an aisle.\",\n    \"A man in a green apron is examining a cereal box.\",\n    \"A child is reaching for a box on the opposite side.\",\n    \"A grocery cart is filled with fruits and vegetables.\"\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"A woman is holding a basket in an aisle.\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像では女性がカートを押していますが、この選択肢はバスケットを持っていると述べています。\"\n    },\n    {\n      \"option\": \"A man in a blue apron is examining a cereal box.\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像では男性が緑のエプロンをしていますが、この選択肢は青と述べています。\"\n    },\n    {\n      \"option\": \"A child is reaching for a cereal box on the floor.\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像では子供が棚の反対側の箱に手を伸ばしていますが、この選択肢は床の箱を指しています。\"\n    },\n    {\n      \"option\": \"A grocery cart is filled with bread and milk.\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像ではカートに果物と野菜が入っていますが、この選択肢はパンとミルクと述べています。\"\n    }\n  ],\n  \"unrelatedOptionsWithExplanations\": [\n    {\n      \"option\": \"A customer is paying at the checkout counter.\",\n      \"explanation\": \"この選択肢はスーパーマーケットでよくある状況ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A store employee is stocking the dairy section.\",\n      \"explanation\": \"この選択肢はスーパーマーケットの活動に関連していますが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"Two people are comparing different brands of coffee.\",\n      \"explanation\": \"この選択肢はスーパーマーケットで起こりうる活動ですが、画像には写っていません。\"\n    },\n    {\n      \"option\": \"A group of children is playing near the entrance.\",\n      \"explanation\": \"この選択肢はスーパーマーケットの外で起こりうる状況ですが、画像には写っていません。\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"questionType\": \"action\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:44:12.564Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): A woman is standing in a grocery aisle, holding a shopping list and pushing a cart filled with various fruits and vegetables. Nearby, a man in a green apron is examining a cereal box on a shelf, while a child is reaching for a box on the opposite side.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:44:14.834Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性が食料品売り場に立っており、買い物リストを持って、様々な果物や野菜が入ったカートを押しています。近くでは、緑色のエプロンを着た男性が棚にあるシリアルの箱を調べており、その反対側で子供が箱を取ろうとしています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:44:14.836Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A child is reaching for a cereal box on the floor.\nB: A man in a blue apron is examining a cereal box.\nC: A woman is holding a shopping list in an aisle.\nD: A customer is paying at the checkout counter.\n\nExplanation: 正解: A woman is holding a shopping list in an aisle.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T07:44:19.159Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"子供が床にあるシリアルの箱に手を伸ばしている。\",\n    \"青いエプロンをした男性がシリアルの箱を調べている。\",\n    \"通路で女性が買い物リストを持っている。\",\n    \"客がレジで支払いをしている。\"\n  ],\n  \"explanationTranslation\": \"解説: 通路で女性が買い物リストを持っている。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

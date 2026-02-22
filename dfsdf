@@ -1,0 +1,283 @@
+[33m27f90a1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix Part 4 option translations and improve translation prompt
+[33mf86e1b7[m Implement 7-axis attribute system for Part 1 question generation
+[33m347446f[m Force Vercel redeploy to sync Part1 questions data
+[33m43e8176[m Fix TypeScript error: Handle unknown error type in Part1 audio
+[33mf4b75db[m Improve Part1 audio timing and iPhone stability
+[33m7394bcf[m Fix TypeScript error: Add voiceProfile to local Part2Question interface
+[33mb569f58[m Fix Part1 answer validation and add voice profile support to Part2
+[33m9431610[m Add detailed debug logging for Part1 answer validation
+[33m15dc0d7[m Fix Part 1 result display to show correct answer status
+[33m7fbaba4[m Fix Part 1 answer validation for mixed correct answer formats
+[33m60a4bd8[m Fix Passage interface to use Part1Data for part1Questions
+[33m22e09a1[m Fix TypeScript and ESLint build errors
+[33m3142ce2[m Fix Part1Question class to include voiceProfile and partType fields
+[33m4944ce8[m Add speaker information to Part 1 results screen
+[33me2a2c72[m Fix Part1 audio generation to use same voice for all options
+[33m9a9c91f[m Add Part 4 copy functionality for speech and questions
+[33m6c355f9[m Remove generation prompt copy button and related code
+[33mc367a60[m Add Part 3 conversation copy functionality
+[33m02d597f[m Fix Part 3 results screen copy function
+[33mdc00753[m Fix Part 2 results screen copy function
+[33mf976256[m Use EXAVITQu4vr4xnSDxMaL voice settings for Part 1,2 label audio
+[33m9c95961[m Fix Part 1 voiceProfile missing in API response
+[33m89b21a1[m Fix Part 1 audio volume to use voiceId-based settings
+[33m5a23bb9[m Add voiceProfile support to Part 1 questions and audio playback
+[33m5905a22[m Add Part 1 audio to voiceId-less volume handling
+[33mbe3b9c9[m Apply default volume to label audio (A, B, C symbols)
+[33m068aac8[m Add dedicated volume setting for Part 2 audio without voiceId
+[33m3e38e5c[m Add error handling for missing voiceId in audio playback
+[33m5898914[m Apply Part 3's voice-based volume system to Part 4 audio playback
+[33m4242456[m Apply consistent styling to Part 4 speech and translation
+[33m181b324[m Apply consistent blue background styling to Part 3 conversation translations
+[33mcae5152[m Increase text size for Part 3 conversation and Part 4 speech to match Part 7
+[33m608b357[m Add new Part 4 audio files and update question data
+[33mbb50acf[m Trigger rebuild: Add component comment
+[33m09122ed[m Fix TypeScript error: Remove non-existent Part4 question audio buttons
+[33mc5ad3b2[m Fix TypeScript error: Add type assertions for question id access
+[33m5b38a54[m Fix TypeScript error: Add part4 to tempToeicPart union type
+[33m20ad3c1[m Fix TypeScript error: Add explicit typing for Part4Question delete filter
+[33ma0fef80[m Fix TypeScript error: Add explicit typing for Part4Question filter
+[33m94fc10b[m Fix ESLint error: Remove unused buttonClass variable
+[33m2dd1b38[m Implement Part4 audio controls and fix admin deletion
+[33me6215cc[m Remove unnecessary log copy button
+[33md8d024a[m Align Part4 results screen UI with Part3 design
+[33ma3a8af2[m Fix settings UI: add Part4 support and remove duplicate popup
+[33mc1c0360[m Simplify Part4 UI and align with Part3 design
+[33m70a5c9f[m Add new Part 4 questions and audio files
+[33m0ae10fc[m Fix Part 4 audio voice ID parameter format
+[33m4b0fe6e[m Complete Part 4 implementation with audio-only speech format
+[33mffed83a[m Implement complete Part4 speech generation system
+[33md51c5e9[m Fix iOS audio playback by recreating AudioContext on app resume
+[33mca322fe[m Fix prompt logger path and add all Part3 generation artifacts
+[33m998aec2[m Add generated Part3 questions with industry context examples
+[33m084b316[m Expand PART3_INDUSTRIES from 14 to 24 categories and fix JSON syntax
+[33mbb17ae9[m Add industry system for Part3 generation with comprehensive integration
+[33ma417c66[m Implement dynamic Part3 scenario synchronization system
+[33m673c780[m Remove Part3 subscenario system and add main scenario tag
+[33m81819e5[m Add Part3 scenario selection UI to admin panel
+[33m88e706b[m Part3問題生成の高速化実装（90%以上の翻訳API削減）
+[33m845777d[m Part3にサブシナリオ・メインシナリオ表示を追加
+[33m63910ee[m Adjust Part3 voice volume levels based on testing
+[33m8be1288[m Display voice ID and volume settings in Part3 results speaker information
+[33m0d1777d[m Implement Part3 voice ID-based volume control system
+[33m5675ec1[m Remove scenario display from Part3 question screen
+[33m9e9cc11[m Fix all TypeScript null assertions for currentPassage, currentPart2Question, and currentPart3Question
+[33md757429[m Fix TypeScript null assertion for currentPart3Question in score calculation
+[33mde3841a[m Fix TypeScript null assertions for currentPart3Question in results display
+[33m70ac414[m Fix TypeScript null assertions for currentPart2Question in results display
+[33md72981e[m Fix null check for currentPart2Question in audio button handler
+[33m40c1b2c[m Fix TypeScript compilation error by removing duplicate Part3 processing block
+[33mdefaf4e[m Fix Part 3 duplicate display and interface issues
+[33m9d9f438[m Fix Part 3 duplicate display and restore normal result functionality
+[33ma74274f[m Fix iOS audio playback issue after app switching
+[33mc1a7737[m Reduce Part 3 conversation audio segment interval
+[33m835d902[m Fix Part 3 API topic reference error
+[33m8cb716c[m Remove topic specification from Part 3 admin interface
+[33mc784805[m Remove topic-related content from Part 3 generation flow
+[33m16b279b[m Align Part 3 prompt structure with Part 2 format
+[33m1b015b8[m Fix Part 3 prompt display in GenerationResultModal
+[33md9069fd[m Fix GenerationResultModal error handling for undefined prompt items
+[33m88aeeb3[m Fix TypeScript error in Part 3 prompt display
+[33m81b1ad5[m Fix ElevenLabs voice gender misclassification for Australian voice
+[33m06bf665[m Fix Part 3 generation prompt tracking and storage
+[33m12cd49f[m Fix Part 1 answer letter display handling mixed data formats
+[33m0a568f1[m Unify incorrect answer display format across all TOEIC parts
+[33me9bae63[m Fix Part 3 answer selection and correct answer detection
+[33mdb4e860[m Improve Part 3 generation error detection and audio validation
+[33me1ef8cb[m Update Part 3 data with new generated questions
+[33m6a0156e[m Update Part 3 results display to match Part 2 format
+[33m7b92983[m Add option translations display for Part 3 questions
+[33m4da17d0[m Fix TypeScript error in Part 3 prompt display onClick handler
+[33mdc123a8[m Fix Part3 audio playback function null safety
+[33m37dede9[m Fix remaining TypeScript and ESLint issues in RandomPassage
+[33m861da14[m Fix TypeScript build errors in RandomPassage component
+[33m674545d[m Update Part3 question generation to follow TOEIC standard speaker references
+[33m092e4ce[m Add Part3 prompt display functionality and enhance voice variation
+[33m8be7a3e[m Implement Part3 frontend display and audio playback functionality
+[33ma1787dd[m Implement Part3 question generation system
+[33m53315f8[m Add newly generated Part2 questions and audio files
+[33m593d70e[m Remove harmful fallback processing from Part2 generation
+[33m98b2ddc[m Fix TypeScript error: remove invalid onerror handler from AudioBufferSourceNode
+[33m481c639[m Fix TypeScript error: add null check for window.audioContext
+[33mf07f861[m Fix TypeScript compilation error: move Part2 audio preload useEffect after loadAudioBuffer definition
+[33m4d5f593[m Fix build error by removing unused iosSharedAudioRef variable
+[33m0d8c63d[m Implement Web Audio API for iOS audio playback
+[33m8a40c89[m Improve iOS audio handling with WebAudioContext and retry mechanism
+[33mc249ed8[m Fix iOS NotAllowedError by adding audio context preparation
+[33m5216d51[m Enhance iOS audio debugging with detailed error analysis
+[33m79bff99[m Add iOS debug button to main question screen
+[33m412820a[m Fix SSR error by adding navigator undefined check
+[33m6619c30[m Temporarily show iOS debug button on all devices for testing
+[33m2df58ed[m Add iOS audio debugging functionality for troubleshooting iPhone audio playback issues
+[33m2d0714c[m Fix Part2 ID search functionality for URL parameters
+[33m35f6264[m Add retry functionality for audio playback to handle network delays
+[33md1dfc9a[m Fix Part1 audio playback issue by adding dynamic audio file path generation
+[33m7eedffa[m Fix TypeScript build errors in API routes
+[33mc537ea2[m Update Part 2 question generation and API improvements
+[33me60a637[m Add missing audio files for production
+[33m48a8037[m Fix 404 error for /api/passages endpoint
+[33m9338c3d[m Improve API error handling and debugging
+[33m47f4cbf[m Fix build error: applySettings function reference
+[33m158d041[m Fix error screen and settings button access issue
+[33m922682b[m Fix Part 1 hard difficulty loading issue
+[33m14839c0[m Implement weighted random voice selection for Part 2 questions
+[33m4c9a0aa[m Implement Part 7 generation modal improvements
+[33mb98744e[m Implement separate Part 7 generation buttons for 3 types
+[33m144a765[m Fix Part 7 question generation ID output issue
+[33m36aae46[m Optimize Part 2 loading performance by caching questions in memory
+[33mb0a940e[m Fix ESLint errors: remove unused variables and dependencies
+[33m1e30601[m Fix Part 2 Next button navigation issues
+[33md33c876[m Unify Part 2 result display format with Part 1
+[33m1da9f77[m Optimize Part 2 question loading performance
+[33mce56c7e[m Fix ESLint error: remove unused optionIndex parameter
+[33m9102cf7[m Replace ID-based Part 2 detection with partType-based detection
+[33mdacac33[m Fix TOEIC part switching from Part 2 question screen
+[33m312b379[m Fix center alignment of selection buttons for Part 1 and Part 2
+[33m8801e38[m Update Part 2 answer buttons to match Part 1 simple style
+[33md72b86c[m Remove redundant answer button from Part 2 question display
+[33m7ec02eb[m Fix infinite loop in Part 2 question selection
+[33m5c7ff85[m Reset processed passage ID when clearing URL parameters
+[33m8144729[m Fix URL parameter clearing to use correct parameter name
+[33m75ba591[m Add settings application flag to prevent URL parameter interference
+[33mf269482[m Fix TOEIC part filtering by clearing URL parameters on settings change
+[33m2e30051[m Improve debug logging for TOEIC part filtering
+[33mb4554fd[m Fix TOEIC part filtering to use new partType field
+[33m4830aa8[m Fix TypeScript compilation errors for Next.js 15
+[33mcc73784[m Fix ESLint errors for production build
+[33m6c88a76[m Add partType field to all TOEIC question data
+[33md13aefd[m Implement TOEIC Part 2 question generation system
+[33m9ebf8cb[m Fix TypeScript error in error handling
+[33mcd5929a[m Trigger Vercel rebuild with latest changes
+[33mc6caf31[m Fix TypeScript and ESLint errors for production build
+[33mfe3fbaa[m Implement complete randomization for Part 1 batch generation
+[33m8f56970[m Implement separate label and option audio system
+[33m474ccf4[m Add A,B,C,D prefixes to audio generation and remove Web Speech API fallback
+[33m9b50344[m Fix Part 1 audio files integration by preserving audioFiles in API conversion
+[33m0b52f76[m Add audioFiles property to Part1Question class
+[33m71becd1[m Restore playPart1Audio function usage with proper error handling
+[33m3692224[m Fix playPart1Audio function and add proper Web Speech API fallback
+[33madc5a8e[m Debug gameSettings access issue
+[33m684328d[m Add step-by-step logging to pinpoint exact error location
+[33m8e79826[m Add very detailed debugging to isolate audio button error
+[33m2e9637d[m Temporarily bypass Part1 audio to test basic Web Speech API functionality
+[33m4368e63[m Add comprehensive error handling to playPart1Audio function
+[33m3b81057[m Add comprehensive debugging and error handling to audio buttons
+[33me9423f2[m Improve Part 1 audio error handling with automatic fallback
+[33mded6648[m Fix async error handling for Part 1 audio playback
+[33m58b50fd[m Implement ElevenLabs audio integration for Part 1 questions
+[33m08c0471[m Improve voice selection for iOS Safari with async voice loading
+[33m7a6a9e0[m Improve English voice selection for iPhone Safari
+[33m7d4cc47[m Fix TypeScript error in Part 1 questions API route
+[33m1bdf530[m Fix ESLint error with explicit eslint-disable comment
+[33mea9a589[m Fix ESLint error by prefixing unused parameters with underscores
+[33m34bf8a8[m Add version marker to identify debug message source
+[33m43c6354[m Update admin interface and API endpoints for Part 1 generation
+[33m3f9ccff[m Fix Part 1 audio button navigation and explanation language issues
+[33m2f8454b[m Remove all debug logging and clean up code
+[33mbe19ad3[m Add debug logging to track component loading issue
+[33mf0b3fc2[m Improve loading state display with detailed debug info
+[33mdd7dcf4[m Fix syntax errors by restoring RandomPassage and disabling debug logs
+[33md8af7c8[m Remove all addDebugLog function calls to fix local development
+[33m31a27fe[m Remove conflicting App Router API routes
+[33m125d6e6[m Remove all debug logs to improve loading performance
+[33m8f0b316[m Fix second TypeScript error for searchParams in RandomPassage
+[33m6383d4a[m Fix TypeScript error for searchParams null check
+[33mbdbb270[m Switch to Pages API Router for better Vercel compatibility
+[33me491d94[m Fix Vercel function runtime configuration error
+[33m2280139[m Add test API route and improve Vercel configuration
+[33m00a88ed[m Force Node.js runtime for API routes and add Vercel config
+[33m9ba6f74[m Improve API error handling to show actual 404 response content
+[33m3b8ddde[m Add detailed API debugging for Vercel file system access
+[33mac0b7cd[m Add detailed debug logging for Vercel deployment issue investigation
+[33m3b9873c[m Move types to lib directory and update imports to fix Vercel build
+[33m6abaa74[m Fix types imports by reverting to relative paths
+[33mc8a5ed1[m Add explicit TypeScript path mappings to fix Vercel build
+[33m9b2eb3e[m Fix import paths to use absolute @/ pattern consistently
+[33mefce6b9[m Fix all type imports by using @/ path mapping consistently
+[33mc0302b7[m Fix Part1Data import by inlining type definition
+[33m3ac83f9[m Fix import path in part1-questions API route
+[33mad9e4f7[m Fix build errors and TypeScript issues
+[33m647e4e4[m Fix loading state issues and improve error handling
+[33ma795c0f[m Implement Part 1 question generation system with existing architecture integration
+[33m5a30a06[m Add generator log files and update package dependencies
+[33mab129d3[m Fix difficulty filtering bug in Next button
+[33md77c40f[m Add difficulty selection feature and fix prompt type classification
+[33m82a8930[m Fix build errors and TypeScript issues
+[33m6251017[m Implement comprehensive AI quality checking system with Japanese responses
+[33m9467277[m Make chart descriptions optional and minimal
+[33m699cbfe[m Improve chart description prompt to be more concise
+[33m27feebc[m Add chart filter option to problem display settings
+[33m2103cdd[m Fix Next.js 15 build error: wrap useSearchParams in Suspense boundary
+[33m5e55dac[m Fix build error: remove unused index variable
+[33m11b994a[m Enhance multi-document generation and improve user experience
+[33m732300f[m Fix multi-document passage selection and display
+[33md0bab9a[m Fix build errors: remove unused variables and fix dependencies
+[33m53803c2[m Add settings and stats functionality similar to genius project
+[33mefb7e3d[m Fix multiple TypeScript errors and build issues
+[33m643a286[m Fix TypeScript error: Add missing debugLogs state variable
+[33mce64879[m CSVファイルの削除とUI機能の改善
+[33m3180218[m 問題文の多様性チェック機能の削除
+[33m186c247[m 問題難易度がランダムになる問題の修正と問題生成完了時に音を鳴らす変更
+[33m907ae26[m 本文の翻訳が得られない問題の解決
+[33m639414b[m 様々な問題管理の改善
+[33mc12ecdb[m スプラッシュ画面のタイトルを「MIZUKI ENGLISHtest」に変更
+[33m5e08bb3[m プロンプトから正解記号指示を削除し、後処理で記号変換する運用に統一
+[33m71e2c0d[m Fix chart_passage6 table display and normalize correct answers to letter format
+[33ma2bd363[m Fix Safari text copy issue with whitespace-pre-wrap and restore word highlighting functionality
+[33m2002b3a[m Add detailed logging to track question.correct value changes at each stage
+[33m1d57f10[m Fix useEffect infinite loop and selectedAnswers reset issue - Prevent useEffect from running after results screen display - Add condition to only run selectRandomPassage on initial load - Improve state management to prevent unexpected resets
+[33m6dbf29a[m デバッグログ機能を実装 - 詳細なログ記録と結果画面でのコピー機能、新しい問題ではログをクリア
+[33ma12feab[m 無限ループを修正し、本文の改行表示を改善 - selectRandomPassageの依存関係を修正、複数改行の正しい処理を実装
+[33m80903de[m ESLintエラーを修正 - 未使用変数を削除、useEffectの依存関係を修正
+[33m6389160[m 結果画面でハイライトされた単語をクリックしてクリップボードにコピーする機能を追加
+[33md2bc620[m 単語ハイライト機能を実装 - 出題画面で単語をクリックしてハイライト、結果画面で表示のみ
+[33m5b0c7a7[m Add admin management system with Vercel deployment protection
+[33m2b7e452[m Remove unnecessary backup and script files
+[33mb752e21[m Add hard difficulty passages and improve app functionality
+[33mb84d9e4[m fix: 型エラー解消とESLint一時緩和（Chart/ChartDataの柔軟化）
+[33m7ecc5fd[m feat: コスト削減機能とHard問題生成機能を追加
+[33m179323a[m 整理: ファイル構造の改善 - templates/をgenerator/に移動し、重複ファイルを削除
+[33m89f9ad4[m 未使用チャートコンポーネント削除TypeScriptエラー解消：Vercelデプロイ対応
+[33m991ea67[m ファイル名簡素化: passages-with-translations.json  passages.json と問題作成仕様書の追加
+[33m22ca617[m スプラッシュ画面表示時にRandomPassageの状態を維持するように修正
+[33me4312b0[m スクロールを即座に行うように修正
+[33m8765580[m ランダム性の改善と問題ID表示の追加
+[33m78c01a4[m Add retry button to results screen with conditional Next button display
+[33mb712258[m Update public folder with manual changes
+[33m9cc074b[m Update public folder with manual changes
+[33m487179a[m タイトルを完全な黒に変更、PWAステータスバーを黒に設定
+[33m57e8122[m 透明フィルターを削除
+[33m669ee85[m Add subtitle to splash screen and change PWA status bar to white
+[33mb916df3[m Remove black overlay from splash screen and change title to black text
+[33m3550fe6[m Fix passage11: Change Japanese options to English and update SplashScreen to wait for tap
+[33m44e74dd[m Update layout.tsx
+[33m51df59d[m Remove unnecessary 'other' section from metadata
+[33md56c830[m metaタグの重複を解消しmetadataに統一
+[33mdfe16ef[m ステータスバー黒化の設定を再確認
+[33m7463f56[m ステータスバーを黒に設定（iOSPWA両対応）
+[33md9e2267[m 説明検証後の状態をpush
+[33m1e07ad0[m スプラッシュ画面にセーフエリア対応のpaddingを追加（PWA全画面対応）
+[33m594da10[m スプラッシュ画面の画像表示をモバイルはobject-cover、PCはobject-containに変更
+[33m4bf54c4[m スプラッシュ画面の表示時間を3秒に変更
+[33m026f188[m スプラッシュ画面のシンプル化とフェードアウト遷移を実装
+[33m16c25b5[m Fix scroll timing in selectRandomPassage: use setTimeout to ensure state updates complete before scrolling
+[33m6e183e0[m Remove text size adjustment feature and improve attribute layout padding
+[33m652e2d8[m Improve text size adjustment: remove text-sm classes for consistent scaling across all elements
+[33md340634[m Add settings button with text size adjustment and improve result display with individual question status
+[33m7cda51c[m ESLintエラー修正: onClickハンドラーの未使用eパラメータを削除
+[33m9512ee8[m ESLintエラー修正: copyToClipboard関数の未使用eventパラメータを削除
+[33m67206e7[m TOEIC Part7問題表示の改善: UI統一、コピー機能安定化、選択肢表示の最適化
+[33m8aa5a62[m Update README with latest features and improvements
+[33mf174d52[m Trigger Vercel deployment
+[33mc465932[m Test: trigger Vercel auto deployment
+[33m8b3934e[m Update README and trigger deployment
+[33m6faa589[m UI improvements: TOEIC format instructions, clickable options, and result screen restrictions
+[33md894003[m アプリタイトルを「Mizuki Eng」に変更し、iOS Safariのステータスバー色を修正
+[33mb1fee18[m PWA対応: next-pwa削除とNext.js 15標準PWA設定
+[33m5d2aec2[m Fix PWA config and dependencies
+[33m2587cd0[m Add PWA manifest and icons
+[33m9322236[m Add MIT License
+[33m5383b4c[m Remove vercel.json to use auto-detection
+[33mb5a349c[m Update vercel.json with detailed Next.js configuration
+[33m673852f[m Add vercel.json configuration
+[33m1a51a2d[m Initial commit: TOEIC Part7 learning app

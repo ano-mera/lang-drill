@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T05:21:23.498Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、昨日完了しました。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:21:23.500Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "次回の会議でそれについて話し合います。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:21:23.777Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "最終報告書をまだ見ていません。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  }
+]

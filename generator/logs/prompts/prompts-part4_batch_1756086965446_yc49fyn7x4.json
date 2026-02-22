@@ -1,0 +1,257 @@
+[
+  {
+    "timestamp": "2025-08-25T01:56:05.451Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":5,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 5,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:05.521Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Company voice announcement (IVR) (企業の音声案内メッセージ)\n【Industry】: Rental Services (cars, equipment, etc.) (レンタル業（自動車・機材など）)\n【Difficulty】: hard\n【Question Types】: detail, main_purpose, intended_audience\n【Correct Answer Positions】: Question 1=D, Question 2=C, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:14.361Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Automated System\",\n      \"role\": \"Company voice announcement\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Thank you for calling Prime Rental Services. If you are an existing customer and wish to extend your current rental period, please press 1. For new rental inquiries concerning vehicles or equipment, press 2. To report any issues with rented items, press 3. If you need to speak directly with a rental agent, please stay on the line. For all other inquiries, visit our website at www.primerental.com. Please note that our business hours are Monday to Saturday, from 9 AM to 6 PM, but our emergency support line is available 24/7. We appreciate your business and look forward to serving you.\",\n    \"topic\": \"IVR options and company information for rental services\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Which option should be selected to extend a current rental?\",\n      \"options\": [\"Option 2\", \"Option 3\", \"Stay on the line\", \"Option 1\"],\n      \"correct\": \"Option 1\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチの冒頭で、既存の顧客がレンタル期間を延長したい場合は「1」を押すように案内されています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\n        \"To provide product details\",\n        \"To offer promotions\",\n        \"To guide callers through IVR options\",\n        \"To remind about office hours\"\n      ],\n      \"correct\": \"To guide callers through IVR options\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"この企業音声案内は、顧客にインタラクティブ音声応答（IVR）オプションを案内する目的で作成されています。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Who is the intended audience of this recording?\",\n      \"options\": [\n        \"Potential investors\",\n        \"Customers of Prime Rental Services\",\n        \"Rental agents\",\n        \"General public\"\n      ],\n      \"correct\": \"Customers of Prime Rental Services\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"この録音メッセージは、Prime Rental Servicesの顧客を対象としています。\",\n      \"questionType\": \"intended_audience\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:14.362Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nThank you for calling Prime Rental Services. If you are an existing customer and wish to extend your current rental period, please press 1. For new rental inquiries concerning vehicles or equipment, press 2. To report any issues with rented items, press 3. If you need to speak directly with a rental agent, please stay on the line. For all other inquiries, visit our website at www.primerental.com. Please note that our business hours are Monday to Saturday, from 9 AM to 6 PM, but our emergency support line is available 24/7. We appreciate your business and look forward to serving you.\n\nQuestions and Options:\nQuestion 1: Which option should be selected to extend a current rental?\nOptions:\nA: Option 2\nB: Option 3\nC: Stay on the line\nD: Option 1\n\nQuestion 2: What is the main purpose of this announcement?\nOptions:\nA: To provide product details\nB: To offer promotions\nC: To guide callers through IVR options\nD: To remind about office hours\n\nQuestion 3: Who is the intended audience of this recording?\nOptions:\nA: Potential investors\nB: Customers of Prime Rental Services\nC: Rental agents\nD: General public\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:25.768Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "```json\n{\n  \"textTranslation\": \"プライムレンタルサービスにお電話いただきありがとうございます。既存のお客様で、現在のレンタル期間を延長したい場合は1を押してください。車両や機器に関する新しいレンタル問い合わせについては2を押してください。レンタル品の問題を報告する場合は3を押してください。レンタル担当者と直接話をしたい場合は、そのままお待ちください。それ以外のお問い合わせについては、弊社ウェブサイトwww.primerental.comをご覧ください。営業時間は月曜日から土曜日の午前9時から午後6時までですが、緊急サポートラインは24時間年中無休でご利用いただけます。ご利用いただきありがとうございます。今後ともよろしくお願いいたします。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"現在のレンタル期間を延長するには、どのオプションを選択すべきですか？\",\n      \"optionTranslations\": [\n        \"オプション2\",\n        \"オプション3\",\n        \"そのまま待つ\",\n        \"オプション1\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このアナウンスの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"製品の詳細を提供する\",\n        \"プロモーションを提供する\",\n        \"電話案内システムのオプションを案内する\",\n        \"営業時間について知らせる\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この録音の対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"潜在的な投資家\",\n        \"プライムレンタルサービスのお客様\",\n        \"レンタル担当者\",\n        \"一般の人々\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:32.832Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Sales pitch or promotion (販売促進・セールス案内)\n【Industry】: Entertainment and Media (エンタメ・メディア)\n【Difficulty】: hard\n【Question Types】: main_purpose, location, detail\n【Correct Answer Positions】: Question 1=D, Question 2=A, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:42.538Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"David Thompson\",\n      \"role\": \"Marketing Director\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, esteemed colleagues. As part of our ongoing efforts to expand our digital presence, we are thrilled to unveil our new streaming platform, StarStream. This cutting-edge service offers an extensive library of content, including exclusive shows, movies, and documentaries available in ultra-high definition. Our unique algorithm tailors recommendations based on viewing habits, ensuring a personalized experience for every subscriber. To celebrate our launch, we're offering a special 30% discount on yearly subscriptions for the first three months. The platform will be accessible worldwide, and we anticipate a significant increase in our subscriber base. We believe StarStream positions us as a frontrunner in the rapidly evolving entertainment and media industry, reinforcing our commitment to delivering premium content.\",\n    \"topic\": \"Introduction of a new streaming platform and promotional offer\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To announce a merger with another company\",\n        \"To highlight new content available on the platform\",\n        \"To introduce a new mobile application\",\n        \"To promote the launch of a new streaming service\"\n      ],\n      \"correct\": \"To promote the launch of a new streaming service\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチは新しいストリーミングサービス、StarStreamの立ち上げを宣伝することを目的としている。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Where will the new platform be accessible?\",\n      \"options\": [\n        \"Worldwide\",\n        \"In selected countries only\",\n        \"In urban areas\",\n        \"In the United States exclusively\"\n      ],\n      \"correct\": \"Worldwide\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチ内では、プラットフォームが世界中で利用可能であることが述べられている。\",\n      \"questionType\": \"location\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What special offer is available for the first three months?\",\n      \"options\": [\n        \"A free trial for new customers\",\n        \"A free upgrade to premium membership\",\n        \"A 30% discount on yearly subscriptions\",\n        \"A bonus gift with first purchase\"\n      ],\n      \"correct\": \"A 30% discount on yearly subscriptions\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチによると、最初の3ヶ月間は年間サブスクリプションに30％の割引がある。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:42.539Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood afternoon, esteemed colleagues. As part of our ongoing efforts to expand our digital presence, we are thrilled to unveil our new streaming platform, StarStream. This cutting-edge service offers an extensive library of content, including exclusive shows, movies, and documentaries available in ultra-high definition. Our unique algorithm tailors recommendations based on viewing habits, ensuring a personalized experience for every subscriber. To celebrate our launch, we're offering a special 30% discount on yearly subscriptions for the first three months. The platform will be accessible worldwide, and we anticipate a significant increase in our subscriber base. We believe StarStream positions us as a frontrunner in the rapidly evolving entertainment and media industry, reinforcing our commitment to delivering premium content.\n\nQuestions and Options:\nQuestion 1: What is the main purpose of the announcement?\nOptions:\nA: To announce a merger with another company\nB: To highlight new content available on the platform\nC: To introduce a new mobile application\nD: To promote the launch of a new streaming service\n\nQuestion 2: Where will the new platform be accessible?\nOptions:\nA: Worldwide\nB: In selected countries only\nC: In urban areas\nD: In the United States exclusively\n\nQuestion 3: What special offer is available for the first three months?\nOptions:\nA: A free trial for new customers\nB: A free upgrade to premium membership\nC: A 30% discount on yearly subscriptions\nD: A bonus gift with first purchase\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:47.199Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆さん、午後もお疲れ様です。私たちのデジタルプレゼンスを拡大する取り組みの一環として、新しいストリーミングプラットフォーム「StarStream」を発表できることを嬉しく思います。この最先端のサービスは、独占番組、映画、ドキュメンタリーを含む豊富なコンテンツライブラリを超高画質で提供します。当社独自のアルゴリズムは視聴習慣に基づいて推奨を調整し、すべての加入者にパーソナライズされた体験を保証します。ローンチを記念して、最初の3か月間、年間購読料を30％割引で提供します。このプラットフォームは世界中で利用可能であり、加入者数の大幅な増加を見込んでいます。StarStreamは急速に進化するエンターテインメントおよびメディア業界において、我々を先駆者として位置付け、プレミアムコンテンツを提供するという我々のコミットメントを強化すると信じています。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"発表の主な目的は何ですか?\",\n      \"optionTranslations\": [\n        \"他社との合併を発表する\",\n        \"プラットフォームで利用可能な新しいコンテンツを強調する\",\n        \"新しいモバイルアプリの紹介\",\n        \"新しいストリーミングサービスの開始を宣伝する\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"新しいプラットフォームはどこで利用可能ですか?\",\n      \"optionTranslations\": [\n        \"世界中\",\n        \"選択された国のみ\",\n        \"都市部\",\n        \"アメリカ合衆国のみ\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"最初の3か月間に提供される特別オファーは何ですか?\",\n      \"optionTranslations\": [\n        \"新規顧客のための無料トライアル\",\n        \"プレミアムメンバーシップへの無料アップグレード\",\n        \"年間購読料の30％割引\",\n        \"初回購入時のボーナスギフト\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:56:56.647Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Airport or flight announcement (空港・飛行機内の案内)\n【Industry】: Travel Agency and Tour Services (旅行代理店・ツアーサービス)\n【Difficulty】: hard\n【Question Types】: next_action, location, inference\n【Correct Answer Positions】: Question 1=A, Question 2=D, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:06.872Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Flight attendant\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Ladies and gentlemen, welcome to Flight 657 operated by Skyline Airways, bound for New York City. We are currently experiencing a delay due to inclement weather conditions at the destination airport. As a result, our new expected departure time will be in approximately 45 minutes. In the meantime, passengers are encouraged to remain in the boarding area as additional updates will be communicated shortly. For those in the economy class needing refreshments, complimentary beverages are available at Gate 24. Business-class passengers may proceed to the Skylounge using their boarding passes for added comfort. Once again, we apologize for any inconvenience and appreciate your patience during this situation.\",\n    \"topic\": \"Flight delay announcement\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the next action passengers in the economy class should take?\",\n      \"options\": [\n        \"Get complimentary beverages at Gate 24.\",\n        \"Proceed to the Skylounge.\",\n        \"Board the aircraft immediately.\",\n        \"Contact the airline's support desk.\"\n      ],\n      \"correct\": \"Get complimentary beverages at Gate 24.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"アナウンスでは、エコノミークラスの乗客にはゲート24で無料の飲み物が提供されていると伝えている。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Where should business-class passengers go for added comfort?\",\n      \"options\": [\n        \"Gate 24\",\n        \"The check-in counter\",\n        \"The boarding area\",\n        \"The Skylounge\"\n      ],\n      \"correct\": \"The Skylounge\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"ビジネスクラスの乗客は搭乗券を提示してスカイラウンジに向かうことができると案内している。\",\n      \"questionType\": \"location\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Why is the flight delayed?\",\n      \"options\": [\n        \"Due to inclement weather at the destination airport.\",\n        \"Mechanical issues with the aircraft.\",\n        \"Crew scheduling conflicts.\",\n        \"Increased air traffic congestion.\"\n      ],\n      \"correct\": \"Due to inclement weather at the destination airport.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"アナウンスでは、目的地の空港での悪天候が理由で遅延していると述べている。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:06.873Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nLadies and gentlemen, welcome to Flight 657 operated by Skyline Airways, bound for New York City. We are currently experiencing a delay due to inclement weather conditions at the destination airport. As a result, our new expected departure time will be in approximately 45 minutes. In the meantime, passengers are encouraged to remain in the boarding area as additional updates will be communicated shortly. For those in the economy class needing refreshments, complimentary beverages are available at Gate 24. Business-class passengers may proceed to the Skylounge using their boarding passes for added comfort. Once again, we apologize for any inconvenience and appreciate your patience during this situation.\n\nQuestions and Options:\nQuestion 1: What is the next action passengers in the economy class should take?\nOptions:\nA: Get complimentary beverages at Gate 24.\nB: Proceed to the Skylounge.\nC: Board the aircraft immediately.\nD: Contact the airline's support desk.\n\nQuestion 2: Where should business-class passengers go for added comfort?\nOptions:\nA: Gate 24\nB: The check-in counter\nC: The boarding area\nD: The Skylounge\n\nQuestion 3: Why is the flight delayed?\nOptions:\nA: Due to inclement weather at the destination airport.\nB: Mechanical issues with the aircraft.\nC: Crew scheduling conflicts.\nD: Increased air traffic congestion.\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:12.568Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆様、本日はスカイライン航空のニューヨーク行き657便にご搭乗いただきありがとうございます。現在、目的地の空港で悪天候のため遅延が発生しております。その結果、新たな出発予定時刻は約45分後となります。それまでの間、搭乗エリアにてお待ちいただき、追加情報が入り次第お知らせいたします。エコノミークラスの方でお飲み物が必要な方には、24番ゲートにて無料の飲み物をご用意しております。ビジネスクラスのお客様は、快適な時間をお過ごしいただくために搭乗券でスカイラウンジへお進みください。ご不便をおかけしますが、何卒ご理解とご協力をお願い申し上げます。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"エコノミークラスの乗客は次に何をすべきですか？\",\n      \"optionTranslations\": [\n        \"24番ゲートで無料の飲み物を受け取る。\",\n        \"スカイラウンジへ向かう。\",\n        \"すぐに飛行機に搭乗する。\",\n        \"航空会社のサポートデスクに連絡する。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"ビジネスクラスの乗客は、快適さを求めてどこに行くべきですか？\",\n      \"optionTranslations\": [\n        \"24番ゲート\",\n        \"チェックインカウンター\",\n        \"搭乗エリア\",\n        \"スカイラウンジ\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"なぜ飛行機は遅れているのですか？\",\n      \"optionTranslations\": [\n        \"目的地の空港での悪天候のため。\",\n        \"航空機の機械的な問題のため。\",\n        \"乗務員のスケジュールの不一致のため。\",\n        \"航空交通の混雑のため。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:19.706Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Media or entertainment promotion (メディア・番組の宣伝)\n【Industry】: Supermarkets and Grocery Stores (スーパーマーケット・食料品店)\n【Difficulty】: hard\n【Question Types】: inference, main_purpose, detail\n【Correct Answer Positions】: Question 1=D, Question 2=A, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:29.077Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Media Coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, valued listeners! We are thrilled to announce the launch of our new weekly podcast, 'Fresh Finds,' brought to you by BrightMarket Supermarkets. Every Friday, tune in to discover the latest trends in grocery shopping, exclusive interviews with nutrition experts, and tips on selecting the freshest local produce. Plus, we'll be featuring a segment dedicated to gourmet recipes that you can prepare using items from our stores. Our premiere episode airs this Friday at 2 PM, and trust us, you won't want to miss it. Subscribe now on all major streaming platforms and enrich your shopping experience with insights that matter.\",\n    \"topic\": \"Promotion of a new podcast related to grocery shopping\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the purpose of 'Fresh Finds' podcast?\",\n      \"options\": [\n        \"To promote healthy lifestyle changes\",\n        \"To interview local policymakers\",\n        \"To launch a new online shopping feature\",\n        \"To enhance the grocery shopping experience\"\n      ],\n      \"correct\": \"To enhance the grocery shopping experience\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、リスナーのショッピング体験を豊かにすることに焦点が当てられており、ショッピングに関連する最新のトレンドやヒントを提供するためです。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To promote the launch of a new podcast\",\n        \"To inform about a discount sale\",\n        \"To discuss who will be interviewed\",\n        \"To provide a cooking class schedule\"\n      ],\n      \"correct\": \"To promote the launch of a new podcast\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチ全体が新しいポッドキャストの立ち上げを宣伝することに専念しており、そのエピソードや内容についての情報が提供されています。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"According to the announcement, when will the premiere episode of 'Fresh Finds' be aired?\",\n      \"options\": [\n        \"Wednesday at 3 PM\",\n        \"Saturday at noon\",\n        \"Thursday at 9 AM\",\n        \"Friday at 2 PM\"\n      ],\n      \"correct\": \"Friday at 2 PM\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチは、ポッドキャストのプレミアエピソードが金曜日の午後2時に放送されると明確に述べています。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:29.077Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood afternoon, valued listeners! We are thrilled to announce the launch of our new weekly podcast, 'Fresh Finds,' brought to you by BrightMarket Supermarkets. Every Friday, tune in to discover the latest trends in grocery shopping, exclusive interviews with nutrition experts, and tips on selecting the freshest local produce. Plus, we'll be featuring a segment dedicated to gourmet recipes that you can prepare using items from our stores. Our premiere episode airs this Friday at 2 PM, and trust us, you won't want to miss it. Subscribe now on all major streaming platforms and enrich your shopping experience with insights that matter.\n\nQuestions and Options:\nQuestion 1: What can be inferred about the purpose of 'Fresh Finds' podcast?\nOptions:\nA: To promote healthy lifestyle changes\nB: To interview local policymakers\nC: To launch a new online shopping feature\nD: To enhance the grocery shopping experience\n\nQuestion 2: What is the main purpose of the announcement?\nOptions:\nA: To promote the launch of a new podcast\nB: To inform about a discount sale\nC: To discuss who will be interviewed\nD: To provide a cooking class schedule\n\nQuestion 3: According to the announcement, when will the premiere episode of 'Fresh Finds' be aired?\nOptions:\nA: Wednesday at 3 PM\nB: Saturday at noon\nC: Thursday at 9 AM\nD: Friday at 2 PM\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:33.189Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆さん、こんにちは！私たちは、『フレッシュ・ファインズ』という新しい週刊ポッドキャストの開始をとても喜んでお知らせします。これはブライトマーケット・スーパーマーケットが提供します。毎週金曜日、最新の食料品ショッピングのトレンド、栄養の専門家への独占インタビュー、そして新鮮な地元の生産物を選ぶためのヒントを見つけるためにぜひお聴きください。さらに、私たちの店舗の商品を使用して作れるグルメレシピに特化したセグメントもご用意しています。第一回目は今週金曜日の午後2時に放送されますので、ぜひお見逃しなく。主要なストリーミングプラットフォームで今すぐ登録して、価値のある情報でショッピング体験を豊かにしてください。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"『フレッシュ・ファインズ』ポッドキャストの目的について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"健康的なライフスタイルの変化を促進するため\",\n        \"地元の政策立案者へのインタビューのため\",\n        \"新しいオンラインショッピング機能を開始するため\",\n        \"食料品ショッピング体験を向上させるため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この発表の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しいポッドキャストの開始を促進するため\",\n        \"割引セールについて知らせるため\",\n        \"誰がインタビューされるかを議論するため\",\n        \"料理教室のスケジュールを提供するため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"発表によると、『フレッシュ・ファインズ』の第一回目はいつ放送されますか？\",\n      \"optionTranslations\": [\n        \"水曜日の午後3時\",\n        \"土曜日の正午\",\n        \"木曜日の午前9時\",\n        \"金曜日の午後2時\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:41.309Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Emergency alert or update (緊急連絡・注意喚起)\n【Industry】: Transportation and Logistics (運輸・物流)\n【Difficulty】: hard\n【Question Types】: main_purpose, inference, detail\n【Correct Answer Positions】: Question 1=D, Question 2=A, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:50.335Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Traffic Control Officer\",\n      \"role\": \"Emergency alert broadcaster\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Attention all personnel! Due to an unexpected landslide on Highway 17 near the Cliffside Tunnel, all transport vehicles heading west are being rerouted to the Mountain Pass Road. This is crucial to ensure driver safety as the debris clearance is anticipated to take up to 24 hours. Logistic coordinators are urged to inform their drivers immediately to avoid the affected area. Additionally, alternate routes may experience increased traffic density, so anticipate potential delays. Emergency services are on-site, coordinating efforts to expedite debris removal. Please monitor updates for further instructions and remain prepared for sudden changes in route assignments.\",\n    \"topic\": \"Emergency rerouting due to a landslide affecting transportation routes\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\n        \"To advertise a new transportation route\",\n        \"To inform about roadway repairs\",\n        \"To announce a traffic detour due to construction\",\n        \"To alert about an emergency route change due to a landslide\"\n      ],\n      \"correct\": \"To alert about an emergency route change due to a landslide\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチの主目的は土砂崩れによる緊急のルート変更を知らせることです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What should logistic coordinators do in response to this situation?\",\n      \"options\": [\n        \"Inform their drivers to avoid the affected area\",\n        \"Stop all transportation activities\",\n        \"Organize a meeting with emergency services\",\n        \"Increase delivery speeds\"\n      ],\n      \"correct\": \"Inform their drivers to avoid the affected area\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"物流調整者は、影響を受けた地域を避けるように運転手に指示する必要があります。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"How long is the debris clearance expected to take?\",\n      \"options\": [\n        \"12 hours\",\n        \"24 hours\",\n        \"48 hours\",\n        \"36 hours\"\n      ],\n      \"correct\": \"24 hours\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"土砂の除去作業には最大24時間かかると予想されています。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:50.337Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nAttention all personnel! Due to an unexpected landslide on Highway 17 near the Cliffside Tunnel, all transport vehicles heading west are being rerouted to the Mountain Pass Road. This is crucial to ensure driver safety as the debris clearance is anticipated to take up to 24 hours. Logistic coordinators are urged to inform their drivers immediately to avoid the affected area. Additionally, alternate routes may experience increased traffic density, so anticipate potential delays. Emergency services are on-site, coordinating efforts to expedite debris removal. Please monitor updates for further instructions and remain prepared for sudden changes in route assignments.\n\nQuestions and Options:\nQuestion 1: What is the main purpose of this announcement?\nOptions:\nA: To advertise a new transportation route\nB: To inform about roadway repairs\nC: To announce a traffic detour due to construction\nD: To alert about an emergency route change due to a landslide\n\nQuestion 2: What should logistic coordinators do in response to this situation?\nOptions:\nA: Inform their drivers to avoid the affected area\nB: Stop all transportation activities\nC: Organize a meeting with emergency services\nD: Increase delivery speeds\n\nQuestion 3: How long is the debris clearance expected to take?\nOptions:\nA: 12 hours\nB: 24 hours\nC: 48 hours\nD: 36 hours\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:57:57.314Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"すべてのスタッフの皆さんにお知らせします。クリフサイドトンネル付近のハイウェイ17号線で予期しない土砂崩れが発生したため、西へ向かうすべての輸送車両はマウンテンパスロードに迂回することになります。これは運転手の安全を確保するために重要です。がれきの撤去には最大で24時間かかると予想されています。物流コーディネーターは、直ちに運転手に影響を受けたエリアを避けるよう知らせてください。さらに、代替ルートでは交通混雑が予想されるため、遅延の可能性を考慮してください。現場には緊急サービスが配置され、がれきの迅速な撤去を調整しています。さらなる指示のために更新情報を確認し、ルートの割り当てが突然変更される場合にも備えてください。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このアナウンスメントの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しい移動ルートを宣伝するため\",\n        \"道路補修について知らせるため\",\n        \"工事による交通迂回を発表するため\",\n        \"土砂崩れによる緊急ルート変更を知らせるため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この状況に対して物流コーディネーターは何をすべきですか？\",\n      \"optionTranslations\": [\n        \"運転手に影響を受けたエリアを避けるよう知らせる\",\n        \"すべての輸送活動を停止する\",\n        \"緊急サービスと会議を組織する\",\n        \"配送速度を上げる\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"がれきの撤去にはどのくらいの時間がかかると予想されていますか？\",\n      \"optionTranslations\": [\n        \"12時間\",\n        \"24時間\",\n        \"48時間\",\n        \"36時間\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

@@ -1,0 +1,136 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:52:21
+ログファイル: question-generation-all-2025-07-25T10-52-21.log
+モード: テスト出力
+難易度: 全難易度
+問題タイプ: 通常
+資料タイプ: 2資料問題
+生成問題数: 1問
+
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage1",
+  "title": "Meeting Scheduling Coordination",
+  "type": "email",
+  "content": "",
+  "contentTranslation": "",
+  "isMultiDocument": true,
+  "documents": [
+    {
+      "id": "doc1",
+      "type": "email",
+      "title": "Meeting Request",
+      "content": "Subject: Request to Schedule a Meeting\n\nHi Team,\n\nI hope this message finds you well. I would like to schedule a meeting to discuss our upcoming project milestones. Please check your availability and suggest a suitable time slot this week. Once I gather everyone's preferences, I will send a confirmation. Feel free to include any topics you wish to discuss.\n\nBest regards,\nJordan",
+      "contentTranslation": "件名: 会議のスケジュール依頼\n\nチームの皆さんへ、\n\nお元気ですか？ 今週のプロジェクトのマイルストーンについて会議を設定したいと思います。今週のご都合を確認し、適した時間帯を提案してください。皆さんの希望を集めた後、確認のメールを送ります。話し合いたいトピックがあれば自由に追加してください。\n\nよろしくお願いします。\nジョーダン"
+    },
+    {
+      "id": "doc2",
+      "type": "memo",
+      "title": "Meeting Confirmation",
+      "content": "To: Project Team\nFrom: Jordan\nSubject: Meeting Confirmation\n\nDear Team,\n\nThank you for sending your availability. The meeting has been scheduled for Thursday at 3 PM in the conference room. We will discuss the project milestones and any additional topics you've suggested. Please be prepared with your updates and any questions you may have.\n\nBest,\nJordan",
+      "contentTranslation": "宛先: プロジェクトチーム\n差出人: ジョーダン\n件名: 会議の確認\n\nチームの皆さん、\n\nご都合をお知らせいただきありがとうございます。会議は木曜日の午後3時に会議室で行うことに決定しました。プロジェクトのマイルストーンと、皆さんが提案した追加のトピックについて話し合います。アップデートや質問を準備しておいてください。\n\nよろしく、\nジョーダン",
+      "hasChart": false,
+      "chart": null
+    }
+  ],
+  "documentTypes": [
+    "email",
+    "memo"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the e-mail, what are team members requested to do?",
+      "questionTranslation": "メールによると、チームメンバーは何をするように要請されていますか？",
+      "options": [
+        "Submit a project report",
+        "Check their availability for a meeting",
+        "Prepare a presentation",
+        "Choose a project milestone"
+      ],
+      "optionTranslations": [
+        "プロジェクトレポートを提出する",
+        "会議のために自分の空き状況を確認する",
+        "プレゼンテーションを準備する",
+        "プロジェクトの節目を選ぶ"
+      ],
+      "correct": "B",
+      "explanation": "メールでは、チームメンバーに会議のための空き状況を確認するよう依頼しています。",
+      "referenceDocuments": [
+        0
+      ],
+      "crossReference": false
+    },
+    {
+      "id": "q2",
+      "question": "In the memo, what time is the meeting scheduled for?",
+      "questionTranslation": "メモによると、会議は何時に予定されていますか？",
+      "options": [
+        "Thursday at 10 AM",
+        "Wednesday at 2 PM",
+        "Thursday at 3 PM",
+        "Friday at 1 PM"
+      ],
+      "optionTranslations": [
+        "木曜日の午前10時",
+        "水曜日の午後2時",
+        "木曜日の午後3時",
+        "金曜日の午後1時"
+      ],
+      "correct": "C",
+      "explanation": "メモには会議が木曜日の午後3時に予定されていると記載されています。",
+      "referenceDocuments": [
+        1
+      ],
+      "crossReference": false
+    },
+    {
+      "id": "q3",
+      "question": "Based on the e-mail and the memo, who is responsible for organizing the meeting?",
+      "questionTranslation": "メールとメモに基づいて、会議の手配を担当しているのは誰ですか？",
+      "options": [
+        "The project manager",
+        "Jordan",
+        "The team leader",
+        "The HR department"
+      ],
+      "optionTranslations": [
+        "プロジェクトマネージャー",
+        "ジョーダン",
+        "チームリーダー",
+        "人事部"
+      ],
+      "correct": "B",
+      "explanation": "メールとメモの両方で、ジョーダンが会議の手配を担当していることが明らかです。",
+      "referenceDocuments": [
+        0,
+        1
+      ],
+      "crossReference": true
+    }
+  ],
+  "metadata": {
+    "difficulty": "all",
+    "estimatedTime": 400,
+    "wordCount": 119,
+    "questionCount": 3,
+    "passageType": "multi_document",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+🧪 テストモード: 問題データベースには追加されません
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:52:43
+実行時間: 0.00秒

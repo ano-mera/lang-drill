@@ -1,0 +1,22 @@
+[
+  { "type": "company_announcement", "description": "Company announcement", "jp": "企業からのお知らせ", "weight": 0.07 },
+  { "type": "event_announcement", "description": "Event announcement", "jp": "イベント案内", "weight": 0.07 },
+  { "type": "tour_guide", "description": "Tour or facility guide", "jp": "施設や観光地のガイド", "weight": 0.07 },
+  { "type": "radio_broadcast", "description": "Radio or podcast broadcast", "jp": "ラジオ・ポッドキャスト放送", "weight": 0.07 },
+  { "type": "sales_pitch", "description": "Sales pitch or promotion", "jp": "販売促進・セールス案内", "weight": 0.06 },
+  { "type": "training_session", "description": "Training or orientation session", "jp": "研修・オリエンテーション", "weight": 0.06 },
+  { "type": "customer_message", "description": "Message to customers", "jp": "顧客へのメッセージ", "weight": 0.06 },
+  { "type": "phone_message", "description": "Phone or voicemail message", "jp": "電話・留守電メッセージ", "weight": 0.06 },
+  { "type": "weather_update", "description": "Weather or traffic update", "jp": "天気・交通情報", "weight": 0.05 },
+  { "type": "meeting_summary", "description": "Meeting summary or update", "jp": "会議の要点や更新", "weight": 0.05 },
+  { "type": "public_event_notice", "description": "Public event announcement", "jp": "公共イベントの案内", "weight": 0.05 },
+  { "type": "flight_announcement", "description": "Airport or flight announcement", "jp": "空港・飛行機内の案内", "weight": 0.05 },
+  { "type": "company_vo_message", "description": "Company voice announcement (IVR)", "jp": "企業の音声案内メッセージ", "weight": 0.05 },
+  { "type": "exhibit_guide", "description": "Exhibit or museum guide", "jp": "展示会・博物館ガイド", "weight": 0.05 },
+  { "type": "emergency_notice", "description": "Emergency alert or update", "jp": "緊急連絡・注意喚起", "weight": 0.05 },
+  { "type": "media_promo", "description": "Media or entertainment promotion", "jp": "メディア・番組の宣伝", "weight": 0.05 },
+  { "type": "staff_training", "description": "Internal staff training", "jp": "社員研修・社内教育", "weight": 0.05 },
+  { "type": "system_maintenance", "description": "System maintenance announcement", "jp": "システム保守案内", "weight": 0.05 },
+  { "type": "policy_update", "description": "Company policy or procedure change", "jp": "方針変更・社内通知", "weight": 0.05 },
+  { "type": "recruitment_notice", "description": "Job opportunity or recruitment pitch", "jp": "採用・求人のお知らせ", "weight": 0.05 }
+]

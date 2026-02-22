@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2025-07-22T07:49:16.568Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "廊下で数人の人々が会話をしています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:49:16.862Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "男性がオフィスに荷物を配達しています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:49:16.894Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "女性が手紙を郵便ポストに入れています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:49:17.077Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "スーツを着た男性が郵便受けのエリアで郵便物を確認している。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:49:17.078Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene depicts a man in a suit checking his mail at a mailbox area, which matches the description accurately.",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-22T07:49:19.157Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "その場面は、スーツを着た男性が郵便受けのエリアでメールを確認している様子を描写しており、説明に正確に一致しています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  }
+]

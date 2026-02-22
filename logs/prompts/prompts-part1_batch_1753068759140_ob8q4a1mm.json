@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2025-07-21T03:32:46.658Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "従業員のグループがカフェテリアで昼食をとっています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "office work"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:32:46.802Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "人々は雑誌を膝に置いて待合室に座っています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "office work"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:32:46.879Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "労働者たちは工場のラインで製品を組み立てています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "office work"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:32:47.322Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "ある人がスクリーン上のチャートを指しており、他の人たちはメモを取っています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "office work"
+    }
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-09-19T08:47:43.777Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:47:43.812Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: hard\n- シナリオ: client_meeting\n- 業種: manufacturing (Manufacturing)\n- 正解位置: 問題1はA、問題2はA、問題3はB\n- 話者数: 2人\n- 話者の性別: 話者Aは女性、話者Bは男性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はManufacturing業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: A位置、問題2: A位置、問題3: B位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:47:54.713Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"client_meeting\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Emily\", \"role\": \"Project Manager\", \"gender\": \"female\"},\n    {\"id\": \"B\", \"name\": \"James\", \"role\": \"Client Representative\", \"gender\": \"male\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Thank you for meeting with me today, James. I wanted to go over the latest production schedule for your order.\"},\n    {\"speaker\": \"B\", \"text\": \"Of course, Emily. I understand there have been some delays. Can you provide an updated timeline?\"},\n    {\"speaker\": \"A\", \"text\": \"Certainly. We've managed to resolve the issue with the supplier and are now set to complete the production by the end of next month.\"},\n    {\"speaker\": \"B\", \"text\": \"That sounds promising. Have contingency plans been put in place in case of further setbacks?\"},\n    {\"speaker\": \"A\", \"text\": \"Yes, we've established a backup supply chain to ensure timely delivery. Additionally, we're increasing the workforce temporarily to meet the deadline.\"},\n    {\"speaker\": \"B\", \"text\": \"That's reassuring to hear. Would it be possible to get a weekly update on the progress?\"},\n    {\"speaker\": \"A\", \"text\": \"Absolutely, I'll send weekly reports to keep you informed.\"},\n    {\"speaker\": \"B\", \"text\": \"Great, I appreciate your proactive approach. Looking forward to your updates.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What issue does the woman mention has been resolved?\",\n      \"options\": [\n        \"An issue with the supplier\",\n        \"A delay in production scheduling\",\n        \"Increased workforce requirements\",\n        \"Communication problems with the client\"\n      ],\n      \"correct\": \"An issue with the supplier\",\n      \"explanation\": \"女性の発言から、供給業者との問題が解決したと述べているため、「An issue with the supplier」が正解です。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"What action has the woman taken to prevent further delays?\",\n      \"options\": [\n        \"Established a backup supply chain and increased workforce\",\n        \"Extended the production timeline\",\n        \"Reduced orders from the supplier\",\n        \"Decreased client communication\"\n      ],\n      \"correct\": \"Established a backup supply chain and increased workforce\",\n      \"explanation\": \"女性は、バックアップの供給チェーンを確立し、労働力を増やすと述べているため、この選択が正解です。\",\n      \"questionType\": \"Inference\"\n    },\n    {\n      \"question\": \"What does the man request from the woman?\",\n      \"options\": [\n        \"A completion of the order by next week\",\n        \"Weekly updates on the progress\",\n        \"A reduction in workforce\",\n        \"A meeting every month\"\n      ],\n      \"correct\": \"Weekly updates on the progress\",\n      \"explanation\": \"男性は、毎週の進捗状況の更新を要求しており、それが「Weekly updates on the progress」に該当します。\",\n      \"questionType\": \"Request\"\n    }\n  ],\n  \"difficulty\": \"hard\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:47:54.715Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: client_meeting\n\nConversation:\nA: Thank you for meeting with me today, James. I wanted to go over the latest production schedule for your order.\nB: Of course, Emily. I understand there have been some delays. Can you provide an updated timeline?\nA: Certainly. We've managed to resolve the issue with the supplier and are now set to complete the production by the end of next month.\nB: That sounds promising. Have contingency plans been put in place in case of further setbacks?\nA: Yes, we've established a backup supply chain to ensure timely delivery. Additionally, we're increasing the workforce temporarily to meet the deadline.\nB: That's reassuring to hear. Would it be possible to get a weekly update on the progress?\nA: Absolutely, I'll send weekly reports to keep you informed.\nB: Great, I appreciate your proactive approach. Looking forward to your updates.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:48:02.131Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"クライアントミーティング\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"今日はお時間をいただきありがとうございます、ジェームズさん。ご注文の最新の生産スケジュールについてお話ししたかったのです。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"もちろんです、エミリーさん。いくつかの遅延があったと聞いています。更新されたタイムラインを教えていただけますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。サプライヤーとの問題が解決し、来月末までに生産を完了する予定です。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それは心強いですね。さらなる遅延が発生した場合のために代替策はありますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"はい、納期を確保するためにバックアップの供給チェーンを確立しました。また、締切に間に合わせるために一時的に人員を増やしています。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それを聞いて安心しました。進捗状況を週ごとに報告していただくことは可能ですか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです、毎週の報告をお送りしますのでご安心ください。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"ありがとうございます、積極的な対応に感謝します。更新を楽しみにしています。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:48:02.132Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What issue does the woman mention has been resolved?\nOptions:\nA: An issue with the supplier\nB: A delay in production scheduling\nC: Increased workforce requirements\nD: Communication problems with the client\n\nQuestion 2: What action has the woman taken to prevent further delays?\nOptions:\nA: Established a backup supply chain and increased workforce\nB: Extended the production timeline\nC: Reduced orders from the supplier\nD: Decreased client communication\n\nQuestion 3: What does the man request from the woman?\nOptions:\nA: A completion of the order by next week\nB: Weekly updates on the progress\nC: A reduction in workforce\nD: A meeting every month\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:48:04.831Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性が解決されたと述べた問題は何ですか？\",\n      \"optionTranslations\": [\n        \"供給業者に関する問題\",\n        \"生産スケジューリングの遅延\",\n        \"労力の増加ニーズ\",\n        \"顧客とのコミュニケーションの問題\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"女性はさらなる遅れを防ぐためにどのような行動を取ったのですか？\",\n      \"optionTranslations\": [\n        \"バックアップ供給チェーンを設定し、労力を増加させた\",\n        \"生産のタイムラインを延長した\",\n        \"供給業者からの注文を減らした\",\n        \"顧客とのコミュニケーションを減らした\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性は女性に何を依頼していますか？\",\n      \"optionTranslations\": [\n        \"来週までの注文完了\",\n        \"進捗の週次報告\",\n        \"労働力の削減\",\n        \"毎月の会議\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

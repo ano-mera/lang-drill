@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2025-08-03T06:07:16.685Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: bookstore\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"bookstore\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:07:21.928Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside a bustling bookstore, a young woman is browsing through a shelf filled with bestsellers while a man in a blue jacket is standing nearby, flipping through a magazine. The ambient light from large windows shows a rainy day outside, casting reflections on the polished wooden floor. In the background, an employee is stacking books on a display table, occasionally glancing at the customers.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"bookstore\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:07:41.668Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length\n- All options must be grammatically correct and natural sounding\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nYou MUST use this exact JSON structure. Do not use any other format:\n{\n  \"correctOptions\": [\n    {\n      \"option\": \"First correct option describing the scene\",\n      \"explanation\": \"この選択肢が正しい理由（日本語で説明）\"\n    },\n    {\n      \"option\": \"Second correct option describing the scene\",\n      \"explanation\": \"この選択肢が正しい理由（日本語で説明）\"\n    },\n    {\n      \"option\": \"Third correct option describing the scene\",\n      \"explanation\": \"この選択肢が正しい理由（日本語で説明）\"\n    },\n    {\n      \"option\": \"Fourth correct option describing the scene\",\n      \"explanation\": \"この選択肢が正しい理由（日本語で説明）\"\n    }\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"First confusing option (modified from correct option 1)\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Second confusing option (modified from correct option 2)\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Third confusing option (modified from correct option 3)\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    },\n    {\n      \"option\": \"Fourth confusing option (modified from correct option 4)\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像の実際の内容と異なる理由を説明（日本語）\"\n    }\n  ],\n  \"unrelatedOptions\": [\n    {\n      \"option\": \"First unrelated option (completely different scene)\",\n      \"explanation\": \"この選択肢が間違っている理由（日本語で説明）\"\n    },\n    {\n      \"option\": \"Second unrelated option (completely different scene)\",\n      \"explanation\": \"この選択肢が間違っている理由（日本語で説明）\"\n    },\n    {\n      \"option\": \"Third unrelated option (completely different scene)\",\n      \"explanation\": \"この選択肢が間違っている理由（日本語で説明）\"\n    },\n    {\n      \"option\": \"Fourth unrelated option (completely different scene)\",\n      \"explanation\": \"この選択肢が間違っている理由（日本語で説明）\"\n    }\n  ],\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Three people are in a bookstore, each reading a magazine. A woman on the left is standing near a bookshelf, holding a magazine in both hands. In the center, another person is standing with a magazine open, while a man on the right is leaning over a table, focused on a magazine in front of him. The large windows in the background allow natural light to fill the space.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- Includes passive constructions or existential phrases\n- Subjects may be plural or implied\n- Some use of adjectives or prepositional phrases\n- Vocabulary may include business or public settings\n- Requires slightly more processing to understand\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n   - For each correct option, provide a Japanese explanation of why it is correct\n\n2. Generate 4 CONFUSING OPTIONS by modifying each correct option\n   - Create exactly one confusing option for each correct option (sourceIndex 0-3)\n   - MUST change at least ONE of these key elements to make them clearly different:\n     * ACTION: Change the verb/action (walking → running, sitting → standing)\n     * SUBJECT: Change the person/object (woman → man, people → person)\n     * OBJECT: Change what is being held/used (coffee → water, laptop → tablet)\n     * LOCATION: Change position/direction (left → right, up → down, inside → outside)\n     * QUANTITY: Change number (one person → multiple people, some → all)\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Should include elements that are actually present in the scene but used incorrectly\n   - Map each confusing option to its source correct option using sourceIndex\n   - For each confusing option, provide a Japanese explanation that describes why this option is incorrect\n     * Focus on what is actually shown in the image vs what the option states\n     * Do NOT mention \"compared to correct option\" or reference internal processing\n     * Example: \"画像では女性が男性の髪をスタイリングしていますが、この選択肢は逆になっています。\"\n\n3. Generate 4 UNRELATED OPTIONS completely different from the scene\n   - Describe entirely different actions, locations, or situations\n   - Should not contain any elements from the actual scene\n   - Examples: office work when scene is outdoors, cooking when scene is sports, etc.\n   - For each unrelated option, provide a Japanese explanation of why it is incorrect\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.\nIMPORTANT: All explanations must be written in Japanese and be clear and educational.\n\nYou MUST return the response in the exact JSON format specified in the system prompt. Do not use the old format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:08:02.518Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    {\n      \"option\": \"Three people are reading magazines in a bookstore.\",\n      \"explanation\": \"画像には書店で雑誌を読んでいる3人の人々がいます。\"\n    },\n    {\n      \"option\": \"A woman is standing near a bookshelf holding a magazine.\",\n      \"explanation\": \"画像には本棚の近くで雑誌を持って立っている女性がいます。\"\n    },\n    {\n      \"option\": \"A man is leaning over a table reading a magazine.\",\n      \"explanation\": \"画像にはテーブルにかがんで雑誌を読んでいる男性がいます。\"\n    },\n    {\n      \"option\": \"Natural light is filling the bookstore through large windows.\",\n      \"explanation\": \"画像には大きな窓から自然光が書店を照らしています。\"\n    }\n  ],\n  \"confusingOptionsWithMapping\": [\n    {\n      \"option\": \"Three people are reading newspapers in a bookstore.\",\n      \"sourceIndex\": 0,\n      \"explanation\": \"画像では人々は雑誌を読んでいますが、この選択肢は新聞を読んでいると述べています。\"\n    },\n    {\n      \"option\": \"A woman is sitting near a bookshelf holding a magazine.\",\n      \"sourceIndex\": 1,\n      \"explanation\": \"画像では女性は立って雑誌を持っていますが、この選択肢は座っていると述べています。\"\n    },\n    {\n      \"option\": \"A man is sitting at a table reading a magazine.\",\n      \"sourceIndex\": 2,\n      \"explanation\": \"画像では男性はテーブルにかがんでいますが、この選択肢は座っていると述べています。\"\n    },\n    {\n      \"option\": \"Artificial light is filling the bookstore through large windows.\",\n      \"sourceIndex\": 3,\n      \"explanation\": \"画像では自然光が差し込んでいますが、この選択肢は人工光が差し込んでいると述べています。\"\n    }\n  ],\n  \"unrelatedOptions\": [\n    {\n      \"option\": \"A chef is preparing a meal in a kitchen.\",\n      \"explanation\": \"画像は書店のシーンであり、この選択肢は料理をしているシーンを述べています。\"\n    },\n    {\n      \"option\": \"Two people are jogging in a park together.\",\n      \"explanation\": \"画像は書店のシーンであり、この選択肢は公園でジョギングしているシーンを述べています。\"\n    },\n    {\n      \"option\": \"A group of students is attending a math class.\",\n      \"explanation\": \"画像は書店のシーンであり、この選択肢は教室での授業を述べています。\"\n    },\n    {\n      \"option\": \"An artist is painting a landscape in a studio.\",\n      \"explanation\": \"画像は書店のシーンであり、この選択肢はスタジオで絵を描いているシーンを述べています。\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:08:02.519Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): Three people are in a bookstore, each reading a magazine. A woman on the left is standing near a bookshelf, holding a magazine in both hands. In the center, another person is standing with a magazine open, while a man on the right is leaning over a table, focused on a magazine in front of him. The large windows in the background allow natural light to fill the space.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:08:05.611Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "三人の人々が書店にいて、それぞれ雑誌を読んでいます。左側の女性は本棚の近くに立っていて、両手で雑誌を持っています。中央には、別の人が雑誌を開いて立っています。一方、右側の男性はテーブルに寄りかかり、目の前の雑誌に集中しています。背景の大きな窓から自然光が差し込み、店内を明るくしています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:08:05.612Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: Artificial light is filling the bookstore through large windows.\nB: Three people are reading magazines in a bookstore.\nC: A man is sitting at a table reading a magazine.\nD: A chef is preparing a meal in a kitchen.\n\nExplanation: 正解: 画像には書店で雑誌を読んでいる3人の人々がいます。\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T06:08:08.165Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"人工光が大きな窓を通して書店を照らしている。\",\n    \"3人の人々が書店で雑誌を読んでいる。\",\n    \"男性がテーブルに座って雑誌を読んでいる。\",\n    \"シェフがキッチンで料理を準備している。\"\n  ],\n  \"explanationTranslation\": \"正解: 画像には書店で雑誌を読んでいる3人の人々がいます。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

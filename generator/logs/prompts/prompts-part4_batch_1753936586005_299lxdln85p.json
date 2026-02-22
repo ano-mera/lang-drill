@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-07-31T04:36:26.010Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"easy\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "easy",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-07-31T04:36:26.016Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Message to customers (顧客へのメッセージ)\n【Industry】: Manufacturing (製造業)\n【Difficulty】: easy\n【Question Types】: inference, main_purpose, inference\n【Correct Answer Positions】: Question 1=B, Question 2=C, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T04:36:36.778Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, valued customers. We are excited to announce a new improvement in our manufacturing process at GreenTech Industries. Starting next month, we will be implementing state-of-the-art machinery that will increase our production efficiency by 20%. This advancement ensures that we meet the growing demands for our eco-friendly products while maintaining the highest quality standards. We are committed to sustainability and innovation, and these upgrades are part of our ongoing efforts to reduce environmental impact. We appreciate your continued support and look forward to serving you with even better products in the future.\",\n    \"topic\": \"Announcement of new manufacturing improvements\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the new machinery?\",\n      \"options\": [\n        \"It is less efficient than the old machinery.\",\n        \"It will help increase production efficiency.\",\n        \"It will reduce employee numbers.\",\n        \"It will be implemented next year.\"\n      ],\n      \"correct\": \"It will help increase production efficiency.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"新しい機械は生産効率を20%向上させると述べられているため、これが正しい答えです。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To warn customers about delays.\",\n        \"To introduce a new product line.\",\n        \"To announce improvements in their manufacturing process.\",\n        \"To inform about a company merger.\"\n      ],\n      \"correct\": \"To announce improvements in their manufacturing process.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチの主な目的は製造プロセスの改善を発表することです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about GreenTech Industries' priorities?\",\n      \"options\": [\n        \"They prioritize cost-cutting over quality.\",\n        \"They focus on sustainability and innovation.\",\n        \"They are planning to expand globally.\",\n        \"They intend to increase prices.\"\n      ],\n      \"correct\": \"They focus on sustainability and innovation.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは、持続可能性と革新が彼らの努力の一部であると述べられているため、これが正しい答えです。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T04:36:36.782Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: customer_message\nIndustry: manufacturing\nSpeaker Role: Company spokesperson\nTopic: Announcement of new manufacturing improvements\n\nSpeech Text:\nGood afternoon, valued customers. We are excited to announce a new improvement in our manufacturing process at GreenTech Industries. Starting next month, we will be implementing state-of-the-art machinery that will increase our production efficiency by 20%. This advancement ensures that we meet the growing demands for our eco-friendly products while maintaining the highest quality standards. We are committed to sustainability and innovation, and these upgrades are part of our ongoing efforts to reduce environmental impact. We appreciate your continued support and look forward to serving you with even better products in the future.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T04:36:40.958Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"顧客へのメッセージ\",\n  \"textTranslation\": \"こんにちは、貴重なお客様の皆様。GreenTech Industriesの製造プロセスに関する新しい改善を発表することに興奮しています。来月から、最先端の機械を導入し、生産効率を20%向上させます。この進歩により、エコフレンドリーな製品に対する増大する需要に対応しつつ、最高の品質基準を維持することができます。当社は持続可能性と革新にコミットしており、これらのアップグレードは環境への影響を減らすための継続的な取り組みの一環です。皆様の継続的なご支援に感謝し、今後もさらに良い製品を提供できることを楽しみにしております。\",\n  \"topicTranslation\": \"新しい製造改善の発表\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T04:36:40.961Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4の問題と選択肢を日本語に翻訳してください。\n\n重要:\n- 問題文は明確で分かりやすい日本語に\n- 選択肢も正確に翻訳\n- TOEIC問題の慣例に従った表現を使用\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What can be inferred about the new machinery?\nOptions:\nA: It is less efficient than the old machinery.\nB: It will help increase production efficiency.\nC: It will reduce employee numbers.\nD: It will be implemented next year.\n\nQuestion 2: What is the main purpose of the announcement?\nOptions:\nA: To warn customers about delays.\nB: To introduce a new product line.\nC: To announce improvements in their manufacturing process.\nD: To inform about a company merger.\n\nQuestion 3: What can be inferred about GreenTech Industries' priorities?\nOptions:\nA: They prioritize cost-cutting over quality.\nB: They focus on sustainability and innovation.\nC: They are planning to expand globally.\nD: They intend to increase prices.\n\nReturn the translations in this JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1の日本語訳\",\n      \"optionTranslations\": [\"選択肢Aの日本語訳\", \"選択肢Bの日本語訳\", \"選択肢Cの日本語訳\", \"選択肢Dの日本語訳\"]\n    },\n    // 同様に3問分\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-07-31T04:36:44.683Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題1: 新しい機械について何が推測できますか？\",\n      \"optionTranslations\": [\"A: 古い機械よりも効率が悪い。\", \"B: 生産効率を向上させるのに役立つ。\", \"C: 従業員数を減らす。\", \"D: 来年導入される。\"]\n    },\n    {\n      \"questionTranslation\": \"問題2: この発表の主な目的は何ですか？\",\n      \"optionTranslations\": [\"A: 顧客に遅延について警告する。\", \"B: 新しい製品ラインを紹介する。\", \"C: 製造プロセスの改善を発表する。\", \"D: 会社の合併について知らせる。\"]\n    },\n    {\n      \"questionTranslation\": \"問題3: GreenTech Industriesの優先事項について何が推測できますか？\",\n      \"optionTranslations\": [\"A: 品質よりもコスト削減を優先している。\", \"B: 持続可能性と革新に焦点を当てている。\", \"C: 世界的に拡大する計画を立てている。\", \"D: 価格を引き上げるつもりである。\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

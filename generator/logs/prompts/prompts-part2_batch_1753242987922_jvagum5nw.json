@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-23T03:56:34.724Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "ステーキをお願いします。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:56:34.775Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "サイドサラダが付いています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:56:34.848Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、どちらも好きです。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  }
+]

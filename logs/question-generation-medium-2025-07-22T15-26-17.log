@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/22 15:26:17
+ログファイル: question-generation-medium-2025-07-22T15-26-17.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 163問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage134",
+  "title": "Subject: Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Dear Ms. Tanaka,\n\nI hope this message finds you well. I am writing to confirm our upcoming meeting scheduled for Thursday, March 15th, at 10:00 AM. We will be meeting in Conference Room B on the 5th floor. Please let me know if this time and location are still convenient for you.\n\nAdditionally, could you please prepare the sales report from last quarter and bring any relevant documents related to the new marketing strategy? It would be helpful to have these materials on hand for our discussion.\n\nIf there are any changes or additional topics you would like to cover, feel free to reach out to me by Wednesday. I look forward to our meeting and discussing how we can enhance our current projects.\n\nBest regards,\nJohn Smith\nProject Manager",
+  "contentTranslation": "件名: 会議スケジュールの確認\n\n田中様\n\nお元気でいらっしゃいますか。3月15日木曜日の午前10時に予定している会議の確認のためにご連絡いたします。会議は5階のB会議室で行います。この日時と場所がご都合が良いかどうかお知らせください。\n\nまた、先四半期の売上報告書と新しいマーケティング戦略に関連する資料をご用意いただけますか。これらの資料があると、議論がスムーズになります。\n\nもし変更や追加したい議題がありましたら、水曜日までにご連絡ください。会議でお会いし、現在のプロジェクトをどのように強化できるかを話し合うのを楽しみにしております。\n\nよろしくお願いいたします。\nジョン・スミス\nプロジェクトマネージャー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Where will the meeting take place?",
+      "questionTranslation": "会議はどこで行われますか？",
+      "options": [
+        "In Conference Room A",
+        "In Conference Room B",
+        "In the main office",
+        "In the cafeteria"
+      ],
+      "optionTranslations": [
+        "会議室Aで",
+        "会議室Bで",
+        "本社で",
+        "カフェテリアで"
+      ],
+      "correct": "B",
+      "explanation": "メールの中で、会議が5階の会議室Bで行われると明示されています。"
+    },
+    {
+      "id": "q2",
+      "question": "When is the deadline for reaching out with additional topics?",
+      "questionTranslation": "追加のトピックについて連絡する締め切りはいつですか？",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "optionTranslations": [
+        "月曜日",
+        "火曜日",
+        "水曜日",
+        "木曜日"
+      ],
+      "correct": "C",
+      "explanation": "メールには、水曜日までに追加のトピックについて連絡するようにと記載されています。"
+    },
+    {
+      "id": "q3",
+      "question": "What is Ms. Tanaka required to bring to the meeting?",
+      "questionTranslation": "田中さんが会議に持参する必要があるものは何ですか？",
+      "options": [
+        "The latest financial report",
+        "The sales report from last quarter and marketing strategy documents",
+        "A presentation on new software",
+        "The current project timeline"
+      ],
+      "optionTranslations": [
+        "最新の財務報告書",
+        "前四半期の売上報告書とマーケティング戦略の書類",
+        "新しいソフトウェアについてのプレゼンテーション",
+        "現在のプロジェクトのタイムライン"
+      ],
+      "correct": "B",
+      "explanation": "メールには、田中さんが前四半期の売上報告書と新しいマーケティング戦略に関連する書類を持参するように求められています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 130,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 164問
+🆔 実際に追加されたID: 
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/22 15:26:34
+実行時間: 0.00秒

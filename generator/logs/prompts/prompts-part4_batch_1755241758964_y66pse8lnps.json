@@ -1,0 +1,377 @@
+[
+  {
+    "timestamp": "2025-08-15T07:09:18.968Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":5,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 5,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:18.976Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Media or entertainment promotion (メディア・番組の宣伝)\n【Industry】: Consulting (コンサルティング)\n【Difficulty】: medium\n【Question Types】: detail, next_action, main_purpose\n【Correct Answer Positions】: Question 1=B, Question 2=C, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:25.633Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Media Host\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good evening, listeners. I'm pleased to inform you about a special feature on Consulting Now, our weekly radio show dedicated to the world of consulting. This week's episode includes an exclusive interview with Sarah Thompson, the CEO of Thompson Advisors. She'll share insights on how to navigate complex business challenges and her predictions for future industry trends. Don't miss her strategies which could redefine your approach to consulting. Tune in to Consulting Now this Wednesday at 7 PM for this intriguing conversation. Also, stay tuned for our upcoming segment that explores technological innovations in consulting. Remember, these insights can greatly enhance your professional repertoire.\",\n    \"topic\": \"Promotion of a consulting-focused radio show episode\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is the special guest on this week's episode of Consulting Now?\",\n      \"options\": [\"John Smith\", \"Sarah Thompson\", \"Michael Johnson\", \"Emily Davis\"],\n      \"correct\": \"Sarah Thompson\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは、今週の番組にはThompson AdvisorsのCEOであるSarah Thompsonが出演すると述べています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What should listeners do next if they are interested in consulting?\",\n      \"options\": [\"Visit the show's website\", \"Read a book by Sarah Thompson\", \"Listen to the show on Wednesday\", \"Sign up for a consulting course\"],\n      \"correct\": \"Listen to the show on Wednesday\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"水曜日の19時に番組を聞くようにとスピーチ内でリスナーに促しています。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\"To announce a new radio station\", \"To promote a consulting conference\", \"To advertise an upcoming radio show episode\", \"To recruit new consulting experts\"],\n      \"correct\": \"To advertise an upcoming radio show episode\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチの主な目的は、コンサルティングをテーマにしたラジオ番組の宣伝であることを明確に述べています。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:25.633Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: media_promo\nIndustry: consulting\nSpeaker Role: Media Host\nTopic: Promotion of a consulting-focused radio show episode\n\nSpeech Text:\nGood evening, listeners. I'm pleased to inform you about a special feature on Consulting Now, our weekly radio show dedicated to the world of consulting. This week's episode includes an exclusive interview with Sarah Thompson, the CEO of Thompson Advisors. She'll share insights on how to navigate complex business challenges and her predictions for future industry trends. Don't miss her strategies which could redefine your approach to consulting. Tune in to Consulting Now this Wednesday at 7 PM for this intriguing conversation. Also, stay tuned for our upcoming segment that explores technological innovations in consulting. Remember, these insights can greatly enhance your professional repertoire.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:29.109Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"メディアプロモーション\",\n  \"textTranslation\": \"こんばんは、リスナーの皆さん。コンサルティングの世界に特化した私たちの週間ラジオ番組「コンサルティング・ナウ」での特別企画についてお知らせします。今週のエピソードでは、トンプソン・アドバイザーズのCEOであるサラ・トンプソン氏との独占インタビューをお届けします。彼女は、複雑なビジネス上の課題を乗り越える方法や、業界の未来予測についての見解を共有してくれます。彼女の戦略は、あなたのコンサルティングへのアプローチを再定義するかもしれません。この魅力的な会話をお見逃しなく、今週水曜日午後7時に「コンサルティング・ナウ」にぜひお聴きください。また、コンサルティングにおける技術革新を探る今後のセグメントにも注目してください。これらの見識は、あなたのプロフェッショナルなレパートリーを大いに向上させることでしょう。\",\n  \"topicTranslation\": \"コンサルティングに焦点を当てたラジオ番組エピソードのプロモーション\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:29.110Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: Who is the special guest on this week's episode of Consulting Now?\nOptions:\nA: John Smith\nB: Sarah Thompson\nC: Michael Johnson\nD: Emily Davis\n\nQuestion 2: What should listeners do next if they are interested in consulting?\nOptions:\nA: Visit the show's website\nB: Read a book by Sarah Thompson\nC: Listen to the show on Wednesday\nD: Sign up for a consulting course\n\nQuestion 3: What is the main purpose of this announcement?\nOptions:\nA: To announce a new radio station\nB: To promote a consulting conference\nC: To advertise an upcoming radio show episode\nD: To recruit new consulting experts\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:31.429Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"今週のConsulting Nowの特別ゲストは誰ですか？\",\n      \"optionTranslations\": [\n        \"ジョン・スミス\",\n        \"サラ・トンプソン\",\n        \"マイケル・ジョンソン\",\n        \"エミリー・デイビス\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"もしコンサルティングに興味がある場合、リスナーは次に何をするべきですか？\",\n      \"optionTranslations\": [\n        \"番組のウェブサイトを訪れる\",\n        \"サラ・トンプソンの本を読む\",\n        \"水曜日に番組を聞く\",\n        \"コンサルティングコースに登録する\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この発表の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しいラジオ局を発表するため\",\n        \"コンサルティング会議を宣伝するため\",\n        \"次回のラジオ番組のエピソードを宣伝するため\",\n        \"新しいコンサルティングの専門家を募集するため\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:39.203Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: System maintenance announcement (システム保守案内)\n【Industry】: Education (教育)\n【Difficulty】: medium\n【Question Types】: detail, detail, intended_audience\n【Correct Answer Positions】: Question 1=B, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:45.930Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"University IT Department Spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, students and faculty members. This is a notification regarding a scheduled maintenance of our online learning system. The maintenance will occur this coming Saturday, October 14th, from 1 AM to 5 AM. During this time, access to the learning management system and all its features will be temporarily unavailable. We recommend that you download any necessary study materials or complete assignments beforehand to avoid any inconvenience. This maintenance is essential to improve system performance and ensure a smoother user experience. We appreciate your understanding and cooperation. Thank you for your attention.\",\n    \"topic\": \"Scheduled maintenance of the university's online learning system\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"When is the system maintenance scheduled?\",\n      \"options\": [\"Friday, October 13th, from 1 AM to 5 AM.\", \"Saturday, October 14th, from 1 AM to 5 AM.\", \"Saturday, October 14th, from 2 AM to 6 AM.\", \"Sunday, October 15th, from 1 AM to 5 AM.\"],\n      \"correct\": \"Saturday, October 14th, from 1 AM to 5 AM.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"アナウンスでは、システムの保守が10月14日土曜日午前1時から午前5時まで行われると述べています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What should students and faculty members do before the maintenance period?\",\n      \"options\": [\"Log out of all devices.\", \"Change their passwords.\", \"Save their progress daily.\", \"Download necessary study materials or complete assignments.\"],\n      \"correct\": \"Download necessary study materials or complete assignments.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"アナウンスでは、保守期間に備えて必要な学習資料をダウンロードするか、課題を完了するように勧めています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Who is the intended audience of this announcement?\",\n      \"options\": [\"IT professionals.\", \"Parents of students.\", \"Students and faculty members.\", \"Local community members.\"],\n      \"correct\": \"Students and faculty members.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"アナウンスの冒頭で、聞き手として学生と教職員が特定されています。\",\n      \"questionType\": \"intended_audience\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:45.931Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: system_maintenance\nIndustry: education\nSpeaker Role: University IT Department Spokesperson\nTopic: Scheduled maintenance of the university's online learning system\n\nSpeech Text:\nGood afternoon, students and faculty members. This is a notification regarding a scheduled maintenance of our online learning system. The maintenance will occur this coming Saturday, October 14th, from 1 AM to 5 AM. During this time, access to the learning management system and all its features will be temporarily unavailable. We recommend that you download any necessary study materials or complete assignments beforehand to avoid any inconvenience. This maintenance is essential to improve system performance and ensure a smoother user experience. We appreciate your understanding and cooperation. Thank you for your attention.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:48.121Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"システムメンテナンス\",\n  \"textTranslation\": \"こんにちは、学生の皆さんと教職員の皆さん。これは、私たちのオンライン学習システムの定期メンテナンスに関する通知です。メンテナンスは今週の土曜日、10月14日、午前1時から午前5時まで行われます。この時間帯は、学習管理システムおよびその全機能に一時的にアクセスできなくなります。ご不便を避けるために、必要な学習資料をダウンロードしたり、事前に課題を完了させておくことをお勧めします。このメンテナンスはシステムのパフォーマンスを向上させ、ユーザー体験をよりスムーズにするために不可欠です。皆さんのご理解とご協力に感謝いたします。ご清聴ありがとうございました。\",\n  \"topicTranslation\": \"大学のオンライン学習システムの定期メンテナンス\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:48.122Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: When is the system maintenance scheduled?\nOptions:\nA: Friday, October 13th, from 1 AM to 5 AM.\nB: Saturday, October 14th, from 1 AM to 5 AM.\nC: Saturday, October 14th, from 2 AM to 6 AM.\nD: Sunday, October 15th, from 1 AM to 5 AM.\n\nQuestion 2: What should students and faculty members do before the maintenance period?\nOptions:\nA: Log out of all devices.\nB: Change their passwords.\nC: Save their progress daily.\nD: Download necessary study materials or complete assignments.\n\nQuestion 3: Who is the intended audience of this announcement?\nOptions:\nA: IT professionals.\nB: Parents of students.\nC: Students and faculty members.\nD: Local community members.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:50.771Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"システムメンテナンスはいつ予定されていますか？\",\n      \"optionTranslations\": [\n        \"10月13日金曜日、午前1時から午前5時\",\n        \"10月14日土曜日、午前1時から午前5時\",\n        \"10月14日土曜日、午前2時から午前6時\",\n        \"10月15日日曜日、午前1時から午前5時\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"メンテナンス期間の前に学生や教員がすべきことは何ですか？\",\n      \"optionTranslations\": [\n        \"すべてのデバイスからログアウトする\",\n        \"パスワードを変更する\",\n        \"毎日進捗を保存する\",\n        \"必要な学習資料をダウンロードするか、課題を完了する\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このお知らせの対象となるのは誰ですか？\",\n      \"optionTranslations\": [\n        \"IT専門家\",\n        \"学生の保護者\",\n        \"学生と教員\",\n        \"地域社会のメンバー\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:09:59.430Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Event announcement (イベント案内)\n【Industry】: Manufacturing (製造業)\n【Difficulty】: medium\n【Question Types】: inference, inference, main_purpose\n【Correct Answer Positions】: Question 1=D, Question 2=D, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:07.150Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Event Coordinator\",\n      \"role\": \"Event coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, everyone. This is a reminder about our annual manufacturing conference taking place on September 10th at the GreenTech Convention Center. We invite all employees and stakeholders in the industry to join us for a day of insightful presentations and networking opportunities. Doors will open at 9 a.m., and the first keynote speech starts promptly at 9:30 a.m. Remember, the theme this year is 'Innovation in Production', focusing on sustainable practices. Lunch will be provided, and we encourage everyone to participate actively in our afternoon breakout sessions. Please make sure to confirm your attendance by the end of this week. Thank you.\",\n    \"topic\": \"Manufacturing conference announcement\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the conference venue?\",\n      \"options\": [\n        \"It is located within a manufacturing facility.\",\n        \"It is usually reserved only for private events.\",\n        \"It can accommodate a large number of people.\",\n        \"It is suitable for industry-focused gatherings.\"\n      ],\n      \"correct\": \"It is suitable for industry-focused gatherings.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"製造業に関する注目度の高いカンファレンスが行われることから、業界向けイベントに適した会場であると推測できる。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Why is the event particularly emphasized to be sustainable?\",\n      \"options\": [\n        \"To comply with government regulations.\",\n        \"Because past events were less successful.\",\n        \"As a response to recent market trends.\",\n        \"Due to the theme 'Innovation in Production'.\"\n      ],\n      \"correct\": \"Due to the theme 'Innovation in Production'.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは今年のテーマが「Innovation in Production」、特に持続可能な実践方法に焦点を当てていると述べている。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of the announcement?\",\n      \"options\": [\n        \"To promote a new manufacturing product.\",\n        \"To recruit new employees for the event.\",\n        \"To inform about the details of the annual conference.\",\n        \"To present awards to top performers.\"\n      ],\n      \"correct\": \"To inform about the details of the annual conference.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"イベントの詳細を社員や業界参加者に知らせることが主な目的である。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:07.151Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: event_announcement\nIndustry: manufacturing\nSpeaker Role: Event coordinator\nTopic: Manufacturing conference announcement\n\nSpeech Text:\nGood afternoon, everyone. This is a reminder about our annual manufacturing conference taking place on September 10th at the GreenTech Convention Center. We invite all employees and stakeholders in the industry to join us for a day of insightful presentations and networking opportunities. Doors will open at 9 a.m., and the first keynote speech starts promptly at 9:30 a.m. Remember, the theme this year is 'Innovation in Production', focusing on sustainable practices. Lunch will be provided, and we encourage everyone to participate actively in our afternoon breakout sessions. Please make sure to confirm your attendance by the end of this week. Thank you.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:09.397Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"イベントの発表\",\n  \"textTranslation\": \"皆さん、こんにちは。毎年恒例の製造業会議が9月10日にグリーンテックコンベンションセンターで開催されることをお知らせします。業界の社員や関係者の皆様をお招きし、洞察に満ちたプレゼンテーションとネットワーキングの機会を提供いたします。会場は午前9時にオープンし、最初の基調講演は午前9時30分から開始します。今年のテーマは「生産におけるイノベーション」で、持続可能な実践に焦点を当てています。昼食も提供されますので、午後のブレークアウトセッションにも積極的にご参加ください。今週末までに出席の確認をお願いいたします。どうもありがとうございます。\",\n  \"topicTranslation\": \"製造業会議の発表\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:09.398Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What can be inferred about the conference venue?\nOptions:\nA: It is located within a manufacturing facility.\nB: It is usually reserved only for private events.\nC: It can accommodate a large number of people.\nD: It is suitable for industry-focused gatherings.\n\nQuestion 2: Why is the event particularly emphasized to be sustainable?\nOptions:\nA: To comply with government regulations.\nB: Because past events were less successful.\nC: As a response to recent market trends.\nD: Due to the theme 'Innovation in Production'.\n\nQuestion 3: What is the main purpose of the announcement?\nOptions:\nA: To promote a new manufacturing product.\nB: To recruit new employees for the event.\nC: To inform about the details of the annual conference.\nD: To present awards to top performers.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:12.556Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"会議会場について何が推測されますか？\",\n      \"optionTranslations\": [\n        \"製造施設内にあります。\",\n        \"通常はプライベートイベントのみに使用されます。\",\n        \"多くの人数を収容できます。\",\n        \"業界に特化した集まりに適しています。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"イベントが特にサステナブルであることを強調する理由は何ですか？\",\n      \"optionTranslations\": [\n        \"政府規制を遵守するため。\",\n        \"過去のイベントがあまり成功しなかったため。\",\n        \"最近の市場動向に対応するため。\",\n        \"テーマが「生産における革新」であるため。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"発表の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しい製造製品を宣伝するため。\",\n        \"イベントの新しい社員を募集するため。\",\n        \"年次会議の詳細を知らせるため。\",\n        \"トップパフォーマーに賞を授与するため。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:23.014Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Event announcement (イベント案内)\n【Industry】: Hospitality (宿泊・観光業)\n【Difficulty】: medium\n【Question Types】: inference, detail, detail\n【Correct Answer Positions】: Question 1=D, Question 2=D, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:29.854Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Event Coordinator\",\n      \"role\": \"Event coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, everyone. This is Samantha, your event coordinator for tonight's gala dinner at the Grand Regency Hotel. The event will start promptly at 7 PM in the Sapphire Ballroom on the second floor. We are thrilled to present a special dinner menu prepared by our award-winning chef. After dinner, guests will enjoy live music from the renowned jazz band, The Blue Notes, followed by a networking session. Don't forget to visit the registration desk near the entrance to pick up your event badges and complimentary drink coupons. We hope you have a wonderful evening with us, full of entertainment and delightful culinary experiences. Please reach out to our staff if you have any questions or need assistance.\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the location of the event?\",\n      \"options\": [\n        \"It takes place in the hotel lobby.\",\n        \"It is situated in the outdoor garden.\",\n        \"It is held in a rooftop venue.\",\n        \"It is in the ballroom on the second floor.\"\n      ],\n      \"correct\": \"It is in the ballroom on the second floor.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチで「7 PM in the Sapphire Ballroom on the second floor」と言っており、場所が二階のボールルームであることがわかる。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is scheduled to happen after dinner?\",\n      \"options\": [\n        \"A comedy show\",\n        \"An art exhibition\",\n        \"A magic performance\",\n        \"Live music and networking session\"\n      ],\n      \"correct\": \"Live music and networking session\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは「After dinner, guests will enjoy live music... followed by a networking session」という内容があります。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What should guests pick up at the registration desk?\",\n      \"options\": [\n        \"Event badges and complimentary drink coupons\",\n        \"Maps and event schedules\",\n        \"Souvenir booklets\",\n        \"Parking vouchers\"\n      ],\n      \"correct\": \"Event badges and complimentary drink coupons\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチでは「visit the registration desk near the entrance to pick up your event badges and complimentary drink coupons」と指示されています。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:29.855Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: event_announcement\nIndustry: hospitality\nSpeaker Role: Event coordinator\nTopic: undefined\n\nSpeech Text:\nGood morning, everyone. This is Samantha, your event coordinator for tonight's gala dinner at the Grand Regency Hotel. The event will start promptly at 7 PM in the Sapphire Ballroom on the second floor. We are thrilled to present a special dinner menu prepared by our award-winning chef. After dinner, guests will enjoy live music from the renowned jazz band, The Blue Notes, followed by a networking session. Don't forget to visit the registration desk near the entrance to pick up your event badges and complimentary drink coupons. We hope you have a wonderful evening with us, full of entertainment and delightful culinary experiences. Please reach out to our staff if you have any questions or need assistance.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:34.239Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "```json\n{\n  \"speechTypeTranslation\": \"イベント発表\",\n  \"textTranslation\": \"おはようございます、皆さま。今晩のガラディナーのイベントコーディネーター、サマンサです。イベントは午後7時にグランドリージェンシーホテル2階のサファイアボールルームで始まります。受賞歴のあるシェフが用意した特別なディナーメニューをご用意しております。ディナーの後には、著名なジャズバンド「ザ・ブルーノーツ」によるライブ音楽をお楽しみいただき、その後にはネットワーキングセッションもございます。また、入口近くの受付でイベントバッジと無料ドリンククーポンをお受け取りください。エンターテインメントと美味しい料理体験に満ちた素晴らしい夕べをお過ごしいただけますよう、お祈りしております。ご質問やお手伝いが必要な場合は、どうぞスタッフまでお気軽にお声掛けください。\",\n  \"topicTranslation\": \"未定義\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:34.240Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What can be inferred about the location of the event?\nOptions:\nA: It takes place in the hotel lobby.\nB: It is situated in the outdoor garden.\nC: It is held in a rooftop venue.\nD: It is in the ballroom on the second floor.\n\nQuestion 2: What is scheduled to happen after dinner?\nOptions:\nA: A comedy show\nB: An art exhibition\nC: A magic performance\nD: Live music and networking session\n\nQuestion 3: What should guests pick up at the registration desk?\nOptions:\nA: Event badges and complimentary drink coupons\nB: Maps and event schedules\nC: Souvenir booklets\nD: Parking vouchers\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:37.193Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"イベントの場所について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"ホテルのロビーで行われます。\",\n        \"屋外庭園に位置しています。\",\n        \"屋上の会場で開催されます。\",\n        \"2階のボールルームで行われます。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"夕食の後に予定されていることは何ですか？\",\n      \"optionTranslations\": [\n        \"コメディーショー\",\n        \"アート展覧会\",\n        \"マジックパフォーマンス\",\n        \"ライブ音楽とネットワーキングセッション\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"ゲストは受付で何を受け取るべきですか？\",\n      \"optionTranslations\": [\n        \"イベントバッジと無料ドリンククーポン\",\n        \"地図とイベントスケジュール\",\n        \"記念冊子\",\n        \"駐車券\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:46.737Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Tour or facility guide (施設や観光地のガイド)\n【Industry】: Telecommunications (通信業)\n【Difficulty】: medium\n【Question Types】: inference, detail, main_purpose\n【Correct Answer Positions】: Question 1=C, Question 2=C, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:54.169Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Guide\",\n      \"role\": \"Facility guide\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Welcome to the GlobalConnect Telecommunications Data Center. I'm glad to have you with us today. As you step into this facility, you'll see one of the most advanced data hubs in the country. This center houses thousands of servers and plays a crucial role in maintaining data flow for millions of users worldwide. Our tour will take you through the main operational floor, where you'll observe how data is managed and secured. We'll also discuss our innovative sustainability practices that have significantly reduced our carbon footprint. At the end, please feel free to ask any questions you may have about our operations.\",\n    \"topic\": \"Tour of a telecommunications data center facility\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What can be inferred about the GlobalConnect Telecommunications Data Center?\",\n      \"options\": [\n        \"It recently opened to the public.\",\n        \"It only serves local clients.\",\n        \"It supports global data operations.\",\n        \"It focuses solely on security services.\"\n      ],\n      \"correct\": \"It supports global data operations.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチで、データフローが世界中の何百万人ものユーザーに提供されていると言及されているため。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What specific area will be visited during the tour?\",\n      \"options\": [\n        \"The rooftop garden.\",\n        \"The server installation room.\",\n        \"The main operational floor.\",\n        \"The research and development lab.\"\n      ],\n      \"correct\": \"The main operational floor.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチで「main operational floor」が、訪問する場所としてはっきりと述べられているため。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of this speech?\",\n      \"options\": [\n        \"To explain the history of telecommunications.\",\n        \"To guide visitors through a data center tour.\",\n        \"To recruit new employees for the center.\",\n        \"To announce new data security measures.\"\n      ],\n      \"correct\": \"To guide visitors through a data center tour.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチは訪問者にデータセンターのツアーを案内する内容であり、施設とその機能について述べている。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:54.170Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: tour_guide\nIndustry: telecommunications\nSpeaker Role: Facility guide\nTopic: Tour of a telecommunications data center facility\n\nSpeech Text:\nWelcome to the GlobalConnect Telecommunications Data Center. I'm glad to have you with us today. As you step into this facility, you'll see one of the most advanced data hubs in the country. This center houses thousands of servers and plays a crucial role in maintaining data flow for millions of users worldwide. Our tour will take you through the main operational floor, where you'll observe how data is managed and secured. We'll also discuss our innovative sustainability practices that have significantly reduced our carbon footprint. At the end, please feel free to ask any questions you may have about our operations.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:56.905Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ツアーガイド\",\n  \"textTranslation\": \"グローバルコネクト通信データセンターへようこそ。本日皆様をお迎えできて嬉しく思います。この施設に足を踏み入れると、国内でも最先端のデータハブの一つをご覧いただけます。このセンターには数千台のサーバーが設置され、世界中の数百万のユーザーのためにデータフローを維持する重要な役割を果たしています。ツアーでは、データがどのように管理され、安全が保たれているかを観察できるメインのオペレーションフロアへご案内いたします。また、当センターの革新的なサステイナビリティの取り組みについてもお話しします。これにより、私たちのカーボンフットプリントが大幅に削減されました。最後に、運営に関するご質問があればお気軽にお尋ねください。\",\n  \"topicTranslation\": \"通信データセンター施設のツアー\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:56.907Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What can be inferred about the GlobalConnect Telecommunications Data Center?\nOptions:\nA: It recently opened to the public.\nB: It only serves local clients.\nC: It supports global data operations.\nD: It focuses solely on security services.\n\nQuestion 2: What specific area will be visited during the tour?\nOptions:\nA: The rooftop garden.\nB: The server installation room.\nC: The main operational floor.\nD: The research and development lab.\n\nQuestion 3: What is the main purpose of this speech?\nOptions:\nA: To explain the history of telecommunications.\nB: To guide visitors through a data center tour.\nC: To recruit new employees for the center.\nD: To announce new data security measures.\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T07:10:59.105Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"GlobalConnect Telecommunications Data Centerについて何が推測できますか？\",\n      \"optionTranslations\": [\n        \"最近一般公開された。\",\n        \"地元の顧客にのみサービスを提供している。\",\n        \"世界的なデータ運用をサポートしている。\",\n        \"セキュリティサービスにのみ注力している。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"ツアーではどの特定のエリアを訪問しますか？\",\n      \"optionTranslations\": [\n        \"屋上庭園。\",\n        \"サーバー設置室。\",\n        \"メイン運用フロア。\",\n        \"研究開発ラボ。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このスピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"通信史を説明する。\",\n        \"データセンターのツアーに案内する。\",\n        \"センターの新しいスタッフを募集する。\",\n        \"新しいデータセキュリティ対策を発表する。\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

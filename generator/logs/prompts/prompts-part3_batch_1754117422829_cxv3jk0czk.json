@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-02T06:50:22.832Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-02T06:50:22.871Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: client_meeting\n- 業種: agriculture (Agriculture and Farming)\n- 正解位置: 問題1はD、問題2はB、問題3はD\n- 話者数: 3人\n- 話者の性別: 話者Aは女性、話者Bは男性、話者Cは女性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はAgriculture and Farming業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: D位置、問題2: B位置、問題3: D位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T06:50:34.645Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"client_meeting\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Susan\", \"role\": \"Agricultural Consultant\", \"gender\": \"female\"},\n    {\"id\": \"B\", \"name\": \"Mark\", \"role\": \"Farm Owner\", \"gender\": \"male\"},\n    {\"id\": \"C\", \"name\": \"Lisa\", \"role\": \"Farm Manager\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Thank you for meeting with me today. I wanted to discuss how we might improve crop yields on your farm.\"},\n    {\"speaker\": \"B\", \"text\": \"Certainly, Susan. We've been struggling with the soil quality, and we're interested in sustainable methods.\"},\n    {\"speaker\": \"C\", \"text\": \"Yes, we're particularly looking into organic fertilizers. Do you have any recommendations?\"},\n    {\"speaker\": \"A\", \"text\": \"Absolutely. I suggest starting with a soil test to determine what nutrients are lacking. Based on that, we can choose the right organic fertilizer.\"},\n    {\"speaker\": \"B\", \"text\": \"That makes sense. How long does a soil test usually take?\"},\n    {\"speaker\": \"A\", \"text\": \"It typically takes about two weeks for the results. After that, we can quickly develop a tailored plan for you.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What does the first woman suggest to improve the farm's crop yields?\",\n      \"options\": [\n        \"Using chemical fertilizers\",\n        \"Hiring more workers\",\n        \"Increasing irrigation\",\n        \"Conducting a soil test\"\n      ],\n      \"correct\": \"Conducting a soil test\",\n      \"explanation\": \"話者Aは、農場の作物収量を改善するためにまず土壌検査を行うことを提案しています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"question\": \"What issue is the farm currently facing?\",\n      \"options\": [\n        \"Pest infestation\",\n        \"Soil quality problems\",\n        \"Lack of workers\",\n        \"Water shortage\"\n      ],\n      \"correct\": \"Soil quality problems\",\n      \"explanation\": \"話者Bは農場が土壌の質に関する問題を抱えていると述べています。\",\n      \"questionType\": \"gist\"\n    },\n    {\n      \"question\": \"What does the first woman say about the soil test duration?\",\n      \"options\": [\n        \"It takes about a month\",\n        \"It can be done in a day\",\n        \"It requires several months\",\n        \"It takes about two weeks\"\n      ],\n      \"correct\": \"It takes about two weeks\",\n      \"explanation\": \"話者Aは土壌検査の結果が出るまで約2週間かかると述べています。\",\n      \"questionType\": \"detail\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T06:50:34.647Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: client_meeting\n\nConversation:\nA: Thank you for meeting with me today. I wanted to discuss how we might improve crop yields on your farm.\nB: Certainly, Susan. We've been struggling with the soil quality, and we're interested in sustainable methods.\nC: Yes, we're particularly looking into organic fertilizers. Do you have any recommendations?\nA: Absolutely. I suggest starting with a soil test to determine what nutrients are lacking. Based on that, we can choose the right organic fertilizer.\nB: That makes sense. How long does a soil test usually take?\nA: It typically takes about two weeks for the results. After that, we can quickly develop a tailored plan for you.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T06:50:38.878Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"クライアントミーティング\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"今日はお時間をいただきありがとうございます。あなたの農場での作物収量をどのように改善できるかについてお話ししたいと思います。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"もちろんです、スーザン。土壌の質に苦労していて、持続可能な方法に興味があります。\"\n    },\n    {\n      \"speaker\": \"C\",\n      \"translation\": \"はい、特に有機肥料に注目しています。何かおすすめはありますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。まず、土壌検査を行ってどの栄養素が不足しているかを確認することをお勧めします。それに基づいて、適切な有機肥料を選べます。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それは理にかなっていますね。土壌検査には通常どれくらいの時間がかかりますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"通常、結果が出るまでに約2週間かかります。その後、すぐにあなたに合わせたプランを作成できます。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T06:50:38.879Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What does the first woman suggest to improve the farm's crop yields?\nOptions:\nA: Using chemical fertilizers\nB: Hiring more workers\nC: Increasing irrigation\nD: Conducting a soil test\n\nQuestion 2: What issue is the farm currently facing?\nOptions:\nA: Pest infestation\nB: Soil quality problems\nC: Lack of workers\nD: Water shortage\n\nQuestion 3: What does the first woman say about the soil test duration?\nOptions:\nA: It takes about a month\nB: It can be done in a day\nC: It requires several months\nD: It takes about two weeks\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T06:50:44.884Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: 最初の女性は農場の作物収量を改善するために何を提案していますか？\",\n      \"optionTranslations\": [\n        \"化学肥料の使用\",\n        \"より多くの労働者を雇う\",\n        \"灌漑を増やす\",\n        \"土壌検査を行う\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: 農場が現在直面している問題は何ですか？\",\n      \"optionTranslations\": [\n        \"害虫の侵入\",\n        \"土壌の質の問題\",\n        \"労働者の不足\",\n        \"水不足\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: 最初の女性は土壌検査の期間について何と言っていますか？\",\n      \"optionTranslations\": [\n        \"約1か月かかる\",\n        \"1日でできる\",\n        \"数か月必要\",\n        \"約2週間かかる\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

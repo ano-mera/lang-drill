@@ -1,0 +1,132 @@
+[
+  {
+    "timestamp": "2025-08-07T17:56:07.301Z",
+    "functionName": "generatePassage",
+    "type": "email",
+    "difficulty": "medium",
+    "topic": "customer_inquiries",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のemailを作成してください：\n\n【条件】\n- 文書タイプ: email\n- 単語数: 120-150語\n- 難易度: medium\n- トピック: customer_inquiries\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nSubject: [件名]\n\nDear [受信者],\n\n[本文]\n\nBest regards,\n[署名]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"email\",\n  \"difficulty\": \"medium\",\n  \"topic\": \"customer_inquiries\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-08-07T17:56:15.994Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 129語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nSubject: Inquiry About Product Availability\n\nDear Mr. Smith,\n\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, and I am eager to purchase it for our office.\n\nCould you please confirm if the Model X laptops are in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases.\n\nLastly, if the Model X is currently unavailable, could you suggest an alternative with similar specifications? Your assistance in this matter would be greatly appreciated.\n\nThank you for your prompt attention to this inquiry. I look forward to your reply.\n\nBest regards,\nJohn Doe\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage155",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:20.649Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が129語であり、期待範囲の180-250語を大きく下回っている。\",\n      \"suggestion\": \"内容を充実させ、語数を増やすために詳細な情報や背景を追加することを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため、情報の視覚的な提示が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加することで、情報をより明確に伝えることができる。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage155",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:20.651Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nSubject: Inquiry About Product Availability\n\nDear Mr. Smith,\n\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, and I am eager to purchase it for our office.\n\nCould you please confirm if the Model X laptops are in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases.\n\nLastly, if the Model X is currently unavailable, could you suggest an alternative with similar specifications? Your assistance in this matter would be greatly appreciated.\n\nThank you for your prompt attention to this inquiry. I look forward to your reply.\n\nBest regards,\nJohn Doe\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 70/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が129語であり、期待範囲の180-250語を大きく下回っている。\n   改善提案: 内容を充実させ、語数を増やすために詳細な情報や背景を追加することを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため、情報の視覚的な提示が不足している。\n   改善提案: 関連する図表やリストを追加することで、情報をより明確に伝えることができる。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: medium難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: medium難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: email を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage155",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 70
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:35.336Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Subject: Inquiry About Product Availability\\n\\nDear Mr. Smith,\\n\\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, particularly its high-performance processor, extended battery life, and lightweight design, which I believe would greatly benefit our office operations.\\n\\nCould you please confirm if the Model X laptops are currently in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases, as we are considering ordering multiple units for our team.\\n\\nIn case the Model X is currently unavailable, could you suggest alternative models with similar specifications? A comparison chart of the available options would be very helpful in making our decision.\\n\\nYour assistance in this matter would be greatly appreciated, and I look forward to your prompt reply.\\n\\nThank you for your attention.\\n\\nBest regards,\\nJohn Doe\",\n  \"revisedContentTranslation\": \"件名: 製品の在庫についてのお問い合わせ\\n\\nスミス様\\n\\nお世話になっております。このメッセージがあなたに届くことを願っています。私は、あなたのウェブサイトで広告されていた新しいモデルXのノートパソコンの在庫についてお尋ねしたく、メールをお送りしました。このモデルのいくつかの特徴、特に高性能プロセッサ、長時間持続するバッテリー、軽量デザインが私たちのオフィスの業務に大いに役立つと考えています。\\n\\nモデルXのノートパソコンが現在在庫にあるかどうかを確認していただけますでしょうか。また、私たちのチームのために複数台の注文を検討しているため、バルク購入に適用されるプロモーションや割引情報も教えていただけるとありがたいです。\\n\\nもしモデルXが現在利用できない場合、同様の仕様を持つ代替モデルを提案していただけますか？利用可能なオプションの比較表があると、私たちの決定に非常に役立ちます。\\n\\nこの件に関するあなたのご協力に感謝いたします。迅速なご返信をお待ちしております。\\n\\nご注意いただきありがとうございます。\\n\\n敬具\\nジョン・ドー\",\n  \"revisionNotes\": \"文書の語数を増やすために、モデルXの特徴やオフィスでの利点を詳述しました。また、バルク購入に関する情報を求める文を追加し、代替モデルの提案を依頼する際に比較表を求めることで、情報の視覚的提示を促しました。これにより、TOEIC Part 7の文書形式に準拠した内容に改善しました。\"\n}",
+    "metadata": {
+      "passageId": "passage155",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:35.337Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: medium\n- 語数: 162語 (目安範囲: 180-250語（medium難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nSubject: Inquiry About Product Availability\n\nDear Mr. Smith,\n\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, particularly its high-performance processor, extended battery life, and lightweight design, which I believe would greatly benefit our office operations.\n\nCould you please confirm if the Model X laptops are currently in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases, as we are considering ordering multiple units for our team.\n\nIn case the Model X is currently unavailable, could you suggest alternative models with similar specifications? A comparison chart of the available options would be very helpful in making our decision.\n\nYour assistance in this matter would be greatly appreciated, and I look forward to your prompt reply.\n\nThank you for your attention.\n\nBest regards,\nJohn Doe\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage155_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:39.757Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が162語で、期待範囲の180-250語を下回っている。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な整理が不足している。\",\n      \"suggestion\": \"可能であれば、比較チャートやリストを追加して情報を整理してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage155_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:39.758Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nSubject: Inquiry About Product Availability\n\nDear Mr. Smith,\n\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, particularly its high-performance processor, extended battery life, and lightweight design, which I believe would greatly benefit our office operations.\n\nCould you please confirm if the Model X laptops are currently in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases, as we are considering ordering multiple units for our team.\n\nIn case the Model X is currently unavailable, could you suggest alternative models with similar specifications? A comparison chart of the available options would be very helpful in making our decision.\n\nYour assistance in this matter would be greatly appreciated, and I look forward to your prompt reply.\n\nThank you for your attention.\n\nBest regards,\nJohn Doe\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: email\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度2: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度3: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度4: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度5: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度6: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度7: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1044
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:52.772Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nSubject: Inquiry About Product Availability\n\nDear Mr. Smith,\n\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, particularly its high-performance processor, extended battery life, and lightweight design, which I believe would greatly benefit our office operations.\n\nCould you please confirm if the Model X laptops are currently in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases, as we are considering ordering multiple units for our team.\n\nIn case the Model X is currently unavailable, could you suggest alternative models with similar specifications? A comparison chart of the available options would be very helpful in making our decision.\n\nYour assistance in this matter would be greatly appreciated, and I look forward to your prompt reply.\n\nThank you for your attention.\n\nBest regards,\nJohn Doe\n\n【問題文】\n\n問題1: According to the document, what specific features of the Model X laptop are highlighted?\n選択肢: High-performance processor, extended battery life, lightweight design, Touchscreen, detachable keyboard, high-resolution display, Advanced graphics card, water-resistant casing, ergonomic design, Voice recognition, fingerprint sensor, fast charging capability\n正解: A\n解説: 文書では、Model Xの特徴として「高性能プロセッサー、長時間バッテリー、軽量設計」が挙げられています。\n\n\n問題2: What is the main purpose of this document?\n選択肢: To request a product catalog, To inquire about product availability and promotions, To complain about a defective product, To provide feedback on a purchase experience\n正解: B\n解説: 文書の主な目的は、Model Xの在庫状況とプロモーションについて問い合わせることです。\n\n\n問題3: What can be inferred from the information provided?\n選択肢: The Model X laptop is the only product offered by the company., The company offers discounts on bulk purchases., The Model X laptop is currently out of stock., The writer is dissatisfied with the current laptop models.\n正解: B\n解説: 文書では、大量購入に対するプロモーションや割引についての情報提供を求めていることから、会社がそのような割引を提供していると推測できます。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage155",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-08-07T17:56:53.817Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage155",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  }
+]

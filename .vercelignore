@@ -1,0 +1,41 @@
+# 開発・生成ツール
+generator/
+templates/
+
+# 環境変数ファイル
+.env*
+!.env.example
+
+# 開発用ファイル
+*.log
+.DS_Store
+Thumbs.db
+
+# 一時ファイル
+.tmp/
+temp/
+
+# 管理者機能を除外
+src/app/admin/
+src/components/admin/
+
+# 管理者用APIエンドポイントを除外（generateのみ除外）
+src/app/api/passages/generate/
+
+# 型定義（本番では不要）
+src/types/
+
+# 開発用スクリプト
+scripts/
+
+# 元画像フォルダ（最適化前の画像）
+public/images/*/original/
+
+# 音声ファイル（R2に移行済み）
+public/audio/
+
+# その他の開発用ファイル
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 

@@ -1,0 +1,118 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 11:38:18
+ログファイル: question-generation-medium-2025-07-25T11-38-18.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 166問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage143",
+  "title": "Meeting Rescheduling Request",
+  "type": "email",
+  "content": "Subject: Request to Reschedule Project Meeting\n\nDear Team,\n\nI hope this message finds you well. Due to unforeseen circumstances, we need to reschedule our upcoming project meeting originally planned for October 15th at 10:00 AM. I apologize for any inconvenience this may cause.\n\nTo accommodate everyone’s schedule, please let me know your availability for the following alternative dates and times:\n- October 16th, 2:00 PM\n- October 17th, 11:00 AM\n- October 18th, 3:00 PM\n\nOnce I receive your preferences, I will confirm the new meeting time. Kindly respond by the end of the day tomorrow so we can finalize the arrangements promptly.\n\nThank you for your understanding and flexibility. Looking forward to your responses.\n\nBest regards,\nAlex Johnson\nProject Coordinator",
+  "contentTranslation": "件名: プロジェクト会議の再調整依頼\n\nチームの皆さんへ\n\nお元気でお過ごしのことと思います。予期せぬ事情により、10月15日午前10時に予定していたプロジェクト会議を再調整する必要があります。ご不便をおかけして申し訳ありません。\n\n皆さんのスケジュールに合わせるため、以下の日程と時間の中からご都合の良いものをお知らせください：\n- 10月16日 午後2時\n- 10月17日 午前11時\n- 10月18日 午後3時\n\nご希望をいただき次第、新しい会議時間を確認いたします。明日中にお返事をいただけると助かりますので、どうぞよろしくお願いいたします。\n\nご理解と柔軟な対応に感謝します。皆さんのご返信をお待ちしております。\n\nよろしくお願いいたします。\nアレックス・ジョンソン\nプロジェクトコーディネーター",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To cancel a project meeting",
+        "To reschedule a project meeting",
+        "To introduce a new team member",
+        "To provide project updates"
+      ],
+      "optionTranslations": [
+        "プロジェクト会議をキャンセルすること",
+        "プロジェクト会議を再調整すること",
+        "新しいチームメンバーを紹介すること",
+        "プロジェクトの進捗を報告すること"
+      ],
+      "correct": "B",
+      "explanation": "文書の冒頭で、元の会議の日程を変更する必要があることが述べられています。『reschedule』という語句から、再調整が目的であることが明らかです。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the deadline for responding to the meeting rescheduling?",
+      "questionTranslation": "会議の再調整についての返事の締め切りはいつですか？",
+      "options": [
+        "By the end of today",
+        "By the end of tomorrow",
+        "By the end of the week",
+        "By the end of the month"
+      ],
+      "optionTranslations": [
+        "今日中",
+        "明日中",
+        "今週中",
+        "今月中"
+      ],
+      "correct": "B",
+      "explanation": "文書の中盤で、『Kindly respond by the end of the day tomorrow』と返事の締め切りが明記されています。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供されている情報から推測できることは何ですか？",
+      "options": [
+        "The project meeting was initially scheduled for October 16th.",
+        "The team has agreed on October 17th for the meeting.",
+        "The project meeting needs to be rescheduled due to unexpected reasons.",
+        "The meeting will be held online."
+      ],
+      "optionTranslations": [
+        "プロジェクト会議は当初10月16日に予定されていた。",
+        "チームは会議を10月17日にすることで合意した。",
+        "予期しない理由でプロジェクト会議を再調整する必要がある。",
+        "会議はオンラインで開催される。"
+      ],
+      "correct": "C",
+      "explanation": "文書の冒頭で、『Due to unforeseen circumstances, we need to reschedule』と述べられており、予期しない事情で再調整が必要であることがわかります。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 121,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 167問
+🆔 実際に追加されたID: passage143
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 11:38:34
+実行時間: 0.00秒

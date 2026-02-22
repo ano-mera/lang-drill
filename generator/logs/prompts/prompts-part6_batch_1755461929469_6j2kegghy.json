@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-08-17T20:18:49.473Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を___で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: advertisement (Advertisement)\n- ビジネストピック: event_planning (イベント企画・運営)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: A\n- 空欄2の正解位置: C\n- 空欄3の正解位置: A\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: vocabulary (語彙選択)\n- 空欄3: grammar (文法・語形)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T20:19:49.526Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"Advertisement\",\n  \"title\": \"Spring Corporate Event Packages\",\n  \"fullText\": \"Spring Corporate Event Packages\\n\\nWhether you're planning a company retreat or a large conference, our team will handle every detail to ensure your event is ___. We offer customizable packages, including venue selection, catering, A/V support, and on-site ___. Our experienced coordinators will create a timeline, coordinate vendors, and oversee setup and teardown. Book now to receive a 10% discount for events scheduled ___ June 1 to August 31. For more information or to request a quote, visit our website or call (555) 123-4567. ___\\n\\nContact us today to start planning.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"successful\",\n        \"successfully\",\n        \"succeed\",\n        \"success\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"空欄は名詞 event を修飾する形容詞が必要なので 'successful' が正しいです。'successfully' は副詞で動詞を修飾するため不適切、'succeed' は動詞、'success' は名詞で文法的に合いません。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"managing\",\n        \"managements\",\n        \"management\",\n        \"manage\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"前の語句 'on-site' の後には名詞が続く必要があり、'management'（管理業務）が適切です。'managing' は動名詞や現在分詞で不自然、'managements' は複数形で通常使わない表現、'manage' は動詞です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"between\",\n        \"on\",\n        \"in\",\n        \"at\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"期間の始点と終点を示すときは 'between A and B' の構文を使うため 'between' が正しいです。'on/in/at' はこの文脈では適切な前置詞ではありません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"We never work with outside vendors.\",\n        \"Prices are non-negotiable and final.\",\n        \"We also provide on-site staff to ensure smooth execution on the day of your event.\",\n        \"Please note that our office is closed on weekends.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈はサービス内容の説明の続きなので、イベント当日の運営を補助する 'on-site staff' に関する文が自然に接続します。選択肢Aは否定的で不適切、Bは営業面の限定事項で文脈に合わない、Dは営業時間の注意でやや無関係です。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"event_planning\",\n  \"wordCount\": 91\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T20:19:49.528Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 選択肢は1-4語の簡潔な日本語に翻訳\n3. 選択肢に説明や解説は絶対に不要\n4. 文脈に応じた最も適切な意味のみ\n5. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄は___のまま）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Spring Corporate Event Packages\n\n文書全体：\nSpring Corporate Event Packages\n\nWhether you're planning a company retreat or a large conference, our team will handle every detail to ensure your event is ___. We offer customizable packages, including venue selection, catering, A/V support, and on-site ___. Our experienced coordinators will create a timeline, coordinate vendors, and oversee setup and teardown. Book now to receive a 10% discount for events scheduled ___ June 1 to August 31. For more information or to request a quote, visit our website or call (555) 123-4567. ___\n\nContact us today to start planning.\n\n選択肢：\n空欄1: A. successful, B. successfully, C. succeed, D. success\n空欄2: A. managing, B. managements, C. management, D. manage\n空欄3: A. between, B. on, C. in, D. at\n空欄4: A. We never work with outside vendors., B. Prices are non-negotiable and final., C. We also provide on-site staff to ensure smooth execution on the day of your event., D. Please note that our office is closed on weekends.\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T20:20:47.316Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"春の企業イベントパッケージ\",\n  \"contentTranslation\": \"春の企業イベントパッケージ\\n\\n会社のリトリートや大規模な会議を計画している場合でも、当社チームがあらゆる細部を担当し、イベントが___ようにいたします。カスタマイズ可能なパッケージをご用意しており、会場選定、ケータリング、音響映像サポート、現地___などを含みます。経験豊富なコーディネーターがタイムラインを作成し、業者を調整し、設営と撤収を監督します。今すぐ予約すると、___6月1日から8月31日に予定されたイベントは10%割引を受けられます。詳細や見積もりのご依頼は、当社のウェブサイトをご覧いただくか、(555) 123-4567までお電話ください。___\\n\\n本日お問い合わせいただき、計画を始めましょう。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"成功した\", \"うまく\", \"成功する\", \"成功\"]\n    },\n    {\n      \"optionTranslations\": [\"管理\", \"管理業務\", \"マネジメント\", \"管理する\"]\n    },\n    {\n      \"optionTranslations\": [\"の間\", \"に\", \"中に\", \"で\"]\n    },\n    {\n      \"optionTranslations\": [\"外部業者不使用\", \"価格は交渉不可\", \"現地スタッフあり\", \"週末休業\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

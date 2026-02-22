@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-18T17:45:50.135Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:45:50.156Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- スピーカーの名前を本文に必ず入れる\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Radio or podcast broadcast (ラジオ・ポッドキャスト放送)\n【Industry】: Finance and Banking (金融・銀行)\n【Difficulty】: medium\n【Question Types】: intended_audience, inference, main_purpose\n【Correct Answer Positions】: Question 1=D, Question 2=B, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:46:03.527Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Radio Host\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good afternoon, listeners. This is Darren Parker, your host for today's segment on financial insights. Today, we're diving into the latest developments in the banking sector, focusing especially on how consumers can make the most of their savings. We'll discuss recent changes in interest rates and offer some tips on effective budget planning to help you secure a better financial future. Our guest financial analyst, Jane Thompson, will join us shortly to provide her expert opinion on what these changes mean for your personal finances. Stay tuned, as this could be an essential session for anyone looking to improve their financial literacy and manage their money more efficiently.\",\n    \"topic\": \"Banking sector developments and personal finance management\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is the intended audience for this radio broadcast?\",\n      \"options\": [\n        \"Financial analysts looking to understand market trends\",\n        \"Bank executives monitoring industry shifts\",\n        \"Entrepreneurs seeking investment opportunities\",\n        \"Consumers interested in managing their personal finances\"\n      ],\n      \"correct\": \"Consumers interested in managing their personal finances\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチは消費者がどのように貯蓄を有効活用するかに焦点を当てています。これは消費者が個人の財務を管理することに興味があることを示しています。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What can be inferred about the impact of recent changes in interest rates?\",\n      \"options\": [\n        \"They have no impact on personal savings strategies\",\n        \"They have significant implications for personal finances\",\n        \"They will primarily benefit banks\",\n        \"They have already been reversed by the government\"\n      ],\n      \"correct\": \"They have significant implications for personal finances\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチは個人の財務や貯蓄に関する影響について語っており、金利の変化が個人の財務に重大な影響を及ぼすことを示唆しています。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the main purpose of this radio broadcast?\",\n      \"options\": [\n        \"To announce a new financial product\",\n        \"To provide financial insights and tips to consumers\",\n        \"To discuss the stock market trends\",\n        \"To interview a well-known CEO\"\n      ],\n      \"correct\": \"To provide financial insights and tips to consumers\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチの目的は消費者に対して財務に関する洞察とアドバイスを提供することにあり、それはスピーチ内での話題選択によって示されています。\",\n      \"questionType\": \"main_purpose\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:46:03.528Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: radio_broadcast\nIndustry: finance\nSpeaker Role: Radio Host\nTopic: Banking sector developments and personal finance management\n\nSpeech Text:\nGood afternoon, listeners. This is Darren Parker, your host for today's segment on financial insights. Today, we're diving into the latest developments in the banking sector, focusing especially on how consumers can make the most of their savings. We'll discuss recent changes in interest rates and offer some tips on effective budget planning to help you secure a better financial future. Our guest financial analyst, Jane Thompson, will join us shortly to provide her expert opinion on what these changes mean for your personal finances. Stay tuned, as this could be an essential session for anyone looking to improve their financial literacy and manage their money more efficiently.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:46:07.020Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"ラジオ放送\",\n  \"textTranslation\": \"こんにちは、リスナーの皆さん。本日の金融洞察セグメントのホスト、ダレン・パーカーです。今日は銀行業界の最新の動向に迫り、特に消費者がどのようにして貯蓄を最大限に活用できるかに焦点を当てます。最近の金利の変化について議論し、より良い財務の将来を保証するための効果的な予算計画のヒントをいくつかご紹介します。まもなくゲストの金融アナリスト、ジェーン・トンプソンが参加し、これらの変化があなたの個人財務にどのような影響を与えるかについての専門的な意見を提供してくれます。経済的な知識を向上させ、資金を効率的に管理したい方にとっては、非常に重要なセッションになるでしょうので、ぜひお聞き逃しなく。\",\n  \"topicTranslation\": \"銀行業界の動向と個人資産管理\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:46:07.021Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: Who is the intended audience for this radio broadcast?\nOptions:\nA: Financial analysts looking to understand market trends\nB: Bank executives monitoring industry shifts\nC: Entrepreneurs seeking investment opportunities\nD: Consumers interested in managing their personal finances\n\nQuestion 2: What can be inferred about the impact of recent changes in interest rates?\nOptions:\nA: They have no impact on personal savings strategies\nB: They have significant implications for personal finances\nC: They will primarily benefit banks\nD: They have already been reversed by the government\n\nQuestion 3: What is the main purpose of this radio broadcast?\nOptions:\nA: To announce a new financial product\nB: To provide financial insights and tips to consumers\nC: To discuss the stock market trends\nD: To interview a well-known CEO\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:46:09.895Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"このラジオ放送の対象視聴者は誰ですか？\",\n      \"optionTranslations\": [\n        \"市場動向を理解したい金融アナリスト\",\n        \"業界変化を監視する銀行幹部\",\n        \"投資機会を求める起業家\",\n        \"個人の財務管理に興味がある消費者\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"最近の金利変更の影響について何が推測できますか？\",\n      \"optionTranslations\": [\n        \"個人の貯蓄戦略に影響を与えない\",\n        \"個人の財務に大きな影響を与える\",\n        \"主に銀行に利益をもたらす\",\n        \"政府によってすでに元に戻された\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このラジオ放送の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"新しい金融商品を発表するため\",\n        \"消費者に金融の洞察やヒントを提供するため\",\n        \"株式市場の動向を議論するため\",\n        \"有名なCEOをインタビューするため\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "total": 21,
+  "fixed": [
+    "part3_35",
+    "part3_51",
+    "part3_68"
+  ],
+  "remaining": [
+    "part3_39",
+    "part3_41",
+    "part3_42",
+    "part3_55",
+    "part3_75",
+    "part3_85",
+    "part3_104",
+    "part3_108",
+    "part3_109",
+    "part3_114",
+    "part3_121",
+    "part3_124",
+    "part3_134",
+    "part3_141",
+    "part3_144",
+    "part3_146",
+    "part3_152",
+    "part3_154",
+    "part3_160",
+    "part3_163",
+    "part3_164"
+  ],
+  "batches": [
+    [
+      "part3_39",
+      "part3_41",
+      "part3_42",
+      "part3_55",
+      "part3_75"
+    ],
+    [
+      "part3_85",
+      "part3_104",
+      "part3_108",
+      "part3_109",
+      "part3_114"
+    ],
+    [
+      "part3_121",
+      "part3_124",
+      "part3_134",
+      "part3_141",
+      "part3_144"
+    ],
+    [
+      "part3_146",
+      "part3_152",
+      "part3_154",
+      "part3_160",
+      "part3_163"
+    ],
+    [
+      "part3_164"
+    ]
+  ]
+}

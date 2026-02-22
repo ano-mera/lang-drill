@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/22 15:17:03
+ログファイル: question-generation-easy-2025-07-22T15-17-03.log
+モード: 本番出力
+難易度: EASY難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 160問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage131",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Meeting Schedule Confirmation\n\nDear Team,\n\nI hope this message finds you well. I am writing to confirm our upcoming meeting to discuss the quarterly project updates. The meeting is scheduled for Wednesday, March 15th, at 10:00 AM in the conference room on the second floor.\n\nPlease come prepared with your department's progress reports and any key issues you'd like to address. If you are unable to attend, kindly inform me as soon as possible so we can make the necessary arrangements.\n\nThank you for your cooperation.\n\nBest regards,\nAlex Johnson\nProject Manager",
+  "contentTranslation": "件名: 会議日程の確認\n\nチームの皆さんへ\n\nお元気でお過ごしのことと思います。四半期プロジェクトの最新情報を議論するための次回の会議を確認するために、このメッセージを書いています。会議は3月15日水曜日の午前10時に、2階の会議室で予定されています。\n\n各部署の進捗報告と取り上げたい重要な問題を用意してきてください。出席できない場合は、できるだけ早くお知らせいただければ、必要な手配をいたします。\n\nご協力ありがとうございます。\n\nよろしくお願いします。\nアレックス・ジョンソン\nプロジェクトマネージャー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Who is responsible for confirming the meeting schedule?",
+      "questionTranslation": "会議のスケジュールを確認する責任があるのは誰ですか？",
+      "options": [
+        "Alex Johnson",
+        "The Team",
+        "The Department Heads",
+        "The Conference Room Manager"
+      ],
+      "optionTranslations": [
+        "アレックス・ジョンソン",
+        "チーム",
+        "部門長",
+        "会議室の管理者"
+      ],
+      "correct": "A",
+      "explanation": "メールの冒頭で、アレックス・ジョンソンが会議のスケジュールを確認するために書いていることが示されています。"
+    },
+    {
+      "id": "q2",
+      "question": "When will the meeting take place?",
+      "questionTranslation": "会議はいつ開催されますか？",
+      "options": [
+        "Wednesday, March 15th",
+        "Tuesday, March 14th",
+        "Thursday, March 16th",
+        "Friday, March 17th"
+      ],
+      "optionTranslations": [
+        "3月15日（水）",
+        "3月14日（火）",
+        "3月16日（木）",
+        "3月17日（金）"
+      ],
+      "correct": "A",
+      "explanation": "メールには、会議が3月15日（水）午前10時に予定されていると明記されています。"
+    },
+    {
+      "id": "q3",
+      "question": "What does the document say about preparations for the meeting?",
+      "questionTranslation": "文書は会議の準備について何と言っていますか？",
+      "options": [
+        "Bring department's progress reports",
+        "Prepare a financial report",
+        "Send a confirmation email",
+        "Arrange a video conference"
+      ],
+      "optionTranslations": [
+        "部門の進捗報告書を持参する",
+        "財務報告書を準備する",
+        "確認メールを送る",
+        "ビデオ会議を手配する"
+      ],
+      "correct": "A",
+      "explanation": "メールには、部門の進捗報告書と取り扱いたい重要な問題を用意するように指示されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "easy",
+    "estimatedTime": 300,
+    "wordCount": 93,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 161問
+🆔 実際に追加されたID: 
+
+難易度別内訳:
+  初級 (Easy): 1問
+  中級 (Medium): 0問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/22 15:17:17
+実行時間: 0.00秒

@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-26T03:31:51.773Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "それは今四半期のサラの責任です。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-26T03:31:51.915Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "会議は来週に予定が変更されました。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-26T03:31:51.985Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "それはマーケティング部門で対応していると思います。",
+    "metadata": {
+      "difficulty": "hard",
+      "topic": null
+    }
+  }
+]

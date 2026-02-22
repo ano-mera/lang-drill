@@ -1,0 +1,557 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/28 18:46:46
+ログファイル: question-generation-medium-2025-07-28T18-46-46.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 5問
+
+既存の問題数: 169問
+
+=== 生成結果 ===
+✅ 成功: 5問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 10回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage146",
+  "title": "Meeting Scheduling Request",
+  "type": "email",
+  "content": "Subject: Proposal for Upcoming Team Meeting\n\nDear Team,\n\nI hope this message finds you well. I am writing to propose a meeting to discuss our ongoing project, the development of our new marketing strategy, and address any concerns that may have arisen. As we have made significant progress in the last few weeks, it is crucial that we align our efforts moving forward. Could you please check your availability for next week? I suggest we meet either on Wednesday at 10:00 AM or Thursday at 2:00 PM.\n\nIn preparation for our meeting, I would like to include the following topics on the agenda:\n1. Review of the current project status and milestones achieved.\n2. Discussion of any challenges faced and potential solutions.\n3. Brainstorming session for new ideas and strategies.\n\nAdditionally, if there are any specific topics you would like to include, kindly send them to me by this Friday. Once I have received everyone’s availability and input, I will send out a calendar invitation with the confirmed date and time.\n\nThank you for your cooperation, and I look forward to our productive discussion.\n\nBest regards,\n\nEmily Johnson\nProject Coordinator\n\n[Attached: Project Status Chart]",
+  "contentTranslation": "件名: 今後のチーム会議の提案\n\nチームの皆さんへ、\n\nこのメッセージが皆さんに届いていることを願っています。私たちの進行中のプロジェクト、特に新しいマーケティング戦略の開発について話し合うための会議を提案したく、連絡しました。ここ数週間で重要な進展があったため、今後の取り組みを調整することが重要です。来週の皆さんのご都合を確認していただけますか？水曜日の午前10時または木曜日の午後2時にお会いすることを提案します。\n\n会議に向けて、以下のトピックを議題に含めたいと思います：\n1. 現在のプロジェクトの状況と達成したマイルストーンのレビュー。\n2. 直面している課題とその解決策の議論。\n3. 新しいアイデアや戦略のブレインストーミングセッション。\n\nさらに、特に議題に含めたいトピックがあれば、今週の金曜日までに私にお知らせください。皆さんのご都合と意見をいただいた後、確定した日付と時間のカレンダー招待をお送りします。\n\nご協力ありがとうございます。生産的な議論を楽しみにしています。\n\n敬具、\n\nエミリー・ジョンソン\nプロジェクトコーディネーター\n\n[添付: プロジェクト状況チャート]",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Who is responsible for coordinating the team meeting?",
+      "questionTranslation": "チームミーティングの調整を担当しているのは誰ですか？",
+      "options": [
+        "Emily Johnson",
+        "The Project Manager",
+        "The Marketing Director",
+        "A team member"
+      ],
+      "optionTranslations": [
+        "エミリー・ジョンソン",
+        "プロジェクトマネージャー",
+        "マーケティングディレクター",
+        "チームメンバー"
+      ],
+      "correct": "A",
+      "explanation": "メールの署名にあるとおり、エミリー・ジョンソンがプロジェクトコーディネーターとしてチームミーティングを提案している。"
+    },
+    {
+      "id": "q2",
+      "question": "What specific times are proposed for the meeting?",
+      "questionTranslation": "会議のために提案されている具体的な時間は何ですか？",
+      "options": [
+        "Monday at 9:00 AM and Tuesday at 3:00 PM",
+        "Wednesday at 10:00 AM and Thursday at 2:00 PM",
+        "Friday at 4:00 PM and Saturday at 11:00 AM",
+        "Tuesday at 11:00 AM and Thursday at 1:00 PM"
+      ],
+      "optionTranslations": [
+        "月曜日の午前9時と火曜日の午後3時",
+        "水曜日の午前10時と木曜日の午後2時",
+        "金曜日の午後4時と土曜日の午前11時",
+        "火曜日の午前11時と木曜日の午後1時"
+      ],
+      "correct": "B",
+      "explanation": "メール本文にて、水曜日の午前10時または木曜日の午後2時が提案されていることが明記されている。"
+    },
+    {
+      "id": "q3",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To announce a new project",
+        "To schedule a team meeting",
+        "To provide a project update",
+        "To introduce a new team member"
+      ],
+      "optionTranslations": [
+        "新しいプロジェクトを発表するため",
+        "チームミーティングを予定するため",
+        "プロジェクトの最新情報を提供するため",
+        "新しいチームメンバーを紹介するため"
+      ],
+      "correct": "B",
+      "explanation": "メールは主にチームミーティングのスケジュールを調整するために書かれており、具体的な日程の提案が含まれている。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 194,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+【問題 2】
+{
+  "id": "passage147",
+  "title": "",
+  "type": "advertisement",
+  "content": "Office Supply Savings Announcement\n\nUpgrade Your Workspace with Our Latest Office Supplies!\n\nDear Valued Employees,\n\nWe are excited to announce a special promotion on our wide range of office supplies, available exclusively for company employees. From high-quality stationery to ergonomic chairs, we have everything you need to enhance your productivity and comfort at work.\n\n**Available Features and Benefits:**\n- Up to 30% discount on select items\n- Free delivery for orders over $50\n- Sustainable and eco-friendly product options\n- A dedicated section for bulk orders with additional discounts\n- Special offers on new arrivals and seasonal items\n\nTo take advantage of this offer, simply visit our internal online store and use the code 'OFFICE30' at checkout. This promotion is valid until the end of the month, so don't miss out!\n\nFor any inquiries or assistance, please contact our support team at support@company.com. We are here to help you make the most of this opportunity.\n\nEnhance your workspace today and enjoy the benefits of a well-equipped office! Don’t forget to check out our featured products and customer favorites on the website.\n\nBest regards,\nOffice Management Team",
+  "contentTranslation": "オフィス用品の節約キャンペーンのお知らせ\n\n最新のオフィス用品でワークスペースをアップグレードしませんか！\n\n親愛なる従業員の皆様へ、\n\n私たちは、会社の従業員専用に提供される幅広いオフィス用品の特別プロモーションを発表できることを嬉しく思います。高品質の文房具からエルゴノミクスチェアまで、仕事での生産性と快適さを向上させるために必要なものがすべて揃っています。\n\n**利用可能な特徴と利点:**\n- 選択されたアイテムが最大30％割引\n- $50以上の注文で送料無料\n- 持続可能で環境に優しい製品オプション\n- 大口注文向けの専用セクションと追加割引\n- 新商品や季節商品に関する特別オファー\n\nこのオファーを利用するには、社内のオンラインストアにアクセスし、チェックアウト時にコード「OFFICE30」を使用してください。このプロモーションは月末まで有効ですので、お見逃しなく！\n\nご質問やサポートが必要な場合は、support@company.comまでお問い合わせください。この機会を最大限に活用するためにお手伝いします。\n\n今日、あなたのワークスペースを向上させ、充実したオフィスの利点を享受しましょう！ウェブサイトで特集商品や顧客のお気に入りもぜひチェックしてください。\n\n敬具、\nオフィスマネジメントチーム",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the document, what is the discount rate available for select items?",
+      "questionTranslation": "文書によると、選ばれた商品に対して利用可能な割引率はどれですか？",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "40%"
+      ],
+      "optionTranslations": [
+        "10%",
+        "20%",
+        "30%",
+        "40%"
+      ],
+      "correct": "C",
+      "explanation": "文書には「Up to 30% discount on select items」と記載されており、選ばれた商品に対して最大30%の割引が適用されると明示されています。"
+    },
+    {
+      "id": "q2",
+      "question": "What can be inferred from the information provided about the delivery service?",
+      "questionTranslation": "提供された情報から配達サービスについて推測できることは何ですか？",
+      "options": [
+        "All orders include free delivery.",
+        "Free delivery is offered for orders over a specific amount.",
+        "Delivery service is available only for bulk orders.",
+        "There is no information about delivery services."
+      ],
+      "optionTranslations": [
+        "すべての注文が無料配達を含む。",
+        "特定の金額を超える注文に対して無料配達が提供される。",
+        "配達サービスは大量注文のみに利用可能である。",
+        "配達サービスについての情報はない。"
+      ],
+      "correct": "B",
+      "explanation": "文書には「Free delivery for orders over $50」とあり、$50を超える注文には無料配達が提供されると推測されます。"
+    },
+    {
+      "id": "q3",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To introduce new office furniture.",
+        "To announce a discount promotion on office supplies.",
+        "To inform about a company event.",
+        "To provide updates on company policies."
+      ],
+      "optionTranslations": [
+        "新しいオフィス家具を紹介するため。",
+        "オフィス用品の割引プロモーションを発表するため。",
+        "会社のイベントについて知らせるため。",
+        "会社の方針の更新を提供するため。"
+      ],
+      "correct": "B",
+      "explanation": "文書の冒頭で「We are excited to announce a special promotion on our wide range of office supplies」と述べており、オフィス用品の割引プロモーションを発表することが主な目的であるとわかります。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 186,
+    "questionCount": 3,
+    "passageType": "advertisement",
+    "topic": "office_announcements",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+【問題 3】
+{
+  "id": "passage148",
+  "title": "The Importance of Simple Notifications in Business Communication",
+  "type": "article",
+  "content": "In today's fast-paced business environment, effective communication is crucial for success. One way to enhance communication is through simple notifications that can be easily understood and acted upon.\n\nSimple notifications can be used to inform team members about meeting times, project deadlines, or policy updates. They ensure everyone is aligned and aware of important information. For instance, using a company-wide email to announce a change in the project deadline helps prevent confusion and ensures all team members have the updated information. Additionally, these notifications can be structured in a clear format, such as bullet points, to make the information more digestible.\n\nMoreover, notifications can also be used to acknowledge achievements or milestones. A short message congratulating a team on reaching a sales target can boost morale and motivate employees. It's an effective way to show appreciation and maintain a positive work environment. Including a visual element, such as a graph showing sales growth, can further enhance the impact of such notifications.\n\nIn conclusion, simple notifications are an essential tool in business communication. They help disseminate important information quickly and can foster a more cohesive and motivated team. Companies should leverage notifications to streamline communication and enhance overall productivity. By incorporating visual aids and clear formats, businesses can ensure that their messages are not only received but also understood and appreciated by all team members.",
+  "contentTranslation": "今日の急速に変化するビジネス環境において、効果的なコミュニケーションは成功に不可欠です。コミュニケーションを強化する一つの方法は、シンプルな通知を通じて行うことです。これらの通知は簡単に理解され、実行されるべきです。\n\nシンプルな通知は、会議の時間、プロジェクトの締切、またはポリシーの更新についてチームメンバーに知らせるために使用できます。これにより、全員が調整され、重要な情報を把握することができます。たとえば、プロジェクトの締切の変更を発表するために全社的なメールを使用することで、混乱を防ぎ、全てのチームメンバーが最新の情報を持つことができます。さらに、これらの通知は、情報をより消化しやすくするために、箇条書きのような明確な形式で構成することができます。\n\nさらに、通知は成果やマイルストーンを認めるためにも使用できます。販売目標を達成したチームにお祝いの短いメッセージを送ることは、士気を高め、従業員を励ますことができます。これは感謝の意を示し、ポジティブな職場環境を維持するための効果的な方法です。このような通知の影響をさらに高めるために、販売成長を示すグラフなどの視覚的要素を含めることができます。\n\n結論として、シンプルな通知はビジネスコミュニケーションにおいて不可欠なツールです。これにより、重要な情報を迅速に伝達し、より結束したやる気のあるチームを育むことができます。企業は通知を活用してコミュニケーションを効率化し、全体的な生産性を向上させるべきです。視覚的な補助や明確な形式を取り入れることで、ビジネスはメッセージが受け取られるだけでなく、全てのチームメンバーによって理解され、感謝されることを保証できます。",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "Notifications are only useful for project updates.",
+        "Clear communication can improve team motivation.",
+        "Visual aids are not necessary for effective communication.",
+        "Sales targets should not be shared in notifications."
+      ],
+      "optionTranslations": [
+        "通知はプロジェクトの更新にのみ役立ちます。",
+        "明確なコミュニケーションはチームのモチベーションを向上させることができます。",
+        "視覚的な補助は効果的なコミュニケーションに必要ありません。",
+        "売上目標は通知で共有すべきではありません。"
+      ],
+      "correct": "B",
+      "explanation": "文書では、通知が達成を認識するために使われることがあり、これは士気を高め、従業員を動機付けることができると述べています。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To explain the importance of complex communication strategies.",
+        "To illustrate the benefits of simple notifications in business communication.",
+        "To discuss the disadvantages of using emails for notifications.",
+        "To describe how to structure business emails effectively."
+      ],
+      "optionTranslations": [
+        "複雑なコミュニケーション戦略の重要性を説明すること。",
+        "ビジネスコミュニケーションにおける簡単な通知の利点を説明すること。",
+        "通知にメールを使うことの欠点を議論すること。",
+        "ビジネスメールを効果的に構成する方法を説明すること。"
+      ],
+      "correct": "B",
+      "explanation": "文書は、シンプルな通知がビジネスコミュニケーションでどのように役立つかを説明しています。"
+    },
+    {
+      "id": "q3",
+      "question": "According to the document, what specific information is mentioned?",
+      "questionTranslation": "文書によると、どの具体的な情報が言及されていますか？",
+      "options": [
+        "Notifications are only sent via text messages.",
+        "Sales target achievements can be acknowledged with notifications.",
+        "Team members prefer verbal communication over written notifications.",
+        "Project deadlines should be ignored in notifications."
+      ],
+      "optionTranslations": [
+        "通知はテキストメッセージでのみ送信されます。",
+        "売上目標の達成は通知で認識されることがあります。",
+        "チームメンバーは書面による通知よりも口頭でのコミュニケーションを好みます。",
+        "プロジェクトの締め切りは通知で無視されるべきです。"
+      ],
+      "correct": "B",
+      "explanation": "文書では、売上目標の達成を祝う短いメッセージが通知で送られることがあり、それが士気を高めると述べています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 224,
+    "questionCount": 3,
+    "passageType": "article",
+    "topic": "simple_notifications",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+【問題 4】
+{
+  "id": "passage149",
+  "title": "Subject: Request for Product Replacement",
+  "type": "customer_support",
+  "content": "Dear Mr. Tanaka,\n\nThank you for reaching out to us regarding the issue with your recent purchase of our X200 headset. We sincerely appreciate your patience and understanding as we work to resolve this matter. We understand how important it is for you to have a fully functioning product, and we apologize for any inconvenience this may have caused.\n\nUpon reviewing your case, we would like to offer you a replacement unit at no additional charge. To proceed with the replacement, please send the defective item to our service center using the prepaid shipping label we have provided in this email. Once we receive the returned item, we will prioritize the shipment of your new X200 headset to ensure you receive it as soon as possible.\n\nIf you have any further questions or need assistance during this process, please do not hesitate to contact our dedicated support team. We are here to assist you and ensure your satisfaction with our products.\n\nThank you for your understanding and cooperation.\n\nBest regards,\nSarah Johnson\nCustomer Support Team\nTechWare Solutions",
+  "contentTranslation": "田中様\n\nこの度は、弊社のX200ヘッドセットのご購入に関する問題についてご連絡いただき、誠にありがとうございます。この問題を解決するために、あなたのご理解とご忍耐に心より感謝申し上げます。完全に機能する製品をお持ちいただくことがどれほど重要であるかを理解しており、ご不便をおかけしたことをお詫び申し上げます。\n\nお客様のケースを確認した結果、追加料金なしで交換品を提供させていただきます。交換を進めるために、添付の事前支払い済みの配送ラベルを使用して、故障した商品を弊社のサービスセンターにお送りください。返送された商品を受け取り次第、新しいX200ヘッドセットの発送を優先し、できるだけ早くお届けできるようにいたします。\n\nこのプロセス中にさらなる質問やサポートが必要な場合は、どうぞお気軽に私たちの専任サポートチームにご連絡ください。私たちはあなたの満足を確保するためにここにいます。\n\nご理解とご協力に感謝いたします。\n\n敬具\nサラ・ジョンソン\nカスタマーサポートチーム\nテックウェアソリューションズ",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the document, what is Mr. Tanaka required to do to receive a replacement unit?",
+      "questionTranslation": "文書によると、田中さんが交換品を受け取るために必要なことは何ですか？",
+      "options": [
+        "Fill out a form online",
+        "Send the defective item to the service center",
+        "Pay a small fee for shipping",
+        "Visit the nearest store"
+      ],
+      "optionTranslations": [
+        "オンラインでフォームに記入する",
+        "不良品をサービスセンターに送る",
+        "送料の小額の手数料を支払う",
+        "最寄りの店舗を訪れる"
+      ],
+      "correct": "B",
+      "explanation": "文書には、田中さんが交換品を受け取るためには、不良品をサービスセンターに送る必要があると記載されています。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To introduce a new product",
+        "To offer a discount on future purchases",
+        "To resolve a customer's issue with a product",
+        "To announce a company policy change"
+      ],
+      "optionTranslations": [
+        "新製品を紹介する",
+        "将来の購入に対する割引を提供する",
+        "製品に関する顧客の問題を解決する",
+        "会社方針の変更を発表する"
+      ],
+      "correct": "C",
+      "explanation": "文書の目的は、田中さんの購入製品に関する問題を解決することです。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "The company charges for all replacements",
+        "The company values customer satisfaction",
+        "The product is no longer available",
+        "The product is under warranty"
+      ],
+      "optionTranslations": [
+        "会社はすべての交換品に料金を請求する",
+        "会社は顧客満足を重視している",
+        "製品はもう利用できない",
+        "製品は保証期間内である"
+      ],
+      "correct": "B",
+      "explanation": "文書には、顧客の問題を解決し、満足を保証するために、無償で交換品を提供することが記載されており、これにより会社が顧客満足を重視していることが推測できます。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 177,
+    "questionCount": 3,
+    "passageType": "customer_support",
+    "topic": "basic_requests",
+    "qualityCheck": {
+      "passed": false,
+      "score": 75,
+      "issues": [
+        {
+          "category": "語数",
+          "severity": "中程度",
+          "description": "文書の語数が177語で、期待範囲の180-250語に満たない。",
+          "suggestion": "もう少し内容を追加して、語数を増やすことを検討してください。"
+        }
+      ],
+      "recommendation": "不合格",
+      "contentCheck": {
+        "passed": false,
+        "score": 75,
+        "issues": [
+          {
+            "category": "語数",
+            "severity": "中程度",
+            "description": "文書の語数が177語で、期待範囲の180-250語に満たない。",
+            "suggestion": "もう少し内容を追加して、語数を増やすことを検討してください。"
+          }
+        ],
+        "recommendation": "修正必要"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+【問題 5】
+{
+  "id": "passage150",
+  "title": "",
+  "type": "internal_chat",
+  "content": "Alice 09:15 AM\nHi team, I hope you are all doing well. I wanted to inform you that there’s been a change in the schedule for the upcoming project meetings. The meeting originally planned for Thursday at 3 PM has been moved to Friday at the same time. Please update your calendars accordingly.\n\nAdditionally, I would like to remind everyone to review the project deliverables before the meeting. It is important that we are all on the same page regarding our progress. If you have any questions or need assistance with your tasks, please feel free to reach out.\n\nBob 09:18 AM\nThanks for the update, Alice. Does this change affect the deadline for the project deliverables?\n\nAlice 09:21 AM\nGood question, Bob. The deadline remains unchanged, so we still need to submit all deliverables by the end of next week. Let me know if anyone has any conflicts with the new meeting time.\n\nCarol 09:25 AM\nFriday works for me. Thanks for letting us know, Alice.\n\nDavid 09:27 AM\nI have a conflict with another meeting on Friday at that time. Could we possibly reschedule to earlier in the day?\n\nAlice 09:30 AM\nI’ll check with the rest of the team and see if we can adjust the timing. I’ll get back to you all by the end of today. \n\nPlease see the attached table for a summary of our project timeline and key deliverables. This should help everyone stay organized and informed about our progress.",
+  "contentTranslation": "アリス 09:15 AM\nチームの皆さん、こんにちは。皆さんが元気でいることを願っています。今後のプロジェクト会議のスケジュールに変更があったことをお知らせします。元々木曜日の午後3時に予定されていた会議は、金曜日の同じ時間に移動しました。カレンダーを更新してください。\n\nまた、会議の前にプロジェクトの納品物を確認することを皆さんにリマインドしたいと思います。私たちの進捗について全員が同じ認識を持つことが重要です。質問があったり、タスクに関してサポートが必要な場合は、遠慮なく連絡してください。\n\nボブ 09:18 AM\nアリス、更新ありがとう。この変更はプロジェクトの納品物の締切に影響しますか？\n\nアリス 09:21 AM\n良い質問ですね、ボブ。締切は変更ありませんので、来週の終わりまでにすべての納品物を提出する必要があります。新しい会議の時間に何か問題がある方は教えてください。\n\nキャロル 09:25 AM\n金曜日は私にとって大丈夫です。教えてくれてありがとう、アリス。\n\nデイビッド 09:27 AM\nその時間に別の会議があるので、金曜日は都合が悪いです。できれば早めの時間に再調整できませんか？\n\nアリス 09:30 AM\nチームの他のメンバーに確認して、時間を調整できるか見てみます。今日の終わりまでに皆さんにお知らせします。\n\nプロジェクトのタイムラインと主要な納品物の要約を示す表を添付しました。これにより、皆さんが整理され、進捗について把握しやすくなると思います。",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "When will the project meeting take place?",
+      "questionTranslation": "プロジェクト会議はいつ行われますか？",
+      "options": [
+        "Thursday at 3 PM",
+        "Friday at 3 PM",
+        "Wednesday at 3 PM",
+        "Friday at 10 AM"
+      ],
+      "optionTranslations": [
+        "木曜日の午後3時",
+        "金曜日の午後3時",
+        "水曜日の午後3時",
+        "金曜日の午前10時"
+      ],
+      "correct": "B",
+      "explanation": "会議は、元々木曜日の午後3時に予定されていましたが、金曜日の同じ時間に変更されました。文書冒頭のAliceのメッセージで確認できます。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the deadline for the project deliverables?",
+      "questionTranslation": "プロジェクトの納品物の締め切りはいつですか？",
+      "options": [
+        "By the end of this week",
+        "By the end of next week",
+        "By the end of the month",
+        "By the start of next week"
+      ],
+      "optionTranslations": [
+        "今週末まで",
+        "来週末まで",
+        "月末まで",
+        "来週の始めまで"
+      ],
+      "correct": "B",
+      "explanation": "プロジェクトの納品物の締め切りは変わらず、来週末までです。AliceがBobの質問に対して答えた内容に基づいています。"
+    },
+    {
+      "id": "q3",
+      "question": "Who should be contacted regarding conflicts with the new meeting time?",
+      "questionTranslation": "新しい会議時間に関する問題については誰に連絡すべきですか？",
+      "options": [
+        "Bob",
+        "Alice",
+        "Carol",
+        "David"
+      ],
+      "optionTranslations": [
+        "ボブ",
+        "アリス",
+        "キャロル",
+        "デイビッド"
+      ],
+      "correct": "B",
+      "explanation": "Aliceが、会議時間に問題がある場合は自分に知らせるように言っています。したがって、問題がある場合にはAliceに連絡するのが適切です。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 247,
+    "questionCount": 3,
+    "passageType": "internal_chat",
+    "topic": "schedule_changes",
+    "qualityCheck": {
+      "passed": false,
+      "score": 85,
+      "issues": [
+        {
+          "category": "構造",
+          "severity": "中程度",
+          "description": "文書に図表が含まれていないが、内容に関連する情報を視覚的に示すための図表が推奨される。",
+          "suggestion": "プロジェクトのタイムラインや主要な成果物を示す図表を追加することを検討してください。"
+        }
+      ],
+      "recommendation": "不合格",
+      "contentCheck": {
+        "passed": false,
+        "score": 85,
+        "issues": [
+          {
+            "category": "構造",
+            "severity": "中程度",
+            "description": "文書に図表が含まれていないが、内容に関連する情報を視覚的に示すための図表が推奨される。",
+            "suggestion": "プロジェクトのタイムラインや主要な成果物を示す図表を追加することを検討してください。"
+          }
+        ],
+        "recommendation": "修正必要"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 5問を追加
+📊 総問題数: 174問
+🆔 実際に追加されたID: passage146, passage147, passage148, passage149, passage150
+📝 プロンプト情報: 生成=10件, 品質チェック=0件, 修正=0件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 5問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 1問
+  記事: 1問
+  カスタマー対応: 1問
+  社内チャット: 1問
+
+=== 実行完了 ===
+終了時刻: 2025/7/28 18:50:23
+実行時間: 0.00秒

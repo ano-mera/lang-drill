@@ -1,0 +1,118 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 11:49:39
+ログファイル: question-generation-medium-2025-07-25T11-49-39.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 167問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage144",
+  "title": "Meeting Rescheduling Request",
+  "type": "email",
+  "content": "Subject: Request to Reschedule Our Upcoming Meeting\n\nDear Mr. Johnson,\n\nI hope this message finds you well. I am writing to discuss our upcoming meeting initially scheduled for Thursday, October 12th, at 2:00 PM. Due to a scheduling conflict on my end, I would like to propose rescheduling it.\n\nWould it be possible to move our meeting to Friday, October 13th, at the same time? Alternatively, I am available on Wednesday, October 11th, between 3:00 PM and 5:00 PM. Please let me know if either of these options works for you or if there is another time you would prefer.\n\nThank you for your understanding and flexibility. I look forward to our conversation.\n\nBest regards,\nEmily Davis",
+  "contentTranslation": "件名: 今後の会議の日程変更のお願い\n\nジョンソン様\n\nお世話になっております。10月12日木曜日の午後2時に予定していた会議についてお話ししたくご連絡いたしました。私の都合で日程に変更が必要となり、日程の変更をご提案したく存じます。\n\n会議を10月13日金曜日の同じ時間に変更することは可能でしょうか？あるいは、10月11日水曜日の午後3時から5時の間であれば調整可能です。どちらかご都合がよろしいか、または他のご希望の時間があればお知らせください。\n\nご理解と柔軟な対応に感謝いたします。お会いできるのを楽しみにしております。\n\n敬具\nエミリー・デイビス",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To request a change in meeting schedule",
+        "To confirm the meeting details",
+        "To cancel the meeting",
+        "To introduce a new project"
+      ],
+      "optionTranslations": [
+        "会議の日程変更を依頼すること",
+        "会議の詳細を確認すること",
+        "会議をキャンセルすること",
+        "新しいプロジェクトを紹介すること"
+      ],
+      "correct": "A",
+      "explanation": "文書は、Emily Davisが会議の日程変更を依頼している内容で始まっており、これが主な目的です。"
+    },
+    {
+      "id": "q2",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から推測できることは何ですか？",
+      "options": [
+        "Emily Davis is unavailable on October 12th at 2:00 PM.",
+        "Mr. Johnson suggested an alternative date for the meeting.",
+        "The meeting was initially set for October 13th.",
+        "Emily Davis prefers meetings in the morning."
+      ],
+      "optionTranslations": [
+        "Emily Davisは10月12日の午後2時に予定が空いていない。",
+        "Mr. Johnsonが会議の代替日を提案した。",
+        "会議はもともと10月13日に設定されていた。",
+        "Emily Davisは午前中の会議を好む。"
+      ],
+      "correct": "A",
+      "explanation": "Emily Davisが10月12日の会議を他の日に変更したいと述べているため、彼女はその時間に予定があることが推測されます。"
+    },
+    {
+      "id": "q3",
+      "question": "According to the document, what specific information is mentioned?",
+      "questionTranslation": "文書によると、どの具体的な情報が言及されていますか？",
+      "options": [
+        "The meeting time on October 13th is 3:00 PM.",
+        "Emily Davis is available on October 11th from 3:00 PM to 5:00 PM.",
+        "Mr. Johnson agreed to the new schedule.",
+        "The meeting will be held online."
+      ],
+      "optionTranslations": [
+        "10月13日の会議時間は午後3時である。",
+        "Emily Davisは10月11日の午後3時から5時まで空いている。",
+        "Mr. Johnsonは新しいスケジュールに同意した。",
+        "会議はオンラインで開催される。"
+      ],
+      "correct": "B",
+      "explanation": "文書には、Emily Davisが10月11日の午後3時から5時まで空いていると明記されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 117,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 168問
+🆔 実際に追加されたID: passage144
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 11:49:59
+実行時間: 0.00秒

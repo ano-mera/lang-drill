@@ -1,0 +1,100 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:54:37
+ログファイル: question-generation-easy-2025-07-25T10-54-37.log
+モード: テスト出力
+難易度: EASY難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage1",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Meeting Schedule Confirmation\n\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to confirm our meeting scheduled for next Wednesday at 10:00 AM in the main conference room. Please let me know if this time is still convenient for you.\n\nAdditionally, could you prepare the sales figures from last quarter for our discussion? If you have any other topics to address, feel free to add them to the agenda.\n\nLooking forward to our meeting.\n\nBest regards,\nJohn Smith",
+  "contentTranslation": "件名: 会議日程の確認\n\n田中様\n\nお元気ですか。このメールは、来週水曜日午前10時にメイン会議室で予定されている会議の確認のためにお送りします。この時間がまだ都合がよいかどうかお知らせください。\n\nまた、前四半期の売上データを準備していただけますか？他に議論したいトピックがあれば、議題に追加してください。\n\n会議を楽しみにしています。\n\nよろしくお願いいたします。\nジョン・スミス",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To discuss a recent meeting",
+        "To confirm a meeting schedule",
+        "To introduce a new product",
+        "To cancel a scheduled meeting"
+      ],
+      "optionTranslations": [
+        "最近の会議について話し合うこと",
+        "会議のスケジュールを確認すること",
+        "新製品を紹介すること",
+        "予定された会議をキャンセルすること"
+      ],
+      "correct": "B",
+      "explanation": "文書の冒頭で、John Smithが次の水曜日の会議のスケジュール確認をしていることから、会議のスケジュールを確認することが文書の主な目的です。"
+    },
+    {
+      "id": "q2",
+      "question": "Who is responsible for preparing the sales figures?",
+      "questionTranslation": "売上データを準備するのは誰ですか？",
+      "options": [
+        "Mr. Tanaka",
+        "John Smith",
+        "The sales department",
+        "The finance team"
+      ],
+      "optionTranslations": [
+        "田中さん",
+        "ジョン・スミス",
+        "営業部",
+        "財務チーム"
+      ],
+      "correct": "A",
+      "explanation": "文書の中で、John Smithが田中さんに売上データの準備を依頼していることが明記されています。したがって、準備するのは田中さんです。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "Mr. Tanaka is unavailable on Wednesday.",
+        "The meeting will discuss multiple topics.",
+        "John Smith is the head of the sales department.",
+        "The conference room is under renovation."
+      ],
+      "optionTranslations": [
+        "田中さんは水曜日に都合が悪い。",
+        "会議では複数のトピックが議論される予定だ。",
+        "ジョン・スミスは営業部長である。",
+        "会議室は改装中である。"
+      ],
+      "correct": "B",
+      "explanation": "文書内で、John Smithは田中さんに売上データを準備するよう依頼し、他に話し合うべきトピックがあれば議題に追加するよう促しています。これにより、会議では複数のトピックが議論されることが推測されます。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "easy",
+    "estimatedTime": 300,
+    "wordCount": 83,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+🧪 テストモード: 問題データベースには追加されません
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:54:54
+実行時間: 0.00秒

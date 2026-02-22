@@ -1,0 +1,137 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 2:25:36
+ログファイル: question-generation-medium-2025-08-08T02-25-36.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 174問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage151",
+  "title": "Subject: Event Planning Meeting - Initial Steps",
+  "type": "email",
+  "content": "Dear Team,\n\nI hope this message finds you well. As we begin planning for the upcoming annual conference, I would like to schedule an initial meeting to discuss the preliminary steps. The meeting is set for March 15th at 10:00 AM in the main conference room. Please prepare any ideas or suggestions you may have regarding the event's theme, potential guest speakers, budget considerations, and promotional strategies.\n\nIn addition to this, I would appreciate it if you could review last year's feedback report to identify areas for improvement. Specifically, please focus on the aspects of attendee engagement, session topics, and logistical arrangements that received mixed reviews. Your insights will be invaluable in ensuring a successful event this year.\n\nTo facilitate our discussion, I have attached a brief agenda outlining the key points we will cover during the meeting. If you have any additional topics you would like to address, please feel free to share them with me beforehand.\n\nLet me know if you have any scheduling conflicts or need further information. I look forward to our collaboration and am excited about the possibilities for this year's conference.\n\nBest regards,\n\nAlex Johnson\nEvent Coordinator",
+  "contentTranslation": "チームの皆さんへ、\n\nこのメッセージが皆さんに届いていることを願っています。今後の年次会議の計画を始めるにあたり、初回の会議を設定したいと思います。この会議は3月15日午前10時にメイン会議室で行います。イベントのテーマ、潜在的なゲストスピーカー、予算の考慮事項、そしてプロモーション戦略についてのアイデアや提案を準備してください。\n\nさらに、昨年のフィードバックレポートを見直し、改善が必要な分野を特定していただけるとありがたいです。特に、参加者のエンゲージメント、セッションのトピック、混合評価を受けた物流の手配に焦点を当ててください。皆さんの洞察は、今年の成功したイベントを実現するために非常に貴重です。\n\n私たちの議論を円滑に進めるために、会議でカバーする主要なポイントを概説した簡単なアジェンダを添付しました。追加で取り上げたいトピックがあれば、事前に私にお知らせください。\n\nスケジュールの都合やさらなる情報が必要な場合はお知らせください。今年の会議に向けての協力を楽しみにしており、可能性にワクワクしています。\n\nよろしくお願いします。\n\nアレックス・ジョンソン\nイベントコーディネーター",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To announce a new conference date",
+        "To schedule an initial planning meeting",
+        "To introduce a new team member",
+        "To provide feedback on last year's event"
+      ],
+      "optionTranslations": [
+        "新しい会議の日程を発表すること",
+        "初回の計画ミーティングを予定すること",
+        "新しいチームメンバーを紹介すること",
+        "昨年のイベントに関するフィードバックを提供すること"
+      ],
+      "correct": "B",
+      "explanation": "この文書の主な目的は、3月15日に予定されている年次会議の初回計画ミーティングを設定することです。"
+    },
+    {
+      "id": "q2",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "The conference theme has already been decided.",
+        "Last year's conference had no issues.",
+        "The team is expected to contribute ideas.",
+        "The meeting will be held online."
+      ],
+      "optionTranslations": [
+        "会議のテーマはすでに決まっている。",
+        "昨年の会議には問題がなかった。",
+        "チームはアイデアを提供することが期待されている。",
+        "会議はオンラインで開催される。"
+      ],
+      "correct": "C",
+      "explanation": "文書内で、イベントのテーマやゲストスピーカーについてのアイデアを準備するよう求められているため、チームがアイデアを提供することが期待されています。"
+    },
+    {
+      "id": "q3",
+      "question": "Where will the initial meeting be held?",
+      "questionTranslation": "初回のミーティングはどこで開催されますか？",
+      "options": [
+        "In the main conference room",
+        "In the team's office",
+        "At an offsite location",
+        "In a virtual setting"
+      ],
+      "optionTranslations": [
+        "メイン会議室で",
+        "チームのオフィスで",
+        "オフサイトの場所で",
+        "バーチャルな環境で"
+      ],
+      "correct": "A",
+      "explanation": "文書内で、初回のミーティングがメイン会議室で行われると明記されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 193,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "event_planning",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 175問
+🆔 実際に追加されたID: passage151
+📝 プロンプト情報: 生成=2件, 品質チェック=0件, 修正=0件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 2:26:21
+実行時間: 0.00秒

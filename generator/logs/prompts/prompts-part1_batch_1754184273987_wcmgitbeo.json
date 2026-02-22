@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2025-08-03T01:24:33.998Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"easy\".\n\nScene Requirements:\n- Scene type: inside airplane\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"inside airplane\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:24:37.351Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside the airplane, a flight attendant is walking down the aisle, offering drinks from a cart to passengers who are seated. Through the small windows, clear skies can be seen outside. A passenger in the middle seat is reading a book, while the person seated by the aisle is adjusting their seatbelt.\",\n    \"difficulty\": \"easy\",\n    \"scene\": \"inside airplane\"\n  }\n]",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:24:37.352Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Inside the airplane, a flight attendant is walking down the aisle, offering drinks from a cart to passengers who are seated. Through the small windows, clear skies can be seen outside. A passenger in the middle seat is reading a book, while the person seated by the aisle is adjusting their seatbelt.\"\nDifficulty: easy\n\nDIFFICULTY REQUIREMENTS FOR \"EASY\" LEVEL:\nDescription: The sentence describes a clear and simple action using basic grammar. The vocabulary is common and the structure is short and direct.\n\nKey Features to Follow:\n- Uses present continuous tense\n- Subjects are singular and actions are direct\n- No complex modifiers or phrases\n- Vocabulary is everyday and high-frequency\n- No ambiguity in what is being described\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"B\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: CORRECT ANSWER - Must accurately describe the given scene  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: INCORRECT DISTRACTOR - Plausible but clearly wrong\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position B. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:24:39.834Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"options\": [\n    \"Passengers are boarding a train station.\",\n    \"A flight attendant is offering drinks.\",\n    \"The airplane is taking off from the runway.\",\n    \"Travelers are waiting at the baggage claim.\"\n  ],\n  \"correct\": \"B\",\n  \"explanation\": \"The scene shows a flight attendant offering drinks to passengers on an airplane.\",\n  \"difficulty\": \"easy\",\n  \"questionType\": \"action\"\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:25:02.534Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"A flight attendant is handing a bottle of water to a passenger seated in an airplane, while another flight attendant in the background is carrying a tray with empty glasses. The cabin interior is visible, with blue seats and windows showing a view of the sky.\"\nDifficulty: easy\n\nDIFFICULTY REQUIREMENTS FOR \"EASY\" LEVEL:\nDescription: The sentence describes a clear and simple action using basic grammar. The vocabulary is common and the structure is short and direct.\n\nKey Features to Follow:\n- Uses present continuous tense\n- Subjects are singular and actions are direct\n- No complex modifiers or phrases\n- Vocabulary is everyday and high-frequency\n- No ambiguity in what is being described\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"A\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: CORRECT ANSWER - Must accurately describe the given scene\n- Position B: INCORRECT DISTRACTOR - Plausible but clearly wrong  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: INCORRECT DISTRACTOR - Plausible but clearly wrong\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position A. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:25:05.037Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"options\": [\"A flight attendant is handing a bottle of water.\", \"A passenger is reading a magazine quietly.\", \"A flight attendant is fixing a seatbelt.\", \"A pilot is greeting passengers at the door.\"],\n  \"correct\": \"A\",\n  \"explanation\": \"The correct answer describes the flight attendant handing a bottle of water, which matches the scene description.\",\n  \"difficulty\": \"easy\",\n  \"questionType\": \"action\"\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:25:05.038Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): A flight attendant is handing a bottle of water to a passenger seated in an airplane, while another flight attendant in the background is carrying a tray with empty glasses. The cabin interior is visible, with blue seats and windows showing a view of the sky.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:25:07.017Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "客室乗務員が飛行機内に座っている乗客に水のボトルを手渡しており、背景には別の客室乗務員が空のグラスが載ったトレイを運んでいます。キャビンの内装が見え、青い座席と空が見える窓があります。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:25:07.018Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A flight attendant is handing a bottle of water.\nB: A passenger is reading a magazine quietly.\nC: A flight attendant is fixing a seatbelt.\nD: A pilot is greeting passengers at the door.\n\nExplanation: The correct answer describes the flight attendant handing a bottle of water, which matches the scene description.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T01:25:09.723Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"客室乗務員が水のボトルを手渡している。\",\n    \"乗客が静かに雑誌を読んでいる。\",\n    \"客室乗務員がシートベルトを直している。\",\n    \"パイロットがドアで乗客に挨拶している。\"\n  ],\n  \"explanationTranslation\": \"正解は、客室乗務員が水のボトルを手渡しているという描写で、これがシーンの説明に一致しています。\"\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

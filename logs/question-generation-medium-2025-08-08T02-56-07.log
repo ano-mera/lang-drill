@@ -1,0 +1,173 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 2:56:07
+ログファイル: question-generation-medium-2025-08-08T02-56-07.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 178問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage155",
+  "title": "Inquiry About Product Availability",
+  "type": "email",
+  "content": "Subject: Inquiry About Product Availability\n\nDear Mr. Smith,\n\nI hope this message finds you well. I am writing to inquire about the availability of the new Model X laptop that was advertised on your website. Several features of this model caught my attention, particularly its high-performance processor, extended battery life, and lightweight design, which I believe would greatly benefit our office operations.\n\nCould you please confirm if the Model X laptops are currently in stock? Additionally, I would appreciate it if you could provide information on any ongoing promotions or discounts applicable to bulk purchases, as we are considering ordering multiple units for our team.\n\nIn case the Model X is currently unavailable, could you suggest alternative models with similar specifications? A comparison chart of the available options would be very helpful in making our decision.\n\nYour assistance in this matter would be greatly appreciated, and I look forward to your prompt reply.\n\nThank you for your attention.\n\nBest regards,\nJohn Doe",
+  "contentTranslation": "件名: 製品の在庫についてのお問い合わせ\n\nスミス様\n\nお世話になっております。このメッセージがあなたに届くことを願っています。私は、あなたのウェブサイトで広告されていた新しいモデルXのノートパソコンの在庫についてお尋ねしたく、メールをお送りしました。このモデルのいくつかの特徴、特に高性能プロセッサ、長時間持続するバッテリー、軽量デザインが私たちのオフィスの業務に大いに役立つと考えています。\n\nモデルXのノートパソコンが現在在庫にあるかどうかを確認していただけますでしょうか。また、私たちのチームのために複数台の注文を検討しているため、バルク購入に適用されるプロモーションや割引情報も教えていただけるとありがたいです。\n\nもしモデルXが現在利用できない場合、同様の仕様を持つ代替モデルを提案していただけますか？利用可能なオプションの比較表があると、私たちの決定に非常に役立ちます。\n\nこの件に関するあなたのご協力に感謝いたします。迅速なご返信をお待ちしております。\n\nご注意いただきありがとうございます。\n\n敬具\nジョン・ドー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the document, what specific features of the Model X laptop are highlighted?",
+      "questionTranslation": "文書によると、Model Xラップトップのどのような具体的な特徴が強調されていますか？",
+      "options": [
+        "High-performance processor, extended battery life, lightweight design",
+        "Touchscreen, detachable keyboard, high-resolution display",
+        "Advanced graphics card, water-resistant casing, ergonomic design",
+        "Voice recognition, fingerprint sensor, fast charging capability"
+      ],
+      "optionTranslations": [
+        "高性能プロセッサー、長時間バッテリー、軽量設計",
+        "タッチスクリーン、取り外し可能なキーボード、高解像度ディスプレイ",
+        "高度なグラフィックスカード、防水ケース、エルゴノミックデザイン",
+        "音声認識、指紋センサー、急速充電機能"
+      ],
+      "correct": "A",
+      "explanation": "文書では、Model Xの特徴として「高性能プロセッサー、長時間バッテリー、軽量設計」が挙げられています。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To request a product catalog",
+        "To inquire about product availability and promotions",
+        "To complain about a defective product",
+        "To provide feedback on a purchase experience"
+      ],
+      "optionTranslations": [
+        "製品カタログを依頼するため",
+        "製品の在庫とプロモーションについて問い合わせるため",
+        "不良品について苦情を言うため",
+        "購入体験についてのフィードバックを提供するため"
+      ],
+      "correct": "B",
+      "explanation": "文書の主な目的は、Model Xの在庫状況とプロモーションについて問い合わせることです。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "The Model X laptop is the only product offered by the company.",
+        "The company offers discounts on bulk purchases.",
+        "The Model X laptop is currently out of stock.",
+        "The writer is dissatisfied with the current laptop models."
+      ],
+      "optionTranslations": [
+        "Model Xラップトップは会社が提供する唯一の製品である。",
+        "会社は大量購入に対して割引を提供している。",
+        "Model Xラップトップは現在在庫切れである。",
+        "筆者は現在のラップトップモデルに不満を持っている。"
+      ],
+      "correct": "B",
+      "explanation": "文書では、大量購入に対するプロモーションや割引についての情報提供を求めていることから、会社がそのような割引を提供していると推測できます。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 162,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "customer_inquiries",
+    "qualityCheck": {
+      "passed": false,
+      "score": 70,
+      "issues": [
+        {
+          "category": "語数",
+          "severity": "重大",
+          "description": "文書の語数が162語で、期待範囲の180-250語を下回っている。",
+          "suggestion": "内容を追加して語数を増やすことを検討してください。"
+        },
+        {
+          "category": "構造",
+          "severity": "中程度",
+          "description": "TOEIC Part 7の文書形式において、図表がないため情報の視覚的な整理が不足している。",
+          "suggestion": "可能であれば、比較チャートやリストを追加して情報を整理してください。"
+        }
+      ],
+      "recommendation": "不合格",
+      "contentCheck": {
+        "passed": false,
+        "score": 70,
+        "issues": [
+          {
+            "category": "語数",
+            "severity": "重大",
+            "description": "文書の語数が162語で、期待範囲の180-250語を下回っている。",
+            "suggestion": "内容を追加して語数を増やすことを検討してください。"
+          },
+          {
+            "category": "構造",
+            "severity": "中程度",
+            "description": "TOEIC Part 7の文書形式において、図表がないため情報の視覚的な整理が不足している。",
+            "suggestion": "可能であれば、比較チャートやリストを追加して情報を整理してください。"
+          }
+        ],
+        "recommendation": "修正必要",
+        "promptData": {
+          "response": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が162語で、期待範囲の180-250語を下回っている。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な整理が不足している。\",\n      \"suggestion\": \"可能であれば、比較チャートやリストを追加して情報を整理してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+          "promptType": "content_quality_check",
+          "timestamp": "2025-08-07T17:56:39.757Z"
+        }
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "questions_quality_check",
+          "timestamp": "2025-08-07T17:56:53.817Z"
+        }
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 179問
+🆔 実際に追加されたID: passage155
+📝 プロンプト情報: 生成=2件, 品質チェック=3件, 修正=1件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 2:56:58
+実行時間: 0.00秒

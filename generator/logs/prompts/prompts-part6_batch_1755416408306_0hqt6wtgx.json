@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-08-17T07:40:08.309Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を___で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: email (Business Email)\n- ビジネストピック: policy_changes (方針変更)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: C\n- 空欄3の正解位置: C\n- 空欄4の正解位置: D\n\n【問題タイプの配分】\n- 空欄1: sentence_insertion (文挿入)\n- 空欄2: context (文脈理解)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: grammar (文法・語形)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T07:40:18.652Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "```json\n{\n  \"documentType\": \"email\",\n  \"title\": \"Policy Changes Announcement\",\n  \"fullText\": \"Subject: Important Policy Changes\\n\\nDear Team,\\n\\nI would like to inform you of the recent policy changes that will take effect from next month. ___ (1) These changes aim to improve our efficiency and streamline our operations. \\n\\nFirst, we will be implementing a flexible work schedule to accommodate everyone's needs. Please review the attached document for detailed information.\\n\\nFurthermore, our company will now offer training courses to help you adapt to these new policies. ___ (2) We believe this will benefit both the company and employees in the long run.\\n\\nAdditionally, there will be updates to our dress code policy. ___ (3) Employees should review these changes carefully to ensure compliance.\\n\\nShould you have any questions or require further clarification, please feel free to reach out to the HR department. ___ (4) \\n\\nThank you for your attention to these important updates.\\n\\nBest regards,\\n\\nJohn Doe\\nHR Manager\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"Please disregard the previous email regarding policy changes.\",\n        \"The new policies are optional but recommended.\",\n        \"Your feedback is always welcome.\",\n        \"We are committed to keeping you informed throughout this transition.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"文章の前後関係から、受け入れ可能で自然な継続性を持つ内容が正解となります。ここでは、情報提供に関する方針を示すDが適切です。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"They will be mandatory for everyone.\",\n        \"You may choose to ignore them.\",\n        \"This aims to ensure a smoother transition.\",\n        \"Hiring new staff will be possible.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈から受け入れ可能で、トレーニングの目的を示すべきです。スムーズな移行を意図するCが自然です。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"Policies\",\n        \"Strategies\",\n        \"Changes\",\n        \"Revisions\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"この文はドレスコードの変更について述べているので、'changes'が最も自然です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"The HR department is always available.\",\n        \"Ensure to contact HR departments timely.\",\n        \"Please reach out to any HR representative.\",\n        \"They will assist you with any inquiries.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"HR部門が問い合わせに対してサポートする旨を述べるためには、Dが文法的にも内容的にも適切です。\",\n      \"questionType\": \"grammar\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"policy_changes\",\n  \"wordCount\": 163\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T07:40:18.653Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 選択肢は1-4語の簡潔な日本語に翻訳\n3. 選択肢に説明や解説は絶対に不要\n4. 文脈に応じた最も適切な意味のみ\n5. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄は___のまま）\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"空欄1を埋めてください\",\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Policy Changes Announcement\n\n文書全体：\nSubject: Important Policy Changes\n\nDear Team,\n\nI would like to inform you of the recent policy changes that will take effect from next month. ___ (1) These changes aim to improve our efficiency and streamline our operations. \n\nFirst, we will be implementing a flexible work schedule to accommodate everyone's needs. Please review the attached document for detailed information.\n\nFurthermore, our company will now offer training courses to help you adapt to these new policies. ___ (2) We believe this will benefit both the company and employees in the long run.\n\nAdditionally, there will be updates to our dress code policy. ___ (3) Employees should review these changes carefully to ensure compliance.\n\nShould you have any questions or require further clarification, please feel free to reach out to the HR department. ___ (4) \n\nThank you for your attention to these important updates.\n\nBest regards,\n\nJohn Doe\nHR Manager\n\n選択肢：\n空欄1: A. Please disregard the previous email regarding policy changes., B. The new policies are optional but recommended., C. Your feedback is always welcome., D. We are committed to keeping you informed throughout this transition.\n空欄2: A. They will be mandatory for everyone., B. You may choose to ignore them., C. This aims to ensure a smoother transition., D. Hiring new staff will be possible.\n空欄3: A. Policies, B. Strategies, C. Changes, D. Revisions\n空欄4: A. The HR department is always available., B. Ensure to contact HR departments timely., C. Please reach out to any HR representative., D. They will assist you with any inquiries.\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-17T07:40:25.377Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "```json\n{\n  \"titleTranslation\": \"方針変更のお知らせ\",\n  \"contentTranslation\": \"件名: 重要な方針変更\\n\\nチームの皆さんへ、\\n\\n来月から施行される最近の方針変更についてお知らせします。___ (1) これらの変更は私たちの効率を改善し、業務を合理化することを目的としています。\\n\\nまず、皆さんのニーズに合わせたフレックスタイム制度を導入します。詳細については添付の文書をご確認ください。\\n\\nさらに、新しい方針に適応するための研修を当社は提供します。___ (2) これにより、長期的に見て会社と従業員の両方が利益を得られると信じています。\\n\\n加えて、服装規定にも変更があります。___ (3) 従業員の皆さんは、これらの変更をよく確認し、遵守してください。\\n\\n質問がある場合やさらなる説明が必要な場合は、遠慮なく人事部にお問い合わせください。___ (4)\\n\\nこれらの重要な更新にご注意いただき、ありがとうございます。\\n\\nよろしくお願いします。\\n\\nジョン・ドウ\\n人事部長\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"空欄1を埋めてください\",\n      \"optionTranslations\": [\n        \"以前のメールは無視してください\",\n        \"新しい方針は推奨されます\",\n        \"ご意見は常に歓迎です\",\n        \"この移行中に情報提供します\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"空欄2を埋めてください\",\n      \"optionTranslations\": [\n        \"全員に必須です\",\n        \"無視することも可能です\",\n        \"スムーズな移行を目指します\",\n        \"新規採用が可能です\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"空欄3を埋めてください\",\n      \"optionTranslations\": [\n        \"方針\",\n        \"戦略\",\n        \"変更\",\n        \"改訂\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"空欄4を埋めてください\",\n      \"optionTranslations\": [\n        \"人事部は常に利用可能です\",\n        \"人事部に時間内に連絡してください\",\n        \"人事担当者に連絡してください\",\n        \"ご質問には対応します\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T05:19:19.733Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "新しいノートパソコンを探しています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:19:20.000Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "会議は午後3時に始まります。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:19:20.026Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "元気です、ありがとうございます。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  }
+]

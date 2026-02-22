@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-15T08:36:53.919Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"easy\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "easy",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:36:53.928Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Message to customers (顧客へのメッセージ)\n【Industry】: Telecommunications (通信業)\n【Difficulty】: easy\n【Question Types】: inference, intended_audience, intended_audience\n【Correct Answer Positions】: Question 1=A, Question 2=B, Question 3=B\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:37:32.558Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Customer Support Representative\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Hello, this is Maya Chen from RiverCity Mobile. I’m calling to let you know about a planned network upgrade in the downtown area this Friday between 1 and 3 a.m. During that window, some customers may notice slower data speeds or brief drops in service. To prepare, please restart your phone before bed and make sure our free MyRiverCity app is updated, so you can receive real-time alerts and check the outage map. If you rely on your phone for alarms, consider using a backup alarm device that night. Most upgrades finish quickly, and your service should return to normal right after the work is done. If you experience issues after 3 a.m., contact us through the app or call 611, and we will assist you right away.\",\n    \"topic\": \"Planned network upgrade and temporary service interruption notice\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Why is the upgrade scheduled between 1 and 3 a.m.?\",\n      \"options\": [\n        \"To reduce the impact on customers’ usage\",\n        \"To match regular office hours\",\n        \"Because the weather is always better at that time\",\n        \"Because technicians are only free at noon\"\n      ],\n      \"correct\": \"To reduce the impact on customers’ usage\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"深夜は利用者が少ないため、影響を最小限にする意図が推測できます。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is this message mainly intended for?\",\n      \"options\": [\n        \"Company suppliers\",\n        \"RiverCity Mobile customers in the downtown area\",\n        \"Job applicants\",\n        \"People seeking internet service in another city\"\n      ],\n      \"correct\": \"RiverCity Mobile customers in the downtown area\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは「downtown area のお客様」に向けて、予定メンテナンス情報を伝えています。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Who is encouraged to update the MyRiverCity app before the work begins?\",\n      \"options\": [\n        \"Network engineers working that night\",\n        \"Customers who use the MyRiverCity app\",\n        \"Visitors to the company’s retail store\",\n        \"People who do not own smartphones\"\n      ],\n      \"correct\": \"Customers who use the MyRiverCity app\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"発話中で「お客様」に対し、アプリの更新を促しています。\",\n      \"questionType\": \"intended_audience\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:37:32.559Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: customer_message\nIndustry: telecommunications\nSpeaker Role: Company spokesperson\nTopic: Planned network upgrade and temporary service interruption notice\n\nSpeech Text:\nHello, this is Maya Chen from RiverCity Mobile. I’m calling to let you know about a planned network upgrade in the downtown area this Friday between 1 and 3 a.m. During that window, some customers may notice slower data speeds or brief drops in service. To prepare, please restart your phone before bed and make sure our free MyRiverCity app is updated, so you can receive real-time alerts and check the outage map. If you rely on your phone for alarms, consider using a backup alarm device that night. Most upgrades finish quickly, and your service should return to normal right after the work is done. If you experience issues after 3 a.m., contact us through the app or call 611, and we will assist you right away.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:38:08.195Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"顧客向けメッセージ\",\n  \"textTranslation\": \"RiverCity Mobileのマヤ・チェンでございます。今週金曜日の午前1時から3時にかけて、市中心部で予定しているネットワーク増強工事についてご案内申し上げます。その時間帯は、一部のお客様においてデータ通信の速度低下や短時間のサービス中断が発生する場合がございます。事前の準備として、就寝前に端末を再起動し、リアルタイム通知の受信や障害マップの確認ができるよう、無料の「MyRiverCity」アプリを最新の状態に更新していただきますようお願いいたします。目覚ましに携帯電話をご利用の場合は、当夜は予備の目覚まし（別の端末や時計など）の併用をご検討ください。多くの作業は短時間で完了し、完了後は速やかに通常どおりのサービスに戻る見込みです。午前3時を過ぎても問題が続く場合は、アプリから、または611番へお電話のうえご連絡ください。直ちに対応いたします。\",\n  \"topicTranslation\": \"計画的なネットワーク増強工事および一時的なサービス中断のお知らせ\"\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:38:08.201Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: Why is the upgrade scheduled between 1 and 3 a.m.?\nOptions:\nA: To reduce the impact on customers’ usage\nB: To match regular office hours\nC: Because the weather is always better at that time\nD: Because technicians are only free at noon\n\nQuestion 2: Who is this message mainly intended for?\nOptions:\nA: Company suppliers\nB: RiverCity Mobile customers in the downtown area\nC: Job applicants\nD: People seeking internet service in another city\n\nQuestion 3: Who is encouraged to update the MyRiverCity app before the work begins?\nOptions:\nA: Network engineers working that night\nB: Customers who use the MyRiverCity app\nC: Visitors to the company’s retail store\nD: People who do not own smartphones\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:38:31.242Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"なぜアップグレードは午前1時から3時の間に予定されているのですか。\",\n      \"optionTranslations\": [\n        \"顧客の利用への影響を最小限に抑えるため\",\n        \"通常の勤務時間に合わせるため\",\n        \"その時間帯は常に天候が良いから\",\n        \"技術者が正午にしか空いていないから\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このメッセージは主に誰に向けたものですか。\",\n      \"optionTranslations\": [\n        \"会社の納入業者\",\n        \"市中心部のRiverCity Mobileの顧客\",\n        \"採用応募者\",\n        \"別の都市でインターネットサービスを利用したい人\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"作業が始まる前にMyRiverCityアプリを更新するよう促されているのは誰ですか。\",\n      \"optionTranslations\": [\n        \"その夜に作業するネットワーク技術者\",\n        \"MyRiverCityアプリを利用している顧客\",\n        \"同社の小売店の来店者\",\n        \"スマートフォンを持っていない人\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

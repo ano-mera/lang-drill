@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2025-08-03T00:45:46.133Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: stairwell\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"stairwell\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:45:50.612Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"In a brightly lit stairwell with large windows showing a clear, sunny day outside, a woman in a business suit is holding a stack of papers as she carefully descends the stairs. A man in casual attire is ascending the stairs, holding onto the railing with one hand while glancing at his smartphone in the other. A janitor is standing at the landing, holding a mop and bucket, watching them pass by.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"stairwell\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:45:50.615Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): In a brightly lit stairwell with large windows showing a clear, sunny day outside, a woman in a business suit is holding a stack of papers as she carefully descends the stairs. A man in casual attire is ascending the stairs, holding onto the railing with one hand while glancing at his smartphone in the other. A janitor is standing at the landing, holding a mop and bucket, watching them pass by.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:45:57.842Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "大きな窓から晴れた明るい日が見える明るく照らされた階段で、ビジネススーツを着た女性が紙の束を持ちながら慎重に階段を降りています。カジュアルな服装の男性が手すりを片手で持ちながらスマートフォンを見つめ、階段を上っています。清掃員がモップとバケツを持って踊り場に立ち、通り過ぎる二人を見ています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:45:57.843Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"In a brightly lit stairwell with large windows showing a clear, sunny day outside, a woman in a business suit is holding a stack of papers as she carefully descends the stairs. A man in casual attire is ascending the stairs, holding onto the railing with one hand while glancing at his smartphone in the other. A janitor is standing at the landing, holding a mop and bucket, watching them pass by.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"D\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: INCORRECT DISTRACTOR - Plausible but clearly wrong  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: CORRECT ANSWER - Must accurately describe the given scene\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position D. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:46:00.239Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "{\n  \"options\": [\n    \"A man is sitting on the stairs.\",\n    \"A woman is holding a smartphone.\",\n    \"A janitor is sweeping the stairs.\",\n    \"A woman is descending with papers.\"\n  ],\n  \"correct\": \"D\",\n  \"explanation\": \"The correct answer describes the woman in a business suit holding papers as she descends the stairs, which matches the scene description.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"action\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:46:14.582Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A man is sitting on the stairs.\nB: A woman is holding a smartphone.\nC: A janitor is sweeping the stairs.\nD: A woman is descending with papers.\n\nExplanation: The correct answer describes the woman in a business suit holding papers as she descends the stairs, which matches the scene description.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T00:46:17.529Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"男性が階段に座っている。\",\n    \"女性がスマートフォンを持っている。\",\n    \"清掃員が階段を掃いている。\",\n    \"女性が書類を持って降りている。\"\n  ],\n  \"explanationTranslation\": \"正しい答えは、ビジネススーツを着た女性が書類を持って階段を降りている様子を説明しており、シーンの描写と一致しています。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

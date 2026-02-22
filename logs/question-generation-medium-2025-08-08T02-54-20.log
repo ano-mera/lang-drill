@@ -1,0 +1,147 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 2:54:20
+ログファイル: question-generation-medium-2025-08-08T02-54-20.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 177問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage154",
+  "title": "Emergency Preparedness Drill Notification",
+  "type": "notice",
+  "content": "NOTICE: Emergency Preparedness Drill Notification\n\nTo: All Employees\nFrom: Human Resources Department\nDate: November 15, 2023\n\nWe would like to inform you about an important upcoming emergency preparedness drill scheduled for Monday, November 20, 2023, at 10:00 AM. This drill is part of our ongoing commitment to ensure the safety and security of all employees during potential crisis situations. It is crucial for everyone to participate as it helps us practice our emergency response procedures effectively.\n\nDuring the drill, please follow the instructions of your designated floor wardens and proceed to the nearest emergency exit. Do not use elevators during this time. Once you are outside, congregate at the assembly point designated for your department. The drill is expected to last approximately 30 minutes, during which we will evaluate our response times and overall effectiveness.\n\nImportant Reminders:\n- Ensure you are familiar with the emergency exit routes in your area and have a plan in place.\n- Keep personal belongings secure and avoid bringing large bags to the drill.\n- Please wear comfortable clothing and shoes suitable for quick movement.\n- Review the emergency procedures document attached to this notice for further details.\n\nFor any questions or further clarification, please contact the Human Resources Department at hr@company.com. Your cooperation and participation are greatly appreciated as we work together to ensure a safe workplace for everyone.",
+  "contentTranslation": "お知らせ: 緊急準備訓練のお知らせ\n\n宛先: 全社員\n発信元: 人事部\n日付: 2023年11月15日\n\n2023年11月20日（月）午前10時に予定されている重要な緊急準備訓練についてお知らせいたします。この訓練は、潜在的な危機状況における全社員の安全とセキュリティを確保するための継続的な取り組みの一環です。全員が参加することが重要であり、緊急対応手順を効果的に練習する助けとなります。\n\n訓練中は、指定されたフロアのワーデンの指示に従い、最寄りの非常口に進んでください。この時間中はエレベーターを使用しないでください。外に出たら、各部署に指定された集合地点に集まってください。訓練は約30分間続く予定で、その間に私たちの対応時間と全体的な効果を評価します。\n\n重要なリマインダー:\n- 自分のエリアの非常口ルートを把握し、計画を立てておいてください。\n- 個人の持ち物を安全に保管し、大きなバッグを持参しないようにしてください。\n- 迅速な移動に適した快適な服装と靴を着用してください。\n- この通知に添付された緊急手順書を確認し、詳細を確認してください。\n\nご質問やさらなる確認が必要な場合は、人事部（hr@company.com）までご連絡ください。皆様のご協力と参加に感謝いたします。安全な職場を確保するために共に取り組んでいきましょう。",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "The company has never conducted an emergency drill before.",
+        "Employees are expected to return to work immediately after the drill.",
+        "The drill will involve the participation of external emergency services.",
+        "The company prioritizes employee safety during emergencies."
+      ],
+      "optionTranslations": [
+        "会社はこれまで緊急訓練を実施したことがない。",
+        "訓練終了後、従業員はすぐに仕事に戻ることを期待されている。",
+        "訓練には外部の緊急サービスが参加する予定である。",
+        "会社は緊急時に従業員の安全を優先している。"
+      ],
+      "correct": "D",
+      "explanation": "文書全体が従業員の安全を確保するための緊急訓練に関するものであり、特に「this drill is part of our ongoing commitment to ensure the safety and security of all employees」と記載されている点から、会社が従業員の安全を優先していることが推測できます。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To announce a change in company policy",
+        "To inform employees about a scheduled drill",
+        "To request feedback on past drills",
+        "To introduce new emergency procedures"
+      ],
+      "optionTranslations": [
+        "会社の方針変更を発表するため",
+        "予定された訓練について従業員に知らせるため",
+        "過去の訓練についてのフィードバックを求めるため",
+        "新しい緊急手順を紹介するため"
+      ],
+      "correct": "B",
+      "explanation": "文書の冒頭で「We would like to inform you about an important upcoming emergency preparedness drill」とあり、主な目的は従業員に予定された訓練について知らせることであると明示されています。"
+    },
+    {
+      "id": "q3",
+      "question": "Where will employees congregate after exiting the building during the drill?",
+      "questionTranslation": "訓練中に建物を出た後、従業員はどこに集まりますか？",
+      "options": [
+        "In the main lobby",
+        "At the designated assembly point for their department",
+        "In the parking lot",
+        "On the rooftop"
+      ],
+      "optionTranslations": [
+        "メインロビーで",
+        "部門ごとに指定された集合地点で",
+        "駐車場で",
+        "屋上で"
+      ],
+      "correct": "B",
+      "explanation": "文書には「congregate at the assembly point designated for your department」と記載されており、従業員は各部門に指定された集合地点に集まることが明記されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 225,
+    "questionCount": 3,
+    "passageType": "notice",
+    "topic": "crisis_management",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "content_quality_check",
+          "timestamp": "2025-08-07T17:55:08.056Z"
+        }
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "questions_quality_check",
+          "timestamp": "2025-08-07T17:55:24.893Z"
+        }
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 178問
+🆔 実際に追加されたID: passage154
+📝 プロンプト情報: 生成=2件, 品質チェック=3件, 修正=1件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 0問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 2:55:26
+実行時間: 0.00秒

@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2025-08-02T19:49:28.344Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: crosswalk\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"crosswalk\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:31.404Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Several people are waiting at a crosswalk on a sunny day, with a few clouds scattered in the sky. A woman in a blue dress is holding a small dog on a leash, standing next to a man in a suit who is checking his watch. Across the street, two cyclists are approaching, and a red car has stopped to allow the pedestrians to cross. A street vendor is visible in the background, selling snacks from a cart.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"crosswalk\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:31.407Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): Several people are waiting at a crosswalk on a sunny day, with a few clouds scattered in the sky. A woman in a blue dress is holding a small dog on a leash, standing next to a man in a suit who is checking his watch. Across the street, two cyclists are approaching, and a red car has stopped to allow the pedestrians to cross. A street vendor is visible in the background, selling snacks from a cart.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:34.645Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "晴れた日に、空にいくつか雲が浮かぶ中、数人が横断歩道で待っています。青いドレスを着た女性が小さな犬をリードでつないでおり、彼女の隣には腕時計を確認しているスーツ姿の男性が立っています。通りの向こうでは、2人の自転車乗りが近づいてきており、赤い車が歩行者を渡らせるために停車しています。背景には、屋台で軽食を売っている露店商の姿が見えます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:34.647Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- CRITICAL: Place the correct answer at the specified position (A, B, C, or D) as instructed\n- All non-correct positions must contain plausible but incorrect distractors\n- IMPORTANT: Keep all four answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"options\": [\"Option for position A\", \"Option for position B\", \"Option for position C\", \"Option for position D\"],\n  \"correct\": \"[The letter (A/B/C/D) matching the specified correct position]\",\n  \"explanation\": \"Brief explanation of why the correct answer is right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Several people are waiting at a crosswalk on a sunny day, with a few clouds scattered in the sky. A woman in a blue dress is holding a small dog on a leash, standing next to a man in a suit who is checking his watch. Across the street, two cyclists are approaching, and a red car has stopped to allow the pedestrians to cross. A street vendor is visible in the background, selling snacks from a cart.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: Scenes are more complex with multiple people or actions. Grammar includes passive voice or existential constructions. Some distractors may appear similar.\n\nKey Features to Follow:\n- More than one person or action is present\n- Daily activities with moderate complexity\n- May include passive voice or existential grammar\n- Background elements are relevant and must be interpreted\n- Choices may include similar vocabulary or phrasing\n\nREQUIRED CORRECT POSITION: The correct answer must be placed at position \"B\"\n\nGenerate four answer choices that could describe what someone might see in a photograph:\n- Position A: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position B: CORRECT ANSWER - Must accurately describe the given scene  \n- Position C: INCORRECT DISTRACTOR - Plausible but clearly wrong\n- Position D: INCORRECT DISTRACTOR - Plausible but clearly wrong\n\nIMPORTANT: The correct answer describing the scene must be placed exactly at position B. All other positions must contain believable but incorrect distractors.\n\nCRITICAL: Ensure all four answer choices are similar in length (6-10 words each). Do not make the correct answer longer than the distractors.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:37.654Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"options\": [\n    \"A man is fixing a bicycle.\",\n    \"A woman is holding a dog on a leash.\",\n    \"A group is jogging in the park.\",\n    \"A bus is stopping at the corner.\"\n  ],\n  \"correct\": \"B\",\n  \"explanation\": \"The scene describes a woman holding a dog on a leash at a crosswalk, which matches option B.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"people\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:54.840Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A man is fixing a bicycle.\nB: A woman is holding a dog on a leash.\nC: A group is jogging in the park.\nD: A bus is stopping at the corner.\n\nExplanation: The scene describes a woman holding a dog on a leash at a crosswalk, which matches option B.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-02T19:49:57.894Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"男性が自転車を修理している。\",\n    \"女性が犬をリードでつないでいる。\",\n    \"グループが公園でジョギングしている。\",\n    \"バスが角で停車している。\"\n  ],\n  \"explanationTranslation\": \"この場面は、女性が横断歩道で犬をリードでつないでいる様子を描写しており、選択肢Bと一致します。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

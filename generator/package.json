@@ -1,0 +1,29 @@
+{
+  "name": "toeic-passage-generator",
+  "version": "1.0.0",
+  "description": "TOEIC Part7 問題自動生成ツール",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-passages.js",
+    "generate:test": "node scripts/generate-passages.js --test",
+    "convert-explanations": "node scripts/convert-explanations.js",
+    "generate:charts": "node scripts/generate-chart-passages.js",
+    "fix:chart-questions": "node scripts/fix-chart-questions.js",
+    "restore:questions": "node scripts/restore-questions.js",
+    "add-translations": "node scripts/add-translations.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "next": "^16.0.10",
+    "openai": "^4.0.0"
+  },
+  "keywords": [
+    "toeic",
+    "passage",
+    "generator",
+    "openai",
+    "ai"
+  ],
+  "author": "TOEIC Learning App",
+  "license": "MIT"
+}

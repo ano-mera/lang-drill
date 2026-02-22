@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:55:59
+ログファイル: question-generation-easy-2025-07-25T10-55-59.log
+モード: 本番出力
+難易度: EASY難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 166問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage138",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Meeting Schedule Confirmation\n\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to confirm our upcoming meeting to discuss the new project proposals. Could we schedule it for next Wednesday at 10:00 AM? Please let me know if this time works for you or if there's a more convenient time.\n\nAdditionally, could you please bring the latest sales report to the meeting? It would be helpful for our discussion.\n\nLooking forward to your confirmation.\n\nBest regards,\nJohn Smith",
+  "contentTranslation": "件名: 会議スケジュールの確認\n\n田中様\n\nお元気のことと存じます。新しいプロジェクト提案について話し合うための会議を、次の水曜日の午前10時に予定したいと考えています。この時間でご都合はよろしいでしょうか？より都合の良い時間があればお知らせください。\n\nまた、会議には最新の売上報告書をお持ちいただけますでしょうか？話し合いに役立つと思います。\n\nご確認をお待ちしております。\n\nよろしくお願いいたします。\nジョン・スミス",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "According to the document, what specific information is mentioned?",
+      "questionTranslation": "文書によれば、どのような具体的な情報が言及されていますか？",
+      "options": [
+        "The meeting is on Monday at 10:00 AM.",
+        "Mr. Tanaka needs to bring the latest sales report.",
+        "The meeting will be held at the main office.",
+        "John Smith is unavailable next Wednesday."
+      ],
+      "optionTranslations": [
+        "会議は月曜日の午前10時に行われます。",
+        "田中さんは最新の売上報告書を持参する必要があります。",
+        "会議は本社で行われます。",
+        "ジョン・スミスは来週の水曜日に不在です。"
+      ],
+      "correct": "B",
+      "explanation": "文書中に「最新の売上報告書を会議に持参してください」と記載されており、これが具体的な情報です。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To inform Mr. Tanaka about a project deadline",
+        "To confirm a meeting schedule and request a document",
+        "To cancel the meeting scheduled for next Wednesday",
+        "To provide feedback on the project proposals"
+      ],
+      "optionTranslations": [
+        "田中さんにプロジェクトの締切を知らせるため",
+        "会議のスケジュールを確認し、書類を依頼するため",
+        "来週の水曜日に予定されている会議をキャンセルするため",
+        "プロジェクト提案についてのフィードバックを提供するため"
+      ],
+      "correct": "B",
+      "explanation": "文書は会議のスケジュール確認と売上報告書の持参依頼が主な目的です。"
+    },
+    {
+      "id": "q3",
+      "question": "When will the meeting take place?",
+      "questionTranslation": "会議はいつ行われますか？",
+      "options": [
+        "Next Wednesday at 10:00 AM",
+        "This Friday at 2:00 PM",
+        "Next Monday at 10:00 AM",
+        "This Thursday at 3:00 PM"
+      ],
+      "optionTranslations": [
+        "次の水曜日の午前10時",
+        "今週の金曜日の午後2時",
+        "次の月曜日の午前10時",
+        "今週の木曜日の午後3時"
+      ],
+      "correct": "A",
+      "explanation": "文書で「Could we schedule it for next Wednesday at 10:00 AM?」と述べられているため、会議は次の水曜日の午前10時に行われます。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "easy",
+    "estimatedTime": 300,
+    "wordCount": 83,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 167問
+🆔 実際に追加されたID: passage138
+
+難易度別内訳:
+  初級 (Easy): 1問
+  中級 (Medium): 0問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:56:13
+実行時間: 0.00秒

@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-18T17:40:27.317Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:40:27.339Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n- スピーカーの名前を必ず盛り込む\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Exhibit or museum guide (展示会・博物館ガイド)\n【Industry】: Transportation and Logistics (運輸・物流)\n【Difficulty】: medium\n【Question Types】: inference, intended_audience, next_action\n【Correct Answer Positions】: Question 1=A, Question 2=C, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:40:36.023Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Guide\",\n      \"role\": \"Exhibit guide\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Welcome to the History of Transportation exhibit. I'm your guide for the day. As we begin, you will see how logistics have evolved over centuries. Starting from ancient times, when goods were transported via simple wooden carts, to the sophisticated systems using rail and air transport today. Our next stop is the section where we explain how the introduction of containerization in the 20th century revolutionized maritime transport, making global trade more efficient. After that, feel free to explore the interactive displays that showcase future trends, such as autonomous vehicles and drone deliveries. Please, if you have any questions, do not hesitate to ask.\",\n    \"topic\": \"The evolution of transportation and logistics\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the primary focus of the exhibit described by the guide?\",\n      \"options\": [\n        \"The history and evolution of transportation\",\n        \"The development of ancient wooden carts\",\n        \"The future of rail transport\",\n        \"Advanced logistics software\"\n      ],\n      \"correct\": \"The history and evolution of transportation\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"ガイドは展示の始まりからの進化した輸送と物流の歴史について話しています。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is the intended audience for this exhibit presentation?\",\n      \"options\": [\n        \"Children learning about history\",\n        \"Students studying logistics management\",\n        \"Museum visitors interested in transport evolution\",\n        \"Tech enthusiasts developing autonomous vehicles\"\n      ],\n      \"correct\": \"Museum visitors interested in transport evolution\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"ガイドは、過去の物流の進展から未来のトレンドまで幅広く興味を持つ博物館訪問者に向けて話をしています。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the next action visitors are encouraged to take after the guide's speech?\",\n      \"options\": [\n        \"Attend a workshop on containerization\",\n        \"Watch a documentary on rail systems\",\n        \"Explore the interactive displays\",\n        \"Visit the souvenir shop\"\n      ],\n      \"correct\": \"Explore the interactive displays\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"ガイドは、未来のトレンドを紹介するインタラクティブディスプレイを見て回るように勧めています。\",\n      \"questionType\": \"next_action\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:40:36.024Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: exhibit_guide\nIndustry: transportation\nSpeaker Role: Exhibit guide\nTopic: The evolution of transportation and logistics\n\nSpeech Text:\nWelcome to the History of Transportation exhibit. I'm your guide for the day. As we begin, you will see how logistics have evolved over centuries. Starting from ancient times, when goods were transported via simple wooden carts, to the sophisticated systems using rail and air transport today. Our next stop is the section where we explain how the introduction of containerization in the 20th century revolutionized maritime transport, making global trade more efficient. After that, feel free to explore the interactive displays that showcase future trends, such as autonomous vehicles and drone deliveries. Please, if you have any questions, do not hesitate to ask.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:40:41.600Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "{\n  \"speechTypeTranslation\": \"展示案内\",\n  \"textTranslation\": \"交通の歴史展へようこそ。本日は私がガイドを務めます。はじめに、物流が何世紀にもわたってどのように進化してきたかをご覧いただきます。古代の時代から、商品が簡素な木製のカートで運ばれていた時代から、現在の鉄道や空輸を用いた高度なシステムに至るまでです。次に、20世紀におけるコンテナ化の導入がどのように海上輸送を革命し、世界貿易をより効率的にしたかを説明するセクションに進みます。その後は、未来のトレンドを紹介するインタラクティブな展示をご覧ください。無人車両やドローン配送が含まれています。質問があれば、どうぞ遠慮なくお尋ねください。\",\n  \"topicTranslation\": \"交通と物流の進化\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:40:41.601Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: What is the primary focus of the exhibit described by the guide?\nOptions:\nA: The history and evolution of transportation\nB: The development of ancient wooden carts\nC: The future of rail transport\nD: Advanced logistics software\n\nQuestion 2: Who is the intended audience for this exhibit presentation?\nOptions:\nA: Children learning about history\nB: Students studying logistics management\nC: Museum visitors interested in transport evolution\nD: Tech enthusiasts developing autonomous vehicles\n\nQuestion 3: What is the next action visitors are encouraged to take after the guide's speech?\nOptions:\nA: Attend a workshop on containerization\nB: Watch a documentary on rail systems\nC: Explore the interactive displays\nD: Visit the souvenir shop\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:40:48.153Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"この展示の主な焦点は何ですか？\",\n      \"optionTranslations\": [\n        \"交通の歴史と進化\",\n        \"古代の木製カートの発展\",\n        \"鉄道輸送の未来\",\n        \"先進的な物流ソフトウェア\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この展示のプレゼンテーションの対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"歴史を学ぶ子供たち\",\n        \"物流管理を学ぶ学生\",\n        \"輸送の進化に興味のある博物館訪問者\",\n        \"自動運転車を開発する技術愛好家\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"案内者のスピーチの後、来場者が次に取るべき行動は何ですか？\",\n      \"optionTranslations\": [\n        \"コンテナリゼーションに関するワークショップに参加する\",\n        \"鉄道システムに関するドキュメンタリーを見る\",\n        \"インタラクティブ展示を探索する\",\n        \"お土産ショップを訪れる\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

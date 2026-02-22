@@ -1,0 +1,147 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 2:50:30
+ログファイル: question-generation-medium-2025-08-08T02-50-30.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 176問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage153",
+  "title": "Subject: Inquiry About Product Warranty Extension",
+  "type": "customer_support",
+  "content": "Dear Mr. Tanaka,\n\nThank you for reaching out to us with your inquiry about extending the warranty for your recently purchased laptop. We understand how important it is to ensure that your device is well protected against any potential issues.\n\nOur standard warranty covers defects in materials and workmanship for one year from the date of purchase. However, we are pleased to offer an extended warranty plan that allows you to extend your coverage by an additional two years. This extended plan not only covers defects but also includes protection against accidental damage, giving you peace of mind.\n\nTo proceed with the warranty extension, please visit our website and log into your account. Under the 'Warranty' section, you will find the option to purchase the extended plan. Once you complete the purchase, a confirmation email will be sent to you with all the details.\n\nIf you have any questions or require further assistance, please do not hesitate to reply to this email or contact our customer support hotline at 1-800-555-0199. We are here to help you!\n\nBest regards,\nSarah Johnson\nTech Solutions Inc.",
+  "contentTranslation": "田中様\n\nこの度は、最近購入されたノートパソコンの保証延長についてのお問い合わせをいただき、ありがとうございます。お客様のデバイスが問題からしっかりと保護されることがいかに重要であるかを理解しております。\n\n当社の標準保証は、購入日から1年間、材料および製造上の欠陥をカバーしています。しかし、さらに2年間の延長保証プランを提供しており、これによりカバー範囲を拡大することができます。この延長プランは、欠陥だけでなく、 accidental damage（偶発的な損傷）に対する保護も含まれており、安心してご利用いただけます。\n\n保証延長を進めるには、当社のウェブサイトにアクセスし、アカウントにログインしてください。『Warranty』セクションの下に、延長プランを購入するオプションがあります。購入が完了すると、すべての詳細を記載した確認メールが送信されます。\n\nご不明な点やさらなるサポートが必要な場合は、このメールに返信するか、カスタマーサポートホットライン1-800-555-0199までお気軽にお問い合わせください。私たちはお手伝いするためにここにいます！\n\n敬具\nサラ・ジョンソン\nテックソリューションズ株式会社",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To offer a new laptop model",
+        "To provide information about warranty extension",
+        "To request feedback on a product",
+        "To announce a new store opening"
+      ],
+      "optionTranslations": [
+        "新しいラップトップモデルを提供するため",
+        "保証延長についての情報を提供するため",
+        "製品に関するフィードバックを求めるため",
+        "新しい店舗の開店を発表するため"
+      ],
+      "correct": "B",
+      "explanation": "文書は、購入したラップトップの保証延長についての情報を提供しています。冒頭でその目的が明確に述べられています。"
+    },
+    {
+      "id": "q2",
+      "question": "According to the document, what does the extended warranty plan cover?",
+      "questionTranslation": "文書によると、延長保証プランは何をカバーしていますか？",
+      "options": [
+        "Only defects in materials",
+        "Only accidental damage",
+        "Defects and accidental damage",
+        "Software issues"
+      ],
+      "optionTranslations": [
+        "材料の欠陥のみ",
+        "偶発的な損害のみ",
+        "欠陥と偶発的な損害",
+        "ソフトウェアの問題"
+      ],
+      "correct": "C",
+      "explanation": "延長保証プランは、欠陥だけでなく偶発的な損害もカバーしています。これは文中で明確に述べられています。"
+    },
+    {
+      "id": "q3",
+      "question": "What is required for Mr. Tanaka to extend his warranty?",
+      "questionTranslation": "田中さんが保証を延長するために必要なことは何ですか？",
+      "options": [
+        "Visit a local store",
+        "Send a written request",
+        "Log into his account on the website",
+        "Call customer support"
+      ],
+      "optionTranslations": [
+        "地元の店を訪れる",
+        "書面で要求を送る",
+        "ウェブサイトでアカウントにログインする",
+        "カスタマーサポートに電話する"
+      ],
+      "correct": "C",
+      "explanation": "保証を延長するためには、ウェブサイトでアカウントにログインし、'Warranty'セクションで延長プランを購入する必要があります。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 183,
+    "questionCount": 3,
+    "passageType": "customer_support",
+    "topic": "customer_inquiries",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "content_quality_check",
+          "timestamp": "2025-08-07T17:50:58.377Z"
+        }
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "questions_quality_check",
+          "timestamp": "2025-08-07T17:51:13.144Z"
+        }
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 177問
+🆔 実際に追加されたID: passage153
+📝 プロンプト情報: 生成=2件, 品質チェック=3件, 修正=1件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 0問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 1問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 2:51:15
+実行時間: 0.00秒

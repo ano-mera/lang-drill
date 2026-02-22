@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2025-07-25T05:08:29.534Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "会議は今日の午後3時です。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:08:31.739Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、すぐにメールでお送りします。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-25T05:08:32.323Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "昨日の会議には出席していませんでした。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  }
+]

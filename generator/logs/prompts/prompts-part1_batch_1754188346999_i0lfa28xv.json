@@ -1,0 +1,362 @@
+[
+  {
+    "timestamp": "2025-08-03T02:32:27.011Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: cafe\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"cafe\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:32:30.966Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside a cozy cafe, a barista wearing a green apron is preparing a cappuccino behind the counter. A man in a blue sweater is seated at a table by the window, typing on his laptop, while a woman in a red scarf is reading a book at the table next to him. Through the large windows, a gentle rain is visible, creating a soothing backdrop to the warm interior.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"cafe\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:32:30.967Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nCRITICAL INSTRUCTIONS:\n1. Generate 4 CORRECT options that all accurately describe the scene (with slight variations in wording or focus)\n2. Generate 4 INCORRECT options that are plausible but wrong (modify parts of the correct options to make them incorrect)\n3. The incorrect options should be based on the correct options but with key elements changed\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"incorrectOptions\": [\n    \"First incorrect option (modified from a correct option)\",\n    \"Second incorrect option (modified from a correct option)\",\n    \"Third incorrect option (modified from a correct option)\", \n    \"Fourth incorrect option (modified from a correct option)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Inside a cozy cafe, a barista wearing a green apron is preparing a cappuccino behind the counter. A man in a blue sweater is seated at a table by the window, typing on his laptop, while a woman in a red scarf is reading a book at the table next to him. Through the large windows, a gentle rain is visible, creating a soothing backdrop to the warm interior.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description of the scene from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 INCORRECT OPTIONS by modifying the correct options\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Maintain similar structure and length to the correct options\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:32:41.527Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"A barista in a green apron is making coffee.\",\n    \"A man in a blue sweater is using a laptop.\",\n    \"A woman with a red scarf is reading a book.\",\n    \"Rain is gently falling outside the cafe windows.\"\n  ],\n  \"incorrectOptions\": [\n    \"A barista in a red apron is making coffee.\",\n    \"A man in a red sweater is using a laptop.\",\n    \"A woman with a blue scarf is reading a book.\",\n    \"Snow is gently falling outside the cafe windows.\"\n  ],\n  \"explanation\": \"The correct options accurately describe the actions and appearances of the individuals in the scene, as well as the weather outside. The incorrect options include incorrect colors for clothing or incorrect weather conditions, which do not match the scene description.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:06.655Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nCRITICAL INSTRUCTIONS:\n1. Generate 4 CORRECT options that all accurately describe the scene (with slight variations in wording or focus)\n2. Generate 4 INCORRECT options that are plausible but wrong (modify parts of the correct options to make them incorrect)\n3. The incorrect options should be based on the correct options but with key elements changed\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"incorrectOptions\": [\n    \"First incorrect option (modified from a correct option)\",\n    \"Second incorrect option (modified from a correct option)\",\n    \"Third incorrect option (modified from a correct option)\", \n    \"Fourth incorrect option (modified from a correct option)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"A man wearing a green apron is operating an espresso machine, while a woman in a red scarf is using a laptop at a café counter. A cup of coffee is placed in front of her, and the café has large windows in the background.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description of the scene from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 INCORRECT OPTIONS by modifying the correct options\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Maintain similar structure and length to the correct options\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:11.325Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"A man in a green apron is making coffee.\",\n    \"A woman with a red scarf is typing on a laptop.\",\n    \"An espresso machine is being operated by a man.\",\n    \"A cup of coffee is on the café counter.\"\n  ],\n  \"incorrectOptions\": [\n    \"A man in a green apron is serving tea.\",\n    \"A woman with a red scarf is reading a book.\",\n    \"An espresso machine is being cleaned by a man.\",\n    \"A cup of tea is on the café counter.\"\n  ],\n  \"explanation\": \"The correct options accurately describe the actions, people, and objects in the scene. The incorrect options change key elements such as the actions performed or the objects involved.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:11.327Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): A man wearing a green apron is operating an espresso machine, while a woman in a red scarf is using a laptop at a café counter. A cup of coffee is placed in front of her, and the café has large windows in the background.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:13.651Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "緑のエプロンを着た男性がエスプレッソマシンを操作しており、赤いスカーフを巻いた女性がカフェのカウンターでノートパソコンを使っています。彼女の前にはコーヒーカップが置かれており、カフェの背景には大きな窓があります。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:13.652Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: A man in a green apron is serving tea.\nB: A woman with a red scarf is typing on a laptop.\nC: A woman with a red scarf is reading a book.\nD: An espresso machine is being cleaned by a man.\n\nExplanation: The correct options accurately describe the actions, people, and objects in the scene. The incorrect options change key elements such as the actions performed or the objects involved.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:17.866Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"緑のエプロンをした男性がお茶を注いでいる。\",\n    \"赤いスカーフをした女性がノートパソコンで入力している。\",\n    \"赤いスカーフをした女性が本を読んでいる。\",\n    \"エスプレッソマシンが男性によって掃除されている。\"\n  ],\n  \"explanationTranslation\": \"正しい選択肢は、シーン内の行動、人、物を正確に説明しています。誤った選択肢は、行動や関与する物などの重要な要素を変更しています。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:22.057Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: gymnasium\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"gymnasium\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:26.022Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside a brightly lit gymnasium, several people are participating in a basketball game. A young man is dribbling the ball towards the hoop while two defenders attempt to block his path. In the background, a coach is observing the game closely, standing near the bleachers where a few spectators are seated, clapping and cheering. The large windows along the wall reveal a sunny day outside.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"gymnasium\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:26.023Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nCRITICAL INSTRUCTIONS:\n1. Generate 4 CORRECT options that all accurately describe the scene (with slight variations in wording or focus)\n2. Generate 4 INCORRECT options that are plausible but wrong (modify parts of the correct options to make them incorrect)\n3. The incorrect options should be based on the correct options but with key elements changed\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"incorrectOptions\": [\n    \"First incorrect option (modified from a correct option)\",\n    \"Second incorrect option (modified from a correct option)\",\n    \"Third incorrect option (modified from a correct option)\", \n    \"Fourth incorrect option (modified from a correct option)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Inside a brightly lit gymnasium, several people are participating in a basketball game. A young man is dribbling the ball towards the hoop while two defenders attempt to block his path. In the background, a coach is observing the game closely, standing near the bleachers where a few spectators are seated, clapping and cheering. The large windows along the wall reveal a sunny day outside.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description of the scene from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 INCORRECT OPTIONS by modifying the correct options\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Maintain similar structure and length to the correct options\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:30.747Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"A young man is dribbling the basketball.\",\n    \"Two defenders are blocking the man's path.\",\n    \"A coach is watching the game attentively.\",\n    \"Spectators are cheering from the bleachers.\"\n  ],\n  \"incorrectOptions\": [\n    \"A young man is shooting the basketball.\",\n    \"Two defenders are passing the ball to him.\",\n    \"A coach is playing in the basketball game.\",\n    \"Spectators are sitting quietly without cheering.\"\n  ],\n  \"explanation\": \"The correct options describe the basketball game scene accurately, focusing on actions, people, and setting as described. Incorrect options introduce actions or behaviors not present in the scene, like shooting, passing, or the coach playing.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"action\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:52.737Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nCRITICAL INSTRUCTIONS:\n1. Generate 4 CORRECT options that all accurately describe the scene (with slight variations in wording or focus)\n2. Generate 4 INCORRECT options that are plausible but wrong (modify parts of the correct options to make them incorrect)\n3. The incorrect options should be based on the correct options but with key elements changed\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"incorrectOptions\": [\n    \"First incorrect option (modified from a correct option)\",\n    \"Second incorrect option (modified from a correct option)\",\n    \"Third incorrect option (modified from a correct option)\", \n    \"Fourth incorrect option (modified from a correct option)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"A basketball player is dribbling a ball on a gymnasium court, wearing a gray tank top and blue shorts. In the background, a group of people is sitting on wooden bleachers, clapping and watching the game through large windows that let in natural light.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description of the scene from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 INCORRECT OPTIONS by modifying the correct options\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Maintain similar structure and length to the correct options\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:58.191Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"A basketball player is dribbling on the court.\",\n    \"People are sitting on bleachers, watching the game.\",\n    \"A player in gray and blue is playing basketball.\",\n    \"Natural light is coming through large gym windows.\"\n  ],\n  \"incorrectOptions\": [\n    \"A basketball player is shooting at the hoop.\",\n    \"Spectators are standing by the court, cheering loudly.\",\n    \"A player in red and white is playing basketball.\",\n    \"Artificial lights are illuminating the gymnasium court.\"\n  ],\n  \"explanation\": \"The correct options accurately describe the basketball player dribbling, the spectators watching, the player's attire, and the natural light in the gym. The incorrect options introduce actions not mentioned, change the player's attire colors, and describe lighting inaccurately.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:33:58.195Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): A basketball player is dribbling a ball on a gymnasium court, wearing a gray tank top and blue shorts. In the background, a group of people is sitting on wooden bleachers, clapping and watching the game through large windows that let in natural light.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:01.272Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "バスケットボール選手が体育館のコートでグレーのタンクトップと青いショーツを着てボールをドリブルしています。背景には、木製の観覧席に座っている一団が自然光の差し込む大きな窓越しに試合を観戦しながら拍手をしています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:01.272Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: Artificial lights are illuminating the gymnasium court.\nB: A player in red and white is playing basketball.\nC: Spectators are standing by the court, cheering loudly.\nD: People are sitting on bleachers, watching the game.\n\nExplanation: The correct options accurately describe the basketball player dribbling, the spectators watching, the player's attire, and the natural light in the gym. The incorrect options introduce actions not mentioned, change the player's attire colors, and describe lighting inaccurately.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:06.042Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"人工の照明が体育館のコートを照らしている。\",\n    \"赤と白の服を着た選手がバスケットボールをしている。\",\n    \"観客がコートのそばで立ち、大声で応援している。\",\n    \"人々が観客席に座り、試合を観戦している。\"\n  ],\n  \"explanationTranslation\": \"正しい選択肢は、ドリブルしているバスケットボール選手、観戦している観客、選手の服装、体育館の自然光を正確に描写しています。誤った選択肢は、言及されていない行動を導入したり、選手の服装の色を変えたり、照明を不正確に描写しています。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:09.976Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation",
+    "prompt": "You are a TOEIC Part 1 test creation expert specializing in generating realistic scene descriptions for English listening comprehension tests.\n\nYour task is to create detailed scene descriptions that will be used to generate multiple-choice questions for TOEIC Part 1. These scenes should depict realistic workplace, daily life, or common situations suitable for TOEIC tests.\n\nGuidelines:\n1. Create visual, action-oriented scenes\n2. Include specific details about people's actions, locations, and objects\n3. Use vocabulary appropriate to the specified difficulty level\n4. Keep scenes culturally neutral and professional\n5. Focus on observable actions and situations\n\nDifficulty Guidelines:\n- Easy: Simple actions, common vocabulary, clear single focus\n- Medium: Multiple elements, moderate vocabulary, some complexity\n- Hard: Complex interactions, advanced vocabulary, multiple simultaneous actions\n\nIMPORTANT: Return only valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as a JSON array with the following structure:\n[\n  {\n    \"sceneDescription\": \"Detailed scene description in English\",\n    \"difficulty\": \"easy/medium/hard\", \n    \"scene\": \"Scene type in English\"\n  }\n]\n\nGenerate 1 detailed scene descriptions for TOEIC Part 1 questions at difficulty level \"medium\".\n\nScene Requirements:\n- Scene type: sports facility\n\nDescription should include:\n- Weather conditions if outdoors or if windows are visible\n- What is visible in the scene\n- Spatial relationships between objects and people\n- Any movements or actions taking place\n\nSet the scene field in the generated JSON to:\n\"sports facility\"\n\nEach scene should be 1-2 sentences, describing a specific moment that could be captured in a photograph based on the specified conditions. Include specific actions, people, and environmental details suitable for multiple-choice questions about what people are doing or what is happening in the scene. Create scene descriptions in English.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:14.082Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_scene_generation_response",
+    "prompt": "[\n  {\n    \"sceneDescription\": \"Inside a well-lit gymnasium, a group of six people is playing basketball. The court is marked with bright white lines, and a scoreboard hangs on the wall, showing a tied score. Two players are leaping towards the net, vying for a rebound, while three others are positioned around the perimeter, ready to pass the ball. In the background, another person is sitting on a bench, watching the game attentively and holding a water bottle. Ceiling fans whir gently above, providing a cool breeze.\",\n    \"difficulty\": \"medium\",\n    \"scene\": \"sports facility\"\n  }\n]",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:14.084Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nCRITICAL INSTRUCTIONS:\n1. Generate 4 CORRECT options that all accurately describe the scene (with slight variations in wording or focus)\n2. Generate 4 INCORRECT options that are plausible but wrong (modify parts of the correct options to make them incorrect)\n3. The incorrect options should be based on the correct options but with key elements changed\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"incorrectOptions\": [\n    \"First incorrect option (modified from a correct option)\",\n    \"Second incorrect option (modified from a correct option)\",\n    \"Third incorrect option (modified from a correct option)\", \n    \"Fourth incorrect option (modified from a correct option)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Inside a well-lit gymnasium, a group of six people is playing basketball. The court is marked with bright white lines, and a scoreboard hangs on the wall, showing a tied score. Two players are leaping towards the net, vying for a rebound, while three others are positioned around the perimeter, ready to pass the ball. In the background, another person is sitting on a bench, watching the game attentively and holding a water bottle. Ceiling fans whir gently above, providing a cool breeze.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description of the scene from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 INCORRECT OPTIONS by modifying the correct options\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Maintain similar structure and length to the correct options\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:19.748Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"Six people are playing basketball in a gymnasium.\",\n    \"Two players are leaping towards the basketball net.\",\n    \"A person is sitting on a bench with a bottle.\",\n    \"Ceiling fans are spinning gently above the court.\"\n  ],\n  \"incorrectOptions\": [\n    \"Six people are playing volleyball in a gymnasium.\",\n    \"Two players are leaping towards the soccer goal.\",\n    \"A person is sitting on the floor with a bottle.\",\n    \"Ceiling lights are flickering gently above the court.\"\n  ],\n  \"explanation\": \"The correct options accurately describe the actions and elements present in the scene, such as the basketball game, the players' actions, and the person observing with a water bottle. The incorrect options change key elements such as the sport being played, the location of the person, and the objects in the scene.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:40.743Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation",
+    "prompt": "You are an expert TOEIC Part 1 question creator. Your task is to create multiple-choice answer options based on scene descriptions.\n\nTOEIC Part 1 Format:\n- NO question text is provided (only answer choices are read aloud)\n- Four answer choices (A, B, C, D) describing what might be happening\n- Only one correct answer that accurately describes the scene\n- Distractors should be plausible but clearly incorrect based on the scene\n\nAnswer Choice Types:\n1. Action descriptions: \"A woman is typing on a laptop.\"\n2. Location descriptions: \"People are sitting in a conference room.\"\n3. Object descriptions: \"There are documents on the table.\"\n4. General scene descriptions: \"A meeting is taking place.\"\n\nGuidelines:\n- Use present continuous tense for actions\n- Keep language clear and concise\n- Avoid cultural references or specialized knowledge\n- Make distractors believable but distinguishable from the actual scene\n- Ensure only one answer accurately describes the given scene\n- Do NOT include option letters (A, B, C, D) in the text\n- IMPORTANT: Keep all answer choices similar in length (6-10 words each)\n- Avoid making the correct answer noticeably longer or shorter than the distractors\n\nCRITICAL INSTRUCTIONS:\n1. Generate 4 CORRECT options that all accurately describe the scene (with slight variations in wording or focus)\n2. Generate 4 INCORRECT options that are plausible but wrong (modify parts of the correct options to make them incorrect)\n3. The incorrect options should be based on the correct options but with key elements changed\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\nReturn your response as JSON with this exact structure:\n{\n  \"correctOptions\": [\n    \"First correct option describing the scene\",\n    \"Second correct option describing the scene\", \n    \"Third correct option describing the scene\",\n    \"Fourth correct option describing the scene\"\n  ],\n  \"incorrectOptions\": [\n    \"First incorrect option (modified from a correct option)\",\n    \"Second incorrect option (modified from a correct option)\",\n    \"Third incorrect option (modified from a correct option)\", \n    \"Fourth incorrect option (modified from a correct option)\"\n  ],\n  \"explanation\": \"Brief explanation of why the correct options are right\",\n  \"difficulty\": \"easy/medium/hard\",\n  \"questionType\": \"action/location/description/people/general\"\n}\n\nCreate TOEIC Part 1 multiple-choice answer options based on this scene description:\n\nScene: \"Several basketball players are actively engaged in a game on an indoor court, with one player dribbling the ball while others are positioned around them. In the background, a scoreboard displays a score, and a group of spectators is seated on benches along the side of the court.\"\nDifficulty: medium\n\nDIFFICULTY REQUIREMENTS FOR \"MEDIUM\" LEVEL:\nDescription: The sentence may involve passive voice, plural subjects, or less common vocabulary. The structure is slightly longer or includes descriptive phrases.\n\nKey Features to Follow:\n- One of the incorrect options must include elements that are actually present in the scene\n\nINSTRUCTIONS:\n1. Generate 4 CORRECT OPTIONS that all accurately describe what is happening in the scene\n   - Each should be a valid description of the scene from slightly different perspectives\n   - Vary the focus (action, location, people, objects) while maintaining accuracy\n   - All must be factually correct based on the scene description\n\n2. Generate 4 INCORRECT OPTIONS by modifying the correct options\n   - Change key elements (actions, subjects, objects, locations) to make them wrong\n   - Keep them plausible but clearly incorrect based on the actual scene\n   - Maintain similar structure and length to the correct options\n\nCRITICAL: All options should be 6-10 words in length and grammatically correct.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:46.527Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_question_generation_response",
+    "prompt": "```json\n{\n  \"correctOptions\": [\n    \"Players are engaged in a basketball game indoors.\",\n    \"A player is dribbling the ball on the court.\",\n    \"Spectators are seated on benches watching the game.\",\n    \"A scoreboard displays the score during the match.\"\n  ],\n  \"incorrectOptions\": [\n    \"Players are engaged in a football game indoors.\",\n    \"A player is kicking the ball on the court.\",\n    \"Spectators are standing on benches watching the game.\",\n    \"A scoreboard displays advertisements during the match.\"\n  ],\n  \"explanation\": \"The correct options accurately describe the indoor basketball game, including the actions of the players, presence of spectators, and details about the scoreboard. Incorrect options introduce elements like football, kicking, standing spectators, and advertisements on the scoreboard, which do not match the scene described.\",\n  \"difficulty\": \"medium\",\n  \"questionType\": \"general\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:46.530Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content.\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese (do not include A, B, C, D labels): Several basketball players are actively engaged in a game on an indoor court, with one player dribbling the ball while others are positioned around them. In the background, a scoreboard displays a score, and a group of spectators is seated on benches along the side of the court.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:48.974Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "数人のバスケットボール選手が屋内コートで活発に試合をしており、一人の選手がボールをドリブルし、他の選手たちはその周りに配置されています。背景にはスコアボードが点数を表示しており、コートの側面には観客のグループがベンチに座っています。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:48.975Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 1 questions.\n\nTranslate the given options and explanation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain clarity and precision for image description questions\n- Use appropriate descriptive Japanese\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"optionTranslations\": [\n    \"第1選択肢の日本語翻訳\",\n    \"第2選択肢の日本語翻訳\",\n    \"第3選択肢の日本語翻訳\",\n    \"第4選択肢の日本語翻訳\"\n  ],\n  \"explanationTranslation\": \"解説の日本語翻訳\"\n}\n\nIMPORTANT: Do not include A, B, C, D labels in your translations. Translate only the content of each option.\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 1 options and explanation to Japanese:\n\nOptions:\nA: Spectators are seated on benches watching the game.\nB: Players are engaged in a football game indoors.\nC: A scoreboard displays advertisements during the match.\nD: A player is kicking the ball on the court.\n\nExplanation: The correct options accurately describe the indoor basketball game, including the actions of the players, presence of spectators, and details about the scoreboard. Incorrect options introduce elements like football, kicking, standing spectators, and advertisements on the scoreboard, which do not match the scene described.\n\nIMPORTANT: Translate only the content, do not include any A, B, C, D labels in your translations.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-03T02:34:53.362Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_batch_options_translation_response",
+    "prompt": "```json\n{\n  \"optionTranslations\": [\n    \"観客がベンチに座って試合を観戦している。\",\n    \"選手たちが室内でフットボールの試合をしている。\",\n    \"スコアボードに試合中の広告が表示されている。\",\n    \"選手がコートでボールを蹴っている。\"\n  ],\n  \"explanationTranslation\": \"正しい選択肢は、室内バスケットボールの試合を正確に描写しており、選手の動き、観客の存在、スコアボードの詳細が含まれています。誤った選択肢は、フットボール、ボールを蹴る動作、立っている観客、スコアボード上の広告など、説明された場面と一致しない要素を紹介しています。\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

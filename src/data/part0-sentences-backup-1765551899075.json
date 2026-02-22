@@ -1,0 +1,1144 @@
+{
+  "sentences": [
+    {
+      "id": "p0-001",
+      "text": "Please have a seat.",
+      "textTranslation": "お座りください。",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-001-m.mp3",
+        "female": "/audio/part0/p0-001-f.mp3"
+      },
+      "pronunciation": "have a seatは「着席する」という意味の定型表現",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-002",
+      "text": "I'll be right back.",
+      "textTranslation": "すぐに戻ります。",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-002-m.mp3",
+        "female": "/audio/part0/p0-002-f.mp3"
+      },
+      "pronunciation": "I'llの縮約形とright（すぐに）の強調に注意",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-003",
+      "text": "Could you repeat that, please?",
+      "textTranslation": "もう一度言っていただけますか？",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-003-m.mp3",
+        "female": "/audio/part0/p0-003-f.mp3"
+      },
+      "pronunciation": "Could youは丁寧な依頼の定型表現",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-004",
+      "text": "The meeting starts at ten o'clock sharp.",
+      "textTranslation": "会議は10時ちょうどに始まります。",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-004-m.mp3",
+        "female": "/audio/part0/p0-004-f.mp3"
+      },
+      "pronunciation": "sharpは「ちょうど」を意味する重要な副詞",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-005",
+      "text": "Let me check my schedule.",
+      "textTranslation": "スケジュールを確認させてください。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-005-m.mp3",
+        "female": "/audio/part0/p0-005-f.mp3"
+      },
+      "pronunciation": "Let meは「〜させて」の定型表現",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-006",
+      "text": "We need to postpone the deadline until next Friday.",
+      "textTranslation": "締切を来週の金曜日まで延期する必要があります。",
+      "difficulty": "intermediate",
+      "wordCount": 9,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-006-m.mp3",
+        "female": "/audio/part0/p0-006-f.mp3"
+      },
+      "pronunciation": "postponeは「延期する」、untilは「〜まで」",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-007",
+      "text": "Thank you for your patience.",
+      "textTranslation": "お待ちいただきありがとうございます。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "サービス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-007-m.mp3",
+        "female": "/audio/part0/p0-007-f.mp3"
+      },
+      "pronunciation": "patienceは「忍耐」を意味する名詞",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-008",
+      "text": "The proposal has been approved by the board of directors.",
+      "textTranslation": "提案は取締役会によって承認されました。",
+      "difficulty": "advanced",
+      "wordCount": 10,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-008-m.mp3",
+        "female": "/audio/part0/p0-008-f.mp3"
+      },
+      "pronunciation": "受動態（has been approved）とboard of directorsの発音に注意",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-009",
+      "text": "Would you like me to call you a taxi?",
+      "textTranslation": "タクシーを呼びましょうか？",
+      "difficulty": "intermediate",
+      "wordCount": 9,
+      "topic": "サービス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-009-m.mp3",
+        "female": "/audio/part0/p0-009-f.mp3"
+      },
+      "pronunciation": "Would you likeは丁寧な申し出の表現",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-010",
+      "text": "I apologize for the inconvenience.",
+      "textTranslation": "ご不便をおかけして申し訳ございません。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "サービス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-010-m.mp3",
+        "female": "/audio/part0/p0-010-f.mp3"
+      },
+      "pronunciation": "apologizeとinconvenienceのアクセントに注意",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-011",
+      "text": "What's your favorite type of music?",
+      "textTranslation": "あなたの好きな音楽のジャンルは何ですか?",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "daily conversation",
+      "audioFiles": {
+        "male": "/audio/part0/p0-011-m.mp3",
+        "female": "/audio/part0/p0-011-f.mp3"
+      },
+      "pronunciation": "Focus on the question intonation.",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "p0-012",
+      "text": "May I take your order, please?",
+      "textTranslation": "ご注文をお伺いしてもよろしいですか?",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "service",
+      "audioFiles": {
+        "male": "/audio/part0/p0-012-m.mp3",
+        "female": "/audio/part0/p0-012-f.mp3"
+      },
+      "pronunciation": "Pay attention to the polite tone.",
+      "createdAt": "2024-01-15T10:01:00Z"
+    },
+    {
+      "id": "p0-013",
+      "text": "How was your weekend?",
+      "textTranslation": "週末はいかがでしたか?",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "daily conversation",
+      "audioFiles": {
+        "male": "/audio/part0/p0-013-m.mp3",
+        "female": "/audio/part0/p0-013-f.mp3"
+      },
+      "pronunciation": "Notice the rising intonation at the end.",
+      "createdAt": "2024-01-15T10:02:00Z"
+    },
+    {
+      "id": "p0-014",
+      "text": "Where is the nearest restroom?",
+      "textTranslation": "最寄りのトイレはどこですか?",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-014-m.mp3",
+        "female": "/audio/part0/p0-014-f.mp3"
+      },
+      "pronunciation": "Stress on 'nearest'.",
+      "createdAt": "2024-01-15T10:03:00Z"
+    },
+    {
+      "id": "p0-015",
+      "text": "Could you help me with this?",
+      "textTranslation": "これを手伝ってくださいますか?",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "business",
+      "audioFiles": {
+        "male": "/audio/part0/p0-015-m.mp3",
+        "female": "/audio/part0/p0-015-f.mp3"
+      },
+      "pronunciation": "Emphasize the polite request 'could you'.",
+      "createdAt": "2024-01-15T10:04:00Z"
+    },
+    {
+      "id": "p0-016",
+      "text": "The train leaves in five minutes.",
+      "textTranslation": "電車は5分後に発車します。",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-016-m.mp3",
+        "female": "/audio/part0/p0-016-f.mp3"
+      },
+      "pronunciation": "Notice the connection between 'leaves in'.",
+      "createdAt": "2024-01-15T10:05:00Z"
+    },
+    {
+      "id": "p0-017",
+      "text": "Please send me a price list.",
+      "textTranslation": "価格表を送ってください。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "business",
+      "audioFiles": {
+        "male": "/audio/part0/p0-017-m.mp3",
+        "female": "/audio/part0/p0-017-f.mp3"
+      },
+      "pronunciation": "Focus on the clarity of 'price list'.",
+      "createdAt": "2024-01-15T10:06:00Z"
+    },
+    {
+      "id": "p0-018",
+      "text": "We have a meeting every Monday morning.",
+      "textTranslation": "毎週月曜日の朝に会議があります。",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "business",
+      "audioFiles": {
+        "male": "/audio/part0/p0-018-m.mp3",
+        "female": "/audio/part0/p0-018-f.mp3"
+      },
+      "pronunciation": "Emphasize 'every' for regularity.",
+      "createdAt": "2024-01-15T10:07:00Z"
+    },
+    {
+      "id": "p0-019",
+      "text": "Where is the currency exchange counter?",
+      "textTranslation": "外貨両替所はどこですか?",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-019-m.mp3",
+        "female": "/audio/part0/p0-019-f.mp3"
+      },
+      "pronunciation": "Note how 'currency exchange' flows together.",
+      "createdAt": "2024-01-15T10:08:00Z"
+    },
+    {
+      "id": "p0-020",
+      "text": "I need assistance with my luggage.",
+      "textTranslation": "荷物について手伝いが必要です。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-020-m.mp3",
+        "female": "/audio/part0/p0-020-f.mp3"
+      },
+      "pronunciation": "Pay attention to the word 'assistance'.",
+      "createdAt": "2024-01-15T10:09:00Z"
+    },
+    {
+      "id": "p0-021",
+      "text": "Can I get a refund, please?",
+      "textTranslation": "払い戻しをお願いできますか?",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-021-m.mp3",
+        "female": "/audio/part0/p0-021-f.mp3"
+      },
+      "pronunciation": "Emphasize 'refund' clearly.",
+      "createdAt": "2024-01-15T10:10:00Z"
+    },
+    {
+      "id": "p0-022",
+      "text": "What time does the store open?",
+      "textTranslation": "お店は何時に開きますか?",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-022-m.mp3",
+        "female": "/audio/part0/p0-022-f.mp3"
+      },
+      "pronunciation": "Focus on the clarity of 'store open'.",
+      "createdAt": "2024-01-15T10:11:00Z"
+    },
+    {
+      "id": "p0-023",
+      "text": "Can I speak to Mr. Johnson, please?",
+      "textTranslation": "ジョンソンさんとお話しできますか?",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "business",
+      "audioFiles": {
+        "male": "/audio/part0/p0-023-m.mp3",
+        "female": "/audio/part0/p0-023-f.mp3"
+      },
+      "pronunciation": "Note the polite request form.",
+      "createdAt": "2024-01-15T10:12:00Z"
+    },
+    {
+      "id": "p0-024",
+      "text": "The elevator is out of order.",
+      "textTranslation": "エレベーターは故障中です。",
+      "difficulty": "intermediate", 
+      "wordCount": 6,
+      "topic": "building",
+      "audioFiles": {
+        "male": "/audio/part0/p0-024-m.mp3",
+        "female": "/audio/part0/p0-024-f.mp3"
+      },
+      "pronunciation": "Focus on 'out of order' - common phrase for broken equipment.",
+      "createdAt": "2024-01-15T10:13:00Z"
+    },
+    {
+      "id": "p0-025",
+      "text": "Please fill out this form.",
+      "textTranslation": "この用紙に記入してください。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "service",
+      "audioFiles": {
+        "male": "/audio/part0/p0-025-m.mp3",
+        "female": "/audio/part0/p0-025-f.mp3"
+      },
+      "pronunciation": "Note the phrasal verb 'fill out'.",
+      "createdAt": "2024-01-15T10:14:00Z"
+    },
+    {
+      "id": "p0-026",
+      "text": "I'm running late for my appointment.",
+      "textTranslation": "約束の時間に遅れそうです。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "daily conversation",
+      "audioFiles": {
+        "male": "/audio/part0/p0-026-m.mp3",
+        "female": "/audio/part0/p0-026-f.mp3"
+      },
+      "pronunciation": "Present continuous 'running late' means being delayed.",
+      "createdAt": "2024-01-15T10:15:00Z"
+    },
+    {
+      "id": "p0-027",
+      "text": "Would you mind closing the window?",
+      "textTranslation": "窓を閉めていただけませんか？",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "daily conversation",
+      "audioFiles": {
+        "male": "/audio/part0/p0-027-m.mp3",
+        "female": "/audio/part0/p0-027-f.mp3"
+      },
+      "pronunciation": "Polite request with 'Would you mind' + gerund.",
+      "createdAt": "2024-01-15T10:16:00Z"
+    },
+    {
+      "id": "p0-028",
+      "text": "The flight has been delayed.",
+      "textTranslation": "フライトが遅延しています。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-028-m.mp3",
+        "female": "/audio/part0/p0-028-f.mp3"
+      },
+      "pronunciation": "Passive voice with 'has been delayed'.",
+      "createdAt": "2024-01-15T10:17:00Z"
+    },
+    {
+      "id": "p0-029",
+      "text": "Could I have the bill, please?",
+      "textTranslation": "お会計をお願いします。",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "restaurant",
+      "audioFiles": {
+        "male": "/audio/part0/p0-029-m.mp3",
+        "female": "/audio/part0/p0-029-f.mp3"
+      },
+      "pronunciation": "Restaurant expression for requesting the check.",
+      "createdAt": "2024-01-15T10:18:00Z"
+    },
+    {
+      "id": "p0-030",
+      "text": "I need to make a reservation.",
+      "textTranslation": "予約を取る必要があります。",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "service",
+      "audioFiles": {
+        "male": "/audio/part0/p0-030-m.mp3",
+        "female": "/audio/part0/p0-030-f.mp3"
+      },
+      "pronunciation": "Common service expression with 'make a reservation'.",
+      "createdAt": "2024-01-15T10:19:00Z"
+    },
+    {
+      "id": "p0-031",
+      "text": "What time does the store open?",
+      "textTranslation": "お店は何時に開きますか？",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-031-m.mp3",
+        "female": "/audio/part0/p0-031-f.mp3"
+      },
+      "pronunciation": "Question about store hours with 'what time'.",
+      "createdAt": "2024-01-15T10:20:00Z"
+    },
+    {
+      "id": "p0-032",
+      "text": "Can you help me with this?",
+      "textTranslation": "これを手伝ってもらえますか？",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-032-m.mp3",
+        "female": "/audio/part0/p0-032-f.mp3"
+      },
+      "pronunciation": "Polite request for assistance using 'can you'.",
+      "createdAt": "2024-01-15T10:21:00Z"
+    },
+    {
+      "id": "p0-033",
+      "text": "The meeting starts at ten.",
+      "textTranslation": "会議は10時に始まります。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "business",
+      "audioFiles": {
+        "male": "/audio/part0/p0-033-m.mp3",
+        "female": "/audio/part0/p0-033-f.mp3"
+      },
+      "pronunciation": "Business context with time expression 'at ten'.",
+      "createdAt": "2024-01-15T10:22:00Z"
+    },
+    {
+      "id": "p0-034",
+      "text": "I'm looking for the restroom.",
+      "textTranslation": "トイレを探しています。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-034-m.mp3",
+        "female": "/audio/part0/p0-034-f.mp3"
+      },
+      "pronunciation": "Travel expression with 'looking for'.",
+      "createdAt": "2024-01-15T10:23:00Z"
+    },
+    {
+      "id": "p0-035",
+      "text": "Would you like some coffee?",
+      "textTranslation": "コーヒーはいかがですか？",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "service",
+      "audioFiles": {
+        "male": "/audio/part0/p0-035-m.mp3",
+        "female": "/audio/part0/p0-035-f.mp3"
+      },
+      "pronunciation": "Polite offer using 'would you like'.",
+      "createdAt": "2024-01-15T10:24:00Z"
+    },
+    {
+      "id": "p0-036",
+      "text": "The elevator is out of order.",
+      "textTranslation": "エレベーターは故障中です。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "building",
+      "audioFiles": {
+        "male": "/audio/part0/p0-036-m.mp3",
+        "female": "/audio/part0/p0-036-f.mp3"
+      },
+      "pronunciation": "Building maintenance expression 'out of order'.",
+      "createdAt": "2024-01-15T10:25:00Z"
+    },
+    {
+      "id": "p0-037",
+      "text": "How much does this cost?",
+      "textTranslation": "これはいくらですか？",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-037-m.mp3",
+        "female": "/audio/part0/p0-037-f.mp3"
+      },
+      "pronunciation": "Shopping question about price using 'how much'.",
+      "createdAt": "2024-01-15T10:26:00Z"
+    },
+    {
+      "id": "p0-038",
+      "text": "Please speak more slowly.",
+      "textTranslation": "もっとゆっくり話してください。",
+      "difficulty": "intermediate",
+      "wordCount": 4,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-038-m.mp3",
+        "female": "/audio/part0/p0-038-f.mp3"
+      },
+      "pronunciation": "Communication request with adverb 'slowly'.",
+      "createdAt": "2024-01-15T10:27:00Z"
+    },
+    {
+      "id": "p0-039",
+      "text": "Do you accept credit cards?",
+      "textTranslation": "クレジットカードは使えますか？",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-039-m.mp3",
+        "female": "/audio/part0/p0-039-f.mp3"
+      },
+      "pronunciation": "Payment method question using 'accept'.",
+      "createdAt": "2024-01-15T10:28:00Z"
+    },
+    {
+      "id": "p0-040",
+      "text": "I'll take this one, please.",
+      "textTranslation": "これをください。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-040-m.mp3",
+        "female": "/audio/part0/p0-040-f.mp3"
+      },
+      "pronunciation": "Shopping expression 'I'll take' for purchasing.",
+      "createdAt": "2024-01-15T10:29:00Z"
+    },
+    {
+      "id": "p0-041",
+      "text": "Excuse me, where is the exit?",
+      "textTranslation": "すみません、出口はどこですか？",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-041-m.mp3",
+        "female": "/audio/part0/p0-041-f.mp3"
+      },
+      "pronunciation": "Polite inquiry about directions using 'excuse me'.",
+      "createdAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "p0-042",
+      "text": "The printer is not working.",
+      "textTranslation": "プリンターが動きません。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "office",
+      "audioFiles": {
+        "male": "/audio/part0/p0-042-m.mp3",
+        "female": "/audio/part0/p0-042-f.mp3"
+      },
+      "pronunciation": "Office equipment problem using 'not working'.",
+      "createdAt": "2024-01-15T10:31:00Z"
+    },
+    {
+      "id": "p0-043",
+      "text": "Could you repeat that, please?",
+      "textTranslation": "もう一度言っていただけますか？",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-043-m.mp3",
+        "female": "/audio/part0/p0-043-f.mp3"
+      },
+      "pronunciation": "Polite request for repetition using 'could you'.",
+      "createdAt": "2024-01-15T10:32:00Z"
+    },
+    {
+      "id": "p0-044",
+      "text": "The train is delayed by ten minutes.",
+      "textTranslation": "電車は10分遅れています。",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-044-m.mp3",
+        "female": "/audio/part0/p0-044-f.mp3"
+      },
+      "pronunciation": "Transportation delay announcement with 'delayed by'.",
+      "createdAt": "2024-01-15T10:33:00Z"
+    },
+    {
+      "id": "p0-045",
+      "text": "I'd like to book a table.",
+      "textTranslation": "テーブルを予約したいのですが。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "restaurant",
+      "audioFiles": {
+        "male": "/audio/part0/p0-045-m.mp3",
+        "female": "/audio/part0/p0-045-f.mp3"
+      },
+      "pronunciation": "Restaurant reservation using 'I'd like to book'.",
+      "createdAt": "2024-01-15T10:34:00Z"
+    },
+    {
+      "id": "p0-046",
+      "text": "Is this seat taken?",
+      "textTranslation": "この席は空いていますか？",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-046-m.mp3",
+        "female": "/audio/part0/p0-046-f.mp3"
+      },
+      "pronunciation": "Common question about seat availability.",
+      "createdAt": "2024-01-15T10:35:00Z"
+    },
+    {
+      "id": "p0-047",
+      "text": "The weather is nice today.",
+      "textTranslation": "今日はいい天気ですね。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-047-m.mp3",
+        "female": "/audio/part0/p0-047-f.mp3"
+      },
+      "pronunciation": "Weather comment using 'nice today'.",
+      "createdAt": "2024-01-15T10:36:00Z"
+    },
+    {
+      "id": "p0-048",
+      "text": "Can I pay by cash?",
+      "textTranslation": "現金で払えますか？",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-048-m.mp3",
+        "female": "/audio/part0/p0-048-f.mp3"
+      },
+      "pronunciation": "Payment method question using 'pay by cash'.",
+      "createdAt": "2024-01-15T10:37:00Z"
+    },
+    {
+      "id": "p0-049",
+      "text": "I need to catch a taxi.",
+      "textTranslation": "タクシーを捕まえる必要があります。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-049-m.mp3",
+        "female": "/audio/part0/p0-049-f.mp3"
+      },
+      "pronunciation": "Transportation need using 'catch a taxi'.",
+      "createdAt": "2024-01-15T10:38:00Z"
+    },
+    {
+      "id": "p0-050",
+      "text": "The meeting room is occupied.",
+      "textTranslation": "会議室は使用中です。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "office",
+      "audioFiles": {
+        "male": "/audio/part0/p0-050-m.mp3",
+        "female": "/audio/part0/p0-050-f.mp3"
+      },
+      "pronunciation": "Office space status using 'occupied'.",
+      "createdAt": "2024-01-15T10:39:00Z"
+    },
+    {
+      "id": "p0-051",
+      "text": "What's your favorite color?",
+      "textTranslation": "好きな色は何ですか？",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-051-m.mp3",
+        "female": "/audio/part0/p0-051-f.mp3"
+      },
+      "pronunciation": "Personal preference question with 'favorite'.",
+      "createdAt": "2024-01-15T10:40:00Z"
+    },
+    {
+      "id": "p0-052",
+      "text": "I'm running late for work.",
+      "textTranslation": "仕事に遅刻しそうです。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "business",
+      "audioFiles": {
+        "male": "/audio/part0/p0-052-m.mp3",
+        "female": "/audio/part0/p0-052-f.mp3"
+      },
+      "pronunciation": "Time pressure expression 'running late'.",
+      "createdAt": "2024-01-15T10:41:00Z"
+    },
+    {
+      "id": "p0-053",
+      "text": "Could you turn on the lights?",
+      "textTranslation": "電気をつけてもらえますか？",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-053-m.mp3",
+        "female": "/audio/part0/p0-053-f.mp3"
+      },
+      "pronunciation": "Polite request using 'turn on the lights'.",
+      "createdAt": "2024-01-15T10:42:00Z"
+    },
+    {
+      "id": "p0-054",
+      "text": "The store closes at nine.",
+      "textTranslation": "お店は9時に閉まります。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-054-m.mp3",
+        "female": "/audio/part0/p0-054-f.mp3"
+      },
+      "pronunciation": "Store hours information using 'closes at'.",
+      "createdAt": "2024-01-15T10:43:00Z"
+    },
+    {
+      "id": "p0-055",
+      "text": "I forgot my passport.",
+      "textTranslation": "パスポートを忘れました。",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "travel",
+      "audioFiles": {
+        "male": "/audio/part0/p0-055-m.mp3",
+        "female": "/audio/part0/p0-055-f.mp3"
+      },
+      "pronunciation": "Travel problem using 'forgot my passport'.",
+      "createdAt": "2024-01-15T10:44:00Z"
+    },
+    {
+      "id": "p0-056",
+      "text": "Would you like a receipt?",
+      "textTranslation": "レシートはいかがですか？",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "shopping",
+      "audioFiles": {
+        "male": "/audio/part0/p0-056-m.mp3",
+        "female": "/audio/part0/p0-056-f.mp3"
+      },
+      "pronunciation": "Shopping service question using 'would you like'.",
+      "createdAt": "2024-01-15T10:45:00Z"
+    },
+    {
+      "id": "p0-057",
+      "text": "The phone is ringing.",
+      "textTranslation": "電話が鳴っています。",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "office",
+      "audioFiles": {
+        "male": "/audio/part0/p0-057-m.mp3",
+        "female": "/audio/part0/p0-057-f.mp3"
+      },
+      "pronunciation": "Office situation using 'phone is ringing'.",
+      "createdAt": "2024-01-15T10:46:00Z"
+    },
+    {
+      "id": "p0-058",
+      "text": "I need to check my email.",
+      "textTranslation": "メールをチェックする必要があります。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "office",
+      "audioFiles": {
+        "male": "/audio/part0/p0-058-m.mp3",
+        "female": "/audio/part0/p0-058-f.mp3"
+      },
+      "pronunciation": "Modern communication task 'check my email'.",
+      "createdAt": "2024-01-15T10:47:00Z"
+    },
+    {
+      "id": "p0-059",
+      "text": "The coffee tastes good.",
+      "textTranslation": "コーヒーがおいしいです。",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "restaurant",
+      "audioFiles": {
+        "male": "/audio/part0/p0-059-m.mp3",
+        "female": "/audio/part0/p0-059-f.mp3"
+      },
+      "pronunciation": "Taste evaluation using 'tastes good'.",
+      "createdAt": "2024-01-15T10:48:00Z"
+    },
+    {
+      "id": "p0-060",
+      "text": "I'll see you tomorrow.",
+      "textTranslation": "また明日お会いしましょう。",
+      "difficulty": "beginner",
+      "wordCount": 4,
+      "topic": "日常会話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-060-m.mp3",
+        "female": "/audio/part0/p0-060-f.mp3"
+      },
+      "pronunciation": "Parting expression 'see you tomorrow'.",
+      "createdAt": "2024-01-15T10:49:00Z"
+    },
+    {
+      "id": "p0-061",
+      "text": "The meeting starts at 10 a.m.",
+      "textTranslation": "会議は午前10時に始まります。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-061-m.mp3",
+        "female": "/audio/part0/p0-061-f.mp3"
+      },
+      "category": "Schedule/Time",
+      "pronunciation": "Business meeting schedule",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-062",
+      "text": "Could you confirm the appointment date?",
+      "textTranslation": "予約日を確認していただけますか？",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-062-m.mp3",
+        "female": "/audio/part0/p0-062-f.mp3"
+      },
+      "category": "Schedule/Time",
+      "pronunciation": "Polite confirmation request",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-063",
+      "text": "The printer is out of paper.",
+      "textTranslation": "プリンターに紙がありません。",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "オフィス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-063-m.mp3",
+        "female": "/audio/part0/p0-063-f.mp3"
+      },
+      "category": "Office equipment",
+      "pronunciation": "Office equipment status",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-064",
+      "text": "Please reboot the computer now.",
+      "textTranslation": "今すぐコンピューターを再起動してください。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "オフィス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-064-m.mp3",
+        "female": "/audio/part0/p0-064-f.mp3"
+      },
+      "category": "Office equipment",
+      "pronunciation": "IT instruction",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-065",
+      "text": "Could you send the report by email?",
+      "textTranslation": "その報告書をメールで送っていただけますか？",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-065-m.mp3",
+        "female": "/audio/part0/p0-065-f.mp3"
+      },
+      "category": "Requests/Instructions",
+      "pronunciation": "Polite email request",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-066",
+      "text": "Please follow the instructions carefully.",
+      "textTranslation": "指示を注意深くお守りください。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-066-m.mp3",
+        "female": "/audio/part0/p0-066-f.mp3"
+      },
+      "category": "Requests/Instructions",
+      "pronunciation": "Important direction",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-067",
+      "text": "May I speak to Mr. Tanaka?",
+      "textTranslation": "田中さんとお話しできますか？",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "電話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-067-m.mp3",
+        "female": "/audio/part0/p0-067-f.mp3"
+      },
+      "category": "Phone/Email",
+      "pronunciation": "Phone request",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-068",
+      "text": "I'll forward the email to you.",
+      "textTranslation": "そのメールをあなたに転送します。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-068-m.mp3",
+        "female": "/audio/part0/p0-068-f.mp3"
+      },
+      "category": "Phone/Email",
+      "pronunciation": "Email promise",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-069",
+      "text": "The flight has been delayed again.",
+      "textTranslation": "フライトが再び遅れています。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "旅行",
+      "audioFiles": {
+        "male": "/audio/part0/p0-069-m.mp3",
+        "female": "/audio/part0/p0-069-f.mp3"
+      },
+      "category": "Travel/Transportation",
+      "pronunciation": "Flight status update",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-070",
+      "text": "Where can I find a taxi stand?",
+      "textTranslation": "タクシー乗り場はどこですか？",
+      "difficulty": "beginner",
+      "wordCount": 7,
+      "topic": "旅行",
+      "audioFiles": {
+        "male": "/audio/part0/p0-070-m.mp3",
+        "female": "/audio/part0/p0-070-f.mp3"
+      },
+      "category": "Travel/Transportation",
+      "pronunciation": "Transportation inquiry",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-071",
+      "text": "We are experiencing server issues now.",
+      "textTranslation": "現在、サーバーの問題が発生しています。",
+      "difficulty": "advanced",
+      "wordCount": 6,
+      "topic": "IT",
+      "audioFiles": {
+        "male": "/audio/part0/p0-071-m.mp3",
+        "female": "/audio/part0/p0-071-f.mp3"
+      },
+      "category": "Problems/Solutions",
+      "pronunciation": "Technical problem report",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-072",
+      "text": "I will look into the problem immediately.",
+      "textTranslation": "その問題をすぐに調査します。",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-072-m.mp3",
+        "female": "/audio/part0/p0-072-f.mp3"
+      },
+      "category": "Problems/Solutions",
+      "pronunciation": "Problem response",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-073",
+      "text": "Have you completed the project yet?",
+      "textTranslation": "プロジェクトはもう完了しましたか？",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-073-m.mp3",
+        "female": "/audio/part0/p0-073-f.mp3"
+      },
+      "category": "Schedule/Time",
+      "pronunciation": "Project status inquiry",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-074",
+      "text": "The deadline is next Friday.",
+      "textTranslation": "締め切りは来週の金曜日です。",
+      "difficulty": "beginner",
+      "wordCount": 5,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-074-m.mp3",
+        "female": "/audio/part0/p0-074-f.mp3"
+      },
+      "category": "Schedule/Time",
+      "pronunciation": "Deadline reminder",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-075",
+      "text": "The copier is currently under maintenance.",
+      "textTranslation": "コピー機は現在メンテナンス中です。",
+      "difficulty": "intermediate",
+      "wordCount": 6,
+      "topic": "オフィス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-075-m.mp3",
+        "female": "/audio/part0/p0-075-f.mp3"
+      },
+      "category": "Office equipment",
+      "pronunciation": "Equipment status",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-076",
+      "text": "Please update your contact information.",
+      "textTranslation": "連絡先情報を更新してください。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-076-m.mp3",
+        "female": "/audio/part0/p0-076-f.mp3"
+      },
+      "category": "Requests/Instructions",
+      "pronunciation": "Administrative request",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-077",
+      "text": "Can you hear me clearly now?",
+      "textTranslation": "今、はっきり聞こえますか？",
+      "difficulty": "beginner",
+      "wordCount": 6,
+      "topic": "電話",
+      "audioFiles": {
+        "male": "/audio/part0/p0-077-m.mp3",
+        "female": "/audio/part0/p0-077-f.mp3"
+      },
+      "category": "Phone/Email",
+      "pronunciation": "Audio check question",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-078",
+      "text": "The hotel reservation is confirmed.",
+      "textTranslation": "ホテルの予約が確認されました。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "旅行",
+      "audioFiles": {
+        "male": "/audio/part0/p0-078-m.mp3",
+        "female": "/audio/part0/p0-078-f.mp3"
+      },
+      "category": "Travel/Transportation",
+      "pronunciation": "Reservation confirmation",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-079",
+      "text": "Let's brainstorm some solutions together.",
+      "textTranslation": "一緒に解決策を考えましょう。",
+      "difficulty": "intermediate",
+      "wordCount": 5,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-079-m.mp3",
+        "female": "/audio/part0/p0-079-f.mp3"
+      },
+      "category": "Problems/Solutions",
+      "pronunciation": "Collaboration suggestion",
+      "createdAt": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": "p0-080",
+      "text": "I have sent you the meeting agenda.",
+      "textTranslation": "会議の議題を送信しました。",
+      "difficulty": "intermediate",
+      "wordCount": 7,
+      "topic": "ビジネス",
+      "audioFiles": {
+        "male": "/audio/part0/p0-080-m.mp3",
+        "female": "/audio/part0/p0-080-f.mp3"
+      },
+      "category": "Phone/Email",
+      "pronunciation": "Email notification",
+      "createdAt": "2024-11-28T12:00:00Z"
+    }
+  ]
+}

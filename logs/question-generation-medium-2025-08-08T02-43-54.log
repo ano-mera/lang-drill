@@ -1,0 +1,147 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 2:43:54
+ログファイル: question-generation-medium-2025-08-08T02-43-54.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 175問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage152",
+  "title": "Understanding Legal Compliance in Business",
+  "type": "article",
+  "content": "In today's business environment, legal compliance is more important than ever. Companies must ensure they are following laws and regulations to avoid penalties and maintain their reputation.\n\nOne key aspect of legal compliance is understanding the regulations specific to your industry. For instance, companies in the financial sector must comply with regulations such as the Sarbanes-Oxley Act, which requires accurate financial reporting and auditing. Similarly, businesses handling personal data need to adhere to data protection laws like the GDPR in Europe.\n\nAnother critical point is implementing regular training for employees. This ensures that everyone is aware of the latest compliance requirements and understands their role in maintaining legal standards. Training sessions should cover topics such as anti-corruption policies, workplace safety, and data protection.\n\nFinally, companies should establish a compliance monitoring system. This system can help track regulatory changes and assess the company's adherence to legal standards. By regularly reviewing compliance practices, businesses can quickly identify and address any potential issues.\n\nIn conclusion, maintaining legal compliance is essential for businesses to operate successfully. By understanding industry regulations, providing employee training, and monitoring compliance, companies can safeguard their operations and uphold their reputation.",
+  "contentTranslation": "今日のビジネス環境では、法令遵守がこれまで以上に重要です。企業は、罰則を回避し、評判を維持するために法律や規制を遵守しなければなりません。\n\n法令遵守の重要な要素の一つは、自分の業界に特有の規制を理解することです。例えば、金融業界の企業は、正確な財務報告と監査を求めるサーベンス・オクスリー法などの規制を遵守しなければなりません。同様に、個人データを扱う企業は、ヨーロッパのGDPRのようなデータ保護法を遵守する必要があります。\n\nもう一つの重要なポイントは、従業員に定期的なトレーニングを実施することです。これにより、全員が最新のコンプライアンス要件を把握し、法的基準を維持する上での自分の役割を理解します。トレーニングセッションでは、腐敗防止ポリシー、職場の安全、データ保護などのトピックを扱うべきです。\n\n最後に、企業はコンプライアンス監視システムを確立するべきです。このシステムは、規制の変更を追跡し、企業の法的基準への適合性を評価するのに役立ちます。コンプライアンスの実践を定期的に見直すことで、企業は潜在的な問題を迅速に特定し、対処することができます。\n\n結論として、法令遵守を維持することは、企業が成功裏に運営するために不可欠です。業界の規制を理解し、従業員にトレーニングを提供し、コンプライアンスを監視することで、企業は自分たちの運営を保護し、評判を守ることができます。",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To explain the importance of legal compliance in business",
+        "To advertise a new compliance monitoring system",
+        "To provide financial advice for companies",
+        "To announce a change in data protection laws"
+      ],
+      "optionTranslations": [
+        "ビジネスにおける法令遵守の重要性を説明すること",
+        "新しいコンプライアンス監視システムを宣伝すること",
+        "企業向けの財務アドバイスを提供すること",
+        "データ保護法の変更を発表すること"
+      ],
+      "correct": "A",
+      "explanation": "文書は、ビジネスにおける法令遵守の重要性とその方法について説明しています。特に、業界特有の規制を理解すること、従業員のトレーニングを実施すること、コンプライアンス監視システムを確立することが重要であると述べています。"
+    },
+    {
+      "id": "q2",
+      "question": "According to the document, what specific information is mentioned about the financial sector?",
+      "questionTranslation": "文書によると、金融業界に関する具体的な情報は何ですか？",
+      "options": [
+        "They must comply with the Sarbanes-Oxley Act.",
+        "They need to follow GDPR regulations.",
+        "They are required to provide free training for employees.",
+        "They must establish a new reporting system."
+      ],
+      "optionTranslations": [
+        "彼らはサーベンス・オクスリー法を遵守しなければならない。",
+        "彼らはGDPR規則に従う必要がある。",
+        "彼らは従業員に無料のトレーニングを提供する必要がある。",
+        "彼らは新しい報告システムを確立しなければならない。"
+      ],
+      "correct": "A",
+      "explanation": "金融業界に関しては、サーベンス・オクスリー法に従わなければならないと具体的に言及されています。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided about data protection?",
+      "questionTranslation": "データ保護に関する提供された情報から推測できることは何ですか？",
+      "options": [
+        "Data protection laws are only important in Europe.",
+        "Businesses handling personal data must comply with regulations.",
+        "All companies must conduct data audits annually.",
+        "Data protection training is optional for employees."
+      ],
+      "optionTranslations": [
+        "データ保護法はヨーロッパでのみ重要である。",
+        "個人データを扱うビジネスは規制を遵守しなければならない。",
+        "すべての企業は毎年データ監査を行わなければならない。",
+        "データ保護のトレーニングは従業員にとって任意である。"
+      ],
+      "correct": "B",
+      "explanation": "文書には、個人データを扱う企業は、欧州のGDPRなどのデータ保護法を遵守する必要があると述べられています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 191,
+    "questionCount": 3,
+    "passageType": "article",
+    "topic": "legal_compliance",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "content_quality_check",
+          "timestamp": "2025-08-07T17:44:11.946Z"
+        }
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "questions_quality_check",
+          "timestamp": "2025-08-07T17:44:27.475Z"
+        }
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 176問
+🆔 実際に追加されたID: passage152
+📝 プロンプト情報: 生成=2件, 品質チェック=2件, 修正=0件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 0問
+  広告: 0問
+  記事: 1問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 2:44:29
+実行時間: 0.00秒

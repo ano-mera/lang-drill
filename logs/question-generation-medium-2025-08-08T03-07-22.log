@@ -1,0 +1,147 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/8/8 3:07:22
+ログファイル: question-generation-medium-2025-08-08T03-07-22.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 179問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage156",
+  "title": "Upcoming System Updates and Maintenance",
+  "type": "article",
+  "content": "In today's fast-paced business environment, keeping our systems up-to-date is crucial for maintaining efficiency and security. \n\nTo ensure optimal performance, we will be conducting a major system update on Saturday, November 18, from 2:00 AM to 6:00 AM. During this time, access to the company network and online services will be temporarily suspended. We apologize for any inconvenience this may cause and appreciate your understanding. \n\nThis update will introduce several enhancements, including improved security protocols, faster network speeds, and a more user-friendly interface. Additionally, new features for our project management tools will be implemented, allowing for better communication and collaboration among team members. These changes aim to streamline workflows and enhance productivity across the organization. \n\nTo prepare for the update, please save all work and log off from the network by 1:30 AM on the scheduled date. We recommend checking your system settings to ensure compatibility with the new update. If you encounter any issues post-update, please contact the IT support team immediately. \n\nWe are committed to providing a seamless experience and thank you for your cooperation. Your patience and support are greatly appreciated as we work to improve our systems. For more information, please refer to the attached chart outlining the key features of the update.",
+  "contentTranslation": "今日の急速に変化するビジネス環境において、システムを最新の状態に保つことは効率とセキュリティを維持するために重要です。\n\n最適なパフォーマンスを確保するために、11月18日土曜日の午前2時から午前6時まで、大規模なシステムアップデートを実施します。この時間帯は、会社のネットワークおよびオンラインサービスへのアクセスが一時的に停止されます。このことでご不便をおかけすることをお詫び申し上げ、ご理解いただけますようお願い申し上げます。\n\nこのアップデートでは、セキュリティプロトコルの改善、ネットワーク速度の向上、よりユーザーフレンドリーなインターフェースなど、いくつかの強化が導入されます。さらに、プロジェクト管理ツールの新機能が実装され、チームメンバー間のコミュニケーションとコラボレーションが向上します。これらの変更は、ワークフローを効率化し、組織全体の生産性を向上させることを目的としています。\n\nアップデートに備えて、すべての作業を保存し、予定された日時の午前1時30分までにネットワークからログオフしてください。新しいアップデートとの互換性を確認するために、システム設定をチェックすることをお勧めします。アップデート後に問題が発生した場合は、ITサポートチームにすぐにご連絡ください。\n\n私たちはシームレスな体験を提供することに尽力しており、ご協力に感謝いたします。システム改善に向けて、皆様のご理解とご支援を心より感謝申し上げます。詳細については、アップデートの主要機能を示す添付のチャートをご参照ください。",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "When will the major system update take place?",
+      "questionTranslation": "大規模なシステムアップデートはいつ行われますか？",
+      "options": [
+        "On Friday, November 17",
+        "On Saturday, November 18",
+        "On Sunday, November 19",
+        "On Monday, November 20"
+      ],
+      "optionTranslations": [
+        "11月17日金曜日",
+        "11月18日土曜日",
+        "11月19日日曜日",
+        "11月20日月曜日"
+      ],
+      "correct": "B",
+      "explanation": "文章中の『To ensure optimal performance, we will be conducting a major system update on Saturday, November 18, from 2:00 AM to 6:00 AM.』という記述から、システムアップデートが11月18日土曜日に行われるとわかります。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To announce a new company policy",
+        "To inform about a system update",
+        "To introduce a new product",
+        "To recruit new employees"
+      ],
+      "optionTranslations": [
+        "新しい会社方針を発表する",
+        "システムアップデートについて知らせる",
+        "新しい製品を紹介する",
+        "新しい社員を募集する"
+      ],
+      "correct": "B",
+      "explanation": "文書全体がシステムアップデートの内容と日程を知らせるものであるため、主な目的は『システムアップデートについて知らせる』ことです。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から推測できることは何ですか？",
+      "options": [
+        "The update will decrease network speeds.",
+        "The update will make the interface more complex.",
+        "The update will improve communication among team members.",
+        "The update will reduce the number of security protocols."
+      ],
+      "optionTranslations": [
+        "アップデートによりネットワーク速度が低下する。",
+        "アップデートによりインターフェースがより複雑になる。",
+        "アップデートによりチームメンバー間のコミュニケーションが改善される。",
+        "アップデートによりセキュリティプロトコルの数が減少する。"
+      ],
+      "correct": "C",
+      "explanation": "文書中の『Additionally, new features for our project management tools will be implemented, allowing for better communication and collaboration among team members.』という記述から、アップデートによりチームメンバー間のコミュニケーションが改善されることが推測されます。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 207,
+    "questionCount": 3,
+    "passageType": "article",
+    "topic": "system_updates",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "content_quality_check",
+          "timestamp": "2025-08-07T18:08:15.750Z"
+        }
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格",
+        "promptData": {
+          "response": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+          "promptType": "questions_quality_check",
+          "timestamp": "2025-08-07T18:08:29.658Z"
+        }
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 180問
+🆔 実際に追加されたID: passage156
+📝 プロンプト情報: 生成=2件, 品質チェック=3件, 修正=1件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 0問
+  広告: 0問
+  記事: 1問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/8/8 3:08:31
+実行時間: 0.00秒

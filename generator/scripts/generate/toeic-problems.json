@@ -1,0 +1,102 @@
+[
+  {
+    "text": "The meeting starts at 10 a.m.",
+    "category": "Schedule/Time",
+    "translation": "会議は午前10時に始まります。"
+  },
+  {
+    "text": "Could you confirm the appointment date?",
+    "category": "Schedule/Time",
+    "translation": "予約日を確認していただけますか？"
+  },
+  {
+    "text": "The printer is out of paper.",
+    "category": "Office equipment",
+    "translation": "プリンターに紙がありません。"
+  },
+  {
+    "text": "Please reboot the computer now.",
+    "category": "Office equipment",
+    "translation": "今すぐコンピューターを再起動してください。"
+  },
+  {
+    "text": "Could you send the report by email?",
+    "category": "Requests/Instructions",
+    "translation": "その報告書をメールで送っていただけますか？"
+  },
+  {
+    "text": "Please follow the instructions carefully.",
+    "category": "Requests/Instructions",
+    "translation": "指示を注意深くお守りください。"
+  },
+  {
+    "text": "May I speak to Mr. Tanaka?",
+    "category": "Phone/Email",
+    "translation": "田中さんとお話しできますか？"
+  },
+  {
+    "text": "I’ll forward the email to you.",
+    "category": "Phone/Email",
+    "translation": "そのメールをあなたに転送します。"
+  },
+  {
+    "text": "The flight has been delayed again.",
+    "category": "Travel/Transportation",
+    "translation": "フライトが再び遅れています。"
+  },
+  {
+    "text": "Where can I find a taxi stand?",
+    "category": "Travel/Transportation",
+    "translation": "タクシー乗り場はどこですか？"
+  },
+  {
+    "text": "We are experiencing server issues now.",
+    "category": "Problems/Solutions",
+    "translation": "現在、サーバーの問題が発生しています。"
+  },
+  {
+    "text": "I will look into the problem immediately.",
+    "category": "Problems/Solutions",
+    "translation": "その問題をすぐに調査します。"
+  },
+  {
+    "text": "Have you completed the project yet?",
+    "category": "Schedule/Time",
+    "translation": "プロジェクトはもう完了しましたか？"
+  },
+  {
+    "text": "The deadline is next Friday.",
+    "category": "Schedule/Time",
+    "translation": "締め切りは来週の金曜日です。"
+  },
+  {
+    "text": "The copier is currently under maintenance.",
+    "category": "Office equipment",
+    "translation": "コピー機は現在メンテナンス中です。"
+  },
+  {
+    "text": "Please update your contact information.",
+    "category": "Requests/Instructions",
+    "translation": "連絡先情報を更新してください。"
+  },
+  {
+    "text": "Can you hear me clearly now?",
+    "category": "Phone/Email",
+    "translation": "今、はっきり聞こえますか？"
+  },
+  {
+    "text": "The hotel reservation is confirmed.",
+    "category": "Travel/Transportation",
+    "translation": "ホテルの予約が確認されました。"
+  },
+  {
+    "text": "Let's brainstorm some solutions together.",
+    "category": "Problems/Solutions",
+    "translation": "一緒に解決策を考えましょう。"
+  },
+  {
+    "text": "I have sent you the meeting agenda.",
+    "category": "Phone/Email",
+    "translation": "会議の議題を送信しました。"
+  }
+]

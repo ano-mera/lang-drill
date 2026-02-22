@@ -1,0 +1,123 @@
+{
+  "oldVoiceId": "CYw3kZ02Hs0563khs1Fj",
+  "newVoiceId": "IKne3meq5aSn9XLyUdCD",
+  "targetQuestions": [
+    "part1_178",
+    "part1_191",
+    "part1_258"
+  ],
+  "totalAudioFiles": 0,
+  "questionsData": [
+    {
+      "id": "part1_178",
+      "voiceProfile": {
+        "voiceId": "CYw3kZ02Hs0563khs1Fj",
+        "gender": "male",
+        "accent": "Australian",
+        "country": "🇦🇺",
+        "age": "young",
+        "tone": "relaxed"
+      },
+      "audioFiles": [
+        {
+          "option": "A",
+          "text": "Three employees are working on different tasks.",
+          "audioPath": "/audio/part1/part1_178_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "A man is presenting to a large audience.",
+          "audioPath": "/audio/part1/part1_178_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "A group is having lunch in the cafeteria.",
+          "audioPath": "/audio/part1/part1_178_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        },
+        {
+          "option": "D",
+          "text": "Several people are boarding a train together.",
+          "audioPath": "/audio/part1/part1_178_option_d.mp3",
+          "labelAudioPath": "/audio/labels/option_d.mp3"
+        }
+      ]
+    },
+    {
+      "id": "part1_191",
+      "voiceProfile": {
+        "voiceId": "CYw3kZ02Hs0563khs1Fj",
+        "gender": "male",
+        "accent": "Australian",
+        "country": "🇦🇺",
+        "age": "young",
+        "tone": "relaxed"
+      },
+      "audioFiles": [
+        {
+          "option": "A",
+          "text": "A stylist is washing a client's hair.",
+          "audioPath": "/audio/part1/part1_191_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "A customer is paying at the front desk.",
+          "audioPath": "/audio/part1/part1_191_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Hair products are scattered on the floor.",
+          "audioPath": "/audio/part1/part1_191_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        },
+        {
+          "option": "D",
+          "text": "A stylist is trimming a client's hair.",
+          "audioPath": "/audio/part1/part1_191_option_d.mp3",
+          "labelAudioPath": "/audio/labels/option_d.mp3"
+        }
+      ]
+    },
+    {
+      "id": "part1_258",
+      "voiceProfile": {
+        "voiceId": "CYw3kZ02Hs0563khs1Fj",
+        "gender": "male",
+        "accent": "Australian",
+        "country": "🇦🇺",
+        "age": "young",
+        "tone": "relaxed"
+      },
+      "audioFiles": [
+        {
+          "option": "A",
+          "text": "A woman is sitting next to a bicycle.",
+          "audioPath": "/audio/part1/part1_258_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "A man is fixing a flat tire on his bike.",
+          "audioPath": "/audio/part1/part1_258_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Cars are visible in the background.",
+          "audioPath": "/audio/part1/part1_258_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        },
+        {
+          "option": "D",
+          "text": "A woman is riding a bicycle on the road.",
+          "audioPath": "/audio/part1/part1_258_option_d.mp3",
+          "labelAudioPath": "/audio/labels/option_d.mp3"
+        }
+      ]
+    }
+  ]
+}

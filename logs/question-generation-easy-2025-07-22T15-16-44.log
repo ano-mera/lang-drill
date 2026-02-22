@@ -1,0 +1,100 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/22 15:16:44
+ログファイル: question-generation-easy-2025-07-22T15-16-44.log
+モード: テスト出力
+難易度: EASY難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage1",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Meeting Schedule Confirmation\n\nDear Ms. Tanaka,\n\nI hope this message finds you well. I am writing to confirm our meeting scheduled for next Wednesday, November 15th, at 10:00 AM. The meeting will take place in Conference Room B on the second floor of our main office building.\n\nPlease let me know if this time is still convenient for you. If there are any changes or additional items you would like to discuss, feel free to contact me before the meeting.\n\nThank you and looking forward to our discussion.\n\nBest regards,\nJohn Smith",
+  "contentTranslation": "件名: 会議スケジュールの確認\n\n田中様\n\nお元気でお過ごしでしょうか。来週水曜日、11月15日午前10時に予定している会議の確認のためご連絡いたします。会議は本社ビル2階の会議室Bで行います。\n\nこの時間でのご都合はいかがでしょうか。変更や追加で話し合いたい項目がありましたら、会議前にご連絡ください。\n\nありがとうございます。それでは当日お会いできるのを楽しみにしております。\n\nよろしくお願いいたします。\nジョン・スミス",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To confirm a meeting schedule",
+        "To introduce a new conference room",
+        "To change the meeting time",
+        "To discuss new business strategies"
+      ],
+      "optionTranslations": [
+        "会議のスケジュールを確認すること",
+        "新しい会議室を紹介すること",
+        "会議の時間を変更すること",
+        "新しいビジネス戦略を議論すること"
+      ],
+      "correct": "A",
+      "explanation": "文書は、次の水曜日に予定されている会議の時間を確認するために書かれています。メールの冒頭でそのことが明示されています。"
+    },
+    {
+      "id": "q2",
+      "question": "Where will the meeting be held?",
+      "questionTranslation": "会議はどこで行われますか？",
+      "options": [
+        "Conference Room A",
+        "Conference Room B",
+        "The main lobby",
+        "The third floor"
+      ],
+      "optionTranslations": [
+        "会議室A",
+        "会議室B",
+        "メインロビー",
+        "3階"
+      ],
+      "correct": "B",
+      "explanation": "会議はメインオフィスビルの2階にある会議室Bで行われると記載されています。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred about the meeting time?",
+      "questionTranslation": "会議の時間について何が推測できますか？",
+      "options": [
+        "It is likely to be rescheduled.",
+        "It is convenient for Ms. Tanaka.",
+        "It might be changed if necessary.",
+        "It is set for the afternoon."
+      ],
+      "optionTranslations": [
+        "再スケジュールされる可能性が高い",
+        "田中さんにとって都合が良い",
+        "必要に応じて変更されるかもしれない",
+        "午後に設定されている"
+      ],
+      "correct": "C",
+      "explanation": "メールには、田中さんにとってこの時間が都合が良いか確認するよう依頼する文があります。必要であれば、時間が変更される可能性があることを示唆しています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "easy",
+    "estimatedTime": 300,
+    "wordCount": 93,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+🧪 テストモード: 問題データベースには追加されません
+
+=== 実行完了 ===
+終了時刻: 2025/7/22 15:16:59
+実行時間: 0.00秒

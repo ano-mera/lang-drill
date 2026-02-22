@@ -1,0 +1,257 @@
+[
+  {
+    "timestamp": "2025-08-25T01:05:22.658Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":5,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 5,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:22.764Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Job opportunity or recruitment pitch (採用・求人のお知らせ)\n【Industry】: Real Estate (不動産)\n【Difficulty】: hard\n【Question Types】: next_action, main_purpose, detail\n【Correct Answer Positions】: Question 1=D, Question 2=A, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:29.265Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Recruitment Manager\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good morning, everyone. I'm pleased to announce that we are expanding our team and are currently seeking talented individuals for various positions within our real estate company. As a leader in the industry, we are looking for dynamic and driven professionals who have a strong passion for real estate and customer service. Positions available range from sales associates to property managers, each requiring excellent communication skills and a keen eye for detail. We offer comprehensive training programs and competitive benefits packages to help you excel in your career. If you are interested, please visit our website to apply and learn more about the roles and requirements. We look forward to welcoming new members who will contribute to our continuing success.\",\n    \"topic\": \"Real estate job opportunities and recruitment\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What should interested candidates do next?\",\n      \"options\": [\n        \"Call the office directly.\",\n        \"Send an email to the HR department.\",\n        \"Attend an upcoming job fair.\",\n        \"Visit the website to apply and learn more.\"\n      ],\n      \"correct\": \"Visit the website to apply and learn more.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチで、候補者が興味を持った場合、求人情報をウェブサイトで確認し応募するように言及しています。\",\n      \"questionType\": \"next_action\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\n        \"To inform about job openings in a real estate company.\",\n        \"To announce a new real estate project.\",\n        \"To provide training schedules for sales associates.\",\n        \"To detail the benefits packages for existing employees.\"\n      ],\n      \"correct\": \"To inform about job openings in a real estate company.\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチの目的は、不動産会社での求人情報を提供することです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What does the company offer to successful candidates?\",\n      \"options\": [\n        \"Low-interest home loans.\",\n        \"Discounts on property purchases.\",\n        \"Flexible working hours.\",\n        \"Comprehensive training and competitive benefits.\"\n      ],\n      \"correct\": \"Comprehensive training and competitive benefits.\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、成功した候補者には包括的なトレーニングプログラムと競争力のある福利厚生が提供されると説明しています。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:29.266Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood morning, everyone. I'm pleased to announce that we are expanding our team and are currently seeking talented individuals for various positions within our real estate company. As a leader in the industry, we are looking for dynamic and driven professionals who have a strong passion for real estate and customer service. Positions available range from sales associates to property managers, each requiring excellent communication skills and a keen eye for detail. We offer comprehensive training programs and competitive benefits packages to help you excel in your career. If you are interested, please visit our website to apply and learn more about the roles and requirements. We look forward to welcoming new members who will contribute to our continuing success.\n\nQuestions and Options:\nQuestion 1: What should interested candidates do next?\nOptions:\nA: Call the office directly.\nB: Send an email to the HR department.\nC: Attend an upcoming job fair.\nD: Visit the website to apply and learn more.\n\nQuestion 2: What is the main purpose of this announcement?\nOptions:\nA: To inform about job openings in a real estate company.\nB: To announce a new real estate project.\nC: To provide training schedules for sales associates.\nD: To detail the benefits packages for existing employees.\n\nQuestion 3: What does the company offer to successful candidates?\nOptions:\nA: Low-interest home loans.\nB: Discounts on property purchases.\nC: Flexible working hours.\nD: Comprehensive training and competitive benefits.\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:35.038Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"おはようございます、皆さん。当社不動産会社では、チームを拡大し、様々なポジションにおいて才能ある人材を募集していることをお知らせいたします。当社は業界のリーダーとして、不動産と顧客サービスに強い情熱を持つ、ダイナミックで意欲的なプロフェッショナルを求めています。販売担当者から不動産管理者までのポジションは、いずれも優れたコミュニケーション能力と細部への注意力が必要です。私たちは、キャリアで成功するための包括的な研修プログラムと競争力のある福利厚生パッケージを提供いたします。ご興味のある方は、当社のウェブサイトにアクセスして応募および役職や要件の詳細をご確認ください。新しいメンバーを迎え入れ、私たちの継続的な成功に貢献していただけることを楽しみにしております。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"興味のある候補者が次にすべきことは何ですか？\",\n      \"optionTranslations\": [\n        \"オフィスに直接電話をかける。\",\n        \"人事部にメールを送る。\",\n        \"今後の就職イベントに参加する。\",\n        \"ウェブサイトを訪れて応募し、詳細を確認する。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このお知らせの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"不動産会社の求人を知らせること。\",\n        \"新しい不動産プロジェクトを発表すること。\",\n        \"販売担当者の研修スケジュールを提供すること。\",\n        \"既存社員の福利厚生パッケージの詳細を提供すること。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"会社が成功した候補者に提供するものは何ですか？\",\n      \"optionTranslations\": [\n        \"低金利の住宅ローン。\",\n        \"不動産購入の割引。\",\n        \"柔軟な勤務時間。\",\n        \"包括的な研修と競争力のある福利厚生。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:46.619Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: System maintenance announcement (システム保守案内)\n【Industry】: Security Services (警備・セキュリティ)\n【Difficulty】: hard\n【Question Types】: inference, speaker_role, detail\n【Correct Answer Positions】: Question 1=C, Question 2=D, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:52.959Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Systems Administrator\",\n      \"role\": \"System Maintenance Manager\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Good evening, everyone. This is your Systems Administrator calling. We are scheduled to perform critical upgrades to our security monitoring software from midnight tonight to 4 a.m. During this time, access to live camera feeds and alarm notification systems will be temporarily suspended, although all automatic recording functions will remain operational. We advise all security personnel to rely on recorded footage if necessary and to ensure all security protocols are strictly followed. If you encounter any issues once the system is back online, please contact the IT helpdesk immediately. We apologize for any inconvenience this maintenance may cause and appreciate your understanding and cooperation.\",\n    \"topic\": \"Scheduled Security System Maintenance\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Why is access to live camera feeds being suspended?\",\n      \"options\": [\n        \"To install new hardware\",\n        \"To prevent data breaches\",\n        \"To perform software upgrades\",\n        \"To reduce network congestion\"\n      ],\n      \"correct\": \"To perform software upgrades\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチでは、今夜の深夜から午前4時までの間に、セキュリティモニタリングソフトの重要なアップグレードが行われると述べられている。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the speaker's role in the company?\",\n      \"options\": [\n        \"Security Guard\",\n        \"IT Support Specialist\",\n        \"Network Technician\",\n        \"System Maintenance Manager\"\n      ],\n      \"correct\": \"System Maintenance Manager\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーカーはシステム管理者であり、システム保守のアップデートを監督していることがスピーチの内容からわかる。\",\n      \"questionType\": \"speaker_role\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What should security personnel do during the maintenance?\",\n      \"options\": [\n        \"Halt all surveillance activities\",\n        \"Record manual footage\",\n        \"Ignore alarm notifications\",\n        \"Follow security protocols strictly\"\n      ],\n      \"correct\": \"Follow security protocols strictly\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーチでは、保守が行われている間、すべてのセキュリティプロトコルを厳守するよう勧告している。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:52.963Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood evening, everyone. This is your Systems Administrator calling. We are scheduled to perform critical upgrades to our security monitoring software from midnight tonight to 4 a.m. During this time, access to live camera feeds and alarm notification systems will be temporarily suspended, although all automatic recording functions will remain operational. We advise all security personnel to rely on recorded footage if necessary and to ensure all security protocols are strictly followed. If you encounter any issues once the system is back online, please contact the IT helpdesk immediately. We apologize for any inconvenience this maintenance may cause and appreciate your understanding and cooperation.\n\nQuestions and Options:\nQuestion 1: Why is access to live camera feeds being suspended?\nOptions:\nA: To install new hardware\nB: To prevent data breaches\nC: To perform software upgrades\nD: To reduce network congestion\n\nQuestion 2: What is the speaker's role in the company?\nOptions:\nA: Security Guard\nB: IT Support Specialist\nC: Network Technician\nD: System Maintenance Manager\n\nQuestion 3: What should security personnel do during the maintenance?\nOptions:\nA: Halt all surveillance activities\nB: Record manual footage\nC: Ignore alarm notifications\nD: Follow security protocols strictly\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:05:56.870Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"こんばんは、皆様。システム管理者です。今夜の真夜中から午前4時まで、セキュリティ監視ソフトウェアの重要なアップグレードを実施する予定です。この間、ライブカメラフィードおよびアラーム通知システムへのアクセスは一時的に中断されますが、自動録画機能はすべて正常に動作します。必要に応じてすべての録画映像を頼り、全セキュリティプロトコルを厳守するよう警備員の皆様にお願い申し上げます。システムが再稼働後に問題が発生した場合は、すぐにITヘルプデスクにご連絡ください。点検によるご不便をおかけして申し訳ありませんが、ご理解とご協力に感謝いたします。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"なぜライブカメラフィードへのアクセスが中断されるのですか？\",\n      \"optionTranslations\": [\n        \"新しいハードウェアをインストールするため\",\n        \"データ漏洩を防ぐため\",\n        \"ソフトウェアのアップグレードを実施するため\",\n        \"ネットワークの混雑を減らすため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"話している人の会社での役割は何ですか？\",\n      \"optionTranslations\": [\n        \"警備員\",\n        \"ITサポートスペシャリスト\",\n        \"ネットワーク技術者\",\n        \"システム保守管理者\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"メンテナンス中、警備員は何をすべきですか？\",\n      \"optionTranslations\": [\n        \"すべての監視活動を停止する\",\n        \"手動で映像を記録する\",\n        \"アラーム通知を無視する\",\n        \"セキュリティプロトコルを厳重に従う\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:06.735Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Media or entertainment promotion (メディア・番組の宣伝)\n【Industry】: Education (教育)\n【Difficulty】: hard\n【Question Types】: detail, intended_audience, inference\n【Correct Answer Positions】: Question 1=A, Question 2=B, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:13.205Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Announcer\",\n      \"role\": \"Educational Program Coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, listeners. I'm excited to introduce a new educational series, \\\"Beyond the Classroom,\\\" set to premiere on EduTV this coming Monday. The show delves into innovative teaching methods, exploring successful case studies from across the globe. Each episode features interviews with educators who have transformed their teaching styles to engage students more effectively. Our aim is not only to inspire teachers but also provide practical tools for immediate use in their classrooms. Catch the first episode this Monday at 8 PM. Stay tuned to EduTV and join us on a journey to revolutionize education.\",\n    \"topic\": \"Promotion of a new educational TV program\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main focus of the program \\\"Beyond the Classroom\\\"?\",\n      \"options\": [\n        \"Innovative teaching methods\",\n        \"Literature analysis techniques\",\n        \"Financial literacy for educators\",\n        \"Student exchange programs\"\n      ],\n      \"correct\": \"Innovative teaching methods\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチでは、番組が革新的な指導方法を探求することに焦点を当てていると述べられています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is likely the intended audience for this TV program?\",\n      \"options\": [\n        \"Parents of young children\",\n        \"Educators and teachers\",\n        \"Corporate trainers\",\n        \"Students preparing for exams\"\n      ],\n      \"correct\": \"Educators and teachers\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチは教師を啓発し、実用的なツールを提供することを目的としているため、この番組の対象は教育者や教師です。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What can be inferred about the educational series from the announcement?\",\n      \"options\": [\n        \"It includes episodes on financial planning\",\n        \"Episodes are broadcasted daily\",\n        \"It features global educational leaders\",\n        \"The program is geared towards younger audiences\"\n      ],\n      \"correct\": \"It features global educational leaders\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチでは、国際的な成功事例を紹介し、教育者とのインタビューを含むと述べられており、世界的な教育リーダーを取り上げていると推測できます。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:13.208Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood afternoon, listeners. I'm excited to introduce a new educational series, \"Beyond the Classroom,\" set to premiere on EduTV this coming Monday. The show delves into innovative teaching methods, exploring successful case studies from across the globe. Each episode features interviews with educators who have transformed their teaching styles to engage students more effectively. Our aim is not only to inspire teachers but also provide practical tools for immediate use in their classrooms. Catch the first episode this Monday at 8 PM. Stay tuned to EduTV and join us on a journey to revolutionize education.\n\nQuestions and Options:\nQuestion 1: What is the main focus of the program \"Beyond the Classroom\"?\nOptions:\nA: Innovative teaching methods\nB: Literature analysis techniques\nC: Financial literacy for educators\nD: Student exchange programs\n\nQuestion 2: Who is likely the intended audience for this TV program?\nOptions:\nA: Parents of young children\nB: Educators and teachers\nC: Corporate trainers\nD: Students preparing for exams\n\nQuestion 3: What can be inferred about the educational series from the announcement?\nOptions:\nA: It includes episodes on financial planning\nB: Episodes are broadcasted daily\nC: It features global educational leaders\nD: The program is geared towards younger audiences\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:18.185Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"こんにちは、皆さん。新しい教育シリーズ『教室を超えて』を、今度の月曜日にEduTVで初公開することをお知らせできることを非常にうれしく思います。この番組は、世界中で成功しているケーススタディを探り、革新的な教育方法を紹介します。各エピソードでは、生徒への関与をより効果的にするために教育スタイルを変革した教育者へのインタビューを特集します。我々の目的は教師を奮起させるだけでなく、教室ですぐに使える実践的なツールを提供することです。初回放送は今度の月曜日午後8時です。EduTVでぜひご覧いただき、教育を革新する旅に参加してください。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"プログラム『教室を超えて』の主な焦点は何ですか？\",\n      \"optionTranslations\": [\n        \"革新的な教育方法\",\n        \"文学分析の技術\",\n        \"教育者向けの金融リテラシー\",\n        \"学生交換プログラム\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このテレビ番組の対象となる主な視聴者は誰ですか？\",\n      \"optionTranslations\": [\n        \"幼児の親\",\n        \"教育者や教師\",\n        \"企業トレーナー\",\n        \"試験準備中の学生\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この教育シリーズについて発表から推測できることは何ですか？\",\n      \"optionTranslations\": [\n        \"財務計画に関するエピソードが含まれる\",\n        \"エピソードは毎日放送される\",\n        \"世界的な教育リーダーが特集される\",\n        \"プログラムは若い視聴者を対象としている\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:25.310Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Public event announcement (公共イベントの案内)\n【Industry】: IT Services (ITサービス)\n【Difficulty】: hard\n【Question Types】: main_purpose, inference, speaker_role\n【Correct Answer Positions】: Question 1=B, Question 2=C, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:33.341Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Event Coordinator\",\n      \"role\": \"Event coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon everyone. I'm delighted to welcome you to the annual Future Tech Summit, where we delve into the latest advancements in the IT services sector. Over the next two days, you'll have the opportunity to explore cutting-edge innovations through a series of keynote addresses, interactive sessions, and networking panels. We kick off our event with Dr. James Elwood, a pioneer in cloud computing, at 10 AM in the Grand Ballroom. Additionally, please don't miss the panel discussion at 2 PM where industry leaders will discuss how artificial intelligence is reshaping the way we engage with technology. Make sure to download the event app from our website for all the detailed schedules and updates. Thank you for your participation, and enjoy the summit.\",\n    \"topic\": \"Annual Future Tech Summit introduction and schedule\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the speech?\",\n      \"options\": [\n        \"To provide detailed technical insights\",\n        \"To introduce and outline the Future Tech Summit agenda\",\n        \"To discuss the history of IT services events\",\n        \"To advertise IT products being launched\"\n      ],\n      \"correct\": \"To introduce and outline the Future Tech Summit agenda\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチは、Future Tech Summitの概要と予定を説明しているためです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What can be inferred about the event from the speech?\",\n      \"options\": [\n        \"It is primarily focused on historical internet technologies.\",\n        \"It will end with a social networking event.\",\n        \"It involves discussions on future technological innovations.\",\n        \"It is a closed event for internal company members.\"\n      ],\n      \"correct\": \"It involves discussions on future technological innovations.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチ中に未来の技術革新に関する議論があることが示されているためです。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is the role of the speaker?\",\n      \"options\": [\n        \"Keynote Speaker\",\n        \"IT Service Technician\",\n        \"Technology Product Developer\",\n        \"Event coordinator\"\n      ],\n      \"correct\": \"Event coordinator\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"スピーカーはイベントのコーディネーターであり、イベントの進行を案内しているためです。\",\n      \"questionType\": \"speaker_role\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:33.344Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood afternoon everyone. I'm delighted to welcome you to the annual Future Tech Summit, where we delve into the latest advancements in the IT services sector. Over the next two days, you'll have the opportunity to explore cutting-edge innovations through a series of keynote addresses, interactive sessions, and networking panels. We kick off our event with Dr. James Elwood, a pioneer in cloud computing, at 10 AM in the Grand Ballroom. Additionally, please don't miss the panel discussion at 2 PM where industry leaders will discuss how artificial intelligence is reshaping the way we engage with technology. Make sure to download the event app from our website for all the detailed schedules and updates. Thank you for your participation, and enjoy the summit.\n\nQuestions and Options:\nQuestion 1: What is the main purpose of the speech?\nOptions:\nA: To provide detailed technical insights\nB: To introduce and outline the Future Tech Summit agenda\nC: To discuss the history of IT services events\nD: To advertise IT products being launched\n\nQuestion 2: What can be inferred about the event from the speech?\nOptions:\nA: It is primarily focused on historical internet technologies.\nB: It will end with a social networking event.\nC: It involves discussions on future technological innovations.\nD: It is a closed event for internal company members.\n\nQuestion 3: What is the role of the speaker?\nOptions:\nA: Keynote Speaker\nB: IT Service Technician\nC: Technology Product Developer\nD: Event coordinator\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:40.047Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆様、こんにちは。年次Future Tech Summitにお迎えできることを大変嬉しく思います。このサミットでは、ITサービス分野での最新の進展を探求します。今後2日間にわたり、基調講演、インタラクティブセッション、ネットワーキングパネルを通じて最先端のイノベーションを体験していただけます。イベントは10時にグランドボールルームで、クラウドコンピューティングの先駆者であるジェームズ・エルウッド博士の講演から始まります。午後2時には、業界のリーダーたちが人工知能がどのように技術との関わり方を変えているかについて議論するパネルディスカッションをぜひお見逃しなく。イベントの詳細なスケジュールや最新情報は、ウェブサイトからアプリをダウンロードしてご覧ください。ご参加いただき誠にありがとうございます。サミットをお楽しみください。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"スピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"詳細な技術的知見を提供すること\",\n        \"Future Tech Summitのアジェンダを紹介し概要を説明すること\",\n        \"ITサービスイベントの歴史を議論すること\",\n        \"発売されるIT製品を宣伝すること\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"スピーチからイベントについて推測できることは何ですか？\",\n      \"optionTranslations\": [\n        \"主に歴史的なインターネット技術に焦点を当てている\",\n        \"ソーシャルネットワーキングイベントで終了する\",\n        \"未来の技術革新についての議論を含む\",\n        \"社内メンバーのみのクローズドイベントである\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"話者の役割は何ですか？\",\n      \"optionTranslations\": [\n        \"基調講演者\",\n        \"ITサービス技術者\",\n        \"技術製品開発者\",\n        \"イベントコーディネーター\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:49.472Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Job opportunity or recruitment pitch (採用・求人のお知らせ)\n【Industry】: Finance and Banking (金融・銀行)\n【Difficulty】: hard\n【Question Types】: main_purpose, detail, intended_audience\n【Correct Answer Positions】: Question 1=B, Question 2=B, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:56.244Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Recruitment Manager\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good afternoon, everyone. I'm pleased to announce an exciting opportunity with Magnus Financial Group, a leader in the global banking industry. We are currently seeking highly motivated individuals to join our dynamic team of financial analysts. In this role, you will be responsible for conducting meticulous market research and providing insightful investment advice. Ideal candidates should possess a deep understanding of financial instruments and have at least three years of experience in a similar position. As part of Magnus, you'll have the chance to work alongside some of the most skilled professionals in the field, as well as enjoy competitive benefits and ample opportunities for career advancement. Interested applicants are encouraged to submit their resumes to our recruitment portal by the end of the month.\",\n    \"topic\": \"Recruitment opportunity at Magnus Financial Group\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is the main purpose of the speech?\",\n      \"options\": [\n        \"To announce a company merger\",\n        \"To recruit financial analysts for Magnus Financial Group\",\n        \"To introduce a new banking service\",\n        \"To inform about an upcoming financial seminar\"\n      ],\n      \"correct\": \"To recruit financial analysts for Magnus Financial Group\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"話者は求人情報を提供し、分析官を募集していることを強調している。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is required from the ideal candidates?\",\n      \"options\": [\n        \"Experience in managing teams\",\n        \"At least three years of experience in a similar position\",\n        \"Knowledge of foreign languages\",\n        \"Background in customer service\"\n      ],\n      \"correct\": \"At least three years of experience in a similar position\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"３年以上の経験が必要であることが明示されている。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Who is the intended audience for this speech?\",\n      \"options\": [\n        \"Potential job applicants\",\n        \"Current employees of Magnus Financial Group\",\n        \"Investors looking for market insights\",\n        \"Clients interested in new financial products\"\n      ],\n      \"correct\": \"Potential job applicants\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"採用と求人情報に関する内容であるため、求職者が対象。\",\n      \"questionType\": \"intended_audience\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:06:56.250Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nGood afternoon, everyone. I'm pleased to announce an exciting opportunity with Magnus Financial Group, a leader in the global banking industry. We are currently seeking highly motivated individuals to join our dynamic team of financial analysts. In this role, you will be responsible for conducting meticulous market research and providing insightful investment advice. Ideal candidates should possess a deep understanding of financial instruments and have at least three years of experience in a similar position. As part of Magnus, you'll have the chance to work alongside some of the most skilled professionals in the field, as well as enjoy competitive benefits and ample opportunities for career advancement. Interested applicants are encouraged to submit their resumes to our recruitment portal by the end of the month.\n\nQuestions and Options:\nQuestion 1: What is the main purpose of the speech?\nOptions:\nA: To announce a company merger\nB: To recruit financial analysts for Magnus Financial Group\nC: To introduce a new banking service\nD: To inform about an upcoming financial seminar\n\nQuestion 2: What is required from the ideal candidates?\nOptions:\nA: Experience in managing teams\nB: At least three years of experience in a similar position\nC: Knowledge of foreign languages\nD: Background in customer service\n\nQuestion 3: Who is the intended audience for this speech?\nOptions:\nA: Potential job applicants\nB: Current employees of Magnus Financial Group\nC: Investors looking for market insights\nD: Clients interested in new financial products\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-25T01:07:00.673Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"皆さん、こんにちは。私は、グローバル銀行業界のリーダーであるマグナス・ファイナンシャル・グループにおけるエキサイティングな機会をお知らせできることを嬉しく思います。当社は現在、意欲ある人物を当社のダイナミックな金融アナリストチームに加えるべく募集しております。この役割では、徹底的な市場調査を行い、洞察に満ちた投資アドバイスを提供する責任があります。理想的な候補者は、金融商品に対する深い理解を持ち、同様の職種で少なくとも3年の経験を持っているべきです。マグナスの一員として、業界で最も優れた専門家の一部と共に働くチャンスがあるとともに、競争力のある福利厚生やキャリアアップの機会を享受できます。興味のある方は、月末までに当社の採用ポータルに履歴書を提出することをお勧めします。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"スピーチの主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"会社の合併を発表するため\",\n        \"マグナス・ファイナンシャル・グループの金融アナリストを募集するため\",\n        \"新しい銀行サービスを紹介するため\",\n        \"今後の金融セミナーについて知らせるため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"理想的な候補者に求められるものは何ですか？\",\n      \"optionTranslations\": [\n        \"チームを管理する経験\",\n        \"同様の職種で少なくとも3年の経験\",\n        \"外国語の知識\",\n        \"カスタマーサービスのバックグラウンド\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"このスピーチの対象となる聴衆は誰ですか？\",\n      \"optionTranslations\": [\n        \"潜在的な応募者\",\n        \"マグナス・ファイナンシャル・グループの現従業員\",\n        \"市場の洞察を求める投資家\",\n        \"新しい金融商品に興味のある顧客\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

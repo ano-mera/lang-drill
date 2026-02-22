@@ -1,0 +1,137 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 12:02:30
+ログファイル: question-generation-medium-2025-07-25T12-02-30.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 168問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage145",
+  "title": "Meeting Scheduling Request",
+  "type": "email",
+  "content": "Subject: Request to Schedule a Project Meeting\n\nDear Team,\n\nI hope this message finds you well. I am writing to propose a meeting to discuss the upcoming project timeline and deliverables. Could we tentatively schedule this meeting for next Wednesday at 3:00 PM? Please let me know if this time works for everyone or suggest an alternative.\n\nThe meeting will take place in the main conference room on the third floor. We aim to cover the key milestones, assign responsibilities, and address any potential challenges. To facilitate our discussion, I have attached a preliminary agenda outlining the topics we will cover, as well as a timeline for the project phases.\n\nIn preparation for the meeting, please bring any relevant materials or questions you might have. It would be beneficial for everyone to review the attached documents beforehand to ensure a productive discussion.\n\nKindly confirm your availability by the end of this week so we can finalize the arrangements. If you have any additional topics you would like to discuss, feel free to share them in your response.\n\nThank you for your cooperation.\n\nBest regards,\n\nJohn Smith\nProject Manager",
+  "contentTranslation": "件名: プロジェクト会議のスケジュール調整のお願い\n\nチームの皆さんへ、\n\nこのメッセージが皆さんに届いていることを願っています。今後のプロジェクトのタイムラインと成果物について話し合うための会議を提案したく、連絡しました。この会議を来週の水曜日の午後3時に仮に予定できるでしょうか？この時間が皆さんに合うかどうかお知らせいただくか、代替案を提案してください。\n\n会議は3階のメイン会議室で行います。私たちは主要なマイルストーンをカバーし、責任を割り当て、潜在的な課題に対処することを目指しています。議論を円滑に進めるために、カバーするトピックを概説した予備的な議題を添付しました。また、プロジェクトの各フェーズのタイムラインも含まれています。\n\n会議に向けて、関連資料や質問を持参してください。皆さんが添付された文書を事前に確認することで、生産的な議論ができると思います。\n\n今週の終わりまでに出席可能かどうか確認してください。最終的な手配を進めるために、他に話し合いたいトピックがあれば、返信でお知らせください。\n\nご協力ありがとうございます。\n\n敬具、\n\nジョン・スミス\nプロジェクトマネージャー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "When is the project meeting tentatively scheduled to take place?",
+      "questionTranslation": "プロジェクト会議は仮にいつ開催される予定ですか？",
+      "options": [
+        "Next Monday at 3:00 PM",
+        "Next Tuesday at 3:00 PM",
+        "Next Wednesday at 3:00 PM",
+        "Next Thursday at 3:00 PM"
+      ],
+      "optionTranslations": [
+        "次の月曜日の午後3時",
+        "次の火曜日の午後3時",
+        "次の水曜日の午後3時",
+        "次の木曜日の午後3時"
+      ],
+      "correct": "C",
+      "explanation": "メールの中で、ジョン・スミスは会議を「next Wednesday at 3:00 PM」と提案しています。"
+    },
+    {
+      "id": "q2",
+      "question": "According to the document, what should team members bring to the meeting?",
+      "questionTranslation": "文書によると、チームメンバーは会議に何を持ってくるべきですか？",
+      "options": [
+        "Their laptops",
+        "Questions and relevant materials",
+        "Lunch",
+        "Projector"
+      ],
+      "optionTranslations": [
+        "ノートパソコン",
+        "質問と関連資料",
+        "昼食",
+        "プロジェクター"
+      ],
+      "correct": "B",
+      "explanation": "メールには「please bring any relevant materials or questions」と記載されています。"
+    },
+    {
+      "id": "q3",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To cancel a scheduled meeting",
+        "To arrange a project meeting",
+        "To announce a new project",
+        "To provide a project update"
+      ],
+      "optionTranslations": [
+        "予定されていた会議をキャンセルすること",
+        "プロジェクト会議を手配すること",
+        "新しいプロジェクトを発表すること",
+        "プロジェクトの進捗を提供すること"
+      ],
+      "correct": "B",
+      "explanation": "メールの目的は、次の週の水曜日に行われるプロジェクト会議のスケジュールを提案することです。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 188,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling",
+    "qualityCheck": {
+      "passed": true,
+      "score": 95,
+      "issues": [],
+      "recommendation": "合格",
+      "contentCheck": {
+        "passed": true,
+        "score": 95,
+        "issues": [],
+        "recommendation": "合格"
+      },
+      "questionsCheck": {
+        "passed": true,
+        "score": 100,
+        "issues": [],
+        "recommendation": "合格"
+      }
+    }
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 169問
+🆔 実際に追加されたID: passage145
+📝 プロンプト情報: 生成=2件, 品質チェック=0件, 修正=0件
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 12:03:15
+実行時間: 0.00秒

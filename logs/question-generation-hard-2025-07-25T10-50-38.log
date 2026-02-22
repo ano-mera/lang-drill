@@ -1,0 +1,120 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:50:38
+ログファイル: question-generation-hard-2025-07-25T10-50-38.log
+モード: テスト出力
+難易度: HARD難易度のみ
+問題タイプ: 図表付き
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 3回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "chart_passage1",
+  "title": "",
+  "type": "email",
+  "content": "Subject: Scheduling the Upcoming Project Meeting\n\nDear Team,\n\nI hope this message finds you well. As we are gearing up for the final stages of our project, it is crucial to schedule a meeting to discuss the remaining deliverables, allocate resources efficiently, and address any outstanding issues. Please refer to the attached table for the proposed time slots for our next meeting.\n\nThe table outlines three potential dates, each with its own set of time slots. Please review the options carefully and let me know your availability by the end of this week. It is imperative that we choose a time that accommodates all key members, ensuring a productive session where everyone's input is valued.\n\nAdditionally, there will be a brief session on budget reallocation. If you have any specific topics you would like to discuss, please send them to me by Thursday so we can include them in the agenda.\n\nLooking forward to our collaborative efforts to bring this project to a successful closure.\n\nBest regards,\n\nMichael Anderson\nProject Manager",
+  "contentTranslation": "件名: 次回プロジェクト会議の日程調整\n\nチームの皆さんへ\n\nこのメッセージが皆さんに届く頃には、元気でお過ごしのことと思います。プロジェクトの最終段階に向けて、残りの納品物の確認、リソースの効率的な配分、未解決の問題への対応について話し合うために会議を予定することが重要です。次回の会議の提案された時間帯については、添付の表をご参照ください。\n\n表には、3つの可能な日付とそれぞれの時間帯が示されています。選択肢を慎重に確認し、今週中にご都合をお知らせください。すべての主要メンバーが参加できる時間を選ぶことが重要であり、皆さんの意見が尊重される生産的なセッションを確保したいと考えています。\n\nさらに、予算再配分に関する短いセッションも行います。特に話し合いたいトピックがあれば、木曜日までに私に送ってください。それを議題に含めます。\n\nこのプロジェクトを成功裏に完了するために、皆さんと協力できることを楽しみにしています。\n\nよろしくお願いします。\n\nマイケル・アンダーソン\nプロジェクトマネージャー",
+  "chart": {
+    "type": "table",
+    "title": "Proposed Meeting Schedule",
+    "data": [
+      {
+        "Date": "November 10, 2023",
+        "Time Slots": "10:00 AM - 11:30 AM, 2:00 PM - 3:30 PM"
+      },
+      {
+        "Date": "November 11, 2023",
+        "Time Slots": "9:00 AM - 10:30 AM, 1:00 PM - 2:30 PM"
+      },
+      {
+        "Date": "November 12, 2023",
+        "Time Slots": "11:00 AM - 12:30 PM, 3:00 PM - 4:30 PM"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the primary goal of this communication?",
+      "questionTranslation": "このコミュニケーションの主な目的は何ですか？",
+      "options": [
+        "To announce the completion of the project",
+        "To schedule a meeting for discussing project details",
+        "To inform the team about a change in project scope",
+        "To provide feedback on the team's performance"
+      ],
+      "optionTranslations": [
+        "プロジェクトの完了を発表するため",
+        "プロジェクトの詳細を話し合うための会議をスケジュールするため",
+        "プロジェクトの範囲の変更をチームに知らせるため",
+        "チームのパフォーマンスに関するフィードバックを提供するため"
+      ],
+      "correct": "B",
+      "explanation": "メールの内容は、プロジェクトの残りの作業を話し合うための会議をスケジュールすることを目的としています。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the deadline for team members to confirm their availability?",
+      "questionTranslation": "チームメンバーが出席可能かどうかを確認する締め切りはいつですか？",
+      "options": [
+        "By the end of this week",
+        "By next Monday",
+        "By the end of the month",
+        "By tomorrow"
+      ],
+      "optionTranslations": [
+        "今週の終わりまでに",
+        "来週の月曜日までに",
+        "今月の終わりまでに",
+        "明日までに"
+      ],
+      "correct": "A",
+      "explanation": "メールの中で、今週の終わりまでに出席可能かどうかを知らせるように依頼しています。"
+    },
+    {
+      "id": "q3",
+      "question": "According to the table, which date offers the earliest time slot for the meeting?",
+      "questionTranslation": "表によると、会議のために最も早い時間帯を提供している日付はどれですか？",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "optionTranslations": [
+        "月曜日",
+        "火曜日",
+        "水曜日",
+        "木曜日"
+      ],
+      "correct": "A",
+      "explanation": "表には、月曜日が最も早い時間帯を提供していることが示されています。具体的な時間は表の情報に基づきます。"
+    }
+  ],
+  "hasChart": true,
+  "metadata": {
+    "difficulty": "hard",
+    "estimatedTime": 300,
+    "wordCount": 171,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling",
+    "hasChart": true
+  }
+}
+
+---
+
+🧪 テストモード: 問題データベースには追加されません
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:51:05
+実行時間: 0.00秒

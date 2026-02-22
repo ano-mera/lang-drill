@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-08-18T02:56:56.565Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を___で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: meeting_scheduling (会議スケジュール調整)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: B\n- 空欄3の正解位置: A\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: vocabulary (語彙選択)\n- 空欄3: context (文脈理解)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T02:57:37.483Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"article\",\n  \"title\": \"Coordination Meeting for Q3 Project Timeline\",\n  \"fullText\": \"Coordination Meeting for Q3 Project Timeline\\n\\nOur project managers ___ to review the timeline on Thursday, September 12, and we would like to invite all team leads to attend. The meeting will begin at 10:00 AM in Conference Room B and is expected to last one hour. To help everyone prepare, please consider ___ a short agenda highlighting your team's progress and any issues that require decisions. If none of these times suit you, ___.\\n\\nAlso, please confirm whether you will attend in person or join by phone. ___ We will distribute the meeting materials two days in advance. Finally, if you have items to add to the agenda, send them to the project coordinator by Monday morning.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A. plans\",\n        \"B. is planning\",\n        \"C. planned\",\n        \"D. are planning\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"『project managers（複数）』が主語なので動詞も複数形または進行形の複合形が必要です。D の 'are planning' は主語と一致して自然です。A（plans）とB（is planning）は単数主語に使う形、C（planned）は過去形で文脈と合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A. drawing\",\n        \"B. preparing\",\n        \"C. negotiating\",\n        \"D. rejecting\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"議題を作る/用意する場合は 'prepare an agenda' の語句が自然です。B の 'preparing' が適切です。A の 'drawing' は不自然で、C の 'negotiating' と D の 'rejecting' は意味が異なり文脈に合いません。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A. we can propose alternative dates\",\n        \"B. we will cancel the meeting\",\n        \"C. please attend as scheduled\",\n        \"D. the documents will be sent later\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"『もしこれらの時間が合わない場合』という条件なので、代替案を提示する旨（A）が最も自然です。B（会議を中止する）やC（予定どおり出席してほしい）は相手の都合を無視する対応で不自然、D（資料送付に関する文）は話のつながりが悪いです。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A. Lunch will be provided for all attendees.\",\n        \"B. Bring printed copies of your reports.\",\n        \"C. A dial-in number and video link will be included in the calendar invite.\",\n        \"D. Doors will be locked after the meeting begins.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"直前の文で『対面か電話で参加するかを確認してください』とあるため、電話参加者向けの情報（ダイヤルイン番号やビデオリンク）を続けるのが自然です。C が最も適切です。A と B は関連はあるが文脈上必須ではなく、D は不適切で失礼な表現です。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"meeting_scheduling\",\n  \"wordCount\": 118\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T02:57:37.484Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Coordination Meeting for Q3 Project Timeline\n\n文書全体（空欄あり）：\nCoordination Meeting for Q3 Project Timeline\n\nOur project managers ___ to review the timeline on Thursday, September 12, and we would like to invite all team leads to attend. The meeting will begin at 10:00 AM in Conference Room B and is expected to last one hour. To help everyone prepare, please consider ___ a short agenda highlighting your team's progress and any issues that require decisions. If none of these times suit you, ___.\n\nAlso, please confirm whether you will attend in person or join by phone. ___ We will distribute the meeting materials two days in advance. Finally, if you have items to add to the agenda, send them to the project coordinator by Monday morning.\n\n各空欄の正解：\n空欄1: D. are planning\n空欄2: B. preparing\n空欄3: A. we can propose alternative dates\n空欄4: C. A dial-in number and video link will be included in the calendar invite.\n\n選択肢：\n空欄1: A. A. plans, B. B. is planning, C. C. planned, D. D. are planning\n空欄2: A. A. drawing, B. B. preparing, C. C. negotiating, D. D. rejecting\n空欄3: A. A. we can propose alternative dates, B. B. we will cancel the meeting, C. C. please attend as scheduled, D. D. the documents will be sent later\n空欄4: A. A. Lunch will be provided for all attendees., B. B. Bring printed copies of your reports., C. C. A dial-in number and video link will be included in the calendar invite., D. D. Doors will be locked after the meeting begins.\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T02:58:16.006Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"第3四半期プロジェクトのスケジュール調整会議\",\n  \"contentTranslation\": \"プロジェクトマネージャーは9月12日（木）にタイムラインをレビューする予定で、すべてのチームリーダーの出席をお願いしたいと思います。会議は午前10時に会議室Bで開始し、所要時間は1時間の予定です。参加者全員の準備を助けるため、チームの進捗と意思決定が必要な事項を明記した短いアジェンダの準備をご検討ください。もしこれらの時間がご都合に合わない場合は、別日を提案できます。\\n\\nまた、会議に直接出席するか電話で参加するかをご確認ください。カレンダー招待にダイヤルイン番号とビデオリンクが記載されます。会議資料は2日前に配布します。最後に、議題に追加したい項目があれば、月曜の朝までにプロジェクトコーディネーター宛てにお送りください。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"予定する\", \"予定しています\", \"予定した\", \"予定しています\"]\n    },\n    {\n      \"optionTranslations\": [\"作成する\", \"準備する\", \"交渉する\", \"却下する\"]\n    },\n    {\n      \"optionTranslations\": [\"別日を提案できます\", \"会議を中止します\", \"予定どおり出席してください\", \"資料は後で送付します\"]\n    },\n    {\n      \"optionTranslations\": [\"昼食提供\", \"印刷物を持参\", \"招待にダイヤルイン記載\", \"開始後施錠\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "timestamp": "2025-08-18T09:39:21.732Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: medium\n- 文書タイプ: letter (Business Letter)\n- ビジネストピック: simple_notifications (簡単な通知)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: B\n- 空欄3の正解位置: C\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: vocabulary (語彙選択)\n- 空欄2: sentence_insertion (文挿入)\n- 空欄3: grammar (文法・語形)\n- 空欄4: context (文脈理解)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:40:39.760Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"letter\",\n  \"title\": \"Temporary change to front desk hours\",\n  \"fullText\": \"July 10, 2025\\n\\nTo: All staff\\nFrom: Office Manager\\nSubject: Temporary change to front desk hours\\n\\nWe are writing to (1) you of an upcoming change to the front desk hours next week due to scheduled maintenance on our building's security system. Starting Monday, July 14, the front desk will be open from 9:00 AM to 2:00 PM instead of regular hours. (2) This change applies only to the front desk; the mailroom and security operations will remain unchanged.\\n\\nDuring the reduced hours, visitors will be required to sign in at the temporary kiosk located by the main entrance. After 2:00 PM, staff should use their key cards to enter the building as security personnel will (3) the main entrance.\\n\\nPlease note that regular deliveries to the front desk will be held until normal hours resume on July 21. If you expect an urgent delivery, contact Procurement for instructions. (4) We appreciate your cooperation.\\n\\nSincerely,\\nEmma Li\\nOffice Manager\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A. remind\",\n        \"B. announce\",\n        \"C. tell\",\n        \"D. notify\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"「We are writing to ( ) you of ...」の文脈では、正式な通知を行う表現が適切です。notify は公式な知らせを表す語で自然です。remind は既に知っていることを思い出させる場合に使い、announce は大きく公表するときに使う傾向があり、tell は口語的でフォーマルな文書では不自然です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A. All employees must swipe in at the main gate before entering the building.\",\n        \"B. If you need assistance during these hours, please contact your supervisor.\",\n        \"C. The front desk will also be closed on the weekend.\",\n        \"D. Lunch will be provided for the staff during the maintenance period.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"この位置は文と文の間に挿入する文を選ぶ問題です。本文は業務時間の変更を通知しており、問い合わせや支援について触れる文が自然です。B はその役割を果たします。A は具体的な手続きの指示で本文の流れに合わない、C は事実と矛盾する可能性があり、D は無関係で不適切です。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A. to monitor\",\n        \"B. monitors\",\n        \"C. monitor\",\n        \"D. monitored\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"will + 動詞の原形の語順が正しいため、monitor（原形）が正解です。to monitor は不定詞で文の構造に合わず、monitors は主語と時制の一致を欠き、monitored は過去・過去分詞形で不適切です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A. Deliveries will continue as normal.\",\n        \"B. Please use the side entrance instead of the main doors.\",\n        \"C. If you have any questions, please contact the Office Manager at extension 210.\",\n        \"D. All staff must work from home on July 15.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"直前で緊急配送についての連絡先を案内しているため、問い合わせ先を示す文が文脈上最も適切です。C はその要件を満たします。A は先ほどの「hold」するという記述と矛盾し、B と D は本文の内容とは無関係または不正確です。\",\n      \"questionType\": \"context\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"topic\": \"simple_notifications (簡単な通知)\",\n  \"wordCount\": 159\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:40:39.761Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Temporary change to front desk hours\n\n文書全体（空欄あり）：\nJuly 10, 2025\n\nTo: All staff\nFrom: Office Manager\nSubject: Temporary change to front desk hours\n\nWe are writing to (1) you of an upcoming change to the front desk hours next week due to scheduled maintenance on our building's security system. Starting Monday, July 14, the front desk will be open from 9:00 AM to 2:00 PM instead of regular hours. (2) This change applies only to the front desk; the mailroom and security operations will remain unchanged.\n\nDuring the reduced hours, visitors will be required to sign in at the temporary kiosk located by the main entrance. After 2:00 PM, staff should use their key cards to enter the building as security personnel will (3) the main entrance.\n\nPlease note that regular deliveries to the front desk will be held until normal hours resume on July 21. If you expect an urgent delivery, contact Procurement for instructions. (4) We appreciate your cooperation.\n\nSincerely,\nEmma Li\nOffice Manager\n\n各空欄の正解：\n空欄1: D. notify\n空欄2: B. If you need assistance during these hours, please contact your supervisor.\n空欄3: C. monitor\n空欄4: C. If you have any questions, please contact the Office Manager at extension 210.\n\n選択肢：\n空欄1: A. A. remind, B. B. announce, C. C. tell, D. D. notify\n空欄2: A. A. All employees must swipe in at the main gate before entering the building., B. B. If you need assistance during these hours, please contact your supervisor., C. C. The front desk will also be closed on the weekend., D. D. Lunch will be provided for the staff during the maintenance period.\n空欄3: A. A. to monitor, B. B. monitors, C. C. monitor, D. D. monitored\n空欄4: A. A. Deliveries will continue as normal., B. B. Please use the side entrance instead of the main doors., C. C. If you have any questions, please contact the Office Manager at extension 210., D. D. All staff must work from home on July 15.\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:41:40.363Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"フロントデスク営業時間の一時変更\",\n  \"contentTranslation\": \"2025年7月10日\\n\\n宛先: 全スタッフ\\n差出人: オフィスマネージャー\\n件名: フロントデスク営業時間の一時変更\\n\\nフロントデスクの営業時間が来週変更になることをお知らせするためにご連絡しています。7月14日（月）より、フロントデスクは通常の営業時間の代わりに午前9時から午後2時までの営業時間となります。これらの時間帯に支援が必要な場合は、上司にご連絡ください。この変更はフロントデスクにのみ適用され、メール室および警備業務は変更ありません。\\n\\n短縮営業時間中は、来訪者は正面入口付近の臨時キオスクでサインインする必要があります。午後2時以降は、警備員が正面入口を監視しますので、職員はキーカードを使用して入館してください。\\n\\n通常の配達は営業時間復帰の7月21日まで保留されます。緊急の配達がある場合は、調達部に指示をお問い合わせください。ご質問がある場合は、内線210でオフィスマネージャーまでご連絡ください。\\n\\nよろしくお願いいたします。\\nエマ・リー\\nオフィスマネージャー\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"思い出させる\", \"発表する\", \"伝える\", \"通知する\"]\n    },\n    {\n      \"optionTranslations\": [\"全員メインゲートで入館\", \"この時間帯は上司へ連絡\", \"週末も閉鎖\", \"昼食を提供\"]\n    },\n    {\n      \"optionTranslations\": [\"監視するために\", \"監視します\", \"監視する\", \"監視される\"]\n    },\n    {\n      \"optionTranslations\": [\"配達は通常通り\", \"側面入口を使用\", \"ご質問は内線210へ\", \"7月15日は全員在宅勤務\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:41:40.366Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: medium\n- 文書タイプ: email (Business Email)\n- ビジネストピック: basic_requests (基本的な依頼)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: B\n- 空欄2の正解位置: C\n- 空欄3の正解位置: A\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: sentence_insertion (文挿入)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: context (文脈理解)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:42:46.907Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"email (Business Email)\",\n  \"title\": \"Request for Q2 Sales Figures and Meeting\",\n  \"fullText\": \"Dear Ms. Tanaka,\\n\\nI hope you are well. I'm writing to request the updated sales figures for Q2 and to ask for a brief meeting next week to discuss them. Could you please (1) the attached spreadsheet and send me the revised numbers by Friday?\\n\\nWe would like to meet for about 30 minutes. (2) Please let me know your availability between Monday and Wednesday so we can confirm a time.\\n\\nAlso, could you (3) any expense receipts related to the client dinner last month? Those will be needed for reimbursement.\\n\\nIf I do not hear from you, (4). Please let me know if you need more time.\\n\\nBest regards,\\nKen Sato\\nSales Manager\\nGlobal Solutions Ltd.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A. reviews\",\n        \"B. review\",\n        \"C. to review\",\n        \"D. reviewed\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"「Could you please ...?」の構文の後には動詞の原形が続くため、正しい答えは \\\"review\\\"（原形）です。他の選択肢は語形が不適切です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A. Please find the quarter's budget attached.\",\n        \"B. I will be traveling on Monday.\",\n        \"C. Could you let me know who will attend from your side?\",\n        \"D. Thank you for your continued cooperation.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"前の文でミーティングの長さについて述べており、次に出席者を確認するのが自然な流れです。AやBは文脈と関係が薄く、Dは締めの表現でここには適さないため、Cが最も適切です。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A. provide\",\n        \"B. provided\",\n        \"C. provides\",\n        \"D. providing\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"\\\"Could you ... any expense receipts?\\\" の文では、助動詞 'could' の後に動詞の原形（provide）が続きます。したがって A が正解です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A. I look forward to meeting you soon.\",\n        \"B. Please reply at your earliest convenience.\",\n        \"C. I will follow up with a call on Thursday if I haven't heard back.\",\n        \"D. We will cancel the meeting without prior notice.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文は条件節 \\\"If I do not hear from you, (4).\\\" で終わっているため、続きとして \\\"I will follow up with a call on Thursday if I haven't heard back.\\\" のような行動を示す文が自然です。AやBは文脈に合うが条件節の続きとしては不完全、Dは不適切に強い表現です。\",\n      \"questionType\": \"context\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"topic\": \"basic_requests (基本的な依頼)\",\n  \"wordCount\": 117\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:42:46.908Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Request for Q2 Sales Figures and Meeting\n\n文書全体（空欄あり）：\nDear Ms. Tanaka,\n\nI hope you are well. I'm writing to request the updated sales figures for Q2 and to ask for a brief meeting next week to discuss them. Could you please (1) the attached spreadsheet and send me the revised numbers by Friday?\n\nWe would like to meet for about 30 minutes. (2) Please let me know your availability between Monday and Wednesday so we can confirm a time.\n\nAlso, could you (3) any expense receipts related to the client dinner last month? Those will be needed for reimbursement.\n\nIf I do not hear from you, (4). Please let me know if you need more time.\n\nBest regards,\nKen Sato\nSales Manager\nGlobal Solutions Ltd.\n\n各空欄の正解：\n空欄1: B. review\n空欄2: C. Could you let me know who will attend from your side?\n空欄3: A. provide\n空欄4: C. I will follow up with a call on Thursday if I haven't heard back.\n\n選択肢：\n空欄1: A. A. reviews, B. B. review, C. C. to review, D. D. reviewed\n空欄2: A. A. Please find the quarter's budget attached., B. B. I will be traveling on Monday., C. C. Could you let me know who will attend from your side?, D. D. Thank you for your continued cooperation.\n空欄3: A. A. provide, B. B. provided, C. C. provides, D. D. providing\n空欄4: A. A. I look forward to meeting you soon., B. B. Please reply at your earliest convenience., C. C. I will follow up with a call on Thursday if I haven't heard back., D. D. We will cancel the meeting without prior notice.\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:43:44.566Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"第2四半期の売上数値と会議の依頼\",\n  \"contentTranslation\": \"田中様\\n\\nお世話になっております。第2四半期の最新の売上数値をお願いしたく、来週それらについて簡単に打ち合わせをさせていただきたくご連絡いたしました。添付のスプレッドシートをご確認いただき、金曜日までに修正後の数値をお送りいただけますでしょうか。\\n\\n会議は約30分を予定しています。そちらから誰が出席されるか教えていただけますか。月曜から水曜の間のご都合をお知らせいただければ、時間を確定いたします。\\n\\nまた、先月のクライアントとの会食に関する経費の領収書をご提出いただけますか。払い戻しのために必要です。\\n\\nご連絡がない場合は、木曜日にお電話で確認いたします。もし追加でお時間が必要でしたらお知らせください。\\n\\nよろしくお願いいたします。\\n\\n佐藤健\\nセールスマネージャー\\nグローバル・ソリューションズ社\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\n        \"A. 確認する（現在）\",\n        \"B. 確認する\",\n        \"C. 確認するために\",\n        \"D. 確認した\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"A. 四半期予算を添付\",\n        \"B. 月曜は出張\",\n        \"C. 出席者を教えてください\",\n        \"D. 引き続きよろしく\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"A. 提供する\",\n        \"B. 提供した\",\n        \"C. 提供する（3人称）\",\n        \"D. 提供している\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"A. お会いするのを楽しみに\",\n        \"B. 早めに返信してください\",\n        \"C. 返事なければ木曜に電話します\",\n        \"D. 事前通知なしで中止\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:43:44.569Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: medium\n- 文書タイプ: email (Business Email)\n- ビジネストピック: system_updates (システム更新)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: A\n- 空欄2の正解位置: C\n- 空欄3の正解位置: B\n- 空欄4の正解位置: D\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: context (文脈理解)\n- 空欄3: sentence_insertion (文挿入)\n- 空欄4: vocabulary (語彙選択)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:45:26.623Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"email\",\n  \"title\": \"Scheduled System Update\",\n  \"fullText\": \"From: IT Support\\nTo: All employees\\nSubject: Scheduled System Update\\n\\nDear colleagues,\\n\\nPlease be advised that the critical system update (1) is planned for Saturday, August 30. The maintenance will begin at 11:00 PM and is expected to last approximately two hours. During this maintenance window, access to the internal portal and email may be limited. (2) We recommend that you save your work and log off before the start time to avoid data loss.\\n\\nIf you have any applications that require continuous access, please notify the IT help desk by Thursday at 5:00 PM so we can coordinate exceptions. (3) We apologize for any inconvenience this may cause and appreciate your cooperation.\\n\\nFor urgent issues during the update, contact the support hotline at extension 5500; for non-urgent questions, submit a ticket through the service portal. After the update, you may need to clear your browser cache to ensure proper (4).\\n\\nBest regards,\\nIT Support Team\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A. is planned\",\n        \"B. are planned\",\n        \"C. was planning\",\n        \"D. planning\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"主語は \\\"the critical system update\\\"（単数）なので、単数形の受動態 \\\"is planned\\\" が適切です。B の \\\"are planned\\\" は複数主語に使う形、C の \\\"was planning\\\" は能動の過去進行形で文意と合いません。D の \\\"planning\\\" は語法上不完全です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A. Only external vendors will be affected by the downtime.\",\n        \"B. The update is optional for most users.\",\n        \"C. Please note that cloud-based services will also be temporarily unavailable.\",\n        \"D. No action is required on your part.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"直前で \\\"access to the internal portal and email may be limited\\\" とあるので、それに続く文として \\\"cloud-based services will also be temporarily unavailable\\\"（クラウドサービスも一時的に利用できなくなる）という説明が自然に続きます。A や B は内容が限定的・矛盾的で、D は \\\"アクセス制限がある\\\" という注意と矛盾します。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A. This process will not require any user input unless notified.\",\n        \"B. If you need assistance preparing for the downtime, the IT help desk can provide guidance.\",\n        \"C. All updates are fully automatic and reversible.\",\n        \"D. Please expect enhanced performance after the update.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"前の文は \\\"please notify the IT help desk ... so we can coordinate exceptions\\\" となっており、次に入る文として \\\"必要であれば IT ヘルプデスクが準備のサポートを提供できます\\\" という B が最も自然です。A はやや矛盾、C は具体的な保証を述べており文脈に合わず、D は順序的に続けるには不適切です。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A. capability\",\n        \"B. efficiency\",\n        \"C. connectivity\",\n        \"D. functionality\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"\\\"clear your browser cache to ensure proper functionality\\\" は自然な英語の言い回しで、システムが正しく動作することを指します。A の \\\"capability\\\" は能力、B の \\\"efficiency\\\" は効率、C の \\\"connectivity\\\" は接続性で、ここでは最も適切なのは D の \\\"functionality\\\" です。\",\n      \"questionType\": \"vocabulary\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"topic\": \"system_updates\",\n  \"wordCount\": 156\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:45:26.624Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Scheduled System Update\n\n文書全体（空欄あり）：\nFrom: IT Support\nTo: All employees\nSubject: Scheduled System Update\n\nDear colleagues,\n\nPlease be advised that the critical system update (1) is planned for Saturday, August 30. The maintenance will begin at 11:00 PM and is expected to last approximately two hours. During this maintenance window, access to the internal portal and email may be limited. (2) We recommend that you save your work and log off before the start time to avoid data loss.\n\nIf you have any applications that require continuous access, please notify the IT help desk by Thursday at 5:00 PM so we can coordinate exceptions. (3) We apologize for any inconvenience this may cause and appreciate your cooperation.\n\nFor urgent issues during the update, contact the support hotline at extension 5500; for non-urgent questions, submit a ticket through the service portal. After the update, you may need to clear your browser cache to ensure proper (4).\n\nBest regards,\nIT Support Team\n\n各空欄の正解：\n空欄1: A. is planned\n空欄2: C. Please note that cloud-based services will also be temporarily unavailable.\n空欄3: B. If you need assistance preparing for the downtime, the IT help desk can provide guidance.\n空欄4: D. functionality\n\n選択肢：\n空欄1: A. A. is planned, B. B. are planned, C. C. was planning, D. D. planning\n空欄2: A. A. Only external vendors will be affected by the downtime., B. B. The update is optional for most users., C. C. Please note that cloud-based services will also be temporarily unavailable., D. D. No action is required on your part.\n空欄3: A. A. This process will not require any user input unless notified., B. B. If you need assistance preparing for the downtime, the IT help desk can provide guidance., C. C. All updates are fully automatic and reversible., D. D. Please expect enhanced performance after the update.\n空欄4: A. A. capability, B. B. efficiency, C. C. connectivity, D. D. functionality\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:46:21.477Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"システム更新の予定\",\n  \"contentTranslation\": \"差出人: ITサポート\\n宛先: 全従業員\\n件名: システム更新の予定\\n\\n社員の皆様、\\n\\n重要なシステム更新は8月30日（土）に予定されています。メンテナンスは午後11時に開始し、約2時間続く見込みです。このメンテナンス期間中は、イントラネットポータルおよびメールへのアクセスが制限される場合があります。クラウドベースのサービスも一時的に利用できなくなることにご注意ください。\\n\\n継続的なアクセスが必要なアプリケーションがある場合は、例外対応を調整するため木曜日の午後5時までにITヘルプデスクにご連絡ください。ダウンタイムの準備について支援が必要な場合は、ITヘルプデスクが案内します。\\n\\nメンテナンス中の緊急の問題については内線5500のサポートホットラインにご連絡ください。緊急でない質問はサービスポータルからチケットを提出してください。更新後、適切な機能を確保するためにブラウザのキャッシュをクリアする必要がある場合があります。\\n\\nよろしくお願いいたします。\\nITサポートチーム\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\n        \"予定されています\",\n        \"予定されています\",\n        \"計画していた\",\n        \"計画中\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"外部業者のみ影響\",\n        \"更新は任意\",\n        \"クラウドサービスも一時停止\",\n        \"対応不要\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"通知がない限り操作不要\",\n        \"ダウンタイム準備は支援可能\",\n        \"更新は自動かつ可逆\",\n        \"更新後は性能向上見込み\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"能力\",\n        \"効率\",\n        \"接続性\",\n        \"機能\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:46:21.480Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: medium\n- 文書タイプ: memo (Internal Memo)\n- ビジネストピック: office_announcements (オフィス告知)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: B\n- 空欄3の正解位置: C\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: vocabulary (語彙選択)\n- 空欄2: sentence_insertion (文挿入)\n- 空欄3: context (文脈理解)\n- 空欄4: grammar (文法・語形)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:47:42.756Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"memo (Internal Memo)\",\n  \"title\": \"Temporary Changes to Conference Room Booking and Cleaning Schedule\",\n  \"fullText\": \"To: All Staff\\nFrom: Office Management\\nDate: August 18, 2025\\nSubject: Temporary Changes to Conference Room Booking and Cleaning Schedule\\n\\nPlease be aware that, during the renovation, we will implement a (1) schedule for conference room bookings to minimize conflicts and ensure fair access.\\n\\nFor the duration of the work, please follow these procedures: (2) To reserve a room, submit your request via the intranet booking system. Reservations should be made at least 24 hours in advance. Cancellations submitted less than 4 hours before a meeting may be subject to a small fee.\\n\\nThe nightly cleaning crew will disinfect high-touch surfaces; however, teams using the rooms for extended periods should (3) after meetings to keep the space safe for the next group.\\n\\nIf you have any questions or concerns, please contact Facilities. The team (4) be happy to assist.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"complimentary\",\n        \"permanent\",\n        \"customary\",\n        \"contingency\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"「contingency（不測の事態に備えた代替策、緊急対応）」が文脈に合います。工事中の一時的な調整を指す語として自然です。Aのcomplimentary（無料の）は意味が合わず、Bのpermanent（恒久的な）は一時的な変更を示す文脈に反します。Cのcustomary（通常の）は通常通りという意味で、ここでは工事による特別なスケジュールを指すため不適切です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"Furniture will be moved to the third floor next week.\",\n        \"Please remember to cancel any reservations you no longer need to free up space for others.\",\n        \"All food and drink are prohibited inside the conference rooms.\",\n        \"There will be no changes to the building's security protocols.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"挿入文としてBが最も流れに合います。続く文は予約方法や事前予約の注意であり、使わない予約をキャンセルしてほしいという依頼は手順説明の流れに自然につながります。AとDは別トピック（家具移動・セキュリティ）で文脈に合わず、Cは会議室の飲食禁止という別の規則で、ここで手順を説明する箇所には適切ではありません。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"procrastinate\",\n        \"overlook\",\n        \"wipe down\",\n        \"delegate\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈は清掃と『次のグループのために安全に保つ』ことについて述べているため、会議後に『wipe down（拭き掃除する）』が適切です。Aのprocrastinate（先延ばしする）は逆の意味、Bのoverlook（見落とす）は不注意を表し不適切、Dのdelegate（他人に委任する）も文意にそぐいません。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"are happy\",\n        \"will happy\",\n        \"will be happy\",\n        \"being happy\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"未来に対する丁寧な申し出を表す標準的な表現は\\\"will be happy to + 動詞\\\"です。したがってCが正解です。Aのare happyは現在形で不自然、Bのwill happyはbe動詞が欠けて文法的に誤り、Dのbeing happyは進行形的な形でこの文脈には不適切です。\",\n      \"questionType\": \"grammar\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"topic\": \"office_announcements (オフィス告知)\",\n  \"wordCount\": 139\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:47:42.758Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Temporary Changes to Conference Room Booking and Cleaning Schedule\n\n文書全体（空欄あり）：\nTo: All Staff\nFrom: Office Management\nDate: August 18, 2025\nSubject: Temporary Changes to Conference Room Booking and Cleaning Schedule\n\nPlease be aware that, during the renovation, we will implement a (1) schedule for conference room bookings to minimize conflicts and ensure fair access.\n\nFor the duration of the work, please follow these procedures: (2) To reserve a room, submit your request via the intranet booking system. Reservations should be made at least 24 hours in advance. Cancellations submitted less than 4 hours before a meeting may be subject to a small fee.\n\nThe nightly cleaning crew will disinfect high-touch surfaces; however, teams using the rooms for extended periods should (3) after meetings to keep the space safe for the next group.\n\nIf you have any questions or concerns, please contact Facilities. The team (4) be happy to assist.\n\n各空欄の正解：\n空欄1: contingency\n空欄2: Please remember to cancel any reservations you no longer need to free up space for others.\n空欄3: wipe down\n空欄4: will be happy\n\n選択肢：\n空欄1: A. complimentary, B. permanent, C. customary, D. contingency\n空欄2: A. Furniture will be moved to the third floor next week., B. Please remember to cancel any reservations you no longer need to free up space for others., C. All food and drink are prohibited inside the conference rooms., D. There will be no changes to the building's security protocols.\n空欄3: A. procrastinate, B. overlook, C. wipe down, D. delegate\n空欄4: A. are happy, B. will happy, C. will be happy, D. being happy\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:48:36.103Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"会議室予約および清掃スケジュールの一時変更\",\n  \"contentTranslation\": \"宛先：全社員\\n発信：オフィス管理\\n日付：2025年8月18日\\n件名：会議室予約および清掃スケジュールの一時変更\\n\\n改装期間中は、競合を最小限に抑え、公平な利用を確保するため、会議室予約に関して臨時のスケジュールを導入します。\\n\\n工事期間中は以下の手順に従ってください：不要な予約は他の人の利用のために必ずキャンセルしてください。部屋を予約するには、社内イントラネットの予約システムから申請してください。予約は少なくとも24時間前に行ってください。会議の4時間未満のキャンセルは、少額の料金が発生する場合があります。\\n\\n夜間の清掃員が頻繁に触れる表面を消毒しますが、長時間使用するチームは、会議後に拭き掃除を行って、次のグループのためにスペースを安全に保ってください。\\n\\nご質問やご不明点がある場合は、設備管理にお問い合わせください。チームが喜んで対応します。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"無料の\", \"恒久的な\", \"通常の\", \"緊急時用の\"]\n    },\n    {\n      \"optionTranslations\": [\"家具は3階へ移動\", \"不要な予約はキャンセル\", \"飲食は禁止\", \"警備は変更なし\"]\n    },\n    {\n      \"optionTranslations\": [\"先延ばしにする\", \"見落とす\", \"拭き掃除する\", \"委任する\"]\n    },\n    {\n      \"optionTranslations\": [\"喜んでいます\", \"will happy（誤）\", \"喜んで対応します\", \"喜んでいること\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:48:36.105Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: medium\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: team_coordination (チーム連携)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: A\n- 空欄2の正解位置: C\n- 空欄3の正解位置: D\n- 空欄4の正解位置: B\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: grammar (文法・語形)\n- 空欄3: sentence_insertion (文挿入)\n- 空欄4: vocabulary (語彙選択)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:49:19.600Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"article\",\n  \"title\": \"Improving Team Coordination Across Departments\",\n  \"fullText\": \"Effective coordination among team members is essential for meeting project deadlines and maintaining high quality. At our company, recent projects (1) several recurring communication gaps that slow decision-making and reduce productivity. To address these issues, the Operations and Product teams implemented a weekly cross-functional meeting and a shared task tracker to ensure transparency. Each week, team leads (2) progress, blockers, and upcoming priorities in a concise report. These practices also helped centralize information and shorten the time required to resolve interdepartmental questions. (3) The new routine has shown early signs of success: deadlines are met more consistently and fewer issues fall through the cracks. Nevertheless, the initiative requires ongoing attention to prevent backsliding. We recommend that managers reinforce this approach by recognizing collaborative behavior and providing (4) feedback that helps teams improve.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"have highlighted\",\n        \"has highlighted\",\n        \"highlight\",\n        \"highlighted\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"文脈上、主語は \\\"recent projects\\\"（複数）なので現在完了の複数形 \\\"have highlighted\\\" が正しいです。他の選択肢は単数扱いや時制が不適切で、文の意味（これまでのプロジェクトが明らかにした事実）に合いません。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"summarizes\",\n        \"is summarizing\",\n        \"summarize\",\n        \"to summarize\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"\\\"Each week\\\" と習慣的・定期的な行為を表しているため、主語 \\\"team leads\\\"（複数）に対応する現在形の原形複数形 \\\"summarize\\\" が適切です。\\\"summarizes\\\" は三人称単数に用いる形で誤り、\\\"is summarizing\\\" は進行形で不自然、\\\"to summarize\\\" は不定詞で文法的に合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"However, budget constraints prevented the adoption of new software.\",\n        \"Remote employees were excluded due to time zone differences.\",\n        \"Leadership approved a larger team to manage cross-functional tasks.\",\n        \"To be effective, the meetings include brief role assignments so everyone knows their responsibilities.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"前後の文はミーティングや情報の一元化、責任の明確化について述べているため、Dの文（会議で短い役割分担を行い責任を共有する）を挿入するのが自然です。他の選択肢は話題と関連が薄く、流れを断ち切ってしまいます。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"occasionally\",\n        \"constructive\",\n        \"simple\",\n        \"brief\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"名詞 \\\"feedback\\\" を修飾する適切な語は形容詞であり、チーム改善の文脈では \\\"constructive\\\"（建設的な）が最も適切です。Aの \\\"occasionally\\\" は副詞で文法的に不適切、CとDは形容詞ですが意味的に \\\"constructive feedback\\\" の方が目的に合います。\",\n      \"questionType\": \"vocabulary\"\n    }\n  ],\n  \"difficulty\": \"medium\",\n  \"topic\": \"team_coordination\",\n  \"wordCount\": 132\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:49:19.601Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Improving Team Coordination Across Departments\n\n文書全体（空欄あり）：\nEffective coordination among team members is essential for meeting project deadlines and maintaining high quality. At our company, recent projects (1) several recurring communication gaps that slow decision-making and reduce productivity. To address these issues, the Operations and Product teams implemented a weekly cross-functional meeting and a shared task tracker to ensure transparency. Each week, team leads (2) progress, blockers, and upcoming priorities in a concise report. These practices also helped centralize information and shorten the time required to resolve interdepartmental questions. (3) The new routine has shown early signs of success: deadlines are met more consistently and fewer issues fall through the cracks. Nevertheless, the initiative requires ongoing attention to prevent backsliding. We recommend that managers reinforce this approach by recognizing collaborative behavior and providing (4) feedback that helps teams improve.\n\n各空欄の正解：\n空欄1: have highlighted\n空欄2: summarize\n空欄3: To be effective, the meetings include brief role assignments so everyone knows their responsibilities.\n空欄4: constructive\n\n選択肢：\n空欄1: A. have highlighted, B. has highlighted, C. highlight, D. highlighted\n空欄2: A. summarizes, B. is summarizing, C. summarize, D. to summarize\n空欄3: A. However, budget constraints prevented the adoption of new software., B. Remote employees were excluded due to time zone differences., C. Leadership approved a larger team to manage cross-functional tasks., D. To be effective, the meetings include brief role assignments so everyone knows their responsibilities.\n空欄4: A. occasionally, B. constructive, C. simple, D. brief\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T09:50:31.299Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"部署間のチーム連携の改善\",\n  \"contentTranslation\": \"チームメンバー間の効果的な連携は、プロジェクトの期限を守り高い品質を維持するために不可欠です。当社では、最近のプロジェクトが意思決定を遅らせ生産性を低下させるいくつかの繰り返し発生するコミュニケーションのギャップを浮き彫りにしました。これらの問題に対処するために、オペレーション部門とプロダクト部門は週次の横断的会議と透明性を確保するための共有タスクトラッカーを導入しました。毎週、チームリードは簡潔な報告書で進捗、障害（ブロッカー）、および今後の優先事項を要約します。これらの取り組みにより情報が一元化され、部門間の問い合わせを解決するのに要する時間が短縮されました。効果を上げるために、会議では簡潔な役割分担を行い、全員が自分の責任を把握できるようにしています。新しいルーチンは早期の成功の兆候を示しています：締め切りはより安定して守られるようになり、見落とされる問題は減少しています。それでも、この取り組みは後退を防ぐために継続的な注意が必要です。マネージャーは協力的な行動を評価し、チームの改善に役立つ建設的なフィードバックを提供することでこの方針を強化することを推奨します。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\n        \"明らかにしている\",\n        \"明らかにした\",\n        \"明らかにする\",\n        \"明らかになった\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"要約する\",\n        \"要約している\",\n        \"要約する\",\n        \"要約するために\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"予算制約で導入不可\",\n        \"時差で遠隔除外\",\n        \"チーム拡大を承認\",\n        \"会議で役割分担\"\n      ]\n    },\n    {\n      \"optionTranslations\": [\n        \"時折\",\n        \"建設的\",\n        \"単純な\",\n        \"簡潔な\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

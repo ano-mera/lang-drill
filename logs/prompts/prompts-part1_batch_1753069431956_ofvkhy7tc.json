@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2025-07-21T03:43:57.055Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "患者たちが薬局のカウンターで列を作っています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "病院"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:43:57.160Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "医師たちが手術室で手術を行っています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "病院"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:43:57.227Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "受付係がコンピューターで患者の情報を確認しています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "病院"
+    }
+  },
+  {
+    "timestamp": "2025-07-21T03:43:57.417Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "看護師が患者に予防接種をしています。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": "病院"
+    }
+  }
+]

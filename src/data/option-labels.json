@@ -1,0 +1,18 @@
+[
+  {
+    "label": "A",
+    "audioPath": "/audio/labels/option_a.mp3"
+  },
+  {
+    "label": "B", 
+    "audioPath": "/audio/labels/option_b.mp3"
+  },
+  {
+    "label": "C",
+    "audioPath": "/audio/labels/option_c.mp3"
+  },
+  {
+    "label": "D",
+    "audioPath": "/audio/labels/option_d.mp3"
+  }
+]

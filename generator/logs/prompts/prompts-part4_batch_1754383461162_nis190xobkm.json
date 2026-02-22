@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-05T08:44:21.165Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"hard\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "hard",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-05T08:44:21.174Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Public event announcement (公共イベントの案内)\n【Industry】: Manufacturing (製造業)\n【Difficulty】: hard\n【Question Types】: intended_audience, intended_audience, detail\n【Correct Answer Positions】: Question 1=C, Question 2=C, Question 3=D\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-05T08:44:32.721Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Event Coordinator\",\n      \"role\": \"Event coordinator\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Good evening, everyone. Thank you for joining us at the annual GreenTech Innovations Expo. We are excited to showcase the latest advancements in sustainable manufacturing technologies. Our keynote presentation will begin shortly in Hall B, where Dr. Emily Grant will discuss cutting-edge techniques in eco-friendly production processes. Following the keynote, attendees can explore various exhibits featuring innovations from leading manufacturers focused on reducing environmental impact. We also have workshops scheduled throughout the day, providing hands-on experience with new equipment. Please refer to the program guide for detailed session timings and locations. We hope you find this event both informative and inspiring.\",\n    \"topic\": \"GreenTech Innovations Expo announcement\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is likely the intended audience for this announcement?\",\n      \"options\": [\n        \"Local government officials\",\n        \"General public\",\n        \"Professionals in the manufacturing industry\",\n        \"Students interested in technology\"\n      ],\n      \"correct\": \"Professionals in the manufacturing industry\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"スピーチは製造業の持続可能な技術や環境に優しいプロセスに関心がある人を対象としているため、製造業界の専門家が想定される。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Who is the announcement primarily intended for?\",\n      \"options\": [\n        \"Environmental activists\",\n        \"Local business owners\",\n        \"Manufacturing industry experts\",\n        \"Technology students\"\n      ],\n      \"correct\": \"Manufacturing industry experts\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"エクスポで紹介される技術やワークショップは、製造業の専門家や技術革新に興味のある人を対象にしている。\",\n      \"questionType\": \"intended_audience\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What will happen immediately after the keynote presentation?\",\n      \"options\": [\n        \"A networking luncheon\",\n        \"A panel discussion\",\n        \"A guided tour of the facilities\",\n        \"Exhibits featuring innovations\"\n      ],\n      \"correct\": \"Exhibits featuring innovations\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"キーノートプレゼンテーションの後、参加者は環境影響を減らすことを目的とした革新を紹介する展示を探索できると述べている。\",\n      \"questionType\": \"detail\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-05T08:44:32.722Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: public_event_notice\nIndustry: manufacturing\nSpeaker Role: Event coordinator\nTopic: GreenTech Innovations Expo announcement\n\nSpeech Text:\nGood evening, everyone. Thank you for joining us at the annual GreenTech Innovations Expo. We are excited to showcase the latest advancements in sustainable manufacturing technologies. Our keynote presentation will begin shortly in Hall B, where Dr. Emily Grant will discuss cutting-edge techniques in eco-friendly production processes. Following the keynote, attendees can explore various exhibits featuring innovations from leading manufacturers focused on reducing environmental impact. We also have workshops scheduled throughout the day, providing hands-on experience with new equipment. Please refer to the program guide for detailed session timings and locations. We hope you find this event both informative and inspiring.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-05T08:44:36.926Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation_response",
+    "prompt": "```json\n{\n  \"speechTypeTranslation\": \"公共イベントのお知らせ\",\n  \"textTranslation\": \"皆さん、こんばんは。本日、年次グリーンテック・イノベーション・エキスポにご参加いただきありがとうございます。私たちは、持続可能な製造技術の最新の進歩をご紹介できることを嬉しく思います。基調講演はまもなくホールBで始まり、エミリー・グラント博士が環境に優しい生産プロセスにおける最先端技術についてお話します。基調講演の後は、環境への影響を軽減することに注力している一流の製造業者による革新を紹介するさまざまな展示を見学できます。また、新しい機器を使った実践的な体験ができるワークショップも一日を通して予定されています。詳細なセッションの時間や場所については、プログラムガイドをご参照ください。このイベントが皆さんにとって有益で刺激的なものとなることを願っています。\",\n  \"topicTranslation\": \"グリーンテック・イノベーション・エキスポのお知らせ\"\n}\n```",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-05T08:44:36.926Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 4 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nIMPORTANT: For option translations, translate ONLY the option text without including any option labels (A:, B:, C:, D:) or symbols.\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following Part 4 questions and options to Japanese:\n\nQuestion 1: Who is likely the intended audience for this announcement?\nOptions:\nA: Local government officials\nB: General public\nC: Professionals in the manufacturing industry\nD: Students interested in technology\n\nQuestion 2: Who is the announcement primarily intended for?\nOptions:\nA: Environmental activists\nB: Local business owners\nC: Manufacturing industry experts\nD: Technology students\n\nQuestion 3: What will happen immediately after the keynote presentation?\nOptions:\nA: A networking luncheon\nB: A panel discussion\nC: A guided tour of the facilities\nD: Exhibits featuring innovations\n\nPlease return the translations in the specified JSON format. Remember to exclude option labels (A:, B:, C:, D:) from the option translations.",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  },
+  {
+    "timestamp": "2025-08-05T08:44:42.371Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"この発表の主な対象者は誰ですか？\",\n      \"optionTranslations\": [\n        \"地方政府の役人\",\n        \"一般の人々\",\n        \"製造業の専門家\",\n        \"技術に興味がある学生\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この発表は主に誰向けですか？\",\n      \"optionTranslations\": [\n        \"環境活動家\",\n        \"地元のビジネスオーナー\",\n        \"製造業の専門家\",\n        \"技術の学生\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"基調講演の直後に何が行われますか？\",\n      \"optionTranslations\": [\n        \"ネットワークランチ\",\n        \"パネルディスカッション\",\n        \"施設のガイド付きツアー\",\n        \"革新技術の展示\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "hard"
+    }
+  }
+]

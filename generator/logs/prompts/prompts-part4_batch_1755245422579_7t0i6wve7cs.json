@@ -1,0 +1,53 @@
+[
+  {
+    "timestamp": "2025-08-15T08:10:22.583Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:10:22.586Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Phone or voicemail message (電話・留守電メッセージ)\n【Industry】: Construction (建設業)\n【Difficulty】: medium\n【Question Types】: inference, detail, inference\n【Correct Answer Positions】: Question 1=A, Question 2=B, Question 3=C\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:11:18.401Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Site Manager\",\n      \"role\": \"Construction project manager\",\n      \"gender\": \"male\"\n    },\n    \"text\": \"Hi, this is Mark Chen with Crestline Builders calling for Valley Ready Mix. We need to adjust tomorrow's concrete delivery for the Oakridge Library project. Because of a wind advisory, the crane work has been pushed to the afternoon, so please have the first two trucks on-site by 10:30 a.m., with the remaining loads staggered every thirty minutes. Use Gate 3 on Pine Street; the site crew will direct you. Please send no more than two trucks at a time; the staging area is tight, and we must keep the fire lane clear. Also, bring an extra slump cone; the inspector will run tests before the pour at noon. If this schedule works, email a confirmation, or call me at 555-0186.\",\n    \"topic\": \"Rescheduling concrete deliveries due to a wind advisory\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"Who is the speaker most likely calling?\",\n      \"options\": [\n        \"A concrete supplier\",\n        \"A city inspector\",\n        \"A project investor\",\n        \"An equipment rental company\"\n      ],\n      \"correct\": \"A concrete supplier\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"冒頭で「Valley Ready Mixに電話している」と述べ、配達の調整について話しているため、コンクリート供給業者に連絡していると推測できる。\",\n      \"questionType\": \"inference\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"By what time should the first two trucks arrive on-site?\",\n      \"options\": [\n        \"9:00 A.M.\",\n        \"10:30 A.M.\",\n        \"12:00 P.M.\",\n        \"1:30 P.M.\"\n      ],\n      \"correct\": \"10:30 A.M.\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチで「the first two trucks on-site by 10:30 a.m.」と具体的に述べている。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"What is implied about the job site?\",\n      \"options\": [\n        \"It is closed today for a holiday.\",\n        \"It has no access from Pine Street.\",\n        \"Parking and staging space are limited.\",\n        \"Deliveries are permitted only at night.\"\n      ],\n      \"correct\": \"Parking and staging space are limited.\",\n      \"correctPosition\": \"C\",\n      \"explanation\": \"「二台以上同時に送らないで」「ステージングエリアが狭い」「消防車線を確保」とあるため、車両のスペースが限られていることが示唆される。\",\n      \"questionType\": \"inference\"\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-15T08:11:18.402Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_batch_speech_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチと関連情報を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 speech content to Japanese:\n\nSpeech Type: phone_message\nIndustry: construction\nSpeaker Role: Construction project manager\nTopic: Rescheduling concrete deliveries due to a wind advisory\n\nSpeech Text:\nHi, this is Mark Chen with Crestline Builders calling for Valley Ready Mix. We need to adjust tomorrow's concrete delivery for the Oakridge Library project. Because of a wind advisory, the crane work has been pushed to the afternoon, so please have the first two trucks on-site by 10:30 a.m., with the remaining loads staggered every thirty minutes. Use Gate 3 on Pine Street; the site crew will direct you. Please send no more than two trucks at a time; the staging area is tight, and we must keep the fire lane clear. Also, bring an extra slump cone; the inspector will run tests before the pour at noon. If this schedule works, email a confirmation, or call me at 555-0186.\n\nReturn the translations in this JSON format:\n{\n  \"speechTypeTranslation\": \"スピーチタイプの日本語訳\",\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"topicTranslation\": \"トピックの日本語訳\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

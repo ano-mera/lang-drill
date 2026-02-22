@@ -1,0 +1,4442 @@
+[
+  {
+    "id": "part5_2",
+    "sentence": "The meeting is scheduled to start _____ 3 PM in the conference room.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議は午後3時に会議室で開始する予定です。",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "by"
+    ],
+    "optionTranslations": [
+      "～の上に",
+      "～に/～で",
+      "～の中に/～で",
+      "～によって/～までに"
+    ],
+    "correct": "B",
+    "explanation": "時間を示す時刻の前には通常、前置詞 'at' を使います。したがって、正しい選択肢は 'at' です。他の選択肢はそれぞれ異なる文脈で使用されます。'on' は日付や曜日に、'in' は月や年、時間帯に、'by' は締め切りや期限に使われます。",
+    "category": "前置詞",
+    "intent": "時間・場所に応じた前置詞の選択を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス/日常のトピック",
+    "createdAt": "2025-08-06T09:30:57.481Z",
+    "generationBatch": "part5_batch_1754472646995_daasyms6h",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_3",
+    "sentence": "The team worked _____ to meet the tight deadline set by the client.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "チームは、クライアントによって設定された厳しい締め切りに間に合わせるために、一生懸命に働きました。",
+    "options": [
+      "efficient",
+      "efficiently",
+      "effective",
+      "effectively"
+    ],
+    "optionTranslations": [
+      "効率的な",
+      "効率的に",
+      "効果的な",
+      "効果的に"
+    ],
+    "correct": "D",
+    "explanation": "正解は 'effectively' です。文中の 'worked' は動詞であり、副詞がそれを修飾する必要があります。選択肢Aの 'efficient' と選択肢Cの 'effective' は形容詞であり、動詞を修飾することはできません。選択肢Bの 'efficiently' も副詞ですが、文脈上 'effectively' の方が適切です。クライアントによって設定された厳しい締め切りに対して成果を上げることを強調するために 'effectively' が使われます。",
+    "category": "品詞識別",
+    "intent": "形容詞と副詞の識別を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス/日常のトピック",
+    "createdAt": "2025-08-06T09:34:13.805Z",
+    "generationBatch": "part5_batch_1754472837631_btrwyslom",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_4",
+    "sentence": "The manager was _____ impressed by the team's outstanding performance in the last quarter.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マネージャーは、最終四半期におけるチームの卓越した業績に非常に感銘を受けました。",
+    "options": [
+      "high",
+      "highly",
+      "height",
+      "higher"
+    ],
+    "optionTranslations": [
+      "高い",
+      "非常に",
+      "高さ",
+      "より高い"
+    ],
+    "correct": "B",
+    "explanation": "この文では、動詞 'impressed' を修飾する必要があるため、副詞が必要です。'highly' は副詞であり、'impressed' を修飾するのに適しています。他の選択肢は形容詞や名詞であり、副詞として機能しないため不適切です。",
+    "category": "品詞識別",
+    "intent": "形容詞と副詞の識別を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス/日常のトピック",
+    "createdAt": "2025-08-06T16:41:12.702Z",
+    "generationBatch": "part5_batch_1754498466695_dlzwhwgnw",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_5",
+    "sentence": "The manager reviewed the report _____ to ensure accuracy.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マネージャーは正確さを確認するために報告書をレビューしました。",
+    "options": [
+      "careful",
+      "care",
+      "carefully",
+      "caring"
+    ],
+    "optionTranslations": [
+      "注意深い",
+      "注意",
+      "注意深く",
+      "思いやりのある"
+    ],
+    "correct": "C",
+    "explanation": "正解は 'carefully' です。文中の 'reviewed' は動詞であり、副詞が必要です。選択肢Aの 'careful' は形容詞で、名詞を修飾するため不適切です。選択肢Bの 'care' は名詞であり、動詞を修飾できません。選択肢Dの 'caring' は形容詞または動名詞であり、副詞として使用できません。したがって、動詞 'reviewed' を修飾するためには、副詞 'carefully' が最も適切です。",
+    "category": "品詞識別",
+    "intent": "形容詞と副詞の識別を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス/日常のトピック",
+    "createdAt": "2025-08-06T16:41:19.620Z",
+    "generationBatch": "part5_batch_1754498466695_dlzwhwgnw",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_6",
+    "sentence": "The _____ of the annual report was delayed due to unforeseen circumstances.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "年次報告書の提出は予期しない事情により遅れました。",
+    "options": [
+      "release",
+      "releasing",
+      "relief",
+      "relieving"
+    ],
+    "optionTranslations": [
+      "公開",
+      "公開中",
+      "安堵",
+      "安心させる"
+    ],
+    "correct": "A",
+    "explanation": "正解は \"release\" です。この文では、\"The release of the annual report\" という名詞句が必要です。他の選択肢 \"releasing\" は動名詞、\"relief\" は意味が異なる名詞（安堵）、\"relieving\" は動名詞または形容詞で文脈に合いません。",
+    "category": "品詞識別",
+    "intent": "名詞と動詞の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "hard",
+    "topic": "ビジネス/日常のトピック",
+    "createdAt": "2025-08-06T16:41:26.584Z",
+    "generationBatch": "part5_batch_1754498466695_dlzwhwgnw",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_8",
+    "sentence": "After reviewing the quarterly financial report, the board of directors decided to ___ the company's investment strategy to adapt to market changes.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "四半期の財務報告を確認した後、取締役会は市場の変化に適応するために会社の投資戦略を見直すことを決定しました。",
+    "options": [
+      "adjust",
+      "adjustment",
+      "adjusting",
+      "adjusted"
+    ],
+    "optionTranslations": [
+      "調整する",
+      "調整",
+      "調整している",
+      "調整された"
+    ],
+    "correct": "A",
+    "explanation": "この文では、主語 'the board of directors' が行う動作を示す動詞が必要です。選択肢Aの 'adjust' は動詞であり、文脈に合った正しい選択です。一方、Bの 'adjustment' は名詞、Cの 'adjusting' は動名詞または現在分詞、Dの 'adjusted' は過去分詞であり、いずれもこの文の主語に対して直接的な動作を表すことはできません。",
+    "category": "語彙選択",
+    "intent": "名詞と動詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-06T18:21:58.013Z",
+    "generationBatch": "part5_batch_1754504511489_urp0odp2r",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_9",
+    "sentence": "The project was delayed ___ the team encountered several unexpected challenges.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "プロジェクトは、チームがいくつかの予期しない課題に直面したため、遅延しました。",
+    "options": [
+      "because",
+      "although",
+      "despite",
+      "unless"
+    ],
+    "optionTranslations": [
+      "～のため",
+      "～にもかかわらず",
+      "～にもかかわらず",
+      "～でない限り"
+    ],
+    "correct": "A",
+    "explanation": "この文は、プロジェクトが遅れた理由を説明しています。文中の因果関係を示すために、適切な接続詞が必要です。「because」は「〜のために」という意味で、遅れた理由を説明するのにふさわしい選択肢です。他の選択肢は因果関係を示しません。",
+    "category": "関係詞・代名詞",
+    "intent": "因果関係を表す接続詞を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-06T18:22:57.737Z",
+    "generationBatch": "part5_batch_1754504570022_8j6hutr5m",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_10",
+    "sentence": "The new marketing strategy is expected to generate significantly ___ revenue than the previous one.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいマーケティング戦略は、以前のものよりもかなり多くの収益を生み出すことが期待されています。",
+    "options": [
+      "fewer",
+      "more",
+      "much",
+      "less"
+    ],
+    "optionTranslations": [
+      "より少ない",
+      "もっと",
+      "たくさん",
+      "より少ない"
+    ],
+    "correct": "B",
+    "explanation": "この文では、'revenue'は数えられない名詞です。'revenue'に対しては、比較級の'more'が適切です。選択肢Aの'fewer'は数えられる名詞に使います。選択肢Cの'much'は比較級ではなく、Dの'less'は比較する対象が不適切です。",
+    "category": "比較構文・数量",
+    "intent": "数量詞の正しい使用を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T03:14:08.189Z",
+    "generationBatch": "part5_batch_1754536438222_c38uli2cf",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_11",
+    "sentence": "The company ___ achieved all its quarterly targets, resulting in a record-breaking year.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "その会社は四半期ごとの目標をすべて達成し、記録的な年となりました。",
+    "options": [
+      "has",
+      "have",
+      "had",
+      "having"
+    ],
+    "optionTranslations": [
+      "持っている",
+      "持っている",
+      "持っていた",
+      "持っていること"
+    ],
+    "correct": "B",
+    "explanation": "文脈から判断すると、「会社は四半期目標をすべて達成した」ということを述べています。主語が単数の 'The company' であるため、三人称単数の現在完了形を表す 'has' が正解です。選択肢Bの 'have' は、主語が複数のときの現在完了形に使われるため不正解です。",
+    "category": "動詞の形・時制",
+    "intent": "過去形と現在完了の区別を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "同語の語形変化",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T03:14:33.832Z",
+    "generationBatch": "part5_batch_1754536456234_nw0ol5cra",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_12",
+    "sentence": "The manager asked the team to ______ the report by Friday.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マネージャーはチームに対して金曜日までに報告書を______ように依頼しました。",
+    "options": [
+      "complete",
+      "compile",
+      "submit",
+      "review"
+    ],
+    "optionTranslations": [
+      "完了する",
+      "編纂する",
+      "提出する",
+      "見直す"
+    ],
+    "correct": "C",
+    "explanation": "文脈から判断して、マネージャーはチームに対して報告書を金曜日までに提出するよう求めています。'submit'が最も適切な語です。他の選択肢は、報告書を完成させる（complete）、編集する（compile）、見直す（review）であり、文の意図に合致しません。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T03:16:06.000Z",
+    "generationBatch": "part5_batch_1754536557480_75k3cc46g",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_13",
+    "sentence": "The company ___ a significant increase in sales last quarter.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "その会社は、前四半期に売上が大幅に増加しました。",
+    "options": [
+      "has seen",
+      "sees",
+      "saw",
+      "seeing"
+    ],
+    "optionTranslations": [
+      "見た",
+      "見る",
+      "見た",
+      "見ること"
+    ],
+    "correct": "C",
+    "explanation": "文脈上、\"last quarter\"（前の四半期）という過去の特定の時点について言及しているため、過去形を用いるのが適切です。したがって、正解は過去形の\"saw\"です。選択肢Aの\"has seen\"は現在完了形で、過去から現在にかけての状況を表すため不適切です。選択肢Bの\"sees\"は現在形、選択肢Dの\"seeing\"は動名詞または現在分詞で文法的に合いません。",
+    "category": "動詞の形・時制",
+    "intent": "過去形と現在完了の区別を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T03:56:26.812Z",
+    "generationBatch": "part5_batch_1754538977851_aqx29sg51",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_14",
+    "sentence": "The new employee, ___ had worked in several international companies before, quickly adapted to our corporate culture.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しい社員は、それ以前にいくつかの国際企業で働いた経験があり、迅速に当社の企業文化に適応しました。",
+    "options": [
+      "when",
+      "where",
+      "who",
+      "which"
+    ],
+    "optionTranslations": [
+      "～のとき",
+      "～で",
+      "～が",
+      "～どれ"
+    ],
+    "correct": "C",
+    "explanation": "この文では、先行詞 'The new employee' に対して関係代名詞を用いているため、'who' が適切です。'who' は人を指す主格の関係代名詞で、先行詞が人である場合に使用されます。'when' は時を指す、'where' は場所を指す、'which' は物や内容を指す関係代名詞であり、この文脈では不適切です。",
+    "category": "関係詞・代名詞",
+    "intent": "関係代名詞の機能に応じた選択を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T03:58:02.115Z",
+    "generationBatch": "part5_batch_1754539072744_eak7vizd8",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_15",
+    "sentence": "The project was delayed ___ the team encountered unforeseen challenges.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "そのプロジェクトは、チームが予期しない課題に直面したため遅れました。",
+    "options": [
+      "however",
+      "moreover",
+      "nonetheless",
+      "because"
+    ],
+    "optionTranslations": [
+      "しかし",
+      "さらに",
+      "それにもかかわらず",
+      "～なので/なぜならば"
+    ],
+    "correct": "D",
+    "explanation": "この文では、プロジェクトが遅れた理由を説明しているため、因果関係を示す接続詞が必要です。選択肢Dの'because'が最も適切です。他の選択肢は論理関係を示すものの、因果関係を示すものではありません。",
+    "category": "接続詞",
+    "intent": "論理関係に合った接続詞選択を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T03:59:28.943Z",
+    "generationBatch": "part5_batch_1754539160818_b6y1ksf6x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_16",
+    "sentence": "The annual conference will be held ___ the convention center downtown.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "年次会議は市中心部のコンベンションセンターで開催されます。",
+    "options": [
+      "over",
+      "through",
+      "at",
+      "on"
+    ],
+    "optionTranslations": [
+      "～を超えて",
+      "～を通して",
+      "～で",
+      "～の上に"
+    ],
+    "correct": "C",
+    "explanation": "この文は場所を示す前置詞を問う問題です。イベントが開催される特定の場所を表すため、'at'が最も適切です。'over'は通常、期間や覆う様子を示す際に使い、'through'は通過や手段、'on'は表面に接触することを示すため、これらは不適切です。",
+    "category": "前置詞",
+    "intent": "時間・場所に応じた前置詞の選択を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:01:52.926Z",
+    "generationBatch": "part5_batch_1754539305602_pzd1nq3gh",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_17",
+    "sentence": "Neither the manager nor the employees ___ responsible for the error in the report.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "「その報告書の誤りについては、マネージャーも従業員も責任がありません。」",
+    "options": [
+      "is",
+      "has",
+      "are",
+      "was"
+    ],
+    "optionTranslations": [
+      "～である",
+      "～がある",
+      "～である",
+      "～だった"
+    ],
+    "correct": "C",
+    "explanation": "文の主語は 'Neither the manager nor the employees' であり、'nor' により 'employees' が主語としての役割を担います。'employees' は複数形なので、動詞も複数形の 'are' が正解です。",
+    "category": "主語と動詞の一致",
+    "intent": "単数・複数の一致を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:53:03.593Z",
+    "generationBatch": "part5_batch_1754542376550_djy6j2sfw",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_18",
+    "sentence": "If she had more time, she ___ travel around the world.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もし彼女にもっと時間があれば、世界中を旅行するでしょう。",
+    "options": [
+      "can",
+      "will",
+      "does",
+      "would"
+    ],
+    "optionTranslations": [
+      "できる",
+      "～だろう",
+      "する",
+      "～だろう"
+    ],
+    "correct": "D",
+    "explanation": "この文は仮定法過去を使った例文です。'If she had more time'は現実には時間がないことを示す仮定法の構文で、この場合、主節には'could'または'would'が続くのが自然です。選択肢の中で'can', 'will', 'does'は通常の現在形や未来形であり、仮定法過去には適していません。したがって、正しい答えは'would'です。",
+    "category": "構文",
+    "intent": "仮定法過去の構文を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "日常",
+    "createdAt": "2025-08-07T04:54:28.441Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_19",
+    "sentence": "Only after the meeting ___ we realize the importance of the project.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議が終わって初めて、そのプロジェクトの重要性を理解しました。",
+    "options": [
+      "did",
+      "does",
+      "do",
+      "done"
+    ],
+    "optionTranslations": [
+      "～した",
+      "～する",
+      "～する",
+      "～された"
+    ],
+    "correct": "A",
+    "explanation": "この文は倒置構文を使っています。副詞句 'Only after the meeting' が文頭にあるため、主語と動詞が倒置されます。過去形の文なので、正しい動詞の形は 'did' です。",
+    "category": "構文",
+    "intent": "倒置構文の語順を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:54:34.691Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_20",
+    "sentence": "If she had known about the meeting, she ___ have attended.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もし彼女がその会議について知っていたら、出席していたかもしれません。",
+    "options": [
+      "will",
+      "would",
+      "can",
+      "should"
+    ],
+    "optionTranslations": [
+      "～だろう",
+      "～だろう",
+      "できる",
+      "すべき"
+    ],
+    "correct": "B",
+    "explanation": "仮定法過去完了の構文では、条件節が 'If + 主語 + had + 過去分詞' で、主節に '主語 + would + have + 過去分詞' を用います。よって正解は 'would' です。",
+    "category": "構文",
+    "intent": "仮定法過去完了の構文を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "日常",
+    "createdAt": "2025-08-07T04:54:41.385Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_22",
+    "sentence": "If I ___ more time, I would finish the report by today.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もしもっと時間があれば、今日中にレポートを終わらせるのに。",
+    "options": [
+      "have",
+      "has",
+      "having",
+      "had"
+    ],
+    "optionTranslations": [
+      "持っている",
+      "持っている",
+      "持っていること",
+      "持っていた"
+    ],
+    "correct": "D",
+    "explanation": "この文は仮定法過去を用いた文で、現在の事実とは異なる仮定を表しています。従って、過去形の 'had' が適切です。仮定法過去では 'If I had more time' として、現実には時間が十分ではないことを仮定しています。",
+    "category": "構文",
+    "intent": "省略された仮定法の文を完成させる",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:54:52.079Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_23",
+    "sentence": "Not only _____ the report on time, but he also completed it with great accuracy.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "彼は報告書を期限内に提出しただけでなく、非常に正確に仕上げました。",
+    "options": [
+      "did he submit",
+      "did he submitted",
+      "he did submit",
+      "he submitted"
+    ],
+    "optionTranslations": [
+      "彼は提出した",
+      "彼は提出した",
+      "彼は提出した",
+      "彼は提出した"
+    ],
+    "correct": "A",
+    "explanation": "倒置構文では、助動詞 'did' を主語 'he' の前に置きます。したがって、正しい語順は 'did he submit' となります。選択肢Bは動詞が過去形 'submitted' になっているため不適切です。",
+    "category": "構文",
+    "intent": "出題意図は倒置構文の語順を理解しているかを問うことです。",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:54:58.706Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_24",
+    "sentence": "If I ___ you, I would take the job offer.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もし私があなたの立場なら、その仕事のオファーを受けるでしょう。",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "is"
+    ],
+    "optionTranslations": [
+      "いる",
+      "いた",
+      "いたら",
+      "いる"
+    ],
+    "correct": "C",
+    "explanation": "仮定法過去では、主語が単数であっても 'were' を用います。条件文 'If I were you' は仮定的な状況を表し、現在とは異なる状況を仮定しています。他の選択肢 'am', 'was', 'is' は仮定法の文では不適切です。",
+    "category": "構文",
+    "intent": "省略された仮定法の文を完成させる",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "日常",
+    "createdAt": "2025-08-07T04:55:05.538Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_25",
+    "sentence": "Not only _____ she talented, but she is also very hardworking.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "彼女は才能があるだけでなく、とても勤勉でもあります。",
+    "options": [
+      "does",
+      "is",
+      "has",
+      "was"
+    ],
+    "optionTranslations": [
+      "～する",
+      "～である",
+      "～持っている",
+      "～だった"
+    ],
+    "correct": "B",
+    "explanation": "この文は倒置構文を使っています。'Not only'で始まる場合、通常の主語と動詞の順序が逆になります。ここでは 'is she talented' が正しい順序です。",
+    "category": "構文",
+    "intent": "倒置構文の語順を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "日常のトピック",
+    "createdAt": "2025-08-07T04:55:11.843Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_26",
+    "sentence": "If I ___ more time, I would travel around the world.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もしもっと時間があれば、世界中を旅行するだろう。",
+    "options": [
+      "have",
+      "had",
+      "has",
+      "having"
+    ],
+    "optionTranslations": [
+      "持っている",
+      "持っていた",
+      "持っている",
+      "持つこと"
+    ],
+    "correct": "B",
+    "explanation": "仮定法過去は、現在または未来の事実に反する仮定を表すため、過去形を使用します。この場合、『もしもっと時間があれば』の仮定を表すために、動詞 'have' の過去形 'had' が必要です。",
+    "category": "構文",
+    "intent": "仮定法過去の構文を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "日常のトピック",
+    "createdAt": "2025-08-07T04:55:18.222Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_27",
+    "sentence": "If I ___ enough time, I would finish the report today.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もし時間が十分にあれば、今日レポートを終わらせるのに。",
+    "options": [
+      "had",
+      "have",
+      "has",
+      "having"
+    ],
+    "optionTranslations": [
+      "持っていたら",
+      "持っている",
+      "持っている",
+      "持っていて"
+    ],
+    "correct": "A",
+    "explanation": "仮定法過去の構文では、現実とは異なる仮定を表現するために過去形を用います。この場合、現実には時間が足りないことを示しています。したがって、正しい選択肢は過去形の「had」です。",
+    "category": "構文",
+    "intent": "仮定法過去の構文を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "日常",
+    "createdAt": "2025-08-07T04:55:25.547Z",
+    "generationBatch": "part5_batch_1754542460589_zyxs6smkk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_28",
+    "sentence": "The meeting is scheduled to start ___ 3 PM in the main conference room.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議は午後3時にメイン会議室で始まる予定です。",
+    "options": [
+      "in",
+      "on",
+      "over",
+      "at"
+    ],
+    "optionTranslations": [
+      "～で",
+      "～に",
+      "～超えて",
+      "～に/～で"
+    ],
+    "correct": "D",
+    "explanation": "時間を示す場合、特定の時刻には前置詞 'at' を使います。したがって、正しい選択肢は 'at' です。他の選択肢は不適切です。'in' は期間を示すとき、'on' は日付や曜日を示すとき、'over' は範囲を示すときに使われます。",
+    "category": "前置詞",
+    "intent": "時間・場所に応じた前置詞の選択を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:58:45.208Z",
+    "generationBatch": "part5_batch_1754542718865_vat8ff728",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_29",
+    "sentence": "The annual report will be released in June, ___ the company's financial position will be thoroughly reviewed.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "年次報告書は6月に発表され、その際に会社の財務状況が徹底的に見直されます。",
+    "options": [
+      "which",
+      "who",
+      "when",
+      "whom"
+    ],
+    "optionTranslations": [
+      "～である",
+      "誰",
+      "～するとき",
+      "誰を"
+    ],
+    "correct": "C",
+    "explanation": "この文では、関係副詞 'when' が適切です。'when' は、'in June' という時間を説明するために使用されます。他の選択肢は関係副詞として時間を示す場合には使用できません。",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:58:53.606Z",
+    "generationBatch": "part5_batch_1754542718865_vat8ff728",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_30",
+    "sentence": "The new software update makes the application run _____ than the previous version.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいソフトウェアのアップデートにより、アプリケーションは前のバージョンよりも_____動作します。",
+    "options": [
+      "fast",
+      "faster",
+      "fastest",
+      "fastly"
+    ],
+    "optionTranslations": [
+      "速い",
+      "より速く",
+      "最速",
+      "速く"
+    ],
+    "correct": "B",
+    "explanation": "この文では、ソフトウェアの更新によりアプリケーションが以前のバージョンよりも速く動作することを表現しています。比較級を用いる必要があるため、正解は 'faster' です。'fast' は原級、'fastest' は最上級、'fastly' は存在しない形です。",
+    "category": "比較構文・数量",
+    "intent": "比較級・最上級・数量表現の理解を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T04:59:00.459Z",
+    "generationBatch": "part5_batch_1754542718865_vat8ff728",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_31",
+    "sentence": "Due to the recent increase in sales, the company is planning to expand its operations by opening several new offices in the ___ cities.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "最近の売上増加により、会社は___の都市にいくつかの新しいオフィスを開設して事業を拡大する計画を立てています。",
+    "options": [
+      "development",
+      "develop",
+      "developer",
+      "developing"
+    ],
+    "optionTranslations": [
+      "発展",
+      "開発する",
+      "開発者",
+      "発展途上の"
+    ],
+    "correct": "D",
+    "explanation": "この文では、'cities'に修飾語として形容詞が必要です。選択肢の中で形容詞の形をしているのは'developing'です。他の選択肢は名詞や動詞であり、文法的に適切ではありません。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T05:00:10.863Z",
+    "generationBatch": "part5_batch_1754542804586_4bqhivj4z",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_32",
+    "sentence": "In order to reach a mutually beneficial agreement, both parties need to ___ their differences and focus on the common goal.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "互いに利益をもたらす合意に達するためには、両者はそれぞれの違いを乗り越え、共通の目標に集中する必要があります。",
+    "options": [
+      "reconcile",
+      "recognize",
+      "realize",
+      "recruit"
+    ],
+    "optionTranslations": [
+      "調整する",
+      "認識する",
+      "理解する",
+      "募集する"
+    ],
+    "correct": "A",
+    "explanation": "この文では、両者が互いの相違点を「調整」し、共通の目標に集中する必要があるという意味が求められます。選択肢Aの'reconcile'は「調整する、和解する」という意味で文脈に合っています。選択肢Bの'recognize'は「認識する」、Cの'realize'は「実現する」、Dの'recruit'は「募集する」なので不適切です。",
+    "category": "慣用表現・句動詞",
+    "intent": "定型表現の理解を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T05:00:17.762Z",
+    "generationBatch": "part5_batch_1754542804586_4bqhivj4z",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_34",
+    "sentence": "The project was delayed ___ the supplier failed to deliver the materials on time.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "プロジェクトは、供給業者が材料を時間通りに納品できなかったために遅れました。",
+    "options": [
+      "although",
+      "unless",
+      "because",
+      "since"
+    ],
+    "optionTranslations": [
+      "～にもかかわらず",
+      "～でない限り",
+      "なぜなら",
+      "～なので"
+    ],
+    "correct": "D",
+    "explanation": "この文では、サプライヤーが時間通りに材料を届けなかったことがプロジェクトの遅延の原因であることを示しています。因果関係を表す接続詞として 'since'（～のために、～なので）が最も適切です。他の選択肢は因果関係を表しません。",
+    "category": "接続詞",
+    "intent": "因果関係を表す接続詞を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T05:00:32.119Z",
+    "generationBatch": "part5_batch_1754542804586_4bqhivj4z",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_35",
+    "sentence": "The manager decided to ___ the meeting until next week due to scheduling conflicts.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マネージャーはスケジュールの都合により、会議を来週まで延期することに決めました。",
+    "options": [
+      "call off",
+      "set up",
+      "put off",
+      "take up"
+    ],
+    "optionTranslations": [
+      "中止する",
+      "設定する",
+      "延期する",
+      "始める"
+    ],
+    "correct": "C",
+    "explanation": "この文では、会議を延期することを表現しています。「put off」は「延期する」という意味の句動詞で、ここでは最も適切です。他の選択肢は意味が異なります。「call off」は「中止する」、「set up」は「設置する、設定する」、「take up」は「始める、取り上げる」という意味です。",
+    "category": "慣用表現・句動詞",
+    "intent": "句動詞やビジネス慣用表現の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T05:00:37.989Z",
+    "generationBatch": "part5_batch_1754542804586_4bqhivj4z",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_36",
+    "sentence": "After weeks of negotiations, the two companies finally agreed ___ the terms of the merger.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "数週間にわたる交渉の末、両社はついに合併の条件に同意しました。",
+    "options": [
+      "to",
+      "on",
+      "with",
+      "for"
+    ],
+    "optionTranslations": [
+      "～に",
+      "～について",
+      "～と",
+      "～のために"
+    ],
+    "correct": "C",
+    "explanation": "この文では「合意する」という意味のイディオム 'agree on' を用います。'agree to' は提案や条件に対して合意する際に使われ、'agree with' は人や意見に賛成する際に使います。'agree for' という表現はありません。",
+    "category": "慣用表現・句動詞",
+    "intent": "イディオムの正しい使用を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T05:40:03.093Z",
+    "generationBatch": "part5_batch_1754545197696_zdt6stuaq",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_37",
+    "sentence": "The project was delayed due to unforeseen circumstances, but we managed to catch up ___ working overtime and prioritizing tasks efficiently.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "プロジェクトは予期しない事情により遅れましたが、残業をして効率的にタスクの優先順位をつけることで追いつくことができました。",
+    "options": [
+      "by",
+      "with",
+      "for",
+      "on"
+    ],
+    "optionTranslations": [
+      "～によって",
+      "～と共に",
+      "～のために",
+      "～に/～で"
+    ],
+    "correct": "A",
+    "explanation": "この文では、「by」を使って「〜することによって」という意味を表現します。句動詞「catch up by ~」は、遅れを取り戻すための手段を示すために使われます。他の選択肢では意味が通りません。",
+    "category": "慣用表現・句動詞",
+    "intent": "句動詞やビジネス慣用表現の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T05:40:09.556Z",
+    "generationBatch": "part5_batch_1754545197696_zdt6stuaq",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_38",
+    "sentence": "The marketing team has developed a new strategy, and the results of ___ implementation are expected to boost sales significantly by the end of the quarter.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マーケティングチームは新しい戦略を開発し、その実施の結果、四半期末までに売上が大幅に増加すると見込まれています。",
+    "options": [
+      "its",
+      "their",
+      "those",
+      "this"
+    ],
+    "optionTranslations": [
+      "その",
+      "それらの",
+      "それら",
+      "この"
+    ],
+    "correct": "A",
+    "explanation": "文脈上、'implementation'は単数名詞であり、'the marketing team'の行動を指しています。従って、単数形の所有代名詞 'its' が正しい選択です。'their' は複数名詞に対する所有代名詞、'those' は指示代名詞で複数を指し、'this' は単数の指示代名詞で所有代名詞にはなりません。",
+    "category": "関係詞・代名詞",
+    "intent": "指示代名詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T06:15:20.118Z",
+    "generationBatch": "part5_batch_1754547312140_2jw8f24j9",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_39",
+    "sentence": "The manager suggested ___ the report before the meeting to ensure all details were accurate.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マネージャーは、会議の前に報告書を確認して、すべての詳細が正確であることを確認するよう提案しました。",
+    "options": [
+      "to review",
+      "reviewing",
+      "reviewed",
+      "to reviewing"
+    ],
+    "optionTranslations": [
+      "見直すこと",
+      "見直す",
+      "見直された",
+      "見直すことに"
+    ],
+    "correct": "B",
+    "explanation": "「suggest」は動名詞を目的語に取る動詞の一つであり、動詞の原形やto不定詞は続きません。そのため、正しいのは動名詞の形である『reviewing』です。",
+    "category": "語法",
+    "intent": "to不定詞と動名詞を取る動詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T07:01:54.903Z",
+    "generationBatch": "part5_batch_1754550103727_i2re09g3x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_40",
+    "sentence": "The manager decided _____ a new marketing strategy to increase sales.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マネージャーは売上を増やすために新しいマーケティング戦略を決定しました。",
+    "options": [
+      "considering",
+      "to implement",
+      "avoiding",
+      "practicing"
+    ],
+    "optionTranslations": [
+      "検討する",
+      "実施する",
+      "避ける",
+      "練習する"
+    ],
+    "correct": "B",
+    "explanation": "動詞\"decide\"は通常、to不定詞を目的語に取ります。したがって、正しい選択肢は\"to implement\"です。他の選択肢は動名詞を目的語に取る動詞なので不適切です。",
+    "category": "語法",
+    "intent": "to不定詞と動名詞を取る動詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T07:02:04.979Z",
+    "generationBatch": "part5_batch_1754550103727_i2re09g3x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_41",
+    "sentence": "After the meeting, the team discussed the possibility of ___ a new project to improve the company's sales performance significantly.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議の後、チームは会社の売上パフォーマンスを大幅に向上させるための新しいプロジェクトを始める可能性について議論しました。",
+    "options": [
+      "to start",
+      "to starting",
+      "start",
+      "starting"
+    ],
+    "optionTranslations": [
+      "始めること",
+      "始めること",
+      "始める",
+      "始めることを"
+    ],
+    "correct": "D",
+    "explanation": "動名詞を取る動詞 'discuss' の後には動名詞が続くため、正しい選択肢は 'starting' です。",
+    "category": "語法",
+    "intent": "to不定詞と動名詞を取る動詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T07:02:11.376Z",
+    "generationBatch": "part5_batch_1754550103727_i2re09g3x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_43",
+    "sentence": "The project was completed on time, _____ the unexpected challenges we faced.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "そのプロジェクトは、直面した予期せぬ課題にもかかわらず、予定通りに完了しました。",
+    "options": [
+      "nevertheless",
+      "however",
+      "although",
+      "despite"
+    ],
+    "optionTranslations": [
+      "それにもかかわらず",
+      "しかし",
+      "～にもかかわらず",
+      "～にもかかわらず"
+    ],
+    "correct": "D",
+    "explanation": "文中で『予期しない課題に直面したにもかかわらず、プロジェクトが時間通りに完了した』という対比の意味を持たせるには、前置詞として使える 'despite' が適切です。他の選択肢は接続詞であり、文のこの位置には不適切です。",
+    "category": "接続詞",
+    "intent": "対比・譲歩の接続詞を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "同語の語形変化",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T07:56:32.949Z",
+    "generationBatch": "part5_batch_1754553384406_7qnxmo3wp",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_44",
+    "sentence": "In order to stay ahead in the competitive market, the company decided to ___ its research and development processes by implementing new technologies and methodologies.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "競争の激しい市場で先を行くために、会社は新しい技術と手法を導入して研究開発プロセスを効率化することを決定しました。",
+    "options": [
+      "enhance",
+      "suspend",
+      "diminish",
+      "streamline"
+    ],
+    "optionTranslations": [
+      "強化する",
+      "一時停止する",
+      "減らす",
+      "簡素化する"
+    ],
+    "correct": "D",
+    "explanation": "文脈から、競争の激しい市場で先行するために、会社が新しい技術と方法を導入して研究開発プロセスを効率化することを示唆しています。句動詞の 'streamline' は「効率化する」という意味で、最も適切です。他の選択肢は文意に合いません。",
+    "category": "慣用表現・句動詞",
+    "intent": "句動詞やビジネス慣用表現の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T08:05:01.460Z",
+    "generationBatch": "part5_batch_1754553892062_xi3g2s95y",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_45",
+    "sentence": "The new policy is expected to ___ the company's productivity.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しい方針は、会社の生産性を向上させると期待されています。",
+    "options": [
+      "enhance",
+      "enlarge",
+      "inflate",
+      "expand"
+    ],
+    "optionTranslations": [
+      "向上させる",
+      "拡大する",
+      "膨らませる",
+      "拡張する"
+    ],
+    "correct": "A",
+    "explanation": "「enhance」は「高める、向上させる」という意味で、文脈上「会社の生産性を高める」とするのが自然です。他の選択肢は「拡大する」や「膨らませる」などの意味であり、生産性に直接的には適していません。",
+    "category": "語彙選択",
+    "intent": "意味の似た語の正しい用法を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-07T17:49:42.596Z",
+    "generationBatch": "part5_batch_1754588976687_z0e2pveu0",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_46",
+    "sentence": "All travel expenses are ___ by the company upon submission of receipts.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "領収書の提出により、旅費はすべて会社から精算されます。",
+    "options": [
+      "reimburse",
+      "reimburses",
+      "reimbursed",
+      "reimbursing"
+    ],
+    "optionTranslations": [
+      "払い戻す",
+      "払い戻す",
+      "払い戻される",
+      "払い戻している"
+    ],
+    "correct": "C",
+    "explanation": "受動態の基本形は be動詞 + 過去分詞。主語は「All travel expenses（費用）」で、後ろに「by the company（会社によって）」があるため、受け身が必要です。よって過去分詞の「reimbursed」が正解。誤答：reimburse（原形）は be動詞の後に置けない／reimburses（三単現）は主語と一致せず受動にも不適／reimbursing（現在分詞）は進行形や名詞修飾で使い、受動完結の意味にならない。",
+    "category": "動詞の形・時制",
+    "intent": "受動態と能動態の判断を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-14T18:01:31.776Z",
+    "generationBatch": "part5_batch_1755194426526_w0d12nycg",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_47",
+    "sentence": "After reviewing the quarterly performance and identifying bottlenecks in customer onboarding, the executive committee agreed to invest ___ a scalable cloud platform and intensive staff training over the next two quarters to reduce response times without compromising data security and regulatory compliance.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "四半期の業績を精査し、顧客オンボーディングにおけるボトルネックを特定した結果、経営会議は、データセキュリティおよび法令・規制の遵守を損なうことなく応答時間を短縮するため、今後2四半期にわたりスケーラブルなクラウドプラットフォームへの投資と従業員向けの集中的な研修を行うことで合意した。",
+    "options": [
+      "into",
+      "inside",
+      "in",
+      "within"
+    ],
+    "optionTranslations": [
+      "～に",
+      "～の中で",
+      "～に",
+      "～の範囲内で"
+    ],
+    "correct": "C",
+    "explanation": "正解は「in」。動詞 invest は通常「〜に投資する」の意味で前置詞 in をとります（invest in something）。into は物理的な移動や変化の方向を示すことが多く、invest into は口語で見かけることはあっても標準的なビジネス英語・TOEICでは不適切とされます。inside は「〜の内部に」という位置関係で使われ、invest inside a platform のような用法は不自然です。within は「〜の範囲内で／〜以内に」を示す前置詞で、投資対象を導く前置詞としては用いません。",
+    "category": "前置詞",
+    "intent": "動詞との組み合わせによる前置詞を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-14T18:09:10.619Z",
+    "generationBatch": "part5_batch_1755194843462_l17mo9smf",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_48",
+    "sentence": "Following the merger, all regional managers are expected to review their Q4 forecasts and adjust their targets to comply ___ the updated reporting guidelines, while coordinating with their teams to ensure any variance is justified and documented for executive review early next week.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "合併後、各地域のマネージャー全員は、第4四半期の予測を見直し、改訂された報告ガイドラインを順守するよう目標を調整するとともに、来週初めの経営陣によるレビューに向けて、チームと連携し、発生した差異には正当な説明を付して文書化しておくことが求められている。",
+    "options": [
+      "with",
+      "to",
+      "by",
+      "for"
+    ],
+    "optionTranslations": [
+      "～に従って",
+      "～に",
+      "～によって",
+      "～のために"
+    ],
+    "correct": "A",
+    "explanation": "正解は with。動詞 comply は「〜に従う・順守する」という意味で、慣用的に前置詞 with を取ります（comply with regulations/policies）。to は目的語との結びつきが不自然で、現代英語では誤りとされます。by は「手段・締め切り」を示す前置詞で意味不適合。for は「目的・利益」を表し、この文脈では不適切です。",
+    "category": "前置詞",
+    "intent": "慣用的な前置詞の使用を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-14T18:10:12.454Z",
+    "generationBatch": "part5_batch_1755194843462_l17mo9smf",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_49",
+    "sentence": "To ensure that the product launch remains on schedule and that regional teams have the tools they need to execute the campaign effectively, the executive committee voted to ___ additional funds to the marketing department this quarter, prioritizing digital advertising and customer analytics over discretionary travel.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "製品ローンチがスケジュールどおりに進み、各地域のチームがキャンペーンを効果的に実行するために必要なツールを確保できるよう、経営執行委員会は今四半期、マーケティング部門に追加予算を配分することを議決し、不要不急の出張よりもデジタル広告と顧客分析を優先する方針とした。",
+    "options": [
+      "delegate",
+      "designate",
+      "allocate",
+      "alleviate"
+    ],
+    "optionTranslations": [
+      "委任する",
+      "指定する",
+      "配分する",
+      "軽減する"
+    ],
+    "correct": "C",
+    "explanation": "正解は「allocate（割り当てる）」です。ビジネスでは「allocate funds to ～（～に資金を割り当てる）」という定型コロケーションが使われます。その他の選択肢は以下の理由で不適切です。- delegate：主に「権限・職務を委任する」に使い、「funds」を目的語に取るのは不自然。- designate：「指定する・指名する」の意味で、資金については通常「designate funds for ～」という形をとり、「to」を用いる本問の文脈・構文には合いません。- alleviate：「（問題・苦痛などを）緩和する」の意味で、資金に対しては意味的に不適合です。以上より、資金配分を表す自然な表現は「allocate additional funds to the marketing department」となります。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "予算配分とマーケティング",
+    "createdAt": "2025-08-14T18:11:42.824Z",
+    "generationBatch": "part5_batch_1755194843462_l17mo9smf",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_50",
+    "sentence": "___ the budget was approved last week, the finance team has not released the funds yet.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "予算は先週承認されたものの、財務部はまだ資金を払い出していない。",
+    "options": [
+      "despite",
+      "although",
+      "because of",
+      "however"
+    ],
+    "optionTranslations": [
+      "～にもかかわらず",
+      "～だけれども",
+      "～のために",
+      "しかし"
+    ],
+    "correct": "B",
+    "explanation": "正解は「although」。although は接続詞で、後ろに主語＋動詞の完全文（the budget was approved...）をとり、「〜だけれども（しかし）」という譲歩を表します。Aの despite は前置詞なので後ろには名詞（句）しか置けず、不定文が続くこの文には不適切です（例：despite the budget’s approval）。Cの because of も前置詞で名詞句のみを後続させるため不適切です（文にするなら because を用いて because the budget was approved...）。Dの however は逆接の副詞で、通常は文と文をつなぐときに文頭でカンマを伴って使います（However, ...）。ここでは従属接続詞が必要なので不可です。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス（予算・財務）",
+    "createdAt": "2025-08-14T18:13:05.284Z",
+    "generationBatch": "part5_batch_1755194843462_l17mo9smf",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_51",
+    "sentence": "No sooner had we finalized the budget ___ the CEO requested revisions.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "予算を確定した途端、CEOが見直しを求めた。",
+    "options": [
+      "when",
+      "than",
+      "as soon as",
+      "before"
+    ],
+    "optionTranslations": [
+      "～したとき",
+      "～するとすぐに",
+      "～するとすぐに",
+      "～する前に"
+    ],
+    "correct": "B",
+    "explanation": "「No sooner ... than ...」は否定的先行表現に続く倒置構文で、「〜するとすぐに…」を表します。No sooner が文頭に来ると助動詞＋主語の語順（had we finalized）が必要になり、対応する接続詞は than です。when は「hardly/scarcely ... when ...」と組み合わせるのが正しく、本問では不適。as soon as は意味は近いものの構文が異なり倒置もしません。before は意味が変わってしまい不適切です。",
+    "category": "構文",
+    "intent": "否定構文の語順を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス（予算と承認）",
+    "createdAt": "2025-08-14T18:14:18.844Z",
+    "generationBatch": "part5_batch_1755194843462_l17mo9smf",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_52",
+    "sentence": "After months of assuring stakeholders that the software update would address security vulnerabilities and improve performance, the product team finally ___ on its commitments by releasing a stable build ahead of schedule, which helped restore customer confidence and reduce the volume of support tickets across regions.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "数カ月にわたり、ソフトウェアのアップデートによってセキュリティ上の脆弱性に対処しパフォーマンスを向上させると利害関係者に保証してきた製品チームは、ついに約束を果たして予定より前倒しで安定版をリリースし、これが顧客の信頼回復と各地域でのサポートチケット件数の減少に寄与した。",
+    "options": [
+      "follow through",
+      "follows through",
+      "followed through",
+      "following through"
+    ],
+    "optionTranslations": [
+      "約束を果たす",
+      "約束を果たす",
+      "約束を果たした",
+      "約束を果たすこと"
+    ],
+    "correct": "C",
+    "explanation": "イディオム「follow through on ～」は「（約束・計画など）を最後までやり遂げる」という意味です。文脈は過去の出来事（finally、which helped など）を述べているため、過去形の「followed through」が最も自然です。その他の選択肢は以下の理由で不適切です：\n- follow through：原形で、助動詞がないため文法的に不完全。\n- follows through：現在形で、ここでは文全体の時制（過去叙述）と合わない。\n- following through：現在分詞で、be動詞などが必要。単独では主節の述語になれません。\nなお、「follow through on one’s commitments」は定型的なコロケーションです。",
+    "category": "慣用表現・句動詞",
+    "intent": "イディオムの正しい使用を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "製品開発・プロジェクト管理",
+    "createdAt": "2025-08-15T00:43:33.009Z",
+    "generationBatch": "part5_batch_1755218558886_mkr857wyc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_53",
+    "sentence": "During the quarterly review meeting, the department head asked everyone to provide ___ feedback on the pilot program's results, emphasizing that honest, actionable comments would help the team refine the rollout plan without delaying the launch.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "四半期レビュー会議で、部門長は全員にパイロットプログラムの結果について建設的なフィードバックを求め、正直で実行可能なコメントが、導入を遅らせずに展開計画の練り上げに役立つと強調した。",
+    "options": [
+      "instructive",
+      "productive",
+      "beneficial",
+      "constructive"
+    ],
+    "optionTranslations": [
+      "示唆に富む",
+      "実りある",
+      "有益な",
+      "建設的な"
+    ],
+    "correct": "D",
+    "explanation": "「constructive feedback」は「建設的なフィードバック」という定番のコロケーションで、改善に役立つ前向きな意見を指します。文脈でも「honest, actionable comments（正直で行動可能なコメント）」と意味が一致し、最も自然です。instructive は「教訓的な／ためになる」で examples や lesson などと相性が良く、feedback にはやや不自然。productive は「生産的な」で meeting や day などの能率に関わる名詞と用いられることが多く、feedback の質を表す語として一般的ではありません。beneficial は「有益な」で be beneficial to ～ の構文で使われやすく、名詞を直接修飾して「beneficial feedback」とするのは不自然です。よって正解は constructive です。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:14:23.808Z",
+    "generationBatch": "part5_batch_1755220411240_5dnwcivza",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_54",
+    "sentence": "Neither the CEO nor the directors ___ available for comment at this time.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "現時点では、CEOも取締役もコメントに応じられない。",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "be"
+    ],
+    "optionTranslations": [
+      "である",
+      "である",
+      "だった",
+      "である"
+    ],
+    "correct": "B",
+    "explanation": "「Neither A nor B」の構文では、動詞は直後の主語Bに一致します。本問では直近の主語が複数形の“the directors”なので、複数動詞の“are”が正解です。isは単数主語にしか一致しないため不可、wasは時制が過去かつ単数扱いで不適切、beは原形で、助動詞の後などでのみ用いられるためここでは使えません。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:38:33.483Z",
+    "generationBatch": "part5_batch_1755221863448_sm8hu1p6v",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_55",
+    "sentence": "___ had the team submitted the proposal than the client requested several changes by e-mail.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "チームが提案書を提出するやいなや、クライアントは電子メールでいくつかの修正を依頼した。",
+    "options": [
+      "Hardly",
+      "Scarcely",
+      "Barely",
+      "No sooner"
+    ],
+    "optionTranslations": [
+      "ほとんど～ない",
+      "ほとんど～ない",
+      "かろうじて",
+      "～するやいなや"
+    ],
+    "correct": "D",
+    "explanation": "否定的語句を文頭に置くと倒置が起こります。本問は「〜するやいなや…した」を表す定型「No sooner ... than ...」を使うため、文頭には No sooner を置き、助動詞 had を倒置して「No sooner had the team submitted ... than ...」とします。Hardly/Scarcely/Barely は意味は近いものの、通常は「when」と組み合わせる（Hardly/Scarcely/Barely ... when ...）ため、than と共起する本構文では不適切です。",
+    "category": "構文",
+    "intent": "否定構文の語順を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:39:42.080Z",
+    "generationBatch": "part5_batch_1755221926827_fbmhveffk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_56",
+    "sentence": "___ sales have slowed this quarter, the board has approved a larger advertising budget to keep our brand visible, and the marketing team will launch a new campaign next Monday to reach customers online and in stores.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "今四半期は売上が鈍化しているものの、当社ブランドの認知を維持するため、取締役会は広告予算の増額を承認し、マーケティングチームは来週月曜日にオンラインと店舗で顧客にアプローチする新しいキャンペーンを開始します。",
+    "options": [
+      "Because of",
+      "Despite",
+      "Although",
+      "During"
+    ],
+    "optionTranslations": [
+      "〜のために",
+      "〜にもかかわらず",
+      "〜ものの",
+      "〜の間に"
+    ],
+    "correct": "C",
+    "explanation": "空所の後ろは「sales have slowed」と主語＋動詞の節なので、節を導く接続詞のAlthoughが必要です。Because of／Despite／Duringはいずれも前置詞で、後ろには名詞（名詞句）が来なければならず、「sales have slowed」のような節は続けられません。文意も「売上は落ちているが（それにもかかわらず）」という逆接が自然なのでAlthoughが最適です。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:53:47.985Z",
+    "generationBatch": "part5_batch_1755222746639_iqim25uha",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_57",
+    "sentence": "The office remains ___ during the holiday.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "オフィスは休暇中は閉まっています。",
+    "options": [
+      "close",
+      "closing",
+      "closed",
+      "closely"
+    ],
+    "optionTranslations": [
+      "閉まる",
+      "閉鎖中",
+      "閉まっている",
+      "綿密に"
+    ],
+    "correct": "C",
+    "explanation": "remain は連結動詞で、後ろには主語の状態を表す形容詞が来ます。正解は closed（形容詞）で「閉まった状態」を表し、remain closed は自然なコロケーションです。close は動詞（閉める）または形容詞（近い）で、この文脈では不適切。closing は現在分詞で状態補語に不向き。closely は副詞で文法的に合いません。文意：『そのオフィスは休暇中は閉まっています。』",
+    "category": "品詞識別",
+    "intent": "動詞と形容詞の識別を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:55:32.651Z",
+    "generationBatch": "part5_batch_1755222746639_iqim25uha",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_58",
+    "sentence": "After reviewing the budget, the manager decided ___ postpone the product launch until next month.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "予算を見直した後、マネージャーは製品の発売を来月まで延期することを決めた。",
+    "options": [
+      "about",
+      "to",
+      "for",
+      "on"
+    ],
+    "optionTranslations": [
+      "～について",
+      "～すること",
+      "～のために",
+      "～に"
+    ],
+    "correct": "B",
+    "explanation": "decide は「decide to + 動詞の原形」をとるため、不定詞 to が必要です。about や on は前置詞なので、後ろに動詞の原形ではなく動名詞（-ing）が続く必要があり、decided about/on postpone は誤りで、正しくは decided about/on postponing となります。for も同様にこの文脈では不自然です（decide for postpone は不可）。したがって正解は to です。",
+    "category": "動詞の形・時制",
+    "intent": "不定詞と動名詞の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:56:22.603Z",
+    "generationBatch": "part5_batch_1755222746639_iqim25uha",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_59",
+    "sentence": "We agreed ___ postpone the meeting.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "私たちは会議を延期することに合意しました。",
+    "options": [
+      "about",
+      "for",
+      "to",
+      "on"
+    ],
+    "optionTranslations": [
+      "〜について",
+      "〜のために",
+      "〜することに",
+      "〜について"
+    ],
+    "correct": "C",
+    "explanation": "agree は「agree to + 動詞原形」で「〜することに同意する」を表し、to不定詞を取ります。したがって正解は to。about/on は「〜について意見が一致する」（agree about/on + 名詞／動名詞）で使い方が異なり、この文のように動詞原形を続けることはできません。for も不適切です。動詞によっては enjoy, avoid などのように動名詞（〜ing）を取るものもあり、to不定詞を取る agree との使い分けが重要です。",
+    "category": "語法",
+    "intent": "to不定詞と動名詞を取る動詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T01:57:31.566Z",
+    "generationBatch": "part5_batch_1755222746639_iqim25uha",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_60",
+    "sentence": "After reviewing last quarter's sales results at the meeting, the marketing team considered ___ a short video campaign to increase brand awareness among younger customers, but they decided to run a small test first to see if the idea would fit our budget and timeline.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議で前四半期の売上結果を検討した後、マーケティングチームは若年層の顧客の間でのブランド認知度を高めるために短尺動画キャンペーンの実施を検討したが、その案が当社の予算とスケジュールに合うかを確かめるため、まずは小規模なテストを行うことにした。",
+    "options": [
+      "to launch",
+      "launch",
+      "launched",
+      "launching"
+    ],
+    "optionTranslations": [
+      "開始すること",
+      "開始する",
+      "開始した",
+      "開始"
+    ],
+    "correct": "D",
+    "explanation": "動詞considerの後には不定詞ではなく動名詞（〜ing形）を用います。よって正解はlaunching。to launchはconsiderと相性が悪く文法的に誤り、launch（原形）は目的語として不適切、launched（過去分詞）もこの位置では用いられません。",
+    "category": "動詞の形・時制",
+    "intent": "不定詞と動名詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "職場の会議・マーケティング",
+    "createdAt": "2025-08-15T01:58:27.174Z",
+    "generationBatch": "part5_batch_1755222746639_iqim25uha",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_61",
+    "sentence": "The unexpected cost overruns ultimately resulted ___ a miscalculation in the vendor’s currency hedging assumptions, despite several layers of internal review.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "複数段階の内部レビューがあったにもかかわらず、予期せぬコスト超過は最終的にベンダーの通貨ヘッジの前提条件における計算誤りに起因していた。",
+    "options": [
+      "in",
+      "from",
+      "by",
+      "of"
+    ],
+    "optionTranslations": [
+      "〜という結果に",
+      "〜に起因して",
+      "〜によって",
+      "〜の"
+    ],
+    "correct": "B",
+    "explanation": "result は前置詞によって意味が変わります。result from は「〜に起因する（原因）」、result in は「結果として〜になる（結果）」の意味です。この文では「コスト超過は、（原因である）為替ヘッジ前提の誤算に起因して起きた」という因果関係を述べているため、正解は from。誤答の in にすると「コスト超過が誤算を引き起こした」という逆の意味になり不自然です。by は手段・行為者を示す前置詞で不適切。of は名詞 result と結びつく “the result of ...” の形では使えますが、動詞 result とは組み合わせません。",
+    "category": "前置詞",
+    "intent": "動詞との組み合わせによる前置詞を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:19:00.203Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_62",
+    "sentence": "___ the audit confirms that the vendor has remedied the data-retention lapses, instituted verifiable encryption controls across all regions, and documented chain-of-custody procedures subject to independent verification, the executive committee will authorize the phased rollout, notwithstanding concerns about short-term disruption and potential regulatory scrutiny.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "監査で、ベンダーがデータ保持の不備を是正し、全地域で検証可能な暗号化管理を導入し、独立した検証の対象となる証拠保全手続きを文書化していることが確認されたと仮定すれば、短期的な混乱や規制当局による精査の可能性への懸念にもかかわらず、執行委員会は段階的な導入を承認する。",
+    "options": [
+      "Assuming",
+      "Assumption",
+      "Assumed",
+      "Assumptively"
+    ],
+    "optionTranslations": [
+      "仮定して",
+      "仮定",
+      "仮定された",
+      "仮定的に"
+    ],
+    "correct": "A",
+    "explanation": "空所には従属節を導いて「もし〜であれば」という条件を表す接続詞的用法が必要です。Assuming (that) は「〜であると仮定すれば」という意味で従属節を導けるため文脈に適合します。Assumption は名詞で節を導けず不適切。Assumed は形容詞／過去分詞で名詞を修飾するか受動の一部として用いられるため、この位置では不可。Assumptively は副詞で動詞や形容詞を修飾する語であり、接続詞の機能を持たないため不適切です。したがって正解は Assuming です。",
+    "category": "接続詞",
+    "intent": "論理関係に合った接続詞選択を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "同語の語形変化",
+    "difficulty": "hard",
+    "topic": "企業監査・製品ローンチ",
+    "createdAt": "2025-08-15T02:20:08.386Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_63",
+    "sentence": "Despite a surge in site traffic following the rebranding, the sales division notes that, among enterprise accounts with procurement cycles exceeding nine months, there are ___ than last year committing to multi-year agreements, a shortfall attributed to tightened compliance audits and postponed capital expenditures.",
+    "question": "(___) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "リブランディング後にサイトのトラフィックが急増したにもかかわらず、営業部によると、調達サイクルが9カ月を超える法人顧客の間では、複数年契約を結ぶ企業は昨年より少なく、この落ち込みはコンプライアンス監査の厳格化と設備投資の先送りに起因するという。",
+    "options": [
+      "less",
+      "smaller",
+      "few",
+      "fewer"
+    ],
+    "optionTranslations": [
+      "より少ない量",
+      "より小さい",
+      "少ない",
+      "より少ない数"
+    ],
+    "correct": "D",
+    "explanation": "可算名詞（enterprise accounts/clients など）の数量比較には fewer を用います。less は不可算名詞に用いるのが原則で、この文のように暗黙に「accounts/clients」が想定される可算複数には不適切です。few は形容詞で名詞を直接修飾するときに使うため、there are few than ... の形は文法的に成立しません。smaller は形容詞で、名詞（a smaller number など）を伴うか、比較対象が数量そのもの（the number is smaller）である必要があり、there are smaller than last year の形は不自然です。従って正解は fewer です。",
+    "category": "比較構文・数量",
+    "intent": "数量詞の正しい使用を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:21:23.759Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_64",
+    "sentence": "The committee ___ several outside advisors, some of whom were appointed last fiscal year, has concluded, after reviewing its preliminary audit and considering the regulator's guidance, that the merger timeline should be adjusted to accommodate unforeseen compliance requirements.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "委員会は、前会計年度に任命された者もいる数名の外部顧問とともに、予備監査を精査し規制当局の指針を考慮した結果、合併のスケジュールは予期せぬコンプライアンス要件に対応するために調整すべきだと結論づけた。",
+    "options": [
+      "and",
+      "along with",
+      "between",
+      "versus"
+    ],
+    "optionTranslations": [
+      "および",
+      "〜に加えて",
+      "〜の間で",
+      "〜対〜"
+    ],
+    "correct": "B",
+    "explanation": "主語は集合名詞 the committee（委員会）で、米語では単数扱いが基本です。本問では動詞が has concluded（単数）および所有代名詞 its（単数）となっているため、主語が単数のままである必要があります。along with は『〜とともに』という付加情報を導く前置詞句で、文法上の主語はあくまで the committee にとどまり、動詞は単数のままが正解です。一方、and は等位接続で主語を複合主語にしてしまうため、本来は複数動詞 have が必要となり、文中の has と一致しません。between は『AとBの間』のように原則2項を要求する前置詞で、この文脈には不適合です。versus は『〜対〜』という対立・比較を表す語で、主語部での付加には不自然で意味的にも不適切です。したがって正解は along with です。",
+    "category": "主語と動詞の一致",
+    "intent": "集合名詞の動詞選択を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "企業の合併とコンプライアンス",
+    "createdAt": "2025-08-15T02:23:12.724Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_65",
+    "sentence": "The memo was brief yet ___, leaving no room for misinterpretation.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "そのメモは簡潔だが明確で、誤解の余地がなかった。",
+    "options": [
+      "ambiguous",
+      "exhaustive",
+      "unequivocal",
+      "cursory"
+    ],
+    "optionTranslations": [
+      "曖昧な",
+      "網羅的な",
+      "明確な",
+      "大まかな"
+    ],
+    "correct": "C",
+    "explanation": "文脈の手がかりは「leaving no room for misinterpretation（誤解の余地がない）」です。unequivocal は「明確で曖昧さがない」を意味し、この手がかりと完全に一致します。ambiguous（曖昧な）は真逆、cursory（雑な・大ざっぱな）は丁寧で明確という評価と合いません。exhaustive（網羅的な）は情報の網羅性を表す語で、「brief（簡潔）」とも対立しやすく、ここで言いたいのは明確さであって網羅性ではないため不適切です。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:24:03.077Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_66",
+    "sentence": "Whether the merger proceeds ultimately hinges ___ the regulator's green light, a variable our board has repeatedly underestimated.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "合併が進むかどうかは、最終的には規制当局の承認にかかっており、その要因を当社の取締役会は繰り返し過小評価してきた。",
+    "options": [
+      "on",
+      "over",
+      "about",
+      "against"
+    ],
+    "optionTranslations": [
+      "〜に",
+      "〜をめぐって",
+      "〜について",
+      "〜に反対して"
+    ],
+    "correct": "A",
+    "explanation": "hinge on は「〜次第である／〜にかかっている」という慣用表現で、後ろに原因・条件を示す名詞句が来ます。文意は「合併が進むかどうかは最終的に規制当局の承認にかかっている」ということ。over, about, against はいずれも hinge と結びつかず不自然です（hinge over/about/against という用法はありません）。なお hinge upon も可能ですが、今回の選択肢にはなく、正解は on です。",
+    "category": "慣用表現・句動詞",
+    "intent": "イディオムの正しい使用を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:25:10.647Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_67",
+    "sentence": "___ your timely intervention, the negotiations would have foundered.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "あなたの適時の介入がなければ、交渉は頓挫していただろう。",
+    "options": [
+      "Aside from",
+      "If",
+      "But for",
+      "Whereas"
+    ],
+    "optionTranslations": [
+      "〜は別として",
+      "もし",
+      "〜がなければ",
+      "一方で"
+    ],
+    "correct": "C",
+    "explanation": "正解は「But for」。But for + 名詞句 で「もし～がなければ（= If it were/had not been for）」という省略された仮定法を表し、帰結節の仮定法過去完了（would have + p.p.）と呼応しています。文意は「あなたの迅速な介入がなければ、交渉は頓挫していただろう」。\n誤答：\n- Aside from は「～は別として／～以外に」で単なる除外・付加の用法で、反事実条件を表せません。\n- If は接続詞ですが、後ろには節（主語＋動詞）が必要で、名詞句だけを取ることはできません。\n- Whereas は「一方で」の対比を示す接続詞で、条件を表さず、この位置・構文にも不適切です。",
+    "category": "構文",
+    "intent": "省略された仮定法の文を完成させる",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス（交渉）",
+    "createdAt": "2025-08-15T02:26:13.776Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_68",
+    "sentence": "After months of contentious negotiations, the board finally ratified the merger agreement, ___ several major investors increased their stakes and the share price surged in after-hours trading.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "数カ月にわたる紛糾した交渉の末、取締役会はついに合併契約を正式に承認し、それを受けて複数の大口投資家が持ち株比率を引き上げ、時間外取引で株価が急騰した。",
+    "options": [
+      "thereafter",
+      "subsequently",
+      "whereupon",
+      "then"
+    ],
+    "optionTranslations": [
+      "それ以後",
+      "その後",
+      "すると直ちに",
+      "それから"
+    ],
+    "correct": "C",
+    "explanation": "正解は「whereupon」。whereupon は関係副詞で「その結果すぐに／それを受けて直ちに」という意味を持ち、直前の出来事（合併契約の承認）を先行詞として受けて、続く節を従属させます。コンマで直接接続でき、出来事の直後の連続性を自然に表せます。これに対し、thereafter・subsequently・then はいずれも文全体をつなぐ接続副詞であり、カンマだけで独立節とつなぐと文法的に不適切（コンマ・スプライス）になります。さらに、意味面でも whereupon は「直後」の含意が強く、文脈に最も適合します。",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:28:36.992Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_69",
+    "sentence": "Had we ___ by the revised protocol during the pilot phase, we would have avoided a costly compliance violation and ensuing regulatory scrutiny.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "パイロット段階で改訂されたプロトコルを遵守していれば、高くつくコンプライアンス違反とその後の規制当局による精査を避けられただろう。",
+    "options": [
+      "complied",
+      "abided",
+      "adhered",
+      "conformed"
+    ],
+    "optionTranslations": [
+      "遵守した",
+      "従った",
+      "厳守した",
+      "適合した"
+    ],
+    "correct": "B",
+    "explanation": "解説: 本文は仮定法過去完了の倒置構文「Had + 主語 + 過去分詞」で、If we had ... の省略形。主節は would have + 過去分詞 で過去の事実に反する仮定を表しています。空所には過去分詞が入り、かつ直後の前置詞 by と正しく結びつく語が必要です。abide by ～（～に従う）が正しい連語なので B が正解。その他は前置詞の相性が誤りです：comply with、adhere to、conform to/with が正用法で、by は取りません。",
+    "category": "構文",
+    "intent": "仮定法過去完了の構文を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:30:20.602Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_70",
+    "sentence": "Although the board ___ a merger with Vantage Dynamics right now to address an acute cash-flow crunch, it ordinarily eschews large acquisitions and instead favors incremental partnerships that preserve operational autonomy.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "取締役会は、深刻な資金繰りの逼迫に対処するため、現在Vantage Dynamicsとの合併を検討しているものの、通常は大規模な買収は避け、代わりに運営上の自律性を保つ段階的な提携を好む。",
+    "options": [
+      "considers",
+      "has been considering",
+      "is considering",
+      "will consider"
+    ],
+    "optionTranslations": [
+      "検討する",
+      "検討し続けている",
+      "検討している",
+      "検討するだろう"
+    ],
+    "correct": "C",
+    "explanation": "文脈の「right now（今まさに）」が現在進行中の動作を示すため、現在進行形の is considering が最も自然です。現在形の considers は一般的傾向・習慣や不変の事実を述べる用法で、「今まさに〜している」という一時的状況とは合いません。has been considering は「ここ最近ずっと検討してきた」という継続を示すには使えますが、right now という瞬間性の強い副詞とは相性が悪く、この位置では不自然です。will consider は未来の予定・意思を表し、すでに「今取り組んでいる」という状況と矛盾します。主語の the board は集合体ですが、文法上は単数扱いで is を用いる点にも注意しましょう。",
+    "category": "動詞の形・時制",
+    "intent": "現在形と現在進行形の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "hard",
+    "topic": "ビジネス: 経営判断・M&A",
+    "createdAt": "2025-08-15T02:31:23.180Z",
+    "generationBatch": "part5_batch_1755224228837_1iq5yik8d",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_71",
+    "sentence": "The changes resulted ___ higher sales.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "その変更により売上が伸びた。",
+    "options": [
+      "inner",
+      "inside",
+      "in",
+      "inward"
+    ],
+    "optionTranslations": [
+      "内側の",
+      "～の中に",
+      "～に",
+      "内向きに"
+    ],
+    "correct": "C",
+    "explanation": "正解は「in」。動詞 result は「result in + 結果」（〜という結果になる）という定型の前置詞パターンを取ります。よって「The changes resulted in higher sales.」が自然です。inner（形容詞）、inward（形容詞/副詞）は品詞が合わず、inside は前置詞として使えることはありますが、「result inside」は意味的・語法的に不自然で、定型表現としては成り立ちません。参考：原因を表す場合は「result from + 原因」を用います。",
+    "category": "前置詞",
+    "intent": "動詞との組み合わせによる前置詞を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:33:57.333Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_72",
+    "sentence": "If the manual is only in Spanish, we can translate ___ English before sending it to clients.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マニュアルがスペイン語のみなら、クライアントに送る前に英語に翻訳できます。",
+    "options": [
+      "in",
+      "in to",
+      "into",
+      "within"
+    ],
+    "optionTranslations": [
+      "～で",
+      "～の中へ",
+      "～に",
+      "～以内で"
+    ],
+    "correct": "C",
+    "explanation": "正解は「into」。動詞「translate」は「translate A into B（AをBに翻訳する）」という定型表現で使われます。したがって「translate into English」が正しい。その他は不自然または意味が変わるため不可。「in」は場所・状態を表し、『英語で』という意味にはならずコロケーションとして誤り。「in to」は偶然の語の連なりで、この動詞とは結びつかない。「within」は『〜の範囲内で』の意味で、言語への変換を表せない。",
+    "category": "前置詞",
+    "intent": "動詞との組み合わせによる前置詞を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:34:57.946Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_73",
+    "sentence": "___ the instructions are clear and the schedule is flexible, new hires can easily complete the required online training at home and still have time to meet with their managers during the first week.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "指示が明確でスケジュールが柔軟なため、新入社員は自宅で必須のオンライン研修を簡単に修了でき、最初の1週間のあいだに上司と会う時間も確保できる。",
+    "options": [
+      "Because",
+      "Because of",
+      "Despite",
+      "Due to"
+    ],
+    "optionTranslations": [
+      "〜なので",
+      "〜のために",
+      "〜にもかかわらず",
+      "〜が原因で"
+    ],
+    "correct": "A",
+    "explanation": "空所の後には「the instructions are clear and the schedule is flexible」という節（主語＋動詞＋形容詞）が続いています。接続詞の Because は後ろに節を取りますが、Because of／Despite／Due to は前置詞で、後ろには名詞（名詞句）しか置けません。ここでは動詞 are（動詞）と clear/flexible（形容詞）が見えるため、節を導く接続詞が必要で、正解は Because です。これにより、「説明が分かりやすく、スケジュールが柔軟なので…」という因果関係が自然に表せます。",
+    "category": "品詞識別",
+    "intent": "動詞と形容詞の識別を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:36:00.296Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_74",
+    "sentence": "If any issues come up during the client call, please ___ any concerns right away so we can address them before the meeting ends.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "顧客との通話中に何か問題が生じた場合は、会議が終わる前に対処できるよう、懸念事項があればすぐに取り上げてください。",
+    "options": [
+      "bring in",
+      "bring up",
+      "bring out",
+      "bring over"
+    ],
+    "optionTranslations": [
+      "持ち込む",
+      "取り上げる",
+      "引き出す",
+      "持ってくる"
+    ],
+    "correct": "B",
+    "explanation": "正解は「bring up」。「bring up」は「（話題として）取り上げる・提起する」という意味で、concerns（懸念）と非常に相性が良い表現です。その他の選択肢は文脈に合いません。bring in（持ち込む・導入する／人を参加させる）、bring out（引き出す・発売する）、bring over（持ってくる・連れてくる）はいずれも「懸念を会話で取り上げる」という意味にはなりません。なお、前半のcome upは「（問題などが）発生する・持ち上がる」の意味です。",
+    "category": "慣用表現・句動詞",
+    "intent": "句動詞やビジネス慣用表現の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "職場コミュニケーション",
+    "createdAt": "2025-08-15T02:36:41.538Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_75",
+    "sentence": "We moved the meeting to a conference room ___ there is better video equipment.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議をより良い映像設備のある会議室に移しました。",
+    "options": [
+      "when",
+      "why",
+      "how",
+      "where"
+    ],
+    "optionTranslations": [
+      "いつ",
+      "なぜ",
+      "どのように",
+      "どこで"
+    ],
+    "correct": "D",
+    "explanation": "先行詞が「a conference room」と場所を表す名詞なので、場所を修飾する関係副詞のwhereが適切です。文意は「私たちは、より良いビデオ機器がある会議室に会議を移した」となります。whenは時間、whyは理由、howは方法を表すため、この文脈では不適切です。なお、whereはin whichに置き換え可能で、\"a conference room in which there is better video equipment\" とも言えます。",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "ビジネス（会議・設備）",
+    "createdAt": "2025-08-15T02:37:19.541Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_76",
+    "sentence": "___ the tight budget and the limited staff this quarter, the operations team introduced a simpler scheduling plan, which reduced overtime, improved customer response times, and made it easier for new employees to follow standard procedures during their first month.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "今期は予算が厳しく人員も限られていたにもかかわらず、運用チームはより簡素なスケジュール計画を導入し、その結果、残業が減り、顧客への対応時間が短縮され、新入社員が入社後最初の1か月間に標準手順に従いやすくなった。",
+    "options": [
+      "Although",
+      "Because",
+      "Despite",
+      "Since"
+    ],
+    "optionTranslations": [
+      "～だけれども",
+      "～だから",
+      "～にもかかわらず",
+      "～なので"
+    ],
+    "correct": "C",
+    "explanation": "正解は「Despite」。Despite は前置詞なので、後ろには名詞（名詞句）が来ます。この文では「the tight budget and the limited staff」が名詞句で、tight / limited は名詞（budget / staff）を修飾する形容詞です。名詞（budget, staff）と形容詞（tight, limited）の組み合わせで名詞句が成立しているため、前置詞の despite が適切です。Although と Because と Since はいずれも接続詞で、後ろには主語＋動詞の節が必要です（例: Although the budget is tight and the staff is limited, ...）。そのため本問のように名詞句が続く形には不適です。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:38:23.583Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_77",
+    "sentence": "During last quarter's budget review, the finance team concluded that the revised proposal is ___ cost-effective as the previous plan, and because it also includes clearer milestones and simpler reporting requirements, the board agreed to move forward without extending the timeline.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "前四半期の予算見直しの際、財務チームは、修正案は従来の計画と同じくらい費用対効果が高いと結論づけ、さらに、より明確なマイルストーンとより簡素な報告要件も含まれているため、取締役会はタイムラインを延長せずに前に進めることに同意した。",
+    "options": [
+      "so",
+      "like",
+      "such",
+      "as"
+    ],
+    "optionTranslations": [
+      "とても",
+      "のように",
+      "そのような",
+      "と同じくらい"
+    ],
+    "correct": "D",
+    "explanation": "正解は D の as。肯定文での同等比較は as + 形容詞/副詞 + as の形を用います（as cost-effective as）。A: so は肯定文では同等比較に使えず、not so ... as のように否定文で用いられます。B: like は前置詞で名詞を比べるときに用い、形容詞の程度比較には使えません。C: such は such (a) + 形容詞 + 名詞 という名詞を伴う形で使うため、ここでは不適切です。",
+    "category": "比較構文・数量",
+    "intent": "同等比較の表現を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス（予算レビュー）",
+    "createdAt": "2025-08-15T02:39:44.802Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_78",
+    "sentence": "The meeting was canceled ___ a power outage.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "会議は停電のために中止になった。",
+    "options": [
+      "although",
+      "because",
+      "until",
+      "because of"
+    ],
+    "optionTranslations": [
+      "〜だけれども",
+      "〜なので",
+      "〜まで",
+      "〜のために"
+    ],
+    "correct": "D",
+    "explanation": "正解は「because of」。because of は「〜が原因で」という因果関係を表し、名詞（a power outage）を後ろに取ります。although と because はどちらも節（主語＋動詞）を必要とするため、名詞だけを続けるこの文には不適切。until は「〜まで（ずっと）」という時点を表し、意味も合いません。",
+    "category": "接続詞",
+    "intent": "因果関係を表す接続詞を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス（会議）",
+    "createdAt": "2025-08-15T02:40:18.959Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_79",
+    "sentence": "___ the heavy rain forecast for Saturday, the company picnic will proceed as planned, and employees are encouraged to bring umbrellas.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "土曜日に大雨の予報が出ているにもかかわらず、社員ピクニックは予定どおり実施し、従業員には傘の持参を勧めています。",
+    "options": [
+      "Although",
+      "Even though",
+      "Despite",
+      "Though"
+    ],
+    "optionTranslations": [
+      "〜だけれども",
+      "〜にもかかわらず",
+      "〜にもかかわらず",
+      "〜だけれども"
+    ],
+    "correct": "C",
+    "explanation": "正解は「Despite」。Despite は前置詞であり、後ろに名詞（句）を取ります。本問では「the heavy rain forecast for Saturday」が名詞句なので、前置詞の Despite が最適です。Although / Even though / Though はいずれも接続詞で、後ろには主語＋動詞の節が必要です（例：Although it is forecast to rain, ...）。そのため名詞句しかない本問の空所には不適切です。文意は「土曜日に大雨の予報があるにもかかわらず、会社のピクニックは予定どおり実施されます」という対比を示しています。",
+    "category": "語彙選択",
+    "intent": "意味の似た語の正しい用法を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス: 社内イベントの案内",
+    "createdAt": "2025-08-15T02:41:35.475Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_80",
+    "sentence": "The training schedule, ___ a detailed checklist, is attached.",
+    "question": "（_____）に入る最も適切な語を選びなさい。",
+    "questionTranslation": "研修スケジュールは、詳細なチェックリストとともに添付されています。",
+    "options": [
+      "and",
+      "as well as",
+      "but",
+      "or"
+    ],
+    "optionTranslations": [
+      "および",
+      "〜に加えて",
+      "しかし",
+      "または"
+    ],
+    "correct": "B",
+    "explanation": "主語は単数の“The training schedule”です。“as well as”は「〜に加えて」を表す表現で、主語の数を変えないため、動詞は単数の“is”で正しいままです。一方、“and”は主語を複合主語にして複数扱いとなるため、“are attached”が必要になり不適切。“but”は逆接で文意に合いません。“or”は選択を示し、この挿入構文や意味にも不自然です。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T02:42:45.198Z",
+    "generationBatch": "part5_batch_1755225182525_200qeou7x",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_81",
+    "sentence": "To avoid crowding near the elevators when the conference begins at 9:00 a.m., please gather in the lobby ___ the second floor, where signage will direct you to Rooms 210 through 214 and a coordinator will help you find your assigned table.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "午前9時に会議が始まる際、エレベーター付近の混雑を避けるため、2階のロビーにお集まりください。そこでは案内表示が210〜214号室へ誘導し、係員が割り当てられたテーブルを見つけるのをお手伝いします。",
+    "options": [
+      "at",
+      "on",
+      "in",
+      "by"
+    ],
+    "optionTranslations": [
+      "〜で",
+      "〜に",
+      "〜で",
+      "〜のそばで"
+    ],
+    "correct": "B",
+    "explanation": "正解は on。階（floor）の位置を表すときは「on the second floor」のように on を用います（床＝面のイメージ）。文全体では「in the lobby on the second floor」と場所の階層を示す自然な組み合わせになります。at は地点（at the entrance）や時刻（at 9:00）に用いるのが基本で、「at the second floor」は不自然。in は内部を表し「in the building」は可ですが「in the second floor」は不適切。by は「そばに」を表し、階を指す表現とは合いません。なお、文中の時刻表現は at 9:00 a.m. が正しい用法の例です。",
+    "category": "前置詞",
+    "intent": "時間・場所に応じた前置詞の選択を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス（会議の案内）",
+    "createdAt": "2025-08-15T03:29:37.017Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_82",
+    "sentence": "The number of customer complaints regarding delayed shipments, as well as the feedback collected in this quarter's ongoing satisfaction surveys, ___ a growing need for more transparent tracking updates and closer coordination between warehouses and carriers.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "出荷遅延に関する顧客からの苦情件数と、今四半期に継続実施中の顧客満足度調査で収集されたフィードバックは、追跡情報の更新の透明性向上と、倉庫と運送業者間のより緊密な連携の必要性が高まっていることを示している。",
+    "options": [
+      "indicating",
+      "indicate",
+      "indicates",
+      "indicated"
+    ],
+    "optionTranslations": [
+      "示しており",
+      "示す",
+      "示している",
+      "示した"
+    ],
+    "correct": "C",
+    "explanation": "主語は単数の“The number”です。「as well as 以下」は挿入情報であり、主語の数には影響しません。したがって動詞は三人称単数の現在形“indicates”が正解です。indicate は複数主語に用いる原形で不適切、indicating は分詞で主節の述語になれません。indicated は過去形で、“this quarter's ongoing”と現在進行中の状況に合わず不自然です。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:30:50.054Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_83",
+    "sentence": "To improve customer retention, the company plans to ___ its onboarding process.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "顧客維持を高めるために、同社はオンボーディングプロセスを簡素化する予定です。",
+    "options": [
+      "simplification",
+      "simplified",
+      "simplifying",
+      "simplify"
+    ],
+    "optionTranslations": [
+      "簡素化",
+      "簡素化された",
+      "簡素化すること",
+      "簡素化する"
+    ],
+    "correct": "D",
+    "explanation": "正解は simplify。動詞 plan は不定詞 to の後に動詞の原形を取るため、「plans to + 動詞原形」の形が必要です。A: simplification は名詞で文法的に不適切。B: simplified は過去分詞/形容詞で不適切。C: simplifying は動名詞/現在分詞で、plan to ~ の後には置けません。D: simplify は動詞原形で文脈・文法ともに適合します。文意：顧客維持を改善するため、同社はオンボーディングプロセスを簡素化する計画だ。",
+    "category": "品詞識別",
+    "intent": "名詞と動詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:32:06.694Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_84",
+    "sentence": "During yesterday's brainstorming session, Maya quickly ___ a cost-saving solution.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "昨日のブレーンストーミングで、Mayaはすぐにコスト削減策を思いついた。",
+    "options": [
+      "come up with",
+      "coming up with",
+      "came up with",
+      "comes up with"
+    ],
+    "optionTranslations": [
+      "思いつく",
+      "思いついている",
+      "思いついた",
+      "思いつく"
+    ],
+    "correct": "C",
+    "explanation": "イディオム come up with は「〜を考え出す／提案する」の意味。文頭の yesterday が過去を示すため、正しくは過去形の came up with を用います。誤答の理由：come up with（原形）は助動詞などがないと不可／coming up with（動名詞・分詞）は be 動詞や前置詞が必要／comes up with（現在形・三単現）は時制が yesterday と一致しません。",
+    "category": "慣用表現・句動詞",
+    "intent": "イディオムの正しい使用を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:33:04.441Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_85",
+    "sentence": "The reason ___ we decided to discontinue the model was persistent quality issues repeatedly reported by customers during warranty claims.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "そのモデルの生産を終了することにした理由は、保証請求の際に顧客から繰り返し報告された継続的な品質問題だった。",
+    "options": [
+      "whyever",
+      "why",
+      "why's",
+      "whys"
+    ],
+    "optionTranslations": [
+      "いったいなぜ",
+      "なぜ",
+      "なぜ〜だ",
+      "理由"
+    ],
+    "correct": "B",
+    "explanation": "関係副詞whyは、先行詞がthe reasonのときに用いられ、「〜する理由」という関係節を導きます。よって正解はwhy。whyeverは強調の疑問・感嘆に用いる口語的表現で、関係詞としては不適切。why'sはwhy is/why hasの短縮形で、この位置では使えません。whysは名詞（理由という意味のwhyの複数形）であり、関係副詞として機能しません。",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:34:20.973Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_86",
+    "sentence": "Please ___ from smoking in the lobby.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "ロビーでの喫煙はご遠慮ください。",
+    "options": [
+      "refrain",
+      "avoid",
+      "quit",
+      "stop"
+    ],
+    "optionTranslations": [
+      "控える",
+      "避ける",
+      "禁煙する",
+      "やめる"
+    ],
+    "correct": "A",
+    "explanation": "正解は「refrain」。「refrain from ～ing」で「～することを控える」という定型表現です。その他の選択肢は意味は近いものの用法が異なります。avoid は「avoid ～ing」と前置詞は不要、quit は「quit ～ing」とし、from は不要、stop も「stop ～ing」（または「stop 人 from ～ing」）が正しい形です。したがって文脈と文型に合うのは「refrain」だけです。",
+    "category": "語彙選択",
+    "intent": "意味の似た語の正しい用法を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:35:50.320Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_87",
+    "sentence": "To cut utility bills, the office switched to more ___ light bulbs.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "光熱費を削減するため、オフィスはより経済的な電球に切り替えた。",
+    "options": [
+      "economic",
+      "economical",
+      "financial",
+      "fiscal"
+    ],
+    "optionTranslations": [
+      "経済の",
+      "経済的な",
+      "財務の",
+      "財政の"
+    ],
+    "correct": "B",
+    "explanation": "空所の直後に名詞 light bulbs が来ているため、名詞を修飾できる形容詞が必要です。economical は「経済的な（費用対効果が高い）」という意味で、電球のような物のコスト節約性を表すのに適切です。economic は「経済（学）に関する」、financial は「金融上の／財務の」、fiscal は「国庫・財政（特に政府財政）の」という意味で、いずれも light bulbs を修飾すると不自然になります。よって正解は economical です。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "オフィスのコスト削減",
+    "createdAt": "2025-08-15T03:36:47.524Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_88",
+    "sentence": "To ___ that all employee devices are updated by Friday, the IT department will run a remote scan and send reminders to any users who miss the first attempt.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "金曜日までにすべての従業員の端末が更新されるように、IT部門はリモートスキャンを実施し、初回の試行を逃したユーザーにリマインダーを送信する。",
+    "options": [
+      "assure",
+      "ensure",
+      "insure",
+      "reassure"
+    ],
+    "optionTranslations": [
+      "保証する",
+      "確実にする",
+      "保険をかける",
+      "安心させる"
+    ],
+    "correct": "B",
+    "explanation": "正解は ensure。ensure は「〜であることを確実にする」という意味で、ensure that + 節 の形が自然です。assure は「（人）に安心させる／保証する」で、通常は assure 人 that ... の形をとり、この文のように that 節だけを直接続けるのは不自然です。insure は「保険をかける」という意味で文脈不適切。reassure も「（人）を安心させる」で、こちらも目的語に人が必要です。よって文脈と文型の両面から ensure が最も適切です。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:37:40.265Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_89",
+    "sentence": "Although the team has met every deadline so far, the department head emphasized that we need a more ___ approach to handling client feedback, so that small issues are addressed early without delaying the rollout.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "これまでチームはすべての締め切りを守ってきたが、部門長は、リリースを遅らせることなく小さな問題に早期に対処できるよう、顧客からのフィードバックへの対応をより生産的な進め方にする必要があると強調した。",
+    "options": [
+      "productivity",
+      "production",
+      "productive",
+      "productively"
+    ],
+    "optionTranslations": [
+      "生産性",
+      "生産",
+      "生産的な",
+      "生産的に"
+    ],
+    "correct": "C",
+    "explanation": "空所の直後にあるのは名詞 approach なので、ここには名詞を修飾できる形容詞が必要です。productive（形容詞：生産的な）が正解。productivity（名詞：生産性）、production（名詞：生産・制作）は名詞のため名詞の直前で修飾語として使えません。productively（副詞：生産的に）は動詞や形容詞・副詞を修飾する語で、名詞 approach を直接修飾できません。また、more は形容詞・副詞の比較級を作るために用いられ、ここでは形容詞 productive を強めています。文構造は “a more productive approach to doing” で自然なコロケーションです。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "クライアントフィードバック対応",
+    "createdAt": "2025-08-15T03:38:42.741Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_90",
+    "sentence": "The accuracy of the monthly inventory records, together with the timeliness of the warehouse updates and the reliability of supplier confirmations, ___ essential for preventing stockouts during peak season, especially as our marketing campaign is expected to drive higher-than-usual demand across multiple regions.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "月次の在庫記録の正確性は、倉庫データの更新の適時性と仕入先の確認の信頼性と相まって、特に当社のマーケティングキャンペーンにより複数の地域で通常より高い需要が見込まれる中、繁忙期に在庫切れを防ぐうえで引き続き不可欠である。",
+    "options": [
+      "remain",
+      "remains",
+      "are",
+      "stay"
+    ],
+    "optionTranslations": [
+      "～のままである",
+      "～のままである",
+      "～である",
+      "とどまる"
+    ],
+    "correct": "B",
+    "explanation": "主語は文頭の \"The accuracy\" で単数です。「together with the timeliness ... and the reliability ...」は挿入的な付加情報であり、主語の数には影響しません。したがって動詞は三人称単数形が必要で、正解は \"remains\" です。\"remain\" と \"stay\" は原形（複数扱い）で単数主語に不一致、\"are\" も複数形のbe動詞で不一致となります。",
+    "category": "主語と動詞の一致",
+    "intent": "単数・複数の一致を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス（在庫管理・サプライチェーン）",
+    "createdAt": "2025-08-15T03:40:41.171Z",
+    "generationBatch": "part5_batch_1755228331103_uaajq39is",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_91",
+    "sentence": "The inspector insisted on ___ the protocol.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "検査官は手順に従うことを強く主張した。",
+    "options": [
+      "to comply",
+      "adhering",
+      "following",
+      "to conform"
+    ],
+    "optionTranslations": [
+      "従うこと",
+      "遵守すること",
+      "従うこと",
+      "従うこと"
+    ],
+    "correct": "C",
+    "explanation": "insist on は前置詞 on の後に動名詞（V-ing）を取るため、正解は following。文意は「検査官はその手順に従うことを強く求めた」。誤答の理由: to comply は不定詞で形が不適切かつ通常は comply with を要する。adhering は動名詞だが adhere は通常 adhere to を取るため direct object として the protocol を置けない。to conform も不定詞で不可、かつ通常 conform to を要する。",
+    "category": "動詞の形・時制",
+    "intent": "不定詞と動名詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス（監査・コンプライアンス）",
+    "createdAt": "2025-08-15T03:45:05.818Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_92",
+    "sentence": "___ the servers were restarted did the firmware patch install correctly.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "サーバーが再起動されて初めて、ファームウェアのパッチは正しくインストールされた。",
+    "options": [
+      "By the time",
+      "Not until",
+      "During",
+      "Since"
+    ],
+    "optionTranslations": [
+      "〜する頃には",
+      "〜して初めて",
+      "〜の間に",
+      "〜なので"
+    ],
+    "correct": "B",
+    "explanation": "正解は「Not until」。文頭に否定の時間表現（Not until ～）を置くと、主節で助動詞・be動詞と主語の倒置が起こります（Not until + 節 + did/does/has + 主語 + 動詞原形）。この文では「サーバーが再起動されて初めて、パッチが正しくインストールされた」という意味になります。A: By the time は倒置を引き起こさず、この語を入れると既存の倒置構文と矛盾して非文になります。また「By the time ～」は未来完了と共起しやすい一方、ここではその用法でもありません。C: During は前置詞であり、後ろには名詞句が必要です（× During the servers were restarted）。D: Since は時間（～して以来）または理由（～なので）を表しますが、この位置では倒置を要求せず、時制も通常は現在完了と組み合わせます。よってBのみが文構造・意味の両面で適合します。",
+    "category": "接続詞",
+    "intent": "時間関係の接続詞を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス（IT運用）",
+    "createdAt": "2025-08-15T03:46:58.578Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_93",
+    "sentence": "___ the abrupt shift in regulatory guidance and the resulting budget constraints, the board resolved to move forward with the pilot program, expecting that early adoption would confer a competitive advantage, provided the compliance team could finalize revised protocols before quarter-end.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "規制当局のガイダンスが急に変更され、その結果として予算上の制約が生じたにもかかわらず、取締役会は早期導入が競争優位をもたらすと見込み、コンプライアンスチームが四半期末までに改訂した手順を最終化できることを条件に、パイロットプログラムを進めることを決議した。",
+    "options": [
+      "although",
+      "despite of",
+      "in spite",
+      "notwithstanding"
+    ],
+    "optionTranslations": [
+      "〜だけれども",
+      "〜にもかかわらず",
+      "〜をものともせず",
+      "〜にもかかわらず"
+    ],
+    "correct": "D",
+    "explanation": "正解は「notwithstanding」。文頭で名詞句を従えて「〜にもかかわらず」という意味を表すフォーマルな前置詞（または副詞的用法）で、ビジネス文脈でも自然です。A: although は接続詞で、後ろには節（主語＋動詞）が必要です。この文では名詞句が続くため不適切。B: despite of は誤用で、正しくは despite（of は不要）。C: in spite は不完全で、正しくは in spite of。よって、名詞句「the abrupt shift...constraints」をそのまま受けられる D: notwithstanding が唯一文法的かつ語法的に適切です。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス（企業の意思決定・コンプライアンス）",
+    "createdAt": "2025-08-15T03:48:23.767Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_94",
+    "sentence": "While the marketing campaign has gained impressive traction across key demographics, the project manager urged the team to finalize a ___ plan to address potential supply-chain disruptions, fluctuating ad inventory costs, and unexpected regulatory delays before the product's global roll-out next quarter.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マーケティングキャンペーンは主要な顧客層で目覚ましい勢いを得ているものの、プロジェクトマネージャーは、次の四半期の製品のグローバル展開に先立ち、サプライチェーンの混乱、広告在庫コストの変動、予期せぬ規制上の遅延に対処するための緊急時対応計画を最終決定するようチームに強く求めた。",
+    "options": [
+      "contingent",
+      "contingency",
+      "contingently",
+      "contingencies"
+    ],
+    "optionTranslations": [
+      "条件付きの",
+      "不測の事態",
+      "条件付きで",
+      "不測の事態"
+    ],
+    "correct": "B",
+    "explanation": "正解は「contingency」。「contingency plan」はビジネスで頻出の連語で、「不測の事態に備える計画」を意味する。文中の「a ___ plan」は名詞が求められており、単数可算名詞の「contingency」が自然。誤答の検討：contingent（形容詞）は「〜次第の、条件付きの」の意味で「contingent plan」という定型表現は一般的ではない。contingently（副詞）は語法的に名詞の位置に置けない。contingencies（名詞の複数形）は「不測の事態（複数）」で、置くなら「a plan for contingencies」のように前置詞句が必要で、空所単体には不適切。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "同語の語形変化",
+    "difficulty": "hard",
+    "topic": "ビジネス（マーケティングとリスク管理）",
+    "createdAt": "2025-08-15T03:49:42.106Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_95",
+    "sentence": "___ the CFO or the department heads approve the revised policy.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "最高財務責任者か各部門長のいずれかが改定された方針を承認する。",
+    "options": [
+      "Both",
+      "Either",
+      "Neither",
+      "Not only"
+    ],
+    "optionTranslations": [
+      "両方",
+      "どちらか",
+      "どちらも～ない",
+      "～だけでなく"
+    ],
+    "correct": "B",
+    "explanation": "正解は「Either」。相関接続詞「Either A or B」の場合、動詞は後ろ側の主語（B）に一致します。ここでは直近の主語が複数の「the department heads」なので、動詞は複数形の「approve」と一致し、文全体が自然になります。誤答：\"Both\" は \"both A and B\" と組み合わせる必要があり、\"or\" とは不一致。\"Neither\" は \"neither A nor B\" が正しい形。\"Not only\" は \"not only A but also B\" が必要で、いずれも文中の \"or\" と不整合です。したがって主語と動詞の一致を成立させるのは「Either」のみです。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:50:51.958Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_96",
+    "sentence": "___ the proposal appears fiscally sound, the board remains reluctant to endorse it, citing uncertainties in the vendor's track record.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "提案は財務的に健全に見えるものの、取締役会はベンダーの実績に不確実性があることを理由に、承認に消極的なままだ。",
+    "options": [
+      "Although",
+      "Despite",
+      "Albeit",
+      "In spite of"
+    ],
+    "optionTranslations": [
+      "〜けれども",
+      "〜にもかかわらず",
+      "〜とはいえ",
+      "〜にもかかわらず"
+    ],
+    "correct": "A",
+    "explanation": "正解は「Although」。後続に主語＋動詞（the proposal appears ...）という完全な節が来るため、従属接続詞のalthoughが適切です。— B: despiteは前置詞なので、後ろには名詞（句）しか置けず、節を直接は取れません（例：Despite the proposal’s fiscal soundness, ...）。— C: albeitは譲歩の意味を持つものの、後ろに名詞句・形容詞句・分詞句などを置くのが原則で、完全な節は不可です（例：albeit fiscally sound）。— D: in spite ofも前置詞句であり、後続に名詞（句）が必要です。したがって文頭の空所には節を導くalthoughのみが適合します。",
+    "category": "語彙選択",
+    "intent": "意味の似た語の正しい用法を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "企業の意思決定",
+    "createdAt": "2025-08-15T03:52:14.990Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_97",
+    "sentence": "___ the revised compliance guidelines, all subcontractors must submit updated insurance certificates before commencing work.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "改訂されたコンプライアンス指針に従い、すべての下請業者は作業開始前に最新の保険証明書を提出しなければなりません。",
+    "options": [
+      "although",
+      "whereas",
+      "unless",
+      "pursuant to"
+    ],
+    "optionTranslations": [
+      "〜にもかかわらず",
+      "一方で",
+      "〜でない限り",
+      "〜に従って"
+    ],
+    "correct": "D",
+    "explanation": "正解は「pursuant to」。「pursuant to ～」は「～に従って／～に基づいて」という硬めの前置詞表現で、後ろに名詞句（the revised compliance guidelines）を取るため文法的に自然です。文意も「改訂されたコンプライアンス指針に従い、下請けは提出しなければならない」となり、業務文脈に適合します。誤りの選択肢：although／whereas／unlessはいずれも従属接続詞で、直後には主語＋動詞の節が必要です。この文では名詞句しか続かず、文法的に不完全となります（例：Although the guidelines were revised, ... のように動詞が必要）。したがってDのみが適切です。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス（コンプライアンス／契約）",
+    "createdAt": "2025-08-15T03:53:32.849Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_98",
+    "sentence": "___ the revised compliance protocols have been disseminated across all regional offices and the training metrics indicate satisfactory uptake, the audit team will commence the staggered rollout of the new reporting system, coordinating with stakeholders to address any anomalies identified during the pilot phase without impeding the broader implementation timeline.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "改訂されたコンプライアンス手順が全地域オフィスに周知され、研修指標が十分な定着を示したら、監査チームは新しい報告システムの段階的展開を開始し、パイロット段階で特定された不具合に対処するため関係者と連携しつつ、全体の導入スケジュールを妨げることなく進める。",
+    "options": [
+      "since",
+      "until",
+      "whenever",
+      "once"
+    ],
+    "optionTranslations": [
+      "〜なので",
+      "〜まで",
+      "〜するたび",
+      "〜したら"
+    ],
+    "correct": "D",
+    "explanation": "正解は「once」。主節が未来の予定（will commence）で、従属節が完了（have been disseminated）を表し、「〜したらすぐに/〜した時点で」という時間関係を示すのに最も適切です。— since：時間の「〜以来」を表す場合は主節に現在完了など継続を示す表現が来るのが普通で、この文のように未来の開始を述べるのは不自然。また因果の「〜なので」に読むこともでき、出題意図（時間関係）から外れます。— until：「〜するまで（ずっと）」は通常、主節に否定や継続が来て『…しない（している）＋until〜』の形を取ります。ここでは肯定の「will commence」とは相性が悪く不適切。— whenever：「〜するたびに」は反復・習慣を示すため、単一完了を示す現在完了（have been disseminated）とは合いにくく、意味上も不自然です。よって「once」が唯一自然で文脈に合致します。",
+    "category": "接続詞",
+    "intent": "時間関係の接続詞を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T03:55:55.685Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_99",
+    "sentence": "___ the auditor's reservations, the board approved the budget.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "監査人の懸念にもかかわらず、取締役会は予算を承認した。",
+    "options": [
+      "Notwithstanding",
+      "Although",
+      "Despite of",
+      "In spite"
+    ],
+    "optionTranslations": [
+      "～にもかかわらず",
+      "～だけれども",
+      "～にもかかわらず",
+      "～にもかかわらず"
+    ],
+    "correct": "A",
+    "explanation": "正解は「Notwithstanding」。ここでは名詞句（the auditor's reservations）を受けて「〜にもかかわらず」という意味の前置詞として使われます。Bの「Although」は接続詞なので後ろに主語＋動詞の節が必要（例: Although the auditor had reservations, ...）。Cの「Despite of」は誤用で、正しくは「Despite」単独で「of」は不要。Dの「In spite」も不完全で、正しくは「In spite of」。Notwithstandingはフォーマルなビジネス／法務文書でよく用いられます。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "企業ガバナンス・監査",
+    "createdAt": "2025-08-15T03:56:54.517Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_100",
+    "sentence": "Although the marketing division argued that bundling ancillary services would enhance perceived value in saturated markets, the CFO cautioned during yesterday's cross-departmental review that any supplier quote that appears ___ high once mandatory compliance fees, currency hedging costs, and on-site integration expenses are factored in will be removed from consideration unless the vendor can document verifiable, near-term offsets.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "マーケティング部門は、付帯サービスを抱き合わせで提供すれば飽和市場における知覚価値が高まると主張したものの、CFOは昨日の部門横断レビュー会議で、必須のコンプライアンス費用、為替ヘッジコスト、現地での統合費用を織り込むと法外に高いと見なされるサプライヤーの見積もりは、ベンダーが検証可能な短期的な相殺要因を文書で示せない限り、検討対象から外されると警告した。",
+    "options": [
+      "prohibit",
+      "prohibitive",
+      "prohibitively",
+      "prohibition"
+    ],
+    "optionTranslations": [
+      "禁止する",
+      "法外な",
+      "法外に",
+      "禁止"
+    ],
+    "correct": "C",
+    "explanation": "正解は「prohibitively」。形容詞「high」を修飾するのは副詞である必要があり、定型表現として「prohibitively high（手が出ないほど高い）」が最も自然です。A「prohibit」は動詞で文法的に不適切。B「prohibitive」は形容詞で、名詞を直接修飾する場合（例：prohibitive costs）には使えますが、「prohibitive high」は不自然です。D「prohibition」は名詞で文意・文法に合いません。文脈としても、各種手数料等を加味した結果“法外に高い”見積もりは却下される、という流れに合致します。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "同語の語形変化",
+    "difficulty": "hard",
+    "topic": "ビジネス（調達・価格交渉）",
+    "createdAt": "2025-08-15T03:58:23.936Z",
+    "generationBatch": "part5_batch_1755229395575_ovgduwkbx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_101",
+    "sentence": "___ that the client approved the plan, we can proceed.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "顧客が計画を承認したことを踏まえると、先に進めます。",
+    "options": [
+      "give",
+      "gives",
+      "given",
+      "giving"
+    ],
+    "optionTranslations": [
+      "与える",
+      "与える",
+      "〜を踏まえると",
+      "与えること"
+    ],
+    "correct": "C",
+    "explanation": "正解は「given」。「Given that ～」は「～なので／～であることを踏まえると」という因果関係を導く表現で、従属節を導く接続詞的用法です。文意は「クライアントが計画を承認したので、先へ進めます」。他の選択肢は動詞の形で、接続詞としては使えません。give（原形）やgives（三人称単数）は後ろに目的語が必要で「give(s) that」は不自然。giving（現在分詞）も「Giving that」は標準的な英語ではなく、この用法では不可です。",
+    "category": "接続詞",
+    "intent": "因果関係を表す接続詞を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:01:57.461Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_102",
+    "sentence": "We need a ___ report by noon.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "私たちは正午までに詳細な報告書が必要です。",
+    "options": [
+      "detail",
+      "details",
+      "detailed",
+      "detailing"
+    ],
+    "optionTranslations": [
+      "詳細",
+      "詳細事項",
+      "詳細な",
+      "詳細説明"
+    ],
+    "correct": "C",
+    "explanation": "名詞“report”を修飾する位置（a + 形容詞 + 名詞）なので、形容詞の“detailed”が正解。\"detail\"（名詞）や\"details\"（名詞複数）は形容詞として名詞を直接修飾できません。\"detailing\"は動名詞/現在分詞で、\"a detailing report\"という表現は一般的ではなく不自然です。よって形容詞の“detailed”を選びます。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "ビジネス: 報告書の依頼",
+    "createdAt": "2025-08-15T04:02:35.147Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_103",
+    "sentence": "Had I ___ about the schedule change before leaving the office, I would have called the clients from the train to let them know right away so they could adjust their plans and avoid any confusion.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "もしオフィスを出る前にスケジュール変更を知っていたら、電車の中から取引先に電話してすぐに知らせて、計画を調整して混乱を避けてもらえたのに。",
+    "options": [
+      "know",
+      "knew",
+      "knowing",
+      "known"
+    ],
+    "optionTranslations": [
+      "知る",
+      "知っていた",
+      "知っていて",
+      "知っていたら"
+    ],
+    "correct": "D",
+    "explanation": "「Had I known ...」は「If I had known ...」のifを省略して倒置した仮定法過去完了の形です。助動詞hadの直後には過去分詞が来るため、正解は過去分詞のknown。know（原形）、knew（過去形）、knowing（現在分詞/動名詞）は文法的に不適切です。文意：もし出発前に日程変更を知っていたら、すぐ知らせるために列車から顧客に電話して、混乱を避けられるようにしただろう。",
+    "category": "構文",
+    "intent": "省略された仮定法の文を完成させる",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "ビジネス（顧客連絡・スケジュール変更）",
+    "createdAt": "2025-08-15T04:04:01.402Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_104",
+    "sentence": "We look forward ___ your reply.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "ご返信をお待ちしております。",
+    "options": [
+      "to",
+      "for",
+      "at",
+      "on"
+    ],
+    "optionTranslations": [
+      "～に",
+      "～のために",
+      "～で",
+      "～に"
+    ],
+    "correct": "A",
+    "explanation": "look forward to は「〜を楽しみにする」という慣用表現で、to は前置詞として名詞・動名詞を取ります。したがって「to your reply」となり、Aが正解です。for/at/on はこの表現では使えず不自然です（× look forward for/at/on）。",
+    "category": "慣用表現・句動詞",
+    "intent": "イディオムの正しい使用を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:04:46.899Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_105",
+    "sentence": "After the software update caused minor delays during internal testing this morning, our project manager emailed the team saying that, before finalizing the slides, booking the meeting room, and sending calendar invites, we should ___ the client about the revised delivery date and confirm whether they prefer a morning or afternoon call.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "今朝の社内テストでソフトウェアのアップデートにより軽微な遅延が発生したため、プロジェクトマネージャーはチームにメールを送り、スライドを最終確定し、会議室を予約し、カレンダー招待を送る前に、修正後の納期について顧客と連絡を取り、通話は午前と午後のどちらを希望するか確認するよう伝えた。",
+    "options": [
+      "get in touch to",
+      "touch base with",
+      "contact with",
+      "reach to"
+    ],
+    "optionTranslations": [
+      "〜に連絡を取る",
+      "〜と連絡を取る",
+      "〜と連絡する",
+      "〜に連絡する"
+    ],
+    "correct": "B",
+    "explanation": "正解は「touch base with」です。「touch base with + 人」で「（人に）連絡を取る・軽く確認する」という慣用表現になり、文脈（納期の確認や希望時間の確認）に自然に合います。Aの「get in touch to」は前置詞が誤りで、正しくは「get in touch with」です。Cの「contact」は他動詞なので「contact the client」が正しく、「contact with the client」は動詞用法としては不自然です。Dの「reach to」は不自然で、連絡の意味で使うなら「reach out to」が必要です。",
+    "category": "慣用表現・句動詞",
+    "intent": "イディオムの正しい使用を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:06:05.627Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_106",
+    "sentence": "While last year's conference attracted more than 600 participants, this year's event, scheduled during a busy holiday week and held in a smaller venue, is expected to draw ___ attendees than we first planned, so we have reduced the catering order and moved some staff to other tasks.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "昨年の会議は600人以上の参加者を集めましたが、連休で忙しい週に予定され、小規模な会場で開催される今年のイベントは、当初の計画より参加者数が少なくなると見込まれるため、ケータリングの発注を減らし、スタッフの一部を他の業務に回しました。",
+    "options": [
+      "less",
+      "fewer",
+      "few",
+      "little"
+    ],
+    "optionTranslations": [
+      "より少ない",
+      "より少ない",
+      "ほとんどいない",
+      "ほとんどない"
+    ],
+    "correct": "B",
+    "explanation": "空所の前の名詞は複数形の countable noun「attendees」です。比較級で「〜より少ない」を表す場合、可算名詞には fewer を用います。よって正解は fewer。less は本来は不可算名詞（time, money, water など）に用いる形で、「less attendees」は試験では不適切とされます。few は比較級ではないため「than」とは結びつきません（比較なら fewer）。little は不可算名詞用で、複数名詞の attendees には使えません。",
+    "category": "比較構文・数量",
+    "intent": "数量詞の正しい使用を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス（会議・イベント運営）",
+    "createdAt": "2025-08-15T04:06:56.143Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_107",
+    "sentence": "The new travel policy was approved ___ the board last week, so employees can start booking flights under the updated rules.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しい出張規程は先週取締役会に承認されたので、従業員は更新された規定に従って航空券の予約を始めることができる。",
+    "options": [
+      "at",
+      "to",
+      "with",
+      "by"
+    ],
+    "optionTranslations": [
+      "〜で",
+      "〜に",
+      "〜と",
+      "〜に"
+    ],
+    "correct": "D",
+    "explanation": "受動態（was approved＝「承認された」）では、行為者（だれが行ったか）を示すときに前置詞 by を用います。「was approved by the board」で「取締役会によって承認された」という自然な表現になります。他の選択肢は受動態の行為者を導く用法になりません。at the board は場所・機関を表す用法で不自然、to the board は方向を示すため不適切、with the board は「〜と一緒に」の意味で「承認する」の行為者表現には合いません。文中の last week に合わせて受動態の過去形（was + 過去分詞）にもなっており、受動態か能動態かの判断が鍵です。",
+    "category": "動詞の形・時制",
+    "intent": "受動態と能動態の判断を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:07:50.233Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_108",
+    "sentence": "The minutes ___ available on the shared drive.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "議事録は共有ドライブで閲覧可能です。",
+    "options": [
+      "is",
+      "are",
+      "be",
+      "been"
+    ],
+    "optionTranslations": [
+      "単数形",
+      "複数形",
+      "原形",
+      "過去分詞"
+    ],
+    "correct": "B",
+    "explanation": "主語は The minutes で、ここでは「分」ではなく「議事録」を意味し、複数扱いです。そのため動詞は複数形の are が正解。is は単数用で不適切、be は不定形で時制・一致が合わない、been は過去分詞で助動詞 have などが必要です。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:08:19.637Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_109",
+    "sentence": "The applicant to ___ we spoke yesterday about the sales position impressed the entire panel, so the hiring manager plans to invite her to a second interview next Monday at our downtown office.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "昨日、営業職について私たちが話をした応募者は、面接官全員に強い印象を与えたので、採用担当マネージャーは来週月曜日に市内中心部の当社オフィスで二次面接に彼女を招待する予定です。",
+    "options": [
+      "who",
+      "which",
+      "that",
+      "whom"
+    ],
+    "optionTranslations": [
+      "〜する人",
+      "〜するもの",
+      "〜する",
+      "だれに"
+    ],
+    "correct": "D",
+    "explanation": "前置詞の直後には目的格の関係代名詞を置く必要があるため、正解はwhomです（to whom we spoke）。whichはモノに用いるので人を指す本問では不適切、thatは前置詞の直後に置けません（to thatは不可）、whoは主格であり前置詞直後には置けません。会話では“the applicant who we spoke to”のように前置詞を後置すればwhoも許容されますが、本問の語順（to ___）ではwhomのみが文法的に正しい選択です。文意：昨日その応募者に職務について話をし、面接官全員が感心したので、来週月曜に二次面接へ招待する予定だ、という内容です。",
+    "category": "関係詞・代名詞",
+    "intent": "関係代名詞の機能に応じた選択を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "採用・面接",
+    "createdAt": "2025-08-15T04:09:23.473Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_110",
+    "sentence": "Although we ___ with the supplier several times since last month, we still have not received a clear confirmation on the delivery schedule, so please keep following up with them today.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "先月以来、納入業者とは何度も話をしてきましたが、納品スケジュールについてはっきりした回答はいまだに得られていません。本日も引き続き先方にフォローしてください。",
+    "options": [
+      "spoke",
+      "were speaking",
+      "have spoken",
+      "speak"
+    ],
+    "optionTranslations": [
+      "話した",
+      "話していた",
+      "話してきた",
+      "話す"
+    ],
+    "correct": "C",
+    "explanation": "「since last month（先月以来）」は過去のある時点から現在までの継続・経験を示すため、現在完了形が最も自然です。よって「have spoken」が正解。Aの「spoke」は過去の一点の出来事を表し、「since」とは基本的に相性が悪い（特定の過去時点だけを述べる形になる）。Bの「were speaking」は過去進行形で、ある過去時点で進行中だった動作を示すため不適切。Dの「speak」は一般的・習慣的な現在を示すため、「since + 過去起点」との組み合わせでは意図に合わない。同文中の「we still have not received」も現在完了で、時制の一貫性もCを支持します。",
+    "category": "動詞の形・時制",
+    "intent": "過去形と現在完了の区別を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス（仕入先との納期確認）",
+    "createdAt": "2025-08-15T04:10:38.204Z",
+    "generationBatch": "part5_batch_1755230431251_xhf730zac",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_111",
+    "sentence": "The team implemented the new policy ___, reducing the average response time by 20 percent and improving customer satisfaction.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "チームは新しい方針をうまく導入し、平均応答時間を20％短縮して顧客満足度を向上させた。",
+    "options": [
+      "successful",
+      "success",
+      "successfully",
+      "successive"
+    ],
+    "optionTranslations": [
+      "成功した",
+      "成功",
+      "うまく",
+      "連続した"
+    ],
+    "correct": "C",
+    "explanation": "空所には動詞「implemented」を修飾する副詞が入るため、正解は「successfully」。他の選択肢は品詞が合いません。successful（形容詞）は名詞を修飾、success（名詞）は主語や目的語として用いられ、successive（形容詞）は「連続した」という意味で動詞を修飾できません。副詞と形容詞の役割の違いに注目する問題です。",
+    "category": "品詞識別",
+    "intent": "形容詞と副詞の識別を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:13:19.695Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_112",
+    "sentence": "The committee, along with several outside consultants, ___ the revised budget, which, despite initial concerns from several departments, reflects the cost-saving measures agreed upon during last week's meeting and needs to be sent to the board by Friday.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "委員会は、数名の外部コンサルタントとともに、改定された予算案を承認する。その予算案は、いくつかの部門からの当初の懸念にもかかわらず、先週の会議で合意されたコスト削減策を反映しており、金曜日までに取締役会に送付する必要がある。",
+    "options": [
+      "approves",
+      "approve",
+      "approved",
+      "approving"
+    ],
+    "optionTranslations": [
+      "承認する",
+      "承認する",
+      "承認した",
+      "承認している"
+    ],
+    "correct": "A",
+    "explanation": "主語は“The committee”で単数扱いです。「along with ～」は挿入的な語句で主語の数に影響しません。したがって動詞は三人称単数現在形の“approves”が適切です。“approve”は複数主語に対応する形で誤り、“approved”は過去形で時制が不自然、“approving”は分詞で、動詞として機能させるにはbe動詞などが必要です。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス（予算承認）",
+    "createdAt": "2025-08-15T04:14:23.633Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_113",
+    "sentence": "This quarter, we sold ___ units than last quarter.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "今四半期は、前四半期よりも販売台数が少なかった。",
+    "options": [
+      "less",
+      "few",
+      "little",
+      "fewer"
+    ],
+    "optionTranslations": [
+      "より少ない",
+      "少ない",
+      "わずかな",
+      "より少ない"
+    ],
+    "correct": "D",
+    "explanation": "countable名詞（units）には比較級の数量表現としてfewerを用います。「fewer + 複数名詞 + than」の形が正解。lessは不可算名詞に用いるのが基本で、countable複数に直接は不可。fewは比較級ではないためthanと使えません。littleも不可算名詞用であり、比較ではless/little（比較級: less）やfewerとは使い分けが必要です。",
+    "category": "比較構文・数量",
+    "intent": "比較級・最上級・数量表現の理解を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:15:16.131Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_114",
+    "sentence": "The onboarding checklist ___ of three sections: required documents, training modules, and a final review with HR.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "オンボーディングのチェックリストは、必要書類、研修モジュール、人事部との最終確認の3つのセクションで構成されています。",
+    "options": [
+      "consist",
+      "consists",
+      "includes",
+      "include"
+    ],
+    "optionTranslations": [
+      "〜から成る",
+      "〜から成る",
+      "〜を含む",
+      "〜を含む"
+    ],
+    "correct": "B",
+    "explanation": "主語は単数の\"The onboarding checklist\"なので、動詞は三人称単数形が必要です。\"consist of\"は「〜で構成される」を意味し、この文では\"consists\"が正解。Aの\"consist\"は複数主語用で不一致。CとDの\"include(s)\"は意味は近いものの、\"include of\"という形は不可で、使うなら\"includes three sections\"のように\"of\"は不要です。よって文法的・語法的に合うのはBのみ。",
+    "category": "主語と動詞の一致",
+    "intent": "主語に合った動詞選択を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:17:01.716Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_115",
+    "sentence": "___ the merger is complete, we can now consolidate the support teams.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "合併が完了したので、これでサポートチームを統合できる。",
+    "options": [
+      "even though",
+      "as long as",
+      "until",
+      "now that"
+    ],
+    "optionTranslations": [
+      "〜にもかかわらず",
+      "〜する限り",
+      "〜まで",
+      "〜したので"
+    ],
+    "correct": "D",
+    "explanation": "正解は now that。now that は「今や〜なので」という理由を示し、完了した事実を受けて次の行動が可能になったことを自然に表します。本問では「合併が完了した“今”サポートチームを統合できる」という因果関係に合致します。誤答の理由：even though（〜だけれども）は逆接で、合併完了と統合可能は矛盾せず逆接にならないため不自然。as long as（〜である限り）は条件を示し、既に完了した事実に対する条件提示は不適切。until（〜するまで）は期限を表し、通常は主節に否定的含意（〜できない）が来るため、“now consolidate”と論理的に矛盾します。",
+    "category": "接続詞",
+    "intent": "論理関係に合った接続詞選択を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス（企業合併）",
+    "createdAt": "2025-08-15T04:18:37.790Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_116",
+    "sentence": "To keep the project on schedule, the finance team will finalize the quarterly budget ___ it receives the updated sales figures from all regional offices next Tuesday, and the revised plan will be circulated to department heads immediately afterward.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "プロジェクトを予定どおり進めるため、財務チームは、すべての地域オフィスからの最新の売上数値を来週火曜日に受け取り次第、四半期予算を確定し、その直後に改訂版の計画が各部門長に回覧されます。",
+    "options": [
+      "until",
+      "as soon as",
+      "despite",
+      "whereas"
+    ],
+    "optionTranslations": [
+      "〜まで",
+      "〜し次第",
+      "〜にもかかわらず",
+      "一方で"
+    ],
+    "correct": "B",
+    "explanation": "正解は「as soon as」です。「as soon as（〜するとすぐに）」は未来の出来事を表す従属節を導く接続詞で、その節内では未来の内容でも現在形（receives）を用います。主節では will finalize と未来を表現しており、未来表現の典型パターンです。その他の選択肢：\n- until：肯定文＋until は「〜するまでの間ずっと…し続ける」という意味になり、finalize（最終決定する）とは意味的に不自然です。通常は否定文と組み合わせて「〜するまで決定しない」とします。\n- despite：前置詞なので直後に節（主語＋動詞）は置けません（用いるなら despite receiving / despite the fact that など）。意味も「〜にもかかわらず」で時を示さないため不適切です。\n- whereas：対比を表す接続詞で、時間関係や条件を示しません。この文脈には合いません。",
+    "category": "動詞の形・時制",
+    "intent": "未来形の表現方法を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "予算編成・社内コミュニケーション",
+    "createdAt": "2025-08-15T04:20:05.009Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_117",
+    "sentence": "Only after the audit last year ___ the accounting error become apparent.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "昨年の監査の後になって初めて、会計上の誤りが明らかになった。",
+    "options": [
+      "do",
+      "did",
+      "has",
+      "had"
+    ],
+    "optionTranslations": [
+      "なる",
+      "なった",
+      "なっている",
+      "なっていた"
+    ],
+    "correct": "B",
+    "explanation": "文頭の「Only after ～」は倒置を引き起こし、助動詞＋主語＋動詞原形の語順になります。さらに「last year」があるため時制は過去。したがって「did the accounting error become」が正解です。誤答：do は現在形かつ三単現なら does が必要で不一致。has は現在完了（has become）となり「last year」のような完了と相性の悪い過去の一点時と合わない。had は過去完了（had become）で、もう一つの過去の基準時がないため不自然。",
+    "category": "構文",
+    "intent": "倒置構文の語順を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス（監査・会計）",
+    "createdAt": "2025-08-15T04:21:26.794Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_118",
+    "sentence": "After reviewing several proposals, we decided to partner with the supplier ___ whom our procurement team has been negotiating the contract terms for months, because their revised terms, which include flexible delivery windows and extended warranties, align better with our expansion timeline.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "複数の提案を検討した結果、当社は、調達チームが数カ月にわたり契約条件について交渉してきたサプライヤーと提携することを決定しました。柔軟な納入時間枠や延長保証を含む同社の改定条件のほうが、当社の拡大計画のスケジュールにより合致しているからです。",
+    "options": [
+      "to",
+      "for",
+      "with",
+      "by"
+    ],
+    "optionTranslations": [
+      "〜に",
+      "〜のために",
+      "〜と",
+      "〜により"
+    ],
+    "correct": "C",
+    "explanation": "空所の直後に関係代名詞whomがあり、「～と交渉する」は negotiate with ～ というコロケーションなので、前置詞はwithが正解です。前置詞＋関係代名詞（with whom）の形で関係節を導き、「私たちの購買チームが何か月も契約条件について交渉してきた相手のサプライヤー」という意味になります。toは不適切（negotiate to は不可）、forは「～のために交渉する」という意味になり文脈上不自然、byは受け身の行為者を示す用法でここでは使えません。口語では前置詞を文末に残して “the supplier who our procurement team has been negotiating the contract terms with” とも言えますが、文語では前置詞＋whomが自然です。",
+    "category": "関係詞・代名詞",
+    "intent": "関係代名詞の機能に応じた選択を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:22:26.852Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_119",
+    "sentence": "After the legal team’s detailed review of the revised contract and the associated risk assessment, the operations director requested ___ the vendor provide written assurance of regulatory compliance by Monday so that production schedules would not be affected.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "法務チームによる改訂契約書および関連するリスク評価の詳細な審査後、業務部長は、生産スケジュールに影響が出ないよう、月曜までに法令遵守に関する書面保証を提出するよう供給業者に求めた。",
+    "options": [
+      "to",
+      "that",
+      "for",
+      "because"
+    ],
+    "optionTranslations": [
+      "～するように",
+      "～ということ",
+      "～のために",
+      "～なので"
+    ],
+    "correct": "B",
+    "explanation": "正解は that。動詞 request は「that + 主語 + 動詞原形」の形で内容節を目的語にとることができます（仮定法現在: request that S + base form）。空所の後ろには「the vendor provide」という節（主語＋動詞）が続くため、節を導く接続詞 that が必要です。誤答の理由: 1) to は不定詞標識で、使うなら「request someone to do」の形が必要ですが、本問は「requested ___ the vendor provide」となっており、語順が合いません。2) for は前置詞なので後ろには名詞（または名詞句）が来る必要があり、「the vendor provide」のような動詞を含む節は続けられません。3) because は理由を導く接続詞で、request の直接目的語（内容）としては不自然です。本問は名詞と動詞の使い分けの観点でも、for（前置詞）なら名詞句が来るのに対し、that（接続詞）は動詞を含む節を導く点を見抜くことがポイントです。",
+    "category": "品詞識別",
+    "intent": "名詞と動詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:23:39.445Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_120",
+    "sentence": "We have ___ time to complete the report than we had last week.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "私たちは先週よりも報告書を完成させる時間が少ない。",
+    "options": [
+      "little",
+      "less",
+      "least",
+      "lesser"
+    ],
+    "optionTranslations": [
+      "少ない",
+      "より少ない",
+      "最も少ない",
+      "より劣る"
+    ],
+    "correct": "B",
+    "explanation": "不可算名詞 time の比較には little の比較級・最上級である less／least を用います。than があるため比較級が必要で、正解は less。little は原級で比較にならず、least は最上級で文脈不適切。lesser は限定用法の形容詞（a lesser role など）で数量比較“than”には使えません。",
+    "category": "比較構文・数量",
+    "intent": "比較級・最上級・数量表現の理解を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:24:28.774Z",
+    "generationBatch": "part5_batch_1755231126870_s26fp2iu6",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_121",
+    "sentence": "A series of unforeseen delays, along with inconsistent vendor documentation and shifting regulatory guidance, ___ to the postponement of the product launch.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "予期せぬ一連の遅延に、一貫性のないベンダーの文書と変動する規制の指針が重なり、製品発売の延期の一因となっている。",
+    "options": [
+      "contribute",
+      "contributes",
+      "contributing",
+      "contributed"
+    ],
+    "optionTranslations": [
+      "一因となる",
+      "一因となる",
+      "一因となっている",
+      "一因となった"
+    ],
+    "correct": "B",
+    "explanation": "主語は「A series」で単数です。「of unforeseen delays」は前置詞句で、数には影響しません。また「along with ～」も主語の数を変えません。したがって動詞は三人称単数現在形の「contributes」が正解です。選択肢Aの「contribute」は複数主語用で不一致、Cの「contributing」は進行形などの補助動詞が必要、Dの「contributed」は過去時制となり文の一般的な説明（現在）と合いません。",
+    "category": "主語と動詞の一致",
+    "intent": "単数・複数の一致を問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "同語の語形変化",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:26:54.250Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_122",
+    "sentence": "The regional director, ___ the division heads, authorizes the consolidated forecast.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "地域本部長は、部門長とともに、統合予測を承認する。",
+    "options": [
+      "along with",
+      "and",
+      "or",
+      "but"
+    ],
+    "optionTranslations": [
+      "〜とともに",
+      "と",
+      "または",
+      "しかし"
+    ],
+    "correct": "A",
+    "explanation": "主語は The regional director（単数）であり、「along with ~」は付加情報を導入する表現で、主語の数には影響しません。したがって動詞は単数の authorizes が正しくなります。and を入れると複合主語（The regional director and the division heads）となり、動詞は複数の authorize にすべきなので不一致で誤り。or や but はこのカンマで挿入された同格的な挿入に不自然で、構文上も意味上も不適切です。本問は付帯語句（along with など）が主語の数に影響しない点を狙った主語・動詞の一致問題です。",
+    "category": "主語と動詞の一致",
+    "intent": "単数・複数の一致を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:29:09.393Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_123",
+    "sentence": "The CEO attributed the delay ___ a supplier's insolvency.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "CEOは、遅延の原因はある納入業者の倒産だとした。",
+    "options": [
+      "for",
+      "at",
+      "to",
+      "over"
+    ],
+    "optionTranslations": [
+      "～のために",
+      "～で",
+      "～に",
+      "～をめぐって"
+    ],
+    "correct": "C",
+    "explanation": "attribute A to B は「Aの原因をBに帰する」という定型表現で、後ろには必ず to を用います。ここでは the delay（遅延）を a supplier's insolvency（仕入先の支払不能）に起因すると述べており、正解は to。for は目的・理由一般を示すが attribute と連結しない。at は場所・標的を表すことが多く不適切。over は「〜をめぐって」という争点・話題を表す前置詞で、attribute とは結び付かない。",
+    "category": "前置詞",
+    "intent": "動詞との組み合わせによる前置詞を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:29:59.962Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_124",
+    "sentence": "In his remarks, the CEO did not ___ to the ongoing investigation.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "CEOは発言の中で、進行中の調査については言及しなかった。",
+    "options": [
+      "elude",
+      "preclude",
+      "allude",
+      "delude"
+    ],
+    "optionTranslations": [
+      "逃れる",
+      "妨げる",
+      "言及する",
+      "欺く"
+    ],
+    "correct": "C",
+    "explanation": "正解は「allude」です。「allude to ～」で「～にほのめかして言及する」という意味。文脈はCEOの発言内容なので自然です。eludeは「逃れる・回避する」で前置詞toは伴わず「elude to」は誤用。precludeは「妨げる・排除する」で通常は目的語を直接とり「preclude something」とし、「preclude to」は不可。deludeは「欺く」で「delude someone (into doing)」の形を取り、「delude to」は取れません。したがって「allude to」が唯一正しいコロケーションです。",
+    "category": "語彙選択",
+    "intent": "意味の似た語の正しい用法を問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:30:49.641Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_125",
+    "sentence": "To avoid any semblance of overpromising, the CFO refrained from issuing numerical projections in the press briefing, ___ they be misconstrued as guarantees by retail investors and invite regulatory scrutiny, and instead stressed that all forward-looking statements are contingent upon audited results and prevailing market conditions.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "過度な約束に見えることを避けるため、最高財務責任者（CFO）は記者会見で数値見通しの公表を控え、個人投資家に保証と取り違えられて規制当局の監視を招くことのないようにし、その代わりに、将来見通しに関するすべての記述は監査済みの業績と足元の市場環境に左右されるものだと強調した。",
+    "options": [
+      "so that",
+      "in case",
+      "lest",
+      "provided that"
+    ],
+    "optionTranslations": [
+      "～するために",
+      "～の場合に備えて",
+      "～ないように",
+      "～という条件で"
+    ],
+    "correct": "C",
+    "explanation": "正解は「lest」。lest は「〜しないように／〜するといけないので」という否定的な目的を表す接続詞で、後ろには仮定法現在（原形）が来ます（例：lest they be ...）。文脈は「誤解されることを避けるために」という否定的目的なので最も適切です。誤答の理由：\n- so that：目的を表すが通常は肯定的目的で、否定的目的の場合は not を伴って「so that ... not」とする必要がある。文中には not がないため不適切。\n- in case：「〜の場合に備えて」という予防・準備を表すが、後続は通常直説法（are/might be など）で、仮定法現在 be と組み合わせるのは不自然。意味合いも「誤解を恐れて差し控えた」という本旨にやや合わない。\n- provided that：「〜という条件で」という条件節を導くため、ここでの否定的目的の文脈には合致しない。",
+    "category": "語彙選択",
+    "intent": "意味の似た語の正しい用法を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "企業広報・投資家対応",
+    "createdAt": "2025-08-15T04:32:32.769Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_126",
+    "sentence": "After an exhaustive due diligence review, the board agreed to proceed with the merger only ___ it is accretive to earnings within two quarters and not unduly dilutive to free cash flow.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "徹底的なデューデリジェンスの実施後、取締役会は、2四半期以内に増益となり、かつフリーキャッシュフローを過度に圧迫しないという条件でのみ、合併を進めることに合意した。",
+    "options": [
+      "despite",
+      "whereas",
+      "provided that",
+      "lest"
+    ],
+    "optionTranslations": [
+      "〜にもかかわらず",
+      "一方で",
+      "〜という条件で",
+      "〜しないように"
+    ],
+    "correct": "C",
+    "explanation": "空所には条件を示す接続詞が必要です。「only ___」の形は「～という条件でのみ」を意味するため、条件を明確に示す provided that（～という条件で）が最適です。despite は前置詞で後ろに節（主語＋動詞）を直接取れないため不可。whereas は対比を表す接続詞で、条件の意味にならず不自然。lest は「～しないように（恐れて）」という否定的目的を表す古風な接続詞で、本件の承認条件（収益への寄与とキャッシュフロー希薄化の回避）を述べる文脈に合致しません。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "企業合併・買収（M&A）",
+    "createdAt": "2025-08-15T04:33:37.717Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_127",
+    "sentence": "The board deferred ___ the acquisition amid market volatility.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "取締役会は、市場の変動の中で買収の最終化を延期した。",
+    "options": [
+      "to finalize",
+      "to be finalizing",
+      "finalizing",
+      "having finalized"
+    ],
+    "optionTranslations": [
+      "最終化すること",
+      "最終化していること",
+      "最終化すること",
+      "最終化したうえで"
+    ],
+    "correct": "C",
+    "explanation": "defer は「延期する」という意味で、後ろには原則として動名詞（V-ing）を取ります。よって正解は finalizing。A: to finalize は不定詞で、defer は不定詞を目的語に取りません（defer to ～ は「～に従う」という全く別の句）。B: to be finalizing は文法的に不自然で、defer の後に不定詞進行形は置けません。D: having finalized は「すでに完了していること」を示す完了分詞（動名詞用法）で、まだ行っていない行為を延期するという意味にそぐわず不適切です。",
+    "category": "動詞の形・時制",
+    "intent": "不定詞と動名詞の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "hard",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:35:21.636Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_128",
+    "sentence": "Following an exhaustive internal audit and a subsequent regulatory review, the company is ___ to implement comprehensive remedial controls within thirty days, notwithstanding the potential disruption to day-to-day operations and the considerable reallocation of resources that such measures may entail.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "徹底的な内部監査とそれに続く規制当局による審査を受け、当該措置に伴い得る日常業務の混乱や相当なリソースの再配分の可能性にもかかわらず、同社は30日以内に包括的な是正措置を実施する義務がある。",
+    "options": [
+      "obligate",
+      "obliged",
+      "obligatory",
+      "obligation"
+    ],
+    "optionTranslations": [
+      "義務づける",
+      "義務がある",
+      "義務的な",
+      "義務"
+    ],
+    "correct": "B",
+    "explanation": "空所直前の is の後には、to 不定詞を導く形容詞（または形容詞化した過去分詞）が自然に続きます。「be obliged to do」は「〜する義務がある／せざるを得ない」という定型で、本問では「規制当局の審査を経て、30日以内に是正措置を実施する義務がある」という文脈に最も適合します。各選択肢の品詞・用法は以下の通りです。A: obligate（動詞）→「is obligate to」は不可。受動や形容詞用法にするなら obligated/obliged が必要。B: obliged（形容詞／過去分詞形）→「be obliged to do」で正解。C: obligatory（形容詞）→意味は「義務的な」だが、「the company is obligatory to do」は不自然。正しくは「It is obligatory for the company to do」や「The company has an obligation to do」。D: obligation（名詞）→「is obligation to」は不可。「have an obligation to」などの形が必要。よって動詞と形容詞の識別、および形容詞補語＋to不定詞の定型を見抜くことがポイントです。",
+    "category": "品詞識別",
+    "intent": "動詞と形容詞の識別を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:36:45.165Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_129",
+    "sentence": "___ an unexpected and sweeping shift in data-privacy regulations across several jurisdictions, our subscription model would be generating a far steadier stream of recurring revenue by now, as the pilot campaigns, meticulously localized for each market, have already produced exceptionally strong engagement metrics, but it is not, owing to the onerous compliance burden the change has imposed.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "複数の法域にまたがるデータプライバシー規制の予期せぬ大幅な変更がなければ、各市場向けに綿密にローカライズしたパイロットキャンペーンがすでに極めて高いエンゲージメント指標を生み出していることから、今ごろ当社のサブスクリプションモデルははるかに安定した継続的な収益の流れを生み出しているはずだ。だが、その変更が課した過重なコンプライアンス負担のため、現状そうはなっていない。",
+    "options": [
+      "despite",
+      "because of",
+      "but for",
+      "even though"
+    ],
+    "optionTranslations": [
+      "にもかかわらず",
+      "〜のために",
+      "〜がなければ",
+      "〜であるのに"
+    ],
+    "correct": "C",
+    "explanation": "正解は「but for」です。「but for + 名詞」は「もし～がなければ（= if it were not for）」という仮定法過去の条件を導く表現で、主節の「would be generating」が現在の非現実（反事実）を示しています。文全体は「その変更がなければ、今ごろは～しているのに、実際にはしていない」という意味関係になっています。\n誤りの選択肢：\n- despite（～にもかかわらず）：譲歩を表す前置詞で、反事実条件を作りません。この文脈では「実際にはそうなっていない」ことの原因を示す必要があり、意味的に不適切です。\n- because of（～のために）：原因を表す前置詞ですが、「would be generating（～しているはずだ）」という反事実的推量と矛盾し、因果関係が崩れます。\n- even though（～だけれども）：接続詞で後続に節（主語＋動詞）が必要ですが、空所の後は名詞句のため文法的に不適格です。",
+    "category": "構文",
+    "intent": "仮定法過去の構文を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:38:06.533Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_130",
+    "sentence": "After reviewing the vendor proposals and considering the volatility in foreign exchange rates as well as the constraints imposed by our cash-flow covenants, the finance committee recommended that we lease the new manufacturing equipment ___ than purchase it outright, thereby preserving liquidity for potential acquisitions in Q4.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "サプライヤーの提案書を検討し、為替レートの変動ならびに当社のキャッシュフローに関する財務制限条項で課された制約を考慮した結果、財務委員会は、新しい製造設備は一括購入ではなくリースにするよう勧告し、これにより第4四半期の買収の可能性に備えて流動性を維持する。",
+    "options": [
+      "instead",
+      "alternatively",
+      "rather",
+      "otherwise"
+    ],
+    "optionTranslations": [
+      "代わりに",
+      "あるいは",
+      "むしろ",
+      "さもなければ"
+    ],
+    "correct": "C",
+    "explanation": "正解は「rather」。「rather than」は「〜するよりむしろ…する」という定型表現で、選択肢を対比させるときに最も自然です。他の選択肢は形が不適切です。「instead」は通常「instead of」を伴い、単独で「than」とは結び付きません。「alternatively」は文頭や挿入で「代替案として」を示す副詞であり、「alternatively than」という用法は不自然です。「otherwise」も「otherwise than」という古風・特殊な表現を除き、「than」とは通常結び付かず、この文脈では不適切です。",
+    "category": "語彙選択",
+    "intent": "文脈に応じた適切な語彙選択を問う",
+    "length": "long",
+    "vocabLevel": "hard",
+    "optionsType": "類義語の選択",
+    "difficulty": "hard",
+    "topic": "ビジネス/財務",
+    "createdAt": "2025-08-15T04:40:56.855Z",
+    "generationBatch": "part5_batch_1755231937633_jp4r9romj",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_131",
+    "sentence": "The shipment was postponed ___ a sudden power outage at the warehouse yesterday morning, and our customer support team has already called affected clients to explain the situation and provide a new delivery time.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "出荷は昨日の朝、倉庫での突然の停電のため延期され、当社のカスタマーサポートチームは影響を受けた顧客にすでに電話して状況を説明し、新しい配達時間を伝えました。",
+    "options": [
+      "because of",
+      "because",
+      "although",
+      "so that"
+    ],
+    "optionTranslations": [
+      "〜のために",
+      "〜なので",
+      "〜にもかかわらず",
+      "〜できるように"
+    ],
+    "correct": "A",
+    "explanation": "because of は前置詞で、後ろに名詞（句）を取ります。本問では a sudden power outage が「形容詞（sudden）＋名詞（power outage）」から成る名詞句なので、理由を表す前置詞 because of が適切です。because は接続詞で後ろに主語＋動詞の節が必要、although も接続詞で譲歩を表し節を続けます。so that は目的を表す接続詞でやはり節が必要です。名詞（outage）とそれを修飾する形容詞（sudden）の役割を見分け、名詞句が続くため前置詞を選ぶ点が狙いです。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:44:19.017Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_132",
+    "sentence": "Because the warehouse handles fragile items and frequently welcomes visitors on guided tours, the manager instructed the staff to post ___ reminders at every entrance and near the loading area so that everyone follows the safety rules.",
+    "question": "(___) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "倉庫では壊れやすい品物を扱い、ガイド付きの見学者を頻繁に受け入れているため、マネージャーは、全員が安全規則に従うよう、すべての出入口と積み込みエリアの近くに安全に関する注意書きを掲示するようスタッフに指示した。",
+    "options": [
+      "safe",
+      "safely",
+      "safety",
+      "safeness"
+    ],
+    "optionTranslations": [
+      "安全な",
+      "安全に",
+      "安全",
+      "安全性"
+    ],
+    "correct": "C",
+    "explanation": "名詞remindersを前から修飾するのは「内容」を表す名詞修飾が自然で、「safety reminders（安全に関する注意喚起）」が定番のコロケーションです。safeは形容詞で「安全な」を意味しますが、safe remindersだと「安全なリマインダー（リマインダー自体が安全）」という不自然な意味になります。safelyは副詞で名詞を修飾できません。safenessは名詞ですが「安全性」というやや不自然・稀な語で、safeness remindersという表現は一般的ではありません。したがって正解はsafetyです。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "同語の語形変化",
+    "difficulty": "easy",
+    "topic": "職場の安全",
+    "createdAt": "2025-08-15T04:45:10.462Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_133",
+    "sentence": "Although the new online training requires ___ resources than the previous program, we still allocated additional hours and a small budget so that each department can finish the modules before the external audit.",
+    "question": "（_____）に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいオンライン研修は従来のプログラムよりもリソースが少なくて済むが、各部門が外部監査までにモジュールを完了できるように、私たちはそれでも追加の時間と少額の予算を割り当てた。",
+    "options": [
+      "less",
+      "fewer",
+      "a little",
+      "little"
+    ],
+    "optionTranslations": [
+      "より少ない",
+      "より少ない数の",
+      "少しの",
+      "ほとんどない"
+    ],
+    "correct": "B",
+    "explanation": "resources は可算名詞の複数形なので、比較構文では fewer（より少ない）を用います。less は不可算名詞に用いるのが基本で、less resources は口語では見られますが標準的な文法では不適切です。a little と little はどちらも不可算名詞に使い、しかも比較級ではないため than と併用できません。",
+    "category": "比較構文・数量",
+    "intent": "数量詞の正しい使用を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:46:36.125Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_134",
+    "sentence": "Thanks to the new FAQ page, we now receive fewer ___ 20 customer inquiries each day, so the support team can focus on complex cases.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいFAQページのおかげで、現在は1日に受け取る顧客からの問い合わせが20件未満となり、サポートチームは複雑な案件に集中できます。",
+    "options": [
+      "to",
+      "about",
+      "than",
+      "for"
+    ],
+    "optionTranslations": [
+      "〜に",
+      "〜について",
+      "〜より",
+      "〜のために"
+    ],
+    "correct": "C",
+    "explanation": "「fewer than + 数字 + 複数名詞」で「〜未満の（より少ない）」を表すのが定型です。countable noun（inquiries）に対して数量比較を行うため、thanが必要です。toは範囲（10 to 20）の表現で不可、aboutは「約」を表すが「fewer about」は文法的に不自然、forは目的・期間などを示す前置詞で本構文には合いません。",
+    "category": "比較構文・数量",
+    "intent": "数量詞の正しい使用を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "顧客対応",
+    "createdAt": "2025-08-15T04:47:26.340Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_135",
+    "sentence": "During the monthly promotion, our website loaded very slowly on older smartphones, ___ many shoppers abandoned their carts and contacted the help desk to ask if their payments went through.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "毎月のキャンペーン期間中、当社のウェブサイトは古いスマートフォンでは読み込みが非常に遅く、そのため多くの買い物客がカートを放棄し、支払いが通ったかどうかを確認するためにヘルプデスクに連絡した。",
+    "options": [
+      "so",
+      "because",
+      "since",
+      "as"
+    ],
+    "optionTranslations": [
+      "そのため",
+      "なので",
+      "なので",
+      "なので"
+    ],
+    "correct": "A",
+    "explanation": "正解は「so」。前半の状況（サイトが遅い）が原因で、後半の出来事（多くの客がカートを放棄してサポートに連絡）が結果として起きています。「so」は結果を導く等位接続詞で、この因果関係に最も適切です。「because」「since」「as」は理由を導く従属接続詞で、空所以降の節が前半の理由になることを示します。しかし文意は逆で、後半は理由ではなく結果です。そのため意味上不自然になり不正解となります。",
+    "category": "接続詞",
+    "intent": "因果関係を表す接続詞を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:48:42.060Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_136",
+    "sentence": "Please remain in the lobby ___ the safety drill officially ends and the safety officer announces that it is safe to return, and then proceed to your desks in an orderly manner so that we can resume work without delay.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "安全訓練が正式に終了し、安全担当者が戻っても安全だと知らせるまで、ロビーで待機してください。その後、遅れなく業務を再開できるよう、整然と各自の席に戻ってください。",
+    "options": [
+      "during",
+      "until",
+      "after",
+      "since"
+    ],
+    "optionTranslations": [
+      "〜の間",
+      "〜まで",
+      "〜の後",
+      "〜以来"
+    ],
+    "correct": "B",
+    "explanation": "正解は「until（〜するまで）」です。指示は「安全訓練が正式に終了し、安全担当者が戻ってよいと発表するまでロビーに留まってください」という意味になります。他の選択肢は不適切です。during は名詞を後ろに取る必要があり、節（the safety drill officially ends...）は続けられません。after にすると「終了した後もロビーに留まる」という矛盾した指示になり、その後の then proceed（その後移動する）とも論理が合いません。since は理由を表す接続詞または「〜して以来」の時間表現ですが、ここでは継続の終点を示す必要があり不自然です。",
+    "category": "接続詞",
+    "intent": "時間関係の接続詞を問う",
+    "length": "long",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "職場の安全",
+    "createdAt": "2025-08-15T04:50:04.513Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_137",
+    "sentence": "I usually answer emails after lunch, but ___ waiting for the client, I am answering them now.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "普段は昼食後にメールに返信しますが、今は顧客を待っている間に返信しています。",
+    "options": [
+      "although",
+      "because",
+      "during",
+      "while"
+    ],
+    "optionTranslations": [
+      "〜だけれども",
+      "〜なので",
+      "〜の間に",
+      "〜している間に"
+    ],
+    "correct": "D",
+    "explanation": "「usually」により習慣は現在形(answer)を用い、「now」により一時的な動作は現在進行形(am answering)を用います。空所には進行中の同時動作を導く接続詞が必要で、自然なのは while + 動詞-ing（while waiting）です。誤りの理由：although は基本的に主語＋動詞の節を導くため「Although I am waiting...」の形が必要／because も「because we are waiting...」のように節が必要で、-ing 直結は不自然／during は前置詞で名詞を取るため「during the wait / during the meeting」の形が必要です。",
+    "category": "動詞の形・時制",
+    "intent": "現在形と現在進行形の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:51:37.705Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_138",
+    "sentence": "The committee ___ its advisors is meeting at 3 p.m. to discuss the quarterly budget.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "委員会は顧問らとともに、四半期の予算について協議するため、午後3時に会合を開く。",
+    "options": [
+      "and",
+      "or",
+      "as well as",
+      "nor"
+    ],
+    "optionTranslations": [
+      "と",
+      "または",
+      "とともに",
+      "でもなく"
+    ],
+    "correct": "C",
+    "explanation": "正解は as well as。as well as は後続を付加情報として示すため、主語は The committee のまま単数で、is と一致します。and を入れると主語が複合（committee and its advisors）になり複数扱いのため are が必要になり不一致。or は直前の名詞に一致するため、plural の advisors に合わせて are が必要です。nor は通常 neither と対になって用いられるため、この文脈では不適切です。なお、committee は集合名詞で、米語では単数扱いが一般的です。",
+    "category": "主語と動詞の一致",
+    "intent": "集合名詞の動詞選択を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T04:52:40.978Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_139",
+    "sentence": "Please hold; our customer service representative ___ your account details right now to confirm the recent charges.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "少々お待ちください。当社のカスタマーサービス担当者が、最近の請求内容を確認するため、ただいまお客様のアカウント情報を見直しています。",
+    "options": [
+      "checks",
+      "examines",
+      "is reviewing",
+      "inspects"
+    ],
+    "optionTranslations": [
+      "確認する",
+      "精査する",
+      "確認している",
+      "検査する"
+    ],
+    "correct": "C",
+    "explanation": "「right now（まさに今）」という時間表現があるため、進行中の動作を表す現在進行形が必要です。is reviewing（be動詞＋動詞のing形）が最も自然で正解。checks / examines / inspects はいずれも現在形で、一般的・習慣的な行為を表す用法が中心のため、この文脈（今まさに対応中）では不自然になります。",
+    "category": "動詞の形・時制",
+    "intent": "現在形と現在進行形の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス（カスタマーサポート）",
+    "createdAt": "2025-08-15T04:53:43.564Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_140",
+    "sentence": "This is the office ___ I work.",
+    "question": "(___) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "これが私が働いているオフィスです。",
+    "options": [
+      "when",
+      "where",
+      "why",
+      "how"
+    ],
+    "optionTranslations": [
+      "〜するとき",
+      "〜で",
+      "なぜ",
+      "どのように"
+    ],
+    "correct": "B",
+    "explanation": "先行詞が場所を表す名詞（the office）なので、「〜する場所で」を表す関係副詞 where が適切です。where は in which と同義で「…する場所で」という意味になります。誤りの選択肢：when は時を表す名詞（day, time など）に用いる、why は reason など理由を表す名詞に用いる、how は単独で名詞を修飾する関係副詞としては基本的に使えず、the way (that/in which) の形で用います。",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "short",
+    "vocabLevel": "easy",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "easy",
+    "topic": "オフィス/職場",
+    "createdAt": "2025-08-15T04:54:24.056Z",
+    "generationBatch": "part5_batch_1755232964425_zqtifzfc4",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_141",
+    "sentence": "At the moment, the project team ___ in the conference room.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "現在、プロジェクトチームは会議室で会議中です。",
+    "options": [
+      "is meeting",
+      "meets",
+      "met",
+      "has met"
+    ],
+    "optionTranslations": [
+      "会議中だ",
+      "会議する",
+      "会議した",
+      "会議したことがある"
+    ],
+    "correct": "A",
+    "explanation": "「At the moment（今この瞬間）」は一時的・進行中の動作を示すため、現在進行形が適切です。よって is meeting が正解。meets は習慣・一般的事実を表す現在形で「今まさに」の状況には不適。met は過去形、has met は現在完了（経験・完了・継続）で、いずれも「今行っている最中」を表せません。また、the team は集合名詞ですが米語では単数扱いが一般的なので is が用いられます。",
+    "category": "動詞の形・時制",
+    "intent": "現在形と現在進行形の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T07:46:54.471Z",
+    "generationBatch": "part5_batch_1755243951687_qp9zpikfk",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_142",
+    "sentence": "___ we offered a 20 percent discount, several clients postponed their orders until next quarter.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "当社が20％の割引を提示したものの、一部の顧客は注文を次の四半期まで延期した。",
+    "options": [
+      "despite",
+      "in spite of",
+      "although",
+      "despite of"
+    ],
+    "optionTranslations": [
+      "〜にもかかわらず",
+      "〜にもかかわらず",
+      "〜ものの",
+      "〜にもかかわらず"
+    ],
+    "correct": "C",
+    "explanation": "空所の後には「we offered ...」という主語＋動詞の従属節が来ているため、節を導く譲歩の接続詞が必要です。although は「〜だけれども」を意味し、後ろに節（S+V）を取るので文法的・意味的に適切です。despite と in spite of は前置詞であり、後ろには名詞（または動名詞）が必要なので、この形では不適切。despite of は誤用で、正しくは despite のみを用います。",
+    "category": "接続詞",
+    "intent": "対比・譲歩の接続詞を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-15T08:00:49.303Z",
+    "generationBatch": "part5_batch_1755244774398_w3zqmtlhx",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_143",
+    "sentence": "Sales have increased ___ since the new campaign was launched.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいキャンペーンが開始されて以来、売上は着実に増加している。",
+    "options": [
+      "steady",
+      "steadier",
+      "steadily",
+      "steadiness"
+    ],
+    "optionTranslations": [
+      "着実な",
+      "より着実な",
+      "着実に",
+      "着実さ"
+    ],
+    "correct": "C",
+    "explanation": "空所は動詞句「have increased」を修飾する語が必要なので、副詞の「steadily」が正解です。steady は形容詞（例: steady growth）で動詞は修飾できません。steadier は比較級の形容詞、steadiness は名詞であり、この位置には不適切です。ビジネス文脈では「increase steadily（着実に増加する）」というコロケーションがよく使われます。",
+    "category": "品詞識別",
+    "intent": "形容詞と副詞の識別を問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス（売上・マーケティング）",
+    "createdAt": "2025-08-16T06:41:19.607Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_144",
+    "sentence": "Although a number of issues, along with the latest regulatory changes and feedback from key stakeholders, ___ putting additional pressure on the project team to revise its rollout schedule, the executive committee has decided to proceed with the pilot launch next month.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "最新の規制変更や主要な利害関係者からのフィードバックに加え、多くの課題がプロジェクトの導入スケジュールを見直すようプロジェクトチームに追加の圧力をかけているものの、執行委員会は来月のパイロット導入を進めることを決定した。",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "are"
+    ],
+    "optionTranslations": [
+      "〜している",
+      "〜していた",
+      "〜していた",
+      "〜している"
+    ],
+    "correct": "D",
+    "explanation": "主語は「a number of issues」で、これは複数扱いとなるため、動詞は複数形の「are」が正解です。「along with the latest regulatory changes and feedback from key stakeholders」は挿入句であり、主語の数には影響しません。よって「are putting」が正しい形になります。「is」は単数主語に用いるため不適切、「was」「were」は過去形で、文全体は現在の状況を述べているため不一致です。なお、「the number of ～」は単数扱い、「a number of ～」は複数扱いという対比にも注意しましょう。",
+    "category": "主語と動詞の一致",
+    "intent": "単数・複数の一致を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-16T06:42:53.050Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_145",
+    "sentence": "Our main warehouse, ___ we store temperature-sensitive goods, is equipped with backup generators.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "当社の主要倉庫は、温度管理が必要な商品を保管している場所で、バックアップ発電機を備えています。",
+    "options": [
+      "which",
+      "when",
+      "where",
+      "that"
+    ],
+    "optionTranslations": [
+      "～するもの",
+      "～のときに",
+      "～で",
+      "～する"
+    ],
+    "correct": "C",
+    "explanation": "先行詞が場所（warehouse）なので、場所を表す関係副詞 where を用いるのが適切です。非制限用法（カンマ付き）でも where は問題ありません。which は単独では場所を示せず、本来は in which が必要です。when は時を表す関係副詞なので不適切です。また非制限用法では that は基本的に用いられません。",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-16T06:44:19.011Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_146",
+    "sentence": "To ___ that all regional offices comply with the updated data-privacy policy, the legal department rolled out a mandatory e-learning module, set clear escalation procedures for incidents, and scheduled quarterly audits to verify that corrective actions were implemented.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "各地域拠点が更新されたデータプライバシー方針を遵守することを確実にするため、法務部は必須のeラーニングモジュールを導入し、インシデントのエスカレーション手順を明確に定め、是正措置の実施を検証する四半期監査を予定した。",
+    "options": [
+      "assure",
+      "insure",
+      "reassure",
+      "ensure"
+    ],
+    "optionTranslations": [
+      "保証する",
+      "保険をかける",
+      "安心させる",
+      "確実にする"
+    ],
+    "correct": "D",
+    "explanation": "正解はensure。ensureは「〜であることを確実にする」という意味で、that節を目的語に自然に取ります（ensure that ...）。assureは通常「人」を目的語に取り（assure someone that ...）、この文のようにthat節のみを続けるのは不自然です。insureは主に「保険をかける」という意味で、政策遵守を対象とするのは不適切です。reassureは「不安な人を安心させる」という意味で、that節のみを取りにくく、また対象が人である必要があります。本問では「各支社がポリシーに準拠することを確実にする」という意味が最も適切なのでensureが唯一正解です。",
+    "category": "語彙選択",
+    "intent": "ビジネス用語の使い分けを問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-16T06:45:24.929Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_147",
+    "sentence": "The startup ___ rapid growth over the past year has attracted international investors is planning to open a regional office in Singapore after securing additional funding and regulatory approvals.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "過去1年間の急速な成長により国際的な投資家を惹きつけてきたそのスタートアップは、追加の資金を調達し規制当局の承認を得た後、シンガポールに地域拠点を開設する計画だ。",
+    "options": [
+      "who",
+      "which",
+      "that",
+      "whose"
+    ],
+    "optionTranslations": [
+      "～する人",
+      "～するもの",
+      "～するもの",
+      "～の"
+    ],
+    "correct": "D",
+    "explanation": "正解は「whose」。先行詞は「The startup（その新興企業）」で、その「急速な成長（rapid growth）」が投資家を引きつけた、という「所有・所属」の関係を示す必要があります。「whose + 名詞」で先行詞に属する名詞（ここでは rapid growth）を修飾できます。「whose」は人だけでなく物・組織にも使えます。誤答の理由：who は主格で後ろに動詞が続く構造が必要だが、直後は名詞（rapid growth）のため不可。which は先行詞が物でも使えるが、所有を単独で示せず “the rapid growth of which” の形にしなければならないため不適。that も関係代名詞だが所有は表せず “that rapid growth” とは言えないため不適。",
+    "category": "関係詞・代名詞",
+    "intent": "関係代名詞の機能に応じた選択を問う",
+    "length": "long",
+    "vocabLevel": "medium",
+    "optionsType": "同じ品詞で意味が紛らわしい語",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-16T06:46:24.044Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_148",
+    "sentence": "The company remains committed ___ reducing its environmental impact.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "同社は、環境への影響の低減に引き続き取り組んでいる。",
+    "options": [
+      "for",
+      "in order to",
+      "so as to",
+      "to"
+    ],
+    "optionTranslations": [
+      "～のために",
+      "～するために",
+      "～するために",
+      "～に"
+    ],
+    "correct": "D",
+    "explanation": "be committed to の to は前置詞で、その後ろには名詞（または動名詞）が来ます。したがって reducing の形が自然になり、空所には前置詞の to が入ります。in order to と so as to は目的を表す不定詞を導き、その後ろには動詞の原形が必要（例: in order to reduce）なので文脈と形が合いません。また for は「〜のために」を表す前置詞ですが、committed と組み合わせて目標へのコミットメントを表す定型にはなりません（committed for は別の意味になります）。本問は to の品詞（前置詞か不定詞の to か）を見分け、動名詞と不定詞の使い分けを判断できるかを問う問題です。",
+    "category": "動詞の形・時制",
+    "intent": "不定詞と動名詞の使い分け",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-16T06:47:27.057Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_149",
+    "sentence": "Early sales figures are ___, so management will proceed with the nationwide rollout.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "初期の売上データは有望なので、経営陣は全国展開を進める。",
+    "options": [
+      "promise",
+      "promising",
+      "promised",
+      "promises"
+    ],
+    "optionTranslations": [
+      "見込み",
+      "有望だ",
+      "約束された",
+      "見込みを示す"
+    ],
+    "correct": "B",
+    "explanation": "be動詞の後には状態・性質を表す形容詞が来るのが自然です。ここでは「初期の売上数値が有望だ」という評価を述べているため、形容詞の promising が適切です。その他の選択肢は不適切：promise は名詞で、are の補語として使うには不自然（are a promise などにしない限り不可）。promised は「約束された」という受動の意味で、通常は名詞を前から修飾（the promised refund など）し、述語用法にすると意味が合いません。promises は動詞（三人称単数）または名詞の複数形で、ここでは述語形容詞として機能できず不適切です。",
+    "category": "品詞識別",
+    "intent": "名詞と形容詞の使い分けを問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "ビジネス（販売・マーケティング）",
+    "createdAt": "2025-08-16T06:48:19.937Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_150",
+    "sentence": "Our new vendor can ship ___ units per week as our previous supplier did, so production schedules will remain unchanged.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "当社の新しい納入業者は、以前の納入業者と同様に週あたり多くの製品を出荷できるため、生産スケジュールに変更はありません。",
+    "options": [
+      "many",
+      "much",
+      "numerous",
+      "plenty"
+    ],
+    "optionTranslations": [
+      "多くの",
+      "多量の",
+      "多数の",
+      "たくさん"
+    ],
+    "correct": "A",
+    "explanation": "同等比較は「as + 形容詞/副詞/数量詞 + as」の形をとります。可算名詞の複数形（units）には数量詞 many を用いるため、正解は many（as many units as）です。much は不可算名詞用（例：as much time as）、numerous は形容詞でこの位置に置くと不自然（as numerous units as は不可）、plenty は単独では使えず通常 plenty of を要し、かつ as ... as 構文には適しません。",
+    "category": "比較構文・数量",
+    "intent": "同等比較の表現を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "類義語の選択",
+    "difficulty": "medium",
+    "topic": "サプライチェーン管理",
+    "createdAt": "2025-08-16T06:49:30.291Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_151",
+    "sentence": "The new guidelines are in line ___ our sustainability goals.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいガイドラインは当社のサステナビリティ目標に沿っている。",
+    "options": [
+      "to",
+      "for",
+      "with",
+      "although"
+    ],
+    "optionTranslations": [
+      "～に",
+      "～のために",
+      "～と",
+      "～だけれども"
+    ],
+    "correct": "C",
+    "explanation": "正解は with。ビジネスでよく使われる慣用表現 in line with は「〜と一致して／〜に沿って」を意味します。in line to はこの意味では使われず、to は不適切。in line for は「〜を受ける見込みで」という別の意味になり文脈不一致。although は接続詞で、この位置（前置詞が必要な箇所）には置けません。",
+    "category": "慣用表現・句動詞",
+    "intent": "句動詞やビジネス慣用表現の使い分けを問う",
+    "length": "short",
+    "vocabLevel": "medium",
+    "optionsType": "前置詞や接続詞の選択",
+    "difficulty": "medium",
+    "topic": "ビジネス: ガイドライン・方針",
+    "createdAt": "2025-08-16T06:50:25.396Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_152",
+    "sentence": "Please gather in the conference room ___ the quarterly budget review will be held this afternoon.",
+    "question": "(___) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "本日午後に四半期予算の見直しが行われる会議室にお集まりください。",
+    "options": [
+      "whereas",
+      "wherever",
+      "where",
+      "whereby"
+    ],
+    "optionTranslations": [
+      "一方で",
+      "どこでも",
+      "〜で",
+      "それによって"
+    ],
+    "correct": "C",
+    "explanation": "正解は where。関係副詞 where は「先行詞が場所」のときに用い、「そこで」の意味で関係節を導きます。先行詞は the conference room（場所）なので、where が最も自然です。wherever は「どこで〜しても／〜するところはどこでも」の意味で不特定の場所を表し、特定の一室を指す文脈には不適切。whereby は「それによって」という手段・方法を表す関係副詞で、先行詞が制度・方法・仕組みなどのときに用いるため、場所名詞とは合わない。whereas は「一方で」を表す等位接続詞で、名詞を修飾する関係節を導く語ではないため不適切です。（参考：形式ばった文では in which に言い換え可能）",
+    "category": "関係詞・代名詞",
+    "intent": "関係副詞の適切な使用を問う",
+    "length": "medium",
+    "vocabLevel": "medium",
+    "optionsType": "同語の語形変化",
+    "difficulty": "medium",
+    "topic": "会議・会議室",
+    "createdAt": "2025-08-16T06:52:03.183Z",
+    "generationBatch": "part5_batch_1755326446540_32y9h2drc",
+    "partType": "part5"
+  },
+  {
+    "id": "part5_153",
+    "sentence": "Thanks to the new help desk software, the support team has ___ emails to respond to today than it did yesterday.",
+    "question": "(_____) に入る最も適切な語を選びなさい。",
+    "questionTranslation": "新しいヘルプデスク用ソフトウェアのおかげで、サポートチームは今日は昨日よりも対応すべきメールが少ない。",
+    "options": [
+      "fewer",
+      "less",
+      "lower",
+      "smaller"
+    ],
+    "optionTranslations": [
+      "より少ない",
+      "より少ない",
+      "より低い",
+      "より小さい"
+    ],
+    "correct": "A",
+    "explanation": "可算名詞（emails）の比較では、数量が少ないことを表す比較級は fewer を用います。less は不可算名詞に用いるのが基本で、この場合は誤り。lower は「（数値・価格・レベルが）低い」、smaller は「物理的に小さい」を表すため文意に合いません。than を用いた比較構文で「fewer ... than ～」の形が自然です。",
+    "category": "比較構文・数量",
+    "intent": "比較級・最上級・数量表現の理解を問う",
+    "length": "medium",
+    "vocabLevel": "easy",
+    "optionsType": "類義語の選択",
+    "difficulty": "easy",
+    "topic": "ビジネス",
+    "createdAt": "2025-08-17T07:01:21.708Z",
+    "generationBatch": "part5_batch_1755414017826_t37damz7n",
+    "partType": "part5"
+  }
+]

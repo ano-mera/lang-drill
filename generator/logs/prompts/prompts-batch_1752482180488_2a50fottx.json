@@ -1,0 +1,768 @@
+[
+  {
+    "timestamp": "2025-07-14T08:36:20.731Z",
+    "functionName": "generatePassage",
+    "type": "email",
+    "difficulty": "hard",
+    "topic": "meeting_scheduling",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のemailを作成してください：\n\n【条件】\n- 文書タイプ: email\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: meeting_scheduling\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nSubject: [件名]\n\nDear [受信者],\n\n[本文]\n\nBest regards,\n[署名]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"email\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"meeting_scheduling\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T08:36:37.893Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 175語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nDear Team,\n\nI hope this message finds you well. As we approach the end of the quarter, it is crucial that we convene to discuss our strategic objectives for the upcoming months. I propose that we hold a meeting next Wednesday, November 8th, from 10:00 AM to 12:00 PM. Please confirm your availability at your earliest convenience.\n\nThe agenda will include a review of our current project milestones, a financial overview, and a brainstorming session for our next marketing campaign. I would appreciate it if you could come prepared with any pertinent reports or updates from your respective departments. Additionally, if anyone has topics they would like to add to the agenda, please let me know by this Friday, November 3rd.\n\nThe meeting will take place in Conference Room B. For those who are unable to attend in person, a Zoom link will be provided closer to the date.\n\nThank you for your attention to this matter. I look forward to our collaborative efforts to drive our projects forward.\n\nBest regards,\n\nAlex Johnson\nProject Manager\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage127",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:36:44.785Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が175語であり、hard難易度の期待範囲である250-350語に達していない。\",\n      \"suggestion\": \"文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"内容\",\n      \"severity\": \"軽微\",\n      \"description\": \"ビジネス文書としては自然だが、具体的なプロジェクト名や詳細が不足しているため、より具体的な情報を提供することで理解を深めることができる。\",\n      \"suggestion\": \"プロジェクト名や具体的な数値データを追加して、内容を充実させることをお勧めします。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage127",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:36:44.787Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nDear Team,\n\nI hope this message finds you well. As we approach the end of the quarter, it is crucial that we convene to discuss our strategic objectives for the upcoming months. I propose that we hold a meeting next Wednesday, November 8th, from 10:00 AM to 12:00 PM. Please confirm your availability at your earliest convenience.\n\nThe agenda will include a review of our current project milestones, a financial overview, and a brainstorming session for our next marketing campaign. I would appreciate it if you could come prepared with any pertinent reports or updates from your respective departments. Additionally, if anyone has topics they would like to add to the agenda, please let me know by this Friday, November 3rd.\n\nThe meeting will take place in Conference Room B. For those who are unable to attend in person, a Zoom link will be provided closer to the date.\n\nThank you for your attention to this matter. I look forward to our collaborative efforts to drive our projects forward.\n\nBest regards,\n\nAlex Johnson\nProject Manager\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が175語であり、hard難易度の期待範囲である250-350語に達していない。\n   改善提案: 文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 内容\n   重要度: 軽微\n   問題: ビジネス文書としては自然だが、具体的なプロジェクト名や詳細が不足しているため、より具体的な情報を提供することで理解を深めることができる。\n   改善提案: プロジェクト名や具体的な数値データを追加して、内容を充実させることをお勧めします。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: email を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage127",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:36:56.532Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Dear Team,\\n\\nI hope this message finds you well. As we approach the end of the quarter, it is crucial that we convene to discuss our strategic objectives for the upcoming months, particularly regarding the \\\"Project Phoenix\\\" initiative, which aims to enhance our market share by 15% in the next quarter. I propose that we hold a meeting next Wednesday, November 8th, from 10:00 AM to 12:00 PM. Please confirm your availability at your earliest convenience.\\n\\nThe agenda will include a review of our current project milestones, including the completion status of the first phase of Project Phoenix, a financial overview highlighting our budget allocation and expenditures, and a brainstorming session for our next marketing campaign targeting the younger demographic. I would appreciate it if you could come prepared with any pertinent reports or updates from your respective departments, especially regarding sales figures and customer feedback. Additionally, if anyone has topics they would like to add to the agenda, please let me know by this Friday, November 3rd.\\n\\nThe meeting will take place in Conference Room B. For those who are unable to attend in person, a Zoom link will be provided closer to the date.\\n\\nThank you for your attention to this matter. I look forward to our collaborative efforts to drive our projects forward and achieve our goals together.\\n\\nBest regards,\\n\\nAlex Johnson\\nProject Manager\",\n  \"revisedContentTranslation\": \"チームの皆様へ、\\n\\nこのメッセージが皆様に届いていることを願っています。四半期の終わりが近づく中、今後数ヶ月の戦略的目標について話し合うために集まることが重要です。特に、次の四半期に市場シェアを15％向上させることを目指す「プロジェクト・フェニックス」イニシアティブについてです。来週の水曜日、11月8日、午前10時から正午まで会議を開催することを提案します。できるだけ早く出席の可否を確認してください。\\n\\n議題には、現在のプロジェクトのマイルストーンのレビュー（プロジェクト・フェニックスの第一段階の完了状況を含む）、予算配分と支出を強調した財務概要、若年層をターゲットにした次のマーケティングキャンペーンのブレインストーミングセッションが含まれます。各自の部門からの関連レポートやアップデート、特に売上数字や顧客のフィードバックについて準備していただけるとありがたいです。また、議題に追加したいトピックがある方は、11月3日金曜日までにお知らせください。\\n\\n会議は会議室Bで行います。対面で出席できない方には、日が近づいた際にZoomリンクを提供いたします。\\n\\nこの件についてご注意いただきありがとうございます。私たちのプロジェクトを前進させ、共に目標を達成するための協力を楽しみにしています。\\n\\n敬具、\\n\\nアレックス・ジョンソン\\nプロジェクトマネージャー\",\n  \"revisionNotes\": \"文書の語数を250語以上に増やし、具体的なプロジェクト名（「プロジェクト・フェニックス」）や数値データ（市場シェア15%向上）を追加しました。これにより、内容が充実し、ビジネス文書としての自然さが向上しました。また、文法や語彙の修正を行い、TOEIC Part 7の形式に準拠した内容にしました。\"\n}",
+    "metadata": {
+      "passageId": "passage127",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:36:56.533Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 227語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nDear Team,\n\nI hope this message finds you well. As we approach the end of the quarter, it is crucial that we convene to discuss our strategic objectives for the upcoming months, particularly regarding the \"Project Phoenix\" initiative, which aims to enhance our market share by 15% in the next quarter. I propose that we hold a meeting next Wednesday, November 8th, from 10:00 AM to 12:00 PM. Please confirm your availability at your earliest convenience.\n\nThe agenda will include a review of our current project milestones, including the completion status of the first phase of Project Phoenix, a financial overview highlighting our budget allocation and expenditures, and a brainstorming session for our next marketing campaign targeting the younger demographic. I would appreciate it if you could come prepared with any pertinent reports or updates from your respective departments, especially regarding sales figures and customer feedback. Additionally, if anyone has topics they would like to add to the agenda, please let me know by this Friday, November 3rd.\n\nThe meeting will take place in Conference Room B. For those who are unable to attend in person, a Zoom link will be provided closer to the date.\n\nThank you for your attention to this matter. I look forward to our collaborative efforts to drive our projects forward and achieve our goals together.\n\nBest regards,\n\nAlex Johnson\nProject Manager\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage127_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:36:59.725Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"中程度\",\n      \"description\": \"文書の語数が227語で、期待範囲の250-350語に達していない。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"軽微\",\n      \"description\": \"TOEIC Part 7の文書形式には準拠しているが、図表がないため視覚的な情報が不足している。\",\n      \"suggestion\": \"関連する図表やデータを追加することで、情報を視覚的に補強することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage127_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:36:59.727Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nDear Team,\n\nI hope this message finds you well. As we approach the end of the quarter, it is crucial that we convene to discuss our strategic objectives for the upcoming months, particularly regarding the \"Project Phoenix\" initiative, which aims to enhance our market share by 15% in the next quarter. I propose that we hold a meeting next Wednesday, November 8th, from 10:00 AM to 12:00 PM. Please confirm your availability at your earliest convenience.\n\nThe agenda will include a review of our current project milestones, including the completion status of the first phase of Project Phoenix, a financial overview highlighting our budget allocation and expenditures, and a brainstorming session for our next marketing campaign targeting the younger demographic. I would appreciate it if you could come prepared with any pertinent reports or updates from your respective departments, especially regarding sales figures and customer feedback. Additionally, if anyone has topics they would like to add to the agenda, please let me know by this Friday, November 3rd.\n\nThe meeting will take place in Conference Room B. For those who are unable to attend in person, a Zoom link will be provided closer to the date.\n\nThank you for your attention to this matter. I look forward to our collaborative efforts to drive our projects forward and achieve our goals together.\n\nBest regards,\n\nAlex Johnson\nProject Manager\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: email\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度2: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度3: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度4: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度5: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度6: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度7: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1407
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:10.048Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nDear Team,\n\nI hope this message finds you well. As we approach the end of the quarter, it is crucial that we convene to discuss our strategic objectives for the upcoming months, particularly regarding the \"Project Phoenix\" initiative, which aims to enhance our market share by 15% in the next quarter. I propose that we hold a meeting next Wednesday, November 8th, from 10:00 AM to 12:00 PM. Please confirm your availability at your earliest convenience.\n\nThe agenda will include a review of our current project milestones, including the completion status of the first phase of Project Phoenix, a financial overview highlighting our budget allocation and expenditures, and a brainstorming session for our next marketing campaign targeting the younger demographic. I would appreciate it if you could come prepared with any pertinent reports or updates from your respective departments, especially regarding sales figures and customer feedback. Additionally, if anyone has topics they would like to add to the agenda, please let me know by this Friday, November 3rd.\n\nThe meeting will take place in Conference Room B. For those who are unable to attend in person, a Zoom link will be provided closer to the date.\n\nThank you for your attention to this matter. I look forward to our collaborative efforts to drive our projects forward and achieve our goals together.\n\nBest regards,\n\nAlex Johnson\nProject Manager\n\n【問題文】\n\n問題1: According to the document, what is the primary goal of the 'Project Phoenix' initiative?\n選択肢: To enhance market share by 15% in the next quarter, To develop a new product line, To reduce operational costs by 10%, To increase customer satisfaction scores\n正解: A\n解説: 文書には「Project Phoenix」 initiative は「市場シェアを次の四半期に15%増やすことを目指している」と明記されています。\n\n\n問題2: Where will the meeting be held?\n選択肢: Conference Room A, Conference Room B, The main auditorium, Online only\n正解: B\n解説: 文書には「会議は会議室Bで行われます」と記載されています。\n\n\n問題3: Who is responsible for managing the meeting arrangements?\n選択肢: Alex Johnson, The HR department, The finance team, The marketing manager\n正解: A\n解説: 文書の署名に「Alex Johnson, Project Manager」と記載されており、彼がこのメールを送信しているため、会議の手配を管理していることが示されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage127",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:11.187Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage127",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:13.192Z",
+    "functionName": "generatePassage",
+    "type": "advertisement",
+    "difficulty": "hard",
+    "topic": "office_announcements",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のadvertisementを作成してください：\n\n【条件】\n- 文書タイプ: advertisement\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: office_announcements\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\n[広告タイトル]\n\n[魅力的なキャッチコピー]\n\n[商品・サービス詳細]\n[特徴・メリット]\n[価格・条件]\n\n[連絡先・申込方法]\n[行動喚起]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"advertisement\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"office_announcements\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T08:37:20.791Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 144語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nIntroducing Pristine Office Solutions\n\nRevamp your workspace with our cutting-edge office management services! Pristine Office Solutions is here to streamline your office operations with efficiency and precision.\n\nOur services include: \n- Comprehensive office cleaning and maintenance\n- State-of-the-art technology setup and support\n- Customized office supply management\n\nFeatures and Benefits:\n- Our highly trained staff ensures a spotless working environment, enhancing productivity.\n- Our IT support service guarantees minimal downtime with 24/7 assistance.\n- Tailored supply management plans reduce waste and optimize costs.\n\nSpecial Offer: Sign up by the end of the month to receive a 10% discount on your first three months of service. Terms and conditions apply.\n\nContact us now at info@pristineofficesolutions.com or call us at (555) 019-8765 to schedule a consultation. Experience the difference in your office today!\n\nAct now and transform your office into a model of efficiency and comfort.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage128",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:24.685Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が144語であり、hard難易度の期待範囲である250-350語に達していない。\",\n      \"suggestion\": \"文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加して、情報を視覚的に整理することを考慮してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage128",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:24.687Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nIntroducing Pristine Office Solutions\n\nRevamp your workspace with our cutting-edge office management services! Pristine Office Solutions is here to streamline your office operations with efficiency and precision.\n\nOur services include: \n- Comprehensive office cleaning and maintenance\n- State-of-the-art technology setup and support\n- Customized office supply management\n\nFeatures and Benefits:\n- Our highly trained staff ensures a spotless working environment, enhancing productivity.\n- Our IT support service guarantees minimal downtime with 24/7 assistance.\n- Tailored supply management plans reduce waste and optimize costs.\n\nSpecial Offer: Sign up by the end of the month to receive a 10% discount on your first three months of service. Terms and conditions apply.\n\nContact us now at info@pristineofficesolutions.com or call us at (555) 019-8765 to schedule a consultation. Experience the difference in your office today!\n\nAct now and transform your office into a model of efficiency and comfort.\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が144語であり、hard難易度の期待範囲である250-350語に達していない。\n   改善提案: 文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\n   改善提案: 関連する図表やリストを追加して、情報を視覚的に整理することを考慮してください。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: advertisement を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage128",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:39.461Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Introducing Pristine Office Solutions\\n\\nRevamp your workspace with our cutting-edge office management services! Pristine Office Solutions is here to streamline your office operations with efficiency and precision, ensuring that your business runs smoothly and effectively.\\n\\nOur comprehensive range of services includes: \\n- Thorough office cleaning and maintenance tailored to your needs.\\n- State-of-the-art technology setup and ongoing support to keep your systems running at peak performance.\\n- Customized office supply management that ensures you never run out of essential items while minimizing waste and costs.\\n\\nFeatures and Benefits:\\n- Our highly trained staff guarantees a spotless working environment, which significantly enhances productivity and employee satisfaction.\\n- Our IT support service is designed to minimize downtime, offering 24/7 assistance to address any technical issues swiftly.\\n- Tailored supply management plans are created to reduce waste, optimize costs, and ensure that your office is always equipped with the necessary supplies.\\n\\nSpecial Offer: Sign up by the end of the month to receive a 10% discount on your first three months of service. Terms and conditions apply.\\n\\nContact us now at info@pristineofficesolutions.com or call us at (555) 019-8765 to schedule a consultation. Experience the transformative difference in your office today!\\n\\nAct now and transform your office into a model of efficiency and comfort. Let us help you create a workspace that inspires productivity and success.\",\n  \"revisedContentTranslation\": \"プラチナオフィスソリューションのご紹介\\n\\n最先端のオフィス管理サービスで、あなたのワークスペースを一新しましょう！プラチナオフィスソリューションは、効率と精度をもってオフィスの運営をスムーズにするためにここにいます。\\n\\n私たちの包括的なサービスには、\\n- あなたのニーズに合わせた徹底的なオフィス清掃とメンテナンス。\\n- システムが最高のパフォーマンスを発揮できるようにする最先端の技術セットアップと継続的なサポート。\\n- 必要なアイテムが常に揃い、無駄とコストを最小限に抑えるカスタマイズされたオフィスサプライ管理が含まれています。\\n\\n特徴と利点：\\n- 高度に訓練されたスタッフが、徹底した作業環境を保証し、生産性と従業員の満足度を大幅に向上させます。\\n- ITサポートサービスは、ダウンタイムを最小限に抑えるよう設計されており、24時間365日のサポートで迅速に技術的な問題に対処します。\\n- 無駄を減らし、コストを最適化し、オフィスに必要なサプライを常に確保するためにカスタマイズされた供給管理プランを作成します。\\n\\n特別オファー：今月末までにサインアップすると、最初の3ヶ月のサービス料金が10%割引になります。条件が適用されます。\\n\\n今すぐinfo@pristineofficesolutions.comまでご連絡いただくか、(555) 019-8765にお電話いただき、相談の予約をしましょう。あなたのオフィスでの変革的な違いを体験してください！\\n\\n今すぐ行動し、オフィスを効率性と快適さのモデルに変えましょう。私たちが生産性と成功を促進するワークスペースを作るお手伝いをします。\",\n  \"revisionNotes\": \"文書の語数を250語以上に増やし、内容を拡充しました。具体的には、サービス内容の詳細を追加し、各サービスの利点を明確にしました。また、視覚的な補足としての図表は追加できませんでしたが、情報を整理しやすくするためにリスト形式を維持しました。文法や語彙も見直し、ビジネス文書としての自然さを保ちながら、TOEIC Part 7の形式に準拠した内容にしました。\"\n}",
+    "metadata": {
+      "passageId": "passage128",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:39.463Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 222語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nIntroducing Pristine Office Solutions\n\nRevamp your workspace with our cutting-edge office management services! Pristine Office Solutions is here to streamline your office operations with efficiency and precision, ensuring that your business runs smoothly and effectively.\n\nOur comprehensive range of services includes: \n- Thorough office cleaning and maintenance tailored to your needs.\n- State-of-the-art technology setup and ongoing support to keep your systems running at peak performance.\n- Customized office supply management that ensures you never run out of essential items while minimizing waste and costs.\n\nFeatures and Benefits:\n- Our highly trained staff guarantees a spotless working environment, which significantly enhances productivity and employee satisfaction.\n- Our IT support service is designed to minimize downtime, offering 24/7 assistance to address any technical issues swiftly.\n- Tailored supply management plans are created to reduce waste, optimize costs, and ensure that your office is always equipped with the necessary supplies.\n\nSpecial Offer: Sign up by the end of the month to receive a 10% discount on your first three months of service. Terms and conditions apply.\n\nContact us now at info@pristineofficesolutions.com or call us at (555) 019-8765 to schedule a consultation. Experience the transformative difference in your office today!\n\nAct now and transform your office into a model of efficiency and comfort. Let us help you create a workspace that inspires productivity and success.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage128_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:43.609Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"中程度\",\n      \"description\": \"文書の語数が222語で、期待範囲の250-350語に達していない。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"軽微\",\n      \"description\": \"TOEIC Part 7の文書形式には適合しているが、図表がないため情報の視覚的な補強が不足している。\",\n      \"suggestion\": \"図表やリストを追加して、情報を視覚的に整理することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage128_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:37:43.611Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nIntroducing Pristine Office Solutions\n\nRevamp your workspace with our cutting-edge office management services! Pristine Office Solutions is here to streamline your office operations with efficiency and precision, ensuring that your business runs smoothly and effectively.\n\nOur comprehensive range of services includes: \n- Thorough office cleaning and maintenance tailored to your needs.\n- State-of-the-art technology setup and ongoing support to keep your systems running at peak performance.\n- Customized office supply management that ensures you never run out of essential items while minimizing waste and costs.\n\nFeatures and Benefits:\n- Our highly trained staff guarantees a spotless working environment, which significantly enhances productivity and employee satisfaction.\n- Our IT support service is designed to minimize downtime, offering 24/7 assistance to address any technical issues swiftly.\n- Tailored supply management plans are created to reduce waste, optimize costs, and ensure that your office is always equipped with the necessary supplies.\n\nSpecial Offer: Sign up by the end of the month to receive a 10% discount on your first three months of service. Terms and conditions apply.\n\nContact us now at info@pristineofficesolutions.com or call us at (555) 019-8765 to schedule a consultation. Experience the transformative difference in your office today!\n\nAct now and transform your office into a model of efficiency and comfort. Let us help you create a workspace that inspires productivity and success.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: advertisement\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度2: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度3: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度4: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度5: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度6: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度7: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1521
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:00.192Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nIntroducing Pristine Office Solutions\n\nRevamp your workspace with our cutting-edge office management services! Pristine Office Solutions is here to streamline your office operations with efficiency and precision, ensuring that your business runs smoothly and effectively.\n\nOur comprehensive range of services includes: \n- Thorough office cleaning and maintenance tailored to your needs.\n- State-of-the-art technology setup and ongoing support to keep your systems running at peak performance.\n- Customized office supply management that ensures you never run out of essential items while minimizing waste and costs.\n\nFeatures and Benefits:\n- Our highly trained staff guarantees a spotless working environment, which significantly enhances productivity and employee satisfaction.\n- Our IT support service is designed to minimize downtime, offering 24/7 assistance to address any technical issues swiftly.\n- Tailored supply management plans are created to reduce waste, optimize costs, and ensure that your office is always equipped with the necessary supplies.\n\nSpecial Offer: Sign up by the end of the month to receive a 10% discount on your first three months of service. Terms and conditions apply.\n\nContact us now at info@pristineofficesolutions.com or call us at (555) 019-8765 to schedule a consultation. Experience the transformative difference in your office today!\n\nAct now and transform your office into a model of efficiency and comfort. Let us help you create a workspace that inspires productivity and success.\n\n【問題文】\n\n問題1: What is the main purpose of this document?\n選択肢: To introduce a new office service, To announce a company merger, To provide details about a new product launch, To offer a training program for employees\n正解: A\n解説: 文書はPristine Office Solutionsのサービスを紹介する内容であり、オフィスの管理サービスを提供することを目的としています。\n\n\n問題2: According to the document, what is one feature of the IT support service?\n選択肢: It is available 24/7, It includes free software updates, It provides on-site engineers regularly, It offers training sessions for employees\n正解: A\n解説: 文書には、ITサポートサービスが24時間いつでも利用可能であることが述べられています。\n\n\n問題3: What condition must be satisfied to receive a 10% discount?\n選択肢: Sign up by the end of the month, Refer a friend to the service, Purchase a year-long service plan, Complete a customer feedback survey\n正解: A\n解説: 文書の特別オファーのセクションに、月末までにサインアップすると最初の3か月分が10％割引になると記載されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage128",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:01.658Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage128",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:03.664Z",
+    "functionName": "generatePassage",
+    "type": "article",
+    "difficulty": "hard",
+    "topic": "simple_notifications",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のarticleを作成してください：\n\n【条件】\n- 文書タイプ: article\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: simple_notifications\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\n[記事タイトル]\n\n[導入部・概要]\n\n[本文段落1]\n\n[本文段落2]\n\n[本文段落3]\n\n[結論・まとめ]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"article\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"simple_notifications\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T08:38:12.091Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 168語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nIn today's fast-paced business environment, effective communication is crucial to ensure smooth operations and prevent misunderstandings. \n\nOne effective method to streamline communication is through the use of simple notifications. These notifications, often in the form of brief emails or instant messages, provide team members with quick updates on project statuses, meeting reminders, or urgent tasks. For instance, a project manager might send out a notification to remind the team of an approaching deadline, ensuring that everyone stays on track.\n\nMoreover, simple notifications can foster better collaboration by keeping all stakeholders informed. By sharing key information succinctly, these notifications help in reducing the need for lengthy meetings. For example, a notification about a change in project scope can be swiftly communicated to the team, allowing them to adjust their strategies accordingly without the need for a formal meeting.\n\nHowever, it is essential to maintain a balance to prevent information overload. When used judiciously, simple notifications serve as a powerful tool in enhancing productivity and maintaining clarity within the organization.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage129",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:17.380Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が期待範囲（250-350語）を大きく下回っているため、内容が不十分と見なされる。\",\n      \"suggestion\": \"内容を充実させるために、具体的な例や詳細な説明を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、段落の構成や情報の提示方法がやや不十分である。\",\n      \"suggestion\": \"段落を明確に分け、見出しや箇条書きを使用して情報を整理することをお勧めします。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage129",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:17.387Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nIn today's fast-paced business environment, effective communication is crucial to ensure smooth operations and prevent misunderstandings. \n\nOne effective method to streamline communication is through the use of simple notifications. These notifications, often in the form of brief emails or instant messages, provide team members with quick updates on project statuses, meeting reminders, or urgent tasks. For instance, a project manager might send out a notification to remind the team of an approaching deadline, ensuring that everyone stays on track.\n\nMoreover, simple notifications can foster better collaboration by keeping all stakeholders informed. By sharing key information succinctly, these notifications help in reducing the need for lengthy meetings. For example, a notification about a change in project scope can be swiftly communicated to the team, allowing them to adjust their strategies accordingly without the need for a formal meeting.\n\nHowever, it is essential to maintain a balance to prevent information overload. When used judiciously, simple notifications serve as a powerful tool in enhancing productivity and maintaining clarity within the organization.\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が期待範囲（250-350語）を大きく下回っているため、内容が不十分と見なされる。\n   改善提案: 内容を充実させるために、具体的な例や詳細な説明を追加して語数を増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、段落の構成や情報の提示方法がやや不十分である。\n   改善提案: 段落を明確に分け、見出しや箇条書きを使用して情報を整理することをお勧めします。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: article を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage129",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:31.884Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"In today's fast-paced business environment, effective communication is crucial to ensure smooth operations and prevent misunderstandings. To enhance communication, organizations can implement a variety of strategies, one of which is the use of simple notifications. These notifications, often in the form of brief emails or instant messages, provide team members with quick updates on project statuses, meeting reminders, or urgent tasks. For instance, a project manager might send out a notification to remind the team of an approaching deadline, ensuring that everyone stays on track. \\n\\n### Benefits of Simple Notifications\\nMoreover, simple notifications can foster better collaboration by keeping all stakeholders informed. By sharing key information succinctly, these notifications help in reducing the need for lengthy meetings. For example, a notification about a change in project scope can be swiftly communicated to the team, allowing them to adjust their strategies accordingly without the need for a formal meeting. This not only saves time but also promotes a culture of transparency and responsiveness within the team. \\n\\n### Maintaining Balance\\nHowever, it is essential to maintain a balance to prevent information overload. When used judiciously, simple notifications serve as a powerful tool in enhancing productivity and maintaining clarity within the organization. It is important to establish guidelines for the frequency and content of these notifications to ensure they remain effective and do not overwhelm team members. By doing so, organizations can leverage the benefits of simple notifications while minimizing potential drawbacks. \\n\\nIn conclusion, implementing simple notifications can significantly improve communication and collaboration in a business setting. By keeping everyone informed and engaged, organizations can navigate the complexities of modern business more effectively.\",\n  \"revisedContentTranslation\": \"今日の急速に変化するビジネス環境において、効果的なコミュニケーションは円滑な業務運営と誤解の防止に不可欠です。コミュニケーションを強化するために、組織はさまざまな戦略を実施できますが、その一つがシンプルな通知の活用です。これらの通知は、短いメールやインスタントメッセージの形で、チームメンバーにプロジェクトの進捗状況、会議のリマインダー、緊急のタスクについて迅速に更新を提供します。たとえば、プロジェクトマネージャーがチームに迫る締切を思い出させる通知を送信することで、全員が軌道に乗り続けることができます。\\n\\n### シンプルな通知の利点\\nさらに、シンプルな通知はすべての利害関係者を情報で満たすことにより、より良いコラボレーションを促進します。重要な情報を簡潔に共有することで、これらの通知は長時間の会議の必要性を減らすのに役立ちます。たとえば、プロジェクトの範囲の変更に関する通知は、チームに迅速に伝達され、正式な会議を開くことなく戦略を調整することができます。これにより、時間を節約できるだけでなく、チーム内での透明性と応答性の文化を促進します。\\n\\n### バランスの維持\\nしかし、情報過多を防ぐためにバランスを保つことが重要です。適切に使用されると、シンプルな通知は生産性を向上させ、組織内の明確さを維持する強力なツールとなります。これらの通知の頻度と内容に関するガイドラインを確立することが重要であり、効果的であり続け、チームメンバーを圧倒しないようにする必要があります。そうすることで、組織はシンプルな通知の利点を活用しつつ、潜在的な欠点を最小限に抑えることができます。\\n\\n結論として、シンプルな通知を実施することで、ビジネス環境におけるコミュニケーションとコラボレーションを大幅に改善できます。全員が情報を得て関与することで、組織は現代ビジネスの複雑さをより効果的に乗り越えることができます。\",\n  \"revisionNotes\": \"文書の語数を増やすために、具体的な例や詳細な説明を追加しました。また、段落を明確に分け、見出しを使用して情報を整理しました。これにより、TOEIC Part 7の文書形式に準拠し、内容を充実させました。文法や語彙の自然さも改善し、全体的な難易度を調整しました。\"\n}",
+    "metadata": {
+      "passageId": "passage129",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:31.887Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 270語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nIn today's fast-paced business environment, effective communication is crucial to ensure smooth operations and prevent misunderstandings. To enhance communication, organizations can implement a variety of strategies, one of which is the use of simple notifications. These notifications, often in the form of brief emails or instant messages, provide team members with quick updates on project statuses, meeting reminders, or urgent tasks. For instance, a project manager might send out a notification to remind the team of an approaching deadline, ensuring that everyone stays on track. \n\n### Benefits of Simple Notifications\nMoreover, simple notifications can foster better collaboration by keeping all stakeholders informed. By sharing key information succinctly, these notifications help in reducing the need for lengthy meetings. For example, a notification about a change in project scope can be swiftly communicated to the team, allowing them to adjust their strategies accordingly without the need for a formal meeting. This not only saves time but also promotes a culture of transparency and responsiveness within the team. \n\n### Maintaining Balance\nHowever, it is essential to maintain a balance to prevent information overload. When used judiciously, simple notifications serve as a powerful tool in enhancing productivity and maintaining clarity within the organization. It is important to establish guidelines for the frequency and content of these notifications to ensure they remain effective and do not overwhelm team members. By doing so, organizations can leverage the benefits of simple notifications while minimizing potential drawbacks. \n\nIn conclusion, implementing simple notifications can significantly improve communication and collaboration in a business setting. By keeping everyone informed and engaged, organizations can navigate the complexities of modern business more effectively.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage129_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:32.753Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage129_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:32.756Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nIn today's fast-paced business environment, effective communication is crucial to ensure smooth operations and prevent misunderstandings. To enhance communication, organizations can implement a variety of strategies, one of which is the use of simple notifications. These notifications, often in the form of brief emails or instant messages, provide team members with quick updates on project statuses, meeting reminders, or urgent tasks. For instance, a project manager might send out a notification to remind the team of an approaching deadline, ensuring that everyone stays on track. \n\n### Benefits of Simple Notifications\nMoreover, simple notifications can foster better collaboration by keeping all stakeholders informed. By sharing key information succinctly, these notifications help in reducing the need for lengthy meetings. For example, a notification about a change in project scope can be swiftly communicated to the team, allowing them to adjust their strategies accordingly without the need for a formal meeting. This not only saves time but also promotes a culture of transparency and responsiveness within the team. \n\n### Maintaining Balance\nHowever, it is essential to maintain a balance to prevent information overload. When used judiciously, simple notifications serve as a powerful tool in enhancing productivity and maintaining clarity within the organization. It is important to establish guidelines for the frequency and content of these notifications to ensure they remain effective and do not overwhelm team members. By doing so, organizations can leverage the benefits of simple notifications while minimizing potential drawbacks. \n\nIn conclusion, implementing simple notifications can significantly improve communication and collaboration in a business setting. By keeping everyone informed and engaged, organizations can navigate the complexities of modern business more effectively.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: article\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度2: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度3: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度4: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度5: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度6: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度7: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1911
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:51.413Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nIn today's fast-paced business environment, effective communication is crucial to ensure smooth operations and prevent misunderstandings. To enhance communication, organizations can implement a variety of strategies, one of which is the use of simple notifications. These notifications, often in the form of brief emails or instant messages, provide team members with quick updates on project statuses, meeting reminders, or urgent tasks. For instance, a project manager might send out a notification to remind the team of an approaching deadline, ensuring that everyone stays on track. \n\n### Benefits of Simple Notifications\nMoreover, simple notifications can foster better collaboration by keeping all stakeholders informed. By sharing key information succinctly, these notifications help in reducing the need for lengthy meetings. For example, a notification about a change in project scope can be swiftly communicated to the team, allowing them to adjust their strategies accordingly without the need for a formal meeting. This not only saves time but also promotes a culture of transparency and responsiveness within the team. \n\n### Maintaining Balance\nHowever, it is essential to maintain a balance to prevent information overload. When used judiciously, simple notifications serve as a powerful tool in enhancing productivity and maintaining clarity within the organization. It is important to establish guidelines for the frequency and content of these notifications to ensure they remain effective and do not overwhelm team members. By doing so, organizations can leverage the benefits of simple notifications while minimizing potential drawbacks. \n\nIn conclusion, implementing simple notifications can significantly improve communication and collaboration in a business setting. By keeping everyone informed and engaged, organizations can navigate the complexities of modern business more effectively.\n\n【問題文】\n\n問題1: What can be inferred from the information provided?\n選択肢: Simple notifications can replace all meetings., Simple notifications should be used with caution to avoid overwhelming team members., Simple notifications are only necessary for urgent updates., Simple notifications are not suitable for project updates.\n正解: B\n解説: 文書では、情報過多を防ぐためにバランスを保つことが重要と述べられています。このことから、簡単な通知は注意深く使用されるべきであると推測できます。\n\n\n問題2: According to the document, what specific information is mentioned about the benefits of simple notifications?\n選択肢: They reduce the need for lengthy meetings., They always require a follow-up meeting., They require detailed explanations., They complicate project management.\n正解: A\n解説: 文書では、簡単な通知が長時間の会議の必要性を減らすことができると述べられています。\n\n\n問題3: What is the main purpose of this document?\n選択肢: To criticize the use of simple notifications in business., To explain the potential drawbacks of simple notifications., To describe how simple notifications can improve communication and collaboration., To argue against the implementation of simple notifications in organizations.\n正解: C\n解説: 文書全体を通じて、簡単な通知がどのようにしてコミュニケーションと協力を向上させることができるかが説明されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage129",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:52.343Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage129",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:38:54.351Z",
+    "functionName": "generatePassage",
+    "type": "customer_support",
+    "difficulty": "hard",
+    "topic": "basic_requests",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のcustomer_supportを作成してください：\n\n【条件】\n- 文書タイプ: customer_support\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: basic_requests\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nSubject: [件名]\n\nDear [顧客名],\n\n[カスタマーサポートの内容]\n\n[解決策や対応内容]\n\n[今後の対応]\n\nBest regards,\n[サポート担当者名]\n[会社名]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"customer_support\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"basic_requests\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T08:39:18.485Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 182語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nSubject: Assistance Required for Order Adjustment\n\nDear Ms. Tanaka,\n\nThank you for reaching out to us regarding your recent order. We understand that you need to make some adjustments to your purchase, and we are here to assist you.\n\nAccording to our records, your order #45267 was placed on October 15, 2023, and is currently in the processing stage. As per your request, we will attempt to modify the order to include an additional item from the same category. Please note that changes can only be made before the order is shipped. We advise you to confirm the modification by replying to this email within the next 24 hours.\n\nIn the event that the order has already been shipped, we recommend utilizing our return and exchange policy, which allows adjustments within 14 days of receipt. Kindly refer to the attached document for the complete return procedure.\n\nShould you have any further questions or require additional assistance, please do not hesitate to contact us at support@example.com or via our customer service hotline at 1-800-555-0199.\n\nBest regards,\nJohn Smith\nCustomer Support Team\nExample Corp\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage130",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:21.805Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 70,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が期待範囲（250-350語）を大きく下回っている（182語）。\",\n      \"suggestion\": \"文書の内容を充実させ、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage130",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:21.808Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nSubject: Assistance Required for Order Adjustment\n\nDear Ms. Tanaka,\n\nThank you for reaching out to us regarding your recent order. We understand that you need to make some adjustments to your purchase, and we are here to assist you.\n\nAccording to our records, your order #45267 was placed on October 15, 2023, and is currently in the processing stage. As per your request, we will attempt to modify the order to include an additional item from the same category. Please note that changes can only be made before the order is shipped. We advise you to confirm the modification by replying to this email within the next 24 hours.\n\nIn the event that the order has already been shipped, we recommend utilizing our return and exchange policy, which allows adjustments within 14 days of receipt. Kindly refer to the attached document for the complete return procedure.\n\nShould you have any further questions or require additional assistance, please do not hesitate to contact us at support@example.com or via our customer service hotline at 1-800-555-0199.\n\nBest regards,\nJohn Smith\nCustomer Support Team\nExample Corp\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 70/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が期待範囲（250-350語）を大きく下回っている（182語）。\n   改善提案: 文書の内容を充実させ、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補足が不足している。\n   改善提案: 関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: customer_support を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage130",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 70
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:36.946Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"Subject: Assistance Required for Order Adjustment\\n\\nDear Ms. Tanaka,\\n\\nThank you for reaching out to us regarding your recent order. We appreciate your communication and understand that you need to make some adjustments to your purchase. Our team is here to assist you in this matter.\\n\\nAccording to our records, your order #45267 was placed on October 15, 2023, and is currently in the processing stage. As per your request, we will attempt to modify the order to include an additional item from the same category. Please note that changes can only be made before the order is shipped. We advise you to confirm the modification by replying to this email within the next 24 hours.\\n\\nIn the event that the order has already been shipped, we recommend utilizing our return and exchange policy, which allows adjustments within 14 days of receipt. Kindly refer to the attached document for the complete return procedure. To assist you further, we have included a summary of our return policy below:\\n\\n1. Items must be returned within 14 days of receipt.\\n2. The original packaging should be intact.\\n3. A receipt or proof of purchase is required for processing returns.\\n\\nShould you have any further questions or require additional assistance, please do not hesitate to contact us at support@example.com or via our customer service hotline at 1-800-555-0199. We are committed to providing you with the best service possible.\\n\\nBest regards,\\nJohn Smith\\nCustomer Support Team\\nExample Corp\",\n  \"revisedContentTranslation\": \"件名: 注文調整のための支援が必要です\\n\\n田中様\\n\\n最近のご注文についてご連絡いただき、ありがとうございます。ご連絡をいただき感謝申し上げます。ご購入内容の調整が必要であることを理解しております。当社のチームがこの件についてお手伝いさせていただきます。\\n\\n当社の記録によりますと、あなたの注文番号#45267は2023年10月15日に行われ、現在処理中の段階にあります。ご要望に応じて、同じカテゴリから追加のアイテムを含めるように注文を変更することを試みます。変更は注文が発送される前にのみ可能であることにご注意ください。次の24時間以内にこのメールに返信して、変更を確認していただくことをお勧めします。\\n\\nもしすでに注文が発送されている場合は、受取日から14日以内に調整が可能な返品および交換ポリシーをご利用いただくことをお勧めします。完全な返品手続きについては、添付の文書をご参照ください。さらにお手伝いするために、以下に返品ポリシーの概要を記載しました：\\n\\n1. 商品は受取日から14日以内に返品する必要があります。\\n2. 元の包装が intact である必要があります。\\n3. 返品処理にはレシートまたは購入証明が必要です。\\n\\nその他のご質問や追加の支援が必要な場合は、support@example.com までご連絡いただくか、カスタマーサービスホットライン 1-800-555-0199 までお電話ください。最高のサービスを提供することをお約束いたします。\\n\\nよろしくお願いいたします。\\nジョン・スミス\\nカスタマーサポートチーム\\nエグザンプル社\",\n  \"revisionNotes\": \"文書の語数を増やすために、内容を充実させました。具体的には、返品ポリシーの要約を追加し、視覚的に情報を整理しました。また、文法や語彙を見直し、ビジネス文書としての自然さを向上させました。TOEIC Part 7の形式に準拠した構造を維持しつつ、全体の内容を改善しました。\"\n}",
+    "metadata": {
+      "passageId": "passage130",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:36.950Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 243語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nSubject: Assistance Required for Order Adjustment\n\nDear Ms. Tanaka,\n\nThank you for reaching out to us regarding your recent order. We appreciate your communication and understand that you need to make some adjustments to your purchase. Our team is here to assist you in this matter.\n\nAccording to our records, your order #45267 was placed on October 15, 2023, and is currently in the processing stage. As per your request, we will attempt to modify the order to include an additional item from the same category. Please note that changes can only be made before the order is shipped. We advise you to confirm the modification by replying to this email within the next 24 hours.\n\nIn the event that the order has already been shipped, we recommend utilizing our return and exchange policy, which allows adjustments within 14 days of receipt. Kindly refer to the attached document for the complete return procedure. To assist you further, we have included a summary of our return policy below:\n\n1. Items must be returned within 14 days of receipt.\n2. The original packaging should be intact.\n3. A receipt or proof of purchase is required for processing returns.\n\nShould you have any further questions or require additional assistance, please do not hesitate to contact us at support@example.com or via our customer service hotline at 1-800-555-0199. We are committed to providing you with the best service possible.\n\nBest regards,\nJohn Smith\nCustomer Support Team\nExample Corp\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage130_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:40.895Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 75,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"中程度\",\n      \"description\": \"文書の語数が243語で、期待範囲の250-350語に満たない。\",\n      \"suggestion\": \"内容を追加して語数を増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"軽微\",\n      \"description\": \"TOEIC Part 7の文書形式には準拠しているが、図表がないため情報の視覚的な補強が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加することで、情報を視覚的に強化することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage130_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:40.898Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nSubject: Assistance Required for Order Adjustment\n\nDear Ms. Tanaka,\n\nThank you for reaching out to us regarding your recent order. We appreciate your communication and understand that you need to make some adjustments to your purchase. Our team is here to assist you in this matter.\n\nAccording to our records, your order #45267 was placed on October 15, 2023, and is currently in the processing stage. As per your request, we will attempt to modify the order to include an additional item from the same category. Please note that changes can only be made before the order is shipped. We advise you to confirm the modification by replying to this email within the next 24 hours.\n\nIn the event that the order has already been shipped, we recommend utilizing our return and exchange policy, which allows adjustments within 14 days of receipt. Kindly refer to the attached document for the complete return procedure. To assist you further, we have included a summary of our return policy below:\n\n1. Items must be returned within 14 days of receipt.\n2. The original packaging should be intact.\n3. A receipt or proof of purchase is required for processing returns.\n\nShould you have any further questions or require additional assistance, please do not hesitate to contact us at support@example.com or via our customer service hotline at 1-800-555-0199. We are committed to providing you with the best service possible.\n\nBest regards,\nJohn Smith\nCustomer Support Team\nExample Corp\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: customer_support\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度2: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度3: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度4: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度5: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度6: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度7: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1473
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:48.879Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nSubject: Assistance Required for Order Adjustment\n\nDear Ms. Tanaka,\n\nThank you for reaching out to us regarding your recent order. We appreciate your communication and understand that you need to make some adjustments to your purchase. Our team is here to assist you in this matter.\n\nAccording to our records, your order #45267 was placed on October 15, 2023, and is currently in the processing stage. As per your request, we will attempt to modify the order to include an additional item from the same category. Please note that changes can only be made before the order is shipped. We advise you to confirm the modification by replying to this email within the next 24 hours.\n\nIn the event that the order has already been shipped, we recommend utilizing our return and exchange policy, which allows adjustments within 14 days of receipt. Kindly refer to the attached document for the complete return procedure. To assist you further, we have included a summary of our return policy below:\n\n1. Items must be returned within 14 days of receipt.\n2. The original packaging should be intact.\n3. A receipt or proof of purchase is required for processing returns.\n\nShould you have any further questions or require additional assistance, please do not hesitate to contact us at support@example.com or via our customer service hotline at 1-800-555-0199. We are committed to providing you with the best service possible.\n\nBest regards,\nJohn Smith\nCustomer Support Team\nExample Corp\n\n【問題文】\n\n問題1: What is the main purpose of this document?\n選択肢: To apologize for a delayed shipment, To confirm a new order placement, To assist with an order adjustment, To provide a discount on future purchases\n正解: C\n解説: 文書の冒頭で、注文の調整を支援するために連絡があったことが述べられています。\n\n\n問題2: Under what circumstances would the return and exchange policy be applicable?\n選択肢: If the order is confirmed, If the order has already been shipped, If the order is in the processing stage, If the order includes a new item\n正解: B\n解説: 文書には、注文がすでに発送されている場合に、返品と交換ポリシーを利用することが推奨されていると書かれています。\n\n\n問題3: What can be inferred from the information provided?\n選択肢: The order has been shipped., The order cannot be modified., Ms. Tanaka's order includes multiple items., Ms. Tanaka has 24 hours to confirm the modification.\n正解: D\n解説: 文書には、田中さんが注文の変更を確認するために24時間以内に返信するように求められていることが記載されています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage130",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:50.006Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage130",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:39:52.014Z",
+    "functionName": "generatePassage",
+    "type": "internal_chat",
+    "difficulty": "hard",
+    "topic": "schedule_changes",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のinternal_chatを作成してください：\n\n【条件】\n- 文書タイプ: internal_chat\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: schedule_changes\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\n[社内チャット形式]\n\n[送信者名] [時刻]\n[メッセージ内容]\n\n[返信者名] [時刻]\n[返信内容]\n\n[追加のやり取り]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"internal_chat\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"schedule_changes\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T08:40:02.296Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 155語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\n[Alice] 10:15 AM\nHi Team, there's been a change in the schedule for the product launch meeting. It's now moved to Thursday at 3 PM instead of Friday at 2 PM. Please update your calendars accordingly.\n\n[Bob] 10:18 AM\nThanks for the update, Alice. Will the meeting be at the same venue?\n\n[Alice] 10:20 AM\nYes, it will still be held in Conference Room B. Also, make sure to review the latest project report before the meeting.\n\n[Carol] 10:22 AM\nGot it. I'll inform the marketing team as well. Is there an updated agenda?\n\n[Alice] 10:25 AM\nThe agenda remains unchanged for now, but I'll notify everyone if there are any further modifications. Please ensure to bring any necessary materials and reports to the meeting.\n\n[David] 10:28 AM\nUnderstood. I'll prepare the financial summary report by then.\n\n[Alice] 10:30 AM\nGreat, thanks everyone. Let me know if you have any questions or need further clarification.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage131",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:05.465Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が155語であり、hard難易度の期待範囲である250-350語に達していない。\",\n      \"suggestion\": \"文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補強が不足している。\",\n      \"suggestion\": \"関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage131",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:05.469Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\n[Alice] 10:15 AM\nHi Team, there's been a change in the schedule for the product launch meeting. It's now moved to Thursday at 3 PM instead of Friday at 2 PM. Please update your calendars accordingly.\n\n[Bob] 10:18 AM\nThanks for the update, Alice. Will the meeting be at the same venue?\n\n[Alice] 10:20 AM\nYes, it will still be held in Conference Room B. Also, make sure to review the latest project report before the meeting.\n\n[Carol] 10:22 AM\nGot it. I'll inform the marketing team as well. Is there an updated agenda?\n\n[Alice] 10:25 AM\nThe agenda remains unchanged for now, but I'll notify everyone if there are any further modifications. Please ensure to bring any necessary materials and reports to the meeting.\n\n[David] 10:28 AM\nUnderstood. I'll prepare the financial summary report by then.\n\n[Alice] 10:30 AM\nGreat, thanks everyone. Let me know if you have any questions or need further clarification.\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が155語であり、hard難易度の期待範囲である250-350語に達していない。\n   改善提案: 文書の内容を拡充し、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため情報の視覚的な補強が不足している。\n   改善提案: 関連する図表やリストを追加して、情報を視覚的に整理することを検討してください。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: internal_chat を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage131",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:20.372Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"[Alice] 10:15 AM\\nHi Team, I hope this message finds you well. I wanted to inform you that there has been a significant change in the schedule for the upcoming product launch meeting. The meeting has now been rescheduled to Thursday at 3 PM instead of the previously planned time on Friday at 2 PM. Please make sure to update your calendars accordingly to avoid any confusion.\\n\\n[Bob] 10:18 AM\\nThanks for the update, Alice. Could you please confirm if the meeting will still take place at the same venue as before?\\n\\n[Alice] 10:20 AM\\nYes, I can confirm that the meeting will still be held in Conference Room B. Additionally, I would like to remind everyone to review the latest project report before the meeting, as it will be crucial for our discussions.\\n\\n[Carol] 10:22 AM\\nGot it. I’ll make sure to inform the marketing team about the change. Is there an updated agenda that we should be aware of?\\n\\n[Alice] 10:25 AM\\nThe agenda remains unchanged for now, but I will notify everyone if there are any further modifications. Please ensure to bring any necessary materials and reports to the meeting, as they will be essential for our discussions.\\n\\n[David] 10:28 AM\\nUnderstood. I will prepare the financial summary report by then and ensure that it is ready for the meeting.\\n\\n[Alice] 10:30 AM\\nGreat, thank you everyone for your cooperation. If you have any questions or need further clarification regarding the meeting or any other matters, please feel free to reach out to me. Looking forward to seeing you all there! \\n\\n[Visual Aid] 10:32 AM\\nPlease refer to the attached document for the updated meeting schedule and agenda. It includes all relevant details for your reference.\",\n  \"revisedContentTranslation\": \"[アリス] 午前10:15\\nチームの皆さん、こんにちは。このメッセージが皆さんに届いていることを願っています。今後の製品発表会議のスケジュールに重要な変更があったことをお知らせしたいと思います。会議は、金曜日の午後2時から、木曜日の午後3時に変更されました。混乱を避けるために、必ずカレンダーを更新してください。\\n\\n[ボブ] 午前10:18\\n更新ありがとうございます、アリス。会議は以前と同じ会場で行われるか確認していただけますか？\\n\\n[アリス] 午前10:20\\nはい、会議は引き続き会議室Bで行われます。また、会議前に最新のプロジェクト報告書を確認することを皆さんに思い出していただきたいです。これは私たちの議論にとって重要です。\\n\\n[キャロル] 午前10:22\\n了解しました。マーケティングチームにも変更を伝えます。私たちが知っておくべき更新された議題はありますか？\\n\\n[アリス] 午前10:25\\n議題は今のところ変更ありませんが、さらなる修正があれば皆さんに通知します。会議に必要な資料や報告書を持参することを確認してください。これらは私たちの議論に不可欠です。\\n\\n[デイビッド] 午前10:28\\n了解しました。会議までに財務概要報告書を準備し、準備が整うようにします。\\n\\n[アリス] 午前10:30\\n素晴らしい、皆さんの協力に感謝します。会議やその他の事項について質問がある場合や、さらなる明確化が必要な場合は、遠慮なく私に連絡してください。皆さんにお会いできるのを楽しみにしています！\\n\\n[視覚資料] 午前10:32\\n更新された会議スケジュールと議題については、添付の文書を参照してください。すべての関連情報が含まれています。\",\n  \"revisionNotes\": \"文書の語数を250語以上に増やし、内容を詳細にしました。会議の重要性や準備事項を強調し、参加者へのリマインダーを追加しました。また、視覚的な補強として、会議スケジュールと議題を含む添付文書の参照を追加しました。これにより、TOEIC Part 7の文書形式に準拠し、情報が整理され、理解しやすくなりました。\"\n}",
+    "metadata": {
+      "passageId": "passage131",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:20.376Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 289語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\n[Alice] 10:15 AM\nHi Team, I hope this message finds you well. I wanted to inform you that there has been a significant change in the schedule for the upcoming product launch meeting. The meeting has now been rescheduled to Thursday at 3 PM instead of the previously planned time on Friday at 2 PM. Please make sure to update your calendars accordingly to avoid any confusion.\n\n[Bob] 10:18 AM\nThanks for the update, Alice. Could you please confirm if the meeting will still take place at the same venue as before?\n\n[Alice] 10:20 AM\nYes, I can confirm that the meeting will still be held in Conference Room B. Additionally, I would like to remind everyone to review the latest project report before the meeting, as it will be crucial for our discussions.\n\n[Carol] 10:22 AM\nGot it. I’ll make sure to inform the marketing team about the change. Is there an updated agenda that we should be aware of?\n\n[Alice] 10:25 AM\nThe agenda remains unchanged for now, but I will notify everyone if there are any further modifications. Please ensure to bring any necessary materials and reports to the meeting, as they will be essential for our discussions.\n\n[David] 10:28 AM\nUnderstood. I will prepare the financial summary report by then and ensure that it is ready for the meeting.\n\n[Alice] 10:30 AM\nGreat, thank you everyone for your cooperation. If you have any questions or need further clarification regarding the meeting or any other matters, please feel free to reach out to me. Looking forward to seeing you all there! \n\n[Visual Aid] 10:32 AM\nPlease refer to the attached document for the updated meeting schedule and agenda. It includes all relevant details for your reference.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage131_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:21.146Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage131_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:21.151Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\n[Alice] 10:15 AM\nHi Team, I hope this message finds you well. I wanted to inform you that there has been a significant change in the schedule for the upcoming product launch meeting. The meeting has now been rescheduled to Thursday at 3 PM instead of the previously planned time on Friday at 2 PM. Please make sure to update your calendars accordingly to avoid any confusion.\n\n[Bob] 10:18 AM\nThanks for the update, Alice. Could you please confirm if the meeting will still take place at the same venue as before?\n\n[Alice] 10:20 AM\nYes, I can confirm that the meeting will still be held in Conference Room B. Additionally, I would like to remind everyone to review the latest project report before the meeting, as it will be crucial for our discussions.\n\n[Carol] 10:22 AM\nGot it. I’ll make sure to inform the marketing team about the change. Is there an updated agenda that we should be aware of?\n\n[Alice] 10:25 AM\nThe agenda remains unchanged for now, but I will notify everyone if there are any further modifications. Please ensure to bring any necessary materials and reports to the meeting, as they will be essential for our discussions.\n\n[David] 10:28 AM\nUnderstood. I will prepare the financial summary report by then and ensure that it is ready for the meeting.\n\n[Alice] 10:30 AM\nGreat, thank you everyone for your cooperation. If you have any questions or need further clarification regarding the meeting or any other matters, please feel free to reach out to me. Looking forward to seeing you all there! \n\n[Visual Aid] 10:32 AM\nPlease refer to the attached document for the updated meeting schedule and agenda. It includes all relevant details for your reference.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: internal_chat\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度2: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度3: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度4: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度5: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n**優先度6: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度7: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 1671
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:41.910Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\n[Alice] 10:15 AM\nHi Team, I hope this message finds you well. I wanted to inform you that there has been a significant change in the schedule for the upcoming product launch meeting. The meeting has now been rescheduled to Thursday at 3 PM instead of the previously planned time on Friday at 2 PM. Please make sure to update your calendars accordingly to avoid any confusion.\n\n[Bob] 10:18 AM\nThanks for the update, Alice. Could you please confirm if the meeting will still take place at the same venue as before?\n\n[Alice] 10:20 AM\nYes, I can confirm that the meeting will still be held in Conference Room B. Additionally, I would like to remind everyone to review the latest project report before the meeting, as it will be crucial for our discussions.\n\n[Carol] 10:22 AM\nGot it. I’ll make sure to inform the marketing team about the change. Is there an updated agenda that we should be aware of?\n\n[Alice] 10:25 AM\nThe agenda remains unchanged for now, but I will notify everyone if there are any further modifications. Please ensure to bring any necessary materials and reports to the meeting, as they will be essential for our discussions.\n\n[David] 10:28 AM\nUnderstood. I will prepare the financial summary report by then and ensure that it is ready for the meeting.\n\n[Alice] 10:30 AM\nGreat, thank you everyone for your cooperation. If you have any questions or need further clarification regarding the meeting or any other matters, please feel free to reach out to me. Looking forward to seeing you all there! \n\n[Visual Aid] 10:32 AM\nPlease refer to the attached document for the updated meeting schedule and agenda. It includes all relevant details for your reference.\n\n【問題文】\n\n問題1: What can be inferred from the information provided?\n選択肢: The meeting is rescheduled due to a venue issue., The team is expected to prepare reports before the meeting., The marketing team will not attend the meeting., The agenda of the meeting has been changed.\n正解: B\n解説: Aliceのメッセージで、会議前に最新のプロジェクトレポートを確認するよう指示していることから、レポートの準備が期待されていることが推測できます。\n\n\n問題2: When will the product launch meeting take place?\n選択肢: Friday at 2 PM, Thursday at 3 PM, Thursday at 2 PM, Friday at 3 PM\n正解: B\n解説: Aliceのメッセージによると、会議は木曜日の午後3時に再スケジュールされました。\n\n\n問題3: Who should be contacted regarding any questions about the meeting?\n選択肢: Bob, Carol, David, Alice\n正解: D\n解説: Aliceのメッセージで、質問や追加の明確化が必要な場合は彼女に連絡するよう求めています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage131",
+      "checkType": "questions_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:42.773Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 100,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage131",
+      "checkType": "questions_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:40:44.780Z",
+    "functionName": "generatePassage",
+    "type": "notice",
+    "difficulty": "hard",
+    "topic": "customer_inquiries",
+    "promptType": "content_generation",
+    "prompt": "\n以下の条件でTOEIC Part7用のnoticeを作成してください：\n\n【条件】\n- 文書タイプ: notice\n- 単語数: 150-180語\n- 難易度: hard\n- トピック: customer_inquiries\n\n【要求】\n1. 実際のビジネスシーンで使われる自然な英語\n2. TOEIC Part7に適した内容と構造\n3. 明確な情報と指示を含む\n4. 複数の情報ポイントを含む（問題作成のため）\n5. 件名（Subject）を含む（メールの場合）\n6. 自然で読みやすい日本語翻訳を含む\n\n【出力形式】\n\nNOTICE: [通知タイトル]\n\nTo: [宛先]\nFrom: [発信者]\nDate: [日付]\n\n[通知内容]\n\n[重要事項・注意点]\n- [項目1]\n- [項目2]\n\n[問い合わせ先]\n\n\nJSON形式で出力してください：\n{\n  \"title\": \"タイトル（メールの場合は空文字列）\",\n  \"content\": \"文書の内容（改行文字\\n を含む）\",\n  \"contentTranslation\": \"文書内容の自然な日本語翻訳\",\n  \"type\": \"notice\",\n  \"difficulty\": \"hard\",\n  \"topic\": \"customer_inquiries\"\n}\n",
+    "metadata": {}
+  },
+  {
+    "timestamp": "2025-07-14T08:40:56.508Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 182語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nNOTICE: Customer Inquiry Response Protocol Update\n\nTo: Customer Service Team\nFrom: Head of Customer Experience\nDate: October 25, 2023\n\nWe are implementing new procedures to enhance our responsiveness to customer inquiries. Effective immediately, all team members must adhere to the updated protocol outlined below to ensure consistent and high-quality service.\n\n1. Response Time: All inquiries received during business hours must be acknowledged within 24 hours. For inquiries received outside business hours, responses should be sent by 10:00 AM the next business day.\n\n2. Documentation: Ensure all customer interactions are documented in the CRM system, including the nature of the inquiry, the resolution provided, and any follow-up actions required.\n\n3. Escalation: Complex inquiries that cannot be resolved within 48 hours should be escalated to a supervisor. Use the new escalation form available on the company intranet.\n\n[Important Points]\n- Failure to comply with the new protocol may result in performance reviews.\n- Training sessions on the new procedures are scheduled for November 1.\n\nFor any questions or further clarification, please contact the Customer Service Supervisor at extension 1234 or via email at support@company.com.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage132",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:00.463Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": false,\n  \"score\": 60,\n  \"issues\": [\n    {\n      \"category\": \"語数\",\n      \"severity\": \"重大\",\n      \"description\": \"文書の語数が期待範囲（250-350語）を大きく下回っているため、内容が不十分と見なされる。\",\n      \"suggestion\": \"文書の内容を充実させ、語数を250語以上に増やすことを検討してください。\"\n    },\n    {\n      \"category\": \"構造\",\n      \"severity\": \"中程度\",\n      \"description\": \"TOEIC Part 7の文書形式において、図表がないため情報の視覚的な整理が不足している。\",\n      \"suggestion\": \"重要な情報を図表や箇条書きで整理し、視覚的に分かりやすくすることを推奨します。\"\n    }\n  ],\n  \"recommendation\": \"修正必要\"\n}",
+    "metadata": {
+      "passageId": "passage132",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:00.467Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision",
+    "prompt": "\nあなたはTOEIC Part 7文書の修正専門家です。以下の品質チェック結果に基づいて、文書内容のみを修正してください：\n\n【元の文書内容】\nNOTICE: Customer Inquiry Response Protocol Update\n\nTo: Customer Service Team\nFrom: Head of Customer Experience\nDate: October 25, 2023\n\nWe are implementing new procedures to enhance our responsiveness to customer inquiries. Effective immediately, all team members must adhere to the updated protocol outlined below to ensure consistent and high-quality service.\n\n1. Response Time: All inquiries received during business hours must be acknowledged within 24 hours. For inquiries received outside business hours, responses should be sent by 10:00 AM the next business day.\n\n2. Documentation: Ensure all customer interactions are documented in the CRM system, including the nature of the inquiry, the resolution provided, and any follow-up actions required.\n\n3. Escalation: Complex inquiries that cannot be resolved within 48 hours should be escalated to a supervisor. Use the new escalation form available on the company intranet.\n\n[Important Points]\n- Failure to comply with the new protocol may result in performance reviews.\n- Training sessions on the new procedures are scheduled for November 1.\n\nFor any questions or further clarification, please contact the Customer Service Supervisor at extension 1234 or via email at support@company.com.\n\n\n\n【品質チェック結果】\n- 合格: いいえ（修正が必要）\n- スコア: 60/100\n- 推奨アクション: 修正必要\n\n【検出された問題点】\n\n1. カテゴリ: 語数\n   重要度: 重大\n   問題: 文書の語数が期待範囲（250-350語）を大きく下回っているため、内容が不十分と見なされる。\n   改善提案: 文書の内容を充実させ、語数を250語以上に増やすことを検討してください。\n\n\n2. カテゴリ: 構造\n   重要度: 中程度\n   問題: TOEIC Part 7の文書形式において、図表がないため情報の視覚的な整理が不足している。\n   改善提案: 重要な情報を図表や箇条書きで整理し、視覚的に分かりやすくすることを推奨します。\n\n\n【修正指示】\n上記の問題点を全て解決するように、文書内容のみを修正してください：\n\n1. **語数調整**: hard難易度に適した語数範囲に調整\n2. **文法・語彙の修正**: 不自然な表現や誤りを修正\n3. **内容の改善**: ビジネス文書として自然で適切な内容に\n4. **難易度調整**: hard難易度に適した語彙・構文に調整\n5. **TOEIC準拠**: TOEIC Part 7の文書形式に完全準拠\n\n\n【重要な制約】\n- 文書タイプ: notice を維持\n- 品質チェックで指摘された全ての問題を解決すること\n- 文書の基本的な構造と意図は維持すること\n\n\n【出力形式】\n以下のJSON形式で修正結果を出力してください：\n\n{\n  \"revisedContent\": \"修正された文書内容（改行文字\\nを含む）\",\n  \"revisedContentTranslation\": \"修正された文書内容の自然な日本語翻訳\",\n  \"revisionNotes\": \"修正内容の要約（日本語で、どの問題をどのように修正したかを説明）\"\n}\n\n【重要】\n- revisedContent は必ず英語で記述してください\n- revisedContentTranslation は自然な日本語で記述してください\n- revisionNotes で修正した内容を具体的に説明してください\n",
+    "metadata": {
+      "passageId": "passage132",
+      "revisionType": "content_quality_check_based",
+      "originalScore": 60
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:21.527Z",
+    "functionName": "reviseContentBasedOnQualityCheck",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_revision_response",
+    "prompt": "{\n  \"revisedContent\": \"NOTICE: Customer Inquiry Response Protocol Update\\n\\nTo: Customer Service Team\\nFrom: Head of Customer Experience\\nDate: October 25, 2023\\n\\nWe are implementing new procedures to enhance our responsiveness to customer inquiries. Effective immediately, all team members must adhere to the updated protocol outlined below to ensure consistent and high-quality service.\\n\\n1. Response Time: All inquiries received during business hours must be acknowledged within 24 hours. For inquiries received outside business hours, responses should be sent by 10:00 AM the next business day. This ensures that our customers feel valued and receive timely information regarding their concerns.\\n\\n2. Documentation: Ensure all customer interactions are documented in the CRM system, including the nature of the inquiry, the resolution provided, and any follow-up actions required. This documentation is crucial for maintaining a comprehensive record of customer interactions and improving our service.\\n\\n3. Escalation: Complex inquiries that cannot be resolved within 48 hours should be escalated to a supervisor. Use the new escalation form available on the company intranet. This step is vital to ensure that we address more complicated issues promptly and effectively.\\n\\n4. Customer Feedback: We encourage team members to actively seek feedback from customers after resolving their inquiries. This feedback will help us identify areas for improvement and enhance our overall service quality.\\n\\n5. Regular Review: The Customer Service Team will conduct regular reviews of the inquiry response process to identify trends and areas for improvement. This will allow us to adapt our procedures as necessary to meet customer expectations.\\n\\n[Important Points]\\n- Failure to comply with the new protocol may result in performance reviews.\\n- Training sessions on the new procedures are scheduled for November 1. Attendance is mandatory for all team members.\\n\\nFor any questions or further clarification, please contact the Customer Service Supervisor at extension 1234 or via email at support@company.com.\",\n  \"revisedContentTranslation\": \"お知らせ: 顧客問い合わせ対応プロトコルの更新\\n\\n宛先: カスタマーサービスチーム\\n送信者: カスタマーエクスペリエンス責任者\\n日付: 2023年10月25日\\n\\n顧客からの問い合わせに対する対応力を向上させるため、新しい手続きを実施します。即時に、すべてのチームメンバーは、以下に示す更新されたプロトコルを遵守し、一貫した高品質のサービスを提供する必要があります。\\n\\n1. 返信時間: 営業時間内に受け取ったすべての問い合わせは、24時間以内に確認する必要があります。営業時間外に受け取った問い合わせには、翌営業日の午前10時までに返信する必要があります。これにより、顧客が大切にされていると感じ、懸念に対して迅速な情報を受け取ることができます。\\n\\n2. 文書化: すべての顧客とのやり取りは、CRMシステムに記録されるようにしてください。これには、問い合わせの内容、提供された解決策、必要なフォローアップアクションが含まれます。この文書化は、顧客とのやり取りの包括的な記録を維持し、サービスを改善するために重要です。\\n\\n3. エスカレーション: 48時間以内に解決できない複雑な問い合わせは、スーパーバイザーにエスカレーションする必要があります。会社のイントラネットにある新しいエスカレーションフォームを使用してください。このステップは、より複雑な問題に迅速かつ効果的に対処するために重要です。\\n\\n4. 顧客フィードバック: 問い合わせを解決した後、チームメンバーは顧客からのフィードバックを積極的に求めることを奨励します。このフィードバックは、改善すべき領域を特定し、全体的なサービス品質を向上させるのに役立ちます。\\n\\n5. 定期的なレビュー: カスタマーサービスチームは、問い合わせ対応プロセスの定期的なレビューを行い、傾向や改善点を特定します。これにより、顧客の期待に応えるために手続きを必要に応じて適応させることができます。\\n\\n[重要なポイント]\\n- 新しいプロトコルに従わない場合、パフォーマンスレビューの対象となる可能性があります。\\n- 新しい手続きに関するトレーニングセッションは11月1日に予定されています。すべてのチームメンバーの出席が義務付けられています。\\n\\n質問やさらなる確認が必要な場合は、内線1234のカスタマーサービススーパーバイザーまでご連絡いただくか、support@company.comまでメールでお問い合わせください。\",\n  \"revisionNotes\": \"文書の語数を250語以上に増やすために、各セクションに詳細な説明を追加しました。特に、顧客フィードバックの重要性や定期的なレビューの必要性についての情報を追加しました。また、文書の構造を改善し、視覚的にわかりやすい形式にするために、重要なポイントを箇条書きで整理しました。これにより、TOEIC Part 7の文書形式に完全に準拠しました。\"\n}",
+    "metadata": {
+      "passageId": "passage132",
+      "revisionType": "content_quality_check_based_response"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:21.531Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check",
+    "prompt": "\n以下のTOEIC Part 7文書の品質を評価してください：\n\n【文書情報】\n- 難易度: hard\n- 語数: 303語 (目安範囲: 250-350語（hard難易度標準）)\n- 図表付き: なし\n\n【文書内容】\nNOTICE: Customer Inquiry Response Protocol Update\n\nTo: Customer Service Team\nFrom: Head of Customer Experience\nDate: October 25, 2023\n\nWe are implementing new procedures to enhance our responsiveness to customer inquiries. Effective immediately, all team members must adhere to the updated protocol outlined below to ensure consistent and high-quality service.\n\n1. Response Time: All inquiries received during business hours must be acknowledged within 24 hours. For inquiries received outside business hours, responses should be sent by 10:00 AM the next business day. This ensures that our customers feel valued and receive timely information regarding their concerns.\n\n2. Documentation: Ensure all customer interactions are documented in the CRM system, including the nature of the inquiry, the resolution provided, and any follow-up actions required. This documentation is crucial for maintaining a comprehensive record of customer interactions and improving our service.\n\n3. Escalation: Complex inquiries that cannot be resolved within 48 hours should be escalated to a supervisor. Use the new escalation form available on the company intranet. This step is vital to ensure that we address more complicated issues promptly and effectively.\n\n4. Customer Feedback: We encourage team members to actively seek feedback from customers after resolving their inquiries. This feedback will help us identify areas for improvement and enhance our overall service quality.\n\n5. Regular Review: The Customer Service Team will conduct regular reviews of the inquiry response process to identify trends and areas for improvement. This will allow us to adapt our procedures as necessary to meet customer expectations.\n\n[Important Points]\n- Failure to comply with the new protocol may result in performance reviews.\n- Training sessions on the new procedures are scheduled for November 1. Attendance is mandatory for all team members.\n\nFor any questions or further clarification, please contact the Customer Service Supervisor at extension 1234 or via email at support@company.com.\n\n【評価基準（本文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 語数適合性: 期待範囲内の語数に厳密にあるか\n2. 文法正確性: 完全に自然で正確な英語表現か\n3. 内容妥当性: ビジネス文書として完全に自然か\n4. 構造適合性: TOEIC Part 7の文書形式に準拠しているか\n5. 難易度適合性: 指定難易度に適した語彙・構文か\n\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"文法|内容|構造|難易度|語数|図表整合性\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage132_content_revised",
+      "checkType": "content_only"
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:22.462Z",
+    "functionName": "checkContentQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "content_quality_check_response",
+    "prompt": "{\n  \"passed\": true,\n  \"score\": 95,\n  \"issues\": [],\n  \"recommendation\": \"合格\"\n}",
+    "metadata": {
+      "passageId": "passage132_content_revised",
+      "checkType": "content_only",
+      "rawResponse": true
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:22.467Z",
+    "functionName": "generateQuestions",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_generation",
+    "prompt": "\n以下の文書に対して、TOEIC Part7形式の3つの問題を作成してください：\n\n【文書】\nNOTICE: Customer Inquiry Response Protocol Update\n\nTo: Customer Service Team\nFrom: Head of Customer Experience\nDate: October 25, 2023\n\nWe are implementing new procedures to enhance our responsiveness to customer inquiries. Effective immediately, all team members must adhere to the updated protocol outlined below to ensure consistent and high-quality service.\n\n1. Response Time: All inquiries received during business hours must be acknowledged within 24 hours. For inquiries received outside business hours, responses should be sent by 10:00 AM the next business day. This ensures that our customers feel valued and receive timely information regarding their concerns.\n\n2. Documentation: Ensure all customer interactions are documented in the CRM system, including the nature of the inquiry, the resolution provided, and any follow-up actions required. This documentation is crucial for maintaining a comprehensive record of customer interactions and improving our service.\n\n3. Escalation: Complex inquiries that cannot be resolved within 48 hours should be escalated to a supervisor. Use the new escalation form available on the company intranet. This step is vital to ensure that we address more complicated issues promptly and effectively.\n\n4. Customer Feedback: We encourage team members to actively seek feedback from customers after resolving their inquiries. This feedback will help us identify areas for improvement and enhance our overall service quality.\n\n5. Regular Review: The Customer Service Team will conduct regular reviews of the inquiry response process to identify trends and areas for improvement. This will allow us to adapt our procedures as necessary to meet customer expectations.\n\n[Important Points]\n- Failure to comply with the new protocol may result in performance reviews.\n- Training sessions on the new procedures are scheduled for November 1. Attendance is mandatory for all team members.\n\nFor any questions or further clarification, please contact the Customer Service Supervisor at extension 1234 or via email at support@company.com.\n\n【条件】\n- 問題数: 3問\n- 形式: 4択問題\n- 文書タイプ: notice\n- 難易度: undefined に従って、問題の語彙・構文・選択肢の紛らわしさを調整してください\n\n【難易度の指針】\n- easy: 基本的な語彙とシンプルな構文。正解が明確で、選択肢は直訳的な内容中心。\n- medium: 一部に言い換えや推論を含むが、文書からの根拠が直接得られる。\n- hard: 抽象的な推論、微妙な言い換え、細部の比較などを含む。選択肢も紛らわしい。\n\n【出題パターンの選択指示】\n以下の問題パターンを適合率補正スコアによる確率的優先度順に示します。\nこの文書に適合する3つのパターンを上位から順に選んで問題を作成してください。\n\n\n**優先度1: 推論・推測** (重み5, 適合率0.85, スコア5.88)\n- \"What can be inferred from the information provided?\"\n- \"What conclusion can be drawn from this document?\"\n- \"What does this suggest about [トピック]?\"\n- \"Based on the information given, what is likely to happen?\"\n\n\n**優先度2: 詳細情報・事実確認** (重み5, 適合率0.9, スコア5.56)\n- \"According to the document, what specific information is mentioned?\"\n- \"What details are provided about [具体的な内容]?\"\n- \"Which of the following is stated in the document?\"\n- \"What does the document say about [トピック]?\"\n\n\n**優先度3: 条件・要件** (重み1, 適合率0.3, スコア3.33)\n- \"What is required for [条件] to be met?\"\n- \"Under what circumstances would [状況] occur?\"\n- \"What conditions must be satisfied for [結果]?\"\n\n\n**優先度4: 人物・役割** (重み3, 適合率0.6, スコア5.00)\n- \"Who is responsible for [タスク]?\"\n- \"What role does [人物] play in this situation?\"\n- \"Who should be contacted regarding [問題]?\"\n\n\n**優先度5: 時系列・日程** (重み2, 適合率0.5, スコア4.00)\n- \"When will [イベント] take place?\"\n- \"What is the deadline for [アクション]?\"\n- \"What is the timeline for [プロジェクト]?\"\n\n\n**優先度6: 主旨・目的理解** (重み5, 適合率0.95, スコア5.26)\n- \"What is the main purpose of this document?\"\n- \"What is the primary goal of this communication?\"\n- \"Why was this document created?\"\n- \"What is the writer trying to achieve?\"\n\n\n**優先度7: 場所・会場** (重み2, 適合率0.45, スコア4.44)\n- \"Where will [イベント] be held?\"\n- \"What location is mentioned for [アクティビティ]?\"\n- \"Which venue is specified for [目的]?\"\n\n\n【選択ルール】\n- 上位から順に文書との適合性を判断してください\n- 適合する3つのパターンを選択してください（重複不可）\n- 文書内容に明らかに合わない場合は次の優先度を検討してください\n- 軽微な不適合の場合は、優先度を重視して選択してください\n\n【TOEICで出題されない問題タイプ（使用禁止）】\n- 比較・対比問題（\"How does A compare to B?\"）\n- 方法・手段問題（\"How can this be achieved?\"）\n- 複雑な時系列・順序問題（\"What happens first?\"）\n- 抽象的な推論問題\n\n【TOEIC Part7の特徴】\n- 実用的なビジネス文書が中心\n- 明確な情報の特定が重要\n- 複雑な分析よりも事実確認が中心\n- 文書の目的や意図を理解することが重要\n\n【要求】\n- 文書の内容に基づいた正確な問題\n- 文書全体（冒頭・中盤・末尾）からまんべんなく情報を選んで出題してください\n- 明確で曖昧さのない選択肢\n- 正解の根拠が明確\n- 実際のTOEIC問題に近い形式\n- 問題文と選択肢は英語で作成\n- 3つの問題で異なるパターンを使用\n- TOEICの出題傾向に忠実\n\n【重要：選択肢の形式】\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を追加しないでください\n- 選択肢は純粋な内容のみを記述してください\n- 例：\n  - 正しい例: \"To announce a new system\"\n  - 間違った例: \"A. To announce a new system\"\n\n【出力形式】\nJSON形式で出力してください：\n{\n  \"questions\": [\n    {\n      \"id\": \"q1\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q2\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    },\n    {\n      \"id\": \"q3\",\n      \"question\": \"[TOEIC準拠の問題文]\",\n      \"questionTranslation\": \"問題文の自然な日本語翻訳\",\n      \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n      \"optionTranslations\": [\"選択肢Aの日本語翻訳\", \"選択肢Bの日本語翻訳\", \"選択肢Cの日本語翻訳\", \"選択肢Dの日本語翻訳\"],\n      \"correct\": \"[正解のアルファベット1文字]\",\n      \"explanation\": \"正解の根拠と解説（日本語で記述）\"\n    }\n  ]\n}\n\n【重要】\n- question（問題文）は必ず英語で記述してください\n- questionTranslation（問題文翻訳）は自然な日本語で記述してください\n- options（選択肢）は必ず英語で記述してください\n- optionTranslations（選択肢翻訳）は自然な日本語で記述し、4つの翻訳を順番通りに配列で提供してください\n- explanation（解説）は必ず日本語で記述してください\n- 正解の根拠を明確に説明してください\n- 文書のどの部分が根拠となっているかを具体的に示してください\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- TOEICの実際の出題パターンに忠実に従ってください\n- 3つの問題で異なるパターンを使用してください\n- 翻訳は学習者にとって理解しやすい自然な日本語にしてください\n",
+    "metadata": {
+      "passageContentLength": 2068
+    }
+  },
+  {
+    "timestamp": "2025-07-14T08:41:47.275Z",
+    "functionName": "checkQuestionsQuality",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "questions_quality_check",
+    "prompt": "\n以下のTOEIC Part 7問題の品質を評価してください：\n\n【文書内容】\nNOTICE: Customer Inquiry Response Protocol Update\n\nTo: Customer Service Team\nFrom: Head of Customer Experience\nDate: October 25, 2023\n\nWe are implementing new procedures to enhance our responsiveness to customer inquiries. Effective immediately, all team members must adhere to the updated protocol outlined below to ensure consistent and high-quality service.\n\n1. Response Time: All inquiries received during business hours must be acknowledged within 24 hours. For inquiries received outside business hours, responses should be sent by 10:00 AM the next business day. This ensures that our customers feel valued and receive timely information regarding their concerns.\n\n2. Documentation: Ensure all customer interactions are documented in the CRM system, including the nature of the inquiry, the resolution provided, and any follow-up actions required. This documentation is crucial for maintaining a comprehensive record of customer interactions and improving our service.\n\n3. Escalation: Complex inquiries that cannot be resolved within 48 hours should be escalated to a supervisor. Use the new escalation form available on the company intranet. This step is vital to ensure that we address more complicated issues promptly and effectively.\n\n4. Customer Feedback: We encourage team members to actively seek feedback from customers after resolving their inquiries. This feedback will help us identify areas for improvement and enhance our overall service quality.\n\n5. Regular Review: The Customer Service Team will conduct regular reviews of the inquiry response process to identify trends and areas for improvement. This will allow us to adapt our procedures as necessary to meet customer expectations.\n\n[Important Points]\n- Failure to comply with the new protocol may result in performance reviews.\n- Training sessions on the new procedures are scheduled for November 1. Attendance is mandatory for all team members.\n\nFor any questions or further clarification, please contact the Customer Service Supervisor at extension 1234 or via email at support@company.com.\n\n【問題文】\n\n問題1: What can be inferred about the reason for the protocol update?\n選択肢: The company wants to reduce the number of customer inquiries., The company aims to enhance the quality of customer service., The company is planning to expand its business hours., The company intends to introduce new products.\n正解: B\n解説: 文書の冒頭に「新しい手続きを実施して、顧客の問い合わせへの対応力を高めます」とあり、顧客サービスの質を向上させることが目的であると推測できます。\n\n\n問題2: According to the document, what should be done if an inquiry cannot be resolved within 48 hours?\n選択肢: The inquiry should be closed immediately., The inquiry should be documented and then ignored., The inquiry should be escalated to a supervisor., The customer should be asked to resubmit the inquiry.\n正解: C\n解説: 文書の「エスカレーション」セクションに「48時間以内に解決できない複雑な問い合わせは、スーパーバイザーにエスカレートする必要があります」と明記されています。\n\n\n問題3: What is the main purpose of this document?\n選択肢: To announce a change in company leadership, To inform about new customer inquiry procedures, To introduce a new product line, To provide details on a marketing strategy\n正解: B\n解説: 文書のタイトルと内容全体が、新しい顧客問い合わせ手続きについての情報を提供することを目的としていることを示しています。\n\n\n【評価基準（問題文のみ）】\n**重要: 以下の全ての項目で基準を満たしている場合のみ合格とする。**\n\n1. 問題品質: 問題文と選択肢が適切で明確か\n2. 解答根拠: 正解の根拠が文書内に明確にあるか\n3. TOEIC準拠: TOEIC Part 7の出題形式に準拠しているか\n4. 難易度適合性: 指定難易度に適した問題設定か\n5. 選択肢品質: 選択肢が適切で紛らわしすぎないか\n\n【出力形式】\n以下のJSON形式で日本語で回答してください：\n\n{\n  \"passed\": true/false,\n  \"score\": 0-100の数値,\n  \"issues\": [\n    {\n      \"category\": \"問題品質|解答根拠|TOEIC準拠|難易度|選択肢品質\",\n      \"severity\": \"軽微|中程度|重大|致命的\",\n      \"description\": \"具体的な問題の説明（日本語）\",\n      \"suggestion\": \"改善提案（日本語、あれば）\"\n    }\n  ],\n  \"recommendation\": \"合格|不合格|修正必要\"\n}\n",
+    "metadata": {
+      "passageId": "passage132",
+      "checkType": "questions_only"
+    }
+  }
+]

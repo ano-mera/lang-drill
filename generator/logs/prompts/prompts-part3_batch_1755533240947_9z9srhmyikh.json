@@ -1,0 +1,245 @@
+[
+  {
+    "timestamp": "2025-08-18T16:07:20.950Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:07:20.987Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: schedule_adjustment\n- 業種: real_estate (Real Estate)\n- 正解位置: 問題1はC、問題2はA、問題3はC\n- 話者数: 2人\n- 話者の性別: 話者Aは女性、話者Bは男性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はReal Estate業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: C位置、問題2: A位置、問題3: C位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:10.888Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "{\n  \"scenario\": \"schedule_adjustment\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Lisa Park\", \"role\": \"Leasing Agent\", \"gender\": \"female\"},\n    {\"id\": \"B\", \"name\": \"Mark Chen\", \"role\": \"Prospective Tenant\", \"gender\": \"male\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Hi, this is Lisa Park from GreenStone Realty. I'm calling about your 3 p.m. walkthrough at the Maple Street retail space. The current tenant’s cleaning ran over, and the painters are still finishing, so I need to adjust the time. Would later today or tomorrow morning work for you?\"},\n    {\"speaker\": \"B\", \"text\": \"Tomorrow morning would be better. I do have a client meeting across town at 10:30, though. Could we do 9:30?\"},\n    {\"speaker\": \"A\", \"text\": \"That works. The building opens at 9, so 9:30 tomorrow is fine. We’ll meet in the lobby, and I can validate parking at the Pine Street garage.\"},\n    {\"speaker\": \"B\", \"text\": \"Great. Is it okay if I bring my contractor to take measurements? Also, do you have a floor plan?\"},\n    {\"speaker\": \"A\", \"text\": \"Absolutely—please bring the contractor. The power is on, though there’s no Wi-Fi yet. I’ll bring a printed floor plan and a tape measure. I’ll send you an updated calendar invite right after this call and copy your assistant if you’d like.\"},\n    {\"speaker\": \"B\", \"text\": \"Perfect—please include my assistant, Nina, at nina@chenco.com. And if the lockbox code changes, could you text me? Thanks for accommodating the schedule change.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"Why does the woman contact the man?\",\n      \"options\": [\n        \"To discuss changes to the lease terms\",\n        \"To confirm the man's mailing address\",\n        \"To adjust the time of a property tour\",\n        \"To ask for feedback on another listing\"\n      ],\n      \"correct\": \"To adjust the time of a property tour\",\n      \"explanation\": \"会話冒頭で女性は、清掃と塗装の遅れにより内見時間を調整する必要があると述べています。したがって目的は“内見時間の調整”です。他の選択肢（契約条件の変更、住所確認、別物件のフィードバック）は会話に出てきません。\",\n      \"questionType\": \"Purpose/Reason\"\n    },\n    {\n      \"question\": \"When will the appointment take place?\",\n      \"options\": [\n        \"Tomorrow at 9:30 a.m.\",\n        \"Today at 3 p.m.\",\n        \"Tomorrow at 10:30 a.m.\",\n        \"Next Monday afternoon\"\n      ],\n      \"correct\": \"Tomorrow at 9:30 a.m.\",\n      \"explanation\": \"男性の10:30の予定を避けるため、二人は“明日の9時30分”で合意しています。3時は元の時間、10時30分は男性の別予定、来週月曜は話題に出ていません。\",\n      \"questionType\": \"Detail/Time\"\n    },\n    {\n      \"question\": \"What will the woman do next?\",\n      \"options\": [\n        \"Reserve a conference room for a lease signing\",\n        \"Call the building manager about parking rates\",\n        \"Send an updated calendar invite and e-mail confirmation\",\n        \"Drop off keys at the man's office\"\n      ],\n      \"correct\": \"Send an updated calendar invite and e-mail confirmation\",\n      \"explanation\": \"女性は「この電話の後すぐに更新したカレンダー招待を送る」と明言しています。他の選択肢（会議室予約、駐車料金の確認、鍵の配達）は会話で約束されていません。\",\n      \"questionType\": \"Next Action\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:10.889Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: schedule_adjustment\n\nConversation:\nA: Hi, this is Lisa Park from GreenStone Realty. I'm calling about your 3 p.m. walkthrough at the Maple Street retail space. The current tenant’s cleaning ran over, and the painters are still finishing, so I need to adjust the time. Would later today or tomorrow morning work for you?\nB: Tomorrow morning would be better. I do have a client meeting across town at 10:30, though. Could we do 9:30?\nA: That works. The building opens at 9, so 9:30 tomorrow is fine. We’ll meet in the lobby, and I can validate parking at the Pine Street garage.\nB: Great. Is it okay if I bring my contractor to take measurements? Also, do you have a floor plan?\nA: Absolutely—please bring the contractor. The power is on, though there’s no Wi-Fi yet. I’ll bring a printed floor plan and a tape measure. I’ll send you an updated calendar invite right after this call and copy your assistant if you’d like.\nB: Perfect—please include my assistant, Nina, at nina@chenco.com. And if the lockbox code changes, could you text me? Thanks for accommodating the schedule change.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:36.786Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: schedule_adjustment",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:44.739Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "日程調整",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:44.745Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Hi, this is Lisa Park from GreenStone Realty. I'm calling about your 3 p.m. walkthrough at the Maple Street retail space. The current tenant’s cleaning ran over, and the painters are still finishing, so I need to adjust the time. Would later today or tomorrow morning work for you?",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:55.856Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "もしもし、グリーンストーン不動産のリサ・パークです。メイプル通りの店舗スペースの午後3時の内見の件でお電話しました。現テナントの清掃が長引いており、塗装の仕上げ作業もまだ終わっていないため、時間を変更させてください。本日この後か、明日の午前中でご都合はいかがでしょうか。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:08:55.857Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Tomorrow morning would be better. I do have a client meeting across town at 10:30, though. Could we do 9:30?",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:03.426Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "明日の午前中のほうが都合がいいです。ただ、10時30分に市内の別の場所でクライアントとの打ち合わせが入っています。9時30分にできますか？",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:03.427Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: That works. The building opens at 9, so 9:30 tomorrow is fine. We’ll meet in the lobby, and I can validate parking at the Pine Street garage.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:20.329Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "それで大丈夫です。ビルは9時に開きますので、明日は9時30分で結構です。ロビーでお会いしましょう。パイン通りの駐車場なら、私が駐車券の割引手続きができます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:20.334Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Great. Is it okay if I bring my contractor to take measurements? Also, do you have a floor plan?",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:33.935Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "よかったです。現地で寸法を測るために、私が依頼している施工業者を連れてきてもよろしいですか？また、間取り図はありますか？",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:33.936Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Absolutely—please bring the contractor. The power is on, though there’s no Wi-Fi yet. I’ll bring a printed floor plan and a tape measure. I’ll send you an updated calendar invite right after this call and copy your assistant if you’d like.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:43.684Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "もちろんです。施工業者の方もお連れください。電気は通っていますが、Wi‑Fi はまだありません。印刷した平面図とメジャーを持って行きます。この電話のあとすぐに更新したカレンダー招待をお送りします。ご希望であれば、アシスタントの方もCCに入れておきます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:09:43.685Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given English conversation and questions to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Perfect—please include my assistant, Nina, at nina@chenco.com. And if the lockbox code changes, could you text me? Thanks for accommodating the schedule change.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:10:00.750Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_translation_response",
+    "prompt": "承知しました。私のアシスタントのニーナ（nina@chenco.com）もCCに入れてください。キーボックスの暗証番号が変わる場合は、SMSでご連絡いただけますか。日程変更にご対応いただき、ありがとうございます。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:10:00.751Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: Why does the woman contact the man?\nOptions:\nA: To discuss changes to the lease terms\nB: To confirm the man's mailing address\nC: To adjust the time of a property tour\nD: To ask for feedback on another listing\n\nQuestion 2: When will the appointment take place?\nOptions:\nA: Tomorrow at 9:30 a.m.\nB: Today at 3 p.m.\nC: Tomorrow at 10:30 a.m.\nD: Next Monday afternoon\n\nQuestion 3: What will the woman do next?\nOptions:\nA: Reserve a conference room for a lease signing\nB: Call the building manager about parking rates\nC: Send an updated calendar invite and e-mail confirmation\nD: Drop off keys at the man's office\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T16:10:17.171Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性はなぜ男性に連絡していますか\",\n      \"optionTranslations\": [\n        \"賃貸契約の条件の変更について話し合うため\",\n        \"男性の郵送先住所を確認するため\",\n        \"物件見学の時間を調整するため\",\n        \"別の物件情報について意見を求めるため\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"予約の日時はいつですか\",\n      \"optionTranslations\": [\n        \"明日の午前9時30分\",\n        \"今日の午後3時\",\n        \"明日の午前10時30分\",\n        \"来週の月曜日の午後\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"女性は次に何をしますか\",\n      \"optionTranslations\": [\n        \"賃貸契約の署名のために会議室を予約する\",\n        \"駐車料金についてビルの管理人に電話する\",\n        \"更新したカレンダーの招待と確認メールを送る\",\n        \"男性のオフィスに鍵を届ける\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

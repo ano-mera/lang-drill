@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:55:06
+ログファイル: question-generation-easy-2025-07-25T10-55-06.log
+モード: 本番出力
+難易度: EASY難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 165問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage137",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Meeting Schedule Confirmation\n\nDear John,\n\nI hope this message finds you well. I am writing to confirm our meeting scheduled for Thursday, March 10th, at 2:00 PM. We will meet in the conference room on the second floor. Please bring the project proposal documents as we will discuss the next steps and timeline.\n\nIf you have any questions or need to reschedule, feel free to contact me at your earliest convenience.\n\nLooking forward to our discussion.\n\nBest regards,\nSarah Lee",
+  "contentTranslation": "件名: 会議スケジュールの確認\n\nジョン様\n\nお元気でお過ごしのことと思います。3月10日（木）午後2時に予定されている会議の確認です。2階の会議室でお会いしましょう。プロジェクト提案書をお持ちいただけますか。次のステップとスケジュールについて話し合います。\n\nご質問やスケジュール変更が必要な場合は、お早めにご連絡ください。\n\nお会いできるのを楽しみにしています。\n\nよろしくお願いいたします。\nサラ・リー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "John is required to prepare a presentation.",
+        "Sarah might be John's supervisor.",
+        "The meeting will be held in the morning.",
+        "The project proposal documents are finalized."
+      ],
+      "optionTranslations": [
+        "ジョンはプレゼンテーションの準備をする必要がある。",
+        "サラはジョンの上司かもしれない。",
+        "会議は午前中に行われる。",
+        "プロジェクト提案書は完成している。"
+      ],
+      "correct": "B",
+      "explanation": "サラがジョンに対して会議の確認をしており、彼に持参物を指示しているため、サラがジョンの上司である可能性が推測されます。"
+    },
+    {
+      "id": "q2",
+      "question": "Who should be contacted regarding rescheduling the meeting?",
+      "questionTranslation": "会議の再調整に関して誰に連絡すべきですか？",
+      "options": [
+        "John",
+        "The conference room manager",
+        "Sarah",
+        "The project team"
+      ],
+      "optionTranslations": [
+        "ジョン",
+        "会議室の管理者",
+        "サラ",
+        "プロジェクトチーム"
+      ],
+      "correct": "C",
+      "explanation": "メールには「If you have any questions or need to reschedule, feel free to contact me」と記載されており、再調整が必要な場合はサラに連絡するようにと書かれています。"
+    },
+    {
+      "id": "q3",
+      "question": "When will the meeting take place?",
+      "questionTranslation": "会議はいつ開催されますか？",
+      "options": [
+        "Wednesday, March 9th, at 2:00 PM",
+        "Thursday, March 10th, at 2:00 PM",
+        "Friday, March 11th, at 10:00 AM",
+        "Monday, March 14th, at 3:00 PM"
+      ],
+      "optionTranslations": [
+        "3月9日（水）午後2時",
+        "3月10日（木）午後2時",
+        "3月11日（金）午前10時",
+        "3月14日（月）午後3時"
+      ],
+      "correct": "B",
+      "explanation": "メール本文に「our meeting scheduled for Thursday, March 10th, at 2:00 PM」と記載があり、会議は3月10日（木）の午後2時に予定されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "easy",
+    "estimatedTime": 300,
+    "wordCount": 81,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 166問
+🆔 実際に追加されたID: 
+
+難易度別内訳:
+  初級 (Easy): 1問
+  中級 (Medium): 0問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:55:19
+実行時間: 0.00秒

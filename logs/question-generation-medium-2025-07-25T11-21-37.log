@@ -1,0 +1,118 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 11:21:37
+ログファイル: question-generation-medium-2025-07-25T11-21-37.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 168問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage140",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Meeting Schedule Confirmation\n\nDear Mr. Tanaka,\n\nI hope this message finds you well. I am writing to confirm our upcoming meeting regarding the new product launch. Could we schedule it for Thursday, October 12th, at 10:00 AM? The meeting will be held in Conference Room B on the second floor. Please let me know if this time suits your schedule or if there are any adjustments needed.\n\nAdditionally, kindly prepare the latest sales reports and marketing strategies for discussion. If you wish to include any other topics, feel free to inform me by Wednesday.\n\nThank you for your cooperation.\n\nBest regards,\nJohn Smith\nMarketing Manager",
+  "contentTranslation": "件名: ミーティング日程の確認\n\n田中様\n\nお元気でいらっしゃいますか。新製品ローンチに関するミーティングについて確認のためご連絡差し上げます。10月12日木曜日の午前10時にスケジュール可能でしょうか？ミーティングは2階の会議室Bで行います。ご都合がよろしければご教示ください。または、調整が必要な場合はお知らせください。\n\n加えて、最新の売上報告書とマーケティング戦略の準備をお願いいたします。他に議題に加えたい内容があれば、水曜日までにお知らせください。\n\nご協力ありがとうございます。\n\n敬具\nジョン・スミス\nマーケティングマネージャー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Where will the meeting be held?",
+      "questionTranslation": "会議はどこで行われますか？",
+      "options": [
+        "Conference Room A",
+        "Conference Room B",
+        "Conference Room C",
+        "Conference Room D"
+      ],
+      "optionTranslations": [
+        "会議室A",
+        "会議室B",
+        "会議室C",
+        "会議室D"
+      ],
+      "correct": "B",
+      "explanation": "文書中に『The meeting will be held in Conference Room B on the second floor』と明記されています。"
+    },
+    {
+      "id": "q2",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To introduce a new product",
+        "To confirm a meeting schedule",
+        "To request a project update",
+        "To announce a staff change"
+      ],
+      "optionTranslations": [
+        "新製品を紹介するため",
+        "会議のスケジュールを確認するため",
+        "プロジェクトの進捗を依頼するため",
+        "人事異動を発表するため"
+      ],
+      "correct": "B",
+      "explanation": "文書の冒頭で『I am writing to confirm our upcoming meeting regarding the new product launch』と述べており、会議のスケジュールを確認することが主な目的です。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "この文書から推測できることは何ですか？",
+      "options": [
+        "Mr. Tanaka has already confirmed the meeting time.",
+        "The sales report is not needed for the meeting.",
+        "The meeting time may change if needed.",
+        "The marketing strategies have been finalized."
+      ],
+      "optionTranslations": [
+        "田中さんはすでに会議の時間を確認済みである",
+        "会議には売上報告書は必要ない",
+        "会議の時間は必要に応じて変更される可能性がある",
+        "マーケティング戦略はすでに確定している"
+      ],
+      "correct": "C",
+      "explanation": "文書中に『Please let me know if this time suits your schedule or if there are any adjustments needed』とあるため、会議の時間は必要に応じて変更される可能性があります。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 106,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  },
+  "partType": "part7_single_text",
+  "toeicPart": "part7_single_text"
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 169問
+🆔 実際に追加されたID: passage140
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 11:22:03
+実行時間: 0.00秒

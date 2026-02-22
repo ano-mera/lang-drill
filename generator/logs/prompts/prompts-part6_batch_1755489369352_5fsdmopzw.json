@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-08-18T03:56:09.355Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: email (Business Email)\n- ビジネストピック: schedule_changes (スケジュール変更)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: C\n- 空欄2の正解位置: B\n- 空欄3の正解位置: D\n- 空欄4の正解位置: B\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: grammar (文法・語形)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T03:57:21.613Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"email (Business Email)\",\n  \"title\": \"Schedule Change: Project Alpha Status Meeting\",\n  \"fullText\": \"Subject: Schedule Change: Project Alpha Status Meeting\\n\\nDear Team,\\n\\nI'm writing (1) the schedule for the Project Alpha status meeting next week. Due to the client's request, we (2) the meeting originally scheduled for Monday to Tuesday at 10:00 AM. The meeting will be held in Conference Room B and will last approximately one hour. Please let me know if the new time is (3) for you or if you need to propose another time. (4)\\n\\nBest regards,\\nHiro Tanaka\\nProject Manager\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A: in\",\n        \"B: for\",\n        \"C: about\",\n        \"D: with\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"「I'm writing about the schedule」が自然な表現です。aboutは「〜について（書く）」の意味で文脈に合います。in, for, withはこの文脈では不自然です。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A: reschedule\",\n        \"B: have rescheduled\",\n        \"C: reschedules\",\n        \"D: rescheduling\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"文は『クライアントの要請により（既に）日程を変更した』という現在への影響を表すため現在完了『have rescheduled』が適切です。Aは原形で文法的に合わず、Cは主語（we）に対して三人称単数形で不適切、Dは動名詞で文の構造に合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A: available\",\n        \"B: late\",\n        \"C: unsuitable\",\n        \"D: convenient\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"『新しい時間があなたにとって都合が良いかどうか』を尋ねる場合、'convenient'（都合が良い）が最も自然です。availableやlate、unsuitableは文脈上不適切です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A: I appreciate all the hard work everyone has put into this project.\",\n        \"B: If you are unable to attend at that time, please contact me as soon as possible so we can arrange an alternative.\",\n        \"C: We have decided to cancel the meeting altogether.\",\n        \"D: Please submit your weekly reports before the meeting.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"前の文で『都合が良いか知らせてください』とあるため、出席できない場合の対処を示すBが流れとして自然です。Aは感謝の表現で文脈に直接続けるには不自然、Cは会議の中止を意味して前後と矛盾し、Dは主旨とずれています。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"ビジネス分野 (schedule_changes)\",\n  \"wordCount\": 82\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T03:57:21.614Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 文書の翻訳では、各空欄に正解を埋めた完全な文として翻訳すること\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（各空欄に正解を埋めた完全な文として翻訳）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Schedule Change: Project Alpha Status Meeting\n\n文書全体（空欄あり）：\nSubject: Schedule Change: Project Alpha Status Meeting\n\nDear Team,\n\nI'm writing (1) the schedule for the Project Alpha status meeting next week. Due to the client's request, we (2) the meeting originally scheduled for Monday to Tuesday at 10:00 AM. The meeting will be held in Conference Room B and will last approximately one hour. Please let me know if the new time is (3) for you or if you need to propose another time. (4)\n\nBest regards,\nHiro Tanaka\nProject Manager\n\n各空欄の正解：\n空欄1: C: about\n空欄2: B: have rescheduled\n空欄3: D: convenient\n空欄4: B: If you are unable to attend at that time, please contact me as soon as possible so we can arrange an alternative.\n\n選択肢：\n空欄1: A. A: in, B. B: for, C. C: about, D. D: with\n空欄2: A. A: reschedule, B. B: have rescheduled, C. C: reschedules, D. D: rescheduling\n空欄3: A. A: available, B. B: late, C. C: unsuitable, D. D: convenient\n空欄4: A. A: I appreciate all the hard work everyone has put into this project., B. B: If you are unable to attend at that time, please contact me as soon as possible so we can arrange an alternative., C. C: We have decided to cancel the meeting altogether., D. D: Please submit your weekly reports before the meeting.\n\n重要：文書の翻訳では、各空欄に上記の正解を埋めた完全な文として翻訳してください。\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T03:58:00.500Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"スケジュール変更：プロジェクト・アルファの状況報告会\",\n  \"contentTranslation\": \"件名: スケジュール変更：プロジェクト・アルファの状況報告会\\n\\nチームの皆様\\n\\n来週のプロジェクト・アルファの状況報告会のスケジュールについてお知らせします。クライアントの要請により、当初月曜日に予定していた会議を火曜日の午前10時に変更しました。会議は会議室Bで行い、所要時間は約1時間です。新しい時間がご都合よろしいかどうか、また別の時間を提案する必要があるかどうかをお知らせください。出席できない場合は、代替案を調整できるよう、できるだけ早くご連絡ください。\\n\\nよろしくお願いいたします。\\nHiro Tanaka\\nプロジェクトマネージャー\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"～で\", \"～のために\", \"～について\", \"～と\"]\n    },\n    {\n      \"optionTranslations\": [\"予定を変更する\", \"予定を変更しました\", \"予定を変更します\", \"予定変更中\"]\n    },\n    {\n      \"optionTranslations\": [\"都合がつく\", \"遅い\", \"不都合\", \"都合がよい\"]\n    },\n    {\n      \"optionTranslations\": [\"ご尽力に感謝します\", \"出席できない場合はご連絡ください\", \"会議を中止します\", \"週次報告を提出してください\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

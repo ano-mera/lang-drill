@@ -1,0 +1,106 @@
+[
+  {
+    "timestamp": "2025-07-23T03:54:04.649Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_question_generation",
+    "prompt": "あなたはTOEIC Part 2のテスト作成専門家で、質問-応答形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 2の形式:\n- 質問文（音声のみ、テキスト表示なし）\n- 3つの応答選択肢（A, B, C）\n- 正解は1つ\n- すべて音声で読み上げられる\n\n質問のタイプ:\n1. WH疑問文: What, Where, When, Why, Who, How\n2. Yes/No疑問文: Do you...?, Are you...?, Is there...?\n3. 選択疑問文: A or B?\n4. 否定疑問文: Don't you...?, Isn't it...?\n5. 付加疑問文: You're going, aren't you?\n6. 間接的依頼: Could you...?, Would you mind...?\n7. 間接疑問文: I wonder if...?, Do you know where...?\n\n応答のパターン:\n- 直接応答: 質問に直接答える\n- 間接応答: 質問の意図を理解した適切な応答\n- 不適切応答: 質問と関係ない内容（ダミー選択肢）\n\n重要な指示:\n- ビジネスシーンと日常生活の両方を含む\n- 自然で実用的な英語を使用\n- 正解は指定された位置に配置\n- 不正解は巧妙だが明確に間違っている応答にする\n- 文化的に中立な内容にする\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"question\": \"英語の質問文\",\n  \"questionType\": \"質問のタイプ\",\n  \"options\": [\"応答A\", \"応答B\", \"応答C\"],\n  \"correct\": \"正解の位置（A, B, C）\",\n  \"explanation\": \"なぜこの応答が正解なのかの日本語説明\",\n  \"topic\": \"質問のトピック\",\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 2問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- 質問タイプ: choice\n- 正解位置: A\n- トピック: レストラン・食事\n\n要求事項:\n1. 指定された質問タイプに適合した自然な英語の質問を作成\n2. 正解は位置Aに配置\n3. 2つの不正解選択肢は巧妙だが明確に間違った応答\n4. 実際のTOEIC試験レベルの難易度を維持\n5. ビジネス環境または日常生活の文脈を使用\n\n質問タイプ別の要求:\n- AかBかを選ぶ選択疑問文\n- \"or\"を含む質問形式\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:09.884Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_question_generation_response",
+    "prompt": "```json\n{\n  \"question\": \"Would you like to have dessert or just coffee?\",\n  \"questionType\": \"choice\",\n  \"options\": [\"I'll just have coffee, please.\", \"Yes, the weather is nice.\", \"I don't know how to make coffee.\"],\n  \"correct\": \"A\",\n  \"explanation\": \"質問はデザートを食べるかコーヒーを飲むかの選択を求めています。Aの応答は「コーヒーだけ」の選択を示しているため、正しいです。BとCは質問に関連しない応答です。\",\n  \"topic\": \"レストラン・食事\",\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:09.886Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content.\n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: Would you like to have dessert or just coffee?",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:11.218Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "デザートはいかがですか、それともコーヒーだけにしますか？",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:11.220Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC test content.\n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: I don't know how to make coffee.",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:12.024Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "コーヒーの淹れ方がわかりません。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:12.348Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "コーヒーだけでお願いします。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  },
+  {
+    "timestamp": "2025-07-23T03:54:13.526Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part2_translation_response",
+    "prompt": "はい、天気がいいですね。",
+    "metadata": {
+      "difficulty": "medium",
+      "topic": null
+    }
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2025-07-17T15:34:03.497Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "彼女はノートパソコンで入力しています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  },
+  {
+    "timestamp": "2025-07-17T15:34:03.774Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "彼女は画面を指しています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  },
+  {
+    "timestamp": "2025-07-17T15:34:04.211Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "彼女は机に座っています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  },
+  {
+    "timestamp": "2025-07-17T15:34:05.372Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part1_translation_response",
+    "prompt": "彼女は電話で話しています。",
+    "metadata": {
+      "difficulty": "easy",
+      "topic": "office"
+    }
+  }
+]

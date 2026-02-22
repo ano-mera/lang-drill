@@ -1,0 +1,482 @@
+[
+  {
+    "timestamp": "2025-08-20T08:45:37.689Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: email (Business Email)\n- ビジネストピック: simple_notifications (簡単な通知)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: B\n- 空欄2の正解位置: B\n- 空欄3の正解位置: D\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: vocabulary (語彙選択)\n- 空欄3: context (文脈理解)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:47:30.965Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"email (Business Email)\",\n  \"title\": \"Elevator Maintenance Notice\",\n  \"fullText\": \"Subject: Notice: Elevator Maintenance on Saturday, September 12\\n\\nDear staff,\\n\\nPlease be advised that the main elevator (1) ____ from 9:00 AM to 1:00 PM on Saturday, September 12 for scheduled maintenance. (4)\\nDuring this time, the stairs will be available, and building entry (2) ____ the side entrance near the parking lot. We apologize for any inconvenience this may cause and appreciate your cooperation. If you have any questions or require assistance transporting heavy items, (3) ____ contact Facilities at extension 402. Thank you for your attention.\\n\\nBest regards,\\nFacilities Manager\\nBuilding Services\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"is unavailable\",\n        \"will be unavailable\",\n        \"has been unavailable\",\n        \"be unavailable\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"予定された保守のため、未来の時間帯について述べているので未来形の \\\"will be unavailable\\\" が適切です。他の選択肢は現在形（is unavailable）、現在完了（has been unavailable）、不定詞風の誤った形（be unavailable）で文脈に合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"is by\",\n        \"is via\",\n        \"is from\",\n        \"is on\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"「入口は〜経由です」を表す自然な表現は \\\"is via\\\"（〜経由である）です。\\\"is by\\\" や \\\"is from\\\" は意味が微妙にずれ、\\\"is on\\\" は不適切です。ここでは場所を示す前置詞として 'via' が最も適切です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"you must\",\n        \"we will\",\n        \"no need to\",\n        \"please do not hesitate to\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"依頼や案内の結びの表現として丁寧で自然なのは \\\"please do not hesitate to contact...\\\" です。Aの 'you must' は命令調で堅すぎ、Bの 'we will' は意味が合わず、Cの 'no need to' は逆の意味（連絡の必要なし）になってしまいます。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"We will finish the work earlier if possible.\",\n        \"All employees are required to attend a safety meeting on Monday.\",\n        \"Please plan to use the stairs and allow extra time for your commute.\",\n        \"The elevator will be renovated next month.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"最初の文の後に続ける挿入文として、利用者に具体的な行動（階段を使う、通勤の余裕を持つ）を促す C が最も適切です。A は根拠がなく不確か、B は文脈（安全会議）と無関係、D は時期が異なる情報で文脈に合いません。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"simple_notifications (簡単な通知)\",\n  \"wordCount\": 94\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:47:30.966Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Elevator Maintenance Notice\n\n文書全体（正解が埋められた完全な文章）：\nSubject: Notice: Elevator Maintenance on Saturday, September 12\n\nDear staff,\n\nPlease be advised that the main elevator will be unavailable ____ from 9:00 AM to 1:00 PM on Saturday, September 12 for scheduled maintenance. Please plan to use the stairs and allow extra time for your commute.\nDuring this time, the stairs will be available, and building entry is via ____ the side entrance near the parking lot. We apologize for any inconvenience this may cause and appreciate your cooperation. If you have any questions or require assistance transporting heavy items, please do not hesitate to ____ contact Facilities at extension 402. Thank you for your attention.\n\nBest regards,\nFacilities Manager\nBuilding Services\n\n選択肢：\n空欄1: A. is unavailable, B. will be unavailable, C. has been unavailable, D. be unavailable\n空欄2: A. is by, B. is via, C. is from, D. is on\n空欄3: A. you must, B. we will, C. no need to, D. please do not hesitate to\n空欄4: A. We will finish the work earlier if possible., B. All employees are required to attend a safety meeting on Monday., C. Please plan to use the stairs and allow extra time for your commute., D. The elevator will be renovated next month.\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:48:45.423Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"エレベーター点検のお知らせ\",\n  \"contentTranslation\": \"件名: 9月12日（土）エレベーター点検のお知らせ\\n\\n従業員の皆様\\n\\n定期点検のため、9月12日（土）午前9時から午後1時まで本館のエレベーターはご利用いただけません。階段をご利用いただき、通勤には余裕をもってお越しください。\\nこの間、階段は使用可能で、建物への出入りは駐車場近くの側面入口をご利用ください。ご不便をおかけいたしますが、ご協力をお願いいたします。ご不明な点や重量物の搬送で支援が必要な場合は、内線402（施設管理）までご遠慮なくご連絡ください。ご確認のほどよろしくお願いいたします。\\n\\nよろしくお願いいたします。\\n\\n施設管理マネージャー\\n建物管理部\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"利用できません\", \"利用できなくなります\", \"利用できなくなっています\", \"利用できない\"]\n    },\n    {\n      \"optionTranslations\": [\"そばにあります\", \"経由します\", \"からです\", \"にあります\"]\n    },\n    {\n      \"optionTranslations\": [\"必ずしてください\", \"私たちが対応します\", \"する必要はありません\", \"ご遠慮なく\"]\n    },\n    {\n      \"optionTranslations\": [\"可能であれば作業を早めに終えます。\", \"全従業員は月曜の安全会議に出席する必要があります。\", \"階段をご利用いただき、通勤には余裕を持ってください。\", \"エレベーターは来月改修されます。\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:48:45.429Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: email (Business Email)\n- ビジネストピック: customer_complaints (顧客苦情)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: A\n- 空欄2の正解位置: C\n- 空欄3の正解位置: B\n- 空欄4の正解位置: B\n\n【問題タイプの配分】\n- 空欄1: sentence_insertion (文挿入)\n- 空欄2: context (文脈理解)\n- 空欄3: grammar (文法・語形)\n- 空欄4: vocabulary (語彙選択)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:49:43.113Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"Business Email\",\n  \"title\": \"Response to Your Complaint — Order #A12345\",\n  \"fullText\": \"Subject: Response to your complaint about Order #A12345\\n\\nDear Ms. Tanaka,\\n\\nThank you for contacting our customer service team regarding your recent order (Order #A12345). We are sorry to learn that the product did not meet your expectations, and we apologize for any inconvenience this has caused. (1)\\n\\nWe understand from your message that you received the wrong model and that the box was damaged upon arrival. We would like to resolve this as quickly as possible. We can send a replacement item (2) at no extra cost to you.\\n\\nPlease let us know whether you (3) the damaged item so we can arrange a pickup if necessary. Also, please reply with any photos of the damage, which will help our quality control team.\\n\\nWe value your business and appreciate your patience while we work to correct this (4). If you have further questions, please contact me directly.\\n\\nSincerely,\\nHiroshi Sato\\nCustomer Service Manager\\nGlobal Electronics\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"We take customer feedback seriously and are investigating the matter.\",\n        \"We will issue a full refund immediately.\",\n        \"Please return the item to the following address before we proceed.\",\n        \"Thank you for your positive review of our product.\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"Aは、苦情への謝罪に続けて入れる自然な文で、問題を重く受け止め調査中であることを伝えるため文脈に合っています。Bは直ちに全額返金すると断定しており、まだ事実確認中の段階では不適切です。Cは返品手順を指示しており、写真の提供など確認を求める前に入れるのは時期尚早です。Dは意味が合わず不適切です。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"but only if you return the original item\",\n        \"after we receive a damage report form\",\n        \"within three business days\",\n        \"to your nearest retail partner\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈的に、\\\"We can send a replacement item ( ) at no extra cost to you.\\\"には発送のタイミングを示すC（\\\"within three business days\\\"）が最も自然です。Aは\\\"no extra cost\\\"と矛盾する可能性があり、Bは余分な手続きを示していて文脈の流れを阻害します。Dは送付先を示すが文の構造とはやや不自然です。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"keep\",\n        \"still have\",\n        \"had kept\",\n        \"are keeping\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"現在の所有状態を確認する表現としてBの\\\"still have\\\"が適切です。\\\"Please let us know whether you still have the damaged item\\\"が自然です。Aの\\\"keep\\\"は原形で不自然、Cの\\\"had kept\\\"は過去完了で時制が合いません、Dの\\\"are keeping\\\"は進行形でこの文脈では不自然です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"accident\",\n        \"issue\",\n        \"product\",\n        \"break\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"\\\"work to correct this ( )\\\"の語彙としてBの\\\"issue\\\"（問題）が最も自然で意味が通ります。Aの\\\"accident\\\"は今回のケースに合わず、Cの\\\"product\\\"は文脈上不適切、Dの\\\"break\\\"も不自然な選択です。\",\n      \"questionType\": \"vocabulary\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 152\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:49:43.114Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Response to Your Complaint — Order #A12345\n\n文書全体（正解が埋められた完全な文章）：\nSubject: Response to your complaint about Order #A12345\n\nDear Ms. Tanaka,\n\nThank you for contacting our customer service team regarding your recent order (Order #A12345). We are sorry to learn that the product did not meet your expectations, and we apologize for any inconvenience this has caused. We take customer feedback seriously and are investigating the matter.\n\nWe understand from your message that you received the wrong model and that the box was damaged upon arrival. We would like to resolve this as quickly as possible. We can send a replacement item within three business days at no extra cost to you.\n\nPlease let us know whether you still have the damaged item so we can arrange a pickup if necessary. Also, please reply with any photos of the damage, which will help our quality control team.\n\nWe value your business and appreciate your patience while we work to correct this issue. If you have further questions, please contact me directly.\n\nSincerely,\nHiroshi Sato\nCustomer Service Manager\nGlobal Electronics\n\n選択肢：\n空欄1: A. We take customer feedback seriously and are investigating the matter., B. We will issue a full refund immediately., C. Please return the item to the following address before we proceed., D. Thank you for your positive review of our product.\n空欄2: A. but only if you return the original item, B. after we receive a damage report form, C. within three business days, D. to your nearest retail partner\n空欄3: A. keep, B. still have, C. had kept, D. are keeping\n空欄4: A. accident, B. issue, C. product, D. break\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:50:26.912Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"ご注文（注文番号 A12345）に関する苦情への回答\",\n  \"contentTranslation\": \"件名: ご注文（注文番号 A12345）に関する苦情への回答\\n\\n田中様\\n\\nこの度はご注文（注文番号 A12345）についてカスタマーサービスまでご連絡いただき、ありがとうございます。商品がご期待に沿えなかったとのことで、ご迷惑をおかけしましたことをお詫び申し上げます。お客様からのご意見は重く受け止めており、現在調査を行っております。\\n\\nメッセージによりますと、誤ったモデルが届き、到着時に箱が破損していたとのことでした。できるだけ早く対応させていただきたいと考えております。追加費用はいただかず、交換品を3営業日以内にお送りできます。\\n\\n破損した商品をまだお持ちかどうかをお知らせください。必要であれば集荷の手配をいたします。また、破損箇所の写真を添付してご返信いただければ、当社の品質管理チームの助けになります。\\n\\nお客様のご利用に感謝するとともに、この問題の解決に努める間、ご辛抱いただきありがとうございます。ご不明な点がございましたら、私まで直接ご連絡ください。\\n\\n敬具\\n佐藤 浩\\nカスタマーサービスマネージャー\\nグローバルエレクトロニクス\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"調査中です\", \"全額返金\", \"返送してください\", \"高評価ありがとうございます\"]\n    },\n    {\n      \"optionTranslations\": [\"原品返送のみ\", \"被害報告受領後\", \"3営業日以内\", \"最寄り店舗へ\"]\n    },\n    {\n      \"optionTranslations\": [\"保管する\", \"まだ所持している\", \"保管していた\", \"保管中である\"]\n    },\n    {\n      \"optionTranslations\": [\"事故\", \"問題\", \"製品\", \"破損\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:50:26.913Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: notice (Notice/Announcement)\n- ビジネストピック: product_launch (商品発売・紹介)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: C\n- 空欄3の正解位置: B\n- 空欄4の正解位置: D\n\n【問題タイプの配分】\n- 空欄1: vocabulary (語彙選択)\n- 空欄2: context (文脈理解)\n- 空欄3: grammar (文法・語形)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:51:03.933Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"notice\",\n  \"title\": \"Notice: New SmartCharge Pro Launch\",\n  \"fullText\": \"Notice: New SmartCharge Pro Launch\\n\\nWe are pleased to announce the launch of our new SmartCharge Pro portable charger, designed for busy professionals who need reliable power on the go. (1) In particular, the SmartCharge Pro offers fast charging, multiple device compatibility, and a compact design.\\n\\nStarting next Monday, the product will be available at all company stores and online. Customers who pre-order by May 15 will receive a 10% discount and free shipping. (2) However, limited stock is expected in the first week, so we recommend placing orders early.\\n\\nIf you have questions about features or compatibility, please contact our customer support team at support@techco.example or call 123-456-7890. (3) Additionally, technical specifications and user manuals are available on our website.\\n\\n(4) Visit our product page to learn more and place your pre-order.\\n\\nThank you for your continued support.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A. Nevertheless,\",\n        \"B. Meanwhile,\",\n        \"C. Eventually,\",\n        \"D. In particular,\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"「In particular」は具体的に特徴を強調する表現で、続く文でSmartCharge Proの特徴（高速充電や互換性など）を列挙しているため自然です。他の選択肢は対比（Nevertheless）、同時進行（Meanwhile）、時間の経過（Eventually）を示し、この文脈には合いません。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A. Therefore,\",\n        \"B. Meanwhile,\",\n        \"C. However,\",\n        \"D. For example,\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"前の文で割引や送料無料の案内がある一方で『初週は在庫が限られる』という譲歩・対比を示すため、'However,'（しかしながら）が最も適切です。'Therefore'は結果、'Meanwhile'は同時、'For example'は例示で文脈に合いません。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A. Also are\",\n        \"B. Additionally,\",\n        \"C. Besides that are\",\n        \"D. Although\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"'Additionally,' は前の連絡手段に加えてさらに情報があることを示す接続表現で文法的にも自然です。AとCは語順や語形が不自然で、Dは譲歩を示すため意味が合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A. We will discontinue all previous models immediately.\",\n        \"B. All returns are final and cannot be refunded.\",\n        \"C. Employees must register with HR to receive a discount.\",\n        \"D. Visit our product page to learn more and place your pre-order.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"文末の案内として『製品ページで詳細を確認して事前注文してください』という文が最も自然で文脈に合います。A、B、Cはいずれも内容が不適切または文書の受け手（顧客）に対する案内として不自然です。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"product_launch\",\n  \"wordCount\": 139\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:51:03.934Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Notice: New SmartCharge Pro Launch\n\n文書全体（正解が埋められた完全な文章）：\nNotice: New SmartCharge Pro Launch\n\nWe are pleased to announce the launch of our new SmartCharge Pro portable charger, designed for busy professionals who need reliable power on the go. D. In particular, In particular, the SmartCharge Pro offers fast charging, multiple device compatibility, and a compact design.\n\nStarting next Monday, the product will be available at all company stores and online. Customers who pre-order by May 15 will receive a 10% discount and free shipping. C. However, However, limited stock is expected in the first week, so we recommend placing orders early.\n\nIf you have questions about features or compatibility, please contact our customer support team at support@techco.example or call 123-456-7890. B. Additionally, Additionally, technical specifications and user manuals are available on our website.\n\nD. Visit our product page to learn more and place your pre-order. Visit our product page to learn more and place your pre-order.\n\nThank you for your continued support.\n\n選択肢：\n空欄1: A. A. Nevertheless,, B. B. Meanwhile,, C. C. Eventually,, D. D. In particular,\n空欄2: A. A. Therefore,, B. B. Meanwhile,, C. C. However,, D. D. For example,\n空欄3: A. A. Also are, B. B. Additionally,, C. C. Besides that are, D. D. Although\n空欄4: A. A. We will discontinue all previous models immediately., B. B. All returns are final and cannot be refunded., C. C. Employees must register with HR to receive a discount., D. D. Visit our product page to learn more and place your pre-order.\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:52:08.371Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"新型SmartCharge Pro発売のお知らせ\",\n  \"contentTranslation\": \"外出先で信頼できる電源を必要とする忙しいプロフェッショナルのために設計された、新しい携帯型充電器SmartCharge Proの発売をお知らせできることを嬉しく思います。特に、特に、SmartCharge Proは高速充電、複数機器対応、コンパクトなデザインを提供します。\\n\\n来週の月曜日から、当社の全店舗およびオンラインで販売開始します。5月15日までに予約注文されたお客様は10%割引と送料無料を受けられます。しかし、しかし、初週は在庫が限られる見込みのため、早めのご注文をお勧めします。\\n\\n製品の機能や互換性についてご質問がある場合は、support@techco.exampleまでメールいただくか、123-456-7890にお電話ください。さらに、さらに、技術仕様やユーザーマニュアルは当社ウェブサイトでご覧いただけます。\\n\\n商品ページをご覧いただき、詳細をご確認のうえ、予約注文をお願いいたします。商品ページをご覧いただき、詳細をご確認のうえ、予約注文をお願いいたします。\\n\\n今後ともよろしくお願いいたします。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"しかしながら\", \"その間\", \"最終的に\", \"特に\"]\n    },\n    {\n      \"optionTranslations\": [\"したがって\", \"その間\", \"しかしながら\", \"例えば\"]\n    },\n    {\n      \"optionTranslations\": [\"また\", \"さらに\", \"その上\", \"だが\"]\n    },\n    {\n      \"optionTranslations\": [\"旧モデルを即時廃止\", \"返品は返金不可\", \"従業員は人事登録が必要\", \"商品ページで詳細確認・予約\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:52:08.372Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: basic_requests (基本的な依頼)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: B\n- 空欄2の正解位置: B\n- 空欄3の正解位置: C\n- 空欄4の正解位置: D\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: context (文脈理解)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:52:53.784Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"article\",\n  \"title\": \"Customer Support Guidelines: Handling Basic Requests\",\n  \"fullText\": \"Our customer support team handles many simple inquiries each day. To maintain quality service, follow these guidelines.\\n\\nPlease ensure that each staff member (1) ____ to customer requests within 24 hours. Responses should be polite, clear, and include any necessary next steps.\\n\\nIf a request cannot be resolved immediately, (2) ____ to a supervisor so the issue can be addressed quickly.\\n\\nAlways send a brief (3) ____ of receipt to the customer, including an estimated time for resolution.\\n\\nKeep detailed records for each request. (4) After resolution, follow up with the customer to confirm satisfaction.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"respond\",\n        \"responds\",\n        \"responding\",\n        \"to respond\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"「each staff member」は単数扱いの主語なので、動詞は三人称単数形が必要です。選択肢Bの\\\"responds\\\"が正しい。Aの\\\"respond\\\"は原形、Cの\\\"responding\\\"は現在分詞、Dの\\\"to respond\\\"は不定詞でいずれもこの文の構造には合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"We escalate it to a supervisor.\",\n        \"We should escalate it to a supervisor.\",\n        \"Escalate it to a supervisor.\",\n        \"It will escalate to a supervisor.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"ガイドライン文書では、対応手順を示す助言として\\\"should\\\"を用いるのが適切です。選択肢Bの\\\"We should escalate it to a supervisor.\\\"が最も自然な文脈です。Aは事実の陳述に近く助言の口調にならない、Cは命令形でこの文の形（if節の中）には合わない、Dは意味が不明確で誤りです。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"report\",\n        \"letter\",\n        \"acknowledgment\",\n        \"announcement\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"\\\"acknowledgment of receipt\\\"（受領の通知）はよく使われる表現で、顧客に受領を知らせる短い連絡を指します。選択肢Cが適切です。Aの\\\"report\\\"やBの\\\"letter\\\"、Dの\\\"announcement\\\"は意味がずれており不自然です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"Please ignore duplicate messages to avoid confusion.\",\n        \"We may close the ticket without notifying the customer.\",\n        \"Ask the customer for their mailing address.\",\n        \"Record the ticket number in the CRM system for future reference.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"前後の文は記録とフォローアップについて述べているため、記録に関する具体的な指示が自然に続きます。選択肢Dの\\\"Record the ticket number in the CRM system for future reference.\\\"は文脈に合った挿入文です。Aは推奨として不適切で、Bは顧客対応方針として問題があり、Cは文脈上不必要な情報です。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"basic_requests\",\n  \"wordCount\": 95\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:52:53.785Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Customer Support Guidelines: Handling Basic Requests\n\n文書全体（正解が埋められた完全な文章）：\nOur customer support team handles many simple inquiries each day. To maintain quality service, follow these guidelines.\n\nPlease ensure that each staff member responds ____ to customer requests within 24 hours. Responses should be polite, clear, and include any necessary next steps.\n\nIf a request cannot be resolved immediately, We should escalate it to a supervisor. ____ to a supervisor so the issue can be addressed quickly.\n\nAlways send a brief acknowledgment ____ of receipt to the customer, including an estimated time for resolution.\n\nKeep detailed records for each request. Record the ticket number in the CRM system for future reference. After resolution, follow up with the customer to confirm satisfaction.\n\n選択肢：\n空欄1: A. respond, B. responds, C. responding, D. to respond\n空欄2: A. We escalate it to a supervisor., B. We should escalate it to a supervisor., C. Escalate it to a supervisor., D. It will escalate to a supervisor.\n空欄3: A. report, B. letter, C. acknowledgment, D. announcement\n空欄4: A. Please ignore duplicate messages to avoid confusion., B. We may close the ticket without notifying the customer., C. Ask the customer for their mailing address., D. Record the ticket number in the CRM system for future reference.\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:54:11.292Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"カスタマーサポートガイドライン：基本的なリクエストの対応\",\n  \"contentTranslation\": \"当社のカスタマーサポートチームは毎日多くの簡単な問い合わせを処理しています。品質の高いサービスを維持するため、以下のガイドラインに従ってください。\\n\\n各スタッフが24時間以内に顧客のリクエストに対応するようにしてください。返答は礼儀正しく明確であり、必要な次の手順を含めてください。\\n\\nリクエストがすぐに解決できない場合は、上司にエスカレーションする必要があります。そうすることで問題に迅速に対処できます。\\n\\n常に受領確認の簡潔な通知を顧客に送り、解決までの見積時間を含めてください。\\n\\n各リクエストについて詳細な記録を保持してください。将来の参照のためにCRMシステムにチケット番号を記録してください。解決後は顧客にフォローアップして満足度を確認してください。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"対応する\", \"対応します\", \"対応している\", \"対応すること\"]\n    },\n    {\n      \"optionTranslations\": [\"上司にエスカレーションします\", \"上司にエスカレーションすべきです\", \"上司にエスカレーションしてください\", \"上司に自動的にエスカレートします\"]\n    },\n    {\n      \"optionTranslations\": [\"報告\", \"書簡\", \"受領確認\", \"お知らせ\"]\n    },\n    {\n      \"optionTranslations\": [\"重複メッセージを無視してください\", \"通知せずチケットを閉鎖する\", \"郵送先住所を尋ねる\", \"CRMにチケット番号を記録する\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:54:11.294Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: team_coordination (チーム連携)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: A\n- 空欄3の正解位置: A\n- 空欄4の正解位置: D\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: grammar (文法・語形)\n- 空欄3: vocabulary (語彙選択)\n- 空欄4: vocabulary (語彙選択)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:55:02.103Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"article\",\n  \"title\": \"Improving Team Coordination in Project Meetings\",\n  \"fullText\": \"Effective team coordination is essential for successful projects. In our recent staff survey, many employees reported that meetings often lack clear goals, which can lead to confusion and delays. To address this issue, we propose several changes to our meeting structure.\\n\\nFirst, every meeting should begin with a brief agenda and a statement of objectives so that participants know what to expect. Second, meeting leaders must assign action items with deadlines and follow up on progress to ensure accountability. Third, we recommend rotating the role of facilitator among team members to encourage engagement and diverse perspectives.\\n\\nAdditionally, we will introduce a shared online tracker (1) ____ recording decisions, responsible persons, and timelines. This tool will help keep everyone informed and reduce redundancy. Training sessions on effective communication techniques will also be available (2) ____ new hires and current staff. We expect that these measures will improve clarity, speed up decision-making, and (3) ____ overall team performance. Please review the proposed plan and share your feedback by Friday so we can (4) ____ the changes next month.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"to\",\n        \"with\",\n        \"on\",\n        \"for\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"「for recording decisions」で「決定事項を記録するための（トラッカー）」という目的を表す最適な前置詞は for です。他の選択肢は意味や語法が合いません（to recording は不自然、with/on は意味がずれます）。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"to\",\n        \"at\",\n        \"by\",\n        \"from\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"「be available to someone」で『〜に利用可能である／提供される』という表現になります。at/by/from はこの文脈では不適切で、文法的にも不自然です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"boost\",\n        \"boosts\",\n        \"boosting\",\n        \"boosted\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"並列構造（will improve clarity, speed up decision-making, and (3) ____ overall team performance）では動詞の原形 boost を用いて並べる必要があります。単数三人称の boosts や分詞形は文法的に合いません。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"imagine\",\n        \"consider\",\n        \"suggest\",\n        \"implement\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"文脈は『フィードバックを得して来月に変更を実行する』という意味なので、implement（実施する）が最も適切です。他の語は『想像する・検討する・提案する』で、ここでは意味が合いません。\",\n      \"questionType\": \"vocabulary\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"team_coordination (チーム連携)\",\n  \"wordCount\": 176\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:55:02.105Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Improving Team Coordination in Project Meetings\n\n文書全体（正解が埋められた完全な文章）：\nEffective team coordination is essential for successful projects. In our recent staff survey, many employees reported that meetings often lack clear goals, which can lead to confusion and delays. To address this issue, we propose several changes to our meeting structure.\n\nFirst, every meeting should begin with a brief agenda and a statement of objectives so that participants know what to expect. Second, meeting leaders must assign action items with deadlines and follow up on progress to ensure accountability. Third, we recommend rotating the role of facilitator among team members to encourage engagement and diverse perspectives.\n\nAdditionally, we will introduce a shared online tracker for ____ recording decisions, responsible persons, and timelines. This tool will help keep everyone informed and reduce redundancy. Training sessions on effective communication techniques will also be available to ____ new hires and current staff. We expect that these measures will improve clarity, speed up decision-making, and boost ____ overall team performance. Please review the proposed plan and share your feedback by Friday so we can implement ____ the changes next month.\n\n選択肢：\n空欄1: A. to, B. with, C. on, D. for\n空欄2: A. to, B. at, C. by, D. from\n空欄3: A. boost, B. boosts, C. boosting, D. boosted\n空欄4: A. imagine, B. consider, C. suggest, D. implement\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:56:11.641Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"プロジェクト会議におけるチームの連携向上\",\n  \"contentTranslation\": \"効果的なチームの連携はプロジェクトの成功に不可欠です。最近の従業員調査では、多くの社員が会議にはっきりした目的が欠けていると報告しており、それが混乱や遅延につながることがありました。この問題に対処するため、会議の構成をいくつか変更することを提案します。\\n\\nまず、すべての会議は簡潔な議題と目的の明示から始め、参加者が何を期待すべきかを把握できるようにします。次に、会議のリーダーは期限を伴うアクション項目を割り当て、進捗をフォローアップして責任を明確にする必要があります。三番目に、参加意欲と多様な視点を促すために、ファシリテーターの役割をチームメンバー間で順番に交代することを推奨します。\\n\\nさらに、意思決定、責任者、タイムラインを記録するための共有オンライントラッカーを導入します。このツールは全員の状況把握を助け、重複を減らすのに役立ちます。効果的なコミュニケーション技術に関する研修も新入社員と現職員が受講できるように提供されます。これらの施策により明確さが向上し、意思決定が迅速化され、チーム全体の業績が向上すると期待しています。提案された計画を確認し、来月変更を実施できるよう金曜日までにフィードバックを共有してください。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"〜へ\", \"〜とともに\", \"〜に関して\", \"〜のために\"]\n    },\n    {\n      \"optionTranslations\": [\"〜に\", \"〜で\", \"〜によって\", \"〜から\"]\n    },\n    {\n      \"optionTranslations\": [\"高める\", \"高める（3人称）\", \"高めること\", \"高められた\"]\n    },\n    {\n      \"optionTranslations\": [\"想像する\", \"検討する\", \"提案する\", \"実施する\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:56:11.643Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: advertisement (Advertisement)\n- ビジネストピック: customer_complaints (顧客苦情)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: C\n- 空欄2の正解位置: A\n- 空欄3の正解位置: C\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: vocabulary (語彙選択)\n- 空欄3: sentence_insertion (文挿入)\n- 空欄4: context (文脈理解)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:57:10.385Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"Advertisement\",\n  \"title\": \"Improved Customer Complaint Process\",\n  \"fullText\": \"Advertisement: Improved Customer Complaint Process\\n\\nAt Solace Electronics, we value your feedback and are committed to resolving any issues quickly and professionally. Our customer care team (1) available Monday through Friday, 9 a.m. to 6 p.m., to assist with product concerns, returns, and warranty claims. If you have a problem, please complete the online complaint form and we will (2) a refund or replacement when appropriate. (3) We appreciate your patience and will keep you informed throughout the process. You can reach us by phone at 1-800-123-4567 or (4) email at support@solace.com. Thank you for choosing Solace.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"A. are\", \"B. being\", \"C. is\", \"D. were\"],\n      \"correct\": \"C\",\n      \"explanation\": \"文法（主語と動詞の一致）: 主語は単数扱いの \\\"Our customer care team\\\" なので、正しい動詞は単数形の 'is'。選択肢Aの 'are' は複数主語に使い、Bの 'being' は進行形や分詞構文に使うため不適切、Dの 'were' は過去形で文脈に合わない。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\"A. issue\", \"B. deliver\", \"C. receive\", \"D. pay\"],\n      \"correct\": \"A\",\n      \"explanation\": \"語彙: \\\"issue a refund\\\" は一般的な表現で、返金を行うことを意味する。Bの 'deliver' は物理的な配達に適し、Cの 'receive' は受け取る側の動詞、Dの 'pay' は金額を支払う主体が異なるニュアンスで文脈に最適ではない。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A. Please note that we do not accept returns after 30 days.\",\n        \"B. Call us anytime for immediate support.\",\n        \"C. Our customer care team reviews all complaints within two business days.\",\n        \"D. All sales are final and non-refundable.\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文挿入（文脈のつながり）: 前後の文（返金や対応の説明 → 感謝と通知について）をつなぐには、苦情の処理期間を示すCが自然に合う。AとDは返品不可を示し内容が矛盾し、Bは「anytime（いつでも）」が受付時間（平日9–6）と矛盾するため不適切。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\"A. regarding\", \"B. concerning\", \"C. via\", \"D. along\"],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈理解: \\\"or via email at support@solace.com\\\" が自然な表現。AやB（regarding / concerning）は『〜に関して』という意味で前置詞としてこの位置では不自然、Dの 'along' は意味が合わない。\",\n      \"questionType\": \"context\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"customer_complaints\",\n  \"wordCount\": 97\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:57:10.387Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Improved Customer Complaint Process\n\n文書全体（正解が埋められた完全な文章）：\nAdvertisement: Improved Customer Complaint Process\n\nAt Solace Electronics, we value your feedback and are committed to resolving any issues quickly and professionally. Our customer care team C. is available Monday through Friday, 9 a.m. to 6 p.m., to assist with product concerns, returns, and warranty claims. If you have a problem, please complete the online complaint form and we will A. issue a refund or replacement when appropriate. C. Our customer care team reviews all complaints within two business days. We appreciate your patience and will keep you informed throughout the process. You can reach us by phone at 1-800-123-4567 or C. via email at support@solace.com. Thank you for choosing Solace.\n\n選択肢：\n空欄1: A. A. are, B. B. being, C. C. is, D. D. were\n空欄2: A. A. issue, B. B. deliver, C. C. receive, D. D. pay\n空欄3: A. A. Please note that we do not accept returns after 30 days., B. B. Call us anytime for immediate support., C. C. Our customer care team reviews all complaints within two business days., D. D. All sales are final and non-refundable.\n空欄4: A. A. regarding, B. B. concerning, C. C. via, D. D. along\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:58:08.157Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"改善された顧客苦情対応プロセス\",\n  \"contentTranslation\": \"Solace Electronicsでは、お客様からのご意見を重視しており、問題を迅速かつ専門的に解決することをお約束します。当社のカスタマーケアチームは月曜から金曜の午前9時から午後6時まで、製品に関するご相談、返品、保証請求に対応しております。問題がある場合はオンラインの苦情フォームにご記入ください。適切な場合には返金または交換を行います。当社のカスタマーケアチームはすべての苦情を2営業日以内に確認します。皆様のご理解に感謝するとともに、手続きの進捗について随時ご連絡いたします。お電話は1-800-123-4567、メールはsupport@solace.comまでご連絡ください。Solaceをご利用いただきありがとうございます。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"（複数形）である\", \"〜されている\", \"である\", \"であった\"]\n    },\n    {\n      \"optionTranslations\": [\"発行する\", \"配達する\", \"受け取る\", \"支払う\"]\n    },\n    {\n      \"optionTranslations\": [\"30日以降は返品不可\", \"いつでも電話で対応\", \"苦情は2営業日以内に確認\", \"販売は最終、返金不可\"]\n    },\n    {\n      \"optionTranslations\": [\"〜に関して\", \"〜について\", \"経由で\", \"沿って\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:58:08.160Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: project_collaboration (プロジェクト協力)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: C\n- 空欄2の正解位置: D\n- 空欄3の正解位置: C\n- 空欄4の正解位置: C\n\n【問題タイプの配分】\n- 空欄1: grammar (文法・語形)\n- 空欄2: sentence_insertion (文挿入)\n- 空欄3: context (文脈理解)\n- 空欄4: grammar (文法・語形)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:59:08.785Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"article\",\n  \"title\": \"Improving Cross-Team Collaboration on the Orion Project\",\n  \"fullText\": \"To: Project Team\\nFrom: Project Management Office\\nDate: May 12\\n\\nSubject: Improving Cross-Team Collaboration on the Orion Project\\n\\nEffective collaboration between departments is essential for the success of the Orion Project. The program manager (1) responsible for coordinating the weekly meetings and sharing updates with stakeholders. Over the past month, we have seen delays in deliverables due to unclear responsibilities and inconsistent communication.\\n\\n(2)\\n\\nTo address these issues, we will implement a shared project timeline and assign a single point of contact for each workstream. Team leads will be expected to update the timeline every Friday and to raise any risks during the weekly sync. In addition, we will provide an online folder where all key documents will be stored and (3).\\n\\nPlease review the new collaboration guidelines and provide feedback by next Wednesday. If you have questions, please (4) the PMO office.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"are responsible\",\n        \"be responsible\",\n        \"is responsible\",\n        \"responsible\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"「The program manager」は単数主語なので、状態を表す現在の動詞として \\\"is responsible\\\" が適切です。Aの \\\"are\\\" は複数主語に使う形、Bの \\\"be responsible\\\" は不定詞・命令形など文脈に合わず、Dは動詞が欠けており文が不完全です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"Several team members requested additional training on the new software.\",\n        \"Budget increases were approved last week to accelerate testing.\",\n        \"We celebrated the completion of the pilot phase with a small event.\",\n        \"Most problems stem from overlapping responsibilities and missed handoffs between teams.\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"直前の文は遅延の原因として「不明瞭な責任」と「一貫性のないコミュニケーション」を挙げており、次の段落で \\\"To address these issues,\\\" と続くので、原因を明確にする D の文が最も自然です。他の選択肢は話題がずれており、前後の流れに合いません。\",\n      \"questionType\": \"sentence_insertion\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"shared publicly\",\n        \"deleted regularly\",\n        \"version-controlled\",\n        \"printed weekly\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"プロジェクト文書を保管するオンラインフォルダについて述べているため、文書管理の観点で \\\"version-controlled\\\"（バージョン管理される）が最も適切です。AやDは目的に合わず、Bは望ましい運用ではありません。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"contacting\",\n        \"to contact\",\n        \"contact\",\n        \"contacted\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"依頼文の語調で \\\"If you have questions, please contact the PMO office.\\\" が自然で正しい命令形（依頼）です。Aの \\\"contacting\\\" は進行形になり不適切、Bの \\\"to contact\\\" は不定詞で文法的に合わず、Dの \\\"contacted\\\" は受動形になり意味が変わります。\",\n      \"questionType\": \"grammar\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"project_collaboration\",\n  \"wordCount\": 143\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:59:08.787Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Improving Cross-Team Collaboration on the Orion Project\n\n文書全体（正解が埋められた完全な文章）：\nTo: Project Team\nFrom: Project Management Office\nDate: May 12\n\nSubject: Improving Cross-Team Collaboration on the Orion Project\n\nEffective collaboration between departments is essential for the success of the Orion Project. The program manager is responsible responsible for coordinating the weekly meetings and sharing updates with stakeholders. Over the past month, we have seen delays in deliverables due to unclear responsibilities and inconsistent communication.\n\nMost problems stem from overlapping responsibilities and missed handoffs between teams.\n\nTo address these issues, we will implement a shared project timeline and assign a single point of contact for each workstream. Team leads will be expected to update the timeline every Friday and to raise any risks during the weekly sync. In addition, we will provide an online folder where all key documents will be stored and version-controlled.\n\nPlease review the new collaboration guidelines and provide feedback by next Wednesday. If you have questions, please contact the PMO office.\n\n選択肢：\n空欄1: A. are responsible, B. be responsible, C. is responsible, D. responsible\n空欄2: A. Several team members requested additional training on the new software., B. Budget increases were approved last week to accelerate testing., C. We celebrated the completion of the pilot phase with a small event., D. Most problems stem from overlapping responsibilities and missed handoffs between teams.\n空欄3: A. shared publicly, B. deleted regularly, C. version-controlled, D. printed weekly\n空欄4: A. contacting, B. to contact, C. contact, D. contacted\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:59:56.868Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"オリオンプロジェクトにおける部門間協力の改善\",\n  \"contentTranslation\": \"宛先: プロジェクトチーム\\n差出人: プロジェクト管理室\\n日付: 5月12日\\n\\n件名: オリオンプロジェクトにおける部門間協力の改善\\n\\n部門間の効果的な協力は、オリオンプロジェクトの成功に不可欠です。プログラムマネージャーは週次ミーティングの調整と利害関係者への最新情報の共有を担当しています。過去1か月間、責任範囲の不明確さとコミュニケーションの一貫性の欠如により、成果物の遅延が発生しています。\\n\\n多くの問題は、責任の重複とチーム間の引き継ぎ漏れに起因しています。\\n\\nこれらの問題に対処するため、共有のプロジェクトタイムラインを導入し、各ワークストリームに単一の連絡窓口を割り当てます。チームリーダーは毎週金曜日にタイムラインを更新し、週次の同期ミーティングでリスクを報告することが求められます。さらに、すべての重要書類を保存・バージョン管理するオンラインフォルダを提供します。\\n\\n新しい協力ガイドラインを確認し、次の水曜日までにフィードバックを提出してください。ご質問がある場合は、プロジェクト管理室までご連絡ください。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"責任がある\", \"責任を負う\", \"責任がある\", \"責任のある\"]\n    },\n    {\n      \"optionTranslations\": [\"追加研修を要請\", \"予算増額を承認\", \"パイロット完了を祝う\", \"責任重複と引継ぎ漏れ\"]\n    },\n    {\n      \"optionTranslations\": [\"公開共有\", \"定期削除\", \"バージョン管理\", \"毎週印刷\"]\n    },\n    {\n      \"optionTranslations\": [\"連絡している\", \"連絡するために\", \"連絡する\", \"連絡された\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T08:59:56.870Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: article (Article/Report)\n- ビジネストピック: customer_inquiries (顧客問い合わせ)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: A\n- 空欄2の正解位置: D\n- 空欄3の正解位置: C\n- 空欄4の正解位置: B\n\n【問題タイプの配分】\n- 空欄1: vocabulary (語彙選択)\n- 空欄2: context (文脈理解)\n- 空欄3: grammar (文法・語形)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:01:10.947Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"article\",\n  \"title\": \"Monthly Report: Customer Inquiries\",\n  \"fullText\": \"Customer Service Department\\nMonthly Report: Customer Inquiries\\n\\nDuring the month of July, our team handled a total of 1,240 customer inquiries across phone, email, and live chat. The majority of questions concerned product availability and delivery times, while a smaller portion related to returns and refunds. To improve response efficiency, we (1) additional training sessions for new agents and updated the knowledge base articles.\\n\\nAnalysis of response time shows that average first-response time decreased from 18 hours in June to 10 hours in July, a significant improvement. This change was due to staffing adjustments and better workflow. However, satisfaction scores remain steady, indicating that speed alone does not fully resolve customer concerns. (2) a follow-up survey to better understand customer expectations should help guide our next improvements.\\n\\nPlease note that all team members are reminded to use the new email templates when replying to inquiries; these templates (3) be tailored to specific customer situations. Finally, we plan to introduce a monthly review meeting with the sales and logistics teams. (4)\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"conducted\",\n        \"conduct\",\n        \"conducting\",\n        \"will conduct\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"文脈は過去の出来事（7月の対応）について述べているため、過去形の 'conducted' が適切です。'conduct and updated' の並列も自然です。'conduct'（現在形）、'conducting'（動名詞としては文法的に不自然）、'will conduct'（未来形）は文脈と時制が合わないため不正解です。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"If we conduct\",\n        \"To conduct\",\n        \"Conduct\",\n        \"Conducting\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"文全体の主語として動名詞を用いると自然に続きます：'Conducting a follow-up survey ... should help ...'。選択肢Aは条件文の形になり、続く 'should help' と合いません。Bは不自然で堅苦しく、Cは命令形または不定形で文法的に合いません。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"should\",\n        \"should to be\",\n        \"should be\",\n        \"should being\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"助動詞 'should' の後は動詞の原形（受動態では 'be'）が続くので、'should be tailored' が正しい形です。Aは 'be' が抜けており不完全、BとDは文法的に誤りです。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"We have already completed all necessary preparations.\",\n        \"We will share the meeting agenda next week.\",\n        \"When introduced, it will be monthly reviews.\",\n        \"Please contact HR for scheduling conflicts.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"前文で「月次レビュー会議を導入する予定」と述べているため、続けて『議題を来週共有します』という具体的な次の手順を示す文が自然です（B）。Aは『すでに準備完了』と述べており 'introduce' の予定と矛盾します。Cは語法が不自然で、Dは関連性はあるが文脈上Bの方が適切な結びの文です。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"customer_inquiries (顧客問い合わせ)\",\n  \"wordCount\": 170\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:01:10.950Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Monthly Report: Customer Inquiries\n\n文書全体（正解が埋められた完全な文章）：\nCustomer Service Department\nMonthly Report: Customer Inquiries\n\nDuring the month of July, our team handled a total of 1,240 customer inquiries across phone, email, and live chat. The majority of questions concerned product availability and delivery times, while a smaller portion related to returns and refunds. To improve response efficiency, we conducted additional training sessions for new agents and updated the knowledge base articles.\n\nAnalysis of response time shows that average first-response time decreased from 18 hours in June to 10 hours in July, a significant improvement. This change was due to staffing adjustments and better workflow. However, satisfaction scores remain steady, indicating that speed alone does not fully resolve customer concerns. Conducting a follow-up survey to better understand customer expectations should help guide our next improvements.\n\nPlease note that all team members are reminded to use the new email templates when replying to inquiries; these templates should be be tailored to specific customer situations. Finally, we plan to introduce a monthly review meeting with the sales and logistics teams. We will share the meeting agenda next week.\n\n選択肢：\n空欄1: A. conducted, B. conduct, C. conducting, D. will conduct\n空欄2: A. If we conduct, B. To conduct, C. Conduct, D. Conducting\n空欄3: A. should, B. should to be, C. should be, D. should being\n空欄4: A. We have already completed all necessary preparations., B. We will share the meeting agenda next week., C. When introduced, it will be monthly reviews., D. Please contact HR for scheduling conflicts.\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:01:57.034Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"月次報告：顧客からの問い合わせ\",\n  \"contentTranslation\": \"カスタマーサービス部門\\n月次報告：顧客からの問い合わせ\\n\\n7月の1か月間、当チームは電話、メール、ライブチャットを通じて合計1,240件の顧客からの問い合わせを処理しました。問い合わせの大部分は商品の在庫状況や配送時間に関するもので、返品や返金に関するものは一部にとどまりました。対応効率を改善するために、新人担当者向けの追加研修を実施し、ナレッジベースの記事を更新しました。\\n\\n応答時間の分析によると、初回応答の平均時間は6月の18時間から7月の10時間に短縮し、大幅な改善が見られました。この変化は人員配置の調整とワークフローの改善によるものです。しかし、満足度スコアは横ばいのままであり、速度だけでは顧客の懸念を完全に解消できないことを示しています。顧客の期待をよりよく理解するためのフォローアップ調査を実施することが、次の改善の指針になるはずです。\\n\\n全チームメンバーは問い合わせに返信する際に新しいメールテンプレートを使用するよう再度周知してください。これらのテンプレートは特定の顧客の状況に応じて調整されるべきです。最後に、営業チームと物流チームとの月次レビュー会議を導入する予定です。会議の議題は来週共有します。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"実施した\", \"実施する\", \"実施中\", \"実施する予定\"]\n    },\n    {\n      \"optionTranslations\": [\"実施すれば\", \"実施するために\", \"実施する\", \"実施すること\"]\n    },\n    {\n      \"optionTranslations\": [\"すべきだ\", \"すべきである\", \"されるべきだ\", \"すべきであること\"]\n    },\n    {\n      \"optionTranslations\": [\"準備は完了しています\", \"議題は来週共有します\", \"導入時に月次レビューです\", \"予定は人事へ連絡\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:01:57.037Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: email (Business Email)\n- ビジネストピック: inventory_updates (在庫・供給状況)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: D\n- 空欄2の正解位置: A\n- 空欄3の正解位置: C\n- 空欄4の正解位置: B\n\n【問題タイプの配分】\n- 空欄1: vocabulary (語彙選択)\n- 空欄2: grammar (文法・語形)\n- 空欄3: context (文脈理解)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:03:01.423Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"email (Business Email)\",\n  \"title\": \"Inventory Update for Office Supplies\",\n  \"fullText\": \"From: inventory@company.com\\nTo: sales@company.com\\nSubject: Inventory Update for Office Supplies\\n\\nDear Sales Team,\\n\\nI am writing to provide a brief update on our current inventory levels for office supplies. At the moment, we have (1) stock of printer paper and toner cartridges. The warehouse team checked the counts yesterday and (2) recorded any discrepancies in the system. We expect a new shipment of toner cartridges to arrive next week, (3) we should be able to fulfill all pending orders by Friday. Also, please note that the blue pens are low — reorder requests will be sent by the end of day. (4) Please confirm if you need any items expedited.\\n\\nBest regards,\\nKaren Lee\\nInventory Manager\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"scarce\",\n        \"empty\",\n        \"low\",\n        \"adequate\"\n      ],\n      \"correct\": \"D\",\n      \"explanation\": \"「adequate」は「十分な/適切な」という意味で、'adequate stock'（十分な在庫）という表現は自然です。他の選択肢は意味が合いません。'scarce' は『不足している』、'empty' は『空の』、'low' は文法的には可能だが文脈では 'low stock' とするのが普通で、与えられた語順には合いません。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"recorded\",\n        \"records\",\n        \"would record\",\n        \"had recorded\"\n      ],\n      \"correct\": \"A\",\n      \"explanation\": \"文は過去の出来事（checked the counts yesterday）を述べており、並列の動作として過去形 'recorded' が自然です。'records'（現在形）は時制が合わず、'would record' は仮定や未来の意味、'had recorded'（過去完了）は時間関係に不必要です。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"although\",\n        \"unless\",\n        \"so\",\n        \"while\"\n      ],\n      \"correct\": \"C\",\n      \"explanation\": \"文脈は「新しい出荷が来るので、保留中の注文を〜できるはずだ」という因果関係を示しており、'so'（だから）が最も適切です。'although' や 'while' は対照、'unless' は『〜でなければ』という条件を表します。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"We will cancel all pending purchase orders if not confirmed.\",\n        \"If you need a faster delivery, we can arrange express shipping for an additional fee.\",\n        \"The company has no policy regarding urgent shipments.\",\n        \"All staff are required to order supplies only through the online form.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"直後の文が 'Please confirm if you need any items expedited.'（緊急配送が必要か確認してください）であり、それに続く文として『必要なら速達手配が可能です』という内容の文（B）が最も自然です。他の選択肢は文脈に合わない、または不適切な指示を含みます。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"inventory_updates (在庫・供給状況)\",\n  \"wordCount\": 116\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:03:01.426Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Inventory Update for Office Supplies\n\n文書全体（正解が埋められた完全な文章）：\nFrom: inventory@company.com\nTo: sales@company.com\nSubject: Inventory Update for Office Supplies\n\nDear Sales Team,\n\nI am writing to provide a brief update on our current inventory levels for office supplies. At the moment, we have adequate stock of printer paper and toner cartridges. The warehouse team checked the counts yesterday and recorded recorded any discrepancies in the system. We expect a new shipment of toner cartridges to arrive next week, so we should be able to fulfill all pending orders by Friday. Also, please note that the blue pens are low — reorder requests will be sent by the end of day. If you need a faster delivery, we can arrange express shipping for an additional fee. Please confirm if you need any items expedited.\n\nBest regards,\nKaren Lee\nInventory Manager\n\n選択肢：\n空欄1: A. scarce, B. empty, C. low, D. adequate\n空欄2: A. recorded, B. records, C. would record, D. had recorded\n空欄3: A. although, B. unless, C. so, D. while\n空欄4: A. We will cancel all pending purchase orders if not confirmed., B. If you need a faster delivery, we can arrange express shipping for an additional fee., C. The company has no policy regarding urgent shipments., D. All staff are required to order supplies only through the online form.\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:03:47.335Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"事務用品の在庫更新\",\n  \"contentTranslation\": \"差出人: inventory@company.com\\n宛先: sales@company.com\\n件名: 事務用品の在庫更新\\n\\n営業チームの皆さま、\\n\\n事務用品の現在の在庫状況について簡単にお知らせします。現時点では、プリンター用紙とトナーカートリッジは十分な在庫があります。倉庫チームが昨日数量を確認し、システムに不一致を記録しました。トナーカートリッジの新しい入荷は来週到着する予定で、金曜日までに保留中のすべての注文を履行できる見込みです。また、青いペンの在庫が少ないことにご注意ください。発注依頼は本日中に送信されます。より早い配送が必要な場合は、追加料金で速達配送の手配が可能です。優先発送が必要な品目があればご確認ください。\\n\\nよろしくお願いいたします。\\n在庫管理マネージャー\\nカレン・リー\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"不足している\", \"在庫切れ\", \"少ない\", \"十分な\"]\n    },\n    {\n      \"optionTranslations\": [\"記録した\", \"記録する\", \"記録するだろう\", \"記録していた\"]\n    },\n    {\n      \"optionTranslations\": [\"しかし\", \"〜しない限り\", \"したがって\", \"一方で\"]\n    },\n    {\n      \"optionTranslations\": [\"確認がなければ注文を全てキャンセルします。\", \"より早い配送は追加料金で速達手配できます。\", \"緊急配送に関する方針はありません。\", \"備品はオンラインフォームでのみ注文してください。\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:03:47.338Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation",
+    "prompt": "あなたはTOEIC Part 6のテスト作成専門家です。\n長文穴埋め問題を作成してください。\n\nTOEIC Part 6の形式：\n- 1つの文書（メール、記事、広告など）に4つの空欄\n- 各空欄に4つの選択肢（A, B, C, D）\n- 語彙・文法・文脈理解を総合的に評価\n- ビジネス文書形式\n\n重要な要求事項：\n1. 自然で実用的なビジネス文書を作成\n2. 文法的に正確で、ネイティブスピーカーが自然に感じる表現\n3. TOEIC Part 6の形式と難易度に準拠\n4. 4つの空欄を適切な位置に配置\n5. 各空欄に4つの選択肢を提供\n6. 正解は1つのみ、他は明確に不正解\n7. 日本語解説も含める\n\n出力形式はJSON形式で以下の構造にしてください：\n{\n  \"documentType\": \"指定された文書タイプ\",\n  \"title\": \"文書のタイトル\",\n  \"fullText\": \"空欄を(1)、(2)、(3)、(4)で示した完全な文書\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"A|B|C|D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"vocabulary|grammar|context|sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy|medium|hard\",\n  \"topic\": \"ビジネス分野\",\n  \"wordCount\": 文書の単語数\n}\n\n以下の条件でTOEIC Part 6問題を1問作成してください：\n\n【生成条件】\n- 難易度: easy\n- 文書タイプ: advertisement (Advertisement)\n- ビジネストピック: business_trends (ビジネストレンド)\n- 空欄数: 4個\n\n【特別な要求】\n各空欄の正解位置は以下のように配置してください：\n- 空欄1の正解位置: B\n- 空欄2の正解位置: B\n- 空欄3の正解位置: B\n- 空欄4の正解位置: B\n\n【問題タイプの配分】\n- 空欄1: context (文脈理解)\n- 空欄2: vocabulary (語彙選択)\n- 空欄3: grammar (文法・語形)\n- 空欄4: sentence_insertion (文挿入)\n\nJSON形式で問題を作成してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:04:43.307Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_generation_response",
+    "prompt": "{\n  \"documentType\": \"Advertisement\",\n  \"title\": \"Navigating Business Trends 2025 Seminar\",\n  \"fullText\": \"Join our annual seminar to learn the latest developments shaping tomorrow's market. (1) Our expert speakers will cover topics such as remote work models, digital transformation, and sustainable practices. The event is designed for managers, entrepreneurs, and analysts who want practical strategies to stay competitive. (2) registration includes access to keynote sessions, workshop materials, and a networking lunch. Early bird discounts are available until May 31. (3) attendees are encouraged to bring business cards and prepare questions for panel discussions. (4) To reserve your spot, visit our website or contact the events team at events@biztrends.com.\",\n  \"blanks\": [\n    {\n      \"blankId\": \"blank1\",\n      \"position\": 1,\n      \"options\": [\n        \"A Despite\",\n        \"B Throughout\",\n        \"C However\",\n        \"D Although\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"「Throughout」は「〜の間ずっと」という意味で、この文脈ではセミナー全体にわたって講演が行われることを表す最適な接続語です。AとD（Despite/Although）は譲歩を示し、その後に逆接の文が必要で文脈に合いません。C（However）も逆接を表すので不適切です。\",\n      \"questionType\": \"context\"\n    },\n    {\n      \"blankId\": \"blank2\",\n      \"position\": 2,\n      \"options\": [\n        \"A Registrations\",\n        \"B Your\",\n        \"C Registering\",\n        \"D None\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"「Your registration includes〜」で「あなたの登録には〜が含まれます」という意味で自然です。A（Registrations）は複数形で続く語とのつながりが不自然、C（Registering）は動名詞で文法的に合いません。D（None）は意味が通りません。\",\n      \"questionType\": \"vocabulary\"\n    },\n    {\n      \"blankId\": \"blank3\",\n      \"position\": 3,\n      \"options\": [\n        \"A Registering\",\n        \"B Registered\",\n        \"C To register\",\n        \"D Registers\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"「Registered attendees are encouraged〜」で「登録済みの参加者は〜するよう奨励されます」という受動態構文に合う形は形容詞的に使われる過去分詞の\\\"Registered\\\"です。A（Registering）は進行形的で意味が合わず、C（To register）は不定詞句で文法的に続きません。D（Registers）は三人称単数現在で主語に合いません。\",\n      \"questionType\": \"grammar\"\n    },\n    {\n      \"blankId\": \"blank4\",\n      \"position\": 4,\n      \"options\": [\n        \"A Bring a friend for free.\",\n        \"B Space is limited, so please sign up early to guarantee your seat.\",\n        \"C The seminar will be canceled if fewer than 10 people attend.\",\n        \"D Tickets are non-transferable but can be refunded at any time.\"\n      ],\n      \"correct\": \"B\",\n      \"explanation\": \"挿入文として、次の「To reserve your spot, visit our website〜」へ自然につながるのはBの「席に限りがあるので早めに申し込んでください」です。他の選択肢は情報としてあり得ても、直前の文（参加者への準備の呼びかけ）と次の案内（予約方法）との流れに最も合致するのはBだけです。\",\n      \"questionType\": \"sentence_insertion\"\n    }\n  ],\n  \"difficulty\": \"easy\",\n  \"topic\": \"business_trends\",\n  \"wordCount\": 95\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:04:43.310Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation",
+    "prompt": "あなたはTOEIC Part 6問題の翻訳専門家です。\n文書全体と選択肢を適切に日本語に翻訳してください。\n\n重要なルール：\n1. 文書は自然で分かりやすい日本語に翻訳\n2. 与えられた文書は既に完成した文章なので、そのまま翻訳\n3. 選択肢は1-4語の簡潔な日本語に翻訳\n4. 選択肢に説明や解説は絶対に不要\n5. 文脈に応じた最も適切な意味のみ\n6. ビジネス用語は適切な日本語表現を使用\n7. 4つの空欄すべてに対する選択肢翻訳を提供すること\n\n出力形式：\n{\n  \"titleTranslation\": \"タイトルの翻訳\",\n  \"contentTranslation\": \"文書全体の翻訳（空欄なしの完全な文章として）\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    },\n    {\n      \"optionTranslations\": [\"選択肢1\", \"選択肢2\", \"選択肢3\", \"選択肢4\"]\n    }\n  ]\n}\n\n次のTOEIC Part 6問題を翻訳してください：\n\nタイトル：Navigating Business Trends 2025 Seminar\n\n文書全体（正解が埋められた完全な文章）：\nJoin our annual seminar to learn the latest developments shaping tomorrow's market. B Throughout Our expert speakers will cover topics such as remote work models, digital transformation, and sustainable practices. The event is designed for managers, entrepreneurs, and analysts who want practical strategies to stay competitive. B Your registration includes access to keynote sessions, workshop materials, and a networking lunch. Early bird discounts are available until May 31. B Registered attendees are encouraged to bring business cards and prepare questions for panel discussions. B Space is limited, so please sign up early to guarantee your seat. To reserve your spot, visit our website or contact the events team at events@biztrends.com.\n\n選択肢：\n空欄1: A. A Despite, B. B Throughout, C. C However, D. D Although\n空欄2: A. A Registrations, B. B Your, C. C Registering, D. D None\n空欄3: A. A Registering, B. B Registered, C. C To register, D. D Registers\n空欄4: A. A Bring a friend for free., B. B Space is limited, so please sign up early to guarantee your seat., C. C The seminar will be canceled if fewer than 10 people attend., D. D Tickets are non-transferable but can be refunded at any time.\n\n重要：\n1. 上記の文書は既に空欄に正解が埋められた完全な文章です\n2. この完全な文章をそのまま自然な日本語に翻訳してください\n3. 翻訳には空欄を含めないでください（元の文書は既に完成しています）\n4. 選択肢は簡潔に翻訳してください\n5. questionsTranslationsは必ず4つの要素を含む配列で、各要素が4つの選択肢翻訳を含むこと\n\nJSON形式で翻訳を出力してください。",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  },
+  {
+    "timestamp": "2025-08-20T09:05:29.297Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part6_document_translation_response",
+    "prompt": "{\n  \"titleTranslation\": \"2025年ビジネストレンドセミナー\",\n  \"contentTranslation\": \"年次セミナーに参加して、明日の市場を形作る最新の動向を学びましょう。セミナーを通じて、専門の講演者がリモートワークモデル、デジタル変革、持続可能な取り組みといったトピックを取り上げます。本イベントは、競争力を維持するための実践的な戦略を求めるマネージャー、起業家、アナリスト向けに設計されています。ご登録いただくと基調講演、ワークショップ資料、ネットワーキングランチにご参加いただけます。早割は5月31日まで利用できます。登録済みの参加者は名刺を持参し、パネル討議のための質問を用意することをお勧めします。定員が限られていますので、席を確保するには早めにお申し込みください。席の予約は当社ウェブサイトをご覧になるか、events@biztrends.comまでイベントチームにお問い合わせください。\",\n  \"questionsTranslations\": [\n    {\n      \"optionTranslations\": [\"にもかかわらず\", \"通して\", \"しかし\", \"とはいえ\"]\n    },\n    {\n      \"optionTranslations\": [\"登録（複数）\", \"あなたの\", \"登録すること\", \"なし\"]\n    },\n    {\n      \"optionTranslations\": [\"登録すること\", \"登録済み\", \"登録するには\", \"登録する\"]\n    },\n    {\n      \"optionTranslations\": [\"友人無料招待\", \"定員限り、早めに申込\", \"参加者10名未満で中止\", \"譲渡不可・返金可\"]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "easy"
+    }
+  }
+]

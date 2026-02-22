@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": "2025-09-19T08:43:18.662Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 4 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"speechType\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "speechType": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:43:18.696Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation",
+    "prompt": "あなたはTOEIC Part 4のテスト作成専門家で、1人のスピーカーによるモノローグ形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 4の形式:\n- 1人による連続したスピーチ（30-60秒程度）\n- スピーチ内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみでスピーチと問題が読み上げられる\n\nスピーチの特徴:\n- 自然で実用的な英語のモノローグ\n- 企業アナウンス、イベント案内、ラジオ放送など\n- 明確な目的と構造がある内容\n- 聞き手に情報を伝える、説明する、案内する\n\n重要な指示:\n- スピーカーの立場と目的を明確に設定\n- 論理的で聞きやすい構成\n- 指定された難易度に適した語彙と構文\n- 質問の正解位置は指定された位置に必ず配置\n\n難易度ガイドライン:\n- Easy: シンプルな構文、基本的な語彙、明確な情報構造\n- Medium: 標準的な構文、一般的なビジネス語彙、やや複雑な情報\n- Hard: 複雑な構文、高度な語彙、詳細で複雑な情報\n\nIMPORTANT: Return ONLY valid JSON in the exact format shown below. Do not include any other text, explanations, or markdown formatting.\n\n応答は以下の形式のJSONで返してください:\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"適切な話者名（例: Announcer, Manager, Guide）\",\n      \"role\": \"話者の役割（例: Company spokesperson, Event coordinator）\",\n      \"gender\": \"male/female\"\n    },\n    \"text\": \"スピーチの完全な内容（5-8文程度）\",\n    \"topic\": \"スピーチの主題\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解のテキスト（選択肢の中から1つ）\",\n      \"correctPosition\": \"A/B/C/D\",\n      \"explanation\": \"なぜその答えが正しいかの説明（日本語）\",\n      \"questionType\": \"main_purpose/detail/inference/next_action/intended_audience\"\n    },\n    // 同様に合計3問\n  ]\n}\n\nGenerate a TOEIC Part 4 speech with the following specifications:\n\n【Speech Type】: Company voice announcement (IVR) (企業の音声案内メッセージ)\n【Industry】: Hospitality (宿泊・観光業)\n【Difficulty】: medium\n【Question Types】: detail, main_purpose, location\n【Correct Answer Positions】: Question 1=B, Question 2=D, Question 3=A\n\nCreate a natural monologue speech appropriate for the specified speech type and industry context. The speech should be 30-60 seconds when read aloud (approximately 100-150 words).\n\nFor each question:\n- Place the correct answer at the EXACT position specified above\n- Ensure all other options are plausible but clearly incorrect\n- Match the question type specified for each question\n\nReturn the response in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:43:27.969Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_speech_generation_response",
+    "prompt": "```json\n{\n  \"speechContent\": {\n    \"speaker\": {\n      \"id\": \"A\",\n      \"name\": \"Automated System\",\n      \"role\": \"Company spokesperson\",\n      \"gender\": \"female\"\n    },\n    \"text\": \"Welcome to the Sunrise Beach Resort. Our reservation lines are open from 9 AM to 8 PM Monday through Friday. For booking a room, press 1. If you would like to know more about our spa and wellness packages, press 2. To speak with a concierge about local attractions or dining reservations, press 3. We are located right by the scenic Sunset Bay, offering stunning ocean views. Thank you for choosing Sunrise Beach Resort, where every stay is a memorable experience.\",\n    \"topic\": \"Phone menu options for a hospitality business\"\n  },\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"When are the reservation lines open at Sunrise Beach Resort?\",\n      \"options\": [\"9 AM to 5 PM daily\", \"9 AM to 8 PM Monday through Friday\", \"8 AM to 9 PM daily\", \"10 AM to 8 PM Monday through Saturday\"],\n      \"correct\": \"9 AM to 8 PM Monday through Friday\",\n      \"correctPosition\": \"B\",\n      \"explanation\": \"スピーチでは、Sunrise Beach Resortの予約受付時間は月曜日から金曜日の午前9時から午後8時までと述べています。\",\n      \"questionType\": \"detail\"\n    },\n    {\n      \"id\": 2,\n      \"question\": \"What is the main purpose of this announcement?\",\n      \"options\": [\"To advertise local attractions\", \"To describe spa packages\", \"To explain how to reach the concierge\", \"To provide phone menu options\"],\n      \"correct\": \"To provide phone menu options\",\n      \"correctPosition\": \"D\",\n      \"explanation\": \"このスピーチの主な目的は、Sunrise Beach Resortの電話メニューオプションを案内することです。\",\n      \"questionType\": \"main_purpose\"\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Where is Sunrise Beach Resort located?\",\n      \"options\": [\"By the scenic Sunset Bay\", \"Near the downtown area\", \"Next to a popular shopping mall\", \"In the city center\"],\n      \"correct\": \"By the scenic Sunset Bay\",\n      \"correctPosition\": \"A\",\n      \"explanation\": \"スピーチでは、Sunrise Beach Resortが景色の美しいSunset Bay沿いに位置していると述べられています。\",\n      \"questionType\": \"location\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:43:27.970Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation",
+    "prompt": "あなたは英日翻訳の専門家です。TOEIC Part 4のスピーチ本文と質問・選択肢を日本語に翻訳してください。\n\n重要:\n- 自然で分かりやすい日本語に翻訳\n- ビジネス用語は適切な日本語表現を使用\n- 文脈を考慮した翻訳\n- 質問は明確で理解しやすい日本語に\n- 選択肢はラベル（A:, B:, C:, D:）を含めない\n\nReturn ONLY valid JSON without any markdown formatting or explanations.\n\nTranslate the following Part 4 content to Japanese:\n\nSpeech Text:\nWelcome to the Sunrise Beach Resort. Our reservation lines are open from 9 AM to 8 PM Monday through Friday. For booking a room, press 1. If you would like to know more about our spa and wellness packages, press 2. To speak with a concierge about local attractions or dining reservations, press 3. We are located right by the scenic Sunset Bay, offering stunning ocean views. Thank you for choosing Sunrise Beach Resort, where every stay is a memorable experience.\n\nQuestions and Options:\nQuestion 1: When are the reservation lines open at Sunrise Beach Resort?\nOptions:\nA: 9 AM to 5 PM daily\nB: 9 AM to 8 PM Monday through Friday\nC: 8 AM to 9 PM daily\nD: 10 AM to 8 PM Monday through Saturday\n\nQuestion 2: What is the main purpose of this announcement?\nOptions:\nA: To advertise local attractions\nB: To describe spa packages\nC: To explain how to reach the concierge\nD: To provide phone menu options\n\nQuestion 3: Where is Sunrise Beach Resort located?\nOptions:\nA: By the scenic Sunset Bay\nB: Near the downtown area\nC: Next to a popular shopping mall\nD: In the city center\n\nReturn the translations in this JSON format:\n{\n  \"textTranslation\": \"スピーチ全文の日本語訳\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\",\n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-09-19T08:43:32.908Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part4_unified_translation_response",
+    "prompt": "{\n  \"textTranslation\": \"サンライズビーチリゾートへようこそ。当リゾートの予約受付は、月曜日から金曜日の午前9時から午後8時までです。部屋の予約をご希望の場合は1を押してください。スパやウェルネスパッケージについて詳しく知りたい方は2を押してください。地元の観光地やお食事のご予約についてコンシェルジュとお話ししたい場合は3を押してください。当リゾートは風光明媚なサンセットベイのすぐそばに位置しており、素晴らしい海の景色を提供しています。サンライズビーチリゾートをお選びいただきありがとうございます。ここでの滞在が記憶に残るものとなることを願っています。\",\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"サンライズビーチリゾートの予約受付時間はいつですか？\",\n      \"optionTranslations\": [\n        \"午前9時から午後5時、毎日\",\n        \"午前9時から午後8時、月曜日から金曜日\",\n        \"午前8時から午後9時、毎日\",\n        \"午前10時から午後8時、月曜日から土曜日\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"この案内の主な目的は何ですか？\",\n      \"optionTranslations\": [\n        \"地元の観光地を宣伝すること\",\n        \"スパパッケージについて説明すること\",\n        \"コンシェルジュへの連絡方法を説明すること\",\n        \"電話のメニューオプションを提供すること\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"サンライズビーチリゾートはどこにありますか？\",\n      \"optionTranslations\": [\n        \"風光明媚なサンセットベイのそば\",\n        \"中心街の近く\",\n        \"人気のショッピングモールの隣\",\n        \"市の中心部\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

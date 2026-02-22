@@ -1,0 +1,214 @@
+{
+  "oldVoiceId": "CYw3kZ02Hs0563khs1Fj",
+  "newVoiceId": "IKne3meq5aSn9XLyUdCD",
+  "modifiedQuestions": [
+    "part1_178",
+    "part1_191",
+    "part1_258"
+  ],
+  "totalAudioFiles": 12,
+  "questionsData": [
+    {
+      "id": "part1_178",
+      "sceneDescription": "オフィスの大きな窓からは曇り空が広がり、雨が降り始めている様子が見える。デスクには複数のパソコンと書類が散らばっており、3人の社員がそれぞれ異なる作業をしている。1人は電話で顧客と話しており、もう1人はホワイトボードに何かを書き込んでいる。最後の1人はコーヒーカップを手に持ち、窓の外を見つめながら深く考え込んでいる。全体的に忙しそうな雰囲気が漂っている。",
+      "options": [
+        "Three employees are working on different tasks.",
+        "A man is presenting to a large audience.",
+        "A group is having lunch in the cafeteria.",
+        "Several people are boarding a train together."
+      ],
+      "correct": "A",
+      "explanation": "この場面では、3人の従業員が異なる作業に従事している。",
+      "optionTranslations": [
+        "3人の従業員がそれぞれの作業に取り組んでいる。",
+        "男性が大勢の聴衆にプレゼンテーションをしている。",
+        "グループがカフェテリアで昼食を取っている。",
+        "数人が一緒に電車に乗り込んでいる。"
+      ],
+      "difficulty": "hard",
+      "scene": "office",
+      "questionType": "general",
+      "createdAt": "2025-08-02T10:34:25.533Z",
+      "generationBatch": "part1_batch_1754130825803_wlq64dhka",
+      "audioFiles": [
+        {
+          "option": "A",
+          "text": "Three employees are working on different tasks.",
+          "audioPath": "/audio/part1/part1_178_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "A man is presenting to a large audience.",
+          "audioPath": "/audio/part1/part1_178_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "A group is having lunch in the cafeteria.",
+          "audioPath": "/audio/part1/part1_178_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        },
+        {
+          "option": "D",
+          "text": "Several people are boarding a train together.",
+          "audioPath": "/audio/part1/part1_178_option_d.mp3",
+          "labelAudioPath": "/audio/labels/option_d.mp3"
+        }
+      ],
+      "voiceProfile": {
+        "voiceId": "IKne3meq5aSn9XLyUdCD",
+        "gender": "male",
+        "accent": "Australian",
+        "country": "🇦🇺",
+        "age": "young",
+        "tone": "relaxed"
+      },
+      "partType": "part1",
+      "imagePath": "/images/part1/optimized/part1_178.jpg",
+      "originalImagePath": "/images/part1/original/part1_178.png",
+      "imagePrompt": "A realistic photograph of a busy office scene viewed through a large window showing a cloudy sky with rain beginning to fall. Inside, three employees are working on different tasks: one is talking on the phone with a client, another is writing on a whiteboard, and the last is holding a coffee cup while gazing thoughtfully out the window. The desk is cluttered with multiple computers and documents, creating a dynamic atmosphere. The lighting is natural, highlighting the activity and focus of the employees."
+    },
+    {
+      "id": "part1_191",
+      "sceneDescription": "活気あるヘアサロンでは、短くカールした髪のスタイリストが、クライアントの髪を丁寧にカットしています。もう一人の顧客は、ふかふかの赤い椅子に座りながら、ファッション雑誌をめくりながら静かに待っています。大きな窓から日差しが差し込み、磨かれた木の床に暖かい光を注いでいます。壁にはいくつかの作業台が並び、それぞれに鏡とガラスの棚に整然と並べられたヘアケア製品があります。背景では、受付係がフロントデスクで電話に出ており、活気ある雰囲気をさらに引き立てています。",
+      "options": [
+        "A stylist is washing a client's hair.",
+        "A customer is paying at the front desk.",
+        "Hair products are scattered on the floor.",
+        "A stylist is trimming a client's hair."
+      ],
+      "correct": "D",
+      "explanation": "正しい答えは、スタイリストが顧客の髪を切っていることで、これはシーンで起こっている主な行動です。",
+      "optionTranslations": [
+        "スタイリストが顧客の髪を洗っている。",
+        "顧客がフロントで支払いをしている。",
+        "床にヘア製品が散らばっている。",
+        "スタイリストが顧客の髪を切っている。"
+      ],
+      "difficulty": "hard",
+      "scene": "hair salon",
+      "questionType": "action",
+      "createdAt": "2025-08-02T19:30:58.513Z",
+      "generationBatch": "part1_batch_1754163025174_rum5ov0le",
+      "audioFiles": [
+        {
+          "option": "A",
+          "text": "A stylist is washing a client's hair.",
+          "audioPath": "/audio/part1/part1_191_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "A customer is paying at the front desk.",
+          "audioPath": "/audio/part1/part1_191_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Hair products are scattered on the floor.",
+          "audioPath": "/audio/part1/part1_191_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        },
+        {
+          "option": "D",
+          "text": "A stylist is trimming a client's hair.",
+          "audioPath": "/audio/part1/part1_191_option_d.mp3",
+          "labelAudioPath": "/audio/labels/option_d.mp3"
+        }
+      ],
+      "voiceProfile": {
+        "voiceId": "IKne3meq5aSn9XLyUdCD",
+        "gender": "male",
+        "accent": "Australian",
+        "country": "🇦🇺",
+        "age": "young",
+        "tone": "relaxed"
+      },
+      "partType": "part1",
+      "imagePath": "/images/part1/optimized/part1_191.jpg",
+      "originalImagePath": "/images/part1/original/part1_191.png",
+      "imagePrompt": "A stylist is trimming a client's hair. In a bustling hair salon, a stylist with short, curly hair is meticulously trimming a client's hair while another customer waits patiently in a plush, red chair, flipping through a fashion magazine. Sunlight streams through the large windows, casting a warm glow on the polished wooden floor. Several workstations line the walls, each equipped with mirrors and an array of hair care products neatly organized on glass shelves. In the background, a receptionist is answering a phone call at the front desk, adding to the lively atmosphere. A realistic photograph. Professional photography, clear details, natural lighting, no text or labels, everyday business or daily life scene."
+    },
+    {
+      "id": "part1_258",
+      "sceneDescription": "青いヘルメットとカラフルなジャケットを着た女性が自転車の隣に立ち、赤いジャケットを着た男性の方を見ています。その男性は自転車をラックに鍵で固定しています。ラックには数台の自転車が駐輪されており、背景には車が見え、駐車エリアであることがうかがえます。",
+      "originalSceneDescription": "On a sunny day, a woman wearing a blue helmet is locking her bicycle to a metal rack located in a busy parking area. Nearby, a man in a red jacket is adjusting the seat of another bicycle, while several other bikes are neatly parked side by side.",
+      "analyzedSceneDescription": "A woman wearing a blue helmet and colorful jacket is standing next to a bicycle, looking towards a man in a red jacket who is locking a bicycle to a rack. Several bicycles are parked in the rack, and cars are visible in the background, suggesting a parking area.",
+      "options": [
+        "A woman is sitting next to a bicycle.",
+        "A man is fixing a flat tire on his bike.",
+        "Cars are visible in the background.",
+        "A woman is riding a bicycle on the road."
+      ],
+      "correct": "C",
+      "explanation": "正解：背景に車が見える。",
+      "optionTranslations": [
+        "女性が自転車の隣に座っている。",
+        "男性が自転車のパンクを修理している。",
+        "背景に車が見える。",
+        "女性が道路で自転車に乗っている。"
+      ],
+      "difficulty": "easy",
+      "scene": "bicycle parking",
+      "questionType": "action",
+      "createdAt": "2025-08-03T08:51:43.912Z",
+      "generationBatch": "part1_batch_1754210657227_gnaotxmyq",
+      "audioFiles": [
+        {
+          "option": "A",
+          "text": "A woman is sitting next to a bicycle.",
+          "audioPath": "/audio/part1/part1_258_option_a.mp3",
+          "labelAudioPath": "/audio/labels/option_a.mp3"
+        },
+        {
+          "option": "B",
+          "text": "A man is fixing a flat tire on his bike.",
+          "audioPath": "/audio/part1/part1_258_option_b.mp3",
+          "labelAudioPath": "/audio/labels/option_b.mp3"
+        },
+        {
+          "option": "C",
+          "text": "Cars are visible in the background.",
+          "audioPath": "/audio/part1/part1_258_option_c.mp3",
+          "labelAudioPath": "/audio/labels/option_c.mp3"
+        },
+        {
+          "option": "D",
+          "text": "A woman is riding a bicycle on the road.",
+          "audioPath": "/audio/part1/part1_258_option_d.mp3",
+          "labelAudioPath": "/audio/labels/option_d.mp3"
+        }
+      ],
+      "voiceProfile": {
+        "voiceId": "IKne3meq5aSn9XLyUdCD",
+        "gender": "male",
+        "accent": "Australian",
+        "country": "🇦🇺",
+        "age": "young",
+        "tone": "relaxed"
+      },
+      "partType": "part1",
+      "imagePath": "/images/part1/optimized/part1_258.jpg",
+      "originalImagePath": "/images/part1/original/part1_258.png",
+      "imagePrompt": "A realistic photograph. On a sunny day, a woman wearing a blue helmet is locking her bicycle to a metal rack located in a busy parking area. Nearby, a man in a red jacket is adjusting the seat of another bicycle, while several other bikes are neatly parked side by side.. Professional photography, clear details, natural lighting, no text or labels, everyday business or daily life scene.",
+      "optionExplanations": {
+        "C": {
+          "type": "correct"
+        },
+        "A": {
+          "type": "confusing",
+          "explanation": "画像では女性が自転車の横に立っていますが、座っているとは見えません。"
+        },
+        "B": {
+          "type": "unrelated",
+          "explanation": "この選択肢は駐車場で自転車に関連する活動ですが、画像には写っていません。"
+        },
+        "D": {
+          "type": "unrelated",
+          "explanation": "この選択肢は駐車場の状況でよく見られる活動ですが、画像には写っていません。"
+        }
+      }
+    }
+  ]
+}

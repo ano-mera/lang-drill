@@ -1,0 +1,132 @@
+✅ ElevenLabs audio generator initialized
+🚀 Part 1 問題生成開始 (batchId: part1_batch_1754007742083_zfcdjgy81)
+📋 設定: difficulty=easy, count=1, topic=auto
+📝 次の問題IDは part1_83 から開始します
+Step 1 & 2: 各問題に対してランダムシーンと問題を生成中...
+  問題 1/1 を生成中...
+🎯 Selected scene: レストラン (index: 7/41)
+    シーン説明を生成中... (レストラン)
+🤖 Calling OpenAI GPT-4o for part1_scene_generation...
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 Raw response for part1_scene_generation: "[\n  {\n    \"sceneDescription\": \"レストランのテーブルで、ウェイターがメニューを持って微笑みながら立っており、2人の客がメニューを見ている。テーブルの上には水の入ったグラスとナプキンが置かれている。\",\n    \"difficulty\": \"easy\",\n    \"topic\": \"レストラン\"\n  }\n]"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_scene_generation
+🔍 Raw scene generation response: [
+  {
+    "sceneDescription": "レストランのテーブルで、ウェイターがメニューを持って微笑みながら立っており、2人の客がメニューを見ている。テーブルの上には水の入ったグラスとナプキンが置かれている。",
+    "difficulty": "easy",
+    "topic": "レストラン"
+  }
+]
+🔍 Cleaned scene response: [
+  {
+    "sceneDescription": "レストランのテーブルで、ウェイターがメニューを持って微笑みながら立っており、2人の客がメニューを見ている。テーブルの上には水の入ったグラスとナプキンが置かれている。",
+    "difficulty": "easy",
+    "topic": "レストラン"
+  }
+]
+    問題選択肢を生成中...
+🎲 Random correct position: B (index: 1/3)
+🤖 Calling OpenAI GPT-4o for part1_question_generation...
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 Raw response for part1_question_generation: "```json\n{\n  \"options\": [\n    \"A man is cooking in the kitchen.\",\n    \"A waiter is smiling while holding menus for two customers.\",\n    \"A couple is dancing in the restaurant.\",\n    \"A group of people is having a meeting at a table.\"\n  ],\n  \"correct\": \"B\",\n  \"explanation\": \"The scene accurately describes a waiter smiling and holding menus while two customers look at them.\",\n  \"difficulty\": \"easy\",\n  \"questionType\": \"general\"\n}\n```"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_question_generation
+🔍 Raw AI response: ```json
+{
+  "options": [
+    "A man is cooking in the kitchen.",
+    "A waiter is smiling while holding menus for two customers.",
+    "A couple is dancing in the restaurant.",
+    "A group of people is having a meeting at a table."
+  ],
+  "correct": "B",
+  "explanation": "The scene accurately describes a waiter smiling and holding menus while two customers look at them.",
+  "difficulty": "easy",
+  "questionType": "general"
+}
+```
+🔍 Cleaned response: {
+  "options": [
+    "A man is cooking in the kitchen.",
+    "A waiter is smiling while holding menus for two customers.",
+    "A couple is dancing in the restaurant.",
+    "A group of people is having a meeting at a table."
+  ],
+  "correct": "B",
+  "explanation": "The scene accurately describes a waiter smiling and holding menus while two customers look at them.",
+  "difficulty": "easy",
+  "questionType": "general"
+}
+    選択肢の翻訳を生成中...
+🤖 Calling OpenAI GPT-4o for part1_translation...
+🤖 Calling OpenAI GPT-4o for part1_translation...
+🤖 Calling OpenAI GPT-4o for part1_translation...
+🤖 Calling OpenAI GPT-4o for part1_translation...
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 Raw response for part1_translation: "男性がキッチンで料理をしています。"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_translation
+📝 Raw response for part1_translation: "カップルがレストランで踊っています。"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_translation
+📝 Raw response for part1_translation: "ウェイターが2人の客にメニューを持ちながら微笑んでいる。"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_translation
+📝 Raw response for part1_translation: "一群の人々がテーブルで会議をしています。"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_translation
+    解説の翻訳を生成中...
+🤖 Calling OpenAI GPT-4o for part1_translation...
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+📝 Raw response for part1_translation: "その場面では、ウェイターが笑顔でメニューを持ちながら、2人の客がそれを見ている様子が正確に描写されています。"
+📝 プロンプトログを保存しました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+✅ OpenAI response received successfully for part1_translation
+    音声ファイル生成中...
+🎵 Selected voice for question part1_83: p43fx6U8afP2xoq1Ai9f (female, Australian 🇦🇺)
+ElevenLabs: Generating audio for text: "A man is cooking in the kitchen...."
+ElevenLabs: Using voice: p43fx6U8afP2xoq1Ai9f (unknown, unknown )
+ElevenLabs: Audio saved to /home/ki/projects/eng/public/audio/part1/part1_83_option_a.mp3
+✅ Generated audio for option A: "A man is cooking in the kitchen."
+ElevenLabs: Generating audio for text: "A waiter is smiling while holding menus for two cu..."
+ElevenLabs: Using voice: p43fx6U8afP2xoq1Ai9f (unknown, unknown )
+ElevenLabs: Audio saved to /home/ki/projects/eng/public/audio/part1/part1_83_option_b.mp3
+✅ Generated audio for option B: "A waiter is smiling while holding menus for two customers."
+ElevenLabs: Generating audio for text: "A couple is dancing in the restaurant...."
+ElevenLabs: Using voice: p43fx6U8afP2xoq1Ai9f (unknown, unknown )
+ElevenLabs: Audio saved to /home/ki/projects/eng/public/audio/part1/part1_83_option_c.mp3
+✅ Generated audio for option C: "A couple is dancing in the restaurant."
+ElevenLabs: Generating audio for text: "A group of people is having a meeting at a table...."
+ElevenLabs: Using voice: p43fx6U8afP2xoq1Ai9f (unknown, unknown )
+ElevenLabs: Audio saved to /home/ki/projects/eng/public/audio/part1/part1_83_option_d.mp3
+✅ Generated audio for option D: "A group of people is having a meeting at a table."
+    ✅ 音声ファイル 4個生成完了
+  ✅ 問題 1 完了 (シーン: レストラン, 正解: B)
+Step 4: データベースに保存中...
+📁 データベースパス: /home/ki/projects/eng/src/data/part1-questions.json
+📖 既存データを読み込み中...
+🔍 読み込んだデータの先頭100文字: [
+  {
+    "id": "part1_part1_batch_1753083135245_xe8wp1ga9_5",
+    "sceneDescription": "図書館の閲覧室で、学生た
+✅ 既存の問題数: 63
+💾 保存予定の問題数: 64 (既存: 63, 新規: 1)
+✅ データベース更新完了: 1問をpart1-questions.jsonに追加
+
+🎉 Part 1 問題生成完了!
+📊 生成結果:
+   ✅ 成功: 1問
+   📝 Batch ID: part1_batch_1754007742083_zfcdjgy81
+   📈 難易度: easy
+   🏷️  トピック: レストラン
+   🎯 使用シーン: 1問すべて異なるランダムシーン
+   🎲 解答位置: B (ランダム分布)
+GENERATED_IDS:part1_83
+📝 プロンプトログを読み込みました: /home/ki/projects/eng/generator/logs/prompts/prompts-part1_batch_1754007742083_zfcdjgy81.json
+- 生成プロンプト: 1件
+- 品質チェックプロンプト: 0件
+- 修正プロンプト: 0件
+PROMPT_DATA:{"generationPrompts":[{"prompt":"You are a professional English to Japanese translator specializing in TOEIC test content. \n\nTranslate the given English text to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Use appropriate business/academic Japanese when needed\n- Maintain the meaning and tone of the original\n- Be suitable for language learners\n\nReturn only the Japanese translation without any explanation or additional text.\n\nTranslate to Japanese: The scene accurately describes a waiter smiling and holding menus while two customers look at them.","promptType":"part1_translation"}],"qualityCheckPrompts":[],"revisionPrompts":[]}

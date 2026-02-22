@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:57:26
+ログファイル: question-generation-medium-2025-07-25T10-57-26.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 167問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage139",
+  "title": "Meeting Schedule Confirmation",
+  "type": "email",
+  "content": "Subject: Confirming Our Upcoming Meeting\n\nDear Team,\n\nI hope this message finds you well. I am writing to confirm the details of our upcoming project meeting. We are scheduled to meet on Thursday, March 15th, at 3:00 PM. The meeting will be held in Conference Room B on the 2nd floor.\n\nPlease come prepared with your updates on the current project milestones. Additionally, we will discuss the new client requirements and how they impact our timelines. If you have any documents or reports to share, kindly send them to me by Wednesday, March 14th, so I can collate them for our discussion.\n\nLet me know if you have any questions or if the scheduled time poses any inconvenience.\n\nLooking forward to our productive meeting.\n\nBest regards,\nJohn Smith\nProject Manager",
+  "contentTranslation": "件名: 次回の会議の確認\n\nチームの皆さんへ、\n\nお元気ですか。次回のプロジェクト会議の詳細を確認するためにご連絡します。会議は3月15日木曜日の午後3時に予定されています。会議は2階の会議室Bで行われます。\n\n現在のプロジェクトの進捗についての更新を準備してきてください。また、新しいクライアントの要件とそれが我々のタイムラインにどのように影響するかについて議論します。共有する文書やレポートがある場合は、3月14日水曜日までに私に送信してください。ディスカッション用にまとめます。\n\n質問がある場合や、予定された時間に不都合がある場合はお知らせください。\n\n生産的な会議を楽しみにしています。\n\nよろしくお願いいたします。\nジョン・スミス\nプロジェクトマネージャー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から何が推測できますか？",
+      "options": [
+        "The team is behind schedule.",
+        "The project has new client requirements.",
+        "The meeting will be rescheduled.",
+        "John Smith is a new project manager."
+      ],
+      "optionTranslations": [
+        "チームはスケジュールに遅れています。",
+        "プロジェクトには新たなクライアントの要件があります。",
+        "会議は再スケジュールされます。",
+        "ジョン・スミスは新しいプロジェクトマネージャーです。"
+      ],
+      "correct": "B",
+      "explanation": "メール内で、ジョン・スミスは「新しいクライアントの要件」について議論すると述べています。これにより、プロジェクトに新たな要件が追加されたことが推測されます。"
+    },
+    {
+      "id": "q2",
+      "question": "When will the meeting take place?",
+      "questionTranslation": "会議はいつ行われますか？",
+      "options": [
+        "Wednesday, March 14th, at 3:00 PM",
+        "Thursday, March 15th, at 3:00 PM",
+        "Wednesday, March 14th, at 2:00 PM",
+        "Thursday, March 15th, at 2:00 PM"
+      ],
+      "optionTranslations": [
+        "3月14日水曜日の午後3時",
+        "3月15日木曜日の午後3時",
+        "3月14日水曜日の午後2時",
+        "3月15日木曜日の午後2時"
+      ],
+      "correct": "B",
+      "explanation": "メール内で、会議は「3月15日木曜日午後3時」に予定されていると明記されています。"
+    },
+    {
+      "id": "q3",
+      "question": "Where will the meeting be held?",
+      "questionTranslation": "会議はどこで行われますか？",
+      "options": [
+        "Conference Room A on the 2nd floor",
+        "Conference Room B on the 2nd floor",
+        "Conference Room C on the 3rd floor",
+        "Conference Room D on the 1st floor"
+      ],
+      "optionTranslations": [
+        "2階の会議室A",
+        "2階の会議室B",
+        "3階の会議室C",
+        "1階の会議室D"
+      ],
+      "correct": "B",
+      "explanation": "メールには、会議が「2階の会議室B」で行われると記されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 130,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 168問
+🆔 実際に追加されたID: passage139
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:57:45
+実行時間: 0.00秒

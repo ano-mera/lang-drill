@@ -1,0 +1,233 @@
+[
+  {
+    "timestamp": "2025-08-18T18:36:39.041Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":3,\"scenario\":null,\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 3,
+      "scenario": null,
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:36:39.074Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: service_inquiry\n- 業種: real_estate (Real Estate)\n- 正解位置: 問題1はB、問題2はB、問題3はC\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はReal Estate業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: B位置、問題3: C位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:36:53.644Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"service_inquiry\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Robert\", \"role\": \"Real Estate Agent\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"Sarah\", \"role\": \"Potential Home Buyer\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Hello, this is Robert from Sunrise Realty. How can I assist you today?\"},\n    {\"speaker\": \"B\", \"text\": \"Hi, I'm interested in learning more about the property you have listed on Oak Street. Could you tell me more about it?\"},\n    {\"speaker\": \"A\", \"text\": \"Sure, that property is a three-bedroom house with a spacious backyard. It's located in a quiet neighborhood close to local amenities.\"},\n    {\"speaker\": \"B\", \"text\": \"Sounds interesting. Could you tell me about the price and any additional costs involved?\"},\n    {\"speaker\": \"A\", \"text\": \"Of course. The listing price is $350,000. There might be some additional fees for closing costs and inspections.\"},\n    {\"speaker\": \"B\", \"text\": \"Thank you for the information. I'll discuss it with my partner and get back to you soon.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What is the woman interested in?\",\n      \"options\": [\"Inquiring about a three-bedroom apartment\", \"Learning more about a house on Oak Street\", \"Discussing financial advice\", \"Purchasing a rental property\"],\n      \"correct\": \"Learning more about a house on Oak Street\",\n      \"explanation\": \"女性は最初にオークストリートの物件について知りたいと述べています。このため、正解はBの'Learning more about a house on Oak Street'です。\",\n      \"questionType\": \"information\"\n    },\n    {\n      \"question\": \"What does the man say about the property's location?\",\n      \"options\": [\"It is downtown\", \"It is in a quiet neighborhood\", \"It is near a shopping mall\", \"It overlooks the city skyline\"],\n      \"correct\": \"It is in a quiet neighborhood\",\n      \"explanation\": \"男性はその物件が閑静な住宅街にあると述べています。このため、正解はBの'It is in a quiet neighborhood'です。\",\n      \"questionType\": \"location\"\n    },\n    {\n      \"question\": \"What additional costs does the man mention?\",\n      \"options\": [\"Property taxes\", \"Closing costs and inspections\", \"Renovation fees\", \"Monthly utilities\"],\n      \"correct\": \"Closing costs and inspections\",\n      \"explanation\": \"男性は追加費用としてクロージングコストと検査を挙げています。このため、正解はCの'Closing costs and inspections'です。\",\n      \"questionType\": \"costs\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:36:53.645Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: service_inquiry\n\nConversation:\nA: Hello, this is Robert from Sunrise Realty. How can I assist you today?\nB: Hi, I'm interested in learning more about the property you have listed on Oak Street. Could you tell me more about it?\nA: Sure, that property is a three-bedroom house with a spacious backyard. It's located in a quiet neighborhood close to local amenities.\nB: Sounds interesting. Could you tell me about the price and any additional costs involved?\nA: Of course. The listing price is $350,000. There might be some additional fees for closing costs and inspections.\nB: Thank you for the information. I'll discuss it with my partner and get back to you soon.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:36:57.218Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"サービス問い合わせ\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"こんにちは、サンライズ不動産のロバートです。どのようにお手伝いできますか？\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"こんにちは、オークストリートに掲載されている物件について詳しく知りたいのですが、教えていただけますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。その物件は3ベッドルームの家で、広々とした裏庭があります。周辺は静かな地域で、地元の施設にも近いです。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"興味深いですね。価格とその他の費用について教えてもらえますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。掲載価格は35万ドルです。締結費用や検査のための追加費用がかかる場合があります。\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"情報をありがとうございます。パートナーと相談して、またご連絡します。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:36:57.219Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What is the woman interested in?\nOptions:\nA: Inquiring about a three-bedroom apartment\nB: Learning more about a house on Oak Street\nC: Discussing financial advice\nD: Purchasing a rental property\n\nQuestion 2: What does the man say about the property's location?\nOptions:\nA: It is downtown\nB: It is in a quiet neighborhood\nC: It is near a shopping mall\nD: It overlooks the city skyline\n\nQuestion 3: What additional costs does the man mention?\nOptions:\nA: Property taxes\nB: Closing costs and inspections\nC: Renovation fees\nD: Monthly utilities\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:00.136Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性は何に興味がありますか？\",\n      \"optionTranslations\": [\n        \"3ベッドルームのアパートについて問い合わせること\",\n        \"オーク通りの家についてもっと知ること\",\n        \"財務アドバイスについて話し合うこと\",\n        \"賃貸物件を購入すること\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性はその物件の場所について何と言っていますか？\",\n      \"optionTranslations\": [\n        \"ダウンタウンにあります\",\n        \"静かな住宅街にあります\",\n        \"ショッピングモールの近くにあります\",\n        \"市のスカイラインを眺めることができます\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性が言及している追加費用は何ですか？\",\n      \"optionTranslations\": [\n        \"固定資産税\",\n        \"クロージングコストと検査費用\",\n        \"改装費\",\n        \"月々の光熱費\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:12.190Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: client_meeting\n- 業種: security_services (Security Services)\n- 正解位置: 問題1はB、問題2はA、問題3はA\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは女性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はSecurity Services業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: A位置、問題3: A位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:24.951Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "{\n  \"scenario\": \"client_meeting\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"John\", \"role\": \"Security Consultant\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"Sarah\", \"role\": \"Client Representative\", \"gender\": \"female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"I'm glad we could meet today to discuss your security needs. Can you tell me more about the current challenges you're facing?\"},\n    {\"speaker\": \"B\", \"text\": \"Certainly, John. We're concerned about the security of our office space, especially after the recent incidents reported in the area.\"},\n    {\"speaker\": \"A\", \"text\": \"I see. Increasing incidents are definitely a cause for concern. Have you considered implementing an access control system?\"},\n    {\"speaker\": \"B\", \"text\": \"Yes, but we're unsure about the best options. We need something reliable and cost-effective.\"},\n    {\"speaker\": \"A\", \"text\": \"I recommend our new biometric access system. It's both secure and efficient, and we've received positive feedback from several of our clients.\"},\n    {\"speaker\": \"B\", \"text\": \"That sounds promising. Could you send me more details and a quote by the end of this week?\"},\n    {\"speaker\": \"A\", \"text\": \"Absolutely, I'll get that information to you by Friday. Let's ensure your office is secure as soon as possible.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What is the woman's main concern?\",\n      \"options\": [\"The office location\", \"The security of the office space\", \"The cost of security systems\", \"The reliability of staff\"],\n      \"correct\": \"The security of the office space\",\n      \"explanation\": \"会話の冒頭で、女性がオフィスのスペースのセキュリティについて懸念があると述べている。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"What does the man suggest as a solution?\",\n      \"options\": [\"Hiring more security staff\", \"Implementing a biometric access system\", \"Relocating the office\", \"Installing surveillance cameras\"],\n      \"correct\": \"Implementing a biometric access system\",\n      \"explanation\": \"男性は新しいバイオメトリックアクセスシステムをすすめており、それが解決策として示されている。\",\n      \"questionType\": \"Suggestion\"\n    },\n    {\n      \"question\": \"What does the woman request at the end of the conversation?\",\n      \"options\": [\"A demonstration of the system\", \"Details and a quote by the end of the week\", \"Immediate installation of the system\", \"A meeting with the security team\"],\n      \"correct\": \"Details and a quote by the end of the week\",\n      \"explanation\": \"女性は週末までに詳細と見積もりを送るように依頼している。\",\n      \"questionType\": \"Request\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:24.952Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: client_meeting\n\nConversation:\nA: I'm glad we could meet today to discuss your security needs. Can you tell me more about the current challenges you're facing?\nB: Certainly, John. We're concerned about the security of our office space, especially after the recent incidents reported in the area.\nA: I see. Increasing incidents are definitely a cause for concern. Have you considered implementing an access control system?\nB: Yes, but we're unsure about the best options. We need something reliable and cost-effective.\nA: I recommend our new biometric access system. It's both secure and efficient, and we've received positive feedback from several of our clients.\nB: That sounds promising. Could you send me more details and a quote by the end of this week?\nA: Absolutely, I'll get that information to you by Friday. Let's ensure your office is secure as soon as possible.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:30.167Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"クライアント会議\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"今日はセキュリティのニーズについて話し合うことができて嬉しいです。現在直面している課題について教えていただけますか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"もちろんです、ジョン。最近この地域で起きた事件を受けて、オフィスのセキュリティが心配です。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"そうですか。事件が増えているのは確かに心配の種ですね。アクセス制御システムの導入は考えましたか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"はい、でもどれが最適かわからなくて。信頼できてコストパフォーマンスの良いものが必要です。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"私たちの新しい生体認証アクセスシステムをお勧めします。安全で効率的ですし、いくつかのクライアントから好評をいただいています。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それは期待できそうですね。今週中に詳細と見積もりを送ってもらえますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。金曜日までに情報をお送りします。オフィスができるだけ早く安全になるようにしましょう。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:30.168Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What is the woman's main concern?\nOptions:\nA: The office location\nB: The security of the office space\nC: The cost of security systems\nD: The reliability of staff\n\nQuestion 2: What does the man suggest as a solution?\nOptions:\nA: Hiring more security staff\nB: Implementing a biometric access system\nC: Relocating the office\nD: Installing surveillance cameras\n\nQuestion 3: What does the woman request at the end of the conversation?\nOptions:\nA: A demonstration of the system\nB: Details and a quote by the end of the week\nC: Immediate installation of the system\nD: A meeting with the security team\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:32.752Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"女性の主な懸念は何ですか？\",\n      \"optionTranslations\": [\n        \"オフィスの場所\",\n        \"オフィススペースのセキュリティ\",\n        \"セキュリティシステムのコスト\",\n        \"スタッフの信頼性\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性はどのような解決策を提案していますか？\",\n      \"optionTranslations\": [\n        \"警備スタッフの増員\",\n        \"生体認証アクセスシステムの導入\",\n        \"オフィスの移転\",\n        \"監視カメラの設置\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"会話の最後に女性は何を要求していますか？\",\n      \"optionTranslations\": [\n        \"システムのデモ\",\n        \"週末までの詳細と見積もり\",\n        \"システムの即時設置\",\n        \"警備チームとの会議\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:37:49.048Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: order_issue\n- 業種: non_profit (Non-profit / NGO)\n- 正解位置: 問題1はB、問題2はA、問題3はA\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは男性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はNon-profit / NGO業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: B位置、問題2: A位置、問題3: A位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:38:06.286Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "```json\n{\n  \"scenario\": \"order_issue\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Michael\", \"role\": \"Logistics Coordinator\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"James\", \"role\": \"Program Manager\", \"gender\": \"male\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Hey, James, I just received a notification from the supplier. It looks like there's a delay in the shipment of medical supplies we ordered for the outreach program.\"},\n    {\"speaker\": \"B\", \"text\": \"That's concerning. Do they mention how long the delay will be? We really need those materials by the end of this week.\"},\n    {\"speaker\": \"A\", \"text\": \"They're estimating an additional two weeks due to logistical challenges. I'm looking into alternative options to expedite a partial shipment if possible.\"},\n    {\"speaker\": \"B\", \"text\": \"Okay, we may need to adjust our plans. Can you prioritize the essential items for the partial shipment?\"},\n    {\"speaker\": \"A\", \"text\": \"Sure, I'll coordinate with Carlos in the procurement team to see which items are most critical and can be sent first.\"},\n    {\"speaker\": \"B\", \"text\": \"Great. Please keep me updated on the progress. We might need to inform the field team about the change in schedule if the core materials don't arrive on time.\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What problem does the conversation primarily focus on?\",\n      \"options\": [\n        \"The man has misplaced an order.\",\n        \"There is a delay in the shipment of supplies.\",\n        \"The shipment has been canceled entirely.\",\n        \"The supplier increased the prices unexpectedly.\"\n      ],\n      \"correct\": \"There is a delay in the shipment of supplies.\",\n      \"explanation\": \"会話の冒頭で、男性は供給品の配送遅延に関する通知を受け取ったことを述べています。これが会話の主な焦点です。\",\n      \"questionType\": \"Main Idea\"\n    },\n    {\n      \"question\": \"What does the first man suggest doing to manage the delay?\",\n      \"options\": [\n        \"Look into alternative options for a partial shipment.\",\n        \"Cancel the entire order and find a new supplier.\",\n        \"Increase the budget to expedite the shipment.\",\n        \"Wait and see if the supplier can speed up the process.\"\n      ],\n      \"correct\": \"Look into alternative options for a partial shipment.\",\n      \"explanation\": \"最初の男性は、部分的な出荷を迅速化するための代替案を検討していると述べています。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"What action does the second man ask for?\",\n      \"options\": [\n        \"Prioritize essential items for the partial shipment.\",\n        \"Contact other NGOs for assistance.\",\n        \"Cancel all non-essential tasks.\",\n        \"Prepare a report on the delay.\"\n      ],\n      \"correct\": \"Prioritize essential items for the partial shipment.\",\n      \"explanation\": \"第二の男性は、部分的な出荷のために重要な物品を優先するよう求めています。\",\n      \"questionType\": \"Inference\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:38:06.292Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: order_issue\n\nConversation:\nA: Hey, James, I just received a notification from the supplier. It looks like there's a delay in the shipment of medical supplies we ordered for the outreach program.\nB: That's concerning. Do they mention how long the delay will be? We really need those materials by the end of this week.\nA: They're estimating an additional two weeks due to logistical challenges. I'm looking into alternative options to expedite a partial shipment if possible.\nB: Okay, we may need to adjust our plans. Can you prioritize the essential items for the partial shipment?\nA: Sure, I'll coordinate with Carlos in the procurement team to see which items are most critical and can be sent first.\nB: Great. Please keep me updated on the progress. We might need to inform the field team about the change in schedule if the core materials don't arrive on time.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:38:11.907Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"注文の問題\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"ねえ、ジェームズ、サプライヤーから通知を受け取ったんだけど、私たちがアウトリーチプログラムのために注文した医療品の出荷が遅れるみたいだ。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"それは心配だね。遅延がどれくらいになるか言ってる？私たちは今週末までにその資材が本当に必要なんだ。\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"物流上の問題でさらに2週間かかると予測されている。可能なら部分的な出荷を早める代替案を検討中だよ。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"わかった、計画を調整する必要があるかもしれないね。部分出荷の重要なアイテムを優先してくれる？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろん、調達チームのカルロスと連携して、最も重要なアイテムを優先的に出荷できるか確認するよ。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"いいね。進捗状況を教えてね。必要な資材が時間通りに届かない場合、現地チームにスケジュール変更を知らせる必要があるかもね。\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:38:11.908Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What problem does the conversation primarily focus on?\nOptions:\nA: The man has misplaced an order.\nB: There is a delay in the shipment of supplies.\nC: The shipment has been canceled entirely.\nD: The supplier increased the prices unexpectedly.\n\nQuestion 2: What does the first man suggest doing to manage the delay?\nOptions:\nA: Look into alternative options for a partial shipment.\nB: Cancel the entire order and find a new supplier.\nC: Increase the budget to expedite the shipment.\nD: Wait and see if the supplier can speed up the process.\n\nQuestion 3: What action does the second man ask for?\nOptions:\nA: Prioritize essential items for the partial shipment.\nB: Contact other NGOs for assistance.\nC: Cancel all non-essential tasks.\nD: Prepare a report on the delay.\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:38:15.918Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"質問1: 会話の主な焦点はどの問題ですか？\",\n      \"optionTranslations\": [\n        \"A: 男性が注文を間違えた。\",\n        \"B: 供給品の出荷が遅れている。\",\n        \"C: 出荷が完全にキャンセルされた。\",\n        \"D: 供給業者が予期せず価格を上げた。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問2: 最初の男性が遅れを管理するために提案したことは何ですか？\",\n      \"optionTranslations\": [\n        \"A: 部分的な出荷のための代替案を検討する。\",\n        \"B: 全注文をキャンセルして新しい供給業者を見つける。\",\n        \"C: 出荷を迅速化するために予算を増やす。\",\n        \"D: 供給業者がプロセスを早められるか様子を見る。\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"質問3: 2人目の男性が求めた行動は何ですか？\",\n      \"optionTranslations\": [\n        \"A: 部分出荷のために重要なアイテムを優先する。\",\n        \"B: 他のNGOに支援を求める。\",\n        \"C: 重要でない作業を全てキャンセルする。\",\n        \"D: 遅延に関する報告書を作成する。\"\n      ]\n    }\n  ]\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

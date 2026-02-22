@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/22 15:21:22
+ログファイル: question-generation-medium-2025-07-22T15-21-22.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 161問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage132",
+  "title": "Meeting Rescheduling",
+  "type": "email",
+  "content": "Subject: Rescheduling Our Upcoming Meeting\n\nDear Team,\n\nI hope this message finds you well. Due to a scheduling conflict, we need to reschedule our meeting originally planned for this Thursday at 3 PM. I apologize for any inconvenience this may cause.\n\nCould everyone please confirm their availability for next Monday or Wednesday at 10 AM? It is important that we choose a time that accommodates everyone’s schedule. Please reply to this email by tomorrow, so we can finalize the new meeting time.\n\nAdditionally, if there are any agenda items you would like to discuss, please let me know. I want to ensure we cover all necessary topics during our session.\n\nThank you for your understanding and cooperation.\n\nBest regards,\nJohn Smith\nProject Manager",
+  "contentTranslation": "件名: 次回の会議の再調整について\n\nチームの皆さんへ\n\nこのメールが皆さんのもとに届いていることを願っています。スケジュールの都合により、今週木曜日午後3時に予定していた会議を再調整する必要があります。ご迷惑をおかけして申し訳ありません。\n\n来週の月曜日または水曜日の午前10時に皆さんのご都合をお知らせいただけますか？皆さんのスケジュールに合わせた時間を選びたいと思います。明日までにこのメールに返信していただければ、新しい会議時間を確定できます。\n\nまた、議題として取り上げたい項目があればお知らせください。会議中に必要なトピックをすべてカバーしたいと思います。\n\nご理解とご協力に感謝いたします。\n\n宜しくお願いいたします。\nジョン・スミス\nプロジェクトマネージャー",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To cancel the meeting",
+        "To propose a new project",
+        "To reschedule the meeting",
+        "To introduce a new team member"
+      ],
+      "optionTranslations": [
+        "会議をキャンセルすること",
+        "新しいプロジェクトを提案すること",
+        "会議の日程を変更すること",
+        "新しいチームメンバーを紹介すること"
+      ],
+      "correct": "C",
+      "explanation": "文書の冒頭で「Due to a scheduling conflict, we need to reschedule our meeting」と述べていることから、会議の日程を変更することが主な目的であることがわかります。"
+    },
+    {
+      "id": "q2",
+      "question": "Who is responsible for rescheduling the meeting?",
+      "questionTranslation": "会議の日程を変更する責任者は誰ですか？",
+      "options": [
+        "The project manager",
+        "A team member",
+        "The HR department",
+        "The CEO"
+      ],
+      "optionTranslations": [
+        "プロジェクトマネージャー",
+        "チームメンバー",
+        "人事部",
+        "CEO"
+      ],
+      "correct": "A",
+      "explanation": "メールの最後に「Best regards, John Smith, Project Manager」と署名されていることから、プロジェクトマネージャーであるJohn Smithが責任者であると判断できます。"
+    },
+    {
+      "id": "q3",
+      "question": "What is the deadline for confirming availability?",
+      "questionTranslation": "出席可能日を確認する締め切りはいつですか？",
+      "options": [
+        "By the end of today",
+        "By tomorrow",
+        "By this Friday",
+        "By next week"
+      ],
+      "optionTranslations": [
+        "今日中",
+        "明日まで",
+        "今週の金曜日まで",
+        "来週まで"
+      ],
+      "correct": "B",
+      "explanation": "文書内で「Please reply to this email by tomorrow」と記載されているため、明日が締め切りであることがわかります。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 123,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 162問
+🆔 実際に追加されたID: 
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/22 15:21:47
+実行時間: 0.00秒

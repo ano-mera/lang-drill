@@ -1,0 +1,116 @@
+=== TOEIC問題生成ログ ===
+開始時刻: 2025/7/25 10:44:49
+ログファイル: question-generation-medium-2025-07-25T10-44-49.log
+モード: 本番出力
+難易度: MEDIUM難易度のみ
+問題タイプ: 通常
+資料タイプ: 単一資料問題
+生成問題数: 1問
+
+既存の問題数: 163問
+
+=== 生成結果 ===
+✅ 成功: 1問
+❌ 失敗: 0問
+💰 推定API呼び出し回数: 2回
+
+=== 生成された問題のJSONデータ ===
+
+【問題 1】
+{
+  "id": "passage135",
+  "title": "",
+  "type": "email",
+  "content": "Subject: Scheduling a Follow-up Meeting\n\nDear Ms. Tanaka,\n\nI hope this message finds you well. Following our recent discussions, I would like to schedule a follow-up meeting to review the project progress and discuss any outstanding issues. Could you please let me know your availability for next week? I suggest either Tuesday or Thursday afternoon.\n\nAdditionally, please prepare any necessary documents related to the current project status before our meeting. If there are any specific topics you would like to address, feel free to include them in your agenda items.\n\nLooking forward to your response.\n\nBest regards,\nJohn Smith",
+  "contentTranslation": "件名: フォローアップ会議のスケジュールについて\n\n田中様\n\nお元気でお過ごしのことと思います。最近の話し合いに続いて、プロジェクトの進捗を確認し、未解決の問題について議論するためのフォローアップ会議を設定したいと思います。来週のご都合をお知らせいただけますか？ 火曜日または木曜日の午後を提案いたします。\n\nまた、会議前に現在のプロジェクト状況に関連する必要な書類を準備してください。取り上げたい特定のトピックがあれば、議題項目に含めてください。\n\nご返信をお待ちしております。\n\nよろしくお願いいたします。\nジョン・スミス",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the main purpose of this document?",
+      "questionTranslation": "この文書の主な目的は何ですか？",
+      "options": [
+        "To schedule a follow-up meeting",
+        "To announce a project completion",
+        "To request a project proposal",
+        "To introduce a new team member"
+      ],
+      "optionTranslations": [
+        "フォローアップ会議をスケジュールするため",
+        "プロジェクトの完了を発表するため",
+        "プロジェクト提案を依頼するため",
+        "新しいチームメンバーを紹介するため"
+      ],
+      "correct": "A",
+      "explanation": "文書の冒頭で、フォローアップ会議をスケジュールする旨が述べられています。"
+    },
+    {
+      "id": "q2",
+      "question": "Who should be contacted regarding the project issues?",
+      "questionTranslation": "プロジェクトの問題については誰に連絡するべきですか？",
+      "options": [
+        "Ms. Tanaka",
+        "John Smith",
+        "The project manager",
+        "The team leader"
+      ],
+      "optionTranslations": [
+        "田中さん",
+        "ジョン・スミス",
+        "プロジェクトマネージャー",
+        "チームリーダー"
+      ],
+      "correct": "B",
+      "explanation": "メールはジョン・スミスから送信されており、彼が会議の調整を行っています。"
+    },
+    {
+      "id": "q3",
+      "question": "What can be inferred from the information provided?",
+      "questionTranslation": "提供された情報から推測できることは何ですか？",
+      "options": [
+        "The project is facing some issues.",
+        "The project is already completed.",
+        "The meeting is to be held online.",
+        "Ms. Tanaka is the project manager."
+      ],
+      "optionTranslations": [
+        "プロジェクトはいくつかの問題に直面している。",
+        "プロジェクトはすでに完了している。",
+        "会議はオンラインで開催される予定である。",
+        "田中さんがプロジェクトマネージャーである。"
+      ],
+      "correct": "A",
+      "explanation": "文中で「outstanding issues」という言葉が使われており、問題があることが示唆されています。"
+    }
+  ],
+  "metadata": {
+    "difficulty": "medium",
+    "estimatedTime": 300,
+    "wordCount": 99,
+    "questionCount": 3,
+    "passageType": "email",
+    "topic": "meeting_scheduling"
+  }
+}
+
+---
+
+=== データベース更新結果 ===
+💾 データベース更新完了: 1問を追加
+📊 総問題数: 164問
+🆔 実際に追加されたID: 
+
+難易度別内訳:
+  初級 (Easy): 0問
+  中級 (Medium): 1問
+  上級 (Hard): 0問
+
+📄 文書タイプ別内訳:
+  メール: 1問
+  広告: 0問
+  記事: 0問
+  カスタマー対応: 0問
+  社内チャット: 0問
+
+=== 実行完了 ===
+終了時刻: 2025/7/25 10:45:02
+実行時間: 0.00秒

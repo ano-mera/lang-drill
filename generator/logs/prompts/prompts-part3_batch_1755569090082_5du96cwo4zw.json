@@ -1,0 +1,89 @@
+[
+  {
+    "timestamp": "2025-08-19T02:04:50.085Z",
+    "functionName": "start",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "generation_start",
+    "prompt": "Part 3 generation started with config: {\"difficulty\":\"medium\",\"count\":1,\"scenario\":\"onboarding_process\",\"industry\":null}",
+    "metadata": {
+      "difficulty": "medium",
+      "count": 1,
+      "scenario": "onboarding_process",
+      "industry": null
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:04:50.125Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation",
+    "prompt": "あなたはTOEIC Part 3のテスト作成専門家で、2-3人の会話形式の英語リスニング問題の作成を専門としています。\n\nTOEIC Part 3の形式:\n- 2-3人による会話（30-60秒程度）\n- 会話内容に関する3問の理解問題\n- 各問題は4つの選択肢（A, B, C, D）\n- 音声のみで会話と問題が読み上げられる\n\n会話の特徴:\n- 自然で実用的な英語の会話\n- ビジネスシーンや日常生活の場面\n- 明確な文脈と目的がある対話\n- 情報交換、問題解決、依頼・応答などを含む\n\n重要な指示:\n- 各話者に明確な役割と目的を設定\n- 自然な会話の流れを作成\n- 3問の質問に答えられる十分な情報を含む\n- 文化的に中立な内容にする\n- 実際のTOEICレベルの語彙と表現を使用\n\n【重要】TOEIC Part 3 問題文での話者指定方法:\n- 問題文では話者の名前を使わず、「the man」「the woman」で指定する\n- 同性が複数いる場合は「the first woman」「the second woman」を使用\n- 3人の場合は「the third speaker」なども可能\n- 例: ○「What does the man suggest?」 ×「What does John suggest?」\n\n以下の構造のJSONのみを返してください（他のテキストは含めない）:\n{\n  \"scenario\": \"シナリオ名\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"},\n    {\"id\": \"B\", \"name\": \"話者名\", \"role\": \"役割\", \"gender\": \"male/female\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"発話内容\"},\n    {\"speaker\": \"B\", \"text\": \"発話内容\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"問題文\",\n      \"options\": [\"選択肢A\", \"選択肢B\", \"選択肢C\", \"選択肢D\"],\n      \"correct\": \"正解\",\n      \"explanation\": \"なぜこの選択肢が正解なのかの日本語解説\",\n      \"questionType\": \"問題タイプ\"\n    }\n  ],\n  \"difficulty\": \"難易度\"\n}\n\n以下の設定でTOEIC Part 3問題を1問生成してください:\n\n必須設定:\n- 難易度: medium\n- シナリオ: onboarding_process\n- 業種: healthcare (Healthcare)\n- 正解位置: 問題1はA、問題2はA、問題3はC\n- 話者数: 2人\n- 話者の性別: 話者Aは男性、話者Bは男性\n\n要求事項:\n- 指定されたシナリオと業種に適した自然な英語の会話を作成\n- 会話の内容はHealthcare業界の文脈に合わせて作成\n- 会話は4-8回のやりとりで構成\n- 3問の理解問題を作成（各問題は異なる側面を問う）\n- 話者の名前と役割は指定された性別に適したものを使用\n- speakers配列の各要素にgenderフィールドを必ず含める（\"male\"または\"female\"）\n- 正解は指定された位置に配置（問題1: A位置、問題2: A位置、問題3: C位置）\n- 選択肢には「A.」「B.」「C.」「D.」などの文字を絶対に追加しないでください\n- 3つの不正解選択肢は巧妙だが明確に間違った内容\n- 実際のTOEIC試験レベルの難易度を維持\n- 会話から推論できる情報も問題に含める\n- 各問題の解説（explanation）は日本語で記述し、なぜその選択肢が正解なのかを明確に説明\n\n【重要】問題文での話者指定方法（TOEIC標準）:\n- 男性1人の場合: \"What does the man...\" を使用\n- 女性1人の場合: \"What does the woman...\" を使用  \n- 同性が複数の場合: \"What does the first woman...\" \"What does the second woman...\" を使用\n- 3人の場合: \"What does the third speaker...\" のような表現も可能\n- 決して会話中の名前（John, Emily等）を問題文で使用しないこと\n- 例: ✓ \"What does the woman ask the man to do?\" / ✗ \"What does Emily ask John to do?\"\n\n会話の長さ:\n- Easy: 4-5回のやりとり、基本的な語彙\n- Medium: 5-6回のやりとり、中程度の語彙\n- Hard: 6-8回のやりとり、高度な語彙と複雑な状況\n\n必ずJSONのみを返してください。",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:05:08.681Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_conversation_generation_response",
+    "prompt": "{\n  \"scenario\": \"onboarding_process\",\n  \"speakers\": [\n    {\"id\": \"A\", \"name\": \"Dr. Smith\", \"role\": \"HR Manager\", \"gender\": \"male\"},\n    {\"id\": \"B\", \"name\": \"Mr. Johnson\", \"role\": \"New Employee\", \"gender\": \"male\"}\n  ],\n  \"conversation\": [\n    {\"speaker\": \"A\", \"text\": \"Welcome to the team, Mr. Johnson. As part of the onboarding process, have you had a chance to review the healthcare compliance training materials?\"},\n    {\"speaker\": \"B\", \"text\": \"Yes, I started looking through them yesterday, but I'm not entirely sure about the patient privacy regulations. Could you explain those a bit more?\"},\n    {\"speaker\": \"A\", \"text\": \"Of course. Maintaining patient privacy is critical. You need to ensure that any personal health information is only accessible to authorized personnel. We have a handbook on these regulations in the intranet.\"},\n    {\"speaker\": \"B\", \"text\": \"I see. And is there a deadline by which I need to complete this training?\"},\n    {\"speaker\": \"A\", \"text\": \"You'll need to finish it by the end of the month, but if you have any more questions, feel free to ask. We're here to support you.\"},\n    {\"speaker\": \"B\", \"text\": \"Great, I'll make sure to go through everything by then. Thank you for your help!\"}\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What has the new employee already started reviewing?\",\n      \"options\": [\"Healthcare compliance training materials\", \"Patient treatment guidelines\", \"HR policies\", \"Team meeting schedules\"],\n      \"correct\": \"Healthcare compliance training materials\",\n      \"explanation\": \"会話の最初で、Mr. Johnsonが既に医療コンプライアンス研修資料を確認し始めたことを述べています。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"According to the man, where can employee find more information on patient privacy regulations?\",\n      \"options\": [\"In the handbook on the intranet\", \"In the office library\", \"Through an online webinar\", \"In a printed booklet\"],\n      \"correct\": \"In the handbook on the intranet\",\n      \"explanation\": \"Dr. Smithは、イントラネット内にあるハンドブックに患者プライバシー規制の情報があると述べています。\",\n      \"questionType\": \"Detail\"\n    },\n    {\n      \"question\": \"What deadline does the man mention for completing the training?\",\n      \"options\": [\"By the end of the month\", \"By the end of the week\", \"Two weeks from now\", \"By next month\"],\n      \"correct\": \"By the end of the month\",\n      \"explanation\": \"Dr. Smithは、研修の完了期限が今月末であると説明しています。\",\n      \"questionType\": \"Time\"\n    }\n  ],\n  \"difficulty\": \"medium\"\n}",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:05:08.682Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 conversation content.\n\nTranslate the given scenario and conversation to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain the conversational tone and context\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"scenarioTranslation\": \"シナリオの日本語翻訳\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"発話の日本語翻訳\"\n    },\n    {\n      \"speaker\": \"B\", \n      \"translation\": \"発話の日本語翻訳\"\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following scenario and conversation to Japanese:\n\nScenario: onboarding_process\n\nConversation:\nA: Welcome to the team, Mr. Johnson. As part of the onboarding process, have you had a chance to review the healthcare compliance training materials?\nB: Yes, I started looking through them yesterday, but I'm not entirely sure about the patient privacy regulations. Could you explain those a bit more?\nA: Of course. Maintaining patient privacy is critical. You need to ensure that any personal health information is only accessible to authorized personnel. We have a handbook on these regulations in the intranet.\nB: I see. And is there a deadline by which I need to complete this training?\nA: You'll need to finish it by the end of the month, but if you have any more questions, feel free to ask. We're here to support you.\nB: Great, I'll make sure to go through everything by then. Thank you for your help!\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:05:14.505Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_conversation_translation_response",
+    "prompt": "```json\n{\n  \"scenarioTranslation\": \"入社プロセス\",\n  \"conversationTranslations\": [\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"ジョンソンさん、チームへようこそ。入社プロセスの一環として、健康管理コンプライアンスのトレーニング資料に目を通されましたか？\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"はい、昨日から見始めたのですが、患者のプライバシー規制について完全には理解できませんでした。もう少し説明してもらえますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"もちろんです。患者のプライバシーを守ることは非常に重要です。個人の健康情報は許可された関係者のみがアクセスできるようにしてください。社内ネットのハンドブックにこれらの規制についての情報があります。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"わかりました。それで、このトレーニングはいつまでに完了する必要がありますか？\"\n    },\n    {\n      \"speaker\": \"A\",\n      \"translation\": \"今月末までに終わらせてください。ただし、質問があれば気軽に聞いてください。私たちはあなたを支援するつもりです。\"\n    },\n    {\n      \"speaker\": \"B\",\n      \"translation\": \"わかりました、それまでにすべて確認するようにします。助けていただきありがとうございます！\"\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:05:14.506Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation",
+    "prompt": "You are a professional English to Japanese translator specializing in TOEIC Part 3 questions and options.\n\nTranslate the given questions and options to natural Japanese that would be appropriate for Japanese TOEIC test takers. The translation should:\n- Be accurate and natural\n- Maintain question clarity and precision\n- Use appropriate business/daily life Japanese when needed\n- Preserve the meaning and nuance of the original\n- Be suitable for language learners\n- Be concise and clear\n\nReturn the result in the following JSON format:\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"問題文の日本語翻訳\",\n      \"optionTranslations\": [\n        \"選択肢Aの日本語翻訳\",\n        \"選択肢Bの日本語翻訳\", \n        \"選択肢Cの日本語翻訳\",\n        \"選択肢Dの日本語翻訳\"\n      ]\n    }\n  ]\n}\n\nReturn only valid JSON without any explanation or additional text.\n\nTranslate the following questions and options to Japanese:\n\nQuestion 1: What has the new employee already started reviewing?\nOptions:\nA: Healthcare compliance training materials\nB: Patient treatment guidelines\nC: HR policies\nD: Team meeting schedules\n\nQuestion 2: According to the man, where can employee find more information on patient privacy regulations?\nOptions:\nA: In the handbook on the intranet\nB: In the office library\nC: Through an online webinar\nD: In a printed booklet\n\nQuestion 3: What deadline does the man mention for completing the training?\nOptions:\nA: By the end of the month\nB: By the end of the week\nC: Two weeks from now\nD: By next month\n\nPlease return the translations in the specified JSON format.",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "timestamp": "2025-08-19T02:05:17.840Z",
+    "functionName": "generateWithAI",
+    "type": "unknown",
+    "difficulty": "unknown",
+    "topic": "unknown",
+    "promptType": "part3_batch_questions_translation_response",
+    "prompt": "```json\n{\n  \"questionsTranslations\": [\n    {\n      \"questionTranslation\": \"新しい社員は既に何のレビューを始めていますか？\",\n      \"optionTranslations\": [\n        \"医療コンプライアンスのトレーニング教材\",\n        \"患者治療ガイドライン\",\n        \"人事方針\",\n        \"チーム会議のスケジュール\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性によると、社員はどこで患者プライバシー規則についての情報を得られますか？\",\n      \"optionTranslations\": [\n        \"イントラネットのハンドブック\",\n        \"オフィスの図書館\",\n        \"オンラインセミナー\",\n        \"印刷された冊子\"\n      ]\n    },\n    {\n      \"questionTranslation\": \"男性が言及したトレーニングの締め切りはいつですか？\",\n      \"optionTranslations\": [\n        \"今月末まで\",\n        \"今週末まで\",\n        \"今から2週間後\",\n        \"来月まで\"\n      ]\n    }\n  ]\n}\n```",
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]
