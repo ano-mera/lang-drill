@@ -158,6 +158,38 @@ const translations: Record<string, TranslationEntry> = {
   'audio.copyQuestionDetails': { ja: '問題詳細をコピー', en: 'Copy question details' },
   'audio.settingsSaveFailed': { ja: '設定の保存に失敗しました', en: 'Failed to save settings' },
 
+  // ===== Auth =====
+  'auth.login': { ja: 'ログイン', en: 'Log In' },
+  'auth.signup': { ja: '新規登録', en: 'Sign Up' },
+  'auth.logout': { ja: 'ログアウト', en: 'Log Out' },
+  'auth.email': { ja: 'メールアドレス', en: 'Email' },
+  'auth.password': { ja: 'パスワード', en: 'Password' },
+  'auth.signupSuccess': { ja: '登録メールを送信しました！', en: 'Confirmation email sent!' },
+  'auth.checkEmail': { ja: 'メールを確認して登録を完了してください。', en: 'Check your email to complete registration.' },
+  'auth.switchToSignup': { ja: 'アカウントを作成', en: 'Create an account' },
+  'auth.switchToLogin': { ja: 'ログインに戻る', en: 'Back to login' },
+
+  // ===== Subscription =====
+  'subscription.title': { ja: 'サブスクリプション', en: 'Subscription' },
+  'subscription.free': { ja: '無料プラン', en: 'Free Plan' },
+  'subscription.pro': { ja: 'Pro プラン', en: 'Pro Plan' },
+  'subscription.upgrade': { ja: 'Pro にアップグレード', en: 'Upgrade to Pro' },
+  'subscription.manage': { ja: 'サブスクリプション管理', en: 'Manage Subscription' },
+  'subscription.cancelingAt': { ja: '{date} に終了予定', en: 'Ends on {date}' },
+  'subscription.freeDescription': { ja: '1日5問まで', en: '5 questions per day' },
+  'subscription.proDescription': { ja: '問題数無制限', en: 'Unlimited questions' },
+
+  // ===== Paywall =====
+  'paywall.title': { ja: '本日の無料問題を使い切りました', en: "Today's free questions used up" },
+  'paywall.description': { ja: 'Pro にアップグレードすると無制限で問題を解けます。', en: 'Upgrade to Pro for unlimited questions.' },
+  'paywall.loginToUpgrade': { ja: 'ログインしてアップグレード', en: 'Log in to upgrade' },
+  'paywall.loginHint': { ja: 'アカウント登録で無料枠もサーバー管理されます。', en: 'Sign up to track your free quota server-side.' },
+  'paywall.close': { ja: '閉じる', en: 'Close' },
+
+  // ===== Usage =====
+  'usage.remaining': { ja: '残り{count}問', en: '{count} left' },
+  'usage.unlimited': { ja: '無制限', en: 'Unlimited' },
+
 };
 
 export function translate(key: string, lang: Language, params?: Record<string, string | number>): string {

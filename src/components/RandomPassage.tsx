@@ -38,6 +38,8 @@ import { convertToBlobUrl } from "@/lib/audio-blob";
 import Part0Component from "@/components/Part0Component";
 import type { Part0Sentence } from "@/lib/types";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useUsage } from "@/hooks/useUsage";
+import PaywallModal from "@/components/PaywallModal";
 
 interface Part2Question {
   id: string;
@@ -107,6 +109,8 @@ declare global {
 
 export default function RandomPassage({ onShowSplash }: { onShowSplash?: () => void }) {
   const { language, t } = useLanguage();
+  const { remaining, incrementUsage } = useUsage();
+  const [showPaywall, setShowPaywall] = useState(false);
   const searchParams = useSearchParams();
   const [allPassages, setAllPassages] = useState<Passage[]>([]);
   const [allPart0Sentences, setAllPart0Sentences] = useState<Part0Sentence[]>([]);
@@ -2744,17 +2748,24 @@ export default function RandomPassage({ onShowSplash }: { onShowSplash?: () => v
     addDebugLog("=== selectRandomPassageWithSettings 完了 ===");
   }, [recentPassageIds, allPassages, allPart0Sentences, selectRandomPart1Question, selectRandomPart2Question, selectRandomPart3Question, selectRandomPart4Question, selectRandomPart5Question, selectRandomPart6Question, getNextQuestionIndex]);
 
-  const selectRandomPassage = useCallback(() => {
+  const selectRandomPassage = useCallback(async () => {
     addDebugLog("=== selectRandomPassage 開始 ===");
     addDebugLog("現在のgameSettings", gameSettings);
-    
+
+    // 利用制限チェック
+    const canProceed = await incrementUsage();
+    if (!canProceed) {
+      setShowPaywall(true);
+      return;
+    }
+
     // 音声読み上げを停止
     if (isSpeaking) {
       audioAbortRef.current = true; // 中断フラグを設定
       window.speechSynthesis.cancel();
       setIsSpeaking(false);
     }
-    
+
     // URLパラメータをクリアしてランダム選択を優先
     const url = new URL(window.location.href);
     if (url.searchParams.has('id')) {
@@ -2763,12 +2774,12 @@ export default function RandomPassage({ onShowSplash }: { onShowSplash?: () => v
       // URL パラメータをクリアしたので、処理済みIDもリセット
       lastProcessedPassageIdRef.current = null;
     }
-    
+
     // 現在の設定を使用して問題を選択
     selectRandomPassageWithSettings(gameSettings);
-    
+
     addDebugLog("=== selectRandomPassage 完了 ===");
-  }, [gameSettings, selectRandomPassageWithSettings, isSpeaking]);
+  }, [gameSettings, selectRandomPassageWithSettings, isSpeaking, incrementUsage]);
 
   // URLパラメータから特定の問題を取得する関数
   const loadSpecificPassage = useCallback((passageId: string) => {
@@ -4138,6 +4149,7 @@ export default function RandomPassage({ onShowSplash }: { onShowSplash?: () => v
               onOpenSettings={openSettings}
               onShowStats={() => setShowStats(true)}
               onNext={selectRandomPassage}
+              remainingQuestions={remaining}
             />
         
         
@@ -4224,6 +4236,7 @@ export default function RandomPassage({ onShowSplash }: { onShowSplash?: () => v
               onOpenSettings={openSettings}
               onShowStats={() => setShowStats(true)}
               onNext={selectRandomPassage}
+              remainingQuestions={remaining}
             />
 
 
@@ -4283,6 +4296,9 @@ export default function RandomPassage({ onShowSplash }: { onShowSplash?: () => v
         onClose={closeSettings}
         onApply={handleApplyPassageId}
       />
+
+      {/* ペイウォールモーダル */}
+      <PaywallModal isOpen={showPaywall} onClose={() => setShowPaywall(false)} />
 
       {/* 統計ポップアップ */}
       <StatsPopup

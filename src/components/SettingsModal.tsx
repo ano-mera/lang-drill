@@ -2,6 +2,9 @@
 
 import { TOEICPart } from "@/lib/types";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useAuth } from "@/contexts/AuthContext";
+import UpgradeButton from "./UpgradeButton";
+import ManageSubscriptionButton from "./ManageSubscriptionButton";
 
 interface SettingsModalProps {
   showSettings: boolean;
@@ -45,6 +48,7 @@ export default function SettingsModal({
   onApply,
 }: SettingsModalProps) {
   const { language, setLanguage, t } = useLanguage();
+  const { user, isPro, subscriptionStatus, cancelAt } = useAuth();
 
   if (!showSettings) return null;
 
@@ -228,6 +232,34 @@ export default function SettingsModal({
             </button>
           </div>
         </div>
+
+          {/* Subscription */}
+          {user && (
+            <div className="mb-3 pt-3 border-t">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                {t('subscription.title')}
+              </label>
+              <div className="flex items-center gap-2 mb-2">
+                <span className={`px-2 py-1 rounded text-xs font-medium ${
+                  isPro ? 'bg-purple-100 text-purple-800' : 'bg-gray-100 text-gray-600'
+                }`}>
+                  {isPro ? t('subscription.pro') : t('subscription.free')}
+                </span>
+                <span className="text-xs text-gray-500">
+                  {isPro ? t('subscription.proDescription') : t('subscription.freeDescription')}
+                </span>
+              </div>
+              {isPro && cancelAt && (
+                <p className="text-xs text-orange-600 mb-2">
+                  {t('subscription.cancelingAt', { date: new Date(cancelAt).toLocaleDateString() })}
+                </p>
+              )}
+              {subscriptionStatus === 'canceled' && (
+                <p className="text-xs text-orange-600 mb-2">Canceled</p>
+              )}
+              {isPro ? <ManageSubscriptionButton /> : <UpgradeButton />}
+            </div>
+          )}
         </div>
 
         <div className="flex justify-end gap-2 p-4 border-t">

@@ -2,6 +2,7 @@
 
 import { GameSettings } from "@/utils/gameSettings";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AuthButton from "./AuthButton";
 
 interface AppHeaderProps {
   onShowSplash?: () => void;
@@ -12,6 +13,7 @@ interface AppHeaderProps {
   onOpenSettings: () => void;
   onShowStats: () => void;
   onNext: () => void;
+  remainingQuestions?: number;
 }
 
 export default function AppHeader({
@@ -23,6 +25,7 @@ export default function AppHeader({
   onOpenSettings,
   onShowStats,
   onNext,
+  remainingQuestions,
 }: AppHeaderProps) {
   const { language, setLanguage, t } = useLanguage();
 
@@ -61,6 +64,12 @@ export default function AppHeader({
         <button onClick={onShowStats} className="h-10 px-3 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm" title={t('header.stats')}>
           📊
         </button>
+        {remainingQuestions !== undefined && remainingQuestions >= 0 && (
+          <div className="h-10 flex items-center px-3 bg-purple-100 text-purple-800 rounded text-sm">
+            {t('usage.remaining', { count: remainingQuestions })}
+          </div>
+        )}
+        <AuthButton />
         <button onClick={onOpenSettings} className="h-10 px-3 bg-gray-500 text-white rounded hover:bg-gray-600 text-sm" title={t('header.settings')}>
           ⚙️
         </button>
