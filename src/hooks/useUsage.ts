@@ -30,12 +30,14 @@ function setLocalUsage(usage: LocalUsage) {
 }
 
 export function useUsage() {
-  const { user, isPro } = useAuth();
-  const [remaining, setRemaining] = useState(FREE_DAILY_LIMIT);
+  const { user, isPro, isLoading: authLoading } = useAuth();
+  const [remaining, setRemaining] = useState<number | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Fetch initial usage
+  // Fetch initial usage after auth is ready
   useEffect(() => {
+    if (authLoading) return;
+
     if (isPro) {
       setRemaining(-1);
       return;
@@ -52,7 +54,7 @@ export function useUsage() {
       const local = getLocalUsage();
       setRemaining(Math.max(0, FREE_DAILY_LIMIT - local.count));
     }
-  }, [user, isPro]);
+  }, [user, isPro, authLoading]);
 
   const incrementUsage = useCallback(async (): Promise<boolean> => {
     if (isPro) return true;

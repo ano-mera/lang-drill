@@ -48,7 +48,7 @@ export default function SettingsModal({
   onApply,
 }: SettingsModalProps) {
   const { language, setLanguage, t } = useLanguage();
-  const { user, isPro, subscriptionStatus, cancelAt } = useAuth();
+  const { user, isPro, subscriptionStatus, cancelAt, isLoading: authLoading } = useAuth();
 
   if (!showSettings) return null;
 
@@ -234,7 +234,7 @@ export default function SettingsModal({
         </div>
 
           {/* Subscription */}
-          {user && (
+          {!authLoading && user && (
             <div className="mb-3 pt-3 border-t">
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 {t('subscription.title')}
