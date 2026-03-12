@@ -81,6 +81,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signOut();
     setUser(null);
     setProfile(null);
+    window.location.reload();
   }, [supabase]);
 
   const subscriptionStatus: SubscriptionStatus = profile?.subscription_status ?? 'free';
