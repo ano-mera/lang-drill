@@ -6,11 +6,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import AuthModal from "./AuthModal";
 
 export default function AuthButton() {
-  const { user, signOut, isLoading } = useAuth();
+  const { user, signOut } = useAuth();
   const { t } = useLanguage();
   const [showModal, setShowModal] = useState(false);
-
-  if (isLoading) return null;
 
   if (user) {
     return (
