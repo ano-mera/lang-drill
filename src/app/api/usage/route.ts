@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 
-const FREE_DAILY_LIMIT = 5;
+const FREE_DAILY_LIMIT = 50;
 
 export async function GET() {
   const supabase = await createClient();

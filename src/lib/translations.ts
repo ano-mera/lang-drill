@@ -176,7 +176,7 @@ const translations: Record<string, TranslationEntry> = {
   'subscription.upgrade': { ja: 'Pro にアップグレード', en: 'Upgrade to Pro' },
   'subscription.manage': { ja: 'サブスクリプション管理', en: 'Manage Subscription' },
   'subscription.cancelingAt': { ja: '{date} に終了予定', en: 'Ends on {date}' },
-  'subscription.freeDescription': { ja: '1日5問まで', en: '5 questions per day' },
+  'subscription.freeDescription': { ja: '1日50問まで', en: '50 questions per day' },
   'subscription.proDescription': { ja: '問題数無制限', en: 'Unlimited questions' },
 
   // ===== Paywall =====

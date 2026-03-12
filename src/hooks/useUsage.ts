@@ -3,7 +3,8 @@
 import { useState, useCallback, useEffect } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 
-const FREE_DAILY_LIMIT = 5;
+const GUEST_DAILY_LIMIT = 20;
+const FREE_DAILY_LIMIT = 50;
 const STORAGE_KEY = 'langdrill_daily_usage';
 
 interface LocalUsage {
@@ -52,7 +53,7 @@ export function useUsage() {
     } else {
       // Not logged in: use localStorage
       const local = getLocalUsage();
-      setRemaining(Math.max(0, FREE_DAILY_LIMIT - local.count));
+      setRemaining(Math.max(0, GUEST_DAILY_LIMIT - local.count));
     }
   }, [user, isPro, authLoading]);
 
@@ -70,13 +71,13 @@ export function useUsage() {
       } else {
         // Local tracking
         const local = getLocalUsage();
-        if (local.count >= FREE_DAILY_LIMIT) {
+        if (local.count >= GUEST_DAILY_LIMIT) {
           setRemaining(0);
           return false;
         }
         const updated = { date: local.date, count: local.count + 1 };
         setLocalUsage(updated);
-        setRemaining(Math.max(0, FREE_DAILY_LIMIT - updated.count));
+        setRemaining(Math.max(0, GUEST_DAILY_LIMIT - updated.count));
         return true;
       }
     } finally {
