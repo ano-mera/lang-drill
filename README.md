@@ -1,14 +1,12 @@
 # LangDrill
 
-<!-- CI badge: update URL after migrating to work account -->
-<!-- [![CI](https://github.com/YOUR_ACCOUNT/YOUR_REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_ACCOUNT/YOUR_REPO/actions/workflows/ci.yml) -->
+[![CI](https://github.com/ano-mera/lang-drill/actions/workflows/ci.yml/badge.svg)](https://github.com/ano-mera/lang-drill/actions/workflows/ci.yml)
 
 **AI-powered English proficiency training for the TOEIC exam.**
 
 Practice listening, reading, and grammar with 1,400+ AI-generated questions covering all 7 TOEIC parts. Built with Next.js 15, TypeScript, and GPT-4o.
 
-<!-- Live Demo: update URL after migrating to work account -->
-<!-- **[Live Demo](https://YOUR_APP.vercel.app/)** -->
+**[Live Demo](https://lang-drill.vercel.app/)**
 
 ---
 
@@ -44,6 +42,8 @@ Practice listening, reading, and grammar with 1,400+ AI-generated questions cove
 
 - **Full TOEIC Coverage** - All 7 parts of the TOEIC test, from photo descriptions to multi-passage reading
 - **1,400+ Questions** - AI-generated with difficulty levels (Easy / Medium / Hard)
+- **Auth & Subscriptions** - Supabase email auth + Stripe subscription billing (free tier / Pro plan)
+- **Usage Gating** - Tiered daily limits: 20 questions (guest), 50 (free account), unlimited (Pro)
 - **Audio Playback** - ElevenLabs TTS voices with adjustable volume and fallback to browser speech
 - **Bilingual UI** - English / Japanese toggle for all interface elements
 - **Progress Tracking** - Accuracy stats, streak counter, best scores stored locally
@@ -72,21 +72,27 @@ All content is AI-generated using GPT-4o with Japanese translations included.
 | Framework | Next.js 15 (App Router) |
 | Language | TypeScript (strict mode) |
 | Styling | Tailwind CSS 4 |
+| Auth | Supabase (Email/Password, RLS, session middleware) |
+| Payments | Stripe (Checkout, Webhooks, Customer Portal) |
 | AI | OpenAI GPT-4o (translations, question generation) |
 | Audio | ElevenLabs TTS, Web Speech API |
-| Storage | Cloudflare R2 (audio), localStorage / IndexedDB (settings) |
+| Storage | Cloudflare R2 (audio), Supabase PostgreSQL (users), localStorage (settings) |
 | Deployment | Vercel |
-| Testing | Playwright (E2E) |
+| Testing | Vitest (unit), Playwright (E2E) |
 
 ## Architecture
 
 ```
 src/
-  app/           # Next.js App Router pages + 14 API routes
-  components/    # React components (Part0-7, Stats, Settings)
-  contexts/      # LanguageContext (i18n)
+  app/           # Next.js App Router pages + API routes
+    api/stripe/  #   Checkout, Webhook, Customer Portal endpoints
+    api/usage/   #   Daily usage tracking endpoint
+    auth/        #   OAuth callback handler
+  components/    # React components (Part0-7, Stats, Settings, Auth, Paywall)
+  contexts/      # AuthContext, LanguageContext
   data/          # JSON question databases (~10MB total)
-  lib/           # Types, translations, utilities
+  hooks/         # Custom hooks (useUsage)
+  lib/           # Types, translations, Supabase/Stripe clients
   utils/         # Game settings, stats tracking
 
 generator/       # Content generation pipeline
@@ -97,16 +103,34 @@ generator/       # Content generation pipeline
 ### Key Design Decisions
 
 - **No external i18n library** - Custom lightweight translation system (~160 keys) via React Context
-- **No database** - All questions stored as JSON, loaded into memory at startup for instant navigation
+- **Questions as JSON** - Static question data loaded into memory for instant navigation; user data in Supabase PostgreSQL
 - **Hybrid audio** - ElevenLabs for high-quality voices, browser TTS as fallback
 - **Cloudflare R2** - Audio files served via CDN instead of bundling with the app
+- **Tiered usage gating** - Guest usage tracked client-side (localStorage), logged-in users tracked server-side (Supabase DB) to prevent bypass
+- **Cancel-at-period-end** - Pro access maintained until the billing period ends after cancellation
 
 ## Getting Started
 
 ```bash
+cp .env.example .env.local   # Fill in Supabase + Stripe keys
 npm install
-npm run dev          # Starts on http://localhost:3001
+npm run dev                  # Starts on http://localhost:3001
 ```
+
+### Environment Variables
+
+See `.env.example` for the full list. Required services:
+
+| Variable | Service |
+|----------|---------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous key |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key (server-only) |
+| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe publishable key |
+| `STRIPE_SECRET_KEY` | Stripe secret key (server-only) |
+| `STRIPE_WEBHOOK_SECRET` | Stripe webhook signing secret |
+| `STRIPE_PRO_PRICE_ID` | Stripe Pro plan price ID |
+| `NEXT_PUBLIC_APP_URL` | App URL for Stripe redirects |
 
 ### Scripts
 
