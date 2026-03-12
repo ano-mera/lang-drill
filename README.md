@@ -2,9 +2,9 @@
 
 [![CI](https://github.com/ano-mera/lang-drill/actions/workflows/ci.yml/badge.svg)](https://github.com/ano-mera/lang-drill/actions/workflows/ci.yml)
 
-**AI-powered English proficiency training for the TOEIC exam.**
+**A production-ready SaaS for TOEIC exam training** — with user authentication, subscription billing, and usage-based feature gating.
 
-Practice listening, reading, and grammar with 1,400+ AI-generated questions covering all 7 TOEIC parts. Built with Next.js 15, TypeScript, and GPT-4o.
+Built with Next.js 15, Supabase, Stripe, and GPT-4o. Deployed on Vercel.
 
 **[Live Demo](https://lang-drill.vercel.app/)**
 
@@ -38,17 +38,87 @@ Practice listening, reading, and grammar with 1,400+ AI-generated questions cove
   </tr>
 </table>
 
+## Subscription & Auth Flow
+
+```
+Guest (no account)          Logged-in (Free)            Pro subscriber
+─────────────────           ────────────────            ──────────────
+20 questions/day            50 questions/day            Unlimited
+localStorage tracking       Server-side DB tracking     No limits
+        │                           │                        ▲
+        └── Sign up ───────────────►│                        │
+                                    └── Stripe Checkout ────►│
+                                                             │
+                                    Stripe Webhook ──► Supabase DB update
+                                    (checkout.completed,     │
+                                     invoice.paid,           │
+                                     subscription.deleted,   │
+                                     subscription.updated)   │
+                                                             │
+                                    Cancel ──► Pro until period ends ──► Free
+```
+
+**Key implementation details:**
+- **Webhook-driven state** — Subscription status is updated exclusively via Stripe webhooks, not client-side polling
+- **Server-side usage enforcement** — Logged-in user limits tracked in Supabase PostgreSQL (not bypassable via DevTools)
+- **Row Level Security (RLS)** — Users can only read/write their own profile and usage data
+- **Webhook signature verification** — All incoming Stripe events verified with `constructEvent()` before processing
+- **Cancel-at-period-end** — Pro access maintained until the billing period ends; UI shows exact expiration date
+
 ## Features
 
-- **Full TOEIC Coverage** - All 7 parts of the TOEIC test, from photo descriptions to multi-passage reading
-- **1,400+ Questions** - AI-generated with difficulty levels (Easy / Medium / Hard)
-- **Auth & Subscriptions** - Supabase email auth + Stripe subscription billing (free tier / Pro plan)
-- **Usage Gating** - Tiered daily limits: 20 questions (guest), 50 (free account), unlimited (Pro)
-- **Audio Playback** - ElevenLabs TTS voices with adjustable volume and fallback to browser speech
-- **Bilingual UI** - English / Japanese toggle for all interface elements
-- **Progress Tracking** - Accuracy stats, streak counter, best scores stored locally
-- **PWA** - Installable on mobile, works offline
-- **Responsive Design** - Mobile-first, optimized for phones and tablets
+- **Full TOEIC Coverage** — All 7 parts, from photo descriptions to multi-passage reading
+- **1,400+ AI Questions** — Generated with GPT-4o, 3 difficulty levels, Japanese translations included
+- **Auth & Billing** — Email/password auth (Supabase) + Stripe Checkout / Customer Portal
+- **Tiered Usage Gating** — Guest → Free → Pro, with server-side enforcement
+- **Audio Playback** — ElevenLabs TTS with adjustable speed/volume, browser TTS fallback
+- **Bilingual UI** — Full English / Japanese toggle (~160 translation keys)
+- **PWA** — Installable, works offline
+- **Mobile-first** — Responsive design optimized for phones and tablets
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript (strict mode) |
+| Styling | Tailwind CSS 4 |
+| Auth | Supabase (Email/Password, RLS, session middleware) |
+| Payments | Stripe (Checkout, Webhooks, Customer Portal) |
+| AI | OpenAI GPT-4o (translations, question generation) |
+| Audio | ElevenLabs TTS, Web Speech API |
+| Storage | Cloudflare R2 (audio CDN), Supabase PostgreSQL (users/usage), localStorage (settings) |
+| CI/CD | GitHub Actions (lint + typecheck), Vercel (deploy) |
+| Testing | Vitest (unit), Playwright (E2E) |
+
+## Architecture
+
+```
+src/
+  app/
+    api/stripe/    # Checkout Session, Webhook, Customer Portal endpoints
+    api/usage/     # GET (remaining) / POST (increment) usage tracking
+    auth/          # OAuth callback handler
+  components/      # Part0-7, Auth, Paywall, Settings, Stats
+  contexts/        # AuthContext (user/profile/subscription state)
+  hooks/           # useUsage (tiered limit logic)
+  lib/
+    supabase/      # Browser, Server, Admin (service role) clients
+    stripe.ts      # Server-side Stripe instance
+    stripe-client.ts # Client-side Stripe.js loader
+  data/            # JSON question databases (~10MB)
+  utils/           # Game settings, stats tracking
+
+generator/         # GPT-4o content generation pipeline
+```
+
+### Key Design Decisions
+
+- **Webhook-only subscription sync** — No client-side subscription checks; DB is the single source of truth, updated only by verified webhooks
+- **Dual usage tracking** — Guests use localStorage (convenience); logged-in users use server-side DB (security)
+- **Questions as static JSON** — Loaded into memory for instant navigation; only user data lives in the database
+- **Lightweight i18n** — Custom translation system via React Context instead of heavy i18n libraries
+- **Cloudflare R2 for audio** — CDN delivery instead of bundling large audio files with the app
 
 ## Question Database
 
@@ -62,52 +132,6 @@ Practice listening, reading, and grammar with 1,400+ AI-generated questions cove
 | Part 5 | Incomplete Sentences | 148 questions | - |
 | Part 6 | Text Completion | 21 questions | - |
 | Part 7 | Reading Comprehension | 181 passages (543 questions) | - |
-
-All content is AI-generated using GPT-4o with Japanese translations included.
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 15 (App Router) |
-| Language | TypeScript (strict mode) |
-| Styling | Tailwind CSS 4 |
-| Auth | Supabase (Email/Password, RLS, session middleware) |
-| Payments | Stripe (Checkout, Webhooks, Customer Portal) |
-| AI | OpenAI GPT-4o (translations, question generation) |
-| Audio | ElevenLabs TTS, Web Speech API |
-| Storage | Cloudflare R2 (audio), Supabase PostgreSQL (users), localStorage (settings) |
-| Deployment | Vercel |
-| Testing | Vitest (unit), Playwright (E2E) |
-
-## Architecture
-
-```
-src/
-  app/           # Next.js App Router pages + API routes
-    api/stripe/  #   Checkout, Webhook, Customer Portal endpoints
-    api/usage/   #   Daily usage tracking endpoint
-    auth/        #   OAuth callback handler
-  components/    # React components (Part0-7, Stats, Settings, Auth, Paywall)
-  contexts/      # AuthContext, LanguageContext
-  data/          # JSON question databases (~10MB total)
-  hooks/         # Custom hooks (useUsage)
-  lib/           # Types, translations, Supabase/Stripe clients
-  utils/         # Game settings, stats tracking
-
-generator/       # Content generation pipeline
-  scripts/       # GPT-4o question generators per part
-  lib/           # OpenAI config, prompts, validators
-```
-
-### Key Design Decisions
-
-- **No external i18n library** - Custom lightweight translation system (~160 keys) via React Context
-- **Questions as JSON** - Static question data loaded into memory for instant navigation; user data in Supabase PostgreSQL
-- **Hybrid audio** - ElevenLabs for high-quality voices, browser TTS as fallback
-- **Cloudflare R2** - Audio files served via CDN instead of bundling with the app
-- **Tiered usage gating** - Guest usage tracked client-side (localStorage), logged-in users tracked server-side (Supabase DB) to prevent bypass
-- **Cancel-at-period-end** - Pro access maintained until the billing period ends after cancellation
 
 ## Getting Started
 
