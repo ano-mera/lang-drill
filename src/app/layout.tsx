@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "LangDrill",
-  description: "効率的に英語を学べる学習アプリです。単語、文法、リスニング練習ができます。",
+  description: "Practice TOEIC listening, reading, and grammar with 1,400+ AI-generated questions.",
   manifest: "/manifest.json",
   icons: {
     icon: [
