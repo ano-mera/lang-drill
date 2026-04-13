@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Ping Supabase
         run: |
-          curl -sf -o /dev/null \
-            'https://ggwuevlehtjrugkydwab.supabase.co/rest/v1/' \
-            -H 'apikey: sb_publishable_0wK9FneKZYtKRAlFV3_xFg_KSKOHSi-' \
-            -H 'Authorization: Bearer sb_publishable_0wK9FneKZYtKRAlFV3_xFg_KSKOHSi-'
-          echo "Supabase pinged successfully"
+          STATUS=$(curl -s -o /dev/null -w '%{http_code}' \
+            'https://ggwuevlehtjrugkydwab.supabase.co/auth/v1/health')
+          echo "Supabase responded with HTTP $STATUS"
