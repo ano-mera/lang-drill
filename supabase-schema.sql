@@ -29,6 +29,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON public.profiles TO service_role;
 GRANT SELECT, INSERT, UPDATE, DELETE ON public.daily_usage TO authenticated;
 GRANT SELECT, INSERT, UPDATE, DELETE ON public.daily_usage TO service_role;
 
+-- 2026/5/30以前に作成された既存プロジェクトではanonにデフォルトでGRANTされているため明示的に剥奪
+REVOKE ALL ON public.profiles FROM anon;
+REVOKE ALL ON public.daily_usage FROM anon;
+
 -- RLS有効化
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.daily_usage ENABLE ROW LEVEL SECURITY;
@@ -56,6 +60,7 @@ CREATE POLICY "Users can update own usage"
   USING (auth.uid() = user_id);
 
 -- サインアップ時にprofilesを自動作成するトリガー
+-- SET search_path: SECURITY DEFINER関数のsearch_path乗っ取り攻撃を防ぐため固定
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -63,7 +68,10 @@ BEGIN
   VALUES (NEW.id, NEW.email);
   RETURN NEW;
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public, pg_temp;
+
+-- handle_new_userはトリガー専用のためRPC経由の実行権限を剥奪
+REVOKE EXECUTE ON FUNCTION public.handle_new_user() FROM anon, authenticated, public;
 
 CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
