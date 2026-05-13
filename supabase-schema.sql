@@ -23,6 +23,12 @@ CREATE TABLE public.daily_usage (
   UNIQUE(user_id, usage_date)
 );
 
+-- Data APIアクセス権限の付与（2026/10/30以降の新規テーブルには明示的GRANTが必要）
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.profiles TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.profiles TO service_role;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.daily_usage TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.daily_usage TO service_role;
+
 -- RLS有効化
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.daily_usage ENABLE ROW LEVEL SECURITY;
