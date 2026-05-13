@@ -12,14 +12,15 @@ jobs:
       - name: Query Supabase database
         env:
           SUPABASE_URL: https://ggwuevlehtjrugkydwab.supabase.co
-          SUPABASE_ANON_KEY: sb_publishable_0wK9FneKZYtKRAlFV3_xFg_KSKOHSi-
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: |
           STATUS=$(curl -s -o /tmp/response.txt -w '%{http_code}' --retry 3 --retry-delay 10 \
             "$SUPABASE_URL/rest/v1/profiles?select=id&limit=1" \
-            -H "apikey: $SUPABASE_ANON_KEY" \
-            -H "Authorization: Bearer $SUPABASE_ANON_KEY")
+            -H "apikey: $SUPABASE_SECRET_KEY" \
+            -H "Authorization: Bearer $SUPABASE_SECRET_KEY")
           echo "HTTP $STATUS"
-          cat /tmp/response.txt
+          ROWS=$(cat /tmp/response.txt | wc -c)
+          echo "Response size: $ROWS bytes"
           if [ "$STATUS" -ge 500 ] || [ "$STATUS" -eq 000 ]; then
             exit 1
           fi
